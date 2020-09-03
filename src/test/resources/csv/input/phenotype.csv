@@ -1,0 +1,1000 @@
+submitter_phenotype_id,submitter_donor_id,study_id,phenotype_HPO_code,phenotype_HPO_term,phenotype_HPO_category,age_at_phenotype,phenotype_observed
+PH00027,PT00027,ST0001,HP:0030242, Portal vein thrombosis,Abnormality of blood and blood-forming tissues,59,Yes
+PH00387,PT00387,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,16,Yes
+PH00409,PT00409,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,1,Yes
+PH00429,PT00429,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,13,Yes
+PH00445,PT00445,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,9,Yes
+PH00497,PT00497,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,11,Yes
+PH00501,PT00501,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,12,Yes
+PH00572,PT00572,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,11,Yes
+PH00605,PT00605,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,10,Yes
+PH00612,PT00612,ST0002,HP:0000175, Cleft palate,Abnormality of head or neck,21,Yes
+PH00401,PT00401,ST0002,HP:0000621, Entropion,Abnormality of head or neck,2,Yes
+PH00450,PT00450,ST0002,HP:0000621, Entropion,Abnormality of head or neck,14,Yes
+PH00463,PT00463,ST0002,HP:0000621, Entropion,Abnormality of head or neck,0,Yes
+PH00470,PT00470,ST0002,HP:0000621, Entropion,Abnormality of head or neck,14,Yes
+PH00535,PT00535,ST0002,HP:0000621, Entropion,Abnormality of head or neck,8,Yes
+PH00536,PT00536,ST0002,HP:0000621, Entropion,Abnormality of head or neck,19,Yes
+PH00546,PT00546,ST0002,HP:0000621, Entropion,Abnormality of head or neck,21,Yes
+PH00568,PT00568,ST0002,HP:0000621, Entropion,Abnormality of head or neck,10,Yes
+PH00396,PT00396,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,18,Yes
+PH00406,PT00406,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,4,Yes
+PH00414,PT00414,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,19,Yes
+PH00433,PT00433,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,4,Yes
+PH00477,PT00477,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,2,Yes
+PH00479,PT00479,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,9,Yes
+PH00483,PT00483,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,18,Yes
+PH00500,PT00500,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,18,Yes
+PH00511,PT00511,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,12,Yes
+PH00529,PT00529,ST0002,HP:0000256, Macrocephaly,Abnormality of head or neck,20,Yes
+PH00398,PT00398,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,16,Yes
+PH00402,PT00402,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,3,Yes
+PH00419,PT00419,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,15,Yes
+PH00422,PT00422,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,15,Yes
+PH00446,PT00446,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,12,Yes
+PH00466,PT00466,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,17,Yes
+PH00491,PT00491,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,6,Yes
+PH00522,PT00522,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,9,Yes
+PH00558,PT00558,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,15,Yes
+PH00570,PT00570,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,20,Yes
+PH00585,PT00585,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,21,Yes
+PH00596,PT00596,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,0,Yes
+PH00611,PT00611,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,0,Yes
+PH00614,PT00614,ST0002,HP:0000158, Macroglossia,Abnormality of head or neck,13,Yes
+PH00395,PT00395,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,3,Yes
+PH00416,PT00416,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,14,Yes
+PH00475,PT00475,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,17,Yes
+PH00489,PT00489,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,13,Yes
+PH00518,PT00518,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,10,Yes
+PH00538,PT00538,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,8,Yes
+PH00544,PT00544,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,18,Yes
+PH00545,PT00545,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,17,Yes
+PH00560,PT00560,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,15,Yes
+PH00583,PT00583,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,12,Yes
+PH00597,PT00597,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,3,Yes
+PH00604,PT00604,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,8,Yes
+PH00607,PT00607,ST0002,HP:0000252, Microcephaly,Abnormality of head or neck,15,Yes
+PH00026,PT00026,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,54,Yes
+PH00136,PT00136,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,54,Yes
+PH00145,PT00145,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,35,Yes
+PH00208,PT00208,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,55,Yes
+PH00276,PT00276,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,54,Yes
+PH00282,PT00282,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,56,Yes
+PH00305,PT00305,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,40,Yes
+PH00308,PT00308,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,34,Yes
+PH00376,PT00376,ST0001,HP:0001681, Angina pectoris,Abnormality of the cardiovascular system,44,Yes
+PH00044,PT00044,ST0001,HP:0001638, Cardiomyopathy,Abnormality of the cardiovascular system,49,Yes
+PH00138,PT00138,ST0001,HP:0001638, Cardiomyopathy,Abnormality of the cardiovascular system,62,Yes
+PH00220,PT00220,ST0001,HP:0001638, Cardiomyopathy,Abnormality of the cardiovascular system,64,Yes
+PH00258,PT00258,ST0001,HP:0001638, Cardiomyopathy,Abnormality of the cardiovascular system,32,Yes
+PH00320,PT00320,ST0001,HP:0001638, Cardiomyopathy,Abnormality of the cardiovascular system,47,Yes
+PH00069,PT00069,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,58,Yes
+PH00086,PT00086,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,48,Yes
+PH00205,PT00205,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,50,Yes
+PH00228,PT00228,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,37,Yes
+PH00247,PT00247,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,40,Yes
+PH00270,PT00270,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,34,Yes
+PH00345,PT00345,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,62,Yes
+PH00373,PT00373,ST0001,HP:0100584, Endocarditis,Abnormality of the cardiovascular system,55,Yes
+PH00024,PT00024,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,47,Yes
+PH00147,PT00147,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,36,Yes
+PH00179,PT00179,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,60,Yes
+PH00229,PT00229,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,55,Yes
+PH00245,PT00245,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,42,Yes
+PH00249,PT00249,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,37,Yes
+PH00281,PT00281,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,63,Yes
+PH00292,PT00292,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,52,Yes
+PH00333,PT00333,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,63,Yes
+PH00338,PT00338,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,37,Yes
+PH00340,PT00340,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,57,Yes
+PH00375,PT00375,ST0001,HP:0000822, Hypertension,Abnormality of the cardiovascular system,52,Yes
+PH00003,PT00003,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,37,Yes
+PH00052,PT00052,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,55,Yes
+PH00117,PT00117,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,57,Yes
+PH00191,PT00191,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,47,Yes
+PH00196,PT00196,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,39,Yes
+PH00323,PT00323,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,51,Yes
+PH00346,PT00346,ST0001,HP:0001634, Mitral valve prolapse,Abnormality of the cardiovascular system,54,Yes
+PH00001,PT00001,ST0001,HP:0001658, Myocardial infarction,Abnormality of the cardiovascular system,63,Yes
+PH00034,PT00034,ST0001,HP:0001658, Myocardial infarction,Abnormality of the cardiovascular system,51,Yes
+PH00279,PT00279,ST0001,HP:0001658, Myocardial infarction,Abnormality of the cardiovascular system,63,Yes
+PH00367,PT00367,ST0001,HP:0001658, Myocardial infarction,Abnormality of the cardiovascular system,54,Yes
+PH00033,PT00033,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,54,Yes
+PH00048,PT00048,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,48,Yes
+PH00080,PT00080,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,65,Yes
+PH00149,PT00149,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,33,Yes
+PH00181,PT00181,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,34,Yes
+PH00230,PT00230,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,60,Yes
+PH00239,PT00239,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,51,Yes
+PH00251,PT00251,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,48,Yes
+PH00277,PT00277,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,40,Yes
+PH00280,PT00280,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,62,Yes
+PH00287,PT00287,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,42,Yes
+PH00293,PT00293,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,33,Yes
+PH00348,PT00348,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,54,Yes
+PH00356,PT00356,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,54,Yes
+PH00363,PT00363,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,47,Yes
+PH00365,PT00365,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,50,Yes
+PH00377,PT00377,ST0001,HP:0001297, Stroke,Abnormality of the cardiovascular system,28,Yes
+PH00557,PT00557,ST0002,HP:0002034, Abnormality of the rectum,Abnormality of the digestive system,14,Yes
+PH00671,PT00671,ST0003,HP:0002034, Abnormality of the rectum,Abnormality of the digestive system,25,Yes
+PH00698,PT00698,ST0003,HP:0002034, Abnormality of the rectum,Abnormality of the digestive system,17,Yes
+PH00380,PT00380,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,6,Yes
+PH00441,PT00441,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,1,Yes
+PH00448,PT00448,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,7,Yes
+PH00464,PT00464,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,3,Yes
+PH00486,PT00486,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,20,Yes
+PH00508,PT00508,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,7,Yes
+PH00523,PT00523,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,8,Yes
+PH00532,PT00532,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,8,Yes
+PH00548,PT00548,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,13,Yes
+PH00556,PT00556,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,12,Yes
+PH00574,PT00574,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,7,Yes
+PH00576,PT00576,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,4,Yes
+PH00589,PT00589,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,2,Yes
+PH00617,PT00617,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,3,Yes
+PH00621,PT00621,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,4,Yes
+PH00623,PT00623,ST0002,HP:0002251, Aganglionic megacolon,Abnormality of the digestive system,19,Yes
+PH00055,PT00055,ST0001,HP:0100280, Crohn's disease,Abnormality of the digestive system,60,Yes
+PH00331,PT00331,ST0001,HP:0100280, Crohn's disease,Abnormality of the digestive system,40,Yes
+PH00393,PT00393,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,12,Yes
+PH00400,PT00400,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,21,Yes
+PH00417,PT00417,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,11,Yes
+PH00456,PT00456,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,6,Yes
+PH00482,PT00482,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,10,Yes
+PH00504,PT00504,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,7,Yes
+PH00537,PT00537,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,7,Yes
+PH00561,PT00561,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,8,Yes
+PH00624,PT00624,ST0002,HP:0002247, Duodenal atresia,Abnormality of the digestive system,12,Yes
+PH00394,PT00394,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,2,Yes
+PH00424,PT00424,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,2,Yes
+PH00452,PT00452,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,3,Yes
+PH00460,PT00460,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,0,Yes
+PH00485,PT00485,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,9,Yes
+PH00495,PT00495,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,17,Yes
+PH00507,PT00507,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,0,Yes
+PH00519,PT00519,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,19,Yes
+PH00569,PT00569,ST0002,HP:0001737, Pancreatic cysts,Abnormality of the digestive system,2,Yes
+PH00389,PT00389,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,0,Yes
+PH00459,PT00459,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,15,Yes
+PH00476,PT00476,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,12,Yes
+PH00480,PT00480,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,9,Yes
+PH00481,PT00481,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,3,Yes
+PH00499,PT00499,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,2,Yes
+PH00517,PT00517,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,16,Yes
+PH00579,PT00579,ST0002,HP:0002021, Pyloric stenosis,Abnormality of the digestive system,3,Yes
+PH00015,PT00015,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,56,Yes
+PH00142,PT00142,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,48,Yes
+PH00173,PT00173,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,36,Yes
+PH00186,PT00186,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,65,Yes
+PH00233,PT00233,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,52,Yes
+PH00256,PT00256,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,56,Yes
+PH00288,PT00288,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,53,Yes
+PH00332,PT00332,ST0001,HP:0100279, Ulcerative colitis,Abnormality of the digestive system,56,Yes
+PH00468,PT00468,ST0002,HP:0008551, Microtia,Abnormality of the ear,5,Yes
+PH00478,PT00478,ST0002,HP:0008551, Microtia,Abnormality of the ear,2,Yes
+PH00487,PT00487,ST0002,HP:0008551, Microtia,Abnormality of the ear,13,Yes
+PH00571,PT00571,ST0002,HP:0008551, Microtia,Abnormality of the ear,8,Yes
+PH00575,PT00575,ST0002,HP:0008551, Microtia,Abnormality of the ear,4,Yes
+PH00578,PT00578,ST0002,HP:0008551, Microtia,Abnormality of the ear,5,Yes
+PH00595,PT00595,ST0002,HP:0008551, Microtia,Abnormality of the ear,11,Yes
+PH00598,PT00598,ST0002,HP:0008551, Microtia,Abnormality of the ear,2,Yes
+PH00603,PT00603,ST0002,HP:0008551, Microtia,Abnormality of the ear,17,Yes
+PH00622,PT00622,ST0002,HP:0008551, Microtia,Abnormality of the ear,17,Yes
+PH00166,PT00166,ST0001,HP:0000819, Diabetes mellitus,Abnormality of the endocrine system,38,Yes
+PH00195,PT00195,ST0001,HP:0000819, Diabetes mellitus,Abnormality of the endocrine system,48,Yes
+PH00210,PT00210,ST0001,HP:0000819, Diabetes mellitus,Abnormality of the endocrine system,59,Yes
+PH00075,PT00075,ST0001,HP:0025388, Thyroid nodule,Abnormality of the endocrine system,42,Yes
+PH00397,PT00397,ST0002,HP:0025388, Thyroid nodule,Abnormality of the endocrine system,10,Yes
+PH00656,PT00656,ST0003,HP:0025388, Thyroid nodule,Abnormality of the endocrine system,26,Yes
+PH00014,PT00014,ST0001,HP:0000501, Glaucoma,Abnormality of the eye,63,Yes
+PH00119,PT00119,ST0001,HP:0000501, Glaucoma,Abnormality of the eye,43,Yes
+PH00378,PT00378,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,9,Yes
+PH00407,PT00407,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,2,Yes
+PH00411,PT00411,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,7,Yes
+PH00451,PT00451,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,7,Yes
+PH00458,PT00458,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,11,Yes
+PH00474,PT00474,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,18,Yes
+PH00506,PT00506,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,16,Yes
+PH00514,PT00514,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,13,Yes
+PH00550,PT00550,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,1,Yes
+PH00606,PT00606,ST0002,HP:0000501, Glaucoma,Abnormality of the eye,21,Yes
+PH00133,PT00133,ST0001,HP:0032270, Optic nerve tram-track sign,Abnormality of the eye,34,Yes
+PH00438,PT00438,ST0002,HP:0032270, Optic nerve tram-track sign,Abnormality of the eye,21,Yes
+PH00770,PT00770,ST0003,HP:0032270, Optic nerve tram-track sign,Abnormality of the eye,1,Yes
+PH00773,PT00773,ST0003,HP:0032270, Optic nerve tram-track sign,Abnormality of the eye,17,Yes
+PH00821,PT00821,ST0003,HP:0032270, Optic nerve tram-track sign,Abnormality of the eye,33,Yes
+PH00017,PT00017,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,52,Yes
+PH00104,PT00104,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,38,Yes
+PH00135,PT00135,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,53,Yes
+PH00151,PT00151,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,46,Yes
+PH00218,PT00218,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,43,Yes
+PH00317,PT00317,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,69,Yes
+PH00362,PT00362,ST0001,HP:0000100, Nephrotic syndrome,Abnormality of the genitourinary system,32,Yes
+PH00006,PT00006,ST0001,HP:0000791, Uric acid nephrolithiasis,Abnormality of the genitourinary system,59,Yes
+PH00127,PT00127,ST0001,HP:0000791, Uric acid nephrolithiasis,Abnormality of the genitourinary system,64,Yes
+PH00167,PT00167,ST0001,HP:0000791, Uric acid nephrolithiasis,Abnormality of the genitourinary system,43,Yes
+PH00189,PT00189,ST0001,HP:0000791, Uric acid nephrolithiasis,Abnormality of the genitourinary system,36,Yes
+PH00408,PT00408,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,12,Yes
+PH00427,PT00427,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,4,Yes
+PH00444,PT00444,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,6,Yes
+PH00462,PT00462,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,15,Yes
+PH00493,PT00493,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,17,Yes
+PH00526,PT00526,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,8,Yes
+PH00530,PT00530,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,7,Yes
+PH00559,PT00559,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,21,Yes
+PH00573,PT00573,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,10,Yes
+PH00625,PT00625,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,6,Yes
+PH00626,PT00626,ST0002,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,12,Yes
+PH00641,PT00641,ST0003,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,19,Yes
+PH00707,PT00707,ST0003,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,36,Yes
+PH00740,PT00740,ST0003,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,2,Yes
+PH00755,PT00755,ST0003,HP:0012176, Abnormal natural killer cell morphology,Abnormality of the immune system,7,Yes
+PH00040,PT00040,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,39,Yes
+PH00071,PT00071,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,59,Yes
+PH00199,PT00199,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,31,Yes
+PH00236,PT00236,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,49,Yes
+PH00297,PT00297,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,52,Yes
+PH00351,PT00351,ST0001,HP:0030888, C3 nephritic factor positivity,Abnormality of the immune system,54,Yes
+PH00779,PT00779,ST0003,HP:0030812, Enlarged tonsil,Abnormality of the immune system,25,Yes
+PH00815,PT00815,ST0003,HP:0030812, Enlarged tonsil,Abnormality of the immune system,5,Yes
+PH00131,PT00131,ST0001,HP:0003765, Psoriasiform dermatitis,Abnormality of the integument,50,Yes
+PH00246,PT00246,ST0001,HP:0003765, Psoriasiform dermatitis,Abnormality of the integument,55,Yes
+PH00328,PT00328,ST0001,HP:0003765, Psoriasiform dermatitis,Abnormality of the integument,37,Yes
+PH00161,PT00161,ST0001,HP:0100614, Myositis,Abnormality of the musculature,38,Yes
+PH00275,PT00275,ST0001,HP:0100614, Myositis,Abnormality of the musculature,56,Yes
+PH00306,PT00306,ST0001,HP:0100614, Myositis,Abnormality of the musculature,57,Yes
+PH00028,PT00028,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,54,Yes
+PH00106,PT00106,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,41,Yes
+PH00159,PT00159,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,44,Yes
+PH00194,PT00194,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,40,Yes
+PH00357,PT00357,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,61,Yes
+PH00364,PT00364,ST0001,HP:0002511, Alzheimer disease,Abnormality of the nervous system,70,Yes
+PH00019,PT00019,ST0001,HP:0007302, Bipolar affective disorder,Abnormality of the nervous system,60,Yes
+PH00188,PT00188,ST0001,HP:0007302, Bipolar affective disorder,Abnormality of the nervous system,33,Yes
+PH00198,PT00198,ST0001,HP:0007302, Bipolar affective disorder,Abnormality of the nervous system,50,Yes
+PH00267,PT00267,ST0001,HP:0007302, Bipolar affective disorder,Abnormality of the nervous system,51,Yes
+PH00335,PT00335,ST0001,HP:0007302, Bipolar affective disorder,Abnormality of the nervous system,41,Yes
+PH00379,PT00379,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,15,Yes
+PH00390,PT00390,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,18,Yes
+PH00405,PT00405,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,5,Yes
+PH00412,PT00412,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,16,Yes
+PH00418,PT00418,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,12,Yes
+PH00430,PT00430,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,16,Yes
+PH00432,PT00432,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,5,Yes
+PH00449,PT00449,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,2,Yes
+PH00492,PT00492,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,19,Yes
+PH00510,PT00510,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,6,Yes
+PH00531,PT00531,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,18,Yes
+PH00533,PT00533,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,20,Yes
+PH00551,PT00551,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,19,Yes
+PH00555,PT00555,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,15,Yes
+PH00590,PT00590,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,14,Yes
+PH00594,PT00594,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,0,Yes
+PH00602,PT00602,ST0002,HP:0002084, Encephalocele,Abnormality of the nervous system,4,Yes
+PH00204,PT00204,ST0001,HP:0002888, Ependymoma,Abnormality of the nervous system,58,Yes
+PH00599,PT00599,ST0002,HP:0002888, Ependymoma,Abnormality of the nervous system,1,Yes
+PH00610,PT00610,ST0002,HP:0002888, Ependymoma,Abnormality of the nervous system,9,Yes
+PH00743,PT00743,ST0003,HP:0002888, Ependymoma,Abnormality of the nervous system,37,Yes
+PH00434,PT00434,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,9,Yes
+PH00440,PT00440,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,5,Yes
+PH00442,PT00442,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,7,Yes
+PH00455,PT00455,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,15,Yes
+PH00469,PT00469,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,1,Yes
+PH00524,PT00524,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,15,Yes
+PH00608,PT00608,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,21,Yes
+PH00618,PT00618,ST0002,HP:0001256, Intellectual disability mild,Abnormality of the nervous system,10,Yes
+PH00007,PT00007,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,41,Yes
+PH00102,PT00102,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,56,Yes
+PH00164,PT00164,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,68,Yes
+PH00232,PT00232,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,53,Yes
+PH00255,PT00255,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,58,Yes
+PH00300,PT00300,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,49,Yes
+PH00301,PT00301,ST0001,HP:0001287, Meningitis,Abnormality of the nervous system,36,Yes
+PH00054,PT00054,ST0001,HP:0100753, Schizophrenia,Abnormality of the nervous system,51,Yes
+PH00083,PT00083,ST0001,HP:0100753, Schizophrenia,Abnormality of the nervous system,40,Yes
+PH00100,PT00100,ST0001,HP:0100753, Schizophrenia,Abnormality of the nervous system,60,Yes
+PH00148,PT00148,ST0001,HP:0100753, Schizophrenia,Abnormality of the nervous system,62,Yes
+PH00385,PT00385,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,9,Yes
+PH00484,PT00484,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,11,Yes
+PH00498,PT00498,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,19,Yes
+PH00513,PT00513,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,1,Yes
+PH00549,PT00549,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,18,Yes
+PH00554,PT00554,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,7,Yes
+PH00584,PT00584,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,4,Yes
+PH00588,PT00588,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,10,Yes
+PH00609,PT00609,ST0002,HP:0002414, Spina bifida,Abnormality of the nervous system,10,Yes
+PH00516,PT00516,ST0002,HP:0008749, Laryngeal hypoplasia,Abnormality of the respiratory system,8,Yes
+PH00539,PT00539,ST0002,HP:0008749, Laryngeal hypoplasia,Abnormality of the respiratory system,13,Yes
+PH00051,PT00051,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,43,Yes
+PH00103,PT00103,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,48,Yes
+PH00175,PT00175,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,55,Yes
+PH00211,PT00211,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,34,Yes
+PH00222,PT00222,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,48,Yes
+PH00325,PT00325,ST0001,HP:0002204, Pulmonary embolism,Abnormality of the respiratory system,61,Yes
+PH00053,PT00053,ST0001,HP:0008480, Cervical spondylosis,Abnormality of the skeletal system,47,Yes
+PH00112,PT00112,ST0001,HP:0008480, Cervical spondylosis,Abnormality of the skeletal system,42,Yes
+PH00187,PT00187,ST0001,HP:0008480, Cervical spondylosis,Abnormality of the skeletal system,61,Yes
+PH00005,PT00005,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,36,Yes
+PH00029,PT00029,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,59,Yes
+PH00091,PT00091,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,44,Yes
+PH00299,PT00299,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,62,Yes
+PH00312,PT00312,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,56,Yes
+PH00319,PT00319,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,41,Yes
+PH00374,PT00374,ST0001,HP:0030871, Facet joint arthrosis,Abnormality of the skeletal system,37,Yes
+PH00059,PT00059,ST0001,HP:0003416, Spinal canal stenosis,Abnormality of the skeletal system,38,Yes
+PH00113,PT00113,ST0001,HP:0003416, Spinal canal stenosis,Abnormality of the skeletal system,52,Yes
+PH00141,PT00141,ST0001,HP:0003416, Spinal canal stenosis,Abnormality of the skeletal system,53,Yes
+PH00202,PT00202,ST0001,HP:0003416, Spinal canal stenosis,Abnormality of the skeletal system,53,Yes
+PH00388,PT00388,ST0002,HP:0200046, Cat cry,Abnormality of the voice,16,Yes
+PH00420,PT00420,ST0002,HP:0200046, Cat cry,Abnormality of the voice,4,Yes
+PH00426,PT00426,ST0002,HP:0200046, Cat cry,Abnormality of the voice,4,Yes
+PH00437,PT00437,ST0002,HP:0200046, Cat cry,Abnormality of the voice,21,Yes
+PH00467,PT00467,ST0002,HP:0200046, Cat cry,Abnormality of the voice,16,Yes
+PH00542,PT00542,ST0002,HP:0200046, Cat cry,Abnormality of the voice,15,Yes
+PH00620,PT00620,ST0002,HP:0200046, Cat cry,Abnormality of the voice,11,Yes
+PH00002,PT00002,ST0001,HP:0001513, Obesity,Growth abnormality,52,Yes
+PH00004,PT00004,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00011,PT00011,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00012,PT00012,ST0001,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00013,PT00013,ST0001,HP:0001513, Obesity,Growth abnormality,61,Yes
+PH00016,PT00016,ST0001,HP:0001513, Obesity,Growth abnormality,54,Yes
+PH00018,PT00018,ST0001,HP:0001513, Obesity,Growth abnormality,32,Yes
+PH00021,PT00021,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00025,PT00025,ST0001,HP:0001513, Obesity,Growth abnormality,38,Yes
+PH00030,PT00030,ST0001,HP:0001513, Obesity,Growth abnormality,53,Yes
+PH00032,PT00032,ST0001,HP:0001513, Obesity,Growth abnormality,66,Yes
+PH00036,PT00036,ST0001,HP:0001513, Obesity,Growth abnormality,60,Yes
+PH00037,PT00037,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00039,PT00039,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00042,PT00042,ST0001,HP:0001513, Obesity,Growth abnormality,48,Yes
+PH00046,PT00046,ST0001,HP:0001513, Obesity,Growth abnormality,64,Yes
+PH00049,PT00049,ST0001,HP:0001513, Obesity,Growth abnormality,59,Yes
+PH00056,PT00056,ST0001,HP:0001513, Obesity,Growth abnormality,60,Yes
+PH00058,PT00058,ST0001,HP:0001513, Obesity,Growth abnormality,50,Yes
+PH00061,PT00061,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00063,PT00063,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00065,PT00065,ST0001,HP:0001513, Obesity,Growth abnormality,53,Yes
+PH00067,PT00067,ST0001,HP:0001513, Obesity,Growth abnormality,38,Yes
+PH00070,PT00070,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00072,PT00072,ST0001,HP:0001513, Obesity,Growth abnormality,58,Yes
+PH00074,PT00074,ST0001,HP:0001513, Obesity,Growth abnormality,60,Yes
+PH00078,PT00078,ST0001,HP:0001513, Obesity,Growth abnormality,65,Yes
+PH00079,PT00079,ST0001,HP:0001513, Obesity,Growth abnormality,64,Yes
+PH00081,PT00081,ST0001,HP:0001513, Obesity,Growth abnormality,43,Yes
+PH00082,PT00082,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00088,PT00088,ST0001,HP:0001513, Obesity,Growth abnormality,57,Yes
+PH00090,PT00090,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00094,PT00094,ST0001,HP:0001513, Obesity,Growth abnormality,70,Yes
+PH00095,PT00095,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00096,PT00096,ST0001,HP:0001513, Obesity,Growth abnormality,41,Yes
+PH00097,PT00097,ST0001,HP:0001513, Obesity,Growth abnormality,39,Yes
+PH00098,PT00098,ST0001,HP:0001513, Obesity,Growth abnormality,51,Yes
+PH00101,PT00101,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00105,PT00105,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00107,PT00107,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00110,PT00110,ST0001,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00111,PT00111,ST0001,HP:0001513, Obesity,Growth abnormality,67,Yes
+PH00114,PT00114,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00118,PT00118,ST0001,HP:0001513, Obesity,Growth abnormality,50,Yes
+PH00120,PT00120,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00121,PT00121,ST0001,HP:0001513, Obesity,Growth abnormality,46,Yes
+PH00122,PT00122,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00123,PT00123,ST0001,HP:0001513, Obesity,Growth abnormality,41,Yes
+PH00125,PT00125,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00126,PT00126,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00128,PT00128,ST0001,HP:0001513, Obesity,Growth abnormality,58,Yes
+PH00129,PT00129,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00134,PT00134,ST0001,HP:0001513, Obesity,Growth abnormality,54,Yes
+PH00140,PT00140,ST0001,HP:0001513, Obesity,Growth abnormality,40,Yes
+PH00143,PT00143,ST0001,HP:0001513, Obesity,Growth abnormality,38,Yes
+PH00150,PT00150,ST0001,HP:0001513, Obesity,Growth abnormality,40,Yes
+PH00154,PT00154,ST0001,HP:0001513, Obesity,Growth abnormality,43,Yes
+PH00156,PT00156,ST0001,HP:0001513, Obesity,Growth abnormality,67,Yes
+PH00158,PT00158,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00162,PT00162,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00168,PT00168,ST0001,HP:0001513, Obesity,Growth abnormality,32,Yes
+PH00170,PT00170,ST0001,HP:0001513, Obesity,Growth abnormality,49,Yes
+PH00174,PT00174,ST0001,HP:0001513, Obesity,Growth abnormality,56,Yes
+PH00176,PT00176,ST0001,HP:0001513, Obesity,Growth abnormality,61,Yes
+PH00178,PT00178,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00180,PT00180,ST0001,HP:0001513, Obesity,Growth abnormality,49,Yes
+PH00182,PT00182,ST0001,HP:0001513, Obesity,Growth abnormality,61,Yes
+PH00183,PT00183,ST0001,HP:0001513, Obesity,Growth abnormality,60,Yes
+PH00184,PT00184,ST0001,HP:0001513, Obesity,Growth abnormality,63,Yes
+PH00185,PT00185,ST0001,HP:0001513, Obesity,Growth abnormality,35,Yes
+PH00193,PT00193,ST0001,HP:0001513, Obesity,Growth abnormality,69,Yes
+PH00203,PT00203,ST0001,HP:0001513, Obesity,Growth abnormality,50,Yes
+PH00206,PT00206,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00215,PT00215,ST0001,HP:0001513, Obesity,Growth abnormality,29,Yes
+PH00216,PT00216,ST0001,HP:0001513, Obesity,Growth abnormality,63,Yes
+PH00217,PT00217,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00219,PT00219,ST0001,HP:0001513, Obesity,Growth abnormality,61,Yes
+PH00221,PT00221,ST0001,HP:0001513, Obesity,Growth abnormality,63,Yes
+PH00224,PT00224,ST0001,HP:0001513, Obesity,Growth abnormality,51,Yes
+PH00225,PT00225,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00226,PT00226,ST0001,HP:0001513, Obesity,Growth abnormality,29,Yes
+PH00231,PT00231,ST0001,HP:0001513, Obesity,Growth abnormality,48,Yes
+PH00234,PT00234,ST0001,HP:0001513, Obesity,Growth abnormality,32,Yes
+PH00237,PT00237,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00240,PT00240,ST0001,HP:0001513, Obesity,Growth abnormality,49,Yes
+PH00242,PT00242,ST0001,HP:0001513, Obesity,Growth abnormality,54,Yes
+PH00243,PT00243,ST0001,HP:0001513, Obesity,Growth abnormality,52,Yes
+PH00244,PT00244,ST0001,HP:0001513, Obesity,Growth abnormality,51,Yes
+PH00250,PT00250,ST0001,HP:0001513, Obesity,Growth abnormality,31,Yes
+PH00257,PT00257,ST0001,HP:0001513, Obesity,Growth abnormality,48,Yes
+PH00259,PT00259,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00264,PT00264,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00265,PT00265,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00266,PT00266,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00268,PT00268,ST0001,HP:0001513, Obesity,Growth abnormality,66,Yes
+PH00269,PT00269,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00271,PT00271,ST0001,HP:0001513, Obesity,Growth abnormality,39,Yes
+PH00272,PT00272,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00273,PT00273,ST0001,HP:0001513, Obesity,Growth abnormality,41,Yes
+PH00278,PT00278,ST0001,HP:0001513, Obesity,Growth abnormality,38,Yes
+PH00286,PT00286,ST0001,HP:0001513, Obesity,Growth abnormality,69,Yes
+PH00289,PT00289,ST0001,HP:0001513, Obesity,Growth abnormality,64,Yes
+PH00295,PT00295,ST0001,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00296,PT00296,ST0001,HP:0001513, Obesity,Growth abnormality,57,Yes
+PH00303,PT00303,ST0001,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00304,PT00304,ST0001,HP:0001513, Obesity,Growth abnormality,42,Yes
+PH00307,PT00307,ST0001,HP:0001513, Obesity,Growth abnormality,54,Yes
+PH00310,PT00310,ST0001,HP:0001513, Obesity,Growth abnormality,62,Yes
+PH00311,PT00311,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00313,PT00313,ST0001,HP:0001513, Obesity,Growth abnormality,60,Yes
+PH00314,PT00314,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00318,PT00318,ST0001,HP:0001513, Obesity,Growth abnormality,43,Yes
+PH00324,PT00324,ST0001,HP:0001513, Obesity,Growth abnormality,55,Yes
+PH00326,PT00326,ST0001,HP:0001513, Obesity,Growth abnormality,40,Yes
+PH00327,PT00327,ST0001,HP:0001513, Obesity,Growth abnormality,56,Yes
+PH00330,PT00330,ST0001,HP:0001513, Obesity,Growth abnormality,50,Yes
+PH00334,PT00334,ST0001,HP:0001513, Obesity,Growth abnormality,47,Yes
+PH00336,PT00336,ST0001,HP:0001513, Obesity,Growth abnormality,46,Yes
+PH00342,PT00342,ST0001,HP:0001513, Obesity,Growth abnormality,58,Yes
+PH00343,PT00343,ST0001,HP:0001513, Obesity,Growth abnormality,43,Yes
+PH00344,PT00344,ST0001,HP:0001513, Obesity,Growth abnormality,54,Yes
+PH00347,PT00347,ST0001,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00349,PT00349,ST0001,HP:0001513, Obesity,Growth abnormality,51,Yes
+PH00352,PT00352,ST0001,HP:0001513, Obesity,Growth abnormality,37,Yes
+PH00354,PT00354,ST0001,HP:0001513, Obesity,Growth abnormality,39,Yes
+PH00359,PT00359,ST0001,HP:0001513, Obesity,Growth abnormality,,
+PH00361,PT00361,ST0001,HP:0001513, Obesity,Growth abnormality,56,Yes
+PH00368,PT00368,ST0001,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00369,PT00369,ST0001,HP:0001513, Obesity,Growth abnormality,62,Yes
+PH00372,PT00372,ST0001,HP:0001513, Obesity,Growth abnormality,41,Yes
+PH00382,PT00382,ST0002,HP:0001513, Obesity,Growth abnormality,19,Yes
+PH00404,PT00404,ST0002,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00415,PT00415,ST0002,HP:0001513, Obesity,Growth abnormality,19,Yes
+PH00421,PT00421,ST0002,HP:0001513, Obesity,Growth abnormality,16,Yes
+PH00443,PT00443,ST0002,HP:0001513, Obesity,Growth abnormality,14,Yes
+PH00454,PT00454,ST0002,HP:0001513, Obesity,Growth abnormality,16,Yes
+PH00465,PT00465,ST0002,HP:0001513, Obesity,Growth abnormality,21,Yes
+PH00473,PT00473,ST0002,HP:0001513, Obesity,Growth abnormality,10,Yes
+PH00488,PT00488,ST0002,HP:0001513, Obesity,Growth abnormality,17,Yes
+PH00505,PT00505,ST0002,HP:0001513, Obesity,Growth abnormality,18,Yes
+PH00512,PT00512,ST0002,HP:0001513, Obesity,Growth abnormality,18,Yes
+PH00520,PT00520,ST0002,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00521,PT00521,ST0002,HP:0001513, Obesity,Growth abnormality,17,Yes
+PH00534,PT00534,ST0002,HP:0001513, Obesity,Growth abnormality,19,Yes
+PH00553,PT00553,ST0002,HP:0001513, Obesity,Growth abnormality,18,Yes
+PH00566,PT00566,ST0002,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00577,PT00577,ST0002,HP:0001513, Obesity,Growth abnormality,16,Yes
+PH00582,PT00582,ST0002,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00600,PT00600,ST0002,HP:0001513, Obesity,Growth abnormality,0,Yes
+PH00601,PT00601,ST0002,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00613,PT00613,ST0002,HP:0001513, Obesity,Growth abnormality,21,Yes
+PH00629,PT00629,ST0003,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00632,PT00632,ST0003,HP:0001513, Obesity,Growth abnormality,23,Yes
+PH00644,PT00644,ST0003,HP:0001513, Obesity,Growth abnormality,12,Yes
+PH00668,PT00668,ST0003,HP:0001513, Obesity,Growth abnormality,32,Yes
+PH00680,PT00680,ST0003,HP:0001513, Obesity,Growth abnormality,28,Yes
+PH00692,PT00692,ST0003,HP:0001513, Obesity,Growth abnormality,21,Yes
+PH00695,PT00695,ST0003,HP:0001513, Obesity,Growth abnormality,46,Yes
+PH00701,PT00701,ST0003,HP:0001513, Obesity,Growth abnormality,44,Yes
+PH00714,PT00714,ST0003,HP:0001513, Obesity,Growth abnormality,,
+PH00716,PT00716,ST0003,HP:0001513, Obesity,Growth abnormality,42,Yes
+PH00722,PT00722,ST0003,HP:0001513, Obesity,Growth abnormality,30,Yes
+PH00725,PT00725,ST0003,HP:0001513, Obesity,Growth abnormality,45,Yes
+PH00737,PT00737,ST0003,HP:0001513, Obesity,Growth abnormality,43,Yes
+PH00752,PT00752,ST0003,HP:0001513, Obesity,Growth abnormality,19,Yes
+PH00758,PT00758,ST0003,HP:0001513, Obesity,Growth abnormality,29,Yes
+PH00764,PT00764,ST0003,HP:0001513, Obesity,Growth abnormality,25,Yes
+PH00767,PT00767,ST0003,HP:0001513, Obesity,Growth abnormality,15,Yes
+PH00806,PT00806,ST0003,HP:0001513, Obesity,Growth abnormality,32,Yes
+PH00818,PT00818,ST0003,HP:0001513, Obesity,Growth abnormality,34,Yes
+PH00047,PT00047,ST0001,HP:0004808, Acute myeloid leukemia,Neoplasm,49,Yes
+PH00261,PT00261,ST0001,HP:0004808, Acute myeloid leukemia,Neoplasm,39,Yes
+PH00298,PT00298,ST0001,HP:0004808, Acute myeloid leukemia,Neoplasm,57,Yes
+PH00381,PT00381,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,15,Yes
+PH00423,PT00423,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,3,Yes
+PH00425,PT00425,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,9,Yes
+PH00439,PT00439,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,0,Yes
+PH00490,PT00490,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,14,Yes
+PH00494,PT00494,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,8,Yes
+PH00496,PT00496,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,0,Yes
+PH00509,PT00509,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,1,Yes
+PH00543,PT00543,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,5,Yes
+PH00552,PT00552,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,5,Yes
+PH00562,PT00562,ST0002,HP:0004808, Acute myeloid leukemia,Neoplasm,0,Yes
+PH00116,PT00116,ST0001,HP:0009592, Astrocytoma,Neoplasm,68,Yes
+PH00436,PT00436,ST0002,HP:0009592, Astrocytoma,Neoplasm,12,Yes
+PH00638,PT00638,ST0003,HP:0009592, Astrocytoma,Neoplasm,15,Yes
+PH00677,PT00677,ST0003,HP:0009592, Astrocytoma,Neoplasm,9,Yes
+PH00800,PT00800,ST0003,HP:0009592, Astrocytoma,Neoplasm,7,Yes
+PH00038,PT00038,ST0001,HP:0003003, Colon cancer,Neoplasm,37,Yes
+PH00087,PT00087,ST0001,HP:0003003, Colon cancer,Neoplasm,59,Yes
+PH00132,PT00132,ST0001,HP:0003003, Colon cancer,Neoplasm,51,Yes
+PH00263,PT00263,ST0001,HP:0003003, Colon cancer,Neoplasm,39,Yes
+PH00471,PT00471,ST0002,HP:0003003, Colon cancer,Neoplasm,10,Yes
+PH00710,PT00710,ST0003,HP:0003003, Colon cancer,Neoplasm,19,Yes
+PH00031,PT00031,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,41,Yes
+PH00153,PT00153,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,42,Yes
+PH00227,PT00227,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,62,Yes
+PH00253,PT00253,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,38,Yes
+PH00337,PT00337,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,32,Yes
+PH00355,PT00355,ST0001,HP:0012189, Hodgkin lymphoma,Neoplasm,42,Yes
+PH00383,PT00383,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,7,Yes
+PH00399,PT00399,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,15,Yes
+PH00525,PT00525,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,8,Yes
+PH00540,PT00540,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,1,Yes
+PH00565,PT00565,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,6,Yes
+PH00581,PT00581,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,0,Yes
+PH00587,PT00587,ST0002,HP:0012189, Hodgkin lymphoma,Neoplasm,14,Yes
+PH00749,PT00749,ST0003,HP:0012189, Hodgkin lymphoma,Neoplasm,32,Yes
+PH00797,PT00797,ST0003,HP:0012189, Hodgkin lymphoma,Neoplasm,42,Yes
+PH00321,PT00321,ST0001,HP:0002665, Lymphoma,Neoplasm,44,Yes
+PH00386,PT00386,ST0002,HP:0002665, Lymphoma,Neoplasm,1,Yes
+PH00413,PT00413,ST0002,HP:0002665, Lymphoma,Neoplasm,15,Yes
+PH00431,PT00431,ST0002,HP:0002665, Lymphoma,Neoplasm,18,Yes
+PH00435,PT00435,ST0002,HP:0002665, Lymphoma,Neoplasm,20,Yes
+PH00447,PT00447,ST0002,HP:0002665, Lymphoma,Neoplasm,17,Yes
+PH00457,PT00457,ST0002,HP:0002665, Lymphoma,Neoplasm,9,Yes
+PH00515,PT00515,ST0002,HP:0002665, Lymphoma,Neoplasm,2,Yes
+PH00586,PT00586,ST0002,HP:0002665, Lymphoma,Neoplasm,20,Yes
+PH00593,PT00593,ST0002,HP:0002665, Lymphoma,Neoplasm,0,Yes
+PH00619,PT00619,ST0002,HP:0002665, Lymphoma,Neoplasm,7,Yes
+PH00262,PT00262,ST0001,HP:0002865, Medullary thyroid carcinoma,Neoplasm,35,Yes
+PH00371,PT00371,ST0001,HP:0002865, Medullary thyroid carcinoma,Neoplasm,54,Yes
+PH00782,PT00782,ST0003,HP:0002865, Medullary thyroid carcinoma,Neoplasm,40,Yes
+PH00794,PT00794,ST0003,HP:0002861, Melanoma,Neoplasm,29,Yes
+PH00084,PT00084,ST0001,HP:0006775, Multiple myeloma,Neoplasm,52,Yes
+PH00155,PT00155,ST0001,HP:0006775, Multiple myeloma,Neoplasm,57,Yes
+PH00212,PT00212,ST0001,HP:0006775, Multiple myeloma,Neoplasm,60,Yes
+PH00260,PT00260,ST0001,HP:0006775, Multiple myeloma,Neoplasm,41,Yes
+PH00647,PT00647,ST0003,HP:0006775, Multiple myeloma,Neoplasm,9,Yes
+PH00713,PT00713,ST0003,HP:0006775, Multiple myeloma,Neoplasm,27,Yes
+PH00734,PT00734,ST0003,HP:0006775, Multiple myeloma,Neoplasm,48,Yes
+PH00791,PT00791,ST0003,HP:0006775, Multiple myeloma,Neoplasm,10,Yes
+PH00035,PT00035,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,40,Yes
+PH00062,PT00062,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,47,Yes
+PH00066,PT00066,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,36,Yes
+PH00068,PT00068,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,58,Yes
+PH00169,PT00169,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,63,Yes
+PH00172,PT00172,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,52,Yes
+PH00209,PT00209,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,49,Yes
+PH00238,PT00238,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,42,Yes
+PH00284,PT00284,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,56,Yes
+PH00290,PT00290,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,37,Yes
+PH00358,PT00358,ST0001,HP:0100013, Neoplasm of the breast,Neoplasm,32,Yes
+PH00041,PT00041,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,49,Yes
+PH00060,PT00060,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,48,Yes
+PH00146,PT00146,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,61,Yes
+PH00152,PT00152,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,56,Yes
+PH00171,PT00171,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,45,Yes
+PH00177,PT00177,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,46,Yes
+PH00207,PT00207,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,64,Yes
+PH00213,PT00213,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,39,Yes
+PH00291,PT00291,ST0001,HP:0002894, Neoplasm of the pancreas,Neoplasm,66,Yes
+PH00428,PT00428,ST0002,HP:0002894, Neoplasm of the pancreas,Neoplasm,1,Yes
+PH00635,PT00635,ST0003,HP:0002894, Neoplasm of the pancreas,Neoplasm,16,Yes
+PH00683,PT00683,ST0003,HP:0002894, Neoplasm of the pancreas,Neoplasm,28,Yes
+PH00139,PT00139,ST0001,HP:0040198, Non-medullary thyroid carcinoma,Neoplasm,60,Yes
+PH00144,PT00144,ST0001,HP:0040198, Non-medullary thyroid carcinoma,Neoplasm,67,Yes
+PH00527,PT00527,ST0002,HP:0040198, Non-medullary thyroid carcinoma,Neoplasm,1,Yes
+PH00776,PT00776,ST0003,HP:0040198, Non-medullary thyroid carcinoma,Neoplasm,17,Yes
+PH00073,PT00073,ST0001,HP:0030358, Non-small cell lung carcinoma,Neoplasm,54,Yes
+PH00157,PT00157,ST0001,HP:0030358, Non-small cell lung carcinoma,Neoplasm,54,Yes
+PH00650,PT00650,ST0003,HP:0030358, Non-small cell lung carcinoma,Neoplasm,24,Yes
+PH00384,PT00384,ST0002,HP:0002669, Osteosarcoma,Neoplasm,16,Yes
+PH00528,PT00528,ST0002,HP:0002669, Osteosarcoma,Neoplasm,6,Yes
+PH00580,PT00580,ST0002,HP:0002669, Osteosarcoma,Neoplasm,0,Yes
+PH00728,PT00728,ST0003,HP:0002669, Osteosarcoma,Neoplasm,21,Yes
+PH00761,PT00761,ST0003,HP:0002669, Osteosarcoma,Neoplasm,16,Yes
+PH00785,PT00785,ST0003,HP:0002669, Osteosarcoma,Neoplasm,19,Yes
+PH00788,PT00788,ST0003,HP:0002669, Osteosarcoma,Neoplasm,9,Yes
+PH00809,PT00809,ST0003,HP:0002669, Osteosarcoma,Neoplasm,41,Yes
+PH00824,PT00824,ST0003,HP:0002669, Osteosarcoma,Neoplasm,3,Yes
+PH00825,PT00825,ST0003,HP:0002669, Osteosarcoma,Neoplasm,0,Yes
+PH00022,PT00022,ST0001,HP:0012125, Prostate cancer,Neoplasm,68,Yes
+PH00057,PT00057,ST0001,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00085,PT00085,ST0001,HP:0012125, Prostate cancer,Neoplasm,55,Yes
+PH00093,PT00093,ST0001,HP:0012125, Prostate cancer,Neoplasm,49,Yes
+PH00137,PT00137,ST0001,HP:0012125, Prostate cancer,Neoplasm,41,Yes
+PH00163,PT00163,ST0001,HP:0012125, Prostate cancer,Neoplasm,35,Yes
+PH00190,PT00190,ST0001,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00214,PT00214,ST0001,HP:0012125, Prostate cancer,Neoplasm,42,Yes
+PH00235,PT00235,ST0001,HP:0012125, Prostate cancer,Neoplasm,45,Yes
+PH00254,PT00254,ST0001,HP:0012125, Prostate cancer,Neoplasm,67,Yes
+PH00285,PT00285,ST0001,HP:0012125, Prostate cancer,Neoplasm,55,Yes
+PH00315,PT00315,ST0001,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00316,PT00316,ST0001,HP:0012125, Prostate cancer,Neoplasm,34,Yes
+PH00826,PT00826,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00827,PT00827,ST0004,HP:0012125, Prostate cancer,Neoplasm,48,Yes
+PH00828,PT00828,ST0004,HP:0012125, Prostate cancer,Neoplasm,47,Yes
+PH00829,PT00829,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00830,PT00830,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00831,PT00831,ST0004,HP:0012125, Prostate cancer,Neoplasm,48,Yes
+PH00832,PT00832,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00833,PT00833,ST0004,HP:0012125, Prostate cancer,Neoplasm,40,Yes
+PH00834,PT00834,ST0004,HP:0012125, Prostate cancer,Neoplasm,56,Yes
+PH00835,PT00835,ST0004,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00836,PT00836,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00837,PT00837,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00838,PT00838,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00839,PT00839,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00840,PT00840,ST0004,HP:0012125, Prostate cancer,Neoplasm,42,Yes
+PH00841,PT00841,ST0004,HP:0012125, Prostate cancer,Neoplasm,66,Yes
+PH00842,PT00842,ST0004,HP:0012125, Prostate cancer,Neoplasm,65,Yes
+PH00843,PT00843,ST0004,HP:0012125, Prostate cancer,Neoplasm,63,Yes
+PH00844,PT00844,ST0004,HP:0012125, Prostate cancer,Neoplasm,44,Yes
+PH00845,PT00845,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00846,PT00846,ST0004,HP:0012125, Prostate cancer,Neoplasm,49,Yes
+PH00847,PT00847,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00848,PT00848,ST0004,HP:0012125, Prostate cancer,Neoplasm,45,Yes
+PH00849,PT00849,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00850,PT00850,ST0004,HP:0012125, Prostate cancer,Neoplasm,72,Yes
+PH00851,PT00851,ST0004,HP:0012125, Prostate cancer,Neoplasm,44,Yes
+PH00852,PT00852,ST0004,HP:0012125, Prostate cancer,Neoplasm,44,Yes
+PH00853,PT00853,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00854,PT00854,ST0004,HP:0012125, Prostate cancer,Neoplasm,72,Yes
+PH00855,PT00855,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00856,PT00856,ST0004,HP:0012125, Prostate cancer,Neoplasm,47,Yes
+PH00857,PT00857,ST0004,HP:0012125, Prostate cancer,Neoplasm,63,Yes
+PH00858,PT00858,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00859,PT00859,ST0004,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00860,PT00860,ST0004,HP:0012125, Prostate cancer,Neoplasm,56,Yes
+PH00861,PT00861,ST0004,HP:0012125, Prostate cancer,Neoplasm,46,Yes
+PH00862,PT00862,ST0004,HP:0012125, Prostate cancer,Neoplasm,37,Yes
+PH00863,PT00863,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00864,PT00864,ST0004,HP:0012125, Prostate cancer,Neoplasm,74,Yes
+PH00865,PT00865,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00866,PT00866,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00867,PT00867,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00868,PT00868,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00869,PT00869,ST0004,HP:0012125, Prostate cancer,Neoplasm,46,Yes
+PH00870,PT00870,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00871,PT00871,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00872,PT00872,ST0004,HP:0012125, Prostate cancer,Neoplasm,35,Yes
+PH00873,PT00873,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00874,PT00874,ST0004,HP:0012125, Prostate cancer,Neoplasm,62,Yes
+PH00875,PT00875,ST0004,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00876,PT00876,ST0004,HP:0012125, Prostate cancer,Neoplasm,61,Yes
+PH00877,PT00877,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00878,PT00878,ST0004,HP:0012125, Prostate cancer,Neoplasm,66,Yes
+PH00879,PT00879,ST0004,HP:0012125, Prostate cancer,Neoplasm,46,Yes
+PH00880,PT00880,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00881,PT00881,ST0004,HP:0012125, Prostate cancer,Neoplasm,76,Yes
+PH00882,PT00882,ST0004,HP:0012125, Prostate cancer,Neoplasm,33,Yes
+PH00883,PT00883,ST0004,HP:0012125, Prostate cancer,Neoplasm,58,Yes
+PH00884,PT00884,ST0004,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00885,PT00885,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00886,PT00886,ST0004,HP:0012125, Prostate cancer,Neoplasm,49,Yes
+PH00887,PT00887,ST0004,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00888,PT00888,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00889,PT00889,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00890,PT00890,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00891,PT00891,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00892,PT00892,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00893,PT00893,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00894,PT00894,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00895,PT00895,ST0004,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00896,PT00896,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00897,PT00897,ST0004,HP:0012125, Prostate cancer,Neoplasm,38,Yes
+PH00898,PT00898,ST0004,HP:0012125, Prostate cancer,Neoplasm,56,Yes
+PH00899,PT00899,ST0004,HP:0012125, Prostate cancer,Neoplasm,48,Yes
+PH00900,PT00900,ST0004,HP:0012125, Prostate cancer,Neoplasm,66,Yes
+PH00901,PT00901,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00902,PT00902,ST0004,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00903,PT00903,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00904,PT00904,ST0004,HP:0012125, Prostate cancer,Neoplasm,41,Yes
+PH00905,PT00905,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00906,PT00906,ST0004,HP:0012125, Prostate cancer,Neoplasm,36,Yes
+PH00907,PT00907,ST0004,HP:0012125, Prostate cancer,Neoplasm,58,Yes
+PH00908,PT00908,ST0004,HP:0012125, Prostate cancer,Neoplasm,72,Yes
+PH00909,PT00909,ST0004,HP:0012125, Prostate cancer,Neoplasm,67,Yes
+PH00910,PT00910,ST0004,HP:0012125, Prostate cancer,Neoplasm,65,Yes
+PH00911,PT00911,ST0004,HP:0012125, Prostate cancer,Neoplasm,66,Yes
+PH00912,PT00912,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00913,PT00913,ST0004,HP:0012125, Prostate cancer,Neoplasm,45,Yes
+PH00914,PT00914,ST0004,HP:0012125, Prostate cancer,Neoplasm,40,Yes
+PH00915,PT00915,ST0004,HP:0012125, Prostate cancer,Neoplasm,44,Yes
+PH00916,PT00916,ST0004,HP:0012125, Prostate cancer,Neoplasm,62,Yes
+PH00917,PT00917,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00918,PT00918,ST0004,HP:0012125, Prostate cancer,Neoplasm,58,Yes
+PH00919,PT00919,ST0004,HP:0012125, Prostate cancer,Neoplasm,47,Yes
+PH00920,PT00920,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00921,PT00921,ST0004,HP:0012125, Prostate cancer,Neoplasm,71,Yes
+PH00922,PT00922,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00923,PT00923,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00924,PT00924,ST0004,HP:0012125, Prostate cancer,Neoplasm,44,Yes
+PH00925,PT00925,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00926,PT00926,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00927,PT00927,ST0004,HP:0012125, Prostate cancer,Neoplasm,67,Yes
+PH00928,PT00928,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00929,PT00929,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00930,PT00930,ST0004,HP:0012125, Prostate cancer,Neoplasm,54,Yes
+PH00931,PT00931,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00932,PT00932,ST0004,HP:0012125, Prostate cancer,Neoplasm,62,Yes
+PH00933,PT00933,ST0004,HP:0012125, Prostate cancer,Neoplasm,73,Yes
+PH00934,PT00934,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00935,PT00935,ST0004,HP:0012125, Prostate cancer,Neoplasm,63,Yes
+PH00936,PT00936,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00937,PT00937,ST0004,HP:0012125, Prostate cancer,Neoplasm,68,Yes
+PH00938,PT00938,ST0004,HP:0012125, Prostate cancer,Neoplasm,55,Yes
+PH00939,PT00939,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00940,PT00940,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00941,PT00941,ST0004,HP:0012125, Prostate cancer,Neoplasm,48,Yes
+PH00942,PT00942,ST0004,HP:0012125, Prostate cancer,Neoplasm,39,Yes
+PH00943,PT00943,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00944,PT00944,ST0004,HP:0012125, Prostate cancer,Neoplasm,61,Yes
+PH00945,PT00945,ST0004,HP:0012125, Prostate cancer,Neoplasm,40,Yes
+PH00946,PT00946,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00947,PT00947,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00948,PT00948,ST0004,HP:0012125, Prostate cancer,Neoplasm,48,Yes
+PH00949,PT00949,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00950,PT00950,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00951,PT00951,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00952,PT00952,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00953,PT00953,ST0004,HP:0012125, Prostate cancer,Neoplasm,45,Yes
+PH00954,PT00954,ST0004,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00955,PT00955,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00956,PT00956,ST0004,HP:0012125, Prostate cancer,Neoplasm,43,Yes
+PH00957,PT00957,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00958,PT00958,ST0004,HP:0012125, Prostate cancer,Neoplasm,52,Yes
+PH00959,PT00959,ST0004,HP:0012125, Prostate cancer,Neoplasm,42,Yes
+PH00960,PT00960,ST0004,HP:0012125, Prostate cancer,Neoplasm,42,Yes
+PH00961,PT00961,ST0004,HP:0012125, Prostate cancer,Neoplasm,67,Yes
+PH00962,PT00962,ST0004,HP:0012125, Prostate cancer,Neoplasm,55,Yes
+PH00963,PT00963,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00964,PT00964,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00965,PT00965,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00966,PT00966,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00967,PT00967,ST0004,HP:0012125, Prostate cancer,Neoplasm,53,Yes
+PH00968,PT00968,ST0004,HP:0012125, Prostate cancer,Neoplasm,58,Yes
+PH00969,PT00969,ST0004,HP:0012125, Prostate cancer,Neoplasm,54,Yes
+PH00970,PT00970,ST0004,HP:0012125, Prostate cancer,Neoplasm,66,Yes
+PH00971,PT00971,ST0004,HP:0012125, Prostate cancer,Neoplasm,67,Yes
+PH00972,PT00972,ST0004,HP:0012125, Prostate cancer,Neoplasm,57,Yes
+PH00973,PT00973,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00974,PT00974,ST0004,HP:0012125, Prostate cancer,Neoplasm,36,Yes
+PH00975,PT00975,ST0004,HP:0012125, Prostate cancer,Neoplasm,50,Yes
+PH00976,PT00976,ST0004,HP:0012125, Prostate cancer,Neoplasm,51,Yes
+PH00977,PT00977,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00978,PT00978,ST0004,HP:0012125, Prostate cancer,Neoplasm,35,Yes
+PH00979,PT00979,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00980,PT00980,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00981,PT00981,ST0004,HP:0012125, Prostate cancer,Neoplasm,49,Yes
+PH00982,PT00982,ST0004,HP:0012125, Prostate cancer,Neoplasm,46,Yes
+PH00983,PT00983,ST0004,HP:0012125, Prostate cancer,Neoplasm,60,Yes
+PH00984,PT00984,ST0004,HP:0012125, Prostate cancer,Neoplasm,64,Yes
+PH00985,PT00985,ST0004,HP:0012125, Prostate cancer,Neoplasm,36,Yes
+PH00986,PT00986,ST0004,HP:0012125, Prostate cancer,Neoplasm,70,Yes
+PH00987,PT00987,ST0004,HP:0012125, Prostate cancer,Neoplasm,77,Yes
+PH00988,PT00988,ST0004,HP:0012125, Prostate cancer,Neoplasm,40,Yes
+PH00989,PT00989,ST0004,HP:0012125, Prostate cancer,Neoplasm,69,Yes
+PH00990,PT00990,ST0004,HP:0012125, Prostate cancer,Neoplasm,61,Yes
+PH00991,PT00991,ST0004,HP:0012125, Prostate cancer,Neoplasm,56,Yes
+PH00992,PT00992,ST0004,HP:0012125, Prostate cancer,Neoplasm,46,Yes
+PH00993,PT00993,ST0004,HP:0012125, Prostate cancer,Neoplasm,38,Yes
+PH00994,PT00994,ST0004,HP:0012125, Prostate cancer,Neoplasm,47,Yes
+PH00995,PT00995,ST0004,HP:0012125, Prostate cancer,Neoplasm,62,Yes
+PH00996,PT00996,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00997,PT00997,ST0004,HP:0012125, Prostate cancer,Neoplasm,58,Yes
+PH00998,PT00998,ST0004,HP:0012125, Prostate cancer,Neoplasm,59,Yes
+PH00999,PT00999,ST0004,HP:0012125, Prostate cancer,Neoplasm,71,Yes
+PH00043,PT00043,ST0001,HP:0030357, Small cell lung carcinoma,Neoplasm,55,Yes
+PH00109,PT00109,ST0001,HP:0030359, Squamous cell lung carcinoma,Neoplasm,46,Yes
+PH00659,PT00659,ST0003,HP:0030359, Squamous cell lung carcinoma,Neoplasm,27,Yes
+PH00674,PT00674,ST0003,HP:0030359, Squamous cell lung carcinoma,Neoplasm,11,Yes
+PH00009,PT00009,ST0001,HP:0012126, Stomach cancer,Neoplasm,49,Yes
+PH00023,PT00023,ST0001,HP:0012126, Stomach cancer,Neoplasm,41,Yes
+PH00064,PT00064,ST0001,HP:0012126, Stomach cancer,Neoplasm,62,Yes
+PH00115,PT00115,ST0001,HP:0012126, Stomach cancer,Neoplasm,42,Yes
+PH00201,PT00201,ST0001,HP:0012126, Stomach cancer,Neoplasm,52,Yes
+PH00223,PT00223,ST0001,HP:0012126, Stomach cancer,Neoplasm,56,Yes
+PH00283,PT00283,ST0001,HP:0012126, Stomach cancer,Neoplasm,43,Yes
+PH00341,PT00341,ST0001,HP:0012126, Stomach cancer,Neoplasm,48,Yes
+PH00353,PT00353,ST0001,HP:0012126, Stomach cancer,Neoplasm,60,Yes
+PH00370,PT00370,ST0001,HP:0012126, Stomach cancer,Neoplasm,52,Yes
+PH00615,PT00615,ST0002,HP:0012126, Stomach cancer,Neoplasm,10,Yes
+PH00653,PT00653,ST0003,HP:0012126, Stomach cancer,Neoplasm,38,Yes
+PH00686,PT00686,ST0003,HP:0012126, Stomach cancer,Neoplasm,17,Yes
+PH00812,PT00812,ST0003,HP:0012126, Stomach cancer,Neoplasm,42,Yes
+PH00008,PT00008,ST0001,,,,,
+PH00010,PT00010,ST0001,,,,,
+PH00020,PT00020,ST0001,,,,,
+PH00045,PT00045,ST0001,,,,,
+PH00050,PT00050,ST0001,,,,,
+PH00076,PT00076,ST0001,,,,,
+PH00077,PT00077,ST0001,,,,,
+PH00089,PT00089,ST0001,,,,,
+PH00092,PT00092,ST0001,,,,,
+PH00099,PT00099,ST0001,,,,,
+PH00108,PT00108,ST0001,,,,,
+PH00124,PT00124,ST0001,,,,,
+PH00130,PT00130,ST0001,,,,,
+PH00160,PT00160,ST0001,,,,,
+PH00165,PT00165,ST0001,,,,,
+PH00192,PT00192,ST0001,,,,,
+PH00197,PT00197,ST0001,,,,,
+PH00200,PT00200,ST0001,,,,,
+PH00241,PT00241,ST0001,,,,,
+PH00248,PT00248,ST0001,,,,,
+PH00252,PT00252,ST0001,,,,,
+PH00274,PT00274,ST0001,,,,,
+PH00294,PT00294,ST0001,,,,,
+PH00302,PT00302,ST0001,,,,,
+PH00309,PT00309,ST0001,,,,,
+PH00322,PT00322,ST0001,,,,,
+PH00329,PT00329,ST0001,,,,,
+PH00339,PT00339,ST0001,,,,,
+PH00350,PT00350,ST0001,,,,,
+PH00360,PT00360,ST0001,,,,,
+PH00366,PT00366,ST0001,,,,,
+PH00391,PT00391,ST0002,,,,,
+PH00392,PT00392,ST0002,,,,,
+PH00403,PT00403,ST0002,,,,,
+PH00410,PT00410,ST0002,,,,,
+PH00453,PT00453,ST0002,,,,,
+PH00461,PT00461,ST0002,,,,,
+PH00472,PT00472,ST0002,,,,,
+PH00502,PT00502,ST0002,,,,,
+PH00503,PT00503,ST0002,,,,,
+PH00541,PT00541,ST0002,,,,,
+PH00547,PT00547,ST0002,,,,,
+PH00563,PT00563,ST0002,,,,,
+PH00564,PT00564,ST0002,,,,,
+PH00567,PT00567,ST0002,,,,,
+PH00591,PT00591,ST0002,,,,,
+PH00592,PT00592,ST0002,,,,,
+PH00616,PT00616,ST0002,,,,,
+PH00627,PT00627,ST0003,,,,,
+PH00628,PT00628,ST0003,,,,,
+PH00630,PT00630,ST0003,,,,,
+PH00631,PT00631,ST0003,,,,,
+PH00633,PT00633,ST0003,,,,,
+PH00634,PT00634,ST0003,,,,,
+PH00636,PT00636,ST0003,,,,,
+PH00637,PT00637,ST0003,,,,,
+PH00639,PT00639,ST0003,,,,,
+PH00640,PT00640,ST0003,,,,,
+PH00642,PT00642,ST0003,,,,,
+PH00643,PT00643,ST0003,,,,,
+PH00645,PT00645,ST0003,,,,,
+PH00646,PT00646,ST0003,,,,,
+PH00648,PT00648,ST0003,,,,,
+PH00649,PT00649,ST0003,,,,,
+PH00651,PT00651,ST0003,,,,,
+PH00652,PT00652,ST0003,,,,,
+PH00654,PT00654,ST0003,,,,,
+PH00655,PT00655,ST0003,,,,,
+PH00657,PT00657,ST0003,,,,,
+PH00658,PT00658,ST0003,,,,,
+PH00660,PT00660,ST0003,,,,,
+PH00661,PT00661,ST0003,,,,,
+PH00662,PT00662,ST0003,,,,,
+PH00663,PT00663,ST0003,,,,,
+PH00664,PT00664,ST0003,,,,,
+PH00665,PT00665,ST0003,,,,,
+PH00666,PT00666,ST0003,,,,,
+PH00667,PT00667,ST0003,,,,,
+PH00669,PT00669,ST0003,,,,,
+PH00670,PT00670,ST0003,,,,,
+PH00672,PT00672,ST0003,,,,,
+PH00673,PT00673,ST0003,,,,,
+PH00675,PT00675,ST0003,,,,,
+PH00676,PT00676,ST0003,,,,,
+PH00678,PT00678,ST0003,,,,,
+PH00679,PT00679,ST0003,,,,,
+PH00681,PT00681,ST0003,,,,,
+PH00682,PT00682,ST0003,,,,,
+PH00684,PT00684,ST0003,,,,,
+PH00685,PT00685,ST0003,,,,,
+PH00687,PT00687,ST0003,,,,,
+PH00688,PT00688,ST0003,,,,,
+PH00689,PT00689,ST0003,,,,,
+PH00690,PT00690,ST0003,,,,,
+PH00691,PT00691,ST0003,,,,,
+PH00693,PT00693,ST0003,,,,,
+PH00694,PT00694,ST0003,,,,,
+PH00696,PT00696,ST0003,,,,,
+PH00697,PT00697,ST0003,,,,,
+PH00699,PT00699,ST0003,,,,,
+PH00700,PT00700,ST0003,,,,,
+PH00702,PT00702,ST0003,,,,,
+PH00703,PT00703,ST0003,,,,,
+PH00704,PT00704,ST0003,,,,,
+PH00705,PT00705,ST0003,,,,,
+PH00706,PT00706,ST0003,,,,,
+PH00708,PT00708,ST0003,,,,,
+PH00709,PT00709,ST0003,,,,,
+PH00711,PT00711,ST0003,,,,,
+PH00712,PT00712,ST0003,,,,,
+PH00715,PT00715,ST0003,,,,,
+PH00717,PT00717,ST0003,,,,,
+PH00718,PT00718,ST0003,,,,,
+PH00719,PT00719,ST0003,,,,,
+PH00720,PT00720,ST0003,,,,,
+PH00721,PT00721,ST0003,,,,,
+PH00723,PT00723,ST0003,,,,,
+PH00724,PT00724,ST0003,,,,,
+PH00726,PT00726,ST0003,,,,,
+PH00727,PT00727,ST0003,,,,,
+PH00729,PT00729,ST0003,,,,,
+PH00730,PT00730,ST0003,,,,,
+PH00731,PT00731,ST0003,,,,,
+PH00732,PT00732,ST0003,,,,,
+PH00733,PT00733,ST0003,,,,,
+PH00735,PT00735,ST0003,,,,,
+PH00736,PT00736,ST0003,,,,,
+PH00738,PT00738,ST0003,,,,,
+PH00739,PT00739,ST0003,,,,,
+PH00741,PT00741,ST0003,,,,,
+PH00742,PT00742,ST0003,,,,,
+PH00744,PT00744,ST0003,,,,,
+PH00745,PT00745,ST0003,,,,,
+PH00746,PT00746,ST0003,,,,,
+PH00747,PT00747,ST0003,,,,,
+PH00748,PT00748,ST0003,,,,,
+PH00750,PT00750,ST0003,,,,,
+PH00751,PT00751,ST0003,,,,,
+PH00753,PT00753,ST0003,,,,,
+PH00754,PT00754,ST0003,,,,,
+PH00756,PT00756,ST0003,,,,,
+PH00757,PT00757,ST0003,,,,,
+PH00759,PT00759,ST0003,,,,,
+PH00760,PT00760,ST0003,,,,,
+PH00762,PT00762,ST0003,,,,,
+PH00763,PT00763,ST0003,,,,,
+PH00765,PT00765,ST0003,,,,,
+PH00766,PT00766,ST0003,,,,,
+PH00768,PT00768,ST0003,,,,,
+PH00769,PT00769,ST0003,,,,,
+PH00771,PT00771,ST0003,,,,,
+PH00772,PT00772,ST0003,,,,,
+PH00774,PT00774,ST0003,,,,,
+PH00775,PT00775,ST0003,,,,,
+PH00777,PT00777,ST0003,,,,,
+PH00778,PT00778,ST0003,,,,,
+PH00780,PT00780,ST0003,,,,,
+PH00781,PT00781,ST0003,,,,,
+PH00783,PT00783,ST0003,,,,,
+PH00784,PT00784,ST0003,,,,,
+PH00786,PT00786,ST0003,,,,,
+PH00787,PT00787,ST0003,,,,,
+PH00789,PT00789,ST0003,,,,,
+PH00790,PT00790,ST0003,,,,,
+PH00792,PT00792,ST0003,,,,,
+PH00793,PT00793,ST0003,,,,,
+PH00795,PT00795,ST0003,,,,,
+PH00796,PT00796,ST0003,,,,,
+PH00798,PT00798,ST0003,,,,,
+PH00799,PT00799,ST0003,,,,,
+PH00801,PT00801,ST0003,,,,,
+PH00802,PT00802,ST0003,,,,,
+PH00803,PT00803,ST0003,,,,,
+PH00804,PT00804,ST0003,,,,,
+PH00805,PT00805,ST0003,,,,,
+PH00807,PT00807,ST0003,,,,,
+PH00808,PT00808,ST0003,,,,,
+PH00810,PT00810,ST0003,,,,,
+PH00811,PT00811,ST0003,,,,,
+PH00813,PT00813,ST0003,,,,,
+PH00814,PT00814,ST0003,,,,,
+PH00816,PT00816,ST0003,,,,,
+PH00817,PT00817,ST0003,,,,,
+PH00819,PT00819,ST0003,,,,,
+PH00820,PT00820,ST0003,,,,,
+PH00822,PT00822,ST0003,,,,,
+PH00823,PT00823,ST0003,,,,,

@@ -1,0 +1,1000 @@
+submitter_exposure_id,submitter_donor_id,study_id,smoking_status,alcohol_status,FSA
+EX00001,PT00001,ST0001,Never smoker        ,No alcohol consumtion,J7C
+EX00002,PT00002,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J2X
+EX00003,PT00003,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,J7A
+EX00004,PT00004,ST0001,Current every day smoker        ,Alcohol consumption unknown,H9G
+EX00005,PT00005,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J9T
+EX00006,PT00006,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H1Y
+EX00007,PT00007,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H4W
+EX00008,PT00008,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J8P
+EX00009,PT00009,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,J8E
+EX00010,PT00010,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H9P
+EX00011,PT00011,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H3G
+EX00012,PT00012,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J4N
+EX00013,PT00013,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J9B
+EX00014,PT00014,ST0001,Current some day smoker        ,Alcohol consumption unknown,H7R
+EX00015,PT00015,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H4P
+EX00016,PT00016,ST0001,Former smoker        ,Alcohol consumption unknown,J7L
+EX00017,PT00017,ST0001,Current every day smoker        ,No alcohol consumtion,H2Z
+EX00018,PT00018,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H9C
+EX00019,PT00019,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,H7Y
+EX00020,PT00020,ST0001,Never smoker        ,Alcohol consumption unknown,J6E
+EX00021,PT00021,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J2H
+EX00022,PT00022,ST0001,Former smoker        ,Alcohol consumption unknown,J2T
+EX00023,PT00023,ST0001,Former smoker        ,No alcohol consumtion,J3P
+EX00024,PT00024,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H9B
+EX00025,PT00025,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H1V
+EX00026,PT00026,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J8T
+EX00027,PT00027,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J6K
+EX00028,PT00028,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,H4Z
+EX00029,PT00029,ST0001,Former smoker        ,Alcohol consumption unknown,H7P
+EX00030,PT00030,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,J3B
+EX00031,PT00031,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H1T
+EX00032,PT00032,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,J3V
+EX00033,PT00033,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H7V
+EX00034,PT00034,ST0001,Current Light tobacco smoker,No alcohol consumtion,H1A
+EX00035,PT00035,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J1C
+EX00036,PT00036,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,H8S
+EX00037,PT00037,ST0001,Current Light tobacco smoker,No alcohol consumtion,H3B
+EX00038,PT00038,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J2A
+EX00039,PT00039,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J1G
+EX00040,PT00040,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J8H
+EX00041,PT00041,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H7C
+EX00042,PT00042,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H4N
+EX00043,PT00043,ST0001,Current every day smoker        ,No alcohol consumtion,H2G
+EX00044,PT00044,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J4G
+EX00045,PT00045,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J3N
+EX00046,PT00046,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J2B
+EX00047,PT00047,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,(+)
+EX00048,PT00048,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H2J
+EX00049,PT00049,ST0001,Current every day smoker        ,No alcohol consumtion,J7B
+EX00050,PT00050,ST0001,Current Light tobacco smoker,No alcohol consumtion,H3Z
+EX00051,PT00051,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,J7P
+EX00052,PT00052,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H1Z
+EX00053,PT00053,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J4H
+EX00054,PT00054,ST0001,Current Light tobacco smoker,No alcohol consumtion,J3T
+EX00055,PT00055,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H1N
+EX00056,PT00056,ST0001,Current Light tobacco smoker,No alcohol consumtion,H4R
+EX00057,PT00057,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J5W
+EX00058,PT00058,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,H4S
+EX00059,PT00059,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J5V
+EX00060,PT00060,ST0001,Current every day smoker        ,Alcohol consumption unknown,H4V
+EX00061,PT00061,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J6J
+EX00062,PT00062,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H4H
+EX00063,PT00063,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J8Z
+EX00064,PT00064,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H2P
+EX00065,PT00065,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H8N
+EX00066,PT00066,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J2N
+EX00067,PT00067,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H3W
+EX00068,PT00068,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J7M
+EX00069,PT00069,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H9A
+EX00070,PT00070,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,H7S
+EX00071,PT00071,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J2E
+EX00072,PT00072,ST0001,Current some day smoker        ,Alcohol consumption unknown,H3A
+EX00073,PT00073,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H4X
+EX00074,PT00074,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H5B
+EX00075,PT00075,ST0001,Unknown if ever smoked        ,No alcohol consumtion,H7A
+EX00076,PT00076,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H2E
+EX00077,PT00077,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H8P
+EX00078,PT00078,ST0001,Never smoker        ,Alcohol consumption unknown,J8L
+EX00079,PT00079,ST0001,Current every day smoker        ,No alcohol consumtion,J3R
+EX00080,PT00080,ST0001,Current every day smoker        ,No alcohol consumtion,J6A
+EX00081,PT00081,ST0001,Never smoker        ,No alcohol consumtion,H4A
+EX00082,PT00082,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H0M
+EX00083,PT00083,ST0001,Current every day smoker        ,Alcohol consumption unknown,J2C
+EX00084,PT00084,ST0001,Current Light tobacco smoker,No alcohol consumtion,H3T
+EX00085,PT00085,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H3M
+EX00086,PT00086,ST0001,Current some day smoker        ,No alcohol consumtion,H2V
+EX00087,PT00087,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J3X
+EX00088,PT00088,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H4L
+EX00089,PT00089,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H2W
+EX00090,PT00090,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,J4M
+EX00091,PT00091,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H9S
+EX00092,PT00092,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H2K
+EX00093,PT00093,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J2K
+EX00094,PT00094,ST0001,Current every day smoker        ,No alcohol consumtion,J6Z
+EX00095,PT00095,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H2S
+EX00096,PT00096,ST0001,Former smoker        ,Alcohol consumption unknown,H8Z
+EX00097,PT00097,ST0001,Current some day smoker        ,No alcohol consumtion,H1G
+EX00098,PT00098,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J3H
+EX00099,PT00099,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J4J
+EX00100,PT00100,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H2N
+EX00101,PT00101,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J6S
+EX00102,PT00102,ST0001,Never smoker        ,No alcohol consumtion,J8Y
+EX00103,PT00103,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J2J
+EX00104,PT00104,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,H4B
+EX00105,PT00105,ST0001,Never smoker        ,No alcohol consumtion,H2C
+EX00106,PT00106,ST0001,Current some day smoker        ,No alcohol consumtion,J1M
+EX00107,PT00107,ST0001,Former smoker        ,Alcohol consumption unknown,H2Y
+EX00108,PT00108,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H1W
+EX00109,PT00109,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H3L
+EX00110,PT00110,ST0001,Current Light tobacco smoker,No alcohol consumtion,J2M
+EX00111,PT00111,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J5R
+EX00112,PT00112,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J9P
+EX00113,PT00113,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H3K
+EX00114,PT00114,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J9L
+EX00115,PT00115,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H3P
+EX00116,PT00116,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,H1H
+EX00117,PT00117,ST0001,Current Light tobacco smoker,No alcohol consumtion,H4K
+EX00118,PT00118,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H1C
+EX00119,PT00119,ST0001,Current every day smoker        ,Alcohol consumption unknown,J7H
+EX00120,PT00120,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J9A
+EX00121,PT00121,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J1H
+EX00122,PT00122,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J4K
+EX00123,PT00123,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J6T
+EX00124,PT00124,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H3E
+EX00125,PT00125,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H2X
+EX00126,PT00126,ST0001,Never smoker        ,Alcohol consumption unknown,J5Z
+EX00127,PT00127,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H9J
+EX00128,PT00128,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J7R
+EX00129,PT00129,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H1L
+EX00130,PT00130,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H9K
+EX00131,PT00131,ST0001,Never smoker        ,No alcohol consumtion,H7K
+EX00132,PT00132,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,J1Z
+EX00133,PT00133,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H7J
+EX00134,PT00134,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H1K
+EX00135,PT00135,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J1J
+EX00136,PT00136,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,H9W
+EX00137,PT00137,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,J1R
+EX00138,PT00138,ST0001,Never smoker        ,Alcohol consumption unknown,J5Y
+EX00139,PT00139,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H3S
+EX00140,PT00140,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J2S
+EX00141,PT00141,ST0001,Current Light tobacco smoker,No alcohol consumtion,J7E
+EX00142,PT00142,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H2R
+EX00143,PT00143,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J2R
+EX00144,PT00144,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H2T
+EX00145,PT00145,ST0001,Current every day smoker        ,Alcohol consumption unknown,J7X
+EX00146,PT00146,ST0001,Former smoker        ,No alcohol consumtion,H7E
+EX00147,PT00147,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J1T
+EX00148,PT00148,ST0001,Unknown if ever smoked        ,No alcohol consumtion,H2H
+EX00149,PT00149,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,J8X
+EX00150,PT00150,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J8N
+EX00151,PT00151,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,H3J
+EX00152,PT00152,ST0001,Current every day smoker        ,No alcohol consumtion,J6R
+EX00153,PT00153,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,H3C
+EX00154,PT00154,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J7K
+EX00155,PT00155,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J3Y
+EX00156,PT00156,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H1R
+EX00157,PT00157,ST0001,Current every day smoker        ,Alcohol consumption unknown,H3V
+EX00158,PT00158,ST0001,Former smoker        ,No alcohol consumtion,J4P
+EX00159,PT00159,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H3N
+EX00160,PT00160,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H8R
+EX00161,PT00161,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J7G
+EX00162,PT00162,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,J1S
+EX00163,PT00163,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J8G
+EX00164,PT00164,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J7N
+EX00165,PT00165,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J2L
+EX00166,PT00166,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H4M
+EX00167,PT00167,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J7V
+EX00168,PT00168,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H7H
+EX00169,PT00169,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H5A
+EX00170,PT00170,ST0001,Unknown if ever smoked        ,No alcohol consumtion,H4E
+EX00171,PT00171,ST0001,Current every day smoker        ,No alcohol consumtion,J4L
+EX00172,PT00172,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H3X
+EX00173,PT00173,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,H2L
+EX00174,PT00174,ST0001,Current Light tobacco smoker,No alcohol consumtion,J8M
+EX00175,PT00175,ST0001,Current Light tobacco smoker,No alcohol consumtion,H7M
+EX00176,PT00176,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H7X
+EX00177,PT00177,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J2W
+EX00178,PT00178,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H8T
+EX00179,PT00179,ST0001,Former smoker        ,No alcohol consumtion,H7W
+EX00180,PT00180,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J9H
+EX00181,PT00181,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H2M
+EX00182,PT00182,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H7L
+EX00183,PT00183,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H1J
+EX00184,PT00184,ST0001,Current some day smoker        ,Alcohol consumption unknown,J3G
+EX00185,PT00185,ST0001,Current some day smoker        ,No alcohol consumtion,H3Y
+EX00186,PT00186,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,J3A
+EX00187,PT00187,ST0001,Never smoker        ,Alcohol consumption unknown,H4J
+EX00188,PT00188,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H3H
+EX00189,PT00189,ST0001,Former smoker        ,Alcohol consumption unknown,H4C
+EX00190,PT00190,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J1X
+EX00191,PT00191,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H0A
+EX00192,PT00192,ST0001,Former smoker        ,No alcohol consumtion,J1A
+EX00193,PT00193,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J3L
+EX00194,PT00194,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J9J
+EX00195,PT00195,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H1X
+EX00196,PT00196,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J7W
+EX00197,PT00197,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H9R
+EX00198,PT00198,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H1M
+EX00199,PT00199,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H9H
+EX00200,PT00200,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H7T
+EX00201,PT00201,ST0001,Never smoker        ,No alcohol consumtion,H7G
+EX00202,PT00202,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H4Y
+EX00203,PT00203,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H2B
+EX00204,PT00204,ST0001,Current every day smoker        ,Alcohol consumption unknown,J6V
+EX00205,PT00205,ST0001,Unknown if ever smoked        ,No alcohol consumtion,J4B
+EX00206,PT00206,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J8V
+EX00207,PT00207,ST0001,Never smoker        ,No alcohol consumtion,H9X
+EX00208,PT00208,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,H1S
+EX00209,PT00209,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H7N
+EX00210,PT00210,ST0001,Never smoker        ,Alcohol consumption unknown,H4G
+EX00211,PT00211,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J9E
+EX00212,PT00212,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J7T
+EX00213,PT00213,ST0001,Current some day smoker        ,Alcohol consumption unknown,J6W
+EX00214,PT00214,ST0001,Current Light tobacco smoker,No alcohol consumtion,J1E
+EX00215,PT00215,ST0001,Current some day smoker        ,No alcohol consumtion,J1L
+EX00216,PT00216,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J3E
+EX00217,PT00217,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H3R
+EX00218,PT00218,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H1E
+EX00219,PT00219,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J8R
+EX00220,PT00220,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H4T
+EX00221,PT00221,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J6N
+EX00222,PT00222,ST0001,Current some day smoker        ,Alcohol consumption unknown,H1B
+EX00223,PT00223,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J2Y
+EX00224,PT00224,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J6X
+EX00225,PT00225,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J5T
+EX00226,PT00226,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J1K
+EX00227,PT00227,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J6Y
+EX00228,PT00228,ST0001,Former smoker        ,No alcohol consumtion,J3Z
+EX00229,PT00229,ST0001,Never smoker        ,Alcohol consumption unknown,J1N
+EX00230,PT00230,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H1P
+EX00231,PT00231,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H7B
+EX00232,PT00232,ST0001,Current some day smoker        ,No alcohol consumtion,J3M
+EX00233,PT00233,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H9E
+EX00234,PT00234,ST0001,Current some day smoker        ,No alcohol consumtion,H2A
+EX00235,PT00235,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H8Y
+EX00236,PT00236,ST0001,Never smoker        ,No alcohol consumtion,J2G
+EX00237,PT00237,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J7J
+EX00238,PT00238,ST0001,Current Light tobacco smoker,No alcohol consumtion,J5X
+EX00239,PT00239,ST0001,Never smoker        ,Alcohol consumption unknown,H2V
+EX00240,PT00240,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H1E
+EX00241,PT00241,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H3C
+EX00242,PT00242,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H9J
+EX00243,PT00243,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J2K
+EX00244,PT00244,ST0001,Current every day smoker        ,No alcohol consumtion,J9A
+EX00245,PT00245,ST0001,Former smoker        ,Alcohol consumption unknown,H7G
+EX00246,PT00246,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J3H
+EX00247,PT00247,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J3M
+EX00248,PT00248,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H4K
+EX00249,PT00249,ST0001,Current every day smoker        ,No alcohol consumtion,H7C
+EX00250,PT00250,ST0001,Current Light tobacco smoker,No alcohol consumtion,H2S
+EX00251,PT00251,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J3Y
+EX00252,PT00252,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,H3N
+EX00253,PT00253,ST0001,Current some day smoker        ,Alcohol consumption unknown,H2S
+EX00254,PT00254,ST0001,Never smoker        ,No alcohol consumtion,J2B
+EX00255,PT00255,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J9H
+EX00256,PT00256,ST0001,Current every day smoker        ,Alcohol consumption unknown,H4T
+EX00257,PT00257,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H3C
+EX00258,PT00258,ST0001,Current some day smoker        ,Alcohol consumption unknown,H2V
+EX00259,PT00259,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J7H
+EX00260,PT00260,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J3B
+EX00261,PT00261,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H3X
+EX00262,PT00262,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H4N
+EX00263,PT00263,ST0001,Former smoker        ,Alcohol consumption unknown,J3Y
+EX00264,PT00264,ST0001,Former smoker        ,Alcohol consumption unknown,J2J
+EX00265,PT00265,ST0001,Never smoker        ,No alcohol consumtion,J1C
+EX00266,PT00266,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,J8Y
+EX00267,PT00267,ST0001,Current every day smoker        ,No alcohol consumtion,J9T
+EX00268,PT00268,ST0001,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J2R
+EX00269,PT00269,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J2G
+EX00270,PT00270,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,J8Y
+EX00271,PT00271,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H3V
+EX00272,PT00272,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H2N
+EX00273,PT00273,ST0001,Former smoker        ,No alcohol consumtion,J6A
+EX00274,PT00274,ST0001,Current some day smoker        ,Alcohol consumption unknown,J2H
+EX00275,PT00275,ST0001,Current every day smoker        ,Alcohol consumption unknown,J2B
+EX00276,PT00276,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H4H
+EX00277,PT00277,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J2Y
+EX00278,PT00278,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J1G
+EX00279,PT00279,ST0001,Current Light tobacco smoker,No alcohol consumtion,H4N
+EX00280,PT00280,ST0001,Never smoker        ,No alcohol consumtion,H7E
+EX00281,PT00281,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H1P
+EX00282,PT00282,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H8R
+EX00283,PT00283,ST0001,Current some day smoker        ,Alcohol consumption unknown,J1T
+EX00284,PT00284,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H3V
+EX00285,PT00285,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H4X
+EX00286,PT00286,ST0001,Former smoker        ,No alcohol consumtion,J9T
+EX00287,PT00287,ST0001,Current some day smoker        ,Alcohol consumption unknown,J5V
+EX00288,PT00288,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J3B
+EX00289,PT00289,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J1C
+EX00290,PT00290,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,J1S
+EX00291,PT00291,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J8E
+EX00292,PT00292,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H7V
+EX00293,PT00293,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H9H
+EX00294,PT00294,ST0001,Current some day smoker        ,Alcohol consumption unknown,H2A
+EX00295,PT00295,ST0001,Former smoker        ,No alcohol consumtion,H4C
+EX00296,PT00296,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H8P
+EX00297,PT00297,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,J2A
+EX00298,PT00298,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H8N
+EX00299,PT00299,ST0001,Former smoker        ,No alcohol consumtion,H2W
+EX00300,PT00300,ST0001,Never smoker        ,No alcohol consumtion,J3N
+EX00301,PT00301,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J4H
+EX00302,PT00302,ST0001,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H1J
+EX00303,PT00303,ST0001,Current some day smoker        ,Alcohol consumption unknown,J2B
+EX00304,PT00304,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J8X
+EX00305,PT00305,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,H3G
+EX00306,PT00306,ST0001,Current some day smoker        ,Alcohol consumption unknown,J3R
+EX00307,PT00307,ST0001,Never smoker        ,No alcohol consumtion,J8Z
+EX00308,PT00308,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,H9J
+EX00309,PT00309,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,J5T
+EX00310,PT00310,ST0001,Current Light tobacco smoker,No alcohol consumtion,J3L
+EX00311,PT00311,ST0001,Unknown if ever smoked        ,No alcohol consumtion,H2B
+EX00312,PT00312,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H3J
+EX00313,PT00313,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,H2S
+EX00314,PT00314,ST0001,Current some day smoker        ,Alcohol consumption unknown,J1E
+EX00315,PT00315,ST0001,Current some day smoker        ,Alcohol consumption unknown,J3X
+EX00316,PT00316,ST0001,Current Light tobacco smoker,No alcohol consumtion,J7J
+EX00317,PT00317,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,J5T
+EX00318,PT00318,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J2H
+EX00319,PT00319,ST0001,Former smoker        ,No alcohol consumtion,H2R
+EX00320,PT00320,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,J7M
+EX00321,PT00321,ST0001,Current every day smoker        ,Alcohol consumption unknown,J8P
+EX00322,PT00322,ST0001,Never smoker        ,No alcohol consumtion,H9X
+EX00323,PT00323,ST0001,Current every day smoker        ,No alcohol consumtion,H7N
+EX00324,PT00324,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,H4L
+EX00325,PT00325,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,H4K
+EX00326,PT00326,ST0001,Unknown if ever smoked        ,No alcohol consumtion,J9L
+EX00327,PT00327,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H9G
+EX00328,PT00328,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H9H
+EX00329,PT00329,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H2N
+EX00330,PT00330,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J1C
+EX00331,PT00331,ST0001,Never smoker        ,Alcohol intake exceeds recommended daily limit,H7R
+EX00332,PT00332,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,H1M
+EX00333,PT00333,ST0001,Current every day smoker        ,No alcohol consumtion,H4J
+EX00334,PT00334,ST0001,Former smoker        ,Alcohol intake within recommended daily limit,H9S
+EX00335,PT00335,ST0001,Current every day smoker        ,Alcohol intake within recommended daily limit,H1A
+EX00336,PT00336,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J3E
+EX00337,PT00337,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,H1A
+EX00338,PT00338,ST0001,Current some day smoker        ,Alcohol intake within recommended daily limit,J3A
+EX00339,PT00339,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,H3N
+EX00340,PT00340,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J7V
+EX00341,PT00341,ST0001,Never smoker        ,No alcohol consumtion,H4P
+EX00342,PT00342,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H8T
+EX00343,PT00343,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H8Y
+EX00344,PT00344,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,J8R
+EX00345,PT00345,ST0001,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H3X
+EX00346,PT00346,ST0001,Former smoker        ,No alcohol consumtion,H2L
+EX00347,PT00347,ST0001,Former smoker        ,Alcohol consumption unknown,H3C
+EX00348,PT00348,ST0001,Current every day smoker        ,No alcohol consumtion,H1H
+EX00349,PT00349,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H8P
+EX00350,PT00350,ST0001,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H9R
+EX00351,PT00351,ST0001,Former smoker        ,Alcohol intake exceeds recommended daily limit,J1N
+EX00352,PT00352,ST0001,Former smoker        ,No alcohol consumtion,J8X
+EX00353,PT00353,ST0001,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J7H
+EX00354,PT00354,ST0001,"Smoker, current status unknown        ",No alcohol consumtion,H1Z
+EX00355,PT00355,ST0001,Current every day smoker        ,No alcohol consumtion,J5R
+EX00356,PT00356,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J1J
+EX00357,PT00357,ST0001,"Smoker, current status unknown        ",Alcohol consumption unknown,J1L
+EX00358,PT00358,ST0001,Current some day smoker        ,Alcohol consumption unknown,J3T
+EX00359,PT00359,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H7P
+EX00360,PT00360,ST0001,Current some day smoker        ,Alcohol consumption unknown,J7R
+EX00361,PT00361,ST0001,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H9W
+EX00362,PT00362,ST0001,Never smoker        ,Alcohol consumption unknown,H1P
+EX00363,PT00363,ST0001,Current some day smoker        ,No alcohol consumtion,H4T
+EX00364,PT00364,ST0001,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J5X
+EX00365,PT00365,ST0001,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H3P
+EX00366,PT00366,ST0001,Current Light tobacco smoker,Alcohol consumption unknown,J2T
+EX00367,PT00367,ST0001,Current Light tobacco smoker,No alcohol consumtion,H5A
+EX00368,PT00368,ST0001,Unknown if ever smoked        ,Alcohol consumption unknown,J7R
+EX00369,PT00369,ST0001,Current some day smoker        ,Alcohol consumption unknown,H7T
+EX00370,PT00370,ST0001,Former smoker        ,Alcohol consumption unknown,H2R
+EX00371,PT00371,ST0001,Current every day smoker        ,No alcohol consumtion,H8P
+EX00372,PT00372,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,J2B
+EX00373,PT00373,ST0001,Current every day smoker        ,No alcohol consumtion,H3M
+EX00374,PT00374,ST0001,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J4K
+EX00375,PT00375,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H9W
+EX00376,PT00376,ST0001,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H3R
+EX00377,PT00377,ST0001,Never smoker        ,Alcohol intake within recommended daily limit,H2L
+EX00378,PT00378,ST0002,Never smoker        ,No alcohol consumtion,J6K
+EX00379,PT00379,ST0002,Never smoker        ,No alcohol consumtion,H8P
+EX00380,PT00380,ST0002,Never smoker        ,No alcohol consumtion,J1H
+EX00381,PT00381,ST0002,Never smoker        ,No alcohol consumtion,J1N
+EX00382,PT00382,ST0002,Never smoker        ,No alcohol consumtion,J9L
+EX00383,PT00383,ST0002,Never smoker        ,No alcohol consumtion,H7A
+EX00384,PT00384,ST0002,Never smoker        ,No alcohol consumtion,J1R
+EX00385,PT00385,ST0002,Never smoker        ,No alcohol consumtion,H9B
+EX00386,PT00386,ST0002,Never smoker        ,No alcohol consumtion,J5W
+EX00387,PT00387,ST0002,Never smoker        ,No alcohol consumtion,J5T
+EX00388,PT00388,ST0002,Never smoker        ,No alcohol consumtion,J9B
+EX00389,PT00389,ST0002,Never smoker        ,No alcohol consumtion,H9E
+EX00390,PT00390,ST0002,Never smoker        ,No alcohol consumtion,H1P
+EX00391,PT00391,ST0002,Never smoker        ,No alcohol consumtion,J8L
+EX00392,PT00392,ST0002,Never smoker        ,No alcohol consumtion,H7S
+EX00393,PT00393,ST0002,Never smoker        ,No alcohol consumtion,J5R
+EX00394,PT00394,ST0002,Never smoker        ,No alcohol consumtion,J5T
+EX00395,PT00395,ST0002,Never smoker        ,No alcohol consumtion,H4B
+EX00396,PT00396,ST0002,Never smoker        ,No alcohol consumtion,H3B
+EX00397,PT00397,ST0002,Never smoker        ,No alcohol consumtion,H2T
+EX00398,PT00398,ST0002,Never smoker        ,No alcohol consumtion,J2G
+EX00399,PT00399,ST0002,Never smoker        ,No alcohol consumtion,H8Y
+EX00400,PT00400,ST0002,Never smoker        ,No alcohol consumtion,H4Z
+EX00401,PT00401,ST0002,Never smoker        ,No alcohol consumtion,H1C
+EX00402,PT00402,ST0002,Never smoker        ,No alcohol consumtion,H7J
+EX00403,PT00403,ST0002,Never smoker        ,No alcohol consumtion,J7A
+EX00404,PT00404,ST0002,Never smoker        ,No alcohol consumtion,H8P
+EX00405,PT00405,ST0002,Never smoker        ,No alcohol consumtion,H7X
+EX00406,PT00406,ST0002,Never smoker        ,No alcohol consumtion,J7N
+EX00407,PT00407,ST0002,Never smoker        ,No alcohol consumtion,J9H
+EX00408,PT00408,ST0002,Never smoker        ,No alcohol consumtion,H2V
+EX00409,PT00409,ST0002,Never smoker        ,No alcohol consumtion,J4M
+EX00410,PT00410,ST0002,Never smoker        ,No alcohol consumtion,J1G
+EX00411,PT00411,ST0002,Never smoker        ,No alcohol consumtion,J7V
+EX00412,PT00412,ST0002,Never smoker        ,No alcohol consumtion,J7G
+EX00413,PT00413,ST0002,Never smoker        ,No alcohol consumtion,H1A
+EX00414,PT00414,ST0002,Never smoker        ,No alcohol consumtion,H1X
+EX00415,PT00415,ST0002,Never smoker        ,No alcohol consumtion,J6W
+EX00416,PT00416,ST0002,Never smoker        ,No alcohol consumtion,H9R
+EX00417,PT00417,ST0002,Never smoker        ,No alcohol consumtion,J7K
+EX00418,PT00418,ST0002,Never smoker        ,No alcohol consumtion,J2E
+EX00419,PT00419,ST0002,Never smoker        ,No alcohol consumtion,J1X
+EX00420,PT00420,ST0002,Never smoker        ,No alcohol consumtion,J1G
+EX00421,PT00421,ST0002,Never smoker        ,No alcohol consumtion,H4T
+EX00422,PT00422,ST0002,Never smoker        ,No alcohol consumtion,J1G
+EX00423,PT00423,ST0002,Never smoker        ,No alcohol consumtion,H2Z
+EX00424,PT00424,ST0002,Never smoker        ,No alcohol consumtion,H7P
+EX00425,PT00425,ST0002,Never smoker        ,No alcohol consumtion,J3H
+EX00426,PT00426,ST0002,Never smoker        ,No alcohol consumtion,J2H
+EX00427,PT00427,ST0002,Never smoker        ,No alcohol consumtion,H2H
+EX00428,PT00428,ST0002,Never smoker        ,No alcohol consumtion,J8E
+EX00429,PT00429,ST0002,Never smoker        ,No alcohol consumtion,H9R
+EX00430,PT00430,ST0002,Never smoker        ,No alcohol consumtion,H3Y
+EX00431,PT00431,ST0002,Never smoker        ,No alcohol consumtion,H4P
+EX00432,PT00432,ST0002,Never smoker        ,No alcohol consumtion,J5V
+EX00433,PT00433,ST0002,Never smoker        ,No alcohol consumtion,J4G
+EX00434,PT00434,ST0002,Never smoker        ,No alcohol consumtion,J3R
+EX00435,PT00435,ST0002,Never smoker        ,No alcohol consumtion,H3J
+EX00436,PT00436,ST0002,Never smoker        ,No alcohol consumtion,H9S
+EX00437,PT00437,ST0002,Never smoker        ,No alcohol consumtion,J8H
+EX00438,PT00438,ST0002,Never smoker        ,No alcohol consumtion,H9C
+EX00439,PT00439,ST0002,Never smoker        ,No alcohol consumtion,H3W
+EX00440,PT00440,ST0002,Never smoker        ,No alcohol consumtion,H1X
+EX00441,PT00441,ST0002,Never smoker        ,No alcohol consumtion,H4M
+EX00442,PT00442,ST0002,Never smoker        ,No alcohol consumtion,J4G
+EX00443,PT00443,ST0002,Never smoker        ,No alcohol consumtion,J2H
+EX00444,PT00444,ST0002,Never smoker        ,No alcohol consumtion,H2L
+EX00445,PT00445,ST0002,Never smoker        ,No alcohol consumtion,J5R
+EX00446,PT00446,ST0002,Never smoker        ,No alcohol consumtion,J3V
+EX00447,PT00447,ST0002,Never smoker        ,No alcohol consumtion,J1N
+EX00448,PT00448,ST0002,Never smoker        ,No alcohol consumtion,H2H
+EX00449,PT00449,ST0002,Never smoker        ,No alcohol consumtion,H2N
+EX00450,PT00450,ST0002,Never smoker        ,No alcohol consumtion,H4K
+EX00451,PT00451,ST0002,Never smoker        ,No alcohol consumtion,H3X
+EX00452,PT00452,ST0002,Never smoker        ,No alcohol consumtion,H1P
+EX00453,PT00453,ST0002,Never smoker        ,No alcohol consumtion,J6E
+EX00454,PT00454,ST0002,Never smoker        ,No alcohol consumtion,J1X
+EX00455,PT00455,ST0002,Never smoker        ,No alcohol consumtion,H2Z
+EX00456,PT00456,ST0002,Never smoker        ,No alcohol consumtion,H3A
+EX00457,PT00457,ST0002,Never smoker        ,No alcohol consumtion,H3V
+EX00458,PT00458,ST0002,Never smoker        ,No alcohol consumtion,H4Y
+EX00459,PT00459,ST0002,Never smoker        ,No alcohol consumtion,H8N
+EX00460,PT00460,ST0002,Never smoker        ,No alcohol consumtion,J1G
+EX00461,PT00461,ST0002,Never smoker        ,No alcohol consumtion,H2V
+EX00462,PT00462,ST0002,Never smoker        ,No alcohol consumtion,J4M
+EX00463,PT00463,ST0002,Never smoker        ,No alcohol consumtion,H3T
+EX00464,PT00464,ST0002,Never smoker        ,No alcohol consumtion,H1W
+EX00465,PT00465,ST0002,Never smoker        ,No alcohol consumtion,H1C
+EX00466,PT00466,ST0002,Never smoker        ,No alcohol consumtion,H9E
+EX00467,PT00467,ST0002,Never smoker        ,No alcohol consumtion,J8M
+EX00468,PT00468,ST0002,Never smoker        ,No alcohol consumtion,J1N
+EX00469,PT00469,ST0002,Never smoker        ,No alcohol consumtion,H1T
+EX00470,PT00470,ST0002,Never smoker        ,No alcohol consumtion,H7Y
+EX00471,PT00471,ST0002,Never smoker        ,No alcohol consumtion,H8S
+EX00472,PT00472,ST0002,Never smoker        ,No alcohol consumtion,J2K
+EX00473,PT00473,ST0002,Never smoker        ,No alcohol consumtion,J8V
+EX00474,PT00474,ST0002,Never smoker        ,No alcohol consumtion,J9T
+EX00475,PT00475,ST0002,Never smoker        ,No alcohol consumtion,H2H
+EX00476,PT00476,ST0002,Never smoker        ,No alcohol consumtion,H8R
+EX00477,PT00477,ST0002,Never smoker        ,No alcohol consumtion,H7E
+EX00478,PT00478,ST0002,Never smoker        ,No alcohol consumtion,J2J
+EX00479,PT00479,ST0002,Never smoker        ,No alcohol consumtion,H1J
+EX00480,PT00480,ST0002,Never smoker        ,No alcohol consumtion,H5B
+EX00481,PT00481,ST0002,Never smoker        ,No alcohol consumtion,J2S
+EX00482,PT00482,ST0002,Never smoker        ,No alcohol consumtion,J3A
+EX00483,PT00483,ST0002,Never smoker        ,No alcohol consumtion,H4J
+EX00484,PT00484,ST0002,Never smoker        ,No alcohol consumtion,J3T
+EX00485,PT00485,ST0002,Never smoker        ,No alcohol consumtion,H9G
+EX00486,PT00486,ST0002,Never smoker        ,No alcohol consumtion,J4M
+EX00487,PT00487,ST0002,Never smoker        ,No alcohol consumtion,J2S
+EX00488,PT00488,ST0002,Never smoker        ,No alcohol consumtion,J2W
+EX00489,PT00489,ST0002,Never smoker        ,No alcohol consumtion,J8H
+EX00490,PT00490,ST0002,Never smoker        ,No alcohol consumtion,J6E
+EX00491,PT00491,ST0002,Never smoker        ,No alcohol consumtion,H2S
+EX00492,PT00492,ST0002,Never smoker        ,No alcohol consumtion,J8X
+EX00493,PT00493,ST0002,Never smoker        ,No alcohol consumtion,H3M
+EX00494,PT00494,ST0002,Never smoker        ,No alcohol consumtion,H7L
+EX00495,PT00495,ST0002,Never smoker        ,No alcohol consumtion,H4V
+EX00496,PT00496,ST0002,Never smoker        ,No alcohol consumtion,H4L
+EX00497,PT00497,ST0002,Never smoker        ,No alcohol consumtion,H2T
+EX00498,PT00498,ST0002,Never smoker        ,No alcohol consumtion,J7V
+EX00499,PT00499,ST0002,Never smoker        ,No alcohol consumtion,H4R
+EX00500,PT00500,ST0002,Never smoker        ,No alcohol consumtion,H1L
+EX00501,PT00501,ST0002,Never smoker        ,No alcohol consumtion,J2C
+EX00502,PT00502,ST0002,Never smoker        ,No alcohol consumtion,J6Z
+EX00503,PT00503,ST0002,Never smoker        ,No alcohol consumtion,J7R
+EX00504,PT00504,ST0002,Never smoker        ,No alcohol consumtion,H4M
+EX00505,PT00505,ST0002,Never smoker        ,No alcohol consumtion,J7X
+EX00506,PT00506,ST0002,Never smoker        ,No alcohol consumtion,J7E
+EX00507,PT00507,ST0002,Never smoker        ,No alcohol consumtion,H3T
+EX00508,PT00508,ST0002,Never smoker        ,No alcohol consumtion,H4N
+EX00509,PT00509,ST0002,Never smoker        ,No alcohol consumtion,H4L
+EX00510,PT00510,ST0002,Never smoker        ,No alcohol consumtion,H1B
+EX00511,PT00511,ST0002,Never smoker        ,No alcohol consumtion,H4J
+EX00512,PT00512,ST0002,Never smoker        ,No alcohol consumtion,J8H
+EX00513,PT00513,ST0002,Never smoker        ,No alcohol consumtion,J3E
+EX00514,PT00514,ST0002,Never smoker        ,No alcohol consumtion,H4L
+EX00515,PT00515,ST0002,Never smoker        ,No alcohol consumtion,H4C
+EX00516,PT00516,ST0002,Never smoker        ,No alcohol consumtion,H2R
+EX00517,PT00517,ST0002,Never smoker        ,No alcohol consumtion,H4Y
+EX00518,PT00518,ST0002,Never smoker        ,No alcohol consumtion,J6J
+EX00519,PT00519,ST0002,Never smoker        ,No alcohol consumtion,J7J
+EX00520,PT00520,ST0002,Never smoker        ,No alcohol consumtion,H2T
+EX00521,PT00521,ST0002,Never smoker        ,No alcohol consumtion,H3S
+EX00522,PT00522,ST0002,Never smoker        ,No alcohol consumtion,J5V
+EX00523,PT00523,ST0002,Never smoker        ,No alcohol consumtion,J6N
+EX00524,PT00524,ST0002,Never smoker        ,No alcohol consumtion,J2T
+EX00525,PT00525,ST0002,Never smoker        ,No alcohol consumtion,J1J
+EX00526,PT00526,ST0002,Never smoker        ,No alcohol consumtion,H9C
+EX00527,PT00527,ST0002,Never smoker        ,No alcohol consumtion,J6X
+EX00528,PT00528,ST0002,Never smoker        ,No alcohol consumtion,J2A
+EX00529,PT00529,ST0002,Never smoker        ,No alcohol consumtion,H9W
+EX00530,PT00530,ST0002,Never smoker        ,No alcohol consumtion,J4B
+EX00531,PT00531,ST0002,Never smoker        ,No alcohol consumtion,H4K
+EX00532,PT00532,ST0002,Never smoker        ,No alcohol consumtion,H7A
+EX00533,PT00533,ST0002,Never smoker        ,No alcohol consumtion,H7W
+EX00534,PT00534,ST0002,Never smoker        ,No alcohol consumtion,H3R
+EX00535,PT00535,ST0002,Never smoker        ,No alcohol consumtion,J3Z
+EX00536,PT00536,ST0002,Never smoker        ,No alcohol consumtion,J1C
+EX00537,PT00537,ST0002,Never smoker        ,No alcohol consumtion,H0A
+EX00538,PT00538,ST0002,Never smoker        ,No alcohol consumtion,H7X
+EX00539,PT00539,ST0002,Never smoker        ,No alcohol consumtion,H9W
+EX00540,PT00540,ST0002,Never smoker        ,No alcohol consumtion,J3T
+EX00541,PT00541,ST0002,Never smoker        ,No alcohol consumtion,J8R
+EX00542,PT00542,ST0002,Never smoker        ,No alcohol consumtion,H4J
+EX00543,PT00543,ST0002,Never smoker        ,No alcohol consumtion,H2J
+EX00544,PT00544,ST0002,Never smoker        ,No alcohol consumtion,J6S
+EX00545,PT00545,ST0002,Never smoker        ,No alcohol consumtion,J6R
+EX00546,PT00546,ST0002,Never smoker        ,No alcohol consumtion,J3R
+EX00547,PT00547,ST0002,Never smoker        ,No alcohol consumtion,J6Y
+EX00548,PT00548,ST0002,Never smoker        ,No alcohol consumtion,J6E
+EX00549,PT00549,ST0002,Never smoker        ,No alcohol consumtion,J6V
+EX00550,PT00550,ST0002,Never smoker        ,No alcohol consumtion,H8S
+EX00551,PT00551,ST0002,Never smoker        ,No alcohol consumtion,J1J
+EX00552,PT00552,ST0002,Never smoker        ,No alcohol consumtion,H3B
+EX00553,PT00553,ST0002,Never smoker        ,No alcohol consumtion,H4K
+EX00554,PT00554,ST0002,Never smoker        ,No alcohol consumtion,H9R
+EX00555,PT00555,ST0002,Never smoker        ,No alcohol consumtion,H3C
+EX00556,PT00556,ST0002,Never smoker        ,No alcohol consumtion,J6E
+EX00557,PT00557,ST0002,Never smoker        ,No alcohol consumtion,J5W
+EX00558,PT00558,ST0002,Never smoker        ,No alcohol consumtion,J3Z
+EX00559,PT00559,ST0002,Never smoker        ,No alcohol consumtion,J7R
+EX00560,PT00560,ST0002,Never smoker        ,No alcohol consumtion,J2B
+EX00561,PT00561,ST0002,Never smoker        ,No alcohol consumtion,J1L
+EX00562,PT00562,ST0002,Never smoker        ,No alcohol consumtion,H1Z
+EX00563,PT00563,ST0002,Never smoker        ,No alcohol consumtion,H2X
+EX00564,PT00564,ST0002,Never smoker        ,No alcohol consumtion,H9A
+EX00565,PT00565,ST0002,Never smoker        ,No alcohol consumtion,J7N
+EX00566,PT00566,ST0002,Never smoker        ,No alcohol consumtion,J8V
+EX00567,PT00567,ST0002,Never smoker        ,No alcohol consumtion,J2L
+EX00568,PT00568,ST0002,Never smoker        ,No alcohol consumtion,H2S
+EX00569,PT00569,ST0002,Never smoker        ,No alcohol consumtion,H2W
+EX00570,PT00570,ST0002,Never smoker        ,No alcohol consumtion,J2N
+EX00571,PT00571,ST0002,Never smoker        ,No alcohol consumtion,H2W
+EX00572,PT00572,ST0002,Never smoker        ,No alcohol consumtion,J2X
+EX00573,PT00573,ST0002,Never smoker        ,No alcohol consumtion,J3X
+EX00574,PT00574,ST0002,Never smoker        ,No alcohol consumtion,H4W
+EX00575,PT00575,ST0002,Never smoker        ,No alcohol consumtion,J6R
+EX00576,PT00576,ST0002,Never smoker        ,No alcohol consumtion,H9W
+EX00577,PT00577,ST0002,Never smoker        ,No alcohol consumtion,H7M
+EX00578,PT00578,ST0002,Never smoker        ,No alcohol consumtion,H1H
+EX00579,PT00579,ST0002,Never smoker        ,No alcohol consumtion,J8M
+EX00580,PT00580,ST0002,Never smoker        ,No alcohol consumtion,H1J
+EX00581,PT00581,ST0002,Never smoker        ,No alcohol consumtion,J8L
+EX00582,PT00582,ST0002,Never smoker        ,No alcohol consumtion,H4T
+EX00583,PT00583,ST0002,Never smoker        ,No alcohol consumtion,J1H
+EX00584,PT00584,ST0002,Never smoker        ,No alcohol consumtion,H4G
+EX00585,PT00585,ST0002,Never smoker        ,No alcohol consumtion,J6N
+EX00586,PT00586,ST0002,Never smoker        ,No alcohol consumtion,H3G
+EX00587,PT00587,ST0002,Never smoker        ,No alcohol consumtion,J3H
+EX00588,PT00588,ST0002,Never smoker        ,No alcohol consumtion,H4K
+EX00589,PT00589,ST0002,Never smoker        ,No alcohol consumtion,J8Z
+EX00590,PT00590,ST0002,Never smoker        ,No alcohol consumtion,J1G
+EX00591,PT00591,ST0002,Never smoker        ,No alcohol consumtion,J4J
+EX00592,PT00592,ST0002,Never smoker        ,No alcohol consumtion,H8Y
+EX00593,PT00593,ST0002,Never smoker        ,No alcohol consumtion,J4M
+EX00594,PT00594,ST0002,Never smoker        ,No alcohol consumtion,H2C
+EX00595,PT00595,ST0002,Never smoker        ,No alcohol consumtion,H9K
+EX00596,PT00596,ST0002,Never smoker        ,No alcohol consumtion,H2R
+EX00597,PT00597,ST0002,Never smoker        ,No alcohol consumtion,H2K
+EX00598,PT00598,ST0002,Never smoker        ,No alcohol consumtion,J8Z
+EX00599,PT00599,ST0002,Never smoker        ,No alcohol consumtion,J2M
+EX00600,PT00600,ST0002,Never smoker        ,No alcohol consumtion,H4Z
+EX00601,PT00601,ST0002,Never smoker        ,No alcohol consumtion,H2S
+EX00602,PT00602,ST0002,Never smoker        ,No alcohol consumtion,H7A
+EX00603,PT00603,ST0002,Never smoker        ,No alcohol consumtion,H3P
+EX00604,PT00604,ST0002,Never smoker        ,No alcohol consumtion,H2Z
+EX00605,PT00605,ST0002,Never smoker        ,No alcohol consumtion,J7H
+EX00606,PT00606,ST0002,Never smoker        ,No alcohol consumtion,H7T
+EX00607,PT00607,ST0002,Never smoker        ,No alcohol consumtion,H7V
+EX00608,PT00608,ST0002,Never smoker        ,No alcohol consumtion,H4T
+EX00609,PT00609,ST0002,Never smoker        ,No alcohol consumtion,J2E
+EX00610,PT00610,ST0002,Never smoker        ,No alcohol consumtion,H9K
+EX00611,PT00611,ST0002,Never smoker        ,No alcohol consumtion,J7A
+EX00612,PT00612,ST0002,Never smoker        ,No alcohol consumtion,J2W
+EX00613,PT00613,ST0002,Never smoker        ,No alcohol consumtion,J1T
+EX00614,PT00614,ST0002,Never smoker        ,No alcohol consumtion,J6R
+EX00615,PT00615,ST0002,Never smoker        ,No alcohol consumtion,H2P
+EX00616,PT00616,ST0002,Never smoker        ,No alcohol consumtion,H1S
+EX00617,PT00617,ST0002,Never smoker        ,No alcohol consumtion,H9B
+EX00618,PT00618,ST0002,Never smoker        ,No alcohol consumtion,H3H
+EX00619,PT00619,ST0002,Never smoker        ,No alcohol consumtion,J2R
+EX00620,PT00620,ST0002,Never smoker        ,No alcohol consumtion,H3M
+EX00621,PT00621,ST0002,Never smoker        ,No alcohol consumtion,J2R
+EX00622,PT00622,ST0002,Never smoker        ,No alcohol consumtion,H8Z
+EX00623,PT00623,ST0002,Never smoker        ,No alcohol consumtion,H7T
+EX00624,PT00624,ST0002,Never smoker        ,No alcohol consumtion,H3T
+EX00625,PT00625,ST0002,Never smoker        ,No alcohol consumtion,H2Z
+EX00626,PT00626,ST0002,Never smoker        ,No alcohol consumtion,J8V
+EX00627,PT00627,ST0003,Current some day smoker        ,Alcohol consumption unknown,J7V
+EX00628,PT00628,ST0003,Unknown if ever smoked        ,No alcohol consumtion,J7V
+EX00629,PT00629,ST0003,Never smoker        ,No alcohol consumtion,J7V
+EX00630,PT00630,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H1L
+EX00631,PT00631,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,H1L
+EX00632,PT00632,ST0003,Never smoker        ,No alcohol consumtion,H1L
+EX00633,PT00633,ST0003,Former smoker        ,Alcohol consumption unknown,J9L
+EX00634,PT00634,ST0003,Never smoker        ,Alcohol consumption unknown,J9L
+EX00635,PT00635,ST0003,Never smoker        ,No alcohol consumtion,J9L
+EX00636,PT00636,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,J2L
+EX00637,PT00637,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,J2L
+EX00638,PT00638,ST0003,Never smoker        ,No alcohol consumtion,J2L
+EX00639,PT00639,ST0003,"Smoker, current status unknown        ",Alcohol consumption unknown,J2K
+EX00640,PT00640,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J2K
+EX00641,PT00641,ST0003,Never smoker        ,No alcohol consumtion,J2K
+EX00642,PT00642,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J9L
+EX00643,PT00643,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J9L
+EX00644,PT00644,ST0003,Never smoker        ,No alcohol consumtion,J9L
+EX00645,PT00645,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J6T
+EX00646,PT00646,ST0003,Current Light tobacco smoker,No alcohol consumtion,J6T
+EX00647,PT00647,ST0003,Never smoker        ,No alcohol consumtion,J6T
+EX00648,PT00648,ST0003,Current Light tobacco smoker,No alcohol consumtion,H2S
+EX00649,PT00649,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H2S
+EX00650,PT00650,ST0003,Never smoker        ,No alcohol consumtion,H2S
+EX00651,PT00651,ST0003,Current Light tobacco smoker,Alcohol consumption unknown,J1X
+EX00652,PT00652,ST0003,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J1X
+EX00653,PT00653,ST0003,Never smoker        ,No alcohol consumtion,J1X
+EX00654,PT00654,ST0003,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H4B
+EX00655,PT00655,ST0003,Never smoker        ,Alcohol intake exceeds recommended daily limit,H4B
+EX00656,PT00656,ST0003,Never smoker        ,No alcohol consumtion,H4B
+EX00657,PT00657,ST0003,Current every day smoker        ,Alcohol consumption unknown,H5A
+EX00658,PT00658,ST0003,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H5A
+EX00659,PT00659,ST0003,Never smoker        ,No alcohol consumtion,H5A
+EX00660,PT00660,ST0003,Current every day smoker        ,Alcohol consumption unknown,J2B
+EX00661,PT00661,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J2B
+EX00662,PT00662,ST0003,Never smoker        ,No alcohol consumtion,J2B
+EX00663,PT00663,ST0003,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J8V
+EX00664,PT00664,ST0003,Never smoker        ,No alcohol consumtion,J8V
+EX00665,PT00665,ST0003,Never smoker        ,No alcohol consumtion,J8V
+EX00666,PT00666,ST0003,Current some day smoker        ,Alcohol consumption unknown,H2Y
+EX00667,PT00667,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H2Y
+EX00668,PT00668,ST0003,Never smoker        ,No alcohol consumtion,H2Y
+EX00669,PT00669,ST0003,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H4T
+EX00670,PT00670,ST0003,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H4T
+EX00671,PT00671,ST0003,Never smoker        ,No alcohol consumtion,H4T
+EX00672,PT00672,ST0003,Never smoker        ,Alcohol intake within recommended daily limit,H3V
+EX00673,PT00673,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,H3V
+EX00674,PT00674,ST0003,Never smoker        ,No alcohol consumtion,H3V
+EX00675,PT00675,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J6J
+EX00676,PT00676,ST0003,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J6J
+EX00677,PT00677,ST0003,Never smoker        ,No alcohol consumtion,J6J
+EX00678,PT00678,ST0003,"Smoker, current status unknown        ",Alcohol consumption unknown,J7A
+EX00679,PT00679,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J7A
+EX00680,PT00680,ST0003,Never smoker        ,No alcohol consumtion,J7A
+EX00681,PT00681,ST0003,Unknown if ever smoked        ,No alcohol consumtion,J2L
+EX00682,PT00682,ST0003,Never smoker        ,No alcohol consumtion,J2L
+EX00683,PT00683,ST0003,Never smoker        ,No alcohol consumtion,J2L
+EX00684,PT00684,ST0003,Current every day smoker        ,No alcohol consumtion,J7V
+EX00685,PT00685,ST0003,Current every day smoker        ,Alcohol consumption unknown,J7V
+EX00686,PT00686,ST0003,Never smoker        ,No alcohol consumtion,J7V
+EX00687,PT00687,ST0003,Current Light tobacco smoker,No alcohol consumtion,J1C
+EX00688,PT00688,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J1C
+EX00689,PT00689,ST0003,Never smoker        ,No alcohol consumtion,J1C
+EX00690,PT00690,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J7M
+EX00691,PT00691,ST0003,"Smoker, current status unknown        ",Alcohol consumption unknown,J7M
+EX00692,PT00692,ST0003,Never smoker        ,No alcohol consumtion,J7M
+EX00693,PT00693,ST0003,Never smoker        ,No alcohol consumtion,J3H
+EX00694,PT00694,ST0003,"Smoker, current status unknown        ",No alcohol consumtion,J3H
+EX00695,PT00695,ST0003,Never smoker        ,No alcohol consumtion,J3H
+EX00696,PT00696,ST0003,Former smoker        ,Alcohol consumption unknown,J4G
+EX00697,PT00697,ST0003,Former smoker        ,Alcohol consumption unknown,J4G
+EX00698,PT00698,ST0003,Never smoker        ,No alcohol consumtion,J4G
+EX00699,PT00699,ST0003,Current some day smoker        ,Alcohol consumption unknown,J6V
+EX00700,PT00700,ST0003,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J6V
+EX00701,PT00701,ST0003,Never smoker        ,No alcohol consumtion,J6V
+EX00702,PT00702,ST0003,Current some day smoker        ,Alcohol consumption unknown,H7B
+EX00703,PT00703,ST0003,Current some day smoker        ,No alcohol consumtion,H7B
+EX00704,PT00704,ST0003,Never smoker        ,No alcohol consumtion,H7B
+EX00705,PT00705,ST0003,Former smoker        ,Alcohol intake exceeds recommended daily limit,H0A
+EX00706,PT00706,ST0003,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H0A
+EX00707,PT00707,ST0003,Never smoker        ,No alcohol consumtion,H0A
+EX00708,PT00708,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H0A
+EX00709,PT00709,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H0A
+EX00710,PT00710,ST0003,Never smoker        ,No alcohol consumtion,H0A
+EX00711,PT00711,ST0003,Current some day smoker        ,No alcohol consumtion,J6R
+EX00712,PT00712,ST0003,Current Light tobacco smoker,No alcohol consumtion,J6R
+EX00713,PT00713,ST0003,Never smoker        ,No alcohol consumtion,J6R
+EX00714,PT00714,ST0003,Current some day smoker        ,Alcohol consumption unknown,J3Z
+EX00715,PT00715,ST0003,Current Light tobacco smoker,No alcohol consumtion,J3Z
+EX00716,PT00716,ST0003,Never smoker        ,No alcohol consumtion,J3Z
+EX00717,PT00717,ST0003,Unknown if ever smoked        ,No alcohol consumtion,J2N
+EX00718,PT00718,ST0003,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,J2N
+EX00719,PT00719,ST0003,Never smoker        ,No alcohol consumtion,J2N
+EX00720,PT00720,ST0003,"Smoker, current status unknown        ",No alcohol consumtion,J9A
+EX00721,PT00721,ST0003,Former smoker        ,No alcohol consumtion,J9A
+EX00722,PT00722,ST0003,Never smoker        ,No alcohol consumtion,J9A
+EX00723,PT00723,ST0003,"Smoker, current status unknown        ",Alcohol consumption unknown,H4Y
+EX00724,PT00724,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H4Y
+EX00725,PT00725,ST0003,Never smoker        ,No alcohol consumtion,H4Y
+EX00726,PT00726,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H4N
+EX00727,PT00727,ST0003,Former smoker        ,No alcohol consumtion,H4N
+EX00728,PT00728,ST0003,Never smoker        ,No alcohol consumtion,H4N
+EX00729,PT00729,ST0003,Current Light tobacco smoker,Alcohol consumption unknown,J9J
+EX00730,PT00730,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J9J
+EX00731,PT00731,ST0003,Never smoker        ,No alcohol consumtion,J9J
+EX00732,PT00732,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H3M
+EX00733,PT00733,ST0003,Never smoker        ,Alcohol intake within recommended daily limit,H3M
+EX00734,PT00734,ST0003,Never smoker        ,No alcohol consumtion,H3M
+EX00735,PT00735,ST0003,Former smoker        ,Alcohol intake exceeds recommended daily limit,J3P
+EX00736,PT00736,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J3P
+EX00737,PT00737,ST0003,Never smoker        ,No alcohol consumtion,J3P
+EX00738,PT00738,ST0003,Former smoker        ,Alcohol intake within recommended daily limit,J2T
+EX00739,PT00739,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H1P
+EX00740,PT00740,ST0003,Never smoker        ,No alcohol consumtion,H4Y
+EX00741,PT00741,ST0003,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H2K
+EX00742,PT00742,ST0003,Current every day smoker        ,No alcohol consumtion,J8X
+EX00743,PT00743,ST0003,Never smoker        ,No alcohol consumtion,H1A
+EX00744,PT00744,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,H1P
+EX00745,PT00745,ST0003,Never smoker        ,Alcohol intake exceeds recommended daily limit,H7G
+EX00746,PT00746,ST0003,Never smoker        ,No alcohol consumtion,H1A
+EX00747,PT00747,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H8P
+EX00748,PT00748,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H3A
+EX00749,PT00749,ST0003,Never smoker        ,No alcohol consumtion,J2S
+EX00750,PT00750,ST0003,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H7T
+EX00751,PT00751,ST0003,Current some day smoker        ,Alcohol consumption unknown,H4T
+EX00752,PT00752,ST0003,Never smoker        ,No alcohol consumtion,J1X
+EX00753,PT00753,ST0003,Never smoker        ,No alcohol consumtion,H7A
+EX00754,PT00754,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H1E
+EX00755,PT00755,ST0003,Never smoker        ,No alcohol consumtion,H1X
+EX00756,PT00756,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H1E
+EX00757,PT00757,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H3E
+EX00758,PT00758,ST0003,Never smoker        ,No alcohol consumtion,J1E
+EX00759,PT00759,ST0003,Current Light tobacco smoker,Alcohol consumption unknown,H3H
+EX00760,PT00760,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H4B
+EX00761,PT00761,ST0003,Never smoker        ,No alcohol consumtion,H7M
+EX00762,PT00762,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J3E
+EX00763,PT00763,ST0003,Never smoker        ,Alcohol consumption unknown,J5W
+EX00764,PT00764,ST0003,Never smoker        ,No alcohol consumtion,H1E
+EX00765,PT00765,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,H7X
+EX00766,PT00766,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H2B
+EX00767,PT00767,ST0003,Never smoker        ,No alcohol consumtion,J1J
+EX00768,PT00768,ST0003,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H1Y
+EX00769,PT00769,ST0003,Former smoker        ,Alcohol consumption unknown,J1A
+EX00770,PT00770,ST0003,Never smoker        ,No alcohol consumtion,H3X
+EX00771,PT00771,ST0003,Current some day smoker        ,Alcohol intake within recommended daily limit,J1J
+EX00772,PT00772,ST0003,Never smoker        ,Alcohol intake exceeds recommended daily limit,J7C
+EX00773,PT00773,ST0003,Never smoker        ,No alcohol consumtion,H1T
+EX00774,PT00774,ST0003,Never smoker        ,Alcohol intake within recommended daily limit,J4K
+EX00775,PT00775,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,H9G
+EX00776,PT00776,ST0003,Never smoker        ,No alcohol consumtion,J7A
+EX00777,PT00777,ST0003,Never smoker        ,Alcohol consumption unknown,H4S
+EX00778,PT00778,ST0003,Former smoker        ,No alcohol consumtion,H9X
+EX00779,PT00779,ST0003,Never smoker        ,No alcohol consumtion,H5B
+EX00780,PT00780,ST0003,"Smoker, current status unknown        ",No alcohol consumtion,J2M
+EX00781,PT00781,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H1G
+EX00782,PT00782,ST0003,Never smoker        ,No alcohol consumtion,H4R
+EX00783,PT00783,ST0003,Former smoker        ,Alcohol intake within recommended daily limit,H7H
+EX00784,PT00784,ST0003,Current some day smoker        ,Alcohol intake within recommended daily limit,J3V
+EX00785,PT00785,ST0003,Never smoker        ,No alcohol consumtion,J5W
+EX00786,PT00786,ST0003,Current some day smoker        ,Alcohol consumption unknown,J4N
+EX00787,PT00787,ST0003,"Smoker, current status unknown        ",Alcohol consumption unknown,J1C
+EX00788,PT00788,ST0003,Never smoker        ,No alcohol consumtion,H8R
+EX00789,PT00789,ST0003,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J1E
+EX00790,PT00790,ST0003,Current some day smoker        ,No alcohol consumtion,H8R
+EX00791,PT00791,ST0003,Never smoker        ,No alcohol consumtion,J3T
+EX00792,PT00792,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J6Y
+EX00793,PT00793,ST0003,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H4N
+EX00794,PT00794,ST0003,Never smoker        ,No alcohol consumtion,H5A
+EX00795,PT00795,ST0003,Unknown if ever smoked        ,Alcohol consumption unknown,J8T
+EX00796,PT00796,ST0003,Current Light tobacco smoker,No alcohol consumtion,J8E
+EX00797,PT00797,ST0003,Never smoker        ,No alcohol consumtion,H1M
+EX00798,PT00798,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,J6V
+EX00799,PT00799,ST0003,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H1H
+EX00800,PT00800,ST0003,Never smoker        ,No alcohol consumtion,J9A
+EX00801,PT00801,ST0003,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J5V
+EX00802,PT00802,ST0003,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J3A
+EX00803,PT00803,ST0003,Never smoker        ,No alcohol consumtion,H1M
+EX00804,PT00804,ST0003,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J7X
+EX00805,PT00805,ST0003,Current some day smoker        ,No alcohol consumtion,H9A
+EX00806,PT00806,ST0003,Never smoker        ,No alcohol consumtion,J1G
+EX00807,PT00807,ST0003,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J2E
+EX00808,PT00808,ST0003,Never smoker        ,Alcohol intake exceeds recommended daily limit,J8E
+EX00809,PT00809,ST0003,Never smoker        ,No alcohol consumtion,J8R
+EX00810,PT00810,ST0003,"Smoker, current status unknown        ",No alcohol consumtion,H4Y
+EX00811,PT00811,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J6T
+EX00812,PT00812,ST0003,Never smoker        ,No alcohol consumtion,J1N
+EX00813,PT00813,ST0003,Current some day smoker        ,Alcohol consumption unknown,H3P
+EX00814,PT00814,ST0003,Never smoker        ,No alcohol consumtion,J7C
+EX00815,PT00815,ST0003,Never smoker        ,No alcohol consumtion,H3E
+EX00816,PT00816,ST0003,Current every day smoker        ,No alcohol consumtion,J8R
+EX00817,PT00817,ST0003,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J2J
+EX00818,PT00818,ST0003,Never smoker        ,No alcohol consumtion,H8S
+EX00819,PT00819,ST0003,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J7V
+EX00820,PT00820,ST0003,Current Light tobacco smoker,No alcohol consumtion,J7V
+EX00821,PT00821,ST0003,Never smoker        ,No alcohol consumtion,J7V
+EX00822,PT00822,ST0003,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H2V
+EX00823,PT00823,ST0003,Current every day smoker        ,Alcohol intake within recommended daily limit,H2V
+EX00824,PT00824,ST0003,Never smoker        ,No alcohol consumtion,H2V
+EX00825,PT00825,ST0003,Never smoker        ,No alcohol consumtion,H2V
+EX00826,PT00826,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H4N
+EX00827,PT00827,ST0004,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J2X
+EX00828,PT00828,ST0004,Never smoker        ,Alcohol intake exceeds recommended daily limit,H4C
+EX00829,PT00829,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,J5Y
+EX00830,PT00830,ST0004,Current some day smoker        ,No alcohol consumtion,J6S
+EX00831,PT00831,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H3L
+EX00832,PT00832,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H7P
+EX00833,PT00833,ST0004,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H1C
+EX00834,PT00834,ST0004,Never smoker        ,Alcohol intake exceeds recommended daily limit,H3H
+EX00835,PT00835,ST0004,Current some day smoker        ,No alcohol consumtion,J4M
+EX00836,PT00836,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H7X
+EX00837,PT00837,ST0004,Never smoker        ,Alcohol consumption unknown,J4M
+EX00838,PT00838,ST0004,Former smoker        ,Alcohol intake exceeds recommended daily limit,H7B
+EX00839,PT00839,ST0004,Never smoker        ,No alcohol consumtion,H4X
+EX00840,PT00840,ST0004,Never smoker        ,Alcohol consumption unknown,H4B
+EX00841,PT00841,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J2E
+EX00842,PT00842,ST0004,Unknown if ever smoked        ,Alcohol consumption unknown,J7L
+EX00843,PT00843,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,H9J
+EX00844,PT00844,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,J4J
+EX00845,PT00845,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H1W
+EX00846,PT00846,ST0004,"Smoker, current status unknown        ",No alcohol consumtion,H2E
+EX00847,PT00847,ST0004,Unknown if ever smoked        ,No alcohol consumtion,H7L
+EX00848,PT00848,ST0004,Never smoker        ,No alcohol consumtion,H9B
+EX00849,PT00849,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,J8V
+EX00850,PT00850,ST0004,Current Light tobacco smoker,No alcohol consumtion,H3T
+EX00851,PT00851,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J6R
+EX00852,PT00852,ST0004,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J3P
+EX00853,PT00853,ST0004,Current every day smoker        ,Alcohol consumption unknown,H9B
+EX00854,PT00854,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J7T
+EX00855,PT00855,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,H9R
+EX00856,PT00856,ST0004,Current some day smoker        ,Alcohol consumption unknown,H7A
+EX00857,PT00857,ST0004,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,H9B
+EX00858,PT00858,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H2J
+EX00859,PT00859,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,H2Y
+EX00860,PT00860,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H4J
+EX00861,PT00861,ST0004,Former smoker        ,Alcohol intake exceeds recommended daily limit,H2W
+EX00862,PT00862,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,H1J
+EX00863,PT00863,ST0004,Never smoker        ,Alcohol consumption unknown,J7P
+EX00864,PT00864,ST0004,Never smoker        ,Alcohol intake exceeds recommended daily limit,J7E
+EX00865,PT00865,ST0004,Current every day smoker        ,No alcohol consumtion,H3T
+EX00866,PT00866,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H4N
+EX00867,PT00867,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H4A
+EX00868,PT00868,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,H7V
+EX00869,PT00869,ST0004,Unknown if ever smoked        ,Alcohol consumption unknown,J4L
+EX00870,PT00870,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J1X
+EX00871,PT00871,ST0004,Current some day smoker        ,No alcohol consumtion,J1N
+EX00872,PT00872,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake within recommended daily limit,J8T
+EX00873,PT00873,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H9E
+EX00874,PT00874,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,H5A
+EX00875,PT00875,ST0004,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,H2Z
+EX00876,PT00876,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H8T
+EX00877,PT00877,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J4H
+EX00878,PT00878,ST0004,"Smoker, current status unknown        ",No alcohol consumtion,H9C
+EX00879,PT00879,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,J1J
+EX00880,PT00880,ST0004,Never smoker        ,No alcohol consumtion,H2V
+EX00881,PT00881,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,H2E
+EX00882,PT00882,ST0004,Former smoker        ,Alcohol consumption unknown,H4K
+EX00883,PT00883,ST0004,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,H7C
+EX00884,PT00884,ST0004,Current some day smoker        ,No alcohol consumtion,J1R
+EX00885,PT00885,ST0004,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,J4J
+EX00886,PT00886,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J7T
+EX00887,PT00887,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H2J
+EX00888,PT00888,ST0004,Current some day smoker        ,Alcohol consumption unknown,J2R
+EX00889,PT00889,ST0004,Current Light tobacco smoker,No alcohol consumtion,H2X
+EX00890,PT00890,ST0004,Never smoker        ,No alcohol consumtion,H7Y
+EX00891,PT00891,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,J8Z
+EX00892,PT00892,ST0004,Never smoker        ,Alcohol consumption unknown,J6T
+EX00893,PT00893,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,H1K
+EX00894,PT00894,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,J1H
+EX00895,PT00895,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,H8Y
+EX00896,PT00896,ST0004,Former smoker        ,No alcohol consumtion,H3N
+EX00897,PT00897,ST0004,Current some day smoker        ,No alcohol consumtion,J1E
+EX00898,PT00898,ST0004,Current Light tobacco smoker,No alcohol consumtion,J8G
+EX00899,PT00899,ST0004,"Smoker, current status unknown        ",No alcohol consumtion,J9H
+EX00900,PT00900,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H1W
+EX00901,PT00901,ST0004,Former smoker        ,Alcohol intake exceeds recommended daily limit,H4C
+EX00902,PT00902,ST0004,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,J7M
+EX00903,PT00903,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,H4X
+EX00904,PT00904,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,J7L
+EX00905,PT00905,ST0004,Current Light tobacco smoker,No alcohol consumtion,H3X
+EX00906,PT00906,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J4M
+EX00907,PT00907,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,H3V
+EX00908,PT00908,ST0004,Current every day smoker        ,Alcohol consumption unknown,H3Z
+EX00909,PT00909,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,H3J
+EX00910,PT00910,ST0004,Current every day smoker        ,No alcohol consumtion,H1Y
+EX00911,PT00911,ST0004,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H3J
+EX00912,PT00912,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,J5Z
+EX00913,PT00913,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,J7G
+EX00914,PT00914,ST0004,Current Light tobacco smoker,No alcohol consumtion,J6K
+EX00915,PT00915,ST0004,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J1J
+EX00916,PT00916,ST0004,Current Light tobacco smoker,No alcohol consumtion,H4R
+EX00917,PT00917,ST0004,Current some day smoker        ,Alcohol intake within recommended daily limit,H4E
+EX00918,PT00918,ST0004,Current Light tobacco smoker,Alcohol consumption unknown,J8X
+EX00919,PT00919,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H2C
+EX00920,PT00920,ST0004,Unknown if ever smoked        ,No alcohol consumtion,J6A
+EX00921,PT00921,ST0004,Former smoker        ,Alcohol consumption unknown,H3T
+EX00922,PT00922,ST0004,Former smoker        ,No alcohol consumtion,H5B
+EX00923,PT00923,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,J8R
+EX00924,PT00924,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J4N
+EX00925,PT00925,ST0004,Current every day smoker        ,Alcohol consumption unknown,H4E
+EX00926,PT00926,ST0004,Current some day smoker        ,Alcohol consumption unknown,J3X
+EX00927,PT00927,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J7J
+EX00928,PT00928,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H7C
+EX00929,PT00929,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H1W
+EX00930,PT00930,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,J3M
+EX00931,PT00931,ST0004,Unknown if ever smoked        ,Alcohol consumption unknown,J2B
+EX00932,PT00932,ST0004,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J8G
+EX00933,PT00933,ST0004,Current every day smoker        ,No alcohol consumtion,H1M
+EX00934,PT00934,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,H3M
+EX00935,PT00935,ST0004,Former smoker        ,Alcohol consumption unknown,H3A
+EX00936,PT00936,ST0004,Current every day smoker        ,Alcohol consumption unknown,H4X
+EX00937,PT00937,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J8G
+EX00938,PT00938,ST0004,Never smoker        ,Alcohol consumption unknown,J4K
+EX00939,PT00939,ST0004,Unknown if ever smoked        ,Alcohol consumption unknown,J2R
+EX00940,PT00940,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H3C
+EX00941,PT00941,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H2W
+EX00942,PT00942,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J8T
+EX00943,PT00943,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,H2K
+EX00944,PT00944,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,J8Z
+EX00945,PT00945,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J9L
+EX00946,PT00946,ST0004,Current Light tobacco smoker,No alcohol consumtion,H3X
+EX00947,PT00947,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H2N
+EX00948,PT00948,ST0004,Never smoker        ,Alcohol intake exceeds recommended daily limit,J4G
+EX00949,PT00949,ST0004,"Smoker, current status unknown        ",No alcohol consumtion,H3Z
+EX00950,PT00950,ST0004,Current some day smoker        ,Alcohol intake exceeds recommended daily limit,J1C
+EX00951,PT00951,ST0004,Current some day smoker        ,No alcohol consumtion,J4P
+EX00952,PT00952,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,J5R
+EX00953,PT00953,ST0004,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J6N
+EX00954,PT00954,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,H4M
+EX00955,PT00955,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,J3P
+EX00956,PT00956,ST0004,Current some day smoker        ,No alcohol consumtion,J1E
+EX00957,PT00957,ST0004,Former smoker        ,Alcohol intake exceeds recommended daily limit,H3B
+EX00958,PT00958,ST0004,Current every day smoker        ,Alcohol consumption unknown,H1A
+EX00959,PT00959,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,J4G
+EX00960,PT00960,ST0004,Unknown if ever smoked        ,No alcohol consumtion,J6A
+EX00961,PT00961,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H7X
+EX00962,PT00962,ST0004,Current every day smoker        ,Alcohol intake exceeds recommended daily limit,H2X
+EX00963,PT00963,ST0004,"Smoker, current status unknown        ",No alcohol consumtion,H1R
+EX00964,PT00964,ST0004,Current Light tobacco smoker,No alcohol consumtion,H7N
+EX00965,PT00965,ST0004,Current Light tobacco smoker,No alcohol consumtion,H3C
+EX00966,PT00966,ST0004,Never smoker        ,Alcohol intake within recommended daily limit,J8P
+EX00967,PT00967,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol intake exceeds recommended daily limit,J6W
+EX00968,PT00968,ST0004,Never smoker        ,No alcohol consumtion,J3E
+EX00969,PT00969,ST0004,Current Light tobacco smoker,No alcohol consumtion,J5T
+EX00970,PT00970,ST0004,Former smoker        ,No alcohol consumtion,J6E
+EX00971,PT00971,ST0004,Former smoker        ,Alcohol intake exceeds recommended daily limit,J2A
+EX00972,PT00972,ST0004,Current some day smoker        ,No alcohol consumtion,H1Y
+EX00973,PT00973,ST0004,Never smoker        ,No alcohol consumtion,J6K
+EX00974,PT00974,ST0004,Current Light tobacco smoker,Alcohol intake exceeds recommended daily limit,H7R
+EX00975,PT00975,ST0004,Unknown if ever smoked        ,Alcohol intake within recommended daily limit,H8N
+EX00976,PT00976,ST0004,Current every day smoker        ,No alcohol consumtion,J2G
+EX00977,PT00977,ST0004,Unknown if ever smoked        ,Alcohol consumption unknown,H7X
+EX00978,PT00978,ST0004,Current Heavy tobacco smoker (more than 20)        ,No alcohol consumtion,J2E
+EX00979,PT00979,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,H4N
+EX00980,PT00980,ST0004,Current Heavy tobacco smoker (more than 20)        ,Alcohol consumption unknown,H7C
+EX00981,PT00981,ST0004,Never smoker        ,Alcohol intake exceeds recommended daily limit,H7Y
+EX00982,PT00982,ST0004,"Smoker, current status unknown        ",Alcohol intake exceeds recommended daily limit,J7V
+EX00983,PT00983,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J5T
+EX00984,PT00984,ST0004,Former smoker        ,No alcohol consumtion,H7A
+EX00985,PT00985,ST0004,Former smoker        ,Alcohol consumption unknown,J8M
+EX00986,PT00986,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,J8N
+EX00987,PT00987,ST0004,Current every day smoker        ,No alcohol consumtion,J1H
+EX00988,PT00988,ST0004,Current every day smoker        ,No alcohol consumtion,H4N
+EX00989,PT00989,ST0004,Never smoker        ,Alcohol consumption unknown,H7L
+EX00990,PT00990,ST0004,"Smoker, current status unknown        ",Alcohol consumption unknown,J1N
+EX00991,PT00991,ST0004,Current Light tobacco smoker,Alcohol intake within recommended daily limit,H7C
+EX00992,PT00992,ST0004,Former smoker        ,Alcohol intake within recommended daily limit,H7A
+EX00993,PT00993,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,J3R
+EX00994,PT00994,ST0004,Current every day smoker        ,No alcohol consumtion,H7W
+EX00995,PT00995,ST0004,Current every day smoker        ,Alcohol intake within recommended daily limit,H5A
+EX00996,PT00996,ST0004,Current some day smoker        ,No alcohol consumtion,H4Z
+EX00997,PT00997,ST0004,Former smoker        ,Alcohol consumption unknown,J4L
+EX00998,PT00998,ST0004,Unknown if ever smoked        ,Alcohol intake exceeds recommended daily limit,H3L
+EX00999,PT00999,ST0004,"Smoker, current status unknown        ",Alcohol intake within recommended daily limit,H3L
