@@ -13,7 +13,7 @@ object Donor {
   }
 
   def build(broadcastStudies: Broadcast[DataFrame], inputPath: String)(implicit spark: SparkSession): DataFrame = {
-    //TODO: Pass as parameters
+    //TODO: Pass filename as parameters?
     val donorsInput = s"$inputPath/donor.csv"
     val diagnosisInput = s"$inputPath/diagnosis.csv"
     val phenotypeInput = s"$inputPath/phenotype.csv"
@@ -43,6 +43,8 @@ object Donor {
             $"platform",
             $"variant_class",
             $"data_access",
+            $"is_harmonized",
+            $"experimental_strategy",
             fileId,
             fileSize
           )
@@ -54,7 +56,8 @@ object Donor {
       .join(broadcastStudies.value, $"donor.study_id" === $"study.study_id")
       .select( cols =
         donorId,
-        struct("study.*").as("study"),
+        $"study.study_id" as "study_id",
+        array(struct("study.*")).as("study"),
         $"donor.submitter_donor_id",
         notNullCol($"ethnicity") as "ethnicity",
         $"vital_status",
@@ -63,10 +66,9 @@ object Donor {
       .as("donorWithStudy")
 
     donorStudyJoin
-      //.join(diagnosis, $"donorWithStudy.study.study_id" === $"diagnosis.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosis.submitter_donor_id")
-      .join(diagnosisPerDonorAndStudy, $"donorWithStudy.study.study_id" === $"diagnosisGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"donorWithStudy.study.study_id" === $"phenotypeGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
-      .join(filesPerDonorAndStudy, $"donorWithStudy.study.study_id" === $"fileGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"fileGroup.submitter_donor_id", "left")
+      .join(diagnosisPerDonorAndStudy, $"donorWithStudy.study_id" === $"diagnosisGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
+      .join(phenotypesPerDonorAndStudy, $"donorWithStudy.study_id" === $"phenotypeGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
+      .join(filesPerDonorAndStudy, $"donorWithStudy.study_id" === $"fileGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"fileGroup.submitter_donor_id", "left")
       .select($"donorWithStudy.*", $"diagnosis_per_donor_per_study" as "diagnoses", $"phenotypes_per_donor_per_study" as "phenotypes", $"files_per_donor_per_study" as "files")
   }
 
@@ -74,7 +76,6 @@ object Donor {
     import spark.implicits._
 
     donors
-      .withColumn("study_id", $"study.study_id")
       .write
       .mode(SaveMode.Overwrite)
       .partitionBy("study_id")
