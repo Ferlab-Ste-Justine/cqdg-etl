@@ -21,7 +21,7 @@ object EtlApp extends App {
 
   import spark.implicits._
 
-  val studiesInput = s"$input/study.csv"
+  val studiesInput = s"$input/study.tsv"
 
   val study: DataFrame = readCsvFile(studiesInput)
     .select( cols=
@@ -38,7 +38,7 @@ object EtlApp extends App {
   val broadcastStudies = spark.sparkContext.broadcast(study);
 
   Donor.run(broadcastStudies, input, s"$output/cases")
-  File.run(broadcastStudies, input, s" $output/files")
+  File.run(broadcastStudies, input, s"$output/files")
 
   spark.stop()
 }

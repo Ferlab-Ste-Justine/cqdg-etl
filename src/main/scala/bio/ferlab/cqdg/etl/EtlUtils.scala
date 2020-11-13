@@ -25,11 +25,11 @@ package object EtlUtils {
     "inferSchema" -> "true",
     "comment" -> "#",
     "header"-> "true",
-    "sep" -> ",",
+    "sep" -> "\t",
     "parserLib" -> "univocity",
     "quote" -> "\"",
     "mode" -> "FAILFAST",
-    "nullValue" -> "-"
+    "nullValue" -> ""
   )
 
   def parseDate(date: String) : Option[LocalDate] = {
@@ -56,14 +56,15 @@ package object EtlUtils {
         $"submitter_donor_id",
         $"study_id",
         $"diagnosis_ICD_category",
-        $"diagnosis_ICD_code",
+        $"diagnosis_mondo_term",
         $"diagnosis_ICD_term",
         $"age_at_diagnosis")
       .groupBy("submitter_donor_id", "study_id")
       .agg(
         collect_list(
           struct(cols =
-            $"diagnosis_ICD_code" as "icd_code",
+            $"diagnosis_mondo_term" as "mondo_term",
+            $"diagnosis_mondo_term" as "mondo_term_keyword",
             $"diagnosis_ICD_term" as "icd_term",
             $"diagnosis_ICD_term" as "icd_term_keyword",
             $"diagnosis_ICD_category" as "icd_category",

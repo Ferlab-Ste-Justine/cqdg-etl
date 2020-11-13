@@ -1,0 +1,451 @@
+submitter_follow-up_id	submitter_donor_id	study_id	submitter_diagnosis_id	days_to_follow_up	disease_status_at_followup	relapse_interval	treatment_response	is_cancer
+FU00002	PT00002	ST0001	DI00002	68	No evidence of disease		Disease Progression	Yes
+FU00004	PT00004	ST0001	DI00004	57	Clinical remission		Partial Response	Yes
+FU00008	PT00008	ST0001	DI00008	35	Partial remission 		Clinical remission 	Yes
+FU00009	PT00009	ST0001	DI00009	80	Distant progression		Partial Response	Yes
+FU00011	PT00011	ST0001	DI00011	98	Loco-regional progression		No sign of disease	Yes
+FU00012	PT00012	ST0001	DI00012	87	Relapse or recurrence	60	Clinical remission 	Yes
+FU00020	PT00020	ST0001	DI00020	66	Stable		Clinical remission 	Yes
+FU00022	PT00022	ST0001	DI00022	84	Loco-regional progression		Disease Progression	Yes
+FU00023	PT00023	ST0001	DI00023	93	Distant progression		Partial Response	Yes
+FU00030	PT00030	ST0001	DI00030	54	Stable		Disease Progression	Yes
+FU00031	PT00031	ST0001	DI00031	55	Loco-regional progression		Partial Response	Yes
+FU00032	PT00032	ST0001	DI00032	70	Distant progression	50	Clinical remission 	Yes
+FU00035	PT00035	ST0001	DI00035	87	Partial remission 		Partial Response	Yes
+FU00036	PT00036	ST0001	DI00036	50	Stable		Clinical remission 	Yes
+FU00038	PT00038	ST0001	DI00038	54	Partial remission 		Disease Progression	Yes
+FU00039	PT00039	ST0001	DI00039	61	Distant progression		Stable Disease	Yes
+FU00041	PT00041	ST0001	DI00041	79	Stable		Disease Progression	Yes
+FU00043	PT00043	ST0001	DI00043	91	Clinical remission		Clinical remission 	Yes
+FU00047	PT00047	ST0001	DI00047	73	Clinical remission		Stable Disease	Yes
+FU00056	PT00056	ST0001	DI00056	84	Relapse or recurrence		Partial Response	Yes
+FU00057	PT00057	ST0001	DI00057	39	Partial remission 		Disease Progression	Yes
+FU00058	PT00058	ST0001	DI00058	62	Partial remission 		Disease Progression	Yes
+FU00060	PT00060	ST0001	DI00060	81	Stable		Disease Progression	Yes
+FU00062	PT00062	ST0001	DI00062	67	Stable		Clinical remission 	Yes
+FU00064	PT00064	ST0001	DI00064	42	Loco-regional progression		Partial Response	Yes
+FU00066	PT00066	ST0001	DI00066	97	No evidence of disease		Disease Progression	Yes
+FU00067	PT00067	ST0001	DI00067	72	Distant progression		Disease Progression	Yes
+FU00068	PT00068	ST0001	DI00068	56	Distant progression	50	Clinical remission 	Yes
+FU00073	PT00073	ST0001	DI00073	48	Partial remission 		Clinical remission 	Yes
+FU00075	PT00075	ST0001	DI00075	72	Relapse or recurrence	50	Clinical remission 	Yes
+FU00077	PT00077	ST0001	DI00077	99	Loco-regional progression	80	Clinical remission 	Yes
+FU00081	PT00081	ST0001	DI00081	83	Partial remission 		Partial Response	Yes
+FU00082	PT00082	ST0001	DI00082	72	Relapse or recurrence		Partial Response	Yes
+FU00084	PT00084	ST0001	DI00084	48	No evidence of disease		Stable Disease	Yes
+FU00085	PT00085	ST0001	DI00085	54	Clinical remission		Clinical remission 	Yes
+FU00087	PT00087	ST0001	DI00087	73	Distant progression		Partial Response	Yes
+FU00093	PT00093	ST0001	DI00093	76	Clinical remission		Disease Progression	Yes
+FU00096	PT00096	ST0001	DI00096	68	Loco-regional progression		Partial Response	Yes
+FU00099	PT00099	ST0001	DI00099	90	No evidence of disease		Partial Response	Yes
+FU00109	PT00109	ST0001	DI00109	89	Distant progression	70	Clinical remission 	Yes
+FU00115	PT00115	ST0001	DI00115	98	Relapse or recurrence		Partial Response	Yes
+FU00116	PT00116	ST0001	DI00116	49	Loco-regional progression		Partial Response	Yes
+FU00118	PT00118	ST0001	DI00118	51	No evidence of disease		Partial Response	Yes
+FU00121	PT00121	ST0001	DI00121	99	Relapse or recurrence	75	Clinical remission 	Yes
+FU00123	PT00123	ST0001	DI00123	76	Relapse or recurrence	70	Clinical remission 	Yes
+FU00124	PT00124	ST0001	DI00124	30	Loco-regional progression		Partial Response	Yes
+FU00132	PT00132	ST0001	DI00132	82	Clinical remission		Clinical remission 	Yes
+FU00133	PT00133	ST0001	DI00133	90	No evidence of disease		Clinical remission 	Yes
+FU00134	PT00134	ST0001	DI00134	65	Partial remission 		Partial Response	Yes
+FU00137	PT00137	ST0001	DI00137	51	Clinical remission		Disease Progression	Yes
+FU00139	PT00139	ST0001	DI00139	37	Clinical remission		Clinical remission 	Yes
+FU00144	PT00144	ST0001	DI00144	48	Stable		Clinical remission 	Yes
+FU00146	PT00146	ST0001	DI00146	89	Stable		Disease Progression	Yes
+FU00152	PT00152	ST0001	DI00152	70	Clinical remission		Clinical remission 	Yes
+FU00153	PT00153	ST0001	DI00153	85	Partial remission 		Clinical remission 	Yes
+FU00155	PT00155	ST0001	DI00155	91	No evidence of disease		Partial Response	Yes
+FU00157	PT00157	ST0001	DI00157	34	Clinical remission		Disease Progression	Yes
+FU00158	PT00158	ST0001	DI00158	93	Loco-regional progression		Stable Disease	Yes
+FU00162	PT00162	ST0001	DI00162	89	No evidence of disease		Clinical remission 	Yes
+FU00163	PT00163	ST0001	DI00163	62	Stable		Partial Response	Yes
+FU00165	PT00165	ST0001	DI00165	83	Distant progression		Partial Response	Yes
+FU00168	PT00168	ST0001	DI00168	61	Loco-regional progression	60	Clinical remission 	Yes
+FU00169	PT00169	ST0001	DI00169	35	Relapse or recurrence		Partial Response	Yes
+FU00171	PT00171	ST0001	DI00171	71	Stable		Partial Response	Yes
+FU00172	PT00172	ST0001	DI00172	94	No evidence of disease		Partial Response	Yes
+FU00174	PT00174	ST0001	DI00174	56	Partial remission 		Disease Progression	Yes
+FU00177	PT00177	ST0001	DI00177	47	No evidence of disease		Partial Response	Yes
+FU00180	PT00180	ST0001	DI00180	50	Distant progression	50	Clinical remission 	Yes
+FU00182	PT00182	ST0001	DI00182	54	Distant progression	50	Clinical remission 	Yes
+FU00183	PT00183	ST0001	DI00183	63	Loco-regional progression	60	Clinical remission 	Yes
+FU00185	PT00185	ST0001	DI00185	76	No evidence of disease		Partial Response	Yes
+FU00190	PT00190	ST0001	DI00190	82	Stable		Partial Response	Yes
+FU00192	PT00192	ST0001	DI00192	94	Clinical remission		Partial Response	Yes
+FU00201	PT00201	ST0001	DI00201	55	Stable		Clinical remission 	Yes
+FU00203	PT00203	ST0001	DI00203	91	Clinical remission		Partial Response	Yes
+FU00204	PT00204	ST0001	DI00204	49	Relapse or recurrence		Disease Progression	Yes
+FU00206	PT00206	ST0001	DI00206	72	Distant progression	60	Clinical remission 	Yes
+FU00207	PT00207	ST0001	DI00207	58	No evidence of disease		Disease Progression	Yes
+FU00209	PT00209	ST0001	DI00209	35	Stable		Disease Progression	Yes
+FU00212	PT00212	ST0001	DI00212	43	Clinical remission		Partial Response	Yes
+FU00213	PT00213	ST0001	DI00213	52	Clinical remission		Partial Response	Yes
+FU00214	PT00214	ST0001	DI00214	65	Relapse or recurrence		Partial Response	Yes
+FU00221	PT00221	ST0001	DI00221	73	Partial remission 		Partial Response	Yes
+FU00223	PT00223	ST0001	DI00223	43	Partial remission 		Disease Progression	Yes
+FU00227	PT00227	ST0001	DI00227	62	Partial remission 		Clinical remission 	Yes
+FU00235	PT00235	ST0001	DI00235	98	Relapse or recurrence		Disease Progression	Yes
+FU00237	PT00237	ST0001	DI00237	49	No evidence of disease		Disease Progression	Yes
+FU00238	PT00238	ST0001	DI00238	74	Partial remission 		Clinical remission 	Yes
+FU00240	PT00240	ST0001	DI00240	84	No evidence of disease		Disease Progression	Yes
+FU00253	PT00253	ST0001	DI00253	70	Stable		Clinical remission 	Yes
+FU00254	PT00254	ST0001	DI00254	72	Partial remission 		Clinical remission 	Yes
+FU00260	PT00260	ST0001	DI00260	44	Partial remission 		Stable Disease	Yes
+FU00261	PT00261	ST0001	DI00261	37	Distant progression		Stable Disease	Yes
+FU00262	PT00262	ST0001	DI00262	55	Loco-regional progression		Partial Response	Yes
+FU00263	PT00263	ST0001	DI00263	32	Stable		Disease Progression	Yes
+FU00264	PT00264	ST0001	DI00264	76	Loco-regional progression		Partial Response	Yes
+FU00265	PT00265	ST0001	DI00265	98	Distant progression		Partial Response	Yes
+FU00271	PT00271	ST0001	DI00271	83	Partial remission 		Disease Progression	Yes
+FU00278	PT00278	ST0001	DI00278	84	Loco-regional progression	84	Clinical remission 	Yes
+FU00283	PT00283	ST0001	DI00283	47	No evidence of disease		Partial Response	Yes
+FU00284	PT00284	ST0001	DI00284	36	No evidence of disease		Disease Progression	Yes
+FU00285	PT00285	ST0001	DI00285	44	No evidence of disease		Partial Response	Yes
+FU00290	PT00290	ST0001	DI00290	74	Relapse or recurrence		Partial Response	Yes
+FU00291	PT00291	ST0001	DI00291	96	Partial remission 		Clinical remission 	Yes
+FU00298	PT00298	ST0001	DI00298	71	Distant progression		Disease Progression	Yes
+FU00303	PT00303	ST0001	DI00303	53	Stable		Clinical remission 	Yes
+FU00309	PT00309	ST0001	DI00309	82	Clinical remission		Clinical remission 	Yes
+FU00314	PT00314	ST0001	DI00314	33	Distant progression		Partial Response	Yes
+FU00315	PT00315	ST0001	DI00315	96	Stable		Clinical remission 	Yes
+FU00316	PT00316	ST0001	DI00316	94	Partial remission 		Partial Response	Yes
+FU00318	PT00318	ST0001	DI00318	43	Stable		Clinical remission 	Yes
+FU00321	PT00321	ST0001	DI00321	60	No evidence of disease		Clinical remission 	Yes
+FU00322	PT00322	ST0001	DI00322	57	Clinical remission		Clinical remission 	Yes
+FU00324	PT00324	ST0001	DI00324	93	Loco-regional progression		Partial Response	Yes
+FU00329	PT00329	ST0001	DI00329	32	Stable		Clinical remission 	Yes
+FU00330	PT00330	ST0001	DI00330	70	Loco-regional progression		Stable Disease	Yes
+FU00336	PT00336	ST0001	DI00336	46	Clinical remission		Disease Progression	Yes
+FU00337	PT00337	ST0001	DI00337	67	Clinical remission		Partial Response	Yes
+FU00339	PT00339	ST0001	DI00339	45	Relapse or recurrence		Partial Response	Yes
+FU00341	PT00341	ST0001	DI00341	83	Clinical remission		Clinical remission 	Yes
+FU00342	PT00342	ST0001	DI00342	59	Distant progression	59	Clinical remission 	Yes
+FU00352	PT00352	ST0001	DI00352	81	Clinical remission		Partial Response	Yes
+FU00353	PT00353	ST0001	DI00353	46	Relapse or recurrence		Disease Progression	Yes
+FU00355	PT00355	ST0001	DI00355	100	Loco-regional progression		Partial Response	Yes
+FU00358	PT00358	ST0001	DI00358	33	Relapse or recurrence		Clinical remission 	Yes
+FU00369	PT00369	ST0001	DI00369	93	Loco-regional progression	93	Clinical remission 	Yes
+FU00370	PT00370	ST0001	DI00370	42	Relapse or recurrence		Partial Response	Yes
+FU00371	PT00371	ST0001	DI00371	89	Relapse or recurrence	89	Clinical remission 	Yes
+FU00381	PT00381	ST0002	DI00381	54	No evidence of disease		Disease Progression	Yes
+FU00383	PT00383	ST0002	DI00383	31	Relapse or recurrence		Partial Response	Yes
+FU00384	PT00384	ST0002	DI00384	86	Stable		Clinical remission 	Yes
+FU00386	PT00386	ST0002	DI00386	84	Loco-regional progression		Disease Progression	Yes
+FU00391	PT00391	ST0002	DI00391	77	Clinical remission		Partial Response	Yes
+FU00392	PT00392	ST0002	DI00392	59	Loco-regional progression	59	Clinical remission 	Yes
+FU00397	PT00397	ST0002	DI00397	55	Loco-regional progression		Disease Progression	Yes
+FU00399	PT00399	ST0002	DI00399	75	Relapse or recurrence		Partial Response	Yes
+FU00403	PT00403	ST0002	DI00403	75	Relapse or recurrence		Disease Progression	Yes
+FU00408	PT00408	ST0002	DI00408	85	Clinical remission		Disease Progression	Yes
+FU00410	PT00410	ST0002	DI00410	42	Clinical remission		Partial Response	Yes
+FU00413	PT00413	ST0002	DI00413	37	Stable		Partial Response	Yes
+FU00415	PT00415	ST0002	DI00415	59	Stable		Partial Response	Yes
+FU00423	PT00423	ST0002	DI00423	88	Distant progression		Partial Response	Yes
+FU00425	PT00425	ST0002	DI00425	97	Clinical remission		Disease Progression	Yes
+FU00427	PT00427	ST0002	DI00427	66	Distant progression		Partial Response	Yes
+FU00428	PT00428	ST0002	DI00428	91	Stable		Partial Response	Yes
+FU00431	PT00431	ST0002	DI00431	59	Clinical remission		Disease Progression	Yes
+FU00435	PT00435	ST0002	DI00435	89	Partial remission 		Disease Progression	Yes
+FU00436	PT00436	ST0002	DI00436	70	Stable		Disease Progression	Yes
+FU00438	PT00438	ST0002	DI00438	86	Loco-regional progression		Disease Progression	Yes
+FU00443	PT00443	ST0002	DI00443	90	Relapse or recurrence		Partial Response	Yes
+FU00444	PT00444	ST0002	DI00444	76	No evidence of disease		Disease Progression	Yes
+FU00447	PT00447	ST0002	DI00447	33	Partial remission 		Partial Response	Yes
+FU00453	PT00453	ST0002	DI00453	37	Stable		Clinical remission 	Yes
+FU00457	PT00457	ST0002	DI00457	45	Stable		Partial Response	Yes
+FU00461	PT00461	ST0002	DI00461	100	No evidence of disease		Clinical remission 	Yes
+FU00462	PT00462	ST0002	DI00462	40	Stable		Disease Progression	Yes
+FU00471	PT00471	ST0002	DI00471	97	Stable		Clinical remission 	Yes
+FU00472	PT00472	ST0002	DI00472	32	Relapse or recurrence		Stable Disease	Yes
+FU00487	PT00487	ST0002	DI00487	100	Partial remission 		Not applicable	Yes
+FU00488	PT00488	ST0002	DI00488	51	Relapse or recurrence		Disease Progression	Yes
+FU00490	PT00490	ST0002	DI00490	63	No evidence of disease		Clinical remission 	Yes
+FU00493	PT00493	ST0002	DI00493	80	Stable		Partial Response	Yes
+FU00494	PT00494	ST0002	DI00494	31	Relapse or recurrence	31	Clinical remission 	Yes
+FU00496	PT00496	ST0002	DI00496	58	Partial remission 		Partial Response	Yes
+FU00502	PT00502	ST0002	DI00502	46	Relapse or recurrence		Partial Response	Yes
+FU00503	PT00503	ST0002	DI00503	52	Distant progression		Disease Progression	Yes
+FU00505	PT00505	ST0002	DI00505	100	No evidence of disease		Disease Progression	Yes
+FU00509	PT00509	ST0002	DI00509	50	No evidence of disease		Partial Response	Yes
+FU00512	PT00512	ST0002	DI00512	99	Stable		Partial Response	Yes
+FU00515	PT00515	ST0002	DI00515	66	Partial remission 		Clinical remission 	Yes
+FU00520	PT00520	ST0002	DI00520	60	Relapse or recurrence		Disease Progression	Yes
+FU00521	PT00521	ST0002	DI00521	99	Relapse or recurrence		Disease Progression	Yes
+FU00526	PT00526	ST0002	DI00526	43	Loco-regional progression		Partial Response	Yes
+FU00527	PT00527	ST0002	DI00527	40	Partial remission 		Partial Response	Yes
+FU00528	PT00528	ST0002	DI00528	57	Partial remission 		Disease Progression	Yes
+FU00530	PT00530	ST0002	DI00530	75	Distant progression		Disease Progression	Yes
+FU00534	PT00534	ST0002	DI00534	38	Partial remission 		Partial Response	Yes
+FU00540	PT00540	ST0002	DI00540	74	Clinical remission		Partial Response	Yes
+FU00541	PT00541	ST0002	DI00541	44	Partial remission 		Partial Response	Yes
+FU00543	PT00543	ST0002	DI00543	94	Partial remission 		Disease Progression	Yes
+FU00547	PT00547	ST0002	DI00547	65	No evidence of disease		Clinical remission 	Yes
+FU00552	PT00552	ST0002	DI00552	89	Stable		Clinical remission 	Yes
+FU00553	PT00553	ST0002	DI00553	99	Distant progression		Partial Response	Yes
+FU00557	PT00557	ST0002	DI00557	45	No evidence of disease		Partial Response	Yes
+FU00559	PT00559	ST0002	DI00559	50	Loco-regional progression		Disease Progression	Yes
+FU00562	PT00562	ST0002	DI00562	46	Distant progression		Disease Progression	Yes
+FU00563	PT00563	ST0002	DI00563	89	No evidence of disease		Stable Disease	Yes
+FU00564	PT00564	ST0002	DI00564	72	Distant progression		Partial Response	Yes
+FU00565	PT00565	ST0002	DI00565	65	Partial remission 		Disease Progression	Yes
+FU00567	PT00567	ST0002	DI00567	91	No evidence of disease		Disease Progression	Yes
+FU00573	PT00573	ST0002	DI00573	72	Partial remission 		Clinical remission 	Yes
+FU00577	PT00577	ST0002	DI00577	94	Relapse or recurrence	94	Clinical remission 	Yes
+FU00580	PT00580	ST0002	DI00580	75	Relapse or recurrence	75	Clinical remission 	Yes
+FU00581	PT00581	ST0002	DI00581	56	Distant progression		Clinical remission 	Yes
+FU00586	PT00586	ST0002	DI00586	95	No evidence of disease		Disease Progression	Yes
+FU00587	PT00587	ST0002	DI00587	48	Partial remission 		Partial Response	Yes
+FU00591	PT00591	ST0002	DI00591	35	Loco-regional progression	35	Clinical remission 	Yes
+FU00592	PT00592	ST0002	DI00592	60	No evidence of disease		Disease Progression	Yes
+FU00593	PT00593	ST0002	DI00593	89	Stable		Partial Response	Yes
+FU00599	PT00599	ST0002	DI00599	37	Partial remission 		Disease Progression	Yes
+FU00600	PT00600	ST0002	DI00600	84	Partial remission 		Clinical remission 	Yes
+FU00601	PT00601	ST0002	DI00601	75	Distant progression		Disease Progression	Yes
+FU00610	PT00610	ST0002	DI00610	61	Stable		Partial Response	Yes
+FU00613	PT00613	ST0002	DI00613	78	Loco-regional progression		Partial Response	Yes
+FU00615	PT00615	ST0002	DI00615	50	Partial remission 		Disease Progression	Yes
+FU00616	PT00616	ST0002	DI00616	86	Clinical remission		Clinical remission 	Yes
+FU00619	PT00619	ST0002	DI00619	86	Distant progression		Partial Response	Yes
+FU00625	PT00625	ST0002	DI00625	93	Loco-regional progression		Disease Progression	Yes
+FU00626	PT00626	ST0002	DI00626	91	Partial remission 		Partial Response	Yes
+FU00629	PT00629	ST0003	DI00629	98	Stable		Disease Progression	Yes
+FU00632	PT00632	ST0003	DI00632	81	Partial remission 		Clinical remission 	Yes
+FU00635	PT00635	ST0003	DI00635	33	Clinical remission		Partial Response	Yes
+FU00638	PT00638	ST0003	DI00638	68	Partial remission 		Clinical remission 	Yes
+FU00641	PT00641	ST0003	DI00641	35	Partial remission 		Disease Progression	Yes
+FU00644	PT00644	ST0003	DI00644	39	Distant progression		Partial Response	Yes
+FU00647	PT00647	ST0003	DI00647	72	Distant progression		Disease Progression	Yes
+FU00650	PT00650	ST0003	DI00650	32	Relapse or recurrence	32	Clinical remission 	Yes
+FU00653	PT00653	ST0003	DI00653	72	Loco-regional progression		Partial Response	Yes
+FU00656	PT00656	ST0003	DI00656	61	Partial remission 		Clinical remission 	Yes
+FU00659	PT00659	ST0003	DI00659	73	Distant progression	73	Clinical remission 	Yes
+FU00662	PT00662	ST0003	DI00662	47	Loco-regional progression		Disease Progression	Yes
+FU00665	PT00665	ST0003	DI00665	82	Relapse or recurrence		Disease Progression	Yes
+FU00668	PT00668	ST0003	DI00668	67	Loco-regional progression		Disease Progression	Yes
+FU00671	PT00671	ST0003	DI00671	62	No evidence of disease		Partial Response	Yes
+FU00674	PT00674	ST0003	DI00674	58	Relapse or recurrence		Partial Response	Yes
+FU00677	PT00677	ST0003	DI00677	79	No evidence of disease		Clinical remission 	Yes
+FU00680	PT00680	ST0003	DI00680	33	Partial remission 		Disease Progression	Yes
+FU00683	PT00683	ST0003	DI00683	43	Distant progression		Partial Response	Yes
+FU00686	PT00686	ST0003	DI00686	55	Relapse or recurrence		Disease Progression	Yes
+FU00689	PT00689	ST0003	DI00689	96	Loco-regional progression	96	Clinical remission 	Yes
+FU00692	PT00692	ST0003	DI00692	82	Partial remission 		Clinical remission 	Yes
+FU00695	PT00695	ST0003	DI00695	32	Partial remission 		Partial Response	Yes
+FU00698	PT00698	ST0003	DI00698	61	No evidence of disease		Partial Response	Yes
+FU00701	PT00701	ST0003	DI00701	54	Stable		Clinical remission 	Yes
+FU00704	PT00704	ST0003	DI00704	35	Clinical remission		Clinical remission 	Yes
+FU00707	PT00707	ST0003	DI00707	100	Stable		Disease Progression	Yes
+FU00710	PT00710	ST0003	DI00710	62	Partial remission 		Partial Response	Yes
+FU00713	PT00713	ST0003	DI00713	97	Loco-regional progression		Stable Disease	Yes
+FU00716	PT00716	ST0003	DI00716	98	Distant progression		Partial Response	Yes
+FU00719	PT00719	ST0003	DI00719	77	Partial remission 		Partial Response	Yes
+FU00722	PT00722	ST0003	DI00722	33	Stable		Clinical remission 	Yes
+FU00725	PT00725	ST0003	DI00725	49	Loco-regional progression		Partial Response	Yes
+FU00728	PT00728	ST0003	DI00728	44	No evidence of disease		Partial Response	Yes
+FU00731	PT00731	ST0003	DI00731	83	Stable		Partial Response	Yes
+FU00734	PT00734	ST0003	DI00734	46	Stable		Stable Disease	Yes
+FU00737	PT00737	ST0003	DI00737	37	Clinical remission		Partial Response	Yes
+FU00740	PT00740	ST0003	DI00740	70	Distant progression		Disease Progression	Yes
+FU00743	PT00743	ST0003	DI00743	40	No evidence of disease		Disease Progression	Yes
+FU00746	PT00746	ST0003	DI00746	93	Relapse or recurrence	93	Clinical remission 	Yes
+FU00749	PT00749	ST0003	DI00749	83	Stable		Clinical remission 	Yes
+FU00752	PT00752	ST0003	DI00752	84	Relapse or recurrence	84	Clinical remission 	Yes
+FU00755	PT00755	ST0003	DI00755	66	No evidence of disease		Clinical remission 	Yes
+FU00758	PT00758	ST0003	DI00758	96	Distant progression		Partial Response	Yes
+FU00761	PT00761	ST0003	DI00761	95	No evidence of disease		Partial Response	Yes
+FU00764	PT00764	ST0003	DI00764	80	No evidence of disease		Clinical remission 	Yes
+FU00767	PT00767	ST0003	DI00767	79	Partial remission 		Clinical remission 	Yes
+FU00770	PT00770	ST0003	DI00770	77	Relapse or recurrence		Partial Response	Yes
+FU00773	PT00773	ST0003	DI00773	62	No evidence of disease		Partial Response	Yes
+FU00776	PT00776	ST0003	DI00776	76	Loco-regional progression		Disease Progression	Yes
+FU00779	PT00779	ST0003	DI00779	79	Stable		Partial Response	Yes
+FU00782	PT00782	ST0003	DI00782	50	No evidence of disease		Clinical remission 	Yes
+FU00785	PT00785	ST0003	DI00785	54	No evidence of disease		Disease Progression	Yes
+FU00788	PT00788	ST0003	DI00788	91	Loco-regional progression	91	Clinical remission 	Yes
+FU00791	PT00791	ST0003	DI00791	80	Distant progression		Stable Disease	Yes
+FU00794	PT00794	ST0003	DI00794	92	Partial remission 		Clinical remission 	Yes
+FU00797	PT00797	ST0003	DI00797	44	Relapse or recurrence	44	Clinical remission 	Yes
+FU00800	PT00800	ST0003	DI00800	54	Distant progression		Disease Progression	Yes
+FU00803	PT00803	ST0003	DI00803	96	Loco-regional progression	96	Clinical remission 	Yes
+FU00806	PT00806	ST0003	DI00806	83	Distant progression	83	Clinical remission 	Yes
+FU00809	PT00809	ST0003	DI00809	43	Partial remission 		Disease Progression	Yes
+FU00812	PT00812	ST0003	DI00812	97	Relapse or recurrence	97	Clinical remission 	Yes
+FU00815	PT00815	ST0003	DI00815	68	No evidence of disease		Clinical remission 	Yes
+FU00818	PT00818	ST0003	DI00818	80	Partial remission 		Clinical remission 	Yes
+FU00821	PT00821	ST0003	DI00821	86	Clinical remission		Clinical remission 	Yes
+FU00824	PT00824	ST0003	DI00824	99	Loco-regional progression	99	Clinical remission 	Yes
+FU00825	PT00825	ST0003	DI00825	47	Partial remission 		Disease Progression	Yes
+FU00826	PT00826	ST0004	DI00826	44	Distant progression	44	Clinical remission 	Yes
+FU00827	PT00827	ST0004	DI00827	33	Clinical remission		Partial Response	Yes
+FU00828	PT00828	ST0004	DI00828	79	Partial remission 		Partial Response	Yes
+FU00829	PT00829	ST0004	DI00829	34	Partial remission 		Partial Response	Yes
+FU00830	PT00830	ST0004	DI00830	64	Relapse or recurrence	64	Clinical remission 	Yes
+FU00831	PT00831	ST0004	DI00831	84	Distant progression	84	Clinical remission 	Yes
+FU00832	PT00832	ST0004	DI00832	78	Stable		Clinical remission 	Yes
+FU00833	PT00833	ST0004	DI00833	62	Stable		Clinical remission 	Yes
+FU00834	PT00834	ST0004	DI00834	49	Distant progression		Disease Progression	Yes
+FU00835	PT00835	ST0004	DI00835	35	Relapse or recurrence	35	Clinical remission 	Yes
+FU00836	PT00836	ST0004	DI00836	70	No evidence of disease		Disease Progression	Yes
+FU00837	PT00837	ST0004	DI00837	94	Loco-regional progression		Partial Response	Yes
+FU00838	PT00838	ST0004	DI00838	33	Partial remission 		Partial Response	Yes
+FU00839	PT00839	ST0004	DI00839	68	Stable		Clinical remission 	Yes
+FU00840	PT00840	ST0004	DI00840	33	Partial remission 		Clinical remission 	Yes
+FU00841	PT00841	ST0004	DI00841	32	Partial remission 		Partial Response	Yes
+FU00842	PT00842	ST0004	DI00842	34	Stable		Clinical remission 	Yes
+FU00843	PT00843	ST0004	DI00843	90	Relapse or recurrence		Partial Response	Yes
+FU00844	PT00844	ST0004	DI00844	74	Partial remission 		Partial Response	Yes
+FU00845	PT00845	ST0004	DI00845	56	No evidence of disease		Partial Response	Yes
+FU00846	PT00846	ST0004	DI00846	99	Clinical remission		Disease Progression	Yes
+FU00847	PT00847	ST0004	DI00847	39	Relapse or recurrence		Disease Progression	Yes
+FU00848	PT00848	ST0004	DI00848	100	No evidence of disease		Partial Response	Yes
+FU00849	PT00849	ST0004	DI00849	73	Distant progression		Partial Response	Yes
+FU00850	PT00850	ST0004	DI00850	78	Relapse or recurrence	78	Clinical remission 	Yes
+FU00851	PT00851	ST0004	DI00851	84	Stable		Clinical remission 	Yes
+FU00852	PT00852	ST0004	DI00852	68	Distant progression		Partial Response	Yes
+FU00853	PT00853	ST0004	DI00853	44	Stable		Clinical remission 	Yes
+FU00854	PT00854	ST0004	DI00854	32	Loco-regional progression		Clinical remission 	Yes
+FU00855	PT00855	ST0004	DI00855	57	Relapse or recurrence		Disease Progression	Yes
+FU00856	PT00856	ST0004	DI00856	77	Relapse or recurrence		Partial Response	Yes
+FU00857	PT00857	ST0004	DI00857	74	Stable		Partial Response	Yes
+FU00858	PT00858	ST0004	DI00858	46	Clinical remission		Partial Response	Yes
+FU00859	PT00859	ST0004	DI00859	51	Clinical remission		Clinical remission 	Yes
+FU00860	PT00860	ST0004	DI00860	57	No evidence of disease		Clinical remission 	Yes
+FU00861	PT00861	ST0004	DI00861	61	Loco-regional progression		Disease Progression	Yes
+FU00862	PT00862	ST0004	DI00862	35	Relapse or recurrence		Disease Progression	Yes
+FU00863	PT00863	ST0004	DI00863	75	No evidence of disease		Clinical remission 	Yes
+FU00864	PT00864	ST0004	DI00864	31	Partial remission 		Clinical remission 	Yes
+FU00865	PT00865	ST0004	DI00865	56	Partial remission 		Disease Progression	Yes
+FU00866	PT00866	ST0004	DI00866	39	No evidence of disease		Partial Response	Yes
+FU00867	PT00867	ST0004	DI00867	56	Distant progression	56	Clinical remission 	Yes
+FU00868	PT00868	ST0004	DI00868	99	No evidence of disease		Partial Response	Yes
+FU00869	PT00869	ST0004	DI00869	53	Relapse or recurrence		Clinical remission 	Yes
+FU00870	PT00870	ST0004	DI00870	86	Relapse or recurrence		Partial Response	Yes
+FU00871	PT00871	ST0004	DI00871	31	No evidence of disease		Partial Response	Yes
+FU00872	PT00872	ST0004	DI00872	62	No evidence of disease		Partial Response	Yes
+FU00873	PT00873	ST0004	DI00873	87	Distant progression		Partial Response	Yes
+FU00874	PT00874	ST0004	DI00874	74	Stable		Partial Response	Yes
+FU00875	PT00875	ST0004	DI00875	96	Clinical remission		Partial Response	Yes
+FU00876	PT00876	ST0004	DI00876	51	Partial remission 		Partial Response	Yes
+FU00877	PT00877	ST0004	DI00877	45	Distant progression	45	Clinical remission 	Yes
+FU00878	PT00878	ST0004	DI00878	42	No evidence of disease		Partial Response	Yes
+FU00879	PT00879	ST0004	DI00879	57	Distant progression		Partial Response	Yes
+FU00880	PT00880	ST0004	DI00880	45	Distant progression	45	Clinical remission 	Yes
+FU00881	PT00881	ST0004	DI00881	48	Relapse or recurrence		Partial Response	Yes
+FU00882	PT00882	ST0004	DI00882	85	Clinical remission		Clinical remission 	Yes
+FU00883	PT00883	ST0004	DI00883	30	Loco-regional progression	30	Clinical remission 	Yes
+FU00884	PT00884	ST0004	DI00884	60	Relapse or recurrence		Disease Progression	Yes
+FU00885	PT00885	ST0004	DI00885	48	No evidence of disease		Clinical remission 	Yes
+FU00886	PT00886	ST0004	DI00886	43	Partial remission 		Disease Progression	Yes
+FU00887	PT00887	ST0004	DI00887	80	Clinical remission		Clinical remission 	Yes
+FU00888	PT00888	ST0004	DI00888	75	Stable		Disease Progression	Yes
+FU00889	PT00889	ST0004	DI00889	64	Distant progression	64	Clinical remission 	Yes
+FU00890	PT00890	ST0004	DI00890	76	Loco-regional progression	76	Clinical remission 	Yes
+FU00891	PT00891	ST0004	DI00891	34	Distant progression		Disease Progression	Yes
+FU00892	PT00892	ST0004	DI00892	68	No evidence of disease		Partial Response	Yes
+FU00893	PT00893	ST0004	DI00893	70	Loco-regional progression		Disease Progression	Yes
+FU00894	PT00894	ST0004	DI00894	49	No evidence of disease		Disease Progression	Yes
+FU00895	PT00895	ST0004	DI00895	56	No evidence of disease		Partial Response	Yes
+FU00896	PT00896	ST0004	DI00896	37	Stable		Partial Response	Yes
+FU00897	PT00897	ST0004	DI00897	60	Relapse or recurrence		Partial Response	Yes
+FU00898	PT00898	ST0004	DI00898	34	Partial remission 		Partial Response	Yes
+FU00899	PT00899	ST0004	DI00899	93	Stable		Partial Response	Yes
+FU00900	PT00900	ST0004	DI00900	93	Loco-regional progression		Partial Response	Yes
+FU00901	PT00901	ST0004	DI00901	90	No evidence of disease		Clinical remission 	Yes
+FU00902	PT00902	ST0004	DI00902	44	Partial remission 		Clinical remission 	Yes
+FU00903	PT00903	ST0004	DI00903	54	No evidence of disease		Disease Progression	Yes
+FU00904	PT00904	ST0004	DI00904	46	Partial remission 		Partial Response	Yes
+FU00905	PT00905	ST0004	DI00905	70	Clinical remission		Clinical remission 	Yes
+FU00906	PT00906	ST0004	DI00906	37	Clinical remission		Partial Response	Yes
+FU00907	PT00907	ST0004	DI00907	43	Loco-regional progression		Partial Response	Yes
+FU00908	PT00908	ST0004	DI00908	67	Distant progression	67	Clinical remission 	Yes
+FU00909	PT00909	ST0004	DI00909	85	Clinical remission		Clinical remission 	Yes
+FU00910	PT00910	ST0004	DI00910	37	Stable		Partial Response	Yes
+FU00911	PT00911	ST0004	DI00911	55	Relapse or recurrence		Partial Response	Yes
+FU00912	PT00912	ST0004	DI00912	92	Clinical remission		Clinical remission 	Yes
+FU00913	PT00913	ST0004	DI00913	51	Distant progression		Partial Response	Yes
+FU00914	PT00914	ST0004	DI00914	62	Partial remission 		Clinical remission 	Yes
+FU00915	PT00915	ST0004	DI00915	43	No evidence of disease		Clinical remission 	Yes
+FU00916	PT00916	ST0004	DI00916	35	Clinical remission		Disease Progression	Yes
+FU00917	PT00917	ST0004	DI00917	59	Stable		Partial Response	Yes
+FU00918	PT00918	ST0004	DI00918	67	Stable		Clinical remission 	Yes
+FU00919	PT00919	ST0004	DI00919	36	Stable		Partial Response	Yes
+FU00920	PT00920	ST0004	DI00920	72	Distant progression		Partial Response	Yes
+FU00921	PT00921	ST0004	DI00921	36	Relapse or recurrence		Disease Progression	Yes
+FU00922	PT00922	ST0004	DI00922	73	Loco-regional progression	73	Clinical remission 	Yes
+FU00923	PT00923	ST0004	DI00923	46	Partial remission 		Disease Progression	Yes
+FU00924	PT00924	ST0004	DI00924	72	Loco-regional progression		Disease Progression	Yes
+FU00925	PT00925	ST0004	DI00925	30	Clinical remission		Clinical remission 	Yes
+FU00926	PT00926	ST0004	DI00926	93	Clinical remission		Clinical remission 	Yes
+FU00927	PT00927	ST0004	DI00927	82	Distant progression		Disease Progression	Yes
+FU00928	PT00928	ST0004	DI00928	60	Stable		Clinical remission 	Yes
+FU00929	PT00929	ST0004	DI00929	93	Stable		Disease Progression	Yes
+FU00930	PT00930	ST0004	DI00930	61	No evidence of disease		Partial Response	Yes
+FU00931	PT00931	ST0004	DI00931	66	Distant progression		Partial Response	Yes
+FU00932	PT00932	ST0004	DI00932	36	Stable		Partial Response	Yes
+FU00933	PT00933	ST0004	DI00933	94	No evidence of disease		Partial Response	Yes
+FU00934	PT00934	ST0004	DI00934	65	Loco-regional progression		Partial Response	Yes
+FU00935	PT00935	ST0004	DI00935	48	Loco-regional progression		Partial Response	Yes
+FU00936	PT00936	ST0004	DI00936	51	Distant progression		Partial Response	Yes
+FU00937	PT00937	ST0004	DI00937	45	Partial remission 		Partial Response	Yes
+FU00938	PT00938	ST0004	DI00938	72	Clinical remission		Partial Response	Yes
+FU00939	PT00939	ST0004	DI00939	63	Relapse or recurrence		Partial Response	Yes
+FU00940	PT00940	ST0004	DI00940	83	Relapse or recurrence		Partial Response	Yes
+FU00941	PT00941	ST0004	DI00941	30	Clinical remission		Partial Response	Yes
+FU00942	PT00942	ST0004	DI00942	81	Partial remission 		Partial Response	Yes
+FU00943	PT00943	ST0004	DI00943	66	Clinical remission		Partial Response	Yes
+FU00944	PT00944	ST0004	DI00944	41	Stable		Clinical remission 	Yes
+FU00945	PT00945	ST0004	DI00945	95	Relapse or recurrence		Disease Progression	Yes
+FU00946	PT00946	ST0004	DI00946	32	No evidence of disease		Partial Response	Yes
+FU00947	PT00947	ST0004	DI00947	78	Distant progression		Partial Response	Yes
+FU00948	PT00948	ST0004	DI00948	30	Relapse or recurrence	30	Clinical remission 	Yes
+FU00949	PT00949	ST0004	DI00949	48	Clinical remission		Disease Progression	Yes
+FU00950	PT00950	ST0004	DI00950	47	Relapse or recurrence	47	Clinical remission 	Yes
+FU00951	PT00951	ST0004	DI00951	57	Stable		Disease Progression	Yes
+FU00952	PT00952	ST0004	DI00952	85	Loco-regional progression		Disease Progression	Yes
+FU00953	PT00953	ST0004	DI00953	87	No evidence of disease		Partial Response	Yes
+FU00954	PT00954	ST0004	DI00954	67	Distant progression	67	Clinical remission 	Yes
+FU00955	PT00955	ST0004	DI00955	69	Relapse or recurrence		Disease Progression	Yes
+FU00956	PT00956	ST0004	DI00956	77	No evidence of disease		Clinical remission 	Yes
+FU00957	PT00957	ST0004	DI00957	81	Stable		Clinical remission 	Yes
+FU00958	PT00958	ST0004	DI00958	76	Clinical remission		Clinical remission 	Yes
+FU00959	PT00959	ST0004	DI00959	86	Partial remission 		Partial Response	Yes
+FU00960	PT00960	ST0004	DI00960	67	Clinical remission		Disease Progression	Yes
+FU00961	PT00961	ST0004	DI00961	68	Loco-regional progression		Disease Progression	Yes
+FU00962	PT00962	ST0004	DI00962	39	Stable		Clinical remission 	Yes
+FU00963	PT00963	ST0004	DI00963	38	Stable		Partial Response	Yes
+FU00964	PT00964	ST0004	DI00964	94	Stable		Clinical remission 	Yes
+FU00965	PT00965	ST0004	DI00965	63	Loco-regional progression		Partial Response	Yes
+FU00966	PT00966	ST0004	DI00966	82	Loco-regional progression	82	Clinical remission 	Yes
+FU00967	PT00967	ST0004	DI00967	98	Distant progression		Partial Response	Yes
+FU00968	PT00968	ST0004	DI00968	50	Relapse or recurrence		Partial Response	Yes
+FU00969	PT00969	ST0004	DI00969	57	Distant progression	57	Clinical remission 	Yes
+FU00970	PT00970	ST0004	DI00970	98	No evidence of disease		Partial Response	Yes
+FU00971	PT00971	ST0004	DI00971	86	No evidence of disease		Clinical remission 	Yes
+FU00972	PT00972	ST0004	DI00972	59	Stable		Disease Progression	Yes
+FU00973	PT00973	ST0004	DI00973	52	Stable		Partial Response	Yes
+FU00974	PT00974	ST0004	DI00974	85	Relapse or recurrence	85	Clinical remission 	Yes
+FU00975	PT00975	ST0004	DI00975	39	Relapse or recurrence		Partial Response	Yes
+FU00976	PT00976	ST0004	DI00976	50	Loco-regional progression	50	Clinical remission 	Yes
+FU00977	PT00977	ST0004	DI00977	92	No evidence of disease		Partial Response	Yes
+FU00978	PT00978	ST0004	DI00978	32	No evidence of disease		Disease Progression	Yes
+FU00979	PT00979	ST0004	DI00979	60	Clinical remission		Partial Response	Yes
+FU00980	PT00980	ST0004	DI00980	30	Loco-regional progression		Partial Response	Yes
+FU00981	PT00981	ST0004	DI00981	83	Distant progression	83	Clinical remission 	Yes
+FU00982	PT00982	ST0004	DI00982	76	Distant progression		Partial Response	Yes
+FU00983	PT00983	ST0004	DI00983	50	Loco-regional progression		Partial Response	Yes
+FU00984	PT00984	ST0004	DI00984	56	Stable		Partial Response	Yes
+FU00985	PT00985	ST0004	DI00985	37	Relapse or recurrence	37	Clinical remission 	Yes
+FU00986	PT00986	ST0004	DI00986	48	Loco-regional progression		Partial Response	Yes
+FU00987	PT00987	ST0004	DI00987	38	Loco-regional progression	38	Clinical remission 	Yes
+FU00988	PT00988	ST0004	DI00988	58	No evidence of disease		Clinical remission 	Yes
+FU00989	PT00989	ST0004	DI00989	38	Loco-regional progression		Disease Progression	Yes
+FU00990	PT00990	ST0004	DI00990	80	Distant progression	80	Clinical remission 	Yes
+FU00991	PT00991	ST0004	DI00991	67	Loco-regional progression	67	Clinical remission 	Yes
+FU00992	PT00992	ST0004	DI00992	75	Clinical remission		Clinical remission 	Yes
+FU00993	PT00993	ST0004	DI00993	84	Clinical remission		Clinical remission 	Yes
+FU00994	PT00994	ST0004	DI00994	53	Relapse or recurrence		Disease Progression	Yes
+FU00995	PT00995	ST0004	DI00995	92	Distant progression	92	Clinical remission 	Yes
+FU00996	PT00996	ST0004	DI00996	38	Stable		Clinical remission 	Yes
+FU00997	PT00997	ST0004	DI00997	36	Partial remission 		Disease Progression	Yes
+FU00998	PT00998	ST0004	DI00998	97	Clinical remission		Partial Response	Yes
+FU00999	PT00999	ST0004	DI00999	40	Partial remission 		Partial Response	Yes

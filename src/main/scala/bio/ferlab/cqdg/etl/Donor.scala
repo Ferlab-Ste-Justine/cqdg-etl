@@ -14,10 +14,10 @@ object Donor {
 
   def build(broadcastStudies: Broadcast[DataFrame], inputPath: String)(implicit spark: SparkSession): DataFrame = {
     //TODO: Pass filename as parameters?
-    val donorsInput = s"$inputPath/donor.csv"
-    val diagnosisInput = s"$inputPath/diagnosis.csv"
-    val phenotypeInput = s"$inputPath/phenotype.csv"
-    val fileInput = s"$inputPath/file.csv"
+    val donorsInput = s"$inputPath/donor.tsv"
+    val diagnosisInput = s"$inputPath/diagnosis.tsv"
+    val phenotypeInput = s"$inputPath/phenotype.tsv"
+    val fileInput = s"$inputPath/file.tsv"
 
     import spark.implicits._
 
