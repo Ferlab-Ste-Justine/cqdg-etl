@@ -37,7 +37,7 @@ object EtlApp extends App {
 
   val broadcastStudies = spark.sparkContext.broadcast(study);
 
-  Donor.run(broadcastStudies, input, s"$output/cases")
+  Donor.run(broadcastStudies, input, s"$output/donors")
   File.run(broadcastStudies, input, s"$output/files")
 
   spark.stop()

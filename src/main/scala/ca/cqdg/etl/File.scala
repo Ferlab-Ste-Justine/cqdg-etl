@@ -52,7 +52,7 @@ object File {
             $"familyConditions" as "familyHistory",
             $"exposures" as "exposure"
           )
-        ) as "cases"
+        ) as "donors"
       ) as "fileWithDonors"
 
     val fileStudyJoin = file
@@ -74,7 +74,7 @@ object File {
       .join(fileDonors, $"fileWithStudy.study_id" === $"fileWithDonors.study_id" && $"fileWithStudy.file_name" === $"fileWithDonors.file_name")
       .join(biospecimenWithSamples, $"fileWithStudy.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .select( cols =
-        $"fileWithDonors.cases",
+        $"fileWithDonors.donors",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnosis_per_donor_per_study" as "diagnoses",
         $"phenotypes_per_donor_per_study" as "phenotypes",

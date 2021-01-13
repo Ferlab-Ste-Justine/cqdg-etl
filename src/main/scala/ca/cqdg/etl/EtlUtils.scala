@@ -163,7 +163,7 @@ package object EtlUtils {
 
     val diagnosis: DataFrame = readCsvFile(diagnoseInputPath) as "diagnosis"
     val treatment: DataFrame = readCsvFile(treatmentInputPath) as "treatment"
-    val followUp: DataFrame = readCsvFile(followUpInputPath) as "followUp"
+    val followUp: DataFrame = readCsvFile(followUpInputPath) as "follow_up"
 
     val treatmentPerDiagnosis = diagnosis.as("diagnosis")
       .join(treatment.as("treatment"), $"diagnosis.submitter_diagnosis_id" === $"treatment.submitter_diagnosis_id")
@@ -189,8 +189,8 @@ package object EtlUtils {
       .as("treatmentsPerDiagnosis")
 
     val followUpPerDiagnosis = diagnosis.as("diagnosis")
-      .join(followUp.as("followUp"), $"diagnosis.submitter_diagnosis_id" === $"followUp.submitter_diagnosis_id")
-      .groupBy("followUp.submitter_diagnosis_id")
+      .join(followUp.as("follow_up"), $"diagnosis.submitter_diagnosis_id" === $"follow_up.submitter_diagnosis_id")
+      .groupBy("follow_up.submitter_diagnosis_id")
       .agg(
         collect_list(
           struct( cols =
@@ -199,7 +199,7 @@ package object EtlUtils {
             $"relapse_interval",
             $"days_to_follow_up"
           )
-        ) as "followUps"
+        ) as "follow_ups"
       )
       .as("followUpsPerDiagnosis")
 
@@ -222,7 +222,7 @@ package object EtlUtils {
             $"diagnosis.diagnosis_ICD_category" as "icd_category_keyword",
             $"diagnosis.age_at_diagnosis",
             $"treatments",
-            $"followUps"
+            $"follow_ups"
           )
         ) as "diagnosis_per_donor_per_study"
       ) as "diagnosisGroup"
