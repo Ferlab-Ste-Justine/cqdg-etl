@@ -54,7 +54,7 @@ package object EtlUtils {
 
     val samplesPerBiospecimen = biospecimen.as("biospecimen")
       .join(samples.as("sample"), $"biospecimen.submitter_biospecimen_id" === $"sample.submitter_biospecimen_id")
-      .groupBy("sample.submitter_biospecimen_id")
+      .groupBy($"sample.submitter_biospecimen_id")
       .agg(
         collect_list(
           struct( cols =
@@ -67,7 +67,7 @@ package object EtlUtils {
 
     val result = biospecimen
       .join(samplesPerBiospecimen, $"biospecimen.submitter_biospecimen_id" === $"samplesPerBiospecimen.submitter_biospecimen_id", "left")
-      .groupBy("samplesPerBiospecimen.submitter_biospecimen_id")
+      .groupBy($"samplesPerBiospecimen.submitter_biospecimen_id")
       .agg(
         collect_list(
           struct( cols =
@@ -99,7 +99,7 @@ package object EtlUtils {
 
     val familyRelationshipsPerDonor = donor.as("donor")
       .join(familyRelationship.as("familyRelationship"), $"donor.submitter_family_id" === $"familyRelationship.submitter_family_id")
-      .groupBy("familyRelationship.submitter_family_id")
+      .groupBy($"familyRelationship.submitter_family_id")
       .agg(
         collect_list(
           struct( cols =
@@ -116,7 +116,7 @@ package object EtlUtils {
 
     val familyHistoryPerDonor = donor.as("donor")
       .join(familyHistory.as("familyHistory"), $"donor.submitter_donor_id" === $"familyHistory.submitter_donor_id")
-      .groupBy("familyHistory.submitter_donor_id")
+      .groupBy($"familyHistory.submitter_donor_id")
       .agg(
         collect_list(
           struct( cols =
@@ -132,7 +132,7 @@ package object EtlUtils {
 
     val exposurePerDonor = donor.as("donor")
       .join(exposure.as("exposure"), $"donor.submitter_donor_id" === $"exposure.submitter_donor_id")
-      .groupBy("exposure.submitter_donor_id")
+      .groupBy($"exposure.submitter_donor_id")
       .agg(
         collect_list(
           struct( cols =
@@ -167,7 +167,7 @@ package object EtlUtils {
 
     val treatmentPerDiagnosis = diagnosis.as("diagnosis")
       .join(treatment.as("treatment"), $"diagnosis.submitter_diagnosis_id" === $"treatment.submitter_diagnosis_id")
-      .groupBy("treatment.submitter_diagnosis_id")
+      .groupBy($"treatment.submitter_diagnosis_id")
       .agg(
         collect_list(
           struct( cols =
@@ -190,7 +190,7 @@ package object EtlUtils {
 
     val followUpPerDiagnosis = diagnosis.as("diagnosis")
       .join(followUp.as("follow_up"), $"diagnosis.submitter_diagnosis_id" === $"follow_up.submitter_diagnosis_id")
-      .groupBy("follow_up.submitter_diagnosis_id")
+      .groupBy($"follow_up.submitter_diagnosis_id")
       .agg(
         collect_list(
           struct( cols =
@@ -210,7 +210,7 @@ package object EtlUtils {
       .drop($"followUpsPerDiagnosis.submitter_diagnosis_id")
 
     val result = diagnosisWithTreatmentAndFollowUps.as("diagnosis")
-      .groupBy("diagnosis.submitter_donor_id", "diagnosis.study_id")
+      .groupBy($"diagnosis.submitter_donor_id", $"diagnosis.study_id")
       .agg(
         collect_list(
           struct(cols =
@@ -245,7 +245,7 @@ package object EtlUtils {
         $"phenotype_HPO_category",
         columns.phenotypeObserved)
       .where($"phenotype_observed" === "true")
-      .groupBy("submitter_donor_id", "study_id")
+      .groupBy($"submitter_donor_id", $"study_id")
       .agg(
         collect_list(
           struct( cols =

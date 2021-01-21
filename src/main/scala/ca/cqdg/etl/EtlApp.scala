@@ -31,14 +31,20 @@ object EtlApp extends App {
       notNullCol($"short_name") as "short_name",
       $"short_name" as "short_name_keyword",
       $"short_name" as "short_name_ngrams",
+      $"description",
+      $"keyword",
+      $"website",
       $"domain",
-      $"population"
+      $"population",
+      $"access_limitations",
+      $"access_requirements"
     ) as "study"
 
   val broadcastStudies = spark.sparkContext.broadcast(study);
 
   Donor.run(broadcastStudies, input, s"$output/donors")
   File.run(broadcastStudies, input, s"$output/files")
+  Study.run(broadcastStudies, input, s"$output/studies")
 
   spark.stop()
 }

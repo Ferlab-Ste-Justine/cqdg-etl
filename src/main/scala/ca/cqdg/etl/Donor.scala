@@ -40,7 +40,7 @@ object Donor {
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
 
     val filesPerDonorAndStudy = fileWithBiospecimen
-      .groupBy("file.submitter_donor_id", "file.study_id")
+      .groupBy($"file.submitter_donor_id", $"file.study_id")
       .agg(
         collect_list(
           struct( cols =

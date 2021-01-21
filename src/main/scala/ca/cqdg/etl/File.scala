@@ -39,7 +39,7 @@ object File {
 
     val fileDonors = file.as("file")
       .join(donor.as("donor"), $"file.submitter_donor_id" === $"donor.submitter_donor_id")
-      .groupBy("file.study_id", "file.file_name")
+      .groupBy($"file.study_id", $"file.file_name")
       .agg(
         collect_list(
           struct( cols =
@@ -83,7 +83,7 @@ object File {
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")
 
-    //result.printSchema()
+    result.printSchema()
     result
   }
 
