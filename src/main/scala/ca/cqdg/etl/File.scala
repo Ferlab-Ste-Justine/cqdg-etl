@@ -8,7 +8,7 @@ import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object File {
   def run(broadcastStudies: Broadcast[DataFrame], inputPath: String, outputPath: String)(implicit spark: SparkSession): Unit = {
-    //build(broadcastStudies, inputPath)
+    // build(broadcastStudies, inputPath)
     write(build(broadcastStudies, inputPath), outputPath)
   }
 
@@ -43,14 +43,7 @@ object File {
       .agg(
         collect_list(
           struct( cols =
-            $"donor.submitter_donor_id",
-            notNullCol($"ethnicity") as "ethnicity",
-            $"vital_status",
-            notNullCol($"gender") as "gender",
-            ageAtRecruitment,
-            $"familyRelationships",
-            $"familyConditions" as "familyHistory",
-            $"exposures" as "exposure"
+            $"donor.*"
           )
         ) as "donors"
       ) as "fileWithDonors"
@@ -58,13 +51,13 @@ object File {
     val fileStudyJoin = file
       .join(broadcastStudies.value, $"file.study_id" === $"study.study_id")
       .select( cols =
-        array(struct("study.*")).as("study"),
-        fileId,
-        fileSize,
-        notNullCol($"variant_class") as "file_variant_class",
         $"file.file_name" as "file_name_keyword",
         $"file.file_name" as "file_name_ngrams",
-        $"file.*")
+        $"file.*",
+        fileSize,
+        array(struct("study.*")) as "study",
+        notNullCol($"variant_class") as "file_variant_class"
+      )
       .drop($"variant_class")
       .as("fileWithStudy")
 
@@ -74,16 +67,16 @@ object File {
       .join(fileDonors, $"fileWithStudy.study_id" === $"fileWithDonors.study_id" && $"fileWithStudy.file_name" === $"fileWithDonors.file_name")
       .join(biospecimenWithSamples, $"fileWithStudy.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .select( cols =
+        $"fileWithStudy.*",
         $"fileWithDonors.donors",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes_per_donor_per_study" as "phenotypes",
-        $"fileWithStudy.*"
+        $"phenotypes_per_donor_per_study" as "phenotypes"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")
 
-    result.printSchema()
+    // result.printSchema()
     result
   }
 

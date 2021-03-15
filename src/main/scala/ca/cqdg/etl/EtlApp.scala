@@ -25,22 +25,15 @@ object EtlApp extends App {
 
   val study: DataFrame = readCsvFile(studiesInput)
     .select( cols=
-      $"study_id",
+      $"*",
       $"study_id" as "study_id_keyword",
-      $"name",
-      notNullCol($"short_name") as "short_name",
       $"short_name" as "short_name_keyword",
-      $"short_name" as "short_name_ngrams",
-      $"description",
-      $"keyword",
-      $"website",
-      $"domain",
-      $"population",
-      $"access_limitations",
-      $"access_requirements"
-    ) as "study"
+      $"short_name" as "short_name_ngrams"
+    )
+    .withColumn("short_name", notNullCol($"short_name"))
+    .as("study")
 
-  val broadcastStudies = spark.sparkContext.broadcast(study);
+  val broadcastStudies = spark.sparkContext.broadcast(study)
 
   Donor.run(broadcastStudies, input, s"$output/donors")
   File.run(broadcastStudies, input, s"$output/files")

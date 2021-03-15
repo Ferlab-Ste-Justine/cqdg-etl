@@ -15,7 +15,14 @@ object Study {
   def build(broadcastStudies: Broadcast[DataFrame], inputPath: String)(implicit spark: SparkSession): DataFrame = {
     //TODO: Pass filename as parameters?
     val donorsInput = s"$inputPath/donor.tsv"
+    val familyRelationshipInput = s"$inputPath/family-relationship.tsv"
+    val familyHistoryInput = s"$inputPath/family-history.tsv"
+    val exposureInput = s"$inputPath/exposure.tsv"
+
     val diagnosisInput = s"$inputPath/diagnosis.tsv"
+    val treatmentInput = s"$inputPath/treatment.tsv"
+    val followUpInput = s"$inputPath/follow-up.tsv"
+
     val phenotypeInput = s"$inputPath/phenotype.tsv"
     val fileInput = s"$inputPath/file.tsv"
     val biospecimenInput = s"$inputPath/biospecimen.tsv"
@@ -23,25 +30,11 @@ object Study {
 
     import spark.implicits._
 
-    val donor: DataFrame = readCsvFile(donorsInput) as "donor"
-    val diagnosis: DataFrame = readCsvFile(diagnosisInput) as "diagnosis"
-
+    val donor: DataFrame = loadDonors(donorsInput, familyRelationshipInput, familyHistoryInput, exposureInput) as "donor"
+    val diagnosisPerDonorAndStudy: DataFrame = loadDiagnoses(diagnosisInput, treatmentInput, followUpInput)
     val phenotypesPerDonorAndStudy: DataFrame = loadPhenotypes(phenotypeInput)
-    val diagnosisPerDonorAndStudy: DataFrame = diagnosis
-      .groupBy($"diagnosis.submitter_donor_id", $"diagnosis.study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"diagnosis.diagnosis_mondo_term" as "mondo_term",
-            $"diagnosis.diagnosis_mondo_term" as "mondo_term_keyword",
-            $"diagnosis.diagnosis_ICD_term" as "icd_term",
-            $"diagnosis.diagnosis_ICD_term" as "icd_term_keyword",
-            $"diagnosis.diagnosis_ICD_category" as "icd_category",
-            $"diagnosis.diagnosis_ICD_category" as "icd_category_keyword",
-            $"diagnosis.age_at_diagnosis",
-          )
-        ) as "diagnoses"
-      ) as "diagnosisGroup"
+    val file: DataFrame = readCsvFile(fileInput) as "file"
+    val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenInput, sampleInput) as "biospecimenWithSamples"
 
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
       .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
@@ -49,23 +42,17 @@ object Study {
       .drop($"diagnosisGroup.study_id")
       .drop($"diagnosisGroup.submitter_donor_id")
       .drop($"phenotypeGroup.study_id")
+      .drop($"phenotypeGroup.submitter_donor_id")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
-            $"donor.submitter_donor_id",
-            notNullCol($"ethnicity") as "ethnicity",
-            $"vital_status",
-            notNullCol($"gender") as "gender",
-            ageAtRecruitment,
-            $"diagnosisGroup.*",
-            $"phenotypeGroup.phenotypes_per_donor_per_study" as "phenotypes"
+            (donor.columns.filterNot(List("study_id", "submitter_family_id").contains(_)).map(col) ++
+              List($"diagnosisGroup.*", $"phenotypeGroup.phenotypes_per_donor_per_study" as "phenotypes")) : _*
           )
         ) as "donors"
       ) as "donorsGroup"
 
-    val file: DataFrame = readCsvFile(fileInput) as "file"
-    val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenInput, sampleInput) as "biospecimenWithSamples"
     val fileWithBiospecimenPerStudy: DataFrame = file
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .drop($"biospecimenWithSamples.study_id")
@@ -87,7 +74,7 @@ object Study {
       .drop($"donorsGroup.study_id")
       .drop($"filesGroup.study_id")
 
-    result.printSchema()
+    // result.printSchema()
     result
   }
 

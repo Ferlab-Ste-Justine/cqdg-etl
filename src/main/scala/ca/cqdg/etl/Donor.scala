@@ -36,30 +36,23 @@ object Donor {
     val phenotypesPerDonorAndStudy: DataFrame = loadPhenotypes(phenotypeInput)
 
     val file: DataFrame = readCsvFile(fileInput) as "file"
-    val fileWithBiospecimen: DataFrame = file
+    val fileWithRenamedColumns = file
+      .select( cols =
+        $"*",
+        $"file_name" as "file_name_keyword",
+        $"file_name" as "file_name_ngrams",
+        fileSize)
+      .withColumnRenamed("variant_class", "file_variant_class")
+
+    val fileWithBiospecimen: DataFrame = fileWithRenamedColumns
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
+      .drop($"biospecimenWithSamples.submitter_biospecimen_id")
 
     val filesPerDonorAndStudy = fileWithBiospecimen
       .groupBy($"file.submitter_donor_id", $"file.study_id")
       .agg(
         collect_list(
-          struct( cols =
-            $"file_name",
-            $"file_name" as "file_name_keyword",
-            $"file_name" as "file_name_ngrams",
-            $"file.submitter_biospecimen_id",
-            $"data_category",
-            $"data_type",
-            $"file_format",
-            $"platform",
-            $"variant_class" as "file_variant_class",
-            $"data_access",
-            $"is_harmonized",
-            $"experimental_strategy",
-            fileId,
-            fileSize/*,
-            $"biospecimenWithSamples.biospecimen" as "biospecimen"*/
-          )
+          struct(fileWithBiospecimen.columns.filterNot(List("study_id", "submitter_donor_id").contains(_)).map(col) : _*)
         ) as "files_per_donor_per_study"
       )
       .as("fileGroup")
@@ -67,14 +60,8 @@ object Donor {
     val donorStudyJoin = donor
       .join(broadcastStudies.value, $"donor.study_id" === $"study.study_id")
       .select( cols =
-        donorId,
-        $"study.study_id" as "study_id",
+        $"donor.*",
         array(struct("study.*")).as("study"),
-        $"donor.submitter_donor_id",
-        notNullCol($"ethnicity") as "ethnicity",
-        $"vital_status",
-        notNullCol($"gender") as "gender",
-        ageAtRecruitment,
         $"familyRelationships",
         $"familyConditions" as "familyHistory",
         $"exposures" as "exposure"
@@ -85,9 +72,14 @@ object Donor {
       .join(diagnosisPerDonorAndStudy, $"donorWithStudy.study_id" === $"diagnosisGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
       .join(phenotypesPerDonorAndStudy, $"donorWithStudy.study_id" === $"phenotypeGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
       .join(filesPerDonorAndStudy, $"donorWithStudy.study_id" === $"fileGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"fileGroup.submitter_donor_id", "left")
-      .select($"donorWithStudy.*", $"diagnosis_per_donor_per_study" as "diagnoses", $"phenotypes_per_donor_per_study" as "phenotypes", $"files_per_donor_per_study" as "files")
+      .select( cols =
+        $"donorWithStudy.*",
+        $"diagnosis_per_donor_per_study" as "diagnoses",
+        $"phenotypes_per_donor_per_study" as "phenotypes",
+        $"files_per_donor_per_study" as "files"
+      )
 
-    //result.printSchema()
+    // result.printSchema()
     result
   }
 
