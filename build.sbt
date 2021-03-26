@@ -11,13 +11,18 @@ val spark_version = "3.0.0"
 /* Runtime */
 libraryDependencies +=  "org.apache.spark" %% "spark-core" % spark_version % Provided
 libraryDependencies +=  "org.apache.spark" %% "spark-sql" % spark_version % Provided
-libraryDependencies +=  "org.apache.hadoop" % "hadoop-client" % "3.2.0" % Provided
-libraryDependencies +=  "org.apache.hadoop" % "hadoop-aws" % "3.2.0" % Provided
-libraryDependencies += "io.projectglow" %% "glow" % "0.5.0" exclude ("org.apache.hadoop", "hadoop-client")
-libraryDependencies += "io.delta" %% "delta-core" % "0.7.0" % Provided
+libraryDependencies +=  "org.apache.hadoop" % "hadoop-common" % "3.3.0" % Provided
+libraryDependencies +=  "org.apache.hadoop" % "hadoop-client" % "3.3.0" % Provided
+libraryDependencies +=  "org.apache.hadoop" % "hadoop-aws" % "3.3.0" % Provided
+libraryDependencies += "io.projectglow" %% "glow-spark3" % "1.0.0" exclude ("org.apache.hadoop", "hadoop-client")
+libraryDependencies += "io.delta" %% "delta-core" % "0.8.0" % Provided
+libraryDependencies += "com.amazonaws" % "aws-java-sdk-bom" % "1.11.975"
+libraryDependencies += "com.amazonaws" % "aws-java-sdk-s3" % "1.11.975"
+libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.1.7"
+libraryDependencies += "com.google.code.gson" % "gson" % "2.8.6"
 
 /* Test */
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"
 libraryDependencies += "org.apache.spark" %% "spark-hive" % spark_version % "test"
 
 test in assembly := {}

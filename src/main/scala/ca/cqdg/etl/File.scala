@@ -1,41 +1,21 @@
 package ca.cqdg.etl
 
-import ca.cqdg.etl.EtlUtils.columns._
-import ca.cqdg.etl.EtlUtils.{loadBiospecimens, loadDiagnoses, loadDonors, loadPhenotypes, readCsvFile}
+import ca.cqdg.etl.model.NamedDataFrame
+import ca.cqdg.etl.utils.EtlUtils.columns._
+import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object File {
-  def run(broadcastStudies: Broadcast[DataFrame], inputPath: String, outputPath: String)(implicit spark: SparkSession): Unit = {
-    // build(broadcastStudies, inputPath)
-    write(build(broadcastStudies, inputPath), outputPath)
+  def run(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame], outputPath: String)(implicit spark: SparkSession): Unit = {
+    write(build(broadcastStudies, dfList), outputPath)
   }
 
-  def build(broadcastStudies: Broadcast[DataFrame], inputPath: String)(implicit spark: SparkSession): DataFrame = {
-    val fileInput = s"$inputPath/file.tsv"
-
-    val donorsInput = s"$inputPath/donor.tsv"
-    val familyRelationshipInput = s"$inputPath/family-relationship.tsv"
-    val familyHistoryInput = s"$inputPath/family-history.tsv"
-    val exposureInput = s"$inputPath/exposure.tsv"
-
-    val diagnosisInput = s"$inputPath/diagnosis.tsv"
-    val treatmentInput = s"$inputPath/treatment.tsv"
-    val followUpInput = s"$inputPath/follow-up.tsv"
-
-    val phenotypeInput = s"$inputPath/phenotype.tsv"
-    val biospecimenInput = s"$inputPath/biospecimen.tsv"
-    val sampleInput = s"$inputPath/sample_registration.tsv"
+  def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file) = loadAll(dfList);
 
     import spark.implicits._
-
-    val file: DataFrame = readCsvFile(fileInput) as "file"
-
-    val donor: DataFrame = loadDonors(donorsInput, familyRelationshipInput, familyHistoryInput, exposureInput) as "donor"
-    val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenInput, sampleInput) as "biospecimenWithSamples"
-    val diagnosisPerDonorAndStudy: DataFrame = loadDiagnoses(diagnosisInput, treatmentInput, followUpInput)
-    val phenotypesPerDonorAndStudy: DataFrame = loadPhenotypes(phenotypeInput)
 
     val fileDonors = file.as("file")
       .join(donor.as("donor"), $"file.submitter_donor_id" === $"donor.submitter_donor_id")
@@ -76,15 +56,20 @@ object File {
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")
 
-    // result.printSchema()
+    val studyNDF: NamedDataFrame = getDataframe("study", dfList)
+    //result.printSchema()
     result
+      .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
+      .withColumn("study_version", lit(studyNDF.studyVersion))
+      .withColumn("study_version_creation_date", lit(studyNDF.studyVersionCreationDate))
   }
 
   def write(files: DataFrame, outputPath: String)(implicit spark: SparkSession): Unit = {
     files
+      .coalesce(1)
       .write
       .mode(SaveMode.Overwrite)
-      .partitionBy("study_id")
+      .partitionBy("study_id", "dictionary_version", "study_version", "study_version_creation_date")
       .json(outputPath)
   }
 }
