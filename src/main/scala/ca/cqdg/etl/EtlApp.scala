@@ -15,7 +15,7 @@ object EtlApp extends App {
 
   implicit val spark = SparkSession
     .builder
-    .appName("CQDG-ETL")
+    .appName("CQDG ETL")
     .master("local")//TODO: Remove "local" and replace by '[*]'
     .getOrCreate()
 

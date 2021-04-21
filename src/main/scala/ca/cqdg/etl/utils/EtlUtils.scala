@@ -18,7 +18,45 @@ object EtlUtils {
     new SimpleDateFormat("d/M/yyyy"),
     new SimpleDateFormat("d/MM/yyyy"),
     new SimpleDateFormat("dd/M/yyyy"),
-    new SimpleDateFormat("dd/MM/yyyy")
+    new SimpleDateFormat("dd/MM/yyyy"),
+
+    new SimpleDateFormat("d/M/yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("d/MM/yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("dd/M/yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("dd/MM/yyyy'T'HH:mm:ss'Z'"),
+
+    new SimpleDateFormat("d-M-yyyy"),
+    new SimpleDateFormat("d-MM-yyyy"),
+    new SimpleDateFormat("dd-M-yyyy"),
+    new SimpleDateFormat("dd-MM-yyyy"),
+
+    new SimpleDateFormat("d-M-yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("d-MM-yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("dd-M-yyyy'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("dd-MM-yyyy'T'HH:mm:ss'Z'"),
+
+    new SimpleDateFormat("yyyy-M-d"),
+    new SimpleDateFormat("yyyy-MM-d"),
+    new SimpleDateFormat("yyyy-M-dd"),
+    new SimpleDateFormat("yyyy-MM-dd"),
+
+    new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy-M-dd'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy-MM-d'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy-M-d'T'HH:mm:ss'Z'"),
+
+    new SimpleDateFormat("yyyy/M/d"),
+    new SimpleDateFormat("yyyy/MM/d"),
+    new SimpleDateFormat("yyyy/M/dd"),
+    new SimpleDateFormat("yyyy/MM/dd"),
+
+    new SimpleDateFormat("yyyy/MM/dd'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy/M/dd'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy/MM/d'T'HH:mm:ss'Z'"),
+    new SimpleDateFormat("yyyy/M/d'T'HH:mm:ss'Z'"),
+
+    new SimpleDateFormat("MM-yyyy"),
+    new SimpleDateFormat("MM/yyyy")
   )
 
   val readOptions = Map(
