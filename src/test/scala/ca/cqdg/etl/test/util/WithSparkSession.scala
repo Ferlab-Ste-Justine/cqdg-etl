@@ -1,4 +1,4 @@
-package ca.cqdg.etl.testutils
+package ca.cqdg.etl.test.util
 
 import org.apache.commons.io.FileUtils
 import org.apache.spark.sql.SparkSession

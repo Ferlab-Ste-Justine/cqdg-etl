@@ -6,6 +6,10 @@ import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe}
 import ca.cqdg.etl.utils.PreProcessingUtils.preProcess
 import ca.cqdg.etl.utils.S3Utils
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
+import com.amazonaws.ClientConfiguration
+import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
+import com.amazonaws.regions.Regions
+import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
@@ -31,12 +35,25 @@ object EtlApp extends App {
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", s3Endpoint)
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.path.style.access", "true")
 
+  val clientConfiguration = new ClientConfiguration
+  clientConfiguration.setSignerOverride("AWSS3V4SignerType")
+
+  val s3Client: AmazonS3 = AmazonS3ClientBuilder.standard()
+    .withEndpointConfiguration(
+      new EndpointConfiguration(
+        getConfiguration("SERVICE_ENDPOINT", s3Endpoint),
+        getConfiguration("AWS_DEFAULT_REGION", Regions.US_EAST_1.name()))
+    )
+    .withPathStyleAccessEnabled(true)
+    .withClientConfiguration(clientConfiguration)
+    .build()
+
   // Load files that are ready to be processed and apply modifications/validations
   //    e.g.: Add CQDG Id, remove columns that are not part of the dictionary, etc.
   // Returns a list of files per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
-  val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data")
+  val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
   // List of DataFrames per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
-  val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder);
+  val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket);
 
   // Save the modified files in a different folder in order to preserve the original files
   // Then, transform into the right format for the etl-indexer to send to ES.
@@ -59,7 +76,7 @@ object EtlApp extends App {
     Study.run(broadcastStudies, entry._2, s"$outputPath/studies")
     File.run(broadcastStudies, entry._2, s"$outputPath/files")
 
-    writeSuccessIndicator(s3Bucket, entry._1);
+    writeSuccessIndicator(s3Bucket, entry._1, s3Client);
   });
 
   spark.stop()

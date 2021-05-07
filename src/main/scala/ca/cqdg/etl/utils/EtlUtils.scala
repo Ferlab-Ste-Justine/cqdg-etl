@@ -82,6 +82,8 @@ object EtlUtils {
     val fileNDF = getDataframe("file", dfList)
     val biospecimenNDF = getDataframe("biospecimen", dfList)
     val sampleNDF = getDataframe("sampleregistration", dfList)
+    val hpoTermsNDF = getDataframe("hpoterms", dfList)
+    val mondoTermsNDF = getDataframe("mondoterms", dfList)
 
     val donor: DataFrame = loadDonors(donorsNDF.dataFrame as "donor",
       familyRelationshipNDF.dataFrame as "familyRelationship",

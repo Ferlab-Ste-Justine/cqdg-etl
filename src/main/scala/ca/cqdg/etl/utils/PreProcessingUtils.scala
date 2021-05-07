@@ -16,7 +16,7 @@ import scala.collection.{JavaConverters, mutable}
 object PreProcessingUtils {
 
   val dictionaryUsername: String = getConfiguration("LECTERN_USERNAME", "lectern")
-  val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "changeMe")
+  val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "PWD")
   val dictionaryName: String = getConfiguration("LECTERN_DICTIONARY_NAME", "CQDG Data Dictionary")
   val dictionaryURL: String = getConfiguration("LECTERN_HOST", "https://schema.qa.cqdg.ferlab.bio")
   val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
@@ -24,18 +24,18 @@ object PreProcessingUtils {
   val gson: Gson = new Gson()
   val log: Logger = Logger.getLogger("EnrichmentUtils")
 
-  def preProcess(files: Map[String, List[S3File]])(implicit spark: SparkSession): Map[String, List[NamedDataFrame]] = {
+
+  def preProcess(files: Map[String, List[S3File]], s3Bucket: String)(implicit spark: SparkSession): Map[String, List[NamedDataFrame]] = {
     files.map({
       case(key, values) =>
-        key -> preProcess(values)
+        key -> preProcess(values, s3Bucket: String)
     })
   }
 
-  def preProcess(files: List[S3File])(implicit spark: SparkSession): List[NamedDataFrame] = {
+  def preProcess(files: List[S3File], s3Bucket: String)(implicit spark: SparkSession): List[NamedDataFrame] = {
     val metadata = files
                       .find(f => f.filename == "study_version_metadata.json")
                       .getOrElse(throw new RuntimeException("study_version_metadata.json file not present. Cannot proceed."))
-
     val metadataDF: DataFrame = spark.read.option("multiline", "true").json(s"s3a://${s3Bucket}/${metadata.key}")
     val dictionaryVersion: String = metadataDF.select("dictionaryVersion").collectAsList().get(0).getString(0)
     val studyVersion: String = metadataDF.select("studyVersionId").collectAsList().get(0).getString(0)
@@ -63,6 +63,7 @@ object PreProcessingUtils {
     import spark.implicits._
 
     val df = EtlUtils.readCsvFile(s"s3a://cqdg/${f.key}")
+    df.show(false)
 
     val (enhancedDF: DataFrame, entityType: String) = f.schema match {
       case "familyhistory" => (df
