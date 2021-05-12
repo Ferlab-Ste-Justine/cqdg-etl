@@ -3,8 +3,8 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe}
-import ca.cqdg.etl.utils.PreProcessingUtils.preProcess
-import ca.cqdg.etl.utils.S3Utils
+import ca.cqdg.etl.utils.PreProcessingUtils.{loadSchemas, preProcess}
+import ca.cqdg.etl.utils.{S3Utils, Schema}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
 import com.amazonaws.ClientConfiguration
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
@@ -53,7 +53,8 @@ object EtlApp extends App {
   // Returns a list of files per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
   val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
   // List of DataFrames per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
-  val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket);
+  val dictionarySchemas: Map[String, List[Schema]] = loadSchemas()
+  val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket)(dictionarySchemas);
 
   // Save the modified files in a different folder in order to preserve the original files
   // Then, transform into the right format for the etl-indexer to send to ES.

@@ -1,0 +1,2077 @@
+[
+  {
+    "schemas":[
+      {
+        "name":"sample_registration",
+        "description":"The collection of data elements required to register a sample in the CQDG program. Registration of samples is required before molecular and clinical data submission can proceed.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study.",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"study.study_id",
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "description":"Unique identifier of the donor, assigned by the data provider.",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_biospecimen_id",
+            "description":"Unique identifier of the biospecimen, assigned by the data provider.",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Biospecimen ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_sample_id",
+            "valueType":"string",
+            "description":"Unique identifier of the molecular sample, assigned by the data provider",
+            "meta":{
+              "primaryId":true,
+              "validationDependency":true,
+              "displayName":"Submitter Sample ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Type of molecular sample used for analysis testing",
+            "name":"sample_type",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Amplified DNA",
+                "ctDNA",
+                "Other DNA enrichments",
+                "Other RNA fractions",
+                "polyA+ RNA",
+                "Ribo-Zero RNA",
+                "Total DNA",
+                "Total RNA",
+                "Other"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Sample type"
+            }
+          }
+        ]
+      },
+      {
+        "name":"study",
+        "description":"The collection of data elements related to a specific study in the CQDG program.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"name",
+            "valueType":"string",
+            "description":"Name of the Study",
+            "meta":{
+              "core":true,
+              "displayName":"Name of the Study"
+            },
+            "restrictions":{
+              "required":true
+            }
+          },
+          {
+            "name":"short_name",
+            "valueType":"string",
+            "description":"Accronym or short name of the Study",
+            "meta":{
+              "core":true,
+              "displayName":"Short name of the Study"
+            }
+          },
+          {
+            "name":"description",
+            "valueType":"string",
+            "description":"Description of the Study",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Description of the Study"
+            }
+          },
+          {
+            "name":"keyword",
+            "valueType":"string",
+            "description":"Keywords associated with the Study",
+            "meta":{
+              "displayName":"Keywords for the Study",
+              "notes":"Provide a semicolon (;) delimited list of keywords"
+            }
+          },
+          {
+            "name":"access_authority",
+            "valueType":"string",
+            "description":"Contact information for the Stuy's access authority",
+            "meta":{
+              "displayName":"Access authority",
+              "notes":"Provide website or email information"
+            }
+          },
+          {
+            "name":"domain",
+            "description":"Research domain of the Study",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Cancer",
+                "Rare disease",
+                "Neurodevelopmental conditions",
+                "General health",
+                "Not applicable"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Research domain"
+            }
+          },
+          {
+            "name":"population",
+            "description":"Describe the population that is the focus of the study",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Pediatric",
+                "Adult",
+                "Pediatic and adult"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Study population"
+            }
+          }
+        ]
+      },
+      {
+        "name":"data access",
+        "description":"The collection of data elements that define data access limitations and data use requirements. To submit multiple data access limitations or requirements for a single entity, submit multiple rows in the data access file for this entity.",
+        "fields":[
+          {
+            "name":"entity_type",
+            "valueType":"string",
+            "description":"Type of entity to which access limitations and requirements apply",
+            "meta":{
+              "core":true,
+              "displayName":"Entity type"
+            },
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Study",
+                "Donnor ",
+                "Biospecimen",
+                "File"
+              ]
+            }
+          },
+          {
+            "name":"entity_id",
+            "valueType":"string",
+            "description":"Unique identifier for the entity",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Entity ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"access_limitations",
+            "description":"Data access limitations as defined in the GA4GH Data Use Ontology (DUO)",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "DUO:0000004",
+                "DUO:0000005",
+                "DUO:0000006",
+                "DUO:0000007",
+                "DUO:0000011",
+                "DUO:0000012",
+                "DUO:0000014",
+                "DUO:0000015",
+                "DUO:0000016",
+                "DUO:0000042"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Data Access Limitations",
+              "notes":"Refer to the Data Use Ontology code https://github.com/EBISPOT/DUO"
+            }
+          },
+          {
+            "name":"access_requirements",
+            "description":"Data use requirements as defined in the GA4GH Data Use Ontology (DUO)",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "DUO:0000017",
+                "DUO:0000018",
+                "DUO:0000019",
+                "DUO:0000020",
+                "DUO:0000021",
+                "DUO:0000022",
+                "DUO:0000025",
+                "DUO:0000026",
+                "DUO:0000027",
+                "DUO:0000028",
+                "DUO:0000029"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Data Use Requirements",
+              "notes":"Refer to the Data Use Ontology code https://github.com/EBISPOT/DUO"
+            }
+          }
+        ]
+      },
+      {
+        "name":"donor",
+        "description":"The collection of data elements related to a specific donor in the CQDG program.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "name":"submitter_donor_id",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Donor's date of birth",
+            "name":"dob",
+            "valueType":"string",
+            "meta":{
+              "core":true,
+              "notes":"Partial date of birth may be provided minimum of year of birth",
+              "displayName":"dob"
+            },
+            "restrictions":{
+              "required":true
+            }
+          },
+          {
+            "description":"Donor's date of recruitment",
+            "name":"date_of_recruitment",
+            "valueType":"string",
+            "meta":{
+              "core":true,
+              "displayName":"date of recuitment"
+            },
+            "restrictions":{
+              "required":true
+            }
+          },
+          {
+            "description":"Administrative gender of the donor",
+            "name":"gender",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Male",
+                "Female",
+                "Other",
+                "Unknown"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "notes":"Data from administrative health record, medical record or self-reported",
+              "displayName":"Gender"
+            }
+          },
+          {
+            "description":"Ethnic background of the donor",
+            "name":"ethnicity",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "French Canadian",
+                "English Canadian",
+                "Aboriginal",
+                "European",
+                "Arab",
+                "Latin American",
+                "African or Caribbean",
+                "East and Southeast Asian",
+                "South Asian",
+                "Mixed",
+                "Other"
+              ]
+            },
+            "meta":{
+              "displayName":"Ethnicity",
+              "notes":"French Canadian trace their ancestry to French colonists who settled in Canada, English Canadians are of English ethnic origin and heritage, Aboriginal (First Nations, Metis, Inuit), White (European descent), Arab (e.g. Egypt, Iraq, Jordan, Lebanon), Latin American (Hispanic), Black (African/Caribbean), East Asian (e.g. China, Japan, Korea, Taiwan), West Asian (e.g. Turkey, Iran, Afghanistan), Southeast Asian (e.g. Malaysia, Indonesia, Viet Nam), South Asian (e.g. India, Sri Lanka, Pakistan, Bangladesh), Filipino, Unknown, Other"
+            }
+          },
+          {
+            "description":"Donor's last known state of living or deceased",
+            "name":"vital_status",
+            "restrictions":{
+              "codeList":[
+                "Alive",
+                "Deceased",
+                "Unknown"
+              ],
+              "required":true
+            },
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "displayName":"Vital Status"
+            }
+          },
+          {
+            "description":"Indicates the cause of a donor's death",
+            "name":"cause_of_death",
+            "restrictions":{
+              "codeList":[
+                "Cancer",
+                "Heart disease",
+                "Cerebrovascular disease",
+                "Accidental death",
+                "Chronic lower respiratory diseases",
+                "Influenza and pneumonia",
+                "Other reason",
+                "Unknown"
+              ],
+              "script":[
+                "(function validate(inputs) {       const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        let result = {valid: true, message: 'Ok'};\n        const vitalStatus = $row.vital_status || '';\n\n        if ($field && vitalStatus && vitalStatus.trim().toLowerCase() !== 'deceased') {\n            result = {\n                valid: false,\n                message: `${$name} cannot be provided if the donor's vital_status is not Deceased.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            },
+            "valueType":"string",
+            "meta":{
+              "core":true,
+              "dependsOn":"donor.vital_status",
+              "notes":"Cause of death is only required to be submitted if the donor's vital_status is 'Deceased'.",
+              "displayName":"Cause of Death"
+            }
+          },
+          {
+            "description":"Numeric value to represent the age of the donor at the time of death, in days",
+            "name":"age_of_death",
+            "valueType":"integer",
+            "meta":{
+              "dependsOn":"donor.vital_status",
+              "notes":"Age_of_death is only required to be submitted if the donor's vital_status is Deceased.",
+              "validationDependency":true,
+              "units":"days",
+              "core":"true",
+              "displayName":"Age of death"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        let result = {valid: true, message: 'Ok'};\n        const vitalStatus = $row.vital_status || '';\n\n        if ($field && vitalStatus && vitalStatus.trim().toLowerCase() !== 'deceased') {\n            result = {\n                valid: false,\n                message: `${$name} cannot be provided if the donor's vital_status is not Deceased.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "description":"Indicate if physical measures are available for this donor",
+            "name":"physical_measures_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of physical measures"
+            }
+          },
+          {
+            "description":"Indicate if laboratory meausres are available for this donor",
+            "name":"laboratory_measures_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of laboratory measures"
+            }
+          },
+          {
+            "description":"Indicate if lifestyle and behavior data is available for this donor",
+            "name":"lifestyle_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of lifestyle data"
+            }
+          },
+          {
+            "description":"Indicate if information about medication use is available for this donor",
+            "name":"medication_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of medication data"
+            }
+          },
+          {
+            "description":"Indicate if information about environmental exposure is available for this donor",
+            "name":"environment_exposure_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of environmental exposure data"
+            }
+          },
+          {
+            "description":"Indicate if information about the donor's family health history is available",
+            "name":"family_history_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of family history data"
+            }
+          },
+          {
+            "description":"Indicate the donor's availability of genealogical data",
+            "name":"genealogy_available",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Availability of genealogical data"
+            }
+          },
+          {
+            "description":"Indicate if the donor is a proband or a family member",
+            "name":"is_a_proband",
+            "restrictions":{
+              "codeList":[
+                "Is a family member",
+                "Is a proband",
+                "Not applicable"
+              ]
+            },
+            "valueType":"string",
+            "meta":{
+              "displayName":"Is a proband"
+            }
+          },
+          {
+            "description":"Indicate if the donor is affected by the condition",
+            "name":"is_affected",
+            "restrictions":{
+              "codeList":[
+                "Yes",
+                "No",
+                "Unknown",
+                "Not applicable"
+              ]
+            },
+            "valueType":"string",
+            "meta":{
+              "displayName":"Is affected"
+            }
+          }
+        ]
+      },
+      {
+        "name":"biospecimen",
+        "description":"The collection of data elements related to a donor's biospecimen. A biospecimen is any material sample taken for testing, diagnostic or research purposes. To submit multiple biospecimens for a single donor, submit multiple rows in the biospecimens file for this donor.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_biospecimen_id",
+            "description":"Unique identifier of the biospecimen, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Biospecimen ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_diagnosis_id",
+            "valueType":"string",
+            "description":"Indicate the diagnosis event in the clinical timeline that this biospecimen acquisition was related to",
+            "meta":{
+              "primaryId":true,
+              "validationDependency":true,
+              "foreignKey":"diagnosis.submitter_diagnosis_id",
+              "displayName":"Submitter Diagnosis ID",
+              "notes":"not required if the biospecimen was not collected for a diagnostic purpose #/notes/id"
+            },
+            "restrictions":{
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Date when biospecimen was collected",
+            "name":"date_biospecimen_collection",
+            "valueType":"string",
+            "meta":{
+              "notes":"Collected DateTime",
+              "displayName":"Date of biospecimen collection"
+            }
+          },
+          {
+            "name":"tumor_normal_designation",
+            "valueType":"string",
+            "description":"Description of specimen tumor/normal status for data processing",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Normal",
+                "Tumor",
+                "Not applicable"
+              ]
+            },
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "displayName":"Tumor Normal Designation",
+              "notes":"Indicate `Not applicable' if the biospecimen was not analysed."
+            }
+          },
+          {
+            "description":"Tissue source of the biospecimen",
+            "name":"biospecimen_tissue_source",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Blood derived - bone marrow",
+                "Blood derived - peripheral blood",
+                "Blood derived",
+                "Bone marrow",
+                "Bone",
+                "Buccal cell",
+                "Buffy coat",
+                "Cerebellum",
+                "Cerebrospinal fluid"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Biospecimen_tissue_source"
+            }
+          },
+          {
+            "name":"biospecimen_type",
+            "valueType":"string",
+            "description":"Description of the kind of biospecimen that was collected",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Cell line - derived from normal",
+                "Cell line - derived from tumor",
+                "Cell line - derived from xenograft tumor",
+                "Metastatic tumor - additional metastatic",
+                "Metastatic tumor - metastasis local to lymph node",
+                "Metastatic tumor - metastasis to distant location",
+                "Metastatic tumor",
+                "Normal - tissue adjacent to primary tumor",
+                "Normal",
+                "Primary tumor - additional new primary",
+                "Primary tumor - adjacent to normal",
+                "Primary tumor",
+                "Recurrent tumor",
+                "Xenograft - derived from primary tumor",
+                "Xenograft - derived from tumor cell line",
+                "Derived from allogenic bone marrow transplant",
+                "Derived from autologous bone marrow transplant"
+              ]
+            },
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "displayName":"Biospecimen Type"
+            }
+          },
+          {
+            "name":"biospecimen_anatomic_location",
+            "valueType":"string",
+            "description":"Indicate the ICD-O-3 topography code for the anatomic location of a biospecimen when it was collected",
+            "restrictions":{
+              "required":true,
+              "regex":"^[C][0-9]{2}(.[0-9]{1})?$"
+            },
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "notes":"Refer to guidelines in the ICD-O-3 manual: ICD-O-3 manual at https://apps.who.int/iris/handle/10665/42344",
+              "displayName":"Biospecimen anatonmic location",
+              "examples":"C50.1,C18"
+            }
+          },
+          {
+            "name":"tumor_histological_type",
+            "description":"The code to represent the histology (morphology) of neoplasms that is usually obtained from a pathology report, according to the International Classification of Diseases for Oncology, 3rd Edition (WHO ICD-O-3)",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "dependsOn":"sample_registration.tumor_normal_designation",
+              "notes":"If biospecimen is a tumor, Refer to the ICD-O-3 manual for guidelines at https://apps.who.int/iris/handle/10665/42344",
+              "valueType":"string",
+              "examples":"8260/3,9691/36",
+              "displayName":"Tumor Histological Type"
+            },
+            "restrictions":{
+              "regex":"^[8,9]{1}[0-9]{3}/[0,1,2,3,6,9]{1}[1-9]{0,1}$",
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const tumourNormalDesignation = $row.tumour_normal_designation || '';\n\n        if (!currField && tumourNormalDesignation && tumourNormalDesignation.trim().toLowerCase() === 'tumour') {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the biospecimen's tumour_normal_designation is Tumour.`,\n            };\n        }\n\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "name":"biospecimen_processing",
+            "valueType":"string",
+            "description":"Processing method of biospecimen",
+            "restrictions":{
+              "codeList":[
+                "Cryopreservation in liquid nitrogen (dead tissue)",
+                "Cryopreservation in dry ice (dead tissue)",
+                "Cryopreservation of live cells in liquid nitrogen",
+                "Cryopreservation - other",
+                "Formalin fixed & paraffin embedded",
+                "Formalin fixed - buffered",
+                "Formalin fixed - unbuffered",
+                "Fresh",
+                "Other"
+              ]
+            },
+            "meta":{
+              "displayName":"Biospecimen processing"
+            }
+          },
+          {
+            "name":"biospecimen_storage",
+            "valueType":"string",
+            "description":"Storage method of biospecimen",
+            "restrictions":{
+              "codeList":[
+                "Cut slide",
+                "Frozen in -70 freezer",
+                "Frozen in liquid nitrogen",
+                "Frozen in vapour phase",
+                "Not Applicable",
+                "Other",
+                "Paraffin block",
+                "RNA later frozen"
+              ]
+            },
+            "meta":{
+              "notes":"For biospecimens that were freshly extracted or immediately cultured, select Not Applicable.",
+              "displayName":"Biospecimen storage"
+            }
+          },
+          {
+            "name":"biospecimen_access",
+            "valueType":"boolean",
+            "description":"Biospecimen may be accessed (consent type)",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "displayName":"Biospecimen access"
+            }
+          }
+        ]
+      },
+      {
+        "name":"Diagnosis",
+        "description":"The collection of data elements related to a donor's diagnosis. To submit multiple diagnoses for a single donor, submit multiple rows in the diagnosis file for this donor.",
+        "meta":{
+          "parent":"donor"
+        },
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "valueType":"string",
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_diagnosis_id",
+            "valueType":"string",
+            "description":"Unique identifier of the diagnosis event, assigned by the data provider",
+            "meta":{
+              "primaryId":true,
+              "validationDependency":true,
+              "foreignKey":"diagnosis.submitter_diagnosis_id",
+              "displayName":"Submitter Diagnosis ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"diagnosis_source_text",
+            "valueType":"string",
+            "description":"Condition as reported in the study's dataset",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "examples":"breast cancer, stroke",
+              "notes":"Provide exact information as per the dataset",
+              "displayName":"Name of the condition"
+            }
+          },
+          {
+            "name":"diagnosis_ICD_code",
+            "valueType":"string",
+            "description":"ICD-10 code used to define a condtion",
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-TV-Z][0-9][0-9AB].?[0-9A-TV-Z]{0,4}$"
+            },
+            "meta":{
+              "core":true,
+              "examples":"C41.1, C16.9",
+              "notes":"Write the exact ICD-10 code - refer to https://apps.who.int/classifications/apps/icd/ClassificationDownload/DLArea/Download.aspx",
+              "displayName":"Diagnosis ICD-10 code"
+            }
+          },
+          {
+            "name":"diagnosis_mondo_code",
+            "valueType":"string",
+            "description":"Mondo code used to define a condtion",
+            "restrictions":{
+              "required":true,
+              "regex":"^(MONDO_|HP_)[0-9]{7}$"
+            },
+            "meta":{
+              "core":true,
+              "examples":"MONDO_0002131, MONDO_0001056",
+              "notes":"Write the exact MONDO code. For MONDO codes, refer to https://www.ebi.ac.uk/ols/ontologies/mondo",
+              "displayName":"Diagnosis Mondo code"
+            }
+          },
+          {
+            "name":"age_at_diagnosis",
+            "valueType":"number",
+            "description":"Age at diagnosis of condition",
+            "restrictions":{
+              "range":{
+                "min":0,
+                "max":100
+              }
+            },
+            "meta":{
+              "units":"years",
+              "core":true,
+              "displayName":"Age at Diagnosis"
+            }
+          },
+          {
+            "name":"is_self_reported",
+            "description":"Indicates whether the information is reported by donor or extracted from (administrative) health records",
+            "valueType":"boolean",
+            "meta":{
+              "displayName":"Is self-reported"
+            }
+          },
+          {
+            "name":"is_cancer",
+            "description":"The diagnosis is a cancer diagnosis",
+            "restrictions":{
+              "required":true
+            },
+            "valueType":"boolean",
+            "meta":{
+              "core":true,
+              "displayName":"Is cancer diagnosis"
+            }
+          },
+          {
+            "name":"diagnosis_type",
+            "description":"Indicate if the diagnosis is based on clinical or histological (histo-pathological) criteria",
+            "restrictions":{
+              "codeList":[
+                "Clinical",
+                "Histological"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const isCancer = $row.is_cancer && $row.is_cancer.trim().toLowerCase() == \"true\";\n\n        if (!currField && isCancer) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the diagnosis' is_cancer flag is 1/true.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            },
+            "valueType":"string",
+            "meta":{
+              "dependsOn":"diagnosis.is_cancer",
+              "notes":"Basis of diagnosis is only required to be submitted if the donor's diagnosis is cancer",
+              "core":true,
+              "displayName":"Basis of Diagnosis"
+            }
+          },
+          {
+            "name":"is_cancer_primary",
+            "description":"Diagnosis is a primary cancer diagnosis",
+            "valueType":"boolean",
+            "meta":{
+              "dependsOn":"diagnosis.is_cancer",
+              "notes":"This field is only required to be submitted if the donor's diagnosis is cancer",
+              "core":true,
+              "displayName":"Is primary cancer"
+            }
+          },
+          {
+            "name":"tumor_staging_system",
+            "valueType":"string",
+            "description":"Indicate the tumor staging system used to stage the cancer at the time of the diagnosis, prior to treatment",
+            "restrictions":{
+              "codeList":[
+                "AJCC 8th edition",
+                "AJCC 7th edition",
+                "Ann Arbor staging system",
+                "Binet staging system",
+                "Durie-Salmon staging system",
+                "FIGO staging system",
+                "Lugano staging system",
+                "Rai staging system",
+                "Revised International staging system (RISS)",
+                "St Jude staging system"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const isCancer = $row.is_cancer && $row.is_cancer.trim().toLowerCase() == \"true\";\n\n        if (!currField && isCancer) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the diagnosis' is_cancer flag is 1/true.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            },
+            "meta":{
+              "dependsOn":"diagnosis.is_cancer",
+              "core":true,
+              "displayName":"Tumor Staging System"
+            }
+          },
+          {
+            "name":"stage_group",
+            "description":"Stage group of the tumor, as assigned by the reporting tumor_staging_system, that indicates the overall prognostic tumor stage (ie. Stage I, Stage II, Stage III etc.)",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Stage 0",
+                "Stage 0a",
+                "Stage 0is",
+                "Stage I",
+                "Stage IA",
+                "Stage IA1",
+                "Stage IA2",
+                "Stage IA3",
+                "Stage IB",
+                "Stage IB1",
+                "Stage IB2",
+                "Stage IC",
+                "Stage IS",
+                "Stage IE",
+                "Stage II",
+                "Stage IIA",
+                "Stage IIA1",
+                "Stage IIA2",
+                "Stage IIE",
+                "Stage IIB",
+                "Stage IIC",
+                "Stage III",
+                "Stage IIIA",
+                "Stage IIIA1",
+                "Stage IIIA2",
+                "Stage IIIB",
+                "Stage IIIC",
+                "Stage IIIC1",
+                "Stage IIIC2",
+                "Stage IIID",
+                "Stage IV",
+                "Stage IVA",
+                "Stage IVA1",
+                "Stage IVA2",
+                "Stage IVB",
+                "Stage IVC",
+                "Occult carcinoma",
+                "Stage 1",
+                "Stage 1A",
+                "Stage 1B",
+                "Stage ISA",
+                "Stage ISB",
+                "Stage IEA",
+                "Stage IEB",
+                "Stage IIEA",
+                "Stage IIEB",
+                "Stage IIES",
+                "Stage IIESA",
+                "Stage IIESB",
+                "Stage IIS",
+                "Stage IISA",
+                "Stage IISB",
+                "Stage IIIE",
+                "Stage IIIEA",
+                "Stage IIIEB",
+                "Stage IIIES",
+                "Stage IIIESA",
+                "Stage IIIESB",
+                "Stage IIIS",
+                "Stage IIISA",
+                "Stage IIISB",
+                "Stage IAB",
+                "Stage A",
+                "Stage B",
+                "Stage C"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const isCancer = $row.is_cancer && $row.is_cancer.trim().toLowerCase() == \"true\";\n\n        if ($field && !$row.tumour_staging_system) {\n            result = {\n                valid: false,\n                message: `Please provide a value for the tumour_staging_system or leave stage_group blank`,\n            };\n        }\n\n        if (isCancer && !$field) {\n            result = {\n                valid: false,\n                message: `The stage_group mandatory if the is_cancer flag is set to 1/true`,\n            };\n        }\n\n        if ($field) {\n            let codeList = [];\n            switch ($row.tumour_staging_system && $row.tumour_staging_system.trim().toLowerCase()) {\n                case 'revised international staging system (riss)':\n                    codeList = ['stage i', 'stage ii', 'stage iii'];\n                    break;\n                case 'lugano staging system':\n                    codeList = [\n                        'stage i',\n                        'stage ia',\n                        'stage ib',\n                        'stage ie',\n                        'stage iea',\n                        'stage ieb',\n                        'stage ii',\n                        'stage iia',\n                        'stage iib',\n                        'stage iie',\n                        'stage iiea',\n                        'stage iieb',\n                        'stage iii',\n                        'stage iiia',\n                        'stage iiib',\n                        'stage iv',\n                        'stage iva',\n                        'stage ivb',\n                    ];\n                    break;\n                case 'st jude staging system':\n                    codeList = ['stage i', 'stage ii', 'stage iii', 'stage iv'];\n                    break;\n                case 'ann arbor staging system':\n                    codeList = [\n                        'stage i',\n                        'stage ia',\n                        'stage ib',\n                        'stage ie',\n                        'stage is',\n                        'stage ii',\n                        'stage iia',\n                        'stage iib',\n                        'stage iie',\n                        'stage iis',\n                        'stage iii',\n                        'stage iiia',\n                        'stage iiib',\n                        'stage iiie',\n                        'stage iiis',\n                        'stage iv',\n                        'stage iva',\n                        'stage ivb',\n                        'stage ive',\n                        'stage ivs',\n                    ];\n                    break;\n                case 'rai staging system':\n                    codeList = ['stage 0', 'stage i', 'stage ii', 'stage iii', 'stage iv'];\n                    break;\n                case 'durie-salmon staging system':\n                    codeList = [\n                        'stage 1',\n                        'stage 1a',\n                        'stage 1b',\n                        'stage ii',\n                        'stage iia',\n                        'stage iib',\n                        'stage iii',\n                        'stage iiia',\n                        'stage iiib',\n                    ];\n                    break;\n                case 'figo staging system':\n                    codeList = [\n                        'stage ia',\n                        'stage ia1',\n                        'stage ia2',\n                        'stage ib',\n                        'stage ib1',\n                        'stage ib2',\n                        'stage iia',\n                        'stage iab',\n                        'stage iiia',\n                        'stage iiib',\n                        'stage iva',\n                        'stage ivb',\n                    ];\n                    break;\n                case 'binet staging system':\n                    codeList = ['stage a', 'stage b', 'stage c'];\n                    break;\n                case 'ajcc 8th edition':\n                    codeList = [\n                        'stage 0',\n                        'stage 0a',\n                        'stage 0is',\n                        'stage i',\n                        'stage ia',\n                        'stage ia1',\n                        'stage ia2',\n                        'stage ia3',\n                        'stage ib',\n                        'stage ib1',\n                        'stage ib2',\n                        'stage ic',\n                        'stage ie',\n                        'stage is',\n                        'stage ii',\n                        'stage iia',\n                        'stage iia1',\n                        'stage iia2',\n                        'stage iib',\n                        'stage iic',\n                        'stage iie',\n                        'stage iii',\n                        'stage iiia',\n                        'stage iiia1',\n                        'stage iiia2',\n                        'stage iiib',\n                        'stage iiic',\n                        'stage iiic1',\n                        'stage iiic2',\n                        'stage iiid',\n                        'stage iv',\n                        'stage iva',\n                        'stage iva1',\n                        'stage iva2',\n                        'stage ivb',\n                        'stage ivc',\n                        'occult carcinoma',\n                        'stage 1',\n                    ];\n                    break;\n                case 'ajcc 7th edition':\n                    codeList = [\n                        'stage 0',\n                        'stage 0a',\n                        'stage 0is',\n                        'stage i',\n                        'stage ia',\n                        'stage ia1',\n                        'stage ia2',\n                        'stage ib',\n                        'stage ib1',\n                        'stage ib2',\n                        'stage ic',\n                        'stage is',\n                        'stage ii',\n                        'stage iia',\n                        'stage iia1',\n                        'stage iia2',\n                        'stage iib',\n                        'stage iic',\n                        'stage iii',\n                        'stage iiia',\n                        'stage iiib',\n                        'stage iiic',\n                        'stage iiic1',\n                        'stage iiic2',\n                        'stage iv',\n                        'stage iva',\n                        'stage iva1',\n                        'stage iva2',\n                        'stage ivb',\n                        'stage ivc',\n                        'occult carcinoma',\n                        'stage 1',\n                    ];\n                    break;\n                default:\n                    codelist = [];\n            }\n\n            if (!codeList.includes($field.trim().toLowerCase()) && codeList.length) {\n                const msg = `'${$field}' is not a permissible value. When 'tumour_staging_system' is set to '${\n                    $row.tumour_staging_system\n                }', 'stage_group' must be one of the following: \\n${codeList\n                    .map((code) => `- \"${code}\"`)\n                    .join('\\n')}`;\n\n                result.valid = false;\n                result.message = msg;\n            }\n        }\n        return result;\n    })"
+              ]
+            },
+            "meta":{
+              "dependsOn":"diagnosis.tumor_staging_system",
+              "notes":"This field is dependent on the selected tumor_staging_system",
+              "displayName":"Stage Group"
+            }
+          },
+          {
+            "name":"t_category",
+            "description":"The code to represent the extent of the primary tumor (T) based on evidence obtained from clinical assessment parameters determined at time of primary diagnosis and prior to treatment, according to criteria based on multiple editions of the AJCC's Cancer Staging Manual",
+            "valueType":"string",
+            "meta":{
+              "dependsOn":"diagnosis.tumor_staging_system",
+              "notes":"This field is required only if the selected tumor_staging_system is any edition of the AJCC cancer staging system.",
+              "displayName":"T Category"
+            },
+            "restrictions":{
+              "codeList":[
+                "T0",
+                "T1",
+                "T1a",
+                "T1a1",
+                "T1a2",
+                "T1b",
+                "T1b1",
+                "T1b2",
+                "T1c",
+                "T1d",
+                "T1mi",
+                "T2",
+                "T2a",
+                "T2a1",
+                "T2a2",
+                "T2b",
+                "T2c",
+                "T2d",
+                "T3",
+                "T3a",
+                "T3b",
+                "T3c",
+                "T3d",
+                "T3e",
+                "T4",
+                "T4a",
+                "T4b",
+                "T4c",
+                "T4d",
+                "T4e",
+                "Ta",
+                "Tis",
+                "Tis(DCIS)",
+                "Tis(LAMN)",
+                "Tis(LCIS)",
+                "Tis(Paget)",
+                "Tis(Paget’s)",
+                "Tis pd",
+                "Tis pu",
+                "TX"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const tumorStagingSystem = $row.tumor_staging_system || '';\n\n        if (!currField && tumorStagingSystem && /^(AJCC)\\b/i.test(tumorStagingSystem.trim())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the tumor_staging_system is AJCC.`,\n            };\n        } else if (currField && !/^(AJCC)\\b/i.test($field)) {\n            result = {\n                valid: false,\n                message: `${$name} cannot be provided when the tumor_staging_system is not AJCC.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "name":"n_category",
+            "description":"The code to represent the stage of cancer defined by the extent of the regional lymph node (N) involvement for the cancer based on evidence obtained from clinical assessment parameters determined at time of primary diagnosis and prior to treatment, according to criteria based on multiple editions of the AJCC's Cancer Staging Manual",
+            "valueType":"string",
+            "meta":{
+              "dependsOn":"diagnosis.tumor_staging_system",
+              "notes":"This field is required only if the selected tumor_staging_system is any edition of the AJCC cancer staging system.",
+              "displayName":"N Category"
+            },
+            "restrictions":{
+              "codeList":[
+                "N0",
+                "N0a",
+                "N0a (biopsy)",
+                "N0b",
+                "N0b (no biopsy)",
+                "N0(i+)",
+                "N0(i-)",
+                "N0(mol+)",
+                "N0(mol-)",
+                "N1",
+                "N1a",
+                "N1a(sn)",
+                "N1b",
+                "N1c",
+                "N1mi",
+                "N2",
+                "N2a",
+                "N2b",
+                "N2c",
+                "N2mi",
+                "N3",
+                "N3a",
+                "N3b",
+                "N3c",
+                "N4",
+                "NX"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const tumorStagingSystem = $row.tumor_staging_system || '';\n\n        if (!currField && tumorStagingSystem && /^(AJCC)\\b/i.test(tumorStagingSystem.trim())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the tumor_staging_system is AJCC.`,\n            };\n        } else if (currField && !/^(AJCC)\\b/i.test($field)) {\n            result = {\n                valid: false,\n                message: `${$name} cannot be provided when the tumor_staging_system is not AJCC.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "name":"m_category",
+            "description":"The code to represent the stage of cancer defined by the extent of the distant metastasis (M) for the cancer based on evidence obtained from clinical assessment parameters determined at time of primary diagnosis and prior to treatment, according to criteria based on multiple editions of the AJCC's Cancer Staging Manual",
+            "valueType":"string",
+            "meta":{
+              "dependsOn":"diagnosis.tumor_staging_system",
+              "notes":"This field is required only if the selected tumor_staging_system is any edition of the AJCC cancer staging system.",
+              "displayName":"M Category"
+            },
+            "restrictions":{
+              "codeList":[
+                "M0",
+                "M0(i+)",
+                "M1",
+                "M1a",
+                "M1a(0)",
+                "M1a(1)",
+                "M1b",
+                "M1b(0)",
+                "M1b(1)",
+                "M1c",
+                "M1c(0)",
+                "M1c(1)",
+                "M1d",
+                "M1d(0)",
+                "M1d(1)",
+                "M1e"
+              ],
+              "script":[
+                "(function validate(inputs) {\n        let result = {valid: true, message: 'Ok'};\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return result;\n        }\n\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const tumorStagingSystem = $row.tumor_staging_system || '';\n\n        if (!currField && tumorStagingSystem && /^(AJCC)\\b/i.test(tumorStagingSystem.trim())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the tumor_staging_system is AJCC.`,\n            };\n        } else if (currField && !/^(AJCC)\\b/i.test($field)) {\n            result = {\n                valid: false,\n                message: `${$name} cannot be provided when the tumor_staging_system is not AJCC.`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name":"treatment",
+        "description":"The collection of data elements related to a donor's treatment at a specific point in the clinical record. To submit multiple treatments for a single donor, please submit treatment rows in the treatment file for this donor.",
+        "meta":{
+          "parent":"donor"
+        },
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_treatment_id",
+            "description":"Unique identifier of the treatment, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Treatment ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_diagnosis_id",
+            "valueType":"string",
+            "description":"Indicate the diagnosis event in the clinical timeline that this treatment was related to",
+            "meta":{
+              "primaryId":true,
+              "foreignKey":"diagnosis.submitter_diagnosis_id",
+              "displayName":"Submitter Diagnosis ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"treatment_type",
+            "description":"Indicate the type of treatment the donor received",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Ablation",
+                "Bone marrow transplant",
+                "Chemotherapy",
+                "Endoscopic therapy",
+                "Hormonal therapy",
+                "Immunotherapy",
+                "Other targeting molecular therapy",
+                "Other pharmacotherapy",
+                "Other cell-based therapy",
+                "Photodynamic therapy",
+                "Radiation therapy",
+                "Stem cell transplant",
+                "Surgery",
+                "Other"
+              ]
+            },
+            "meta":{
+              "validationDependency":true,
+              "core":true,
+              "displayName":"Treatment Type"
+            }
+          },
+          {
+            "name":"treatment_is_primary",
+            "description":"Indicate if the treatment is the primary treatment following the initial diagnosis",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Yes",
+                "No",
+                "Unknown"
+              ]
+            },
+            "meta":{
+              "displayName":"Is Primary Treatment"
+            }
+          },
+          {
+            "name":"treatment_intent",
+            "description":"The purpose of the treatment",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Adjuvant",
+                "Concurrent",
+                "Curative",
+                "Life extending",
+                "Neoadjuvant",
+                "Not applicable",
+                "Palliative",
+                "Preventative",
+                "Symptoms management",
+                "Unknown"
+              ]
+            },
+            "meta":{
+              "displayName":"Treatment Intent"
+            }
+          },
+          {
+            "name":"treatment_response",
+            "description":"The donor's response to the treatment",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Clinical remission",
+                "Disease Progression",
+                "Partial Response",
+                "Stable Disease",
+                "Treatment cessation due to toxicity",
+                "Improvement of symptoms",
+                "Not applicable",
+                "No sign of disease",
+                "Worsening of symptoms",
+                "No improvement of symptoms"
+              ]
+            },
+            "meta":{
+              "displayName":"Response to treatment"
+            }
+          },
+          {
+            "name":"medication_name",
+            "valueType":"string",
+            "description":"medication name (common term)",
+            "meta":{
+              "core":true,
+              "dependsOn":"treatment.treatment_type",
+              "displayName":"Medication name"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return {valid: false, message: `Column ${$name} is missing.`};\n        }\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const treatmentType = $row.treatment_type || '';\n        const treatmentTypes = [\n            'chemotherapy',\n            'hormonal therapy',\n            'immunotherapy',\n            'other targeting molecular therapy',\n            'other pharmacotherapy',\n        ];\n\n        if (!currField && treatmentType && treatmentTypes.includes(treatmentType.trim().toLowerCase())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the treatment_type is one of the following: ${treatmentTypes.join(\n                    ', ',\n                )}`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "name":"medication_code",
+            "valueType":"string",
+            "description":"Drug identification number (DIN code)",
+            "meta":{
+              "notes":"The DIN uniquely identifies the manufacturer, product name, active ingredient(s), strength(s) of active ingredient(s);pharmaceutical form and route of administration.",
+              "dependsOn":"treatment.treatment_type",
+              "displayName":"Drug Identification Number"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return {valid: false, message: `Column ${$name} is missing.`};\n        }\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const treatmentType = $row.treatment_type || '';\n        const treatmentTypes = [\n            'chemotherapy',\n            'hormonal therapy',\n            'immunotherapy',\n            'other targeting molecular therapy',\n            'other pharmacotherapy',\n        ];\n\n        if (!currField && treatmentType && treatmentTypes.includes(treatmentType.trim().toLowerCase())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the treatment_type is one of the following: ${treatmentTypes.join(\n                    ', ',\n                )}`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          },
+          {
+            "name":"medication_class",
+            "valueType":"string",
+            "description":"Drug class based on ATC (Anatomical Therapeutic Class)",
+            "meta":{
+              "core":true,
+              "notes":"Refer to the WHO ATC https://www.whocc.no/atc_ddd_index/ to classify the active ingredients of drug according to the organ or system on which it acts and its therapeutic, pharmacological and chemical properties. Drugs should be coded at the 5th level of the ATC.",
+              "dependsOn":"treatment.treatment_type",
+              "displayName":"Medication class"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return {valid: false, message: `Column ${$name} is missing.`};\n        }\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const treatmentType = $row.treatment_type || '';\n        const treatmentTypes = [\n            'chemotherapy',\n            'hormonal therapy',\n            'immunotherapy',\n            'other targeting molecular therapy',\n            'other pharmacotherapy',\n        ];\n\n        if (!currField && treatmentType && treatmentTypes.includes(treatmentType.trim().toLowerCase())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the treatment_type is one of the following: ${treatmentTypes.join(\n                    ', ',\n                )}`,\n            };\n        }\n        return result;\n    })"
+              ],
+              "regex":"^[ABCDGHJLMNPRSV][0-9]{2}[A-Z]{2}[0-9]{2}$"
+            }
+          },
+          {
+            "description":"Date when treatment started (DD-MM-YYYY)",
+            "name":"treatment_start_date",
+            "valueType":"string",
+            "meta":{
+              "notes":"For medication, provide date of first prescription dispensation (MM-YYYY). For one-time treatments, such as surgeries, provide the date of the intervention.",
+              "displayName":"Treatment start date"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return {valid: false, message: `Column ${$name} is missing.`};\n        }\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const treatmentType = $row.treatment_type || '';\n        const treatmentTypes = [\n            'chemotherapy',\n            'hormonal therapy',\n            'immunotherapy',\n            'other targeting molecular therapy',\n            'other pharmacotherapy',\n        ];\n\n        if (!currField && treatmentType && treatmentTypes.includes(treatmentType.trim().toLowerCase())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the treatment_type is one of the following: ${treatmentTypes.join(\n                    ', ',\n                )}`,\n            };\n        }\n        return result;\n    })"
+              ],
+              "regex":"^[ABCDGHJLMNPRSV][0-9]{2}[A-Z]{2}[0-9]{2}$"
+            }
+          },
+          {
+            "description":"Date when treatment ended (DD-MM-YYYY)",
+            "name":"treatment_end_date",
+            "valueType":"string",
+            "meta":{
+              "notes":"For medication, provide date of last prescription dispensation (DD-MM-YYYY). Leave blank for one-time treatments such as sugeries.",
+              "displayName":"Treatment end date"
+            },
+            "restrictions":{
+              "script":[
+                "(function validate(inputs) {\n        const {$row, $name} = inputs;\n        const $field = $row[$name];\n\n        if(!$field){\n            return {valid: false, message: `Column ${$name} is missing.`};\n        }\n\n        let result = {valid: true, message: 'Ok'};\n        const currField = typeof $field === 'string' ? $field.trim().toLowerCase() : $field;\n        const treatmentType = $row.treatment_type || '';\n        const treatmentTypes = [\n            'chemotherapy',\n            'hormonal therapy',\n            'immunotherapy',\n            'other targeting molecular therapy',\n            'other pharmacotherapy',\n        ];\n\n        if (!currField && treatmentType && treatmentTypes.includes(treatmentType.trim().toLowerCase())) {\n            result = {\n                valid: false,\n                message: `${$name} must be provided when the treatment_type is one of the following: ${treatmentTypes.join(\n                    ', ',\n                )}`,\n            };\n        }\n        return result;\n    })"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name":"follow_up",
+        "description":"The collection of data elements related to a specific follow-up visit by a donor with a cancer diagnosis. A follow-up is defined as any point of contact with a patient after primary cancer diagnosis. To submit multiple follow-ups for a single donor, submit multiple rows in the follow-up file for this donor.",
+        "meta":{
+          "parent":"donor"
+        },
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "name":"submitter_donor_id",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_diagnosis_id",
+            "valueType":"string",
+            "description":"Unique identifier of the diagnosis event, assigned by the data provider.",
+            "meta":{
+              "primaryId":true,
+              "validationDependency":true,
+              "foreignKey":"diagnosis.submitter_diagnosis_id",
+              "displayName":"Submitter Diagnosis ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Unique identifier for a follow-up event in a donor's clinical record, assigned by the data provider",
+            "name":"submitter_follow_up_id",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Follow-Up ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Time interval between primary diagnosis and follow-up event",
+            "name":"days_to_follow_up",
+            "valueType":"integer",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "core":true,
+              "units":"days",
+              "displayName":"Days to follow-up"
+            }
+          },
+          {
+            "description":"Indicate the donor's disease status at time of follow-up",
+            "name":"disease_status_at_followup",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Clinical remission",
+                "Distant progression",
+                "Loco-regional progression",
+                "No evidence of disease",
+                "Partial remission",
+                "Relapse or recurrence",
+                "Stable"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Disease Status at Follow-Up"
+            }
+          },
+          {
+            "name":"relapse_interval",
+            "description":"Time interval between end of primary treatment and disease progression (in days)",
+            "valueType":"integer",
+            "meta":{
+              "units":"days",
+              "dependsOn":"follow_up.disease_status_at_followup",
+              "notes":"If the donor was clinically disease free following primary treatment and then relapse or recurrence or progression (for liquid tumors) occurred afterwards, then this field will indicate the length of disease free interval, in days.",
+              "displayName":"Relapse Interval"
+            }
+          }
+        ]
+      },
+      {
+        "name":"exposure",
+        "description":"The collection of data elements related to a donor's exposure to specific risk factors.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "valueType":"string",
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"smoking_status",
+            "description":"Smoking status of a patient at the time of the data collection",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Current every day smoker",
+                "Current some day smoker",
+                "Former smoker",
+                "Never smoker",
+                "Smoker, current status unknown",
+                "Unknown if ever smoked",
+                "Current Heavy tobacco smoker (more than 20)",
+                "Current Light tobacco smoker"
+              ]
+            },
+            "meta":{
+              "displayName":"Smoking status"
+            }
+          },
+          {
+            "name":"smoking_pack_years",
+            "description":"Number of packs of cigarettes per day multiplied by the number of years donor smoked",
+            "valueType":"string",
+            "meta":{
+              "dependsOn":"exposure.smoking_status",
+              "notes":"Not required if smoking history is unknown or if the donor never smoked. Pack-years is calculated by multiplying the number of packs of cigarettes (20 cigarettes per pack) smoked per day by the number of years the person has smoked. For example, 1 pack year is equal to smoking 1 pack per day for 1 year",
+              "displayName":"smoking_pack_years"
+            }
+          },
+          {
+            "name":"alcohol_status",
+            "description":"Current alcohol consumtion based on recommended daily limit",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "No alcohol consumption",
+                "Alcohol intake within recommended daily limit",
+                "Alcohol intake exceeds recommended daily limit",
+                "Alcohol consumption unknown"
+              ]
+            },
+            "meta":{
+              "notes":"Refer to the Canadian Centre on Substance Abuse, for men, no more than 15 drinks a week, with no more than 3 drinks a day most days. No more than 4 drinks on any single occasion. For women, no more than 10 drinks a week, with no more than 2 drinks a day most days. No more than 3 drinks on any single occasion.",
+              "displayName":"Alcohol status"
+            }
+          },
+          {
+            "name":"FSA",
+            "description":"Forward Sortation Area (3-digit postal code)",
+            "valueType":"string",
+            "meta":{
+              "notes":"Forward Sortaion Area (FSA) is the 3 first digits of the postal code",
+              "displayName":"Forward Sortation Area",
+              "examples":"H3W"
+            },
+            "restrictions":{
+              "regex":"^[A-Za-z][0-9][A-Za-z]$"
+            }
+          }
+        ]
+      },
+      {
+        "name":"phenotype",
+        "description":"The collection of data elements related to a donor's phenotypes. To submit multiple phenotypes for a single donor, submit multiple rows in the phenotype file for this donor.",
+        "meta":{
+          "parent":"donor"
+        },
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_donor_id",
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_phenotype_id",
+            "description":"Unique identifier of the phenotype, assigned by the data provider",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Phenotype ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"phenotype_source_text",
+            "valueType":"string",
+            "description":"Phenotype (or abnormality) as reported in the study's dataset",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "examples":"microcephaly, angioma",
+              "notes":"Provide exact information as per the dataset",
+              "displayName":"Name of the phenotype"
+            }
+          },
+          {
+            "name":"phenotype_HPO_code",
+            "valueType":"string",
+            "description":"Code used for the phenotype in the Human Phenotype Ontology terminology",
+            "restrictions":{
+              "required":true,
+              "regex":"^(HP:)[0-9]{7}$"
+            },
+            "meta":{
+              "core":true,
+              "notes":"Write the exact code used in the HPO, for instance: HP:0001161. Please refer to the Human Phenotype Ontology at https://hpo.jax.org/app/ for code identification.",
+              "displayName":"Human Phenotype Ontology code"
+            }
+          },
+          {
+            "name":"age_at_phenotype",
+            "valueType":"integer",
+            "description":"Age (in days) of partipant when phenotype was observed",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "units":"days",
+              "core":true,
+              "displayName":"Age at phenotype occurence"
+            }
+          },
+          {
+            "name":"phenotype_severity",
+            "valueType":"string",
+            "description":"Indicate the intensity or the degree of a manifestation",
+            "restrictions":{
+              "codeList":[
+                "Borderline",
+                "Mild",
+                "Moderate",
+                "Severe",
+                "Profound"
+              ]
+            },
+            "meta":{
+              "displayName":"Phenotype severity"
+            }
+          },
+          {
+            "name":"phenotype_observed",
+            "description":"Indicate if the phenotype is observed",
+            "valueType":"boolean",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Phenotype is observed"
+            }
+          }
+        ]
+      },
+      {
+        "name":"family_relationship",
+        "description":"The collection of data elements related to a family and relationships within this family. This table should be completed only if the Study is contributing data from groups of donors who share family ties (ex: twins, trios, sib-pairs).",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_family_id",
+            "valueType":"string",
+            "description":"Unique identifier of the family, assigned by the data provider",
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            },
+            "meta":{
+              "displayName":"Submitter Family ID",
+              "foreignKey":"family.submitter_family_id",
+              "validationDependency":true,
+              "primaryId":true,
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            }
+          },
+          {
+            "description":"Unique identifier of the donor 1, assigned by the data provider",
+            "name":"submitter_donor_id_1",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Donor 1 ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Unique identifier of the donor 2, assigned by the data provider",
+            "name":"submitter_donor_id_2",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Submitter Donor 2 ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"family_type",
+            "description":"Type of family-based study design",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Case-parent trio",
+                "Case-sibling",
+                "Twins",
+                "Case - affected relative",
+                "Other"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Family Type"
+            }
+          },
+          {
+            "name":"family_1_2_relationship",
+            "description":"Relationship of donor 1 to donor 2",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Mother",
+                "Father",
+                "Brother",
+                "Sister",
+                "Half-brother",
+                "Half-sister",
+                "Identical twin",
+                "Fraternal twin brother",
+                "Fraternal twin sister",
+                "Son",
+                "Daughter",
+                "Maternal grand-mother",
+                "Maternal grand-father",
+                "Paternal grand-mother",
+                "Paternal grand-father",
+                "Maternal aunt",
+                "Maternal uncle",
+                "Paternal aunt",
+                "Paternal uncle",
+                "Maternal cousin",
+                "Paternal cousin",
+                "Granddaughter",
+                "Grandson",
+                "Nephew",
+                "Niece",
+                "Spouse",
+                "Former spouse",
+                "Husband",
+                "Wife"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Relationship of donor 1 to donor 2"
+            }
+          },
+          {
+            "name":"family_2_1_relationship",
+            "description":"Relationship of donor 2 to donor 1",
+            "valueType":"string",
+            "restrictions":{
+              "required":true,
+              "codeList":[
+                "Mother",
+                "Father",
+                "Brother",
+                "Sister",
+                "Half-brother",
+                "Half-sister",
+                "Identical twin",
+                "Fraternal twin brother",
+                "Fraternal twin sister",
+                "Son",
+                "Daughter",
+                "Maternal grand-mother",
+                "Maternal grand-father",
+                "Paternal grand-mother",
+                "Paternal grand-father",
+                "Maternal aunt",
+                "Maternal uncle",
+                "Paternal aunt",
+                "Paternal uncle",
+                "Maternal cousin",
+                "Paternal cousin",
+                "Granddaughter",
+                "Grandson",
+                "Nephew",
+                "Niece",
+                "Spouse",
+                "Former spouse",
+                "Husband",
+                "Wife"
+              ]
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Relationship of donor 2 to donor 1"
+            }
+          }
+        ]
+      },
+      {
+        "name":"family_history",
+        "description":"The collection of data elements related to the donor's family health history. To submit multiple conditions for a single donor' family, submit multiple rows in the family history file for this donor.",
+        "fields":[
+          {
+            "name":"study_id",
+            "valueType":"string",
+            "description":"Unique identifier for the Study",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "displayName":"Study ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "description":"Unique identifier of the donor, assigned by the data provider",
+            "name":"submitter_donor_id",
+            "valueType":"string",
+            "meta":{
+              "validationDependency":true,
+              "primaryId":true,
+              "foreignKey":"donor.submitter_donor_id",
+              "displayName":"Submitter Donor ID",
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            },
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            }
+          },
+          {
+            "name":"submitter_family_condition_id",
+            "valueType":"string",
+            "description":"Unique identifier of the condition observed in the family, assigned by the data provider (within a study)",
+            "restrictions":{
+              "required":true,
+              "regex":"^[A-Za-z0-9\\-\\._]{1,250}$"
+            },
+            "meta":{
+              "displayName":"Submitter Family Condition ID",
+              "validationDependency":true,
+              "primaryId":true,
+              "notes":"Alphanumeric characters along with dot, hyphens and underscores are supported.  Maximum of 250 characters."
+            }
+          },
+          {
+            "name":"family_condition_name",
+            "description":"Name of the condition observed in a family member",
+            "valueType":"string",
+            "restrictions":{
+              "required":true
+            },
+            "meta":{
+              "core":true,
+              "displayName":"Family condition name"
+            }
+          },
+          {
+            "name":"family_condition_age",
+            "description":"Age when condition was observed in family member",
+            "valueType":"integer",
+            "meta":{
+              "units":"years",
+              "displayName":"Family condition age"
+            }
+          },
+          {
+            "name":"family_condition_relationship",
+            "description":"What is the relationship of the family member to the donor.",
+            "valueType":"string",
+            "restrictions":{
+              "codeList":[
+                "Mother",
+                "Father",
+                "Brother",
+                "Sister",
+                "Half-brother",
+                "Half-sister",
+                "Identical twin",
+                "Fraternal twin brother",
+                "Fraternal twin sister",
+                "Son",
+                "Daughter",
+                "Maternal grand-mother",
+                "Maternal grand-father",
+                "Paternal grand-mother",
+                "Paternal grand-father",
+                "Maternal aunt",
+                "Maternal uncle",
+                "Paternal aunt",
+                "Paternal uncle",
+                "Maternal cousin",
+                "Paternal cousin",
+                "Granddaughter",
+                "Grandson",
+                "Nephew",
+                "Niece",
+                "Spouse",
+                "Former spouse",
+                "Husband",
+                "Wife"
+              ]
+            },
+            "meta":{
+              "displayName":"Family condition relationship"
+            }
+          },
+          {
+            "name":"family_cancer_history",
+            "description":"Donor has a history of cancer in the family",
+            "restrictions":{
+              "codeList":[
+                "Yes",
+                "No",
+                "Unknown"
+              ],
+              "required":true
+            },
+            "valueType":"string",
+            "meta":{
+              "core":true,
+              "displayName":"Family cancer history"
+            }
+          }
+        ]
+      }
+    ],
+    "_id":"60903d2b03318c336f69c6c0",
+    "name":"CQDG Data Dictionary",
+    "version":"5.50",
+    "createdAt":"2021-05-03T18:12:59.071Z",
+    "updatedAt":"2021-05-03T18:12:59.071Z",
+    "__v":0
+  }
+]

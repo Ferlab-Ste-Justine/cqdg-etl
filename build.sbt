@@ -29,7 +29,12 @@ libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.39"
 
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"
+libraryDependencies += "org.scalamock" %% "scalamock" % "5.1.0" % "test"
+libraryDependencies += "org.mockito" % "mockito-scala_2.11" % "0.3.0" % "test"
 libraryDependencies += "org.apache.spark" %% "spark-hive" % spark_version % "test"
+libraryDependencies += "org.scalatestplus" %% "mockito-3-4" % "3.2.8.0" % "test"
+
+
 
 libraryDependencies += "com.whisk" %% "docker-testkit-scalatest" % dockerTestkitVersion % "test"
 libraryDependencies += "com.whisk" %% "docker-testkit-impl-spotify" % dockerTestkitVersion % "test"
