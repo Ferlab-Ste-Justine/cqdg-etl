@@ -1,7 +1,9 @@
 package ca.cqdg.etl.utils
 
+import ca.cqdg.etl.EtlApp.spark
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, isCancer, notNullCol, phenotypeObserved}
+import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
@@ -82,8 +84,8 @@ object EtlUtils {
     val fileNDF = getDataframe("file", dfList)
     val biospecimenNDF = getDataframe("biospecimen", dfList)
     val sampleNDF = getDataframe("sampleregistration", dfList)
-    val hpoTermsNDF = getDataframe("hpoterms", dfList)
-    val mondoTermsNDF = getDataframe("mondoterms", dfList)
+//    val hpoTermsNDF = getDataframe("hpoterms", dfList)
+//    val mondoTermsNDF = getDataframe("mondoterms", dfList)
 
     val donor: DataFrame = loadDonors(donorsNDF.dataFrame as "donor",
       familyRelationshipNDF.dataFrame as "familyRelationship",
@@ -104,11 +106,26 @@ object EtlUtils {
     (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
   }
 
+  def broadcastStudies(listNamedDF: List[NamedDataFrame])(implicit spark: SparkSession): Broadcast[DataFrame] = {
+    import spark.implicits._
+
+    val study: DataFrame = getDataframe("study", listNamedDF).dataFrame
+      .select( cols=
+        $"*",
+        $"study_id" as "study_id_keyword",
+        $"short_name" as "short_name_keyword",
+        $"short_name" as "short_name_ngrams"
+      )
+      .as("study")
+
+    spark.sparkContext.broadcast(study)
+  }
+
   def loadBiospecimens(biospecimen: DataFrame, samples: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
-    val biospecimenWithRenamedColumns: DataFrame = biospecimen.
-      select(cols =
+    val biospecimenWithRenamedColumns: DataFrame = biospecimen
+      .select(cols =
         $"*",
         $"biospecimen_tissue_source" as "tissue_source",
         $"biospecimen_type" as "type",

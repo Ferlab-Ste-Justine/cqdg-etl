@@ -52,6 +52,7 @@ object EtlApp extends App {
   //    e.g.: Add CQDG Id, remove columns that are not part of the dictionary, etc.
   // Returns a list of files per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
   val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
+  val hpoDf = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
   // List of DataFrames per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
   val dictionarySchemas: Map[String, List[Schema]] = loadSchemas()
   val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket)(dictionarySchemas);
@@ -61,6 +62,7 @@ object EtlApp extends App {
   import spark.implicits._
   readyToProcess.foreach(entry => {
     val outputPath= s"s3a://${s3Bucket}/clinical-data-etl-indexer"
+
     val study: DataFrame = getDataframe("study", entry._2).dataFrame
       .select( cols=
         $"*",

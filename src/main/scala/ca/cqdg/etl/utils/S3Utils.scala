@@ -33,6 +33,13 @@ object S3Utils {
     filesGroupedByKey
   }
 
+  def loadFileEntry(bucket: String, prefix: String, s3Client: AmazonS3) = {
+    s3Client.listObjects(bucket, prefix)
+      .getObjectSummaries.asScala
+      .map(o => S3File(o.getBucketName, o.getKey, o.getETag, o.getSize))
+      .toList
+  }
+
   def writeSuccessIndicator(bucket: String, prefix: String, s3Client: AmazonS3): Unit = {
     val key: String = if (prefix.endsWith("/")) s"${prefix}_SUCCESS" else s"${prefix}/_SUCCESS"
     s3Client.putObject(bucket, key, "");

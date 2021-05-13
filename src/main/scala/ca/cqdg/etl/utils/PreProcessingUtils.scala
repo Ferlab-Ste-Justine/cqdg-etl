@@ -21,8 +21,7 @@ object PreProcessingUtils{
   val dictionaryURL: String = getConfiguration("LECTERN_HOST", "https://schema.qa.cqdg.ferlab.bio")
   val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
   val gson: Gson = new Gson()
-  val log: Logger = Logger.getLogger("EnrichmentUtils")
-
+  val LOG: Logger = Logger.getLogger(this.getClass)
 
   def preProcess(files: Map[String, List[S3File]], s3Bucket: String, buildIds: String => String = getCQDGIds)
                 (dictionarySchemas: Map[String, List[Schema]])
@@ -54,7 +53,7 @@ object PreProcessingUtils{
         // Remove columns that are not in the schema
         val colsToRemove = cqdgIDsAdded.columns.filterNot(col => schemaEntities.find(schema => schema.name == f.schema).get.columns.contains(col))
         if(colsToRemove.length > 0){
-          log.warn(s"Removing the columns [${colsToRemove.mkString(",")}] from ${f.filename}")
+          LOG.warn(s"Removing the columns [${colsToRemove.mkString(",")}] from ${f.filename}")
         }
 
         val sanitizedDF: DataFrame = cqdgIDsAdded.drop(colsToRemove:_*)
@@ -196,7 +195,6 @@ object PreProcessingUtils{
         getSchemaFields(x.getAsJsonObject.get("fields").getAsJsonArray)
       ))
     })
-    println(schemas)
 
     // Add the file schema which is used for mapping the genomic files to the clinical data
     schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "file_name",
