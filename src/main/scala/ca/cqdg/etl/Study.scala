@@ -7,8 +7,13 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object Study {
-  def run(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame], outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, dfList), outputPath)
+  def run(
+           broadcastStudies: Broadcast[DataFrame],
+           dfList: List[NamedDataFrame],
+           ontologyDf: Map[String, DataFrame],
+           outputPath: String
+         )(implicit spark: SparkSession): Unit = {
+    write(build(broadcastStudies, ontologyDf, dfList), outputPath)
   }
 
   private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
@@ -51,8 +56,12 @@ object Study {
       )
   }
 
-  def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList);
+  def build(
+             broadcastStudies: Broadcast[DataFrame],
+             ontologyDf: Map[String, DataFrame],
+             dfList: List[NamedDataFrame]
+           )(implicit spark: SparkSession): DataFrame = {
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 

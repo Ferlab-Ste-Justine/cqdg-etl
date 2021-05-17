@@ -3,7 +3,7 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe}
-import ca.cqdg.etl.utils.PreProcessingUtils.{loadSchemas, preProcess}
+import ca.cqdg.etl.utils.PreProcessingUtils.{filesToDf, getOntologyDfs, loadSchemas, preProcess}
 import ca.cqdg.etl.utils.{S3Utils, Schema}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
 import com.amazonaws.ClientConfiguration
@@ -17,7 +17,7 @@ object EtlApp extends App {
 
   Logger.getLogger("ferlab").setLevel(Level.INFO)
 
-  implicit val spark = SparkSession
+  implicit val spark: SparkSession = SparkSession
     .builder
     .appName("CQDG-ETL")
     .master("local")//TODO: Remove "local" and replace by '[*]'
@@ -48,17 +48,14 @@ object EtlApp extends App {
     .withClientConfiguration(clientConfiguration)
     .build()
 
-  // Load files that are ready to be processed and apply modifications/validations
-  //    e.g.: Add CQDG Id, remove columns that are not part of the dictionary, etc.
-  // Returns a list of files per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
   val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
-  val hpoDf = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
-  // List of DataFrames per study version (clinical-data/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15)
+
+  val ontologyFiles = S3Utils.loadFileEntries(s3Bucket, "ontology-input", s3Client).head._2 //FIXME
+  val ontologyDfs = getOntologyDfs(ontologyFiles)
+
   val dictionarySchemas: Map[String, List[Schema]] = loadSchemas()
   val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket)(dictionarySchemas);
 
-  // Save the modified files in a different folder in order to preserve the original files
-  // Then, transform into the right format for the etl-indexer to send to ES.
   import spark.implicits._
   readyToProcess.foreach(entry => {
     val outputPath= s"s3a://${s3Bucket}/clinical-data-etl-indexer"
@@ -75,9 +72,9 @@ object EtlApp extends App {
 
     val broadcastStudies = spark.sparkContext.broadcast(study)
 
-    Donor.run(broadcastStudies, entry._2, s"$outputPath/donors")
-    Study.run(broadcastStudies, entry._2, s"$outputPath/studies")
-    File.run(broadcastStudies, entry._2, s"$outputPath/files")
+    Donor.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/donors" )
+    Study.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/studies")
+    File.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/files")
 
     writeSuccessIndicator(s3Bucket, entry._1, s3Client);
   });

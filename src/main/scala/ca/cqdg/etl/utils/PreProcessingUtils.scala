@@ -154,6 +154,18 @@ object PreProcessingUtils{
     result
   }
 
+  def getOntologyDfs(files: Seq[S3File])(implicit spark: SparkSession): Map[String, DataFrame] = {
+    files.flatMap(f => f.filename match {
+      case "hpo_terms.json.gz" => Some("hpo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "mondo_terms.json.gz" => Some("mondo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case _ => None
+    }).toMap
+  }
+
+  def filesToDf(fileList: List[S3File])(implicit sparkSession: SparkSession): List[DataFrame] = {
+    fileList.map(f => EtlUtils.readCsvFile(s"s3a://cqdg/${f.key}"))
+  }
+
   def loadSchemas(): Map[String, List[Schema]] = {
     val schemasPerVersion = new mutable.HashMap[String, List[Schema]]
 

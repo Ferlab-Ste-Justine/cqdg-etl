@@ -1,8 +1,10 @@
 package ca.cqdg.etl
 
+import ca.cqdg.etl.EtlApp.{s3Bucket, s3Client}
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.test.util.TestData.hashCodesList
 import ca.cqdg.etl.test.util.WithSparkSession
+import ca.cqdg.etl.utils.PreProcessingUtils.getOntologyDfs
 import ca.cqdg.etl.utils.{EtlUtils, PreProcessingUtils, S3Utils, Schema}
 import com.amazonaws.auth.{AWSStaticCredentialsProvider, BasicAWSCredentials}
 import com.amazonaws.client.builder.AwsClientBuilder
@@ -68,9 +70,6 @@ class DonorTest extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
   val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(CLINDATA_BUCKET, "clinical-data", s3Client)
 
   val ontologyTermFiles: Seq[S3File] = S3Utils.loadFileEntry(CLINDATA_BUCKET, "ontology-input", s3Client)
-  val hpoFile: S3File = ontologyTermFiles.find(f => f.filename == "hpo_terms.json").get
-  val hpoTermDf: DataFrame = spark.read.json(s"s3a://cqdg/${hpoFile.key}")
-  hpoTermDf.show(false)
 
   val schemaJsonFile = new File("../cqdg-etl/src/test/resources/schema/schema.json")
 
@@ -85,14 +84,13 @@ class DonorTest extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
   val readyToProcess: Map[String, List[NamedDataFrame]] =
     PreProcessingUtils.preProcess(filesPerFolder, CLINDATA_BUCKET, mockBuildIds)(dictionarySchemas)
 
-
+  val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
+//  ontologyDfs.head._2.show(false)
 
   "Donors" should "map hpo terms per donors" in {
     readyToProcess.foreach(x => {
       val broadcastDf = EtlUtils.broadcastStudies(x._2)
-      val df = Donor.build(broadcastDf, x._2)
-      df.show(false)
-      println("TOTO")
+      val df = Donor.build(broadcastDf, x._2, ontologyDfs)
     })
 
     1 shouldBe 1
