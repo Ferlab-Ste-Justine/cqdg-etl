@@ -40,8 +40,7 @@ object PreProcessingUtils {
     val dictionaryVersion: String = metadataDF.select("dictionaryVersion").collectAsList().get(0).getString(0)
     val studyVersion: String = metadataDF.select("studyVersionId").collectAsList().get(0).getString(0)
     val studyVersionCreationDate: String = metadataDF.select("studyVersionDate").collectAsList().get(0).getString(0)
-    val schemaEntities: List[Schema] = dictionarySchemas.get(dictionaryVersion)
-                                                        .getOrElse(throw new RuntimeException(s"Failed to load dictionary schema for version ${dictionaryVersion}"))
+    val schemaEntities: List[Schema] = dictionarySchemas.getOrElse(dictionaryVersion, throw new RuntimeException(s"Failed to load dictionary schema for version ${dictionaryVersion}"))
 
     files
       // Filter out all files that are not part of the dictionary version for the current study
@@ -159,7 +158,7 @@ object PreProcessingUtils {
     //response.body : Left(errorMessage), Right(body)
     val response = dictionaryRequest(s"dictionaries?name=$dictionaryName")
 
-    if (StatusCode.Ok == response.code && response.body.toString.trim.length > 0) {
+    if (StatusCode.Ok == response.code && response.body.toString.trim.nonEmpty) {
       val jsonResponse: JsonArray = JsonParser.parseString(response.body.right.get).getAsJsonArray
       jsonResponse.forEach(el => {
         val version = el.getAsJsonObject.get("version").getAsString
