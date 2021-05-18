@@ -1,17 +1,19 @@
-import java.io.File
-import java.nio.file.{Files, Path}
+package ca.cqdg.etl.testutils
 
 import org.apache.commons.io.FileUtils
 import org.apache.spark.sql.SparkSession
 
+import java.io.File
+import java.nio.file.{Files, Path}
+
 trait WithSparkSession {
   private val tmp = new File("tmp").getAbsolutePath
 
-  implicit lazy val spark: SparkSession = SparkSession
-                                              .builder
-                                              .appName("CQDG-ETL-TEST")
-                                              .master("local[*]")
-                                              .getOrCreate()
+  implicit val spark: SparkSession = SparkSession
+    .builder()
+    .appName("CQDG-ETL-TEST")
+    .master("local")
+    .getOrCreate()
 
   def withOutputFolder[T](prefix: String)(block: String => T): T = {
     val output: Path = Files.createTempDirectory(prefix)
