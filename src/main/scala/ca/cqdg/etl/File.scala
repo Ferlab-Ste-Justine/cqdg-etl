@@ -13,13 +13,13 @@ object File {
            dfList: List[NamedDataFrame],
            ontologyDf: Map[String, DataFrame],
            outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, ontologyDf, dfList), outputPath)
+    write(build(broadcastStudies, dfList, ontologyDf), outputPath)
   }
 
   def build(
              broadcastStudies: Broadcast[DataFrame],
-             ontologyDf: Map[String, DataFrame],
-             dfList: List[NamedDataFrame]
+             dfList: List[NamedDataFrame],
+             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
     val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf);
 
@@ -59,7 +59,7 @@ object File {
         $"fileWithDonors.donors",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes_per_donor_per_study" as "phenotypes"
+        $"phenotypes"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")

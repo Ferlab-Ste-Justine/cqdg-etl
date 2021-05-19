@@ -85,7 +85,6 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
     val broadcastDf = EtlUtils.broadcastStudies(readyToProcess.head._2)
     val df = Donor.build(broadcastDf, readyToProcess.head._2, ontologyDfs)
-    df.show(false)
     val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
 
 
