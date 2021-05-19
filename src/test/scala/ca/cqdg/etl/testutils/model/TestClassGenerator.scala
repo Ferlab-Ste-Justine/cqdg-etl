@@ -1,7 +1,7 @@
 package ca.cqdg.etl.testutils.model
 
 import bio.ferlab.datalake.spark3.ClassGeneratorImplicits._
-import ca.cqdg.etl.testutils.WithSparkSession
+import ca.cqdg.etl.test.util.WithSparkSession
 import org.apache.spark.sql.DataFrame
 
 object TestClassGenerator extends WithSparkSession with App {

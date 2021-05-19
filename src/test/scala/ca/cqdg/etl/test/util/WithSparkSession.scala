@@ -3,7 +3,6 @@ package ca.cqdg.etl.test.util
 import org.apache.commons.io.FileUtils
 import org.apache.spark.sql.SparkSession
 
-import java.io.File
 import java.nio.file.{Files, Path}
 
 trait WithSparkSession {
