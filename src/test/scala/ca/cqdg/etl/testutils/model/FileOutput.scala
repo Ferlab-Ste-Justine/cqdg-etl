@@ -29,7 +29,7 @@ case class DONORS(`age_at_recruitment`: String = "43",
                   `dob`: String = "1/27/1965",
                   `environment_exposure_available`: String = "NO",
                   `ethnicity`: String = "French Canadian ",
-                  `exposures`: List[EXPOSURES] = List(EXPOSURES()),
+                  `exposures`: List[EXPOSURE] = List(EXPOSURE()),
                   `familyConditions`: List[FAMILYCONDITIONS] = List(FAMILYCONDITIONS()),
                   `family_history_available`: String = "NO",
                   `gender`: String = "Male",
@@ -44,40 +44,9 @@ case class DONORS(`age_at_recruitment`: String = "43",
                   `submitter_donor_id`: String = "PT00173",
                   `vital_status`: String = "deceased")
 
-case class STUDY(`description`: String = "population-based cohort focusing on complex conditions",
-                 `domain`: String = "General Health",
-                 `keyword`: String = "Common chronic disorders; Prospective cohort; Reference genome",
-                 `name`: String = "Study1",
-                 `population`: String = "Adult",
-                 `short_name`: String = "ST1",
-                 `short_name_keyword`: String = "ST1",
-                 `short_name_ngrams`: String = "ST1",
-                 `study_id`: String = "ST0001",
-                 `study_id_keyword`: String = "ST0001")
-
 case class DIAGNOSES(`age_at_diagnosis`: Long = 37,
                      `diagnosis_type`: String = "Clinical",
                      `is_cancer`: Boolean = false,
                      `is_self_reported`: String = "Yes",
                      `submitter_diagnosis_id`: String = "DI00173",
                      `treatments`: List[TREATMENTS] = List(TREATMENTS()))
-
-case class FAMILYCONDITIONS(`family_cancer_history`: String = "No",
-                            `family_condition_age`: Long = 41,
-                            `family_condition_name`: String = "Lung cancer",
-                            `family_condition_relationship`: String = "paternal grandmother",
-                            `submitter_family_condition_id`: String = "FC00173")
-
-case class TREATMENTS(`submitter_treatment_id`: String = "TX00173",
-                      `treatment_intent`: String = "Unknown",
-                      `treatment_is_primary`: String = "Unknown",
-                      `treatment_response`: String = "Worsening of symptoms",
-                      `treatment_type`: String = "Other pharmarcotherapy")
-
-case class PHENOTYPES(`age_at_phenotype`: Long = 36,
-                      `hpo_code`: String = "HP:0100279",
-                      `submitter_phenotype_id`: String = "PH00173")
-
-case class EXPOSURES(`FSA`: String = "H2L",
-                     `alcohol_status`: String = "Alcohol intake within recommended daily limit",
-                     `smoking_status`: String = "Former smoker        ")
