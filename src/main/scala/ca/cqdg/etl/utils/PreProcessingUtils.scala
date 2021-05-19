@@ -16,7 +16,7 @@ import scala.collection.{JavaConverters, mutable}
 object PreProcessingUtils{
 
   val dictionaryUsername: String = getConfiguration("LECTERN_USERNAME", "lectern")
-  val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "lecternizethis9!")// FIXME remove default!!
+  val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "changeMe")
   val dictionaryName: String = getConfiguration("LECTERN_DICTIONARY_NAME", "CQDG Data Dictionary")
   val dictionaryURL: String = getConfiguration("LECTERN_HOST", "https://schema.qa.cqdg.ferlab.bio")
   val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
