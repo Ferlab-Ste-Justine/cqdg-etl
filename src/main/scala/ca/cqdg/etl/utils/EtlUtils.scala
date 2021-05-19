@@ -31,7 +31,7 @@ object EtlUtils {
     "sep" -> "\t",
     "parserLib" -> "univocity",
     "quote" -> "\"",
-    "mode" -> "FAILFAST",
+    "mode" -> "PERMISSIVE",
     "nullValue" -> ""
   )
 
@@ -40,7 +40,7 @@ object EtlUtils {
     "header" -> "true",
     "sep" -> "\t",
     "quote" -> "\"",
-    "mode" -> "FAILFAST",
+    "mode" -> "PERMISSIVE",
     "nullValue" -> ""
   )
 

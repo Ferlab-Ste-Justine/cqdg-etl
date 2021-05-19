@@ -81,9 +81,15 @@ case class TREATMENTS(`submitter_treatment_id`: String = "TX00134",
                       `treatment_response`: String = "Partial Response",
                       `treatment_type`: String = "Stem cell transplant")
 
-case class PHENOTYPES(`age_at_phenotype`: Long = 54,
-                      `hpo_code`: String = "HP:0001513",
-                      `submitter_phenotype_id`: String = "PH00134")
+case class PHENOTYPES(
+                       `id`: String = "HP:0001513",
+                       `name`: String = "Obesity",
+                       `parents`: Seq[String] = Seq("Increased body weight HP:0004324"),
+                       `age_at_phenotype`: Int = 54,  //FIXME error - Should be a Set of Int (fix next PR)
+                       `phenotype_observed_bool`: Boolean = true,
+                       `is_leaf`: Boolean = false,
+                       `is_tagged`: Boolean = false
+                     )
 
 case class DIAGNOSIS_PER_DONOR_PER_STUDY(`age_at_diagnosis`: Long = 56,
                                          `diagnosis_source_text`: Option[String] = None,
