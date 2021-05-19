@@ -1,6 +1,7 @@
 package ca.cqdg.etl.testutils
 
 import bio.ferlab.datalake.spark3.config.DatasetConf
+import ca.cqdg.etl.test.util.WithSparkSession
 import ca.cqdg.etl.testutils.model._
 import ca.cqdg.etl.{DonorsFamily, etlConfiguration}
 import org.scalatest.GivenWhenThen
