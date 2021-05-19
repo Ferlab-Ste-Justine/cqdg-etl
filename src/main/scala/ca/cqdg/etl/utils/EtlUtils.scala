@@ -175,9 +175,9 @@ object EtlUtils {
       ) as "exposuresPerDonor"
 
     val result = donor
-      .join(familyRelationshipsPerDonor, $"donor.submitter_donor_id" === $"familyRelationshipsPerDonor.joinCol", "left")
-      .join(familyHistoryPerDonor, $"donor.submitter_donor_id" === $"familyConditionsPerDonor.submitter_donor_id", "left")
-      .join(exposurePerDonor, $"donor.submitter_donor_id" === $"exposuresPerDonor.submitter_donor_id", "left")
+      .join(familyRelationshipsPerDonor, donor("submitter_donor_id") === $"familyRelationshipsPerDonor.joinCol", "left")
+      .join(familyHistoryPerDonor, donor("submitter_donor_id") === $"familyConditionsPerDonor.submitter_donor_id", "left")
+      .join(exposurePerDonor, donor("submitter_donor_id") === $"exposuresPerDonor.submitter_donor_id", "left")
       .drop($"exposuresPerDonor.submitter_donor_id")
       .drop($"familyConditionsPerDonor.submitter_donor_id")
       .drop($"familyRelationshipsPerDonor.submitter_family_id")

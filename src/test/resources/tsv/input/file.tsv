@@ -1,5 +1,5 @@
 submitter_biospecimen_id	submitter_donor_id	study_id	file_name	data_category	data_type	is_harmonized	experimental_strategy	data_access	file_format	platform	variant_class
-	PT00627	ST0003	zplTjYga3.pdf	Clinical	Pathological report	FALSE		Controled	pdf		
+	PT00627	ST0003	zplTjYga3.pdf	Clinical	Pathological report	FALSE		Controled	pdf
 	PT00628	ST0003	Jg95KV9.pdf	Clinical	Pathological report	FALSE		Controled	pdf		
 	PT00629	ST0003	no7U5hS.pdf	Clinical	Pathological report	FALSE		Controled	pdf		
 	PT00630	ST0003	15Ft3W3.pdf	Clinical	Pathological report	FALSE		Controled	pdf		
