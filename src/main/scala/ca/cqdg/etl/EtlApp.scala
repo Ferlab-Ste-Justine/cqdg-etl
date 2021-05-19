@@ -50,7 +50,7 @@ object EtlApp extends App {
 
   val filesPerFolder: Map[String, List[S3File]] = S3Utils.loadFileEntries(s3Bucket, "clinical-data", s3Client)
 
-  val ontologyFiles = S3Utils.loadFileEntries(s3Bucket, "ontology-input", s3Client).head._2 //FIXME
+  val ontologyFiles = S3Utils.loadFileEntries(s3Bucket, "ontology-input", s3Client).head._2
   val ontologyDfs = getOntologyDfs(ontologyFiles)
 
   val dictionarySchemas: Map[String, List[Schema]] = loadSchemas()

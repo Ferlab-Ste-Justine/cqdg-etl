@@ -13,7 +13,7 @@ object Study {
            ontologyDf: Map[String, DataFrame],
            outputPath: String
          )(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, ontologyDf, dfList), outputPath)
+    write(build(broadcastStudies, dfList,ontologyDf), outputPath)
   }
 
   private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
@@ -58,8 +58,8 @@ object Study {
 
   def build(
              broadcastStudies: Broadcast[DataFrame],
-             ontologyDf: Map[String, DataFrame],
-             dfList: List[NamedDataFrame]
+             dfList: List[NamedDataFrame],
+             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
     val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
@@ -101,7 +101,7 @@ object Study {
         collect_list(
           struct(cols =
             (donor.columns.filterNot(List("study_id", "submitter_family_id").contains(_)).map(col) ++
-              List($"diagnosisGroup.*", $"phenotypeGroup.phenotypes_per_donor_per_study" as "phenotypes")) : _*
+              List($"diagnosisGroup.*", $"phenotypeGroup.phenotypes" as "phenotypes")) : _*
           )
         ) as "donors"
       ) as "donorsGroup"
