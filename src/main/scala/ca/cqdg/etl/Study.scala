@@ -11,93 +11,61 @@ object Study {
     write(build(broadcastStudies, dfList), outputPath)
   }
 
+  private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession) : DataFrame = {
+    import spark.implicits._
+
+    donor.as("donor")
+      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
+      .drop($"file.submitter_donor_id")
+      .drop($"file.study_id")
+      .filter(col(fieldName).isNotNull)
+      .groupBy($"study_id", col(fieldName))
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors"),
+        countDistinct($"file_name").as("files")
+      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
+      .agg(
+        collect_list(
+          struct(cols =
+            col(fieldName).as("key"),
+            $"donors",
+            $"files",
+          )
+        ).as(fieldName)
+      )
+  }
+
+  private def computeDonorsByField(dataFrame: DataFrame, fieldName: String)(implicit spark: SparkSession) : DataFrame = {
+    import spark.implicits._
+
+    dataFrame
+      .groupBy($"study_id")
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors")
+      )
+      .groupBy($"study_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"donors"
+          )
+        ).as(fieldName)
+      )
+  }
+
   def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
     val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList);
 
     import spark.implicits._
 
-    val summaryByCategory = donor.as("donor")
-      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
-      .drop($"file.submitter_donor_id")
-      .drop($"file.study_id")
-      .groupBy($"study_id", $"data_category")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors"),
-        countDistinct($"file_name").as("files")
-      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
-      .agg(
-        collect_list(
-          struct(cols =
-            $"data_category".as("key"),
-            $"donors",
-            $"files",
-          )
-        ).as("data_category")
-      ).as("summaryByCategory")
+    val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
+    val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
+    val summaryDiagnosis = computeDonorsByField(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
+    val summaryPhenotype = computeDonorsByField(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
+    val summaryTreatment = computeDonorsByField(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
 
-    val summaryByStrategy = donor.as("donor")
-      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
-      .drop($"file.submitter_donor_id")
-      .drop($"file.study_id")
-      .groupBy($"study_id", $"experimental_strategy")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors"),
-        countDistinct($"file_name").as("files")
-      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
-      .agg(
-        collect_list(
-          struct(cols =
-            $"experimental_strategy".as("key"),
-            $"donors",
-            $"files",
-          )
-        ).as("experimental_strategy")
-      ).as("summaryByStrategy")
-
-    val summaryDiagnosis = diagnosisPerDonorAndStudy
-      .groupBy($"study_id")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors")
-      )
-      .groupBy($"study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"donors"
-          )
-        ).as("diagnosis")
-      ).as("summaryDiagnosis")
-
-    val summaryPhenotype = phenotypesPerDonorAndStudy
-      .groupBy($"study_id")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors")
-      )
-      .groupBy($"study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"donors"
-          )
-        ).as("phenotype")
-      ).as("summaryPhenotype")
-
-    val summaryTreatment = treatmentsPerDonorAndStudy
-      .groupBy($"study_id")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors")
-      )
-      .groupBy($"study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"donors"
-          )
-        ).as("treatment")
-      ).as("summaryTreatment")
-
-    val summaryGroup = summaryByStrategy
-      .join(summaryByCategory, $"summaryByCategory.study_id" === $"summaryByStrategy.study_id")
+    val summaryGroup = summaryByCategory
+      .join(summaryByStrategy, $"summaryByCategory.study_id" === $"summaryByStrategy.study_id")
       .join(summaryDiagnosis, $"summaryByCategory.study_id" === $"summaryDiagnosis.study_id")
       .join(summaryPhenotype, $"summaryByCategory.study_id" === $"summaryPhenotype.study_id")
       .join(summaryTreatment, $"summaryByCategory.study_id" === $"summaryTreatment.study_id")
