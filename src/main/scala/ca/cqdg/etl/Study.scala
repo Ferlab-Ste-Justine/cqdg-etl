@@ -12,7 +12,7 @@ object Study {
   }
 
   def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file) = loadAll(dfList);
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList);
 
     import spark.implicits._
 
@@ -54,15 +54,66 @@ object Study {
         ).as("experimental_strategy")
       ).as("summaryByStrategy")
 
+    val summaryDiagnosis = diagnosisPerDonorAndStudy
+      .groupBy($"study_id")
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors")
+      )
+      .groupBy($"study_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"donors"
+          )
+        ).as("diagnosis")
+      ).as("summaryDiagnosis")
+
+    val summaryPhenotype = phenotypesPerDonorAndStudy
+      .groupBy($"study_id")
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors")
+      )
+      .groupBy($"study_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"donors"
+          )
+        ).as("phenotype")
+      ).as("summaryPhenotype")
+
+    val summaryTreatment = treatmentsPerDonorAndStudy
+      .groupBy($"study_id")
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors")
+      )
+      .groupBy($"study_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"donors"
+          )
+        ).as("treatment")
+      ).as("summaryTreatment")
+
     val summaryGroup = summaryByStrategy
       .join(summaryByCategory, $"summaryByCategory.study_id" === $"summaryByStrategy.study_id")
-      .drop($"summaryByCategory.study_id")
+      .join(summaryDiagnosis, $"summaryByCategory.study_id" === $"summaryDiagnosis.study_id")
+      .join(summaryPhenotype, $"summaryByCategory.study_id" === $"summaryPhenotype.study_id")
+      .join(summaryTreatment, $"summaryByCategory.study_id" === $"summaryTreatment.study_id")
+      .drop($"summaryByStrategy.study_id")
+      .drop($"summaryDiagnosis.study_id")
+      .drop($"summaryPhenotype.study_id")
+      .drop($"summaryTreatment.study_id")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
+            $"summaryDiagnosis.diagnosis",
+            $"summaryPhenotype.phenotype",
+            $"summaryTreatment.treatment",
           )
         ).as("summary")
       ).as("summaryGroup")
