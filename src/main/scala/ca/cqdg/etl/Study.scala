@@ -16,6 +16,25 @@ object Study {
 
     import spark.implicits._
 
+    val summaryByStudy = donor.as("donor")
+      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
+      .drop($"file.submitter_donor_id")
+      .drop($"file.study_id")
+      .groupBy($"study_id", $"data_category")
+      .agg(
+        countDistinct($"submitter_donor_id").as("count_of_donors"),
+        countDistinct($"file_name").as("count_of_files")
+      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
+      .agg(
+        collect_list(
+          struct(cols =
+            $"data_category",
+            $"count_of_donors",
+            $"count_of_files",
+          )
+        ).as("summary_by_category") // TBC: snake case because it will be displayed like this in the end result
+      ).as("summaryByStudy")
+
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
       .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
       .join(phenotypesPerDonorAndStudy, $"donor.study_id" === $"phenotypeGroup.study_id" && $"donor.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
@@ -51,8 +70,10 @@ object Study {
     val result = broadcastStudies.value
       .join(donorWithPhenotypesAndDiagnosesPerStudy, $"study.study_id" === $"donorsGroup.study_id", "left")
       .join(fileWithBiospecimenPerStudy, $"study.study_id" === $"filesGroup.study_id", "left")
+      .join(summaryByStudy, $"study.study_id" === $"summaryByStudy.study_id", "left")
       .drop($"donorsGroup.study_id")
       .drop($"filesGroup.study_id")
+      .drop($"summaryByStudy.study_id")
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
     //result.printSchema()
