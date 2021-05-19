@@ -16,24 +16,56 @@ object Study {
 
     import spark.implicits._
 
-    val summaryByStudy = donor.as("donor")
+    val summaryByCategory = donor.as("donor")
       .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
       .drop($"file.submitter_donor_id")
       .drop($"file.study_id")
       .groupBy($"study_id", $"data_category")
       .agg(
-        countDistinct($"submitter_donor_id").as("count_of_donors"),
-        countDistinct($"file_name").as("count_of_files")
+        countDistinct($"submitter_donor_id").as("donors"),
+        countDistinct($"file_name").as("files")
       ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
       .agg(
         collect_list(
           struct(cols =
-            $"data_category",
-            $"count_of_donors",
-            $"count_of_files",
+            $"data_category".as("key"),
+            $"donors",
+            $"files",
           )
-        ).as("summary_by_category") // TBC: snake case because it will be displayed like this in the end result
-      ).as("summaryByStudy")
+        ).as("data_category")
+      ).as("summaryByCategory")
+
+    val summaryByStrategy = donor.as("donor")
+      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
+      .drop($"file.submitter_donor_id")
+      .drop($"file.study_id")
+      .groupBy($"study_id", $"experimental_strategy")
+      .agg(
+        countDistinct($"submitter_donor_id").as("donors"),
+        countDistinct($"file_name").as("files")
+      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
+      .agg(
+        collect_list(
+          struct(cols =
+            $"experimental_strategy".as("key"),
+            $"donors",
+            $"files",
+          )
+        ).as("experimental_strategy")
+      ).as("summaryByStrategy")
+
+    val summaryGroup = summaryByStrategy
+      .join(summaryByCategory, $"summaryByCategory.study_id" === $"summaryByStrategy.study_id")
+      .drop($"summaryByCategory.study_id")
+      .groupBy($"study_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"summaryByCategory.data_category",
+            $"summaryByStrategy.experimental_strategy",
+          )
+        ).as("summary")
+      ).as("summaryGroup")
 
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
       .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
@@ -70,10 +102,10 @@ object Study {
     val result = broadcastStudies.value
       .join(donorWithPhenotypesAndDiagnosesPerStudy, $"study.study_id" === $"donorsGroup.study_id", "left")
       .join(fileWithBiospecimenPerStudy, $"study.study_id" === $"filesGroup.study_id", "left")
-      .join(summaryByStudy, $"study.study_id" === $"summaryByStudy.study_id", "left")
+      .join(summaryGroup, $"study.study_id" === $"summaryGroup.study_id", "left")
       .drop($"donorsGroup.study_id")
       .drop($"filesGroup.study_id")
-      .drop($"summaryByStudy.study_id")
+      .drop($"summaryGroup.study_id")
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
     //result.printSchema()
