@@ -11,13 +11,11 @@ object Study {
     write(build(broadcastStudies, dfList), outputPath)
   }
 
-  private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession) : DataFrame = {
+  private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     donor.as("donor")
-      .join(file.as("file"),$"donor.submitter_donor_id" === $"file.submitter_donor_id" && $"donor.study_id" === $"file.study_id")
-      .drop($"file.submitter_donor_id")
-      .drop($"file.study_id")
+      .join(file.as("file"), Seq("submitter_donor_id", "study_id"))
       .filter(col(fieldName).isNotNull)
       .groupBy($"study_id", col(fieldName))
       .agg(
@@ -35,7 +33,7 @@ object Study {
       )
   }
 
-  private def computeDonorsByField(dataFrame: DataFrame, fieldName: String)(implicit spark: SparkSession) : DataFrame = {
+  private def computeDonorsByField(dataFrame: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     dataFrame
@@ -65,14 +63,10 @@ object Study {
     val summaryTreatment = computeDonorsByField(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
 
     val summaryGroup = summaryByCategory
-      .join(summaryByStrategy, $"summaryByCategory.study_id" === $"summaryByStrategy.study_id")
-      .join(summaryDiagnosis, $"summaryByCategory.study_id" === $"summaryDiagnosis.study_id")
-      .join(summaryPhenotype, $"summaryByCategory.study_id" === $"summaryPhenotype.study_id")
-      .join(summaryTreatment, $"summaryByCategory.study_id" === $"summaryTreatment.study_id")
-      .drop($"summaryByStrategy.study_id")
-      .drop($"summaryDiagnosis.study_id")
-      .drop($"summaryPhenotype.study_id")
-      .drop($"summaryTreatment.study_id")
+      .join(summaryByStrategy, "study_id")
+      .join(summaryDiagnosis, "study_id")
+      .join(summaryPhenotype, "study_id")
+      .join(summaryTreatment, "study_id")
       .groupBy($"study_id")
       .agg(
         collect_list(
