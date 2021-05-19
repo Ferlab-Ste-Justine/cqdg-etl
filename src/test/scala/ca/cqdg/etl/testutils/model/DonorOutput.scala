@@ -7,12 +7,12 @@ package ca.cqdg.etl.testutils.model
 
 case class DonorOutput(`age_at_recruitment`: String = "57",
                        `date_of_recruitment`: String = "5/10/2009",
-                       `diagnoses`: List[DIAGNOSES] = List(DIAGNOSES()),
+                       `diagnoses`: List[DONOR_DIAGNOSES] = List(DONOR_DIAGNOSES()),
                        `dob`: String = "2/21/1951",
                        `environment_exposure_available`: String = "NO",
                        `ethnicity`: String = "French Canadian ",
                        `exposure`: List[EXPOSURE] = List(EXPOSURE()),
-                       `exposures`: List[EXPOSURES] = List(EXPOSURES()),
+                       `exposures`: List[EXPOSURE] = List(EXPOSURE()), // ???????????
                        `familyConditions`: List[FAMILYCONDITIONS] = List(FAMILYCONDITIONS()),
                        `familyHistory`: List[FAMILYHISTORY] = List(FAMILYHISTORY()),
                        `family_history_available`: String = "NO",
@@ -47,7 +47,7 @@ case class FAMILYHISTORY(`family_cancer_history`: String = "Yes",
                          `family_condition_relationship`: String = "maternal aunt",
                          `submitter_family_condition_id`: String = "FC00060")
 
-case class DIAGNOSES(`age_at_diagnosis`: Long = 52,
+case class DONOR_DIAGNOSES(`age_at_diagnosis`: Long = 52,
                      `diagnosis_type`: String = "Clinical",
                      `follow_ups`: List[FOLLOW_UPS] = List(FOLLOW_UPS()),
                      `is_cancer`: Boolean = true,
@@ -78,26 +78,6 @@ case class FILES(`data_access`: String = "Controled",
                  `platform`: String = "Illumina",
                  `submitter_biospecimen_id`: String = "BS00060")
 
-case class FAMILYCONDITIONS(`family_cancer_history`: String = "Yes",
-                            `family_condition_age`: Long = 48,
-                            `family_condition_name`: String = "Multiple sclerosis",
-                            `family_condition_relationship`: String = "maternal aunt",
-                            `submitter_family_condition_id`: String = "FC00060")
-
-case class TREATMENTS(`submitter_treatment_id`: String = "TX00060",
-                      `treatment_intent`: String = "Life extending",
-                      `treatment_is_primary`: String = "No",
-                      `treatment_response`: String = "Disease Progression",
-                      `treatment_type`: String = "Chemotherapy, Hormonal therapy")
-
-case class PHENOTYPES(`age_at_phenotype`: Long = 48,
-                      `hpo_code`: String = "HP:0002894",
-                      `submitter_phenotype_id`: String = "PH00060")
-
 case class EXPOSURE(`FSA`: String = "H4V",
                     `alcohol_status`: String = "Alcohol consumption unknown",
                     `smoking_status`: String = "Current every day smoker        ")
-
-case class EXPOSURES(`FSA`: String = "H4V",
-                     `alcohol_status`: String = "Alcohol consumption unknown",
-                     `smoking_status`: String = "Current every day smoker        ")

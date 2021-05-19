@@ -23,7 +23,7 @@ libraryDependencies += "com.amazonaws" % "aws-java-sdk-bom" % "1.11.975"
 libraryDependencies += "com.amazonaws" % "aws-java-sdk-s3" % "1.11.975"
 libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.1.7"
 libraryDependencies += "com.google.code.gson" % "gson" % "2.8.6"
-libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.37"
+libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.39"
 
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"

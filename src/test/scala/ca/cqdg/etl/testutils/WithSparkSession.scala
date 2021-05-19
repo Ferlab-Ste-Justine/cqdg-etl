@@ -15,6 +15,8 @@ trait WithSparkSession {
     .master("local")
     .getOrCreate()
 
+  spark.sparkContext.setLogLevel("ERROR")
+
   def withOutputFolder[T](prefix: String)(block: String => T): T = {
     val output: Path = Files.createTempDirectory(prefix)
     try {
