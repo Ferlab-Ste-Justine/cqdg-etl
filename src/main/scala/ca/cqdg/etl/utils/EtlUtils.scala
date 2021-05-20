@@ -70,7 +70,7 @@ object EtlUtils {
     dfList.find(df => df.name == name).getOrElse(throw new RuntimeException(s"Could find any dataframe named ${name}"))
   }
 
-  def loadAll(dfList: List[NamedDataFrame])(implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+  def loadAll(dfList: List[NamedDataFrame])(implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -94,10 +94,12 @@ object EtlUtils {
 
     val phenotypesPerDonorAndStudy: DataFrame = loadPhenotypes(phenotypeNDF.dataFrame as "phenotype")
 
+    val treatmentsPerDonorAndStudy: DataFrame = loadTreatments(treatmentNDF.dataFrame as "treatment")
+
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file)
+    (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
   }
 
   def loadBiospecimens(biospecimen: DataFrame, samples: DataFrame)(implicit spark: SparkSession): DataFrame = {
@@ -274,6 +276,19 @@ object EtlUtils {
           struct(phenotypeWithRenamedColumns.columns.filterNot(List("study_id", "submitter_donor_id", "phenotype_observed_bool").contains(_)).map(col): _*)
         ) as "phenotypes_per_donor_per_study"
       ) as "phenotypeGroup"
+  }
+
+  def loadTreatments(treatment: DataFrame)(implicit spark: SparkSession): DataFrame = {
+    import spark.implicits._
+
+    treatment
+      .groupBy($"submitter_donor_id", $"study_id")
+      .agg(
+        collect_list(
+          struct(treatment.columns.filterNot(List("study_id", "submitter_donor_id").contains(_)).map(col): _*)
+        ) as "treatments_per_donor_per_study"
+      ) as "treatmentGroup"
+
   }
 
   object columns {
