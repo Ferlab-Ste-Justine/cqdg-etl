@@ -1,8 +1,8 @@
 package ca.cqdg.etl
 
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
-import ca.cqdg.etl.test.util.TestData.hashCodesList
-import ca.cqdg.etl.test.util.WithSparkSession
+import ca.cqdg.etl.testutils.TestData.hashCodesList
+import ca.cqdg.etl.testutils.WithSparkSession
 import ca.cqdg.etl.testutils.model.PHENOTYPES
 import ca.cqdg.etl.utils.PreProcessingUtils.getOntologyDfs
 import ca.cqdg.etl.utils.{EtlUtils, PreProcessingUtils, S3Utils, Schema}

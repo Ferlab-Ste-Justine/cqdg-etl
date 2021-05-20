@@ -58,14 +58,9 @@ object Donor {
       .as("donorWithStudy")
 
     val result = donorStudyJoin
-      .join(diagnosisPerDonorAndStudy, $"donorWithStudy.study_id" === $"diagnosisGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(
-        phenotypesPerStudyIdAndDonor,
-        $"donorWithStudy.study_id" === $"phenotypeGroup.study_id" &&
-          $"donorWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id",
-        "left"
-      )
-      .join(filesPerDonorAndStudy, $"donorWithStudy.study_id" === $"fileGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"fileGroup.submitter_donor_id", "left")
+      .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
+      .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
         $"diagnosis_per_donor_per_study" as "diagnoses",
