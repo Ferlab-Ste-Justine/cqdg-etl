@@ -201,8 +201,8 @@ object EtlUtils {
       .as("biospecimen")
 
     val samplesPerBiospecimen = biospecimenWithRenamedColumns.as("biospecimen")
-      .join(samples.as("sample"), $"biospecimen.submitter_biospecimen_id" === $"sample.submitter_biospecimen_id")
-      .groupBy($"sample.submitter_biospecimen_id")
+      .join(samples.as("sample"), Seq("submitter_biospecimen_id"))
+      .groupBy("submitter_biospecimen_id")
       .agg(
         collect_list(
           struct(
@@ -211,8 +211,8 @@ object EtlUtils {
       ) as "samplesPerBiospecimen"
 
     val result = biospecimenWithRenamedColumns
-      .join(samplesPerBiospecimen, $"biospecimen.submitter_biospecimen_id" === $"samplesPerBiospecimen.submitter_biospecimen_id", "left")
-      .groupBy($"samplesPerBiospecimen.submitter_biospecimen_id")
+      .join(samplesPerBiospecimen,  Seq("submitter_biospecimen_id"))
+      .groupBy("submitter_biospecimen_id")
       .agg(
         collect_list(
           struct($"biospecimen.*", $"samplesPerBiospecimen.samples")
@@ -280,8 +280,8 @@ object EtlUtils {
     // TODO: Replace empty array by icd_term loaded from ICD based on diagnosis_ICD_code
     // val treatmentRenamedColumns = Array($"treatment.diagnosis_ICD_term" as "icd_term", $"treatment.diagnosis_ICD_term" as "icd_term_keyword")
     val treatmentPerDiagnosis = diagnosis.as("diagnosis")
-      .join(treatment.as("treatment"), $"diagnosis.submitter_diagnosis_id" === $"treatment.submitter_diagnosis_id")
-      .groupBy($"treatment.submitter_diagnosis_id")
+      .join(treatment.as("treatment"), Seq("submitter_diagnosis_id"))
+      .groupBy("submitter_diagnosis_id")
       .agg(
         collect_list(
           struct(
@@ -292,8 +292,8 @@ object EtlUtils {
 
 
     val followUpPerDiagnosis = diagnosis.as("diagnosis")
-      .join(followUp.as("follow_up"), $"diagnosis.submitter_diagnosis_id" === $"follow_up.submitter_diagnosis_id")
-      .groupBy($"follow_up.submitter_diagnosis_id")
+      .join(followUp, Seq("submitter_diagnosis_id"))
+      .groupBy("submitter_diagnosis_id")
       .agg(
         collect_list(
           struct(
@@ -303,11 +303,9 @@ object EtlUtils {
 
 
     val diagnosisWithTreatmentAndFollowUps = diagnosis
-      .join(treatmentPerDiagnosis, $"diagnosis.submitter_diagnosis_id" === $"treatmentsPerDiagnosis.submitter_diagnosis_id", "left")
-      .join(followUpPerDiagnosis, $"diagnosis.submitter_diagnosis_id" === $"followUpsPerDiagnosis.submitter_diagnosis_id", "left")
+      .join(treatmentPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
+      .join(followUpPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
       .withColumn("is_cancer", isCancer)
-      .drop($"treatmentsPerDiagnosis.submitter_diagnosis_id")
-      .drop($"followUpsPerDiagnosis.submitter_diagnosis_id")
     // TODO: load the following based on their respective code.
     /*.select(cols =
         $"*",
@@ -398,10 +396,10 @@ object EtlUtils {
       lit(true)).otherwise(lit(false)
     ) as "phenotype_observed_bool"
 
-    val isCancer: Column = when(
-      col("is_cancer") isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1),
-      lit(true)).otherwise(lit(false)
-    )
+    val isCancer: Column =
+      when(
+        col("is_cancer").isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1), lit(true)
+      ).otherwise(lit(false))
 
     val ageAtRecruitment: Column = when(
       col("dob").isNotNull && col("date_of_recruitment").isNotNull,

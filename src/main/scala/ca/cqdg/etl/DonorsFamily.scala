@@ -16,31 +16,27 @@ class DonorsFamily()(implicit conf: Configuration) extends ETL()(conf) {
   val exposure            : DatasetConf = conf.getDataset("exposure")
 
 
-  override def extract()(implicit spark: SparkSession): Map[DatasetConf, DataFrame] = {
+  override def extract()(implicit spark: SparkSession): Map[String, DataFrame] = {
     Map(
-      donors -> spark.readConf(donors),
-      family_relationship -> spark.readConf(family_relationship),
-      family_history -> spark.readConf(family_history),
-      donors -> spark.readConf(family_history),
+      donors.id -> donors.read,
+      family_relationship.id  -> family_relationship.read,
+      family_history.id  -> family_history.read,
+      donors.id  -> family_history.read,
     )
   }
 
-  override def transform(data: Map[DatasetConf, DataFrame])(implicit spark: SparkSession): DataFrame = {
+  override def transform(data: Map[String, DataFrame])(implicit spark: SparkSession): DataFrame = {
 
-    val donorDf: DataFrame = data(donors)
+    val donorDf: DataFrame = data(donors.id )
 
-    val familyRelationshipDf: DataFrame = data(family_relationship)
+    val familyRelationshipDf: DataFrame = data(family_relationship.id )
       .drop("submitter_family_id")
 
-    val familyHistoryDf: DataFrame = data(family_history)
+    val familyHistoryDf: DataFrame = data(family_history.id )
       .withColumn("family_condition_age", col("family_condition_age").cast(LongType))
 
-    val exposureDf: DataFrame = data(exposure)
+    val exposureDf: DataFrame = data(exposure.id )
 
     EtlUtils.loadDonors(donorDf, familyRelationshipDf, familyHistoryDf, exposureDf)
-  }
-
-  override def load(data: DataFrame)(implicit spark: SparkSession): DataFrame = {
-    data.writeConf(destination)
   }
 }

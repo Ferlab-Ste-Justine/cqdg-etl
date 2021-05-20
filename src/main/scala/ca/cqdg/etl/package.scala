@@ -2,8 +2,7 @@ package ca.cqdg
 
 import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf, StorageConf}
 import bio.ferlab.datalake.spark3.loader.Format.{CSV, JSON, PARQUET}
-import bio.ferlab.datalake.spark3.loader.LoadType.{Insert, OverWrite}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import bio.ferlab.datalake.spark3.loader.LoadType.OverWrite
 
 package object etl {
 
@@ -33,7 +32,8 @@ package object etl {
       DatasetConf("treatment"             , clinical_data, "/*/*/*/treatment.tsv"              , CSV , OverWrite, readoptions = tsv_with_headers),
 
       //intermediate data
-      DatasetConf("donor_families", clinical_data_etl_indexer, "/donor_families", PARQUET, OverWrite),
+      DatasetConf("donor_diagnosis", clinical_data_etl_indexer, "/donor_diagnosis", PARQUET, OverWrite),
+      DatasetConf("donor_families" , clinical_data_etl_indexer, "/donor_families" , PARQUET, OverWrite),
 
 
       //data to index
@@ -42,37 +42,4 @@ package object etl {
       DatasetConf("files"  ,clinical_data_etl_indexer, "/files"  ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date"))
     )
   )
-
-  implicit class SparkOps(spark: SparkSession) {
-    def readConf(sc: DatasetConf)(implicit conf: Configuration): DataFrame = {
-      spark.read.format(sc.format.sparkFormat).options(sc.readoptions).load(sc.location)
-    }
-  }
-
-
-  implicit class DataFrameOps(df: DataFrame) {
-    def writeConf(sc: DatasetConf)(implicit conf: Configuration): DataFrame = {
-
-      val dfw = sc.partitionby match {
-        case Nil =>
-          df.write
-            .format(sc.format.sparkFormat)
-            .option("path", sc.location)
-        case _ =>
-          df.write
-            .partitionBy(sc.partitionby:_*)
-            .format(sc.format.sparkFormat)
-            .option("path", sc.location)
-      }
-
-      if (sc.table.nonEmpty) {
-        dfw.mode("overwrite").saveAsTable(s"${sc.table.get.fullName}")
-      } else {
-        dfw.mode("overwrite").save()
-      }
-
-      df
-    }
-  }
-
 }

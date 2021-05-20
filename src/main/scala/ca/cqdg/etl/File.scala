@@ -8,20 +8,18 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object File {
-  def run(
-           broadcastStudies: Broadcast[DataFrame],
-           dfList: List[NamedDataFrame],
-           ontologyDf: Map[String, DataFrame],
-           outputPath: String)(implicit spark: SparkSession): Unit = {
+  def run(broadcastStudies: Broadcast[DataFrame],
+          dfList: List[NamedDataFrame],
+          ontologyDf: Map[String, DataFrame],
+          outputPath: String)(implicit spark: SparkSession): Unit = {
     write(build(broadcastStudies, dfList, ontologyDf), outputPath)
   }
 
-  def build(
-             broadcastStudies: Broadcast[DataFrame],
-             dfList: List[NamedDataFrame],
-             ontologyDf: Map[String, DataFrame]
+  def build(broadcastStudies: Broadcast[DataFrame],
+            dfList: List[NamedDataFrame],
+            ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf);
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 
