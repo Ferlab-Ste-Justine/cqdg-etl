@@ -45,7 +45,7 @@ case class STUDY_FOLLOW_UPS(`days_to_follow_up`: Long = 65,
                             `relapse_interval`: Option[Long] = None,
                             `submitter_follow_up_id`: String = "FU00134")
 
-case class STUDY_FILES(`biospecimen`: List[BIOSPECIMEN] = List(BIOSPECIMEN()),
+case class STUDY_FILES(`biospecimen`: List[STUDY_BIOSPECIMEN] = List(STUDY_BIOSPECIMEN()),
                        `data_access`: String = "Controled",
                        `data_category`: String = "Sequencing reads",
                        `data_type`: String = "Aligned reads",
@@ -58,16 +58,16 @@ case class STUDY_FILES(`biospecimen`: List[BIOSPECIMEN] = List(BIOSPECIMEN()),
                        `submitter_donor_id`: String = "PT00173",
                        `variant_class`: Option[String] = None)
 
-case class BIOSPECIMEN(`anatomic_location`: String = "C42.0: Blood",
-                       `biospecimen_access`: String = "Yes",
-                       `biospecimen_processing`: String = "Cryopreservation - other",
-                       `biospecimen_storage`: String = "Frozen in -70 freezer",
-                       `date_biospecimen_collection`: String = "1/9/2009",
-                       `samples`: List[SAMPLES] = List(SAMPLES()),
-                       `submitter_biospecimen_id`: String = "BS00002",
-                       `submitter_diagnosis_id`: String = "DI00002",
-                       `tissue_source`: String = "Blood derived - peripheral blood",
-                       `type`: String = "Normal")
+case class STUDY_BIOSPECIMEN(`anatomic_location`: String = "C42.0: Blood",
+                             `biospecimen_access`: String = "Yes",
+                             `biospecimen_processing`: String = "Cryopreservation - other",
+                             `biospecimen_storage`: String = "Frozen in -70 freezer",
+                             `date_biospecimen_collection`: String = "1/9/2009",
+                             `samples`: List[STUDY_SAMPLES] = List(STUDY_SAMPLES()),
+                             `submitter_biospecimen_id`: String = "BS00002",
+                             `submitter_diagnosis_id`: String = "DI00002",
+                             `tissue_source`: String = "Blood derived - peripheral blood",
+                             `type`: String = "Normal")
 
 case class FAMILYCONDITIONS(`family_cancer_history`: String = "Yes",
                             `family_condition_age`: Long = 53,
@@ -103,4 +103,4 @@ case class DIAGNOSIS_PER_DONOR_PER_STUDY(`age_at_diagnosis`: Long = 56,
                                          `t_category`: Option[String] = None,
                                          `treatments`: List[TREATMENTS] = List(TREATMENTS()))
 
-case class SAMPLES(`submitter_sample_id`: String = "SA00002")
+case class STUDY_SAMPLES(`submitter_sample_id`: String = "SA00002")
