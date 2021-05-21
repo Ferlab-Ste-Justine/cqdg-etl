@@ -33,5 +33,16 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
     result.as[TreatmentOutput].collect().head shouldBe TreatmentOutput()
   }
 
+  "addAncestorsToTerm" should "transform data in expected format" in {
+
+    val phenotypesDf = Seq(PhenotypeInput(`phenotype_HPO_code` = "HP:0001694")).toDF
+
+    val hpoDf = Seq(HpoTermsInput()).toDF()
+
+    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code")(phenotypesDf, hpoDf)
+
+    result.as[PhenotypeWithHpoOutput].collect().head shouldBe PhenotypeWithHpoOutput()
+  }
+
 
 }

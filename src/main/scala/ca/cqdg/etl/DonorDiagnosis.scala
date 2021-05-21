@@ -3,8 +3,6 @@ package ca.cqdg.etl
 import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf}
 import bio.ferlab.datalake.spark3.etl.ETL
 import ca.cqdg.etl.utils.EtlUtils
-import org.apache.spark.sql.functions.col
-import org.apache.spark.sql.types.LongType
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 class DonorDiagnosis()(implicit conf: Configuration) extends ETL()(conf) {
@@ -18,7 +16,7 @@ class DonorDiagnosis()(implicit conf: Configuration) extends ETL()(conf) {
   override def extract()(implicit spark: SparkSession): Map[String, DataFrame] = {
     Map(
       diagnosis.id -> diagnosis.read,
-      treatment.id  -> treatment.read,
+      treatment.id -> treatment.read,
       followUp.id  -> followUp.read
     )
   }
