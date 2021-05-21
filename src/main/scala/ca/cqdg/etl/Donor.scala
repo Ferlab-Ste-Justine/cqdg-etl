@@ -8,12 +8,21 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object Donor {
-  def run(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame], outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, dfList), outputPath)
+  def run(
+           broadcastStudies: Broadcast[DataFrame],
+           dfList: List[NamedDataFrame],
+           ontologyDf: Map[String, DataFrame],
+           outputPath: String)(implicit spark: SparkSession): Unit = {
+    write(build(broadcastStudies, dfList, ontologyDf), outputPath)
   }
 
-  def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList);
+  def build(
+             broadcastStudies: Broadcast[DataFrame],
+             dfList: List[NamedDataFrame],
+             ontologyDf: Map[String, DataFrame]
+           )(implicit spark: SparkSession): DataFrame = {
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) =
+      loadAll(dfList)(ontologyDf);
 
     import spark.implicits._
 
@@ -49,18 +58,17 @@ object Donor {
       .as("donorWithStudy")
 
     val result = donorStudyJoin
-      .join(diagnosisPerDonorAndStudy, $"donorWithStudy.study_id" === $"diagnosisGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"donorWithStudy.study_id" === $"phenotypeGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
-      .join(filesPerDonorAndStudy, $"donorWithStudy.study_id" === $"fileGroup.study_id" && $"donorWithStudy.submitter_donor_id" === $"fileGroup.submitter_donor_id", "left")
+      .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
+      .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
         $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes_per_donor_per_study" as "phenotypes",
+        $"phenotypes",
         $"files_per_donor_per_study" as "files"
       )
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
-    //result.printSchema()
     result
       .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
       .withColumn("study_version", lit(studyNDF.studyVersion))

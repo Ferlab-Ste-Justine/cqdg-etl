@@ -1,7 +1,10 @@
 package ca.cqdg.etl.utils
 
+import ca.cqdg.etl.EtlApp.spark
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, isCancer, notNullCol, phenotypeObserved}
+import org.apache.spark.broadcast.Broadcast
+import org.apache.spark.sql.catalyst.encoders.RowEncoder
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
@@ -28,7 +31,7 @@ object EtlUtils {
     "sep" -> "\t",
     "parserLib" -> "univocity",
     "quote" -> "\"",
-    "mode" -> "FAILFAST",
+    "mode" -> "PERMISSIVE",
     "nullValue" -> ""
   )
 
@@ -37,7 +40,7 @@ object EtlUtils {
     "header" -> "true",
     "sep" -> "\t",
     "quote" -> "\"",
-    "mode" -> "FAILFAST",
+    "mode" -> "PERMISSIVE",
     "nullValue" -> ""
   )
 
@@ -70,7 +73,8 @@ object EtlUtils {
     dfList.find(df => df.name == name).getOrElse(throw new RuntimeException(s"Could find any dataframe named ${name}"))
   }
 
-  def loadAll(dfList: List[NamedDataFrame])(implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+  def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
+             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -92,21 +96,98 @@ object EtlUtils {
       treatmentNDF.dataFrame as "treatment",
       followUpNDF.dataFrame as "follow_up")
 
-    val phenotypesPerDonorAndStudy: DataFrame = loadPhenotypes(phenotypeNDF.dataFrame as "phenotype")
+    val phenotypesPerStudyIdAndDonor = addAncestorsToTerm("phenotype_HPO_code")(phenotypeNDF.dataFrame, ontologies.head._2)
 
     val treatmentsPerDonorAndStudy: DataFrame = loadTreatments(treatmentNDF.dataFrame as "treatment")
 
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
+    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
+  }
+
+  def addAncestorsToTerm(dataColName: String)(dataDf: DataFrame, termsDf: DataFrame)
+                        (implicit spark: SparkSession): DataFrame = {
+    import spark.implicits._
+    val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
+
+    val taggedPhenotypes =
+      phenotypes_with_ancestors
+        .select(cols=
+          $"study_id",
+          $"submitter_donor_id",
+          $"id" ,
+          $"name",
+          $"parents",
+          $"age_at_phenotype",
+          phenotypeObserved,
+          $"is_leaf"
+        )
+        .withColumn("is_tagged", lit(true))
+        .filter(phenotypes_with_ancestors.col("id").isNotNull)
+
+    val ancestors_exploded =
+      phenotypes_with_ancestors
+        .select(cols=
+          $"study_id",
+          $"submitter_donor_id",
+          $"age_at_phenotype",
+          $"phenotype_observed",
+          explode_outer($"ancestors") as "ancestors_exploded"
+        )
+        .withColumn("is_leaf", lit(false))
+
+    val parentsPhenotypes = ancestors_exploded.select(cols=
+      $"study_id",
+      $"submitter_donor_id",
+      $"ancestors_exploded.id" as "id",
+      $"ancestors_exploded.name" as "name",
+      $"ancestors_exploded.parents" as "parents",
+      $"age_at_phenotype",
+      phenotypeObserved
+    )
+      .withColumn("is_leaf", lit(false))
+      .withColumn("is_tagged", lit(false))
+      .filter(phenotypes_with_ancestors.col("id").isNotNull)
+
+    val combinedDF: DataFrame = taggedPhenotypes.union(parentsPhenotypes)
+    val combinedPhenotypes = combinedDF
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(collect_list(
+        struct(cols =
+          $"id",
+          $"name",
+          $"parents",
+          $"age_at_phenotype",
+          $"phenotype_observed_bool",
+          $"is_leaf",
+          $"is_tagged"
+        )
+      ) as "phenotypes") as "phenotypeGroup"
+
+    combinedPhenotypes
+  }
+
+  def broadcastStudies(listNamedDF: List[NamedDataFrame])(implicit spark: SparkSession): Broadcast[DataFrame] = {
+    import spark.implicits._
+
+    val study: DataFrame = getDataframe("study", listNamedDF).dataFrame
+      .select( cols=
+        $"*",
+        $"study_id" as "study_id_keyword",
+        $"short_name" as "short_name_keyword",
+        $"short_name" as "short_name_ngrams"
+      )
+      .as("study")
+
+    spark.sparkContext.broadcast(study)
   }
 
   def loadBiospecimens(biospecimen: DataFrame, samples: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
-    val biospecimenWithRenamedColumns: DataFrame = biospecimen.
-      select(cols =
+    val biospecimenWithRenamedColumns: DataFrame = biospecimen
+      .select(cols =
         $"*",
         $"biospecimen_tissue_source" as "tissue_source",
         $"biospecimen_type" as "type",
@@ -330,7 +411,6 @@ object EtlUtils {
       .otherwise(
         lit(DEFAULT_VALUE)
       ) as "age_at_recruitment"
-
   }
 
 }

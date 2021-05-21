@@ -8,12 +8,20 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object File {
-  def run(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame], outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, dfList), outputPath)
+  def run(
+           broadcastStudies: Broadcast[DataFrame],
+           dfList: List[NamedDataFrame],
+           ontologyDf: Map[String, DataFrame],
+           outputPath: String)(implicit spark: SparkSession): Unit = {
+    write(build(broadcastStudies, dfList, ontologyDf), outputPath)
   }
 
-  def build(broadcastStudies: Broadcast[DataFrame], dfList: List[NamedDataFrame])(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList);
+  def build(
+             broadcastStudies: Broadcast[DataFrame],
+             dfList: List[NamedDataFrame],
+             ontologyDf: Map[String, DataFrame]
+           )(implicit spark: SparkSession): DataFrame = {
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf);
 
     import spark.implicits._
 
@@ -51,7 +59,7 @@ object File {
         $"fileWithDonors.donors",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes_per_donor_per_study" as "phenotypes"
+        $"phenotypes"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")

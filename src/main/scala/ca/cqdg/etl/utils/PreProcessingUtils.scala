@@ -1,41 +1,43 @@
 package ca.cqdg.etl.utils
 
-import ca.cqdg.etl.EtlApp.s3Bucket
 import ca.cqdg.etl.model
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, sanitize}
+import ca.cqdg.etl.utils.ExternalApi.getCQDGIds
 import com.google.gson.{Gson, JsonArray, JsonParser}
 import org.apache.log4j.Logger
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import sttp.client3.{HttpURLConnectionBackend, basicRequest, _}
-import sttp.model.{MediaType, StatusCode}
+import sttp.model.StatusCode
 
 import scala.collection.{JavaConverters, mutable}
 
-object PreProcessingUtils {
+object PreProcessingUtils{
 
   val dictionaryUsername: String = getConfiguration("LECTERN_USERNAME", "lectern")
   val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "changeMe")
   val dictionaryName: String = getConfiguration("LECTERN_DICTIONARY_NAME", "CQDG Data Dictionary")
   val dictionaryURL: String = getConfiguration("LECTERN_HOST", "https://schema.qa.cqdg.ferlab.bio")
   val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
-  val dictionarySchemas: Map[String, List[Schema]] = loadSchemas()
   val gson: Gson = new Gson()
-  val log: Logger = Logger.getLogger("EnrichmentUtils")
+  val LOG: Logger = Logger.getLogger(this.getClass)
 
-  def preProcess(files: Map[String, List[S3File]])(implicit spark: SparkSession): Map[String, List[NamedDataFrame]] = {
+  def preProcess(files: Map[String, List[S3File]], s3Bucket: String, buildIds: String => String = getCQDGIds)
+                (dictionarySchemas: Map[String, List[Schema]])
+                (implicit spark: SparkSession): Map[String, List[NamedDataFrame]] = {
     files.map({
       case(key, values) =>
-        key -> preProcess(values)
+        key -> preProcess(values, s3Bucket: String)(dictionarySchemas, buildIds)
     })
   }
 
-  def preProcess(files: List[S3File])(implicit spark: SparkSession): List[NamedDataFrame] = {
+  def preProcess(files: List[S3File], s3Bucket: String)
+                (dictionarySchemas: Map[String, List[Schema]], buildIds: String => String)
+                (implicit spark: SparkSession): List[NamedDataFrame] = {
     val metadata = files
                       .find(f => f.filename == "study_version_metadata.json")
                       .getOrElse(throw new RuntimeException("study_version_metadata.json file not present. Cannot proceed."))
-
     val metadataDF: DataFrame = spark.read.option("multiline", "true").json(s"s3a://${s3Bucket}/${metadata.key}")
     val dictionaryVersion: String = metadataDF.select("dictionaryVersion").collectAsList().get(0).getString(0)
     val studyVersion: String = metadataDF.select("studyVersionId").collectAsList().get(0).getString(0)
@@ -46,12 +48,12 @@ object PreProcessingUtils {
       // Filter out all files that are not part of the dictionary version for the current study
       .filter(f => schemaEntities.map(s => s.name).contains(f.schema))
       .map(f = f => {
-        val cqdgIDsAdded: DataFrame = addCQDGId(f)
+        val cqdgIDsAdded: DataFrame = addCQDGId(f, buildIds)
 
         // Remove columns that are not in the schema
         val colsToRemove = cqdgIDsAdded.columns.filterNot(col => schemaEntities.find(schema => schema.name == f.schema).get.columns.contains(col))
         if(colsToRemove.length > 0){
-          log.warn(s"Removing the columns [${colsToRemove.mkString(",")}] from ${f.filename}")
+          LOG.warn(s"Removing the columns [${colsToRemove.mkString(",")}] from ${f.filename}")
         }
 
         val sanitizedDF: DataFrame = cqdgIDsAdded.drop(colsToRemove:_*)
@@ -59,7 +61,7 @@ object PreProcessingUtils {
       })
   }
 
-  private def addCQDGId(f: S3File)(implicit spark: SparkSession): DataFrame = {
+  private def addCQDGId(f: S3File, buildIds: String => String)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     val df = EtlUtils.readCsvFile(s"s3a://cqdg/${f.key}")
@@ -142,21 +144,32 @@ object PreProcessingUtils {
     }
 
     val idServicePayload = enhancedDF.select("cqdg_hash", "cqdg_entity").as[(String, String)].collect().toMap
-    val jsonResponse = getCQDGIds(gson.toJson(JavaConverters.mapAsJavaMap(idServicePayload)))
+    val jsonResponse = buildIds(gson.toJson(JavaConverters.mapAsJavaMap(idServicePayload)))
     val cqdgIDsDF = spark.read.json(Seq(jsonResponse).toDS()).toDF("hash", "internal_id")
-
     val result = enhancedDF
       .join(cqdgIDsDF, $"cqdg_hash" === $"hash")
       .drop("cqdg_hash", "hash")
       .withColumnRenamed("internal_id", s"${entityType}_cqdg_id")
+
     result
   }
 
-  private def loadSchemas(): Map[String, List[Schema]] = {
+  def getOntologyDfs(files: Seq[S3File])(implicit spark: SparkSession): Map[String, DataFrame] = {
+    files.flatMap(f => f.filename match {
+      case "hpo_terms.json.gz" => Some("hpo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "mondo_terms.json.gz" => Some("mondo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case _ => None
+    }).toMap
+  }
+
+  def filesToDf(fileList: List[S3File])(implicit sparkSession: SparkSession): List[DataFrame] = {
+    fileList.map(f => EtlUtils.readCsvFile(s"s3a://cqdg/${f.key}"))
+  }
+
+  def loadSchemas(): Map[String, List[Schema]] = {
     val schemasPerVersion = new mutable.HashMap[String, List[Schema]]
 
-    //response.body : Left(errorMessage), Right(body)
-    val response = dictionaryRequest(s"dictionaries?name=$dictionaryName")
+    val response: Identity[Response[Either[String, String]]] = dictionaryRequest(s"dictionaries?name=$dictionaryName")
 
     if (StatusCode.Ok == response.code && response.body.toString.trim.nonEmpty) {
       val jsonResponse: JsonArray = JsonParser.parseString(response.body.right.get).getAsJsonArray
@@ -172,27 +185,32 @@ object PreProcessingUtils {
   }
 
   private def loadSchemaVersion(version: String): List[Schema] = {
-    val schemas: mutable.MutableList[Schema] = mutable.MutableList()
-
-    //response.body : Left(errorMessage), Right(body)
-    val response = dictionaryRequest(s"dictionaries?name=$dictionaryName&version=$version")
+    val response: Identity[Response[Either[String, String]]] =
+      dictionaryRequest(s"dictionaries?name=$dictionaryName&version=$version")
 
     if (StatusCode.Ok == response.code && response.body.toString.trim.length > 0) {
-      val jsonResponse: JsonArray = JsonParser.parseString(response.body.right.get).getAsJsonArray
-      jsonResponse.forEach(el => {
-        val jsonSchemas = el.getAsJsonObject.get("schemas").getAsJsonArray
-        jsonSchemas.forEach(x => schemas += Schema(
-          sanitize(x.getAsJsonObject.get("name").getAsString),
-          getSchemaFields(x.getAsJsonObject.get("fields").getAsJsonArray)
-        ))
-      })
-
-      // Add the file schema which is used for mapping the genomic files to the clinical data
-      schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "file_name",
-        "data_category", "data_type", "is_harmonized", "experimental_strategy", "data_access", "file_format", "platform", "variant_class"))
+      getSchemaList(response.body.right.get)
     } else {
       throw new RuntimeException(s"Failed to retrieve Lectern's schemas for version $version of $dictionaryName.\n${response.body.left.get}")
     }
+
+  }
+
+  def getSchemaList(responseString: String): List[Schema] = {
+    val schemas: mutable.MutableList[Schema] = mutable.MutableList()
+
+    val jsonResponse: JsonArray = JsonParser.parseString(responseString).getAsJsonArray
+    jsonResponse.forEach(el => {
+      val jsonSchemas = el.getAsJsonObject.get("schemas").getAsJsonArray
+      jsonSchemas.forEach(x => schemas += Schema(
+        sanitize(x.getAsJsonObject.get("name").getAsString),
+        getSchemaFields(x.getAsJsonObject.get("fields").getAsJsonArray)
+      ))
+    })
+
+    // Add the file schema which is used for mapping the genomic files to the clinical data
+    schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "file_name",
+      "data_category", "data_type", "is_harmonized", "experimental_strategy", "data_access", "file_format", "platform", "variant_class"))
 
     schemas.toList
   }
@@ -218,27 +236,6 @@ object PreProcessingUtils {
     backend.close
 
     response
-  }
-
-  private def getCQDGIds(payload: String): String = {
-    val backend = HttpURLConnectionBackend()
-
-    val url = s"${idServiceURL}/batch"
-
-    // response.body : Left(errorMessage), Right(body)
-    val response = basicRequest
-      .contentType(MediaType.ApplicationJson)
-      .body(payload)
-      .post(uri"${url}")
-      .send(backend)
-
-    backend.close
-
-    if (StatusCode.Ok == response.code && response.body.toString.trim.length > 0) {
-      response.body.right.get
-    } else {
-      throw new RuntimeException(s"Failed to retrieve ids from id-service at ${url}.\n${response.body.left.get}")
-    }
   }
 }
 
