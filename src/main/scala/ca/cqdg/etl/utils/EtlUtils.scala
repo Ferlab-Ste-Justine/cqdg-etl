@@ -155,7 +155,7 @@ object EtlUtils {
       .groupBy($"study_id", $"submitter_donor_id")
       .agg(collect_list(
         struct(cols =
-          $"id",
+          $"id".as("phenotype_id"),
           $"name",
           $"parents",
           $"age_at_phenotype",
