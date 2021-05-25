@@ -48,7 +48,7 @@ object Study {
       )
       .groupBy($"study_id")
       .agg(
-        collect_list(
+        first(
           struct(cols =
             $"donors"
           )
@@ -78,7 +78,7 @@ object Study {
       .join(summaryTreatment, "study_id")
       .groupBy($"study_id")
       .agg(
-        collect_list(
+        first(
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
