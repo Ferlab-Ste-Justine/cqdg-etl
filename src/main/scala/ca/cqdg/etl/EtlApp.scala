@@ -2,10 +2,10 @@ package ca.cqdg.etl
 
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
-import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe}
-import ca.cqdg.etl.utils.PreProcessingUtils.{filesToDf, getOntologyDfs, loadSchemas, preProcess}
-import ca.cqdg.etl.utils.{S3Utils, Schema}
+import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe, loadAll}
+import ca.cqdg.etl.utils.PreProcessingUtils.{getOntologyDfs, loadSchemas, preProcess}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
+import ca.cqdg.etl.utils.{S3Utils, Schema}
 import com.amazonaws.ClientConfiguration
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.regions.Regions
@@ -57,27 +57,37 @@ object EtlApp extends App {
   val readyToProcess: Map[String, List[NamedDataFrame]] = preProcess(filesPerFolder, s3Bucket)(dictionarySchemas);
 
   import spark.implicits._
-  readyToProcess.foreach(entry => {
+  readyToProcess.foreach { case (prefix, dfList) =>
     val outputPath= s"s3a://${s3Bucket}/clinical-data-etl-indexer"
 
-    val study: DataFrame = getDataframe("study", entry._2).dataFrame
-      .select( cols=
-        $"*",
-        $"study_id" as "study_id_keyword",
-        $"short_name" as "short_name_keyword",
-        $"short_name" as "short_name_ngrams"
-      )
-      .withColumn("short_name", notNullCol($"short_name"))
-      .as("study")
+    val studyNDF = getDataframe("study", dfList)
+      val study: DataFrame = studyNDF.dataFrame
+        .select(
+          $"*",
+          $"study_id" as "study_id_keyword",
+          $"short_name" as "short_name_keyword",
+          $"short_name" as "short_name_ngrams"
+        )
+        .withColumn("short_name", notNullCol($"short_name"))
+        .as("study")
 
-    val broadcastStudies = spark.sparkContext.broadcast(study)
+      val broadcastStudies = spark.sparkContext.broadcast(study)
 
-    Donor.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/donors" )
-    Study.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/studies")
-    File.run(broadcastStudies, entry._2, ontologyDfs, s"$outputPath/files")
+      val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDfs)
+      val inputData = Map(
+        "donor" -> donor,
+        "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
+        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
+        "biospecimenWithSamples" -> biospecimenWithSamples,
+        "file" -> file)
 
-    writeSuccessIndicator(s3Bucket, entry._1, s3Client);
-  });
+      Donor.run(broadcastStudies, dfList, ontologyDfs, s"$outputPath/donors" )
+      Study.run(broadcastStudies, dfList, ontologyDfs, s"$outputPath/studies")
+
+      new FileIndex(study, studyNDF, inputData)(etlConfiguration).run()
+
+      writeSuccessIndicator(s3Bucket, prefix, s3Client);
+  }
 
   spark.stop()
 }

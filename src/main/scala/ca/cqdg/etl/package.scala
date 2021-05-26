@@ -7,14 +7,16 @@ import bio.ferlab.datalake.spark3.loader.LoadType.OverWrite
 package object etl {
 
   val clinical_data: String = "clinical-data"
+  val ontology_input: String = "ontology-input"
   val clinical_data_etl_indexer: String = "clinical-data-etl-indexer"
   val tsv_with_headers = Map("sep" -> "\t", "header" -> "true")
   val tsv_without_headers = Map("sep" -> "\t", "header" -> "false")
 
   val etlConfiguration: Configuration = Configuration(
     storages = List(
-      StorageConf(clinical_data, "s3a://cqdg/clinical-data"),
-      StorageConf(clinical_data_etl_indexer, "s3a://cqdg/clinical-data-etl-indexer")),
+      StorageConf(clinical_data, s"s3a://cqdg/${clinical_data}"),
+      StorageConf(ontology_input, s"s3a://cqdg/${ontology_input}"),
+      StorageConf(clinical_data_etl_indexer, s"s3a://cqdg/${clinical_data_etl_indexer}")),
     sources = List(
       //raw data
       DatasetConf("study_version_metadata", clinical_data, "/*/*/*/study_version_metadata.json", JSON, OverWrite),
@@ -31,15 +33,18 @@ package object etl {
       DatasetConf("study"                 , clinical_data, "/*/*/*/study.tsv"                  , CSV , OverWrite, readoptions = tsv_with_headers),
       DatasetConf("treatment"             , clinical_data, "/*/*/*/treatment.tsv"              , CSV , OverWrite, readoptions = tsv_with_headers),
 
+      DatasetConf("hpo"                   , ontology_input, "/hpo_terms.json.gz"               , JSON, OverWrite),
+      DatasetConf("mondo"                 , ontology_input, "/mondo_terms.json.gz"             , JSON, OverWrite),
+
       //intermediate data
       DatasetConf("donor_diagnosis", clinical_data_etl_indexer, "/donor_diagnosis", PARQUET, OverWrite),
       DatasetConf("donor_families" , clinical_data_etl_indexer, "/donor_families" , PARQUET, OverWrite),
 
 
       //data to index
-      DatasetConf("donors" ,clinical_data_etl_indexer, "/donors" ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date")),
-      DatasetConf("studies",clinical_data_etl_indexer, "/studies",  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date")),
-      DatasetConf("files"  ,clinical_data_etl_indexer, "/files"  ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date"))
+      DatasetConf("donors" , clinical_data_etl_indexer, "/donors" ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date")),
+      DatasetConf("studies", clinical_data_etl_indexer, "/studies",  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date")),
+      DatasetConf("files"  , clinical_data_etl_indexer, "/files"  ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date"))
     )
   )
 }
