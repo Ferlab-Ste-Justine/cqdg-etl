@@ -74,7 +74,7 @@ object EtlUtils {
   }
 
   def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
-             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -98,12 +98,16 @@ object EtlUtils {
 
     val phenotypesPerStudyIdAndDonor = addAncestorsToTerm("phenotype_HPO_code")(phenotypeNDF.dataFrame, ontologies.head._2)
 
-    val treatmentsPerDonorAndStudy: DataFrame = loadTreatments(treatmentNDF.dataFrame as "treatment")
+    val treatmentsPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(treatmentNDF.dataFrame, "treatment")
+    val exposuresPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(exposureNDF.dataFrame, "exposure")
+    val followUpsPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(followUpNDF.dataFrame, "followUp")
+    val familyHistoryPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(familyHistoryNDF.dataFrame, "familyHistory")
+    val familyRelationshipPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(familyRelationshipNDF.dataFrame, "familyRelationship", "submitter_donor_id_1")
 
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
+    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
   def addAncestorsToTerm(dataColName: String)(dataDf: DataFrame, termsDf: DataFrame)
@@ -357,17 +361,16 @@ object EtlUtils {
       ) as "phenotypeGroup"
   }
 
-  def loadTreatments(treatment: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  def loadPerDonorAndStudy(dataFrame: DataFrame, namedAs: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
-    treatment
-      .groupBy($"submitter_donor_id", $"study_id")
+    dataFrame
+      .groupBy(submitterDonorIdColName, "study_id")
       .agg(
         collect_list(
-          struct(treatment.columns.filterNot(List("study_id", "submitter_donor_id").contains(_)).map(col): _*)
-        ) as "treatments_per_donor_per_study"
-      ) as "treatmentGroup"
-
+          struct(dataFrame.columns.filterNot(List(submitterDonorIdColName, "study_id").contains(_)).map(col): _*)
+        ).as(s"${namedAs}s_per_donor_per_study")
+      ).as(namedAs)
   }
 
   object columns {

@@ -19,7 +19,7 @@ object Donor {
             dfList: List[NamedDataFrame],
             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDf)
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 

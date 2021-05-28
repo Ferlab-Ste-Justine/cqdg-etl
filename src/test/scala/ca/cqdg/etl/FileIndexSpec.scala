@@ -146,7 +146,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
 
   "File" should "map hpo terms per file" in {
 
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
     val inputData: Map[String, DataFrame] = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,

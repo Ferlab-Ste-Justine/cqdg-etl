@@ -28,7 +28,7 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
 
   "loadTreatments" should "transform data in expected format" in {
     val treatmentDf = Seq(TreatmentInput()).toDF()
-    val result = EtlUtils.loadTreatments(treatmentDf)
+    val result = EtlUtils.loadPerDonorAndStudy(treatmentDf, "treatment")
 
     result.as[TreatmentOutput].collect().head shouldBe TreatmentOutput()
   }

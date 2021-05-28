@@ -39,27 +39,37 @@ object Study {
       )
   }
 
-  private def computeClinicalDataAvailableForDataFrame(dataFrame: DataFrame, keyName: String)(implicit spark: SparkSession): DataFrame = {
+  private def computeClinicalDataAvailableForDataFrame(dataFrame: DataFrame, keyName: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     dataFrame
       .groupBy($"study_id")
       .agg(
         lit(keyName).as("key"),
-        countDistinct($"submitter_donor_id").as("donors")
+        countDistinct(submitterDonorIdColName).as("donors")
       )
   }
 
-  private def computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  private def computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame, exposuresPerDonorAndStudy: DataFrame, followUpsPerDonorAndStudy: DataFrame, familyHistoryPerDonorAndStudy: DataFrame, familyRelationshipPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
-    val summaryDiagnosis = computeClinicalDataAvailableForDataFrame(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
-    val summaryPhenotype = computeClinicalDataAvailableForDataFrame(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
-    val summaryTreatment = computeClinicalDataAvailableForDataFrame(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
+    val summaryDiagnosis = computeClinicalDataAvailableForDataFrame(diagnosisPerDonorAndStudy, "diagnosis")
+    val summaryPhenotype = computeClinicalDataAvailableForDataFrame(phenotypesPerDonorAndStudy, "phenotype")
+    val summaryTreatment = computeClinicalDataAvailableForDataFrame(treatmentsPerDonorAndStudy, "treatment")
+    val summaryExposure = computeClinicalDataAvailableForDataFrame(exposuresPerDonorAndStudy, "exposure")
+    val summaryFollowUp = computeClinicalDataAvailableForDataFrame(followUpsPerDonorAndStudy, "follow_up")
+    val summaryFamilyHistory = computeClinicalDataAvailableForDataFrame(familyHistoryPerDonorAndStudy, "family_history")
+    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFrame(familyRelationshipPerDonorAndStudy, "family_relationship", "submitter_donor_id_1")
+
+    val columnsToFullJoin = Seq("study_id", "key", "donors");
 
     summaryDiagnosis
-      .join(summaryPhenotype, Seq("study_id", "key", "donors"), "full")
-      .join(summaryTreatment, Seq("study_id", "key", "donors"),"full")
+      .join(summaryPhenotype, columnsToFullJoin, "full")
+      .join(summaryTreatment, columnsToFullJoin,"full")
+      .join(summaryExposure,columnsToFullJoin,"full")
+      .join(summaryFollowUp, columnsToFullJoin,"full")
+      .join(summaryFamilyHistory, columnsToFullJoin,"full")
+      .join(summaryFamilyRelationship, columnsToFullJoin,"full")
       .groupBy($"study_id")
       .agg(
         collect_list(
@@ -76,13 +86,13 @@ object Study {
              dfList: List[NamedDataFrame],
              ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 
     val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
     val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
-    val summaryOfClinicalDataAvailable = computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy)
+    val summaryOfClinicalDataAvailable = computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
       .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
