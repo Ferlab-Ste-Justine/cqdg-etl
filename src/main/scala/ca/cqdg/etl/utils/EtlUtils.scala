@@ -365,10 +365,10 @@ object EtlUtils {
     import spark.implicits._
 
     dataFrame
-      .groupBy(submitterDonorIdColName, "study_id")
+      .groupBy("study_id",submitterDonorIdColName)
       .agg(
         collect_list(
-          struct(dataFrame.columns.filterNot(List(submitterDonorIdColName, "study_id").contains(_)).map(col): _*)
+          struct(dataFrame.columns.filterNot(List("study_id", submitterDonorIdColName).contains(_)).map(col): _*)
         ).as(s"${namedAs}s_per_donor_per_study")
       ).as(namedAs)
   }

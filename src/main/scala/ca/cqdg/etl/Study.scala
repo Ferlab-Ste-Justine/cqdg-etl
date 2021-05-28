@@ -2,6 +2,7 @@ package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
+import ca.cqdg.etl.utils.SummaryUtils
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.catalyst.plans.JoinType
 import org.apache.spark.sql.functions._
@@ -17,90 +18,6 @@ object Study {
     write(build(broadcastStudies, dfList,ontologyDf), outputPath)
   }
 
-  private def prepareDonorPerFile(donor: DataFrame, file: DataFrame): (DataFrame, DataFrame) = {
-    val donorPerFile = donor
-      .join(file, Seq("study_id", "submitter_donor_id"))
-
-    val allDistinctStudies = donorPerFile
-      .select("study_id")
-      .distinct()
-
-    (donorPerFile, allDistinctStudies)
-  }
-
-  private def computeDonorsAndFilesByField(donorPerFile: DataFrame, allDistinctStudies: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    val allDistinctFieldToCompute = donorPerFile
-      .select(fieldName)
-      .distinct()
-
-    val allCombinations = allDistinctStudies.repartition(allDistinctStudies.count().toInt)
-      .crossJoin(allDistinctFieldToCompute.repartition(allDistinctFieldToCompute.count().toInt))
-      // without .repartition(..) => it's infinite loop when write/show this DF
-
-    donorPerFile
-      .join(allCombinations, Seq("study_id", fieldName), "full") // line can be removed if we don't want to count allCombinations
-      .filter(col(fieldName).isNotNull)
-      .groupBy($"study_id", col(fieldName))
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors"),
-        countDistinct($"file_name").as("files")
-      )
-      .groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
-      .agg(
-        collect_list(
-          struct(cols =
-            col(fieldName).as("key"),
-            $"donors",
-            $"files",
-          )
-        ).as(fieldName)
-      )
-  }
-
-  private def computeClinicalDataAvailableForDataFrame(dataFrame: DataFrame, keyName: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    dataFrame
-      .groupBy($"study_id")
-      .agg(
-        lit(keyName).as("key"),
-        countDistinct(submitterDonorIdColName).as("donors")
-      )
-  }
-
-  private def computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame, exposuresPerDonorAndStudy: DataFrame, followUpsPerDonorAndStudy: DataFrame, familyHistoryPerDonorAndStudy: DataFrame, familyRelationshipPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    val summaryDiagnosis = computeClinicalDataAvailableForDataFrame(diagnosisPerDonorAndStudy, "diagnosis")
-    val summaryPhenotype = computeClinicalDataAvailableForDataFrame(phenotypesPerDonorAndStudy, "phenotype")
-    val summaryTreatment = computeClinicalDataAvailableForDataFrame(treatmentsPerDonorAndStudy, "treatment")
-    val summaryExposure = computeClinicalDataAvailableForDataFrame(exposuresPerDonorAndStudy, "exposure")
-    val summaryFollowUp = computeClinicalDataAvailableForDataFrame(followUpsPerDonorAndStudy, "follow_up")
-    val summaryFamilyHistory = computeClinicalDataAvailableForDataFrame(familyHistoryPerDonorAndStudy, "family_history")
-    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFrame(familyRelationshipPerDonorAndStudy, "family_relationship", "submitter_donor_id_1")
-
-    val columnsToFullJoin = Seq("study_id", "key", "donors");
-
-    summaryDiagnosis
-      .join(summaryPhenotype, columnsToFullJoin, "full")
-      .join(summaryTreatment, columnsToFullJoin,"full")
-      .join(summaryExposure,columnsToFullJoin,"full")
-      .join(summaryFollowUp, columnsToFullJoin,"full")
-      .join(summaryFamilyHistory, columnsToFullJoin,"full")
-      .join(summaryFamilyRelationship, columnsToFullJoin,"full")
-      .groupBy($"study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"key",
-            $"donors",
-          )
-        ).as("clinical_data_available")
-      )
-  }
-
   def build(
              broadcastStudies: Broadcast[DataFrame],
              dfList: List[NamedDataFrame],
@@ -110,15 +27,16 @@ object Study {
 
     import spark.implicits._
 
-    val (donorPerFile, allDistinctStudies) = prepareDonorPerFile(donor, file)
-    val summaryByCategory = computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
-    val summaryByStrategy = computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "experimental_strategy").as("summaryByStrategy")
-    val summaryOfClinicalDataAvailable = computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+    val (donorPerFile, allDistinctStudies, _, _) = SummaryUtils.prepareSummaryDataFrames(donor, file)
+    val summaryByCategory = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
+    val summaryByStrategy = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "experimental_strategy").as("summaryByStrategy")
+    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
       .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
       .join(summaryByStrategy, "study_id")
       .join(summaryOfClinicalDataAvailable, "study_id")
+      .filter(col("study_id").isNotNull)
       .groupBy($"study_id")
       .agg(
         collect_list(

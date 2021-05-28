@@ -3,6 +3,7 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils._
 import ca.cqdg.etl.utils.EtlUtils.columns._
+import ca.cqdg.etl.utils.SummaryUtils
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
@@ -19,9 +20,31 @@ object Donor {
             dfList: List[NamedDataFrame],
             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(dfList)(ontologyDf)
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
+
+    val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
+    val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
+    val summaryByStrategy = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "experimental_strategy").as("summaryByStrategy")
+    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+      .as("summaryOfClinicalDataAvailable")
+
+    val summaryGroup = summaryByCategory
+      .join(summaryByStrategy, Seq("study_id","submitter_donor_id"))
+      .join(summaryOfClinicalDataAvailable, Seq("study_id","submitter_donor_id"))
+      .filter(col("study_id").isNotNull)
+      .filter(col("submitter_donor_id").isNotNull)
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"summaryByCategory.data_category",
+            $"summaryByStrategy.experimental_strategy",
+            $"summaryOfClinicalDataAvailable.clinical_data_available",
+          )
+        ).as("summary")
+      ).as("summaryGroup")
 
     val fileWithRenamedColumns = file
       .select( cols =
@@ -56,13 +79,15 @@ object Donor {
 
     val result = donorStudyJoin
       .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
-      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(summaryGroup, Seq("study_id", "submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
-        $"diagnosis_per_donor_per_study" as "diagnoses",
+        $"diagnoses",
         $"phenotypes",
-        $"files_per_donor_per_study" as "files"
+        $"files_per_donor_per_study" as "files",
+        $"summaryGroup.summary"
       )
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
