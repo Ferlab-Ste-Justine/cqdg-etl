@@ -325,7 +325,7 @@ object EtlUtils {
             diagnosisWithTreatmentAndFollowUps.columns.filterNot(List(
               "study_id",
               "submitter_donor_id").contains(_)).map(col): _*)
-        ) as "diagnosis_per_donor_per_study"
+        ) as "diagnoses"
       ) as "diagnosisGroup"
 
     //result.show(1, 0, true)
