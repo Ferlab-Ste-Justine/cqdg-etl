@@ -17,17 +17,37 @@ object Study {
     write(build(broadcastStudies, dfList,ontologyDf), outputPath)
   }
 
-  private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
+  private def prepareDonorPerFile(donor: DataFrame, file: DataFrame): (DataFrame, DataFrame) = {
+    val donorPerFile = donor
+      .join(file, Seq("study_id", "submitter_donor_id"))
+
+    val allDistinctStudies = donorPerFile
+      .select("study_id")
+      .distinct()
+
+    (donorPerFile, allDistinctStudies)
+  }
+
+  private def computeDonorsAndFilesByField(donorPerFile: DataFrame, allDistinctStudies: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
-    donor.as("donor")
-      .join(file.as("file"), Seq("submitter_donor_id", "study_id"))
+    val allDistinctFieldToCompute = donorPerFile
+      .select(fieldName)
+      .distinct()
+
+    val allCombinations = allDistinctStudies.repartition(allDistinctStudies.count().toInt)
+      .crossJoin(allDistinctFieldToCompute.repartition(allDistinctFieldToCompute.count().toInt))
+      // without .repartition(..) => it's infinite loop when write/show this DF
+
+    donorPerFile
+      .join(allCombinations, Seq("study_id", fieldName), "full") // line can be removed if we don't want to count allCombinations
       .filter(col(fieldName).isNotNull)
       .groupBy($"study_id", col(fieldName))
       .agg(
         countDistinct($"submitter_donor_id").as("donors"),
         countDistinct($"file_name").as("files")
-      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
+      )
+      .groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
       .agg(
         collect_list(
           struct(cols =
@@ -90,8 +110,9 @@ object Study {
 
     import spark.implicits._
 
-    val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
-    val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
+    val (donorPerFile, allDistinctStudies) = prepareDonorPerFile(donor, file)
+    val summaryByCategory = computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
+    val summaryByStrategy = computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "experimental_strategy").as("summaryByStrategy")
     val summaryOfClinicalDataAvailable = computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
       .as("summaryOfClinicalDataAvailable")
 
