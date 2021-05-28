@@ -3,6 +3,7 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
 import org.apache.spark.broadcast.Broadcast
+import org.apache.spark.sql.catalyst.plans.JoinType
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
@@ -38,21 +39,35 @@ object Study {
       )
   }
 
-  private def computeDonorsByField(dataFrame: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
+  private def computeClinicalDataAvailableForDataFrame(dataFrame: DataFrame, keyName: String)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     dataFrame
       .groupBy($"study_id")
       .agg(
+        lit(keyName).as("key"),
         countDistinct($"submitter_donor_id").as("donors")
       )
+  }
+
+  private def computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): DataFrame = {
+    import spark.implicits._
+
+    val summaryDiagnosis = computeClinicalDataAvailableForDataFrame(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
+    val summaryPhenotype = computeClinicalDataAvailableForDataFrame(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
+    val summaryTreatment = computeClinicalDataAvailableForDataFrame(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
+
+    summaryDiagnosis
+      .join(summaryPhenotype, Seq("study_id", "key", "donors"), "full")
+      .join(summaryTreatment, Seq("study_id", "key", "donors"),"full")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
-            $"donors"
+            $"key",
+            $"donors",
           )
-        ).as(fieldName)
+        ).as("clinical_data_available")
       )
   }
 
@@ -67,24 +82,19 @@ object Study {
 
     val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
     val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
-    val summaryDiagnosis = computeDonorsByField(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
-    val summaryPhenotype = computeDonorsByField(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
-    val summaryTreatment = computeDonorsByField(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
+    val summaryOfClinicalDataAvailable = computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy)
+      .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
       .join(summaryByStrategy, "study_id")
-      .join(summaryDiagnosis, "study_id")
-      .join(summaryPhenotype, "study_id")
-      .join(summaryTreatment, "study_id")
+      .join(summaryOfClinicalDataAvailable, "study_id")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
-            $"summaryDiagnosis.diagnosis",
-            $"summaryPhenotype.phenotype",
-            $"summaryTreatment.treatment",
+            $"summaryOfClinicalDataAvailable.clinical_data_available",
           )
         ).as("summary")
       ).as("summaryGroup")
