@@ -2,11 +2,11 @@ package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
-import ca.cqdg.etl.utils.SummaryUtils
+import ca.cqdg.etl.utils.{DataAccessUtils, EtlUtils, SummaryUtils}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.catalyst.plans.JoinType
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
+import org.apache.spark.sql.{Column, DataFrame, SaveMode, SparkSession}
 
 object Study {
   def run(
@@ -23,9 +23,11 @@ object Study {
              dfList: List[NamedDataFrame],
              ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
+    val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
+
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id")
 
     val (donorPerFile, allDistinctStudies, _, _) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
@@ -81,12 +83,10 @@ object Study {
       ) as "filesGroup"
 
     val result = broadcastStudies.value
-      .join(donorWithPhenotypesAndDiagnosesPerStudy, $"study.study_id" === $"donorsGroup.study_id", "left")
-      .join(fileWithBiospecimenPerStudy, $"study.study_id" === $"filesGroup.study_id", "left")
-      .join(summaryGroup, $"study.study_id" === $"summaryGroup.study_id", "left")
-      .drop($"donorsGroup.study_id")
-      .drop($"filesGroup.study_id")
-      .drop($"summaryGroup.study_id")
+      .join(donorWithPhenotypesAndDiagnosesPerStudy, Seq("study_id"), "left")
+      .join(fileWithBiospecimenPerStudy, Seq("study_id"), "left")
+      .join(summaryGroup, Seq("study_id"), "left")
+      .join(dataAccessGroup, Seq("study_id"), "left")
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
     //result.printSchema()

@@ -143,14 +143,17 @@ object PreProcessingUtils{
       case _ => throw new RuntimeException(s"Could not find the corresponding schema to the given file ${f.filename}")
     }
 
+    val result = if(enhancedDF.columns.contains("cqdg_hash")) {
     val idServicePayload = enhancedDF.select("cqdg_hash", "cqdg_entity").as[(String, String)].collect().toMap
     val jsonResponse = buildIds(gson.toJson(JavaConverters.mapAsJavaMap(idServicePayload)))
     val cqdgIDsDF = spark.read.json(Seq(jsonResponse).toDS()).toDF("hash", "internal_id")
-    val result = enhancedDF
+      enhancedDF
       .join(cqdgIDsDF, $"cqdg_hash" === $"hash")
       .drop("cqdg_hash", "hash")
       .withColumnRenamed("internal_id", s"${entityType}_cqdg_id")
-
+    } else {
+      enhancedDF
+    }
     result
   }
 

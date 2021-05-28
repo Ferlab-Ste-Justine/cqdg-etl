@@ -3,6 +3,7 @@ package ca.cqdg.etl
 import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf}
 import bio.ferlab.datalake.spark3.etl.ETL
 import ca.cqdg.etl.model.NamedDataFrame
+import ca.cqdg.etl.utils.DataAccessUtils
 import ca.cqdg.etl.utils.EtlUtils.columns._
 import ca.cqdg.etl.utils.EtlUtils.getDataframe
 import org.apache.spark.sql.functions._
@@ -24,9 +25,12 @@ class FileIndex(studyDf: DataFrame,
     val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
     val phenotypesPerDonorAndStudy = data("phenotypesPerDonorAndStudy").as("phenotypeGroup")
     val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
+    val dataAccess = data("dataAccess").as("dataAccess")
     val file = data("file").as("file")
 
     import spark.implicits._
+
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "file", "file_name")
 
     val fileDonors = file
       .join(donor, $"file.submitter_donor_id" === $"donor.submitter_donor_id")
@@ -57,12 +61,14 @@ class FileIndex(studyDf: DataFrame,
       .join(phenotypesPerDonorAndStudy, $"fileWithStudy.study_id" === $"phenotypeGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
       .join(fileDonors, $"fileWithStudy.study_id" === $"fileWithDonors.study_id" && $"fileWithStudy.file_name" === $"fileWithDonors.file_name")
       .join(biospecimenWithSamples, $"fileWithStudy.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
+      .join(dataAccessGroup, Seq("file_name"), "left")
       .select( cols =
         $"fileWithStudy.*",
         $"fileWithDonors.donors",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
-        $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes"
+        $"diagnoses",
+        $"phenotypes",
+        $"dataAccessGroup.data_access" as "data_access_"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")

@@ -73,12 +73,13 @@ object EtlApp extends App {
 
       val broadcastStudies = spark.sparkContext.broadcast(study)
 
-      val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(dfList)(ontologyDfs)
+      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(dfList)(ontologyDfs)
       val inputData = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
         "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
         "biospecimenWithSamples" -> biospecimenWithSamples,
+        "dataAccess" -> dataAccess,
         "file" -> file)
 
       Donor.run(broadcastStudies, dfList, ontologyDfs, s"$outputPath/donors" )

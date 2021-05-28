@@ -74,7 +74,7 @@ object EtlUtils {
   }
 
   def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
-             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -86,6 +86,7 @@ object EtlUtils {
     val fileNDF = getDataframe("file", dfList)
     val biospecimenNDF = getDataframe("biospecimen", dfList)
     val sampleNDF = getDataframe("sampleregistration", dfList)
+    val dataAccessNDF = getDataframe("dataaccess", dfList)
 
     val donor: DataFrame = loadDonors(donorsNDF.dataFrame as "donor",
       familyRelationshipNDF.dataFrame as "familyRelationship",
@@ -107,7 +108,7 @@ object EtlUtils {
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+    (dataAccessNDF.dataFrame, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
   def addAncestorsToTerm(dataColName: String)(dataDf: DataFrame, termsDf: DataFrame)
@@ -387,6 +388,14 @@ object EtlUtils {
     def notNullCol(column: Column, defaultValue: String = DEFAULT_VALUE): Column = {
       when(column.isNotNull, column).otherwise(lit(defaultValue))
     }
+
+    def isNotBlank(col: Column): Column = {
+      col.isNotNull && trim(col) =!= ""
+    }
+
+    def toBoolean(col: Column): Column = when(
+      col.isin("1",1),lit(true)
+    ) otherwise( lit(false))
 
     //TODO: Calculate the real file size - in mb
     val fileSize: Column = when(

@@ -141,7 +141,7 @@ object SummaryUtils {
       .groupBy(columnsToFullJoin.map(col):_*)
       .agg(
         lit(keyName).as("key"),
-        countDistinct("*").as("available")
+        EtlUtils.columns.toBoolean(countDistinct("*")).as("available")
       )
   }
 

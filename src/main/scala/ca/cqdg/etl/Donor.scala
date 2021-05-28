@@ -3,7 +3,7 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils._
 import ca.cqdg.etl.utils.EtlUtils.columns._
-import ca.cqdg.etl.utils.SummaryUtils
+import ca.cqdg.etl.utils.{DataAccessUtils, SummaryUtils}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
@@ -20,9 +20,11 @@ object Donor {
             dfList: List[NamedDataFrame],
             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
+    val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
+
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "donor", "submitter_donor_id")
 
     val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
@@ -82,12 +84,14 @@ object Donor {
       .join(phenotypesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .join(summaryGroup, Seq("study_id", "submitter_donor_id"), "left")
+      .join(dataAccessGroup, Seq("submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
         $"diagnoses",
         $"phenotypes",
         $"files_per_donor_per_study" as "files",
-        $"summaryGroup.summary"
+        $"summaryGroup.summary",
+        $"dataAccessGroup.data_access"
       )
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)
