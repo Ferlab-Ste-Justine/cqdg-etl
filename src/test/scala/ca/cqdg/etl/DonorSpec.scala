@@ -23,7 +23,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 {
   val CLINDATA_BUCKET = "cqdg"
 
-  val s3Credential = new BasicAWSCredentials("minioadmin", "minioadmin")
+  val s3Credential = new BasicAWSCredentials("minio", "minio123")
   val s3Client: AmazonS3 = AmazonS3ClientBuilder
     .standard()
     .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:9000", Regions.US_EAST_1.name()))
@@ -85,13 +85,12 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
     val broadcastDf = EtlUtils.broadcastStudies(readyToProcess.head._2)
     val df = Donor.build(broadcastDf, readyToProcess.head._2, ontologyDfs)
-    val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
-
+    val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").filter($"phenotypes".isNotNull).select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
 
     //Fixme, age at phenotype for same phenotypes should be in a Set
     phenotypesForDonor14 should contain theSameElementsAs Seq(
       PHENOTYPES(
-        `id` = "HP:0000501",
+        `phenotype_id` = "HP:0000501",
         `name` = "Glaucoma",
         `parents` = Seq("Abnormal eye physiology (HP:0012373)"),
         `age_at_phenotype` = 63,
@@ -99,146 +98,146 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
         `is_leaf` = false,
         `is_tagged` = true
       ),
-      PHENOTYPES(
-        `id` = "HP:0100279",
+      /*PHENOTYPES(
+        `phenotype_id` = "HP:0100279",
         `name` = "Ulcerative colitis",
         `parents` = Seq("Chronic colitis (HP:0100281)"),
         `age_at_phenotype` = 56,
         `is_leaf` = true,
         `is_tagged` = true
-      ),
+      ),*/
       PHENOTYPES(
-        `id` = "HP:0012373",
+        `phenotype_id` = "HP:0012373",
         `name` = "Abnormal eye physiology",
         `parents` = Seq("Abnormality of the eye (HP:0000478)"),
         `age_at_phenotype` = 63,
       ),
       PHENOTYPES(
-        `id` = "HP:0000478",
+        `phenotype_id` = "HP:0000478",
         `name` = "Abnormality of the eye",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_phenotype` = 63
       ),
       PHENOTYPES(
-        `id` = "HP:0000118",
+        `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_phenotype` = 63
       ),
       PHENOTYPES(
-        `id` = "HP:0000001",
+        `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
         `age_at_phenotype` = 63
       ),
-      PHENOTYPES(
-        `id` = "HP:0025032",
+      /*PHENOTYPES(
+        `phenotype_id` = "HP:0025032",
         `name` = "Abnormality of digestive system physiology",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0011024",
+        `phenotype_id` = "HP:0011024",
         `name` = "Abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0002583",
+        `phenotype_id` = "HP:0002583",
         `name` = "Colitis",
         `parents` = Seq("Inflammation of the large intestine (HP:0002037)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0002037",
+        `phenotype_id` = "HP:0002037",
         `name` = "Inflammation of the large intestine",
         `parents` = Seq("Abnormal large intestine morphology (HP:0002250)", "Gastrointestinal inflammation (HP:0004386)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0002715",
+        `phenotype_id` = "HP:0002715",
         `name` = "Abnormality of the immune system",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0000001",
+        `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0025031",
+        `phenotype_id` = "HP:0025031",
         `name` = "Abnormality of the digestive system",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0012718",
+        `phenotype_id` = "HP:0012718",
         `name` = "Morphological abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system morphology (HP:0025033)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0004386",
+        `phenotype_id` = "HP:0004386",
         `name` = "Gastrointestinal inflammation",
         `parents` = Seq("Increased inflammatory response (HP:0012649)", "Functional abnormality of the gastrointestinal tract (HP:0012719)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0012649",
+        `phenotype_id` = "HP:0012649",
         `name` = "Increased inflammatory response",
         `parents` = Seq("Abnormal inflammatory response (HP:0012647)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0000118",
+        `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0010978",
+        `phenotype_id` = "HP:0010978",
         `name` = "Abnormality of immune system physiology",
         `parents` = Seq("Abnormality of the immune system (HP:0002715)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0012719",
+        `phenotype_id` = "HP:0012719",
         `name` = "Functional abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system physiology (HP:0025032)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0002250",
+        `phenotype_id` = "HP:0002250",
         `name` = "Abnormal large intestine morphology",
         `parents` = Seq("Abnormal intestine morphology (HP:0002242)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0012647",
+        `phenotype_id` = "HP:0012647",
         `name` = "Abnormal inflammatory response",
         `parents` = Seq("Abnormality of immune system physiology (HP:0010978)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0100281",
+        `phenotype_id` = "HP:0100281",
         `name` = "Chronic colitis",
         `parents` = Seq("Colitis (HP:0002583)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0002242",
+        `phenotype_id` = "HP:0002242",
         `name` = "Abnormal intestine morphology",
         `parents` = Seq("Morphological abnormality of the gastrointestinal tract (HP:0012718)"),
         `age_at_phenotype` = 56
       ),
       PHENOTYPES(
-        `id` = "HP:0025033",
+        `phenotype_id` = "HP:0025033",
         `name` = "Abnormality of digestive system morphology",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_phenotype` = 56
-      )
+      )*/
     )
   }
 }

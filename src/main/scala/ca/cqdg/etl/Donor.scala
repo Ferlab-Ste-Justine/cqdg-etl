@@ -91,7 +91,7 @@ object Donor {
         $"phenotypes",
         $"files_per_donor_per_study" as "files",
         $"summaryGroup.summary",
-        $"dataAccessGroup.data_access"
+        $"dataAccessGroup.data_access_codes"
       )
 
     val studyNDF: NamedDataFrame = getDataframe("study", dfList)

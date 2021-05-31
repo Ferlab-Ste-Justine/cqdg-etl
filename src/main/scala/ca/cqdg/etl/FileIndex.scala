@@ -68,7 +68,7 @@ class FileIndex(studyDf: DataFrame,
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnoses",
         $"phenotypes",
-        $"dataAccessGroup.data_access" as "data_access_"
+        $"dataAccessGroup.data_access_codes" as "data_access_codes"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")

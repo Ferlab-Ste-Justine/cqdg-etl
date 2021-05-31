@@ -24,7 +24,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
   import spark.implicits._
   val CLINDATA_BUCKET = "cqdg"
 
-  val s3Credential = new BasicAWSCredentials("minioadmin", "minioadmin")
+  val s3Credential = new BasicAWSCredentials("minio", "minio123")
   val s3Client: AmazonS3 = AmazonS3ClientBuilder
     .standard()
     .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:9000", Regions.US_EAST_1.name()))
@@ -108,7 +108,8 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       "diagnosisPerDonorAndStudy" -> Seq(DonorDiagnosisOutput(`submitter_donor_id` = "PT00060")).toDF(),
       "phenotypesPerDonorAndStudy" -> Seq(PhenotypeWithHpoOutput(`study_id` = "ST0003", `submitter_donor_id` = "PT00060")).toDF(),
       "biospecimenWithSamples" -> Seq(BiospecimenOutput(`submitter_biospecimen_id` = "BS00001")).toDF(),
-      "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF()
+      "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
+      "dataAccess" -> Seq(DataAccessInput()).toDF(),
     )
 
 
@@ -152,6 +153,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
         "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
         "biospecimenWithSamples" -> biospecimenWithSamples,
+        "dataAccess" -> Seq(DataAccessInput()).toDF(),
         "file" -> file
     )
 
@@ -165,7 +167,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
     //Fixme, age at phenotype for same phenotypes should be in a Set (no duplicates)
     phenotypesTestFile should contain theSameElementsAs Seq(
       PHENOTYPES(
-        `id` = "HP:0001513",
+        `phenotype_id` = "HP:0001513",
         `name` = "Obesity",
         `parents` = Seq("Increased body weight (HP:0004324)"),
         `age_at_phenotype` = 32,
@@ -174,31 +176,31 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
         `is_tagged` = true
       ),
       PHENOTYPES(
-        `id` = "HP:0004324",
+        `phenotype_id` = "HP:0004324",
         `name` = "Increased body weight",
         `parents` = Seq("Abnormality of body weight (HP:0004323)"),
         `age_at_phenotype` = 32,
       ),
       PHENOTYPES(
-        `id` = "HP:0004323",
+        `phenotype_id` = "HP:0004323",
         `name` = "Abnormality of body weight",
         `parents` = Seq("Growth abnormality (HP:0001507)"),
         `age_at_phenotype` = 32,
       ),
       PHENOTYPES(
-        `id` = "HP:0001507",
+        `phenotype_id` = "HP:0001507",
         `name` = "Growth abnormality",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_phenotype` = 32
       ),
       PHENOTYPES(
-        `id` = "HP:0000118",
+        `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_phenotype` = 32
       ),
       PHENOTYPES(
-        `id` = "HP:0000001",
+        `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
         `age_at_phenotype` = 32

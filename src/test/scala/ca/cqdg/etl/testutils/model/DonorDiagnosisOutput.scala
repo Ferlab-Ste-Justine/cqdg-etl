@@ -7,7 +7,7 @@ package ca.cqdg.etl.testutils.model
 
 case class DonorDiagnosisOutput(`submitter_donor_id`: String = "PT00453",
                                 `study_id`: String = "ST0002",
-                                `diagnosis_per_donor_per_study`: List[DONOR_DIAGNOSIS_PER_DONOR_PER_STUDY] = List(DONOR_DIAGNOSIS_PER_DONOR_PER_STUDY()))
+                                `diagnoses`: List[DONOR_DIAGNOSIS_PER_DONOR_PER_STUDY] = List(DONOR_DIAGNOSIS_PER_DONOR_PER_STUDY()))
 
 case class DONOR_DIAGNOSIS_PER_DONOR_PER_STUDY(`submitter_diagnosis_id`: String = "DI00453",
                                                `diagnosis_type`: String = "Clinical",
