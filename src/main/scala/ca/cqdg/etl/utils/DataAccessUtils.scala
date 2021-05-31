@@ -1,7 +1,7 @@
 package ca.cqdg.etl.utils
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions.{col, collect_list, explode, split, struct, trim}
+import org.apache.spark.sql.functions.{col, collect_list, collect_set, explode, split, struct, trim}
 
 object DataAccessUtils {
 
@@ -16,10 +16,8 @@ object DataAccessUtils {
       .filter(EtlUtils.columns.isNotBlank($"access_requirements"))
       .groupBy(entityIdColumnName, "access_limitations")
       .agg(
-        collect_list(
-          struct(cols =
-            trim($"access_requirements").as("key")
-          )
+        collect_set(
+          trim($"access_requirements").as("access_requirements")
         ).as("access_requirements")
       ).groupBy(entityIdColumnName)
       .agg(
