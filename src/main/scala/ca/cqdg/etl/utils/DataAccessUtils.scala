@@ -26,7 +26,7 @@ object DataAccessUtils {
             $"access_limitations",
             $"access_requirements"
           )
-        ).as("data_access")
+        ).as("data_access_codes")
       ).as("dataAccessGroup")
   }
 }
