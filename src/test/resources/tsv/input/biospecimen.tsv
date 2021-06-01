@@ -1,4 +1,1000 @@
-study_id	submitter_donor_id	submitter_biospecimen_id	submitter_diagnosis_id	date_biospecimen_collection	tumor_normal_designation	biospecimen_tissue_source	biospecimen_type	is_cancer	biospecimen_anatomic_location	tumor_histological_type	diagnosis_ICD_term	biospecimen_processing	biospecimen_storage	biospecimen_access
-ST0001	PT00001	BS00001	DI00001	11/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0: Blood		Acute myocardial infarction	Cryopreservation - other	Frozen in -70 freezer	Yes
-ST0001	PT00002	BS00002	DI00002	1/9/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0: Blood	M-9732/3: Multiple myeloma	 Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	Yes
-ST0001	PT00002	BS00003	DI00003	8/24/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0: Blood		 Rheumatic mitral valve diseases	Cryopreservation - other	Frozen in -70 freezer	Yes
+study_id	submitter_donor_id	submitter_biospecimen_id	submitter_diagnosis_id	date_biospecimen_collection	tumor_normal_designation	biospecimen_tissue_source	biospecimen_type	is_cancer	biospecimen_anatomic_location	biospecimen_anatomic_location(term)	tumor_histological_type	tumor_histological_type(term)	biospecimen_processing	biospecimen_storage	biospecimen_access
+ST0003	PT00674	BS00674	DI00674	7/12/2017	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C20	RECTUM	M-8012/3	Large cell carcinoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00650	BS00650	DI00650	1/22/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C34	BRONCHUS AND LUNG	M-8012/3	Large cell carcinoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00659	BS00659	DI00659	9/28/2017	Tumor	Solid tissue	Primary tumour	Yes	C34	BRONCHUS AND LUNG	M-8012/3	Large cell carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00163	BS00163	DI00163	5/7/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8031/3	Giant cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00833	BS00833	DI00833	12/9/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Other	Other	TRUE
+ST0004	PT00848	BS00848	DI00848	6/23/2016	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Other	Other	TRUE
+ST0004	PT00863	BS00863	DI00863	4/28/2015	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00878	BS00878	DI00878	8/14/2016	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00893	BS00893	DI00893	10/7/2018	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Other	Other	TRUE
+ST0004	PT00926	BS00926	DI00926	8/26/2012	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00950	BS00950	DI00950	4/16/2014	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00968	BS00968	DI00968	9/25/2012	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00983	BS00983	DI00983	6/1/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8031/3	Giant cell carcinoma	Fresh	Not Applicable	TRUE
+ST0001	PT00137	BS00137	DI00137	3/1/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8033/3	Sarcomatoid carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00832	BS00832	DI00832	11/21/2013	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Other	Other	TRUE
+ST0004	PT00847	BS00847	DI00847	4/14/2015	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Other	Other	TRUE
+ST0004	PT00862	BS00862	DI00862	4/30/2017	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00877	BS00877	DI00877	7/26/2013	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Other	Other	TRUE
+ST0004	PT00892	BS00892	DI00892	9/16/2013	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00925	BS00925	DI00925	8/22/2018	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00949	BS00949	DI00949	7/12/2016	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Other	Other	TRUE
+ST0004	PT00967	BS00967	DI00967	5/25/2016	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00982	BS00982	DI00982	9/28/2011	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00997	BS00997	DI00997	8/7/2016	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8033/3	Sarcomatoid carcinoma	Other	Other	TRUE
+ST0003	PT00689	BS00689	DI00689	4/5/2016	Tumor	Solid tissue	Primary tumour	Yes	C67	BLADDER	M-8045/3	Combined small cell-adenocarcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00290	BS00290	DI00290	9/8/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8050/2	Papillary carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00358	BS00358	DI00358	5/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8050/2	Papillary carcinoma in situ	Other	Other	TRUE
+ST0001	PT00020	BS00020	DI00020	4/3/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00174	BS00174	DI00174	9/19/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00329	BS00329	DI00329	12/8/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00342	BS00342	DI00342	11/20/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00704	BS00704	DI00704	5/15/2017	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00803	BS00803	DI00803	9/3/2013	Tumor	Solid tissue	Recurrent tumour	Yes	C03	GUM	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed - unbuffered	Other	FALSE
+ST0002	PT00553	BS00553	DI00553	3/15/2020	Tumor	Solid tissue	Primary tumour	Yes	C09.3 	TONSIL	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00632	BS00632	DI00632	4/11/2014	Tumor	Tonsil	Primary tumour - additional new primary	Yes	C09.3 	TONSIL	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00779	BS00779	DI00779	12/21/2016	Tumor	Tonsil	Primary tumour	Yes	C09.3 	TONSIL	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00502	BS00502	DI00502	6/5/2020	Tumor	Solid tissue	Primary tumour	Yes	C15.3	Upper third of esophagus	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00503	BS00503	DI00503	6/2/2020	Tumor	Solid tissue	Primary tumour	Yes	C15.3	Upper third of esophagus	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00746	BS00746	DI00746	12/13/2013	Tumor	Esophagus	Metastatic tumour - additional metastatic	Yes	C15.3	Upper third of esophagus	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed - buffered	Other	FALSE
+ST0003	PT00758	BS00758	DI00758	4/2/2018	Tumor	Esophagus	Primary tumour	Yes	C15.3	Upper third of esophagus	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed - unbuffered	Other	FALSE
+ST0001	PT00030	BS00030	DI00030	9/14/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00056	BS00056	DI00056	9/10/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Other	Other	TRUE
+ST0001	PT00082	BS00082	DI00082	9/22/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00099	BS00099	DI00099	12/4/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00165	BS00165	DI00165	12/6/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00309	BS00309	DI00309	10/1/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00314	BS00314	DI00314	1/1/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Other	Other	TRUE
+ST0001	PT00339	BS00339	DI00339	11/15/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8070/2	Squamous cell carcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00453	BS00453	DI00453	7/31/2020	Tumor	Solid tissue	Primary tumour	Yes	C44.0	Skin of lip, NOS	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00616	BS00616	DI00616	8/11/2020	Tumor	Solid tissue	Primary tumour	Yes	C44.0	Skin of lip, NOS	M-8070/2	Squamous cell carcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00043	BS00043	DI00043	4/23/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8070/3	Squamous cell carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00240	BS00240	DI00240	2/12/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8070/3	Squamous cell carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00815	BS00815	DI00815	5/18/2016	Tumor	Tonsil	Metastatic tumour - metastasis to distant location	Yes	C09.3 	TONSIL	M-8070/6	Squamous cell carcinoma, metastatic, NOS	Formalin fixed - unbuffered	Other	FALSE
+ST0001	PT00073	BS00073	DI00073	6/30/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8070/6	Squamous cell carcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00271	BS00271	DI00271	2/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8070/6	Squamous cell carcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00038	BS00038	DI00038	6/12/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00118	BS00118	DI00118	10/9/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0001	PT00182	BS00182	DI00182	3/2/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00336	BS00336	DI00336	6/3/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00471	BS00471	DI00471	5/6/2020	Tumor	Solid tissue	Metastatic tumour	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00701	BS00701	DI00701	1/23/2019	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00710	BS00710	DI00710	9/7/2019	Tumor	Solid tissue	Primary tumour	Yes	C18	COLON	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00557	BS00557	DI00557	3/22/2020	Tumor	Solid tissue	Primary tumour	Yes	C20	RECTUM	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00698	BS00698	DI00698	12/15/2012	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C20	RECTUM	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00077	BS00077	DI00077	8/29/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00085	BS00085	DI00085	8/18/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C25	PANCREAS	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00635	BS00635	DI00635	3/28/2014	Tumor	Solid tissue	Metastatic tumour	Yes	C25	PANCREAS	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0004	PT00830	BS00830	DI00830	8/19/2014	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0001	PT00057	BS00057	DI00057	3/26/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00067	BS00067	DI00067	5/29/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0001	PT00171	BS00171	DI00171	11/23/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00177	BS00177	DI00177	1/29/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00185	BS00185	DI00185	4/30/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00235	BS00235	DI00235	3/29/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00254	BS00254	DI00254	6/26/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00285	BS00285	DI00285	4/8/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00291	BS00291	DI00291	12/24/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00315	BS00315	DI00315	2/3/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00316	BS00316	DI00316	7/7/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00683	BS00683	DI00683	2/16/2016	Tumor	Bone marrow	Primary tumour	Yes	C42.0	Blood	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0004	PT00826	BS00826	DI00826	4/21/2017	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00829	BS00829	DI00829	2/7/2012	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00836	BS00836	DI00836	11/14/2014	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00837	BS00837	DI00837	8/23/2016	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00838	BS00838	DI00838	8/17/2014	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00839	BS00839	DI00839	7/27/2011	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00840	BS00840	DI00840	10/21/2011	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00841	BS00841	DI00841	8/29/2016	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00844	BS00844	DI00844	11/8/2014	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00845	BS00845	DI00845	3/11/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00851	BS00851	DI00851	5/21/2016	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00852	BS00852	DI00852	9/28/2014	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00853	BS00853	DI00853	11/6/2012	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00854	BS00854	DI00854	2/11/2018	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00855	BS00855	DI00855	12/3/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00856	BS00856	DI00856	3/21/2018	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00859	BS00859	DI00859	9/9/2013	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00860	BS00860	DI00860	3/6/2016	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00867	BS00867	DI00867	3/26/2018	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00868	BS00868	DI00868	1/10/2017	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00869	BS00869	DI00869	3/24/2017	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00870	BS00870	DI00870	5/21/2011	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00871	BS00871	DI00871	12/20/2017	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00874	BS00874	DI00874	7/28/2016	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00875	BS00875	DI00875	11/21/2011	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00882	BS00882	DI00882	9/30/2012	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00883	BS00883	DI00883	11/5/2011	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00884	BS00884	DI00884	4/20/2014	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00885	BS00885	DI00885	9/18/2014	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00886	BS00886	DI00886	8/28/2018	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00889	BS00889	DI00889	12/12/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00890	BS00890	DI00890	7/5/2017	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00896	BS00896	DI00896	6/17/2017	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00897	BS00897	DI00897	6/3/2015	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00898	BS00898	DI00898	7/29/2017	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00899	BS00899	DI00899	8/31/2018	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00900	BS00900	DI00900	2/28/2017	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00901	BS00901	DI00901	12/12/2011	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00903	BS00903	DI00903	9/29/2016	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00904	BS00904	DI00904	3/19/2013	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00905	BS00905	DI00905	8/21/2014	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00906	BS00906	DI00906	8/1/2011	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00907	BS00907	DI00907	9/9/2016	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00908	BS00908	DI00908	1/12/2018	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00914	BS00914	DI00914	6/6/2013	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00915	BS00915	DI00915	11/13/2011	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00916	BS00916	DI00916	3/26/2011	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00917	BS00917	DI00917	5/21/2013	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00918	BS00918	DI00918	1/18/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00919	BS00919	DI00919	4/6/2018	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00922	BS00922	DI00922	5/5/2014	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00923	BS00923	DI00923	8/24/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00929	BS00929	DI00929	12/17/2012	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00930	BS00930	DI00930	2/19/2013	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00931	BS00931	DI00931	12/26/2018	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00932	BS00932	DI00932	11/2/2014	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00933	BS00933	DI00933	9/19/2015	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00934	BS00934	DI00934	8/8/2018	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00936	BS00936	DI00936	7/27/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00937	BS00937	DI00937	5/29/2017	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00939	BS00939	DI00939	6/18/2015	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00940	BS00940	DI00940	8/28/2011	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00941	BS00941	DI00941	2/12/2018	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00942	BS00942	DI00942	12/31/2014	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00943	BS00943	DI00943	9/13/2012	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00946	BS00946	DI00946	7/26/2018	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00953	BS00953	DI00953	5/31/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00954	BS00954	DI00954	4/19/2017	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00955	BS00955	DI00955	1/18/2016	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00956	BS00956	DI00956	7/19/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00957	BS00957	DI00957	4/9/2017	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00958	BS00958	DI00958	11/8/2013	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00960	BS00960	DI00960	6/7/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00961	BS00961	DI00961	9/21/2018	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00964	BS00964	DI00964	1/16/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00965	BS00965	DI00965	2/7/2017	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00971	BS00971	DI00971	8/4/2015	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00972	BS00972	DI00972	6/30/2013	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00973	BS00973	DI00973	8/9/2012	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00974	BS00974	DI00974	9/3/2014	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00976	BS00976	DI00976	7/14/2013	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00980	BS00980	DI00980	1/3/2014	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00986	BS00986	DI00986	8/22/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00987	BS00987	DI00987	9/23/2016	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00988	BS00988	DI00988	2/26/2018	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00989	BS00989	DI00989	4/28/2013	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Other	Other	TRUE
+ST0004	PT00990	BS00990	DI00990	4/24/2018	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00991	BS00991	DI00991	6/26/2017	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00995	BS00995	DI00995	1/11/2014	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00998	BS00998	DI00998	5/20/2014	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00999	BS00999	DI00999	3/17/2018	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/2	Adenocarcinoma in situ, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0001	PT00109	BS00109	DI00109	9/17/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8140/3	Adenocarcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00157	BS00157	DI00157	10/6/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8140/3	Adenocarcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00764	BS00764	DI00764	1/13/2017	Tumor	Solid tissue	Recurrent tumour	Yes	C34	BRONCHUS AND LUNG	M-8140/3	Adenocarcinoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00087	BS00087	DI00087	11/9/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00132	BS00132	DI00132	8/27/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00263	BS00263	DI00263	1/20/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C18	COLON	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00428	BS00428	DI00428	7/12/2020	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C25	PANCREAS	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0004	PT00881	BS00881	DI00881	4/4/2017	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C40	BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00994	BS00994	DI00994	3/3/2015	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C40	BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00866	BS00866	DI00866	11/28/2014	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00947	BS00947	DI00947	8/16/2018	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00975	BS00975	DI00975	5/6/2012	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0001	PT00060	BS00060	DI00060	5/10/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00093	BS00093	DI00093	8/22/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00146	BS00146	DI00146	4/2/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00152	BS00152	DI00152	11/14/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00214	BS00214	DI00214	8/26/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00369	BS00369	DI00369	11/1/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00831	BS00831	DI00831	5/7/2016	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00835	BS00835	DI00835	1/21/2019	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00846	BS00846	DI00846	1/8/2015	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00850	BS00850	DI00850	3/23/2013	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00861	BS00861	DI00861	5/14/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00865	BS00865	DI00865	1/4/2019	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00876	BS00876	DI00876	7/4/2015	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00880	BS00880	DI00880	8/26/2016	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00891	BS00891	DI00891	6/26/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00895	BS00895	DI00895	11/5/2014	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00909	BS00909	DI00909	5/21/2015	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00910	BS00910	DI00910	5/10/2015	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00911	BS00911	DI00911	10/10/2016	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00912	BS00912	DI00912	7/13/2014	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00913	BS00913	DI00913	1/9/2014	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00924	BS00924	DI00924	9/4/2018	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Fresh	Not Applicable	TRUE
+ST0004	PT00928	BS00928	DI00928	3/9/2019	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00938	BS00938	DI00938	7/28/2016	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00948	BS00948	DI00948	8/21/2015	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00952	BS00952	DI00952	6/7/2013	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00966	BS00966	DI00966	7/2/2017	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00970	BS00970	DI00970	11/19/2015	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00979	BS00979	DI00979	6/11/2014	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00981	BS00981	DI00981	4/12/2015	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0004	PT00985	BS00985	DI00985	2/13/2012	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00996	BS00996	DI00996	12/15/2011	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8140/6	Adenocarcinoma, metastatic, NOS	Other	Other	TRUE
+ST0001	PT00168	BS00168	DI00168	3/28/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C34	BRONCHUS AND LUNG	M-8140/6	Adenocarcinoma, metastatic, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00858	BS00858	DI00858	6/5/2011	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0001	PT00022	BS00022	DI00022	11/18/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8202/0	Microcystic adenoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00827	BS00827	DI00827	10/24/2012	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00828	BS00828	DI00828	2/23/2018	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00842	BS00842	DI00842	12/6/2016	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00843	BS00843	DI00843	11/6/2014	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0004	PT00857	BS00857	DI00857	3/22/2015	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00872	BS00872	DI00872	10/8/2015	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00873	BS00873	DI00873	1/18/2012	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00887	BS00887	DI00887	10/17/2012	Tumor	Solid tissue	Metastatic tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00888	BS00888	DI00888	2/16/2018	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00902	BS00902	DI00902	12/14/2013	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00920	BS00920	DI00920	1/17/2018	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00921	BS00921	DI00921	11/17/2018	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00935	BS00935	DI00935	1/17/2014	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0004	PT00944	BS00944	DI00944	1/10/2019	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0004	PT00945	BS00945	DI00945	9/21/2013	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00959	BS00959	DI00959	3/5/2016	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0004	PT00962	BS00962	DI00962	7/26/2018	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00963	BS00963	DI00963	3/2/2014	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00977	BS00977	DI00977	9/10/2015	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00978	BS00978	DI00978	7/10/2012	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00992	BS00992	DI00992	3/21/2012	Tumor	Solid tissue	Recurrent tumour	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Fresh	Not Applicable	TRUE
+ST0004	PT00993	BS00993	DI00993	8/23/2015	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8202/0	Microcystic adenoma	Other	Other	TRUE
+ST0001	PT00009	BS00009	DI00009	10/8/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8211/3	Tubular carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00023	BS00023	DI00023	11/30/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8211/3	Tubular carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00064	BS00064	DI00064	3/9/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8211/3	Tubular carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00370	BS00370	DI00370	12/10/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8211/3	Tubular carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00615	BS00615	DI00615	6/8/2020	Tumor	Blood derived	Normal	Yes	C42.0	Blood	M-8211/3	Tubular carcinoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00012	BS00012	DI00012	4/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8246/3	Neuroendocrine carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00096	BS00096	DI00096	11/4/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8246/3	Neuroendocrine carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00124	BS00124	DI00124	11/28/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8246/3	Neuroendocrine carcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00653	BS00653	DI00653	9/26/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C16.3	STOMACH	M-8260/3	Papillary adenocarcinoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00686	BS00686	DI00686	2/12/2015	Tumor	Solid tissue	Primary tumour	Yes	C16.3	STOMACH	M-8260/3	Papillary adenocarcinoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00812	BS00812	DI00812	9/17/2014	Tumor	Solid tissue	Recurrent tumour	Yes	C16.3	STOMACH	M-8260/3	Papillary adenocarcinoma, NOS	Formalin fixed - unbuffered	Other	FALSE
+ST0001	PT00115	BS00115	DI00115	8/14/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary adenocarcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00201	BS00201	DI00201	11/11/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary adenocarcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00223	BS00223	DI00223	3/10/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary adenocarcinoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00262	BS00262	DI00262	1/22/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary carcinoma of thyroid	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00278	BS00278	DI00278	9/5/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary carcinoma of thyroid	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00303	BS00303	DI00303	11/14/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary carcinoma of thyroid	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00371	BS00371	DI00371	9/30/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary carcinoma of thyroid	Other	Other	TRUE
+ST0001	PT00032	BS00032	DI00032	1/19/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8260/3	Papillary carcinoma of thyroid	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00527	BS00527	DI00527	5/4/2020	Tumor	Solid tissue	Primary tumour	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00656	BS00656	DI00656	8/14/2016	Tumor	Solid tissue	Primary tumour	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00692	BS00692	DI00692	1/4/2020	Tumor	Solid tissue	Metastatic tumour	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00776	BS00776	DI00776	6/20/2016	Tumor	Solid tissue	Primary tumour	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00782	BS00782	DI00782	9/15/2014	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00806	BS00806	DI00806	1/18/2014	Tumor	Solid tissue	Metastatic tumour	Yes	C73.3	THYROID GLAND	M-8260/3	Papillary carcinoma of thyroid	Formalin fixed - unbuffered	Other	FALSE
+ST0001	PT00075	BS00075	DI00075	7/17/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8290/3	Hurthle cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00144	BS00144	DI00144	6/8/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8290/3	Hurthle cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00206	BS00206	DI00206	12/12/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8290/3	Hurthle cell carcinoma	Other	Other	TRUE
+ST0002	PT00397	BS00397	DI00397	3/30/2020	Tumor	Solid tissue	Primary tumour	Yes	C22.0	Liver	M-8335/3	Follicular carcinoma, minimally invasive	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00139	BS00139	DI00139	1/10/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8335/3	Follicular carcinoma, minimally invasive	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00752	BS00752	DI00752	7/6/2016	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C73.3	THYROID GLAND	M-8335/3	Follicular carcinoma, minimally invasive	Formalin fixed - buffered	Other	FALSE
+ST0001	PT00121	BS00121	DI00121	10/26/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8347/3	Mixed medullary-papillary carcinoma	Other	Other	TRUE
+ST0003	PT00737	BS00737	DI00737	10/27/2018	Tumor	Solid tissue	Primary tumour	Yes	C22.0	Liver	M-8480/3	Mucinous carcinoma	Formalin fixed - buffered	Other	FALSE
+ST0001	PT00123	BS00123	DI00123	12/22/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8480/3	Mucinous carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00668	BS00668	DI00668	5/27/2016	Tumor	Solid tissue	Recurrent tumour	Yes	C23	GALLBLADDER	M-8480/3	Mucinous carcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00283	BS00283	DI00283	10/31/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8480/3	Mucinous carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00341	BS00341	DI00341	2/15/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8480/3	Mucinous carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00353	BS00353	DI00353	4/27/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8480/3	Mucinous carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00849	BS00849	DI00849	6/23/2018	Tumor	Solid tissue	Metastatic tumour - metastasis to distant location	Yes	C41.4	Pelvic bone	M-8490/3	Signet ring cell adenocarcinoma	Fresh	Not Applicable	TRUE
+ST0001	PT00190	BS00190	DI00190	9/21/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8490/3	Signet ring cell adenocarcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00834	BS00834	DI00834	9/10/2016	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Formalin fixed & paraffin embedded	Paraffin block	TRUE
+ST0004	PT00864	BS00864	DI00864	2/2/2018	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0004	PT00879	BS00879	DI00879	6/22/2011	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0004	PT00894	BS00894	DI00894	4/7/2016	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0004	PT00927	BS00927	DI00927	1/17/2012	Tumor	Solid tissue	Primary tumour - adjacent to normal	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0004	PT00951	BS00951	DI00951	8/20/2013	Tumor	Solid tissue	Primary tumour	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0004	PT00969	BS00969	DI00969	11/30/2015	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Fresh	Not Applicable	TRUE
+ST0004	PT00984	BS00984	DI00984	4/11/2014	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C61	PROSTATE GLAND	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0001	PT00180	BS00180	DI00180	8/1/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8490/3	Signet ring cell adenocarcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00192	BS00192	DI00192	7/15/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8490/3	Signet ring cell adenocarcinoma	Other	Other	TRUE
+ST0001	PT00237	BS00237	DI00237	1/5/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C23	GALLBLADDER	M-8490/3	Signet ring cell adenocarcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00547	BS00547	DI00547	5/21/2020	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C23	GALLBLADDER	M-8490/3	Signet ring cell adenocarcinoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00564	BS00564	DI00564	7/30/2020	Tumor	Solid tissue	Primary tumour	Yes	C23	GALLBLADDER	M-8490/3	Signet ring cell adenocarcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00035	BS00035	DI00035	10/24/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00062	BS00062	DI00062	7/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Other	Other	TRUE
+ST0001	PT00066	BS00066	DI00066	10/22/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00068	BS00068	DI00068	12/5/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00162	BS00162	DI00162	12/11/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00169	BS00169	DI00169	8/8/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Other	Other	TRUE
+ST0001	PT00172	BS00172	DI00172	11/24/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00209	BS00209	DI00209	7/14/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00238	BS00238	DI00238	7/4/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Other	Other	TRUE
+ST0001	PT00284	BS00284	DI00284	3/5/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8522/3	Infiltrating duct and lobular carcinoma in situ	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00207	BS00207	DI00207	7/21/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8550/3	Acinar cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00213	BS00213	DI00213	6/7/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8550/3	Acinar cell carcinoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00671	BS00671	DI00671	8/6/2019	Tumor	Solid tissue	Metastatic tumour	Yes	C20	RECTUM	M-8560/3	Adenosquamous carcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00665	BS00665	DI00665	11/17/2013	Tumor	Solid tissue	Recurrent tumour	Yes	C67	BLADDER	M-8560/3	Adenosquamous carcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00644	BS00644	DI00644	7/17/2013	Tumor	Solid tissue	Primary tumour	Yes	C67	BLADDER	M-8560/3	Mixed adenocarcinoma and squamous cell carcinoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00722	BS00722	DI00722	5/7/2014	Tumor	Skin	Primary tumour	Yes	C44.3	SKIN	M-8720/3	Melanoma in situ	Other	Other	FALSE
+ST0003	PT00794	BS00794	DI00794	9/7/2018	Tumor	Skin	Primary tumour	Yes	C44.3	SKIN	M-8720/3	Melanoma in situ	Other	Other	FALSE
+ST0001	PT00041	BS00041	DI00041	12/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8971/3	Pancreatoblastoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00265	BS00265	DI00265	1/21/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-8971/3	Pancreatoblastoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00580	BS00580	DI00580	3/27/2020	Tumor	Solid tissue	Primary tumour - additional new primary	Yes	C40.2	Femur	M-9180/3	Osteosarcoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00716	BS00716	DI00716	3/2/2019	Tumor	Bone	Recurrent tumour	Yes	C40.2	Femur	M-9180/3	Osteosarcoma, NOS	Other	Other	FALSE
+ST0003	PT00728	BS00728	DI00728	7/30/2015	Tumor	Bone	Primary tumour	Yes	C40.2	Tibia	M-9180/3	Osteosarcoma, NOS	Formalin fixed - unbuffered	Other	FALSE
+ST0003	PT00761	BS00761	DI00761	11/27/2012	Tumor	Bone	Recurrent tumour	Yes	C40.2	Tibia	M-9180/3	Osteosarcoma, NOS	Other	Other	FALSE
+ST0002	PT00384	BS00384	DI00384	8/30/2020	Tumor	Solid tissue	Primary tumour	Yes	C41.4	Pelvic bone	M-9180/3	Osteosarcoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00528	BS00528	DI00528	7/27/2020	Tumor	Solid tissue	Primary tumour	Yes	C40.2	Femur	M-9182/3	Osteofibrosarcoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00767	BS00767	DI00767	2/8/2016	Tumor	Bone	Primary tumour	Yes	C40.2	Tibia	M-9182/3	Osteofibrosarcoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00788	BS00788	DI00788	9/24/2017	Tumor	Bone	Metastatic tumour	Yes	C41.2	Vertebra	M-9182/3	Osteofibrosarcoma	Other	Other	FALSE
+ST0003	PT00785	BS00785	DI00785	8/17/2020	Tumor	Bone	Metastatic tumour 	Yes	C41.4	Pelvic bone	M-9182/3	Osteofibrosarcoma	Other	Other	FALSE
+ST0003	PT00825	BS00825	DI00825	6/7/2019	Tumor	Bone	Primary tumour	Yes	C40.2	Knee joint, NOS	M-9186/3	Central osteosarcoma	Other	Other	FALSE
+ST0003	PT00809	BS00809	DI00809	12/22/2012	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C40.2	Tibia	M-9186/3	Central osteosarcoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00824	BS00824	DI00824	7/31/2019	Tumor	Bone	Primary tumour	Yes	C40.2	Tibia	M-9186/3	Central osteosarcoma	Other	Other	FALSE
+ST0003	PT00773	BS00773	DI00773	3/31/2018	Tumor	Cerebrospinal fluid	Primary tumour	Yes	C41.2	Spinal column	M-9350/1	Craniopharyngioma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00800	BS00800	DI00800	8/21/2014	Tumor	Cerebrospinal fluid	Recurrent tumour	Yes	C41.2	Spinal column	M-9350/1	Craniopharyngioma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0001	PT00036	BS00036	DI00036	9/6/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9382/3	Anaplastic oligoastrocytoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00436	BS00436	DI00436	5/8/2020	Tumor	Solid tissue	Metastatic tumour - additional metastatic	Yes	C71	BRAIN	M-9382/3	Anaplastic oligoastrocytoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00743	BS00743	DI00743	9/8/2013	Tumor	Solid tissue	Metastatic tumour	Yes	C25	PANCREAS	M-9382/3        	Mixed gliomas	Formalin fixed - buffered	Other	FALSE
+ST0003	PT00638	BS00638	DI00638	11/22/2014	Tumor	Cerebrospinal fluid	Primary tumour	Yes	C41.2	Spinal column	M-9382/3        	Mixed gliomas	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00695	BS00695	DI00695	12/7/2018	Tumor	Cerebrospinal fluid	Metastatic tumour	Yes	C41.2	Spinal column	M-9382/3        	Mixed gliomas	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00770	BS00770	DI00770	2/25/2017	Tumor	Cerebrospinal fluid	Metastatic tumour	Yes	C41.2	Spinal column	M-9382/3        	Mixed gliomas	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00116	BS00116	DI00116	7/31/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9383/1	Subependymal astrocytoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00204	BS00204	DI00204	12/15/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9391/3	Ependymoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00821	BS00821	DI00821	5/3/2020	Tumor	Cerebrospinal fluid	Metastatic tumour	Yes	C41.2	Spinal column	M-9440/3	Glioblastoma, NOS	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0001	PT00004	BS00004	DI00004	6/14/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9440/3	Glioblastoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00318	BS00318	DI00318	2/2/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9440/3	Glioblastoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00438	BS00438	DI00438	2/6/2020	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C71	BRAIN	M-9440/3	Glioblastoma, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00264	BS00264	DI00264	9/15/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9470/3	Medulloblastoma	Other	Other	TRUE
+ST0002	PT00599	BS00599	DI00599	4/1/2020	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C71	BRAIN	M-9470/3	Medulloblastoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00610	BS00610	DI00610	8/30/2020	Tumor	Solid tissue	Primary tumour	Yes	C71	BRAIN	M-9470/3	Medulloblastoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00133	BS00133	DI00133	9/12/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9530/0	Meningioma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00677	BS00677	DI00677	7/6/2015	Tumor	Cerebrospinal fluid	Recurrent tumour	Yes	C41.2	Spinal column	M-9539/3	Meningeal sarcomatosis	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00203	BS00203	DI00203	11/22/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9539/3	Meningeal sarcomatosis	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00253	BS00253	DI00253	9/4/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9596/3	Composite Hodgkin and non-Hodgkin lymphoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00581	BS00581	DI00581	3/6/2020	Tumor	Solid tissue	Primary tumour	Yes	C42.0	Blood	M-9596/3	Composite Hodgkin and non-Hodgkin lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00227	BS00227	DI00227	5/11/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9650/3	Hodgkin lymphoma, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00540	BS00540	DI00540	7/6/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9650/3	Hodgkin lymphoma, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00565	BS00565	DI00565	5/5/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9650/3	Hodgkin lymphoma, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00031	BS00031	DI00031	9/13/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9652/3	Classical Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00383	BS00383	DI00383	8/16/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9652/3	Classical Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0002	PT00399	BS00399	DI00399	2/14/2020	Tumor	Blood derived	Recurrent tumour	Yes	C42.0	Blood	M-9652/3	Classical Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00337	BS00337	DI00337	8/7/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9652/3	Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00525	BS00525	DI00525	8/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood	M-9652/3	Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00587	BS00587	DI00587	3/18/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9652/3	Hodgkin lymphoma, mixed cellularity, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00153	BS00153	DI00153	10/5/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9659/3	Hodgkin lymphoma, lymphocyte predominance, nodular	Other	Other	TRUE
+ST0001	PT00355	BS00355	DI00355	6/4/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9659/3	Hodgkin lymphoma, lymphocyte predominance, nodular	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00749	BS00749	DI00749	12/26/2012	Tumor	Cerebrospinal fluid	Metastatic tumour - additional metastatic	Yes	C41.2	Spinal column	M-9659/3	Hodgkin paragranuloma, nodular	Formalin fixed - buffered	Other	FALSE
+ST0003	PT00797	BS00797	DI00797	3/31/2013	Tumor	Blood derived - peripheral blood	Primary tumour	Yes	C42.0	Blood	M-9663/3	Hodgkin disease, nodular sclerosis, NOS	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00707	BS00707	DI00707	4/9/2016	Tumor	Tonsil	Primary tumour	Yes	C09.3 	TONSIL	M-9719/3	T/NK-cell lymphoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00321	BS00321	DI00321	3/17/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00352	BS00352	DI00352	6/23/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00386	BS00386	DI00386	3/2/2020	Normal	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00408	BS00408	DI00408	6/20/2020	Tumor	Blood derived	Primary tumour - additional new primary	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00413	BS00413	DI00413	2/12/2020	Tumor	Blood derived	Metastatic tumour - metastasis to distant location	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00427	BS00427	DI00427	7/1/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00431	BS00431	DI00431	7/14/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00435	BS00435	DI00435	8/9/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00447	BS00447	DI00447	4/20/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00457	BS00457	DI00457	5/12/2020	Tumor	Blood derived	Primary tumour - adjacent to normal	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00462	BS00462	DI00462	7/20/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00493	BS00493	DI00493	7/5/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00505	BS00505	DI00505	7/10/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00515	BS00515	DI00515	4/4/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00526	BS00526	DI00526	4/24/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00586	BS00586	DI00586	6/21/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00593	BS00593	DI00593	3/26/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00619	BS00619	DI00619	6/10/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00680	BS00680	DI00680	4/24/2019	Tumor	Buffy coat	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00818	BS00818	DI00818	2/2/2016	Tumor	Blood derived - peripheral blood	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00641	BS00641	DI00641	5/4/2016	Tumor	Blood derived - bone marrow	Primary tumour	Yes	C42.1	Bone marrow	M-9719/3	T/NK-cell lymphoma	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00740	BS00740	DI00740	3/6/2015	Tumor	Solid tissue	Metastatic tumour	Yes	C71	BRAIN	M-9719/3	T/NK-cell lymphoma	Formalin fixed - buffered	Other	FALSE
+ST0003	PT00755	BS00755	DI00755	2/25/2016	Tumor	Cerebrospinal fluid	Primary tumour	Yes	C41.2	Spinal column	M-9719/3	T/NK-cell lymphoma	Formalin fixed - unbuffered	Other	FALSE
+ST0002	PT00444	BS00444	DI00444	3/19/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00530	BS00530	DI00530	5/1/2020	Tumor	Blood derived	Primary tumour - additional new primary	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00559	BS00559	DI00559	4/3/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00573	BS00573	DI00573	6/18/2020	Tumor	Solid tissue	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00625	BS00625	DI00625	8/19/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00626	BS00626	DI00626	4/1/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9719/3	T/NK-cell lymphoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00629	BS00629	DI00629	1/9/2015	Tumor	Bone marrow	Recurrent tumour	Yes	C42.1	Bone marrow	M-9719/3	T/NK-cell lymphoma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00713	BS00713	DI00713	11/8/2019	Tumor	Bone	Recurrent tumour	Yes	C40.2	Femur	M-9732/3	Multiple myeloma	Other	Other	FALSE
+ST0001	PT00002	BS00002	DI00002	1/9/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00039	BS00039	DI00039	10/11/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00081	BS00081	DI00081	5/1/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00084	BS00084	DI00084	12/19/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00134	BS00134	DI00134	8/19/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00143	BS00143	DI00143	11/5/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00155	BS00155	DI00155	1/26/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00158	BS00158	DI00158	12/13/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00212	BS00212	DI00212	7/6/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00221	BS00221	DI00221	2/1/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00260	BS00260	DI00260	5/26/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00330	BS00330	DI00330	9/25/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0003	PT00791	BS00791	DI00791	7/26/2017	Tumor	Plasma	Primary tumour	Yes	C42.0	Blood	M-9732/3	Multiple myeloma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00647	BS00647	DI00647	12/23/2012	Tumor	Bone marrow	Metastatic tumour - metastasis to distant location	Yes	C42.1	Bone marrow	M-9732/3	Multiple myeloma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00734	BS00734	DI00734	11/14/2017	Tumor	Bone marrow	Primary tumour	Yes	C42.1	Bone marrow	M-9732/3	Multiple myeloma	Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0002	PT00403	BS00403	DI00403	5/9/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00488	BS00488	DI00488	5/17/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00591	BS00591	DI00591	8/3/2020	Tumor	Blood derived	Primary tumour - additional new primary	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00719	BS00719	DI00719	12/7/2014	Tumor	Plasma	Recurrent tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00392	BS00392	DI00392	5/28/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00461	BS00461	DI00461	5/27/2020	Tumor	Blood derived	Metastatic tumour - metastasis to distant location	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00521	BS00521	DI00521	7/25/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00534	BS00534	DI00534	6/8/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00541	BS00541	DI00541	7/26/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00577	BS00577	DI00577	8/23/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00601	BS00601	DI00601	4/10/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Malignant mast cell tumor	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00731	BS00731	DI00731	5/31/2018	Tumor	Lymph node	Primary tumour	Yes	C77.3	LYMPH NODES	M-9740/3	Malignant mast cell tumor	Formalin fixed - buffered	Other	FALSE
+ST0002	PT00410	BS00410	DI00410	6/24/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Mast cell sarcoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00520	BS00520	DI00520	3/5/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Mast cell sarcoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00592	BS00592	DI00592	4/29/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9740/3	Mast cell sarcoma	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00725	BS00725	DI00725	9/2/2019	Tumor	Solid tissue	Recurrent tumour	Yes	C42.0	Blood	M-9740/3	Mast cell sarcoma	Formalin fixed - unbuffered	Other	FALSE
+ST0001	PT00183	BS00183	DI00183	2/9/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9820/3	Aleukemic lymphatic leukemia	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00176	BS00176	DI00176	7/12/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00324	BS00324	DI00324	10/3/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00008	BS00008	DI00008	8/7/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Other	Other	TRUE
+ST0002	PT00391	BS00391	DI00391	6/1/2020	Tumor	Blood derived	Primary tumour - additional new primary	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00472	BS00472	DI00472	7/16/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00563	BS00563	DI00563	3/12/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00567	BS00567	DI00567	5/20/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9820/3	Lymphatic leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00058	BS00058	DI00058	6/16/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9820/3	Subacute lymphatic leukemia	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00322	BS00322	DI00322	5/12/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9820/3	Subacute lymphatic leukemia	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00496	BS00496	DI00496	3/13/2020	Tumor	Solid tissue	Metastatic tumour - metastasis local to lymph node	Yes	C18	COLON	M-9860/3	Myeloid leukemia, NOS	Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0001	PT00047	BS00047	DI00047	7/27/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Other	Other	TRUE
+ST0001	PT00261	BS00261	DI00261	10/17/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00298	BS00298	DI00298	12/3/2008	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00381	BS00381	DI00381	7/15/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00415	BS00415	DI00415	7/7/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00423	BS00423	DI00423	3/10/2020	Tumor	Blood derived	Primary tumour - additional new primary	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00425	BS00425	DI00425	2/2/2020	Tumor	Blood derived	Metastatic tumour - metastasis local to lymph node	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00439	BS00439	DI00439	4/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00443	BS00443	DI00443	3/11/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00490	BS00490	DI00490	5/15/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00494	BS00494	DI00494	8/1/2020	Tumor	Blood derived	Metastatic tumour - metastasis to distant location	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00509	BS00509	DI00509	6/25/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00512	BS00512	DI00512	7/29/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00543	BS00543	DI00543	3/7/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00552	BS00552	DI00552	2/11/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00562	BS00562	DI00562	6/27/2020	Tumor	Solid tissue	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00600	BS00600	DI00600	7/5/2020	Tumor	Blood derived	Primary tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00613	BS00613	DI00613	8/15/2020	Tumor	Blood derived	Metastatic tumour	Yes	C42.0	Blood	M-9860/3	Myeloid leukemia, NOS	Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00630	BS00630	DI00630	9/1/2019	Normal	Saliva	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00631	BS00631	DI00631	3/15/2013	Normal	Saliva	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00663	BS00663	DI00663	4/6/2013	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00664	BS00664	DI00664	7/23/2018	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00702	BS00702	DI00702	4/6/2013	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00703	BS00703	DI00703	2/16/2015	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00708	BS00708	DI00708	2/8/2017	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00709	BS00709	DI00709	1/20/2019	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00744	BS00744	DI00744	7/26/2014	Normal	Sputum	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00745	BS00745	DI00745	2/17/2017	Normal	Sputum	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00774	BS00774	DI00774	8/15/2017	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00775	BS00775	DI00775	4/27/2020	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00780	BS00780	DI00780	10/14/2019	Normal	Sputum	Normal		C06.0	Buccal mucosa			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00801	BS00801	DI00801	11/3/2017	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00802	BS00802	DI00802	9/9/2015	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00813	BS00813	DI00813	11/1/2016	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00814	BS00814	DI00814	7/14/2017	Normal	Saliva	Normal		C06.0	Buccal mucosa			Other	Other	FALSE
+ST0003	PT00651	BS00651	DI00651	11/16/2014	Normal	Buccal cell	Normal		C06.0	Internal cheek			Other	Other	FALSE
+ST0003	PT00652	BS00652	DI00652	2/23/2015	Normal	Buccal cell	Normal		C06.0	Internal cheek			Other	Other	FALSE
+ST0003	PT00654	BS00654	DI00654	2/20/2020	Normal	Buccal cell	Normal		C06.0	Internal cheek			Other	Other	FALSE
+ST0003	PT00655	BS00655	DI00655	6/20/2018	Normal	Buccal cell	Normal		C06.0	Internal cheek			Other	Other	FALSE
+ST0003	PT00705	BS00705	DI00705	5/5/2013	Normal	Buccal cell	Normal		C06.0	Internal cheek			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00706	BS00706	DI00706	8/28/2016	Normal	Buccal cell	Normal		C06.0	Internal cheek			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00777	BS00777	DI00777	10/25/2014	Normal	Buccal cell	Normal		C06.0	Internal cheek			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00778	BS00778	DI00778	6/16/2013	Normal	Buccal cell	Normal		C06.0	Internal cheek			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00781	BS00781	DI00781	8/4/2017	Normal	Sputum	Normal		C09.3 	TONSIL			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00487	BS00487	DI00487	7/8/2020	Tumor	Solid tissue	Primary tumour	Yes	C40	BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS			Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0003	PT00662	BS00662	DI00662	2/22/2020	Tumor	Cerebrospinal fluid	Primary tumour	Yes	C41.2	Spinal column			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0001	PT00001	BS00001	DI00001	11/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00003	BS00003	DI00003	8/24/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00005	BS00005	DI00005	6/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00006	BS00006	DI00006	9/11/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00007	BS00007	DI00007	7/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00010	BS00010	DI00010	10/11/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00011	BS00011	DI00011	8/23/2009	Normal	Blood derived - peripheral blood	Normal	Yes	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00013	BS00013	DI00013	8/23/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00014	BS00014	DI00014	3/4/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00015	BS00015	DI00015	10/29/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00016	BS00016	DI00016	4/24/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00017	BS00017	DI00017	9/8/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00018	BS00018	DI00018	11/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00019	BS00019	DI00019	10/31/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00021	BS00021	DI00021	10/12/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00024	BS00024	DI00024	6/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00025	BS00025	DI00025	8/11/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00026	BS00026	DI00026	12/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00027	BS00027	DI00027	10/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00028	BS00028	DI00028	10/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00029	BS00029	DI00029	11/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00033	BS00033	DI00033	9/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00034	BS00034	DI00034	8/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00037	BS00037	DI00037	10/19/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00040	BS00040	DI00040	9/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00042	BS00042	DI00042	6/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00044	BS00044	DI00044	7/26/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00045	BS00045	DI00045	8/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00046	BS00046	DI00046	9/25/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00048	BS00048	DI00048	6/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00049	BS00049	DI00049	8/10/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00050	BS00050	DI00050	9/29/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00051	BS00051	DI00051	5/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00052	BS00052	DI00052	10/26/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00053	BS00053	DI00053	10/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00054	BS00054	DI00054	10/30/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00055	BS00055	DI00055	10/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00059	BS00059	DI00059	8/21/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00061	BS00061	DI00061	12/14/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00063	BS00063	DI00063	8/1/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00065	BS00065	DI00065	11/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00069	BS00069	DI00069	2/24/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00070	BS00070	DI00070	9/9/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00071	BS00071	DI00071	5/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00072	BS00072	DI00072	12/21/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00074	BS00074	DI00074	3/23/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00076	BS00076	DI00076	9/1/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00078	BS00078	DI00078	4/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00079	BS00079	DI00079	6/11/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00080	BS00080	DI00080	10/20/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00083	BS00083	DI00083	11/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00086	BS00086	DI00086	2/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00088	BS00088	DI00088	5/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00089	BS00089	DI00089	2/7/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00090	BS00090	DI00090	8/16/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00091	BS00091	DI00091	9/24/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00092	BS00092	DI00092	7/30/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00094	BS00094	DI00094	12/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00095	BS00095	DI00095	8/17/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00097	BS00097	DI00097	11/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00098	BS00098	DI00098	10/15/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00100	BS00100	DI00100	12/25/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00101	BS00101	DI00101	10/4/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00102	BS00102	DI00102	8/17/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00103	BS00103	DI00103	9/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00104	BS00104	DI00104	6/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00105	BS00105	DI00105	8/16/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00106	BS00106	DI00106	11/9/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00107	BS00107	DI00107	10/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00108	BS00108	DI00108	10/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00110	BS00110	DI00110	11/11/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00111	BS00111	DI00111	1/7/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00112	BS00112	DI00112	10/16/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00113	BS00113	DI00113	7/24/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00114	BS00114	DI00114	9/26/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00117	BS00117	DI00117	9/16/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00119	BS00119	DI00119	8/30/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00120	BS00120	DI00120	8/24/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00122	BS00122	DI00122	8/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00125	BS00125	DI00125	10/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00126	BS00126	DI00126	10/5/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00127	BS00127	DI00127	7/28/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00128	BS00128	DI00128	9/21/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00129	BS00129	DI00129	11/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00130	BS00130	DI00130	7/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00131	BS00131	DI00131	10/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00135	BS00135	DI00135	9/16/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00136	BS00136	DI00136	11/24/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00138	BS00138	DI00138	2/11/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00140	BS00140	DI00140	7/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00141	BS00141	DI00141	12/27/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00142	BS00142	DI00142	8/30/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00145	BS00145	DI00145	7/30/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00147	BS00147	DI00147	2/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00148	BS00148	DI00148	3/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00149	BS00149	DI00149	2/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00150	BS00150	DI00150	12/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00151	BS00151	DI00151	8/4/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00154	BS00154	DI00154	9/17/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00156	BS00156	DI00156	7/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00159	BS00159	DI00159	3/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00160	BS00160	DI00160	12/1/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00161	BS00161	DI00161	4/7/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00164	BS00164	DI00164	9/23/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00166	BS00166	DI00166	10/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00167	BS00167	DI00167	4/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00170	BS00170	DI00170	1/18/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00173	BS00173	DI00173	7/23/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00175	BS00175	DI00175	9/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00178	BS00178	DI00178	12/31/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00179	BS00179	DI00179	8/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00181	BS00181	DI00181	11/2/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00184	BS00184	DI00184	4/15/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00186	BS00186	DI00186	12/17/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00187	BS00187	DI00187	1/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00188	BS00188	DI00188	4/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00189	BS00189	DI00189	3/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00191	BS00191	DI00191	9/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00193	BS00193	DI00193	8/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00194	BS00194	DI00194	2/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00195	BS00195	DI00195	8/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00196	BS00196	DI00196	8/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00197	BS00197	DI00197	12/16/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00198	BS00198	DI00198	6/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00199	BS00199	DI00199	8/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00200	BS00200	DI00200	6/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00202	BS00202	DI00202	12/9/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00205	BS00205	DI00205	4/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00208	BS00208	DI00208	8/11/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00210	BS00210	DI00210	8/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00211	BS00211	DI00211	5/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00215	BS00215	DI00215	6/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00216	BS00216	DI00216	8/3/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00217	BS00217	DI00217	8/31/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00218	BS00218	DI00218	10/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00219	BS00219	DI00219	10/27/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00220	BS00220	DI00220	12/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00222	BS00222	DI00222	7/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00224	BS00224	DI00224	3/8/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00225	BS00225	DI00225	1/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00226	BS00226	DI00226	1/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00228	BS00228	DI00228	5/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00229	BS00229	DI00229	8/26/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00230	BS00230	DI00230	3/15/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00231	BS00231	DI00231	9/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00232	BS00232	DI00232	8/6/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00233	BS00233	DI00233	7/18/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00234	BS00234	DI00234	8/12/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00236	BS00236	DI00236	9/7/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00239	BS00239	DI00239	1/12/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00241	BS00241	DI00241	11/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00242	BS00242	DI00242	3/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00243	BS00243	DI00243	4/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00244	BS00244	DI00244	9/18/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00245	BS00245	DI00245	8/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00246	BS00246	DI00246	8/15/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00247	BS00247	DI00247	7/8/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00248	BS00248	DI00248	8/28/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00249	BS00249	DI00249	4/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00250	BS00250	DI00250	12/5/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00251	BS00251	DI00251	12/30/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00252	BS00252	DI00252	10/23/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00255	BS00255	DI00255	7/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00256	BS00256	DI00256	1/16/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00257	BS00257	DI00257	8/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00258	BS00258	DI00258	12/17/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00259	BS00259	DI00259	7/22/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00266	BS00266	DI00266	11/17/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00267	BS00267	DI00267	8/8/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00268	BS00268	DI00268	3/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00269	BS00269	DI00269	5/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00270	BS00270	DI00270	12/20/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00272	BS00272	DI00272	3/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00273	BS00273	DI00273	3/31/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00274	BS00274	DI00274	7/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00275	BS00275	DI00275	8/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00276	BS00276	DI00276	3/18/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00277	BS00277	DI00277	7/25/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00279	BS00279	DI00279	11/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00280	BS00280	DI00280	4/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00281	BS00281	DI00281	10/18/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00282	BS00282	DI00282	1/23/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00286	BS00286	DI00286	5/13/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00287	BS00287	DI00287	3/30/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00288	BS00288	DI00288	5/24/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00289	BS00289	DI00289	12/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00292	BS00292	DI00292	2/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00293	BS00293	DI00293	7/21/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00294	BS00294	DI00294	5/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00295	BS00295	DI00295	6/27/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00296	BS00296	DI00296	1/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00297	BS00297	DI00297	5/30/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00299	BS00299	DI00299	12/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00300	BS00300	DI00300	5/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00301	BS00301	DI00301	8/6/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00302	BS00302	DI00302	9/15/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00304	BS00304	DI00304	3/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00305	BS00305	DI00305	11/18/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00306	BS00306	DI00306	4/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00307	BS00307	DI00307	11/7/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00308	BS00308	DI00308	9/30/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00310	BS00310	DI00310	10/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00311	BS00311	DI00311	9/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00312	BS00312	DI00312	7/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00313	BS00313	DI00313	10/4/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00317	BS00317	DI00317	12/12/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00319	BS00319	DI00319	1/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00320	BS00320	DI00320	8/12/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00323	BS00323	DI00323	5/23/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00325	BS00325	DI00325	8/15/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00326	BS00326	DI00326	1/3/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00327	BS00327	DI00327	10/28/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00328	BS00328	DI00328	7/31/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00331	BS00331	DI00331	11/4/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00332	BS00332	DI00332	10/21/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00333	BS00333	DI00333	3/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00334	BS00334	DI00334	10/23/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00335	BS00335	DI00335	8/5/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00338	BS00338	DI00338	10/18/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00340	BS00340	DI00340	3/11/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00343	BS00343	DI00343	7/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00344	BS00344	DI00344	6/5/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00345	BS00345	DI00345	5/31/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00346	BS00346	DI00346	6/2/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00347	BS00347	DI00347	12/14/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00348	BS00348	DI00348	11/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00349	BS00349	DI00349	6/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00350	BS00350	DI00350	9/10/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00351	BS00351	DI00351	12/10/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00354	BS00354	DI00354	11/29/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00356	BS00356	DI00356	1/15/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00357	BS00357	DI00357	3/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00359	BS00359	DI00359	12/1/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00360	BS00360	DI00360	8/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00361	BS00361	DI00361	1/17/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00362	BS00362	DI00362	5/25/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00363	BS00363	DI00363	4/9/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00364	BS00364	DI00364	9/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00365	BS00365	DI00365	12/8/2008	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00366	BS00366	DI00366	5/18/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00367	BS00367	DI00367	5/4/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00368	BS00368	DI00368	2/28/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00372	BS00372	DI00372	4/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00373	BS00373	DI00373	1/8/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00374	BS00374	DI00374	1/24/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00375	BS00375	DI00375	10/20/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Other	Other	TRUE
+ST0001	PT00376	BS00376	DI00376	9/29/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0001	PT00377	BS00377	DI00377	2/19/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE
+ST0002	PT00378	BS00378	DI00378	2/21/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00379	BS00379	DI00379	8/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00380	BS00380	DI00380	8/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00382	BS00382	DI00382	8/7/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00385	BS00385	DI00385	2/15/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00387	BS00387	DI00387	6/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00388	BS00388	DI00388	5/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00389	BS00389	DI00389	6/7/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00390	BS00390	DI00390	3/21/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00393	BS00393	DI00393	7/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00394	BS00394	DI00394	6/12/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00395	BS00395	DI00395	2/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00396	BS00396	DI00396	3/16/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00398	BS00398	DI00398	4/9/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00400	BS00400	DI00400	8/31/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00401	BS00401	DI00401	6/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00402	BS00402	DI00402	7/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00404	BS00404	DI00404	6/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00405	BS00405	DI00405	9/1/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00406	BS00406	DI00406	8/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00407	BS00407	DI00407	6/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00409	BS00409	DI00409	8/27/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00411	BS00411	DI00411	3/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00412	BS00412	DI00412	7/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00414	BS00414	DI00414	8/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00416	BS00416	DI00416	5/10/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00417	BS00417	DI00417	6/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00418	BS00418	DI00418	4/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00419	BS00419	DI00419	2/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00420	BS00420	DI00420	3/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00421	BS00421	DI00421	4/8/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00422	BS00422	DI00422	8/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00424	BS00424	DI00424	8/5/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00426	BS00426	DI00426	3/8/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00429	BS00429	DI00429	4/25/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00430	BS00430	DI00430	6/14/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00432	BS00432	DI00432	5/25/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00433	BS00433	DI00433	5/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00434	BS00434	DI00434	9/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00437	BS00437	DI00437	8/20/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00440	BS00440	DI00440	4/15/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00441	BS00441	DI00441	5/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00442	BS00442	DI00442	4/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00445	BS00445	DI00445	4/21/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00446	BS00446	DI00446	6/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00448	BS00448	DI00448	2/16/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00449	BS00449	DI00449	2/1/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00450	BS00450	DI00450	2/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00451	BS00451	DI00451	8/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00452	BS00452	DI00452	2/5/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00454	BS00454	DI00454	2/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00455	BS00455	DI00455	5/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00456	BS00456	DI00456	2/10/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00458	BS00458	DI00458	4/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00459	BS00459	DI00459	3/25/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00460	BS00460	DI00460	4/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00463	BS00463	DI00463	2/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00464	BS00464	DI00464	6/9/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00465	BS00465	DI00465	5/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00466	BS00466	DI00466	4/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00467	BS00467	DI00467	7/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00468	BS00468	DI00468	5/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00469	BS00469	DI00469	4/1/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00470	BS00470	DI00470	4/6/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00473	BS00473	DI00473	2/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00474	BS00474	DI00474	3/9/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00475	BS00475	DI00475	5/14/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00476	BS00476	DI00476	6/16/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00477	BS00477	DI00477	8/12/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00478	BS00478	DI00478	2/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00479	BS00479	DI00479	2/27/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00480	BS00480	DI00480	2/7/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00481	BS00481	DI00481	5/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00482	BS00482	DI00482	8/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00483	BS00483	DI00483	4/30/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00484	BS00484	DI00484	7/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00485	BS00485	DI00485	3/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00486	BS00486	DI00486	3/20/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00489	BS00489	DI00489	8/21/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00491	BS00491	DI00491	4/16/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00492	BS00492	DI00492	6/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00495	BS00495	DI00495	4/12/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00497	BS00497	DI00497	7/13/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00498	BS00498	DI00498	4/10/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00499	BS00499	DI00499	8/15/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00500	BS00500	DI00500	5/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00501	BS00501	DI00501	5/16/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00504	BS00504	DI00504	4/27/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00506	BS00506	DI00506	8/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00507	BS00507	DI00507	6/30/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00508	BS00508	DI00508	5/7/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00510	BS00510	DI00510	7/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00511	BS00511	DI00511	6/15/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00513	BS00513	DI00513	5/30/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00514	BS00514	DI00514	8/6/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00516	BS00516	DI00516	5/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00517	BS00517	DI00517	8/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00518	BS00518	DI00518	2/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00519	BS00519	DI00519	4/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00522	BS00522	DI00522	3/14/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00523	BS00523	DI00523	7/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00524	BS00524	DI00524	6/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00529	BS00529	DI00529	8/8/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00531	BS00531	DI00531	7/21/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00532	BS00532	DI00532	5/31/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00533	BS00533	DI00533	9/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00535	BS00535	DI00535	5/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00536	BS00536	DI00536	8/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00537	BS00537	DI00537	4/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00538	BS00538	DI00538	3/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00539	BS00539	DI00539	4/7/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00542	BS00542	DI00542	2/23/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00544	BS00544	DI00544	2/9/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00545	BS00545	DI00545	2/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00546	BS00546	DI00546	7/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00548	BS00548	DI00548	2/8/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00549	BS00549	DI00549	7/9/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00550	BS00550	DI00550	7/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00551	BS00551	DI00551	6/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00554	BS00554	DI00554	9/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00555	BS00555	DI00555	2/25/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00556	BS00556	DI00556	2/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00558	BS00558	DI00558	6/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00560	BS00560	DI00560	7/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00561	BS00561	DI00561	3/31/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00566	BS00566	DI00566	6/6/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00568	BS00568	DI00568	3/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00569	BS00569	DI00569	8/25/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00570	BS00570	DI00570	4/14/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00571	BS00571	DI00571	6/4/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00572	BS00572	DI00572	3/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00574	BS00574	DI00574	4/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00575	BS00575	DI00575	8/22/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00576	BS00576	DI00576	3/1/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00578	BS00578	DI00578	2/20/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00579	BS00579	DI00579	8/14/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00582	BS00582	DI00582	6/10/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00583	BS00583	DI00583	7/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00584	BS00584	DI00584	4/5/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00585	BS00585	DI00585	5/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00588	BS00588	DI00588	3/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00589	BS00589	DI00589	8/10/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00590	BS00590	DI00590	2/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00594	BS00594	DI00594	4/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00595	BS00595	DI00595	2/8/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00596	BS00596	DI00596	4/2/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00597	BS00597	DI00597	6/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00598	BS00598	DI00598	7/19/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00602	BS00602	DI00602	8/1/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00603	BS00603	DI00603	4/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00604	BS00604	DI00604	8/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00605	BS00605	DI00605	7/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00606	BS00606	DI00606	6/6/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00607	BS00607	DI00607	4/29/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00608	BS00608	DI00608	8/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00609	BS00609	DI00609	5/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00611	BS00611	DI00611	4/28/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00612	BS00612	DI00612	5/15/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00614	BS00614	DI00614	7/3/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00617	BS00617	DI00617	2/19/2020	Tumor	Solid tissue	Primary tumour	No	C42.0	Blood			Formalin fixed & paraffin embedded	Paraffin block	FALSE
+ST0002	PT00618	BS00618	DI00618	6/11/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00620	BS00620	DI00620	7/24/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00621	BS00621	DI00621	7/17/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00622	BS00622	DI00622	7/31/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00623	BS00623	DI00623	6/26/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0002	PT00624	BS00624	DI00624	4/18/2020	Normal	Blood derived	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00627	BS00627	DI00627	11/26/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00628	BS00628	DI00628	1/27/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00633	BS00633	DI00633	10/5/2014	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00634	BS00634	DI00634	3/10/2013	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00636	BS00636	DI00636	10/10/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00637	BS00637	DI00637	9/9/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00639	BS00639	DI00639	11/10/2018	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00640	BS00640	DI00640	8/17/2014	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00642	BS00642	DI00642	7/19/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00643	BS00643	DI00643	12/17/2013	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00645	BS00645	DI00645	10/11/2015	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00646	BS00646	DI00646	12/8/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00648	BS00648	DI00648	8/30/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00649	BS00649	DI00649	6/27/2015	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00657	BS00657	DI00657	12/29/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00658	BS00658	DI00658	1/14/2020	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00660	BS00660	DI00660	7/7/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00661	BS00661	DI00661	5/26/2017	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00666	BS00666	DI00666	6/4/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00667	BS00667	DI00667	12/10/2015	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00669	BS00669	DI00669	8/2/2014	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00670	BS00670	DI00670	5/9/2014	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00672	BS00672	DI00672	1/27/2020	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00673	BS00673	DI00673	10/15/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00675	BS00675	DI00675	2/14/2017	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00676	BS00676	DI00676	2/9/2014	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00678	BS00678	DI00678	12/12/2018	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00679	BS00679	DI00679	4/6/2018	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00681	BS00681	DI00681	1/16/2016	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00682	BS00682	DI00682	3/30/2017	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00684	BS00684	DI00684	11/25/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00685	BS00685	DI00685	8/19/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00687	BS00687	DI00687	4/26/2015	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00688	BS00688	DI00688	6/13/2020	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00690	BS00690	DI00690	4/21/2019	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00691	BS00691	DI00691	6/22/2020	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00693	BS00693	DI00693	3/26/2014	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00694	BS00694	DI00694	6/23/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00696	BS00696	DI00696	8/8/2015	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00697	BS00697	DI00697	4/23/2019	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00699	BS00699	DI00699	5/19/2020	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00700	BS00700	DI00700	3/16/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00714	BS00714	DI00714	10/22/2017	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00715	BS00715	DI00715	5/3/2015	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00717	BS00717	DI00717	8/10/2017	Normal	Plasma	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00718	BS00718	DI00718	4/1/2014	Normal	Plasma	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00720	BS00720	DI00720	7/3/2015	Normal	Serum	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00721	BS00721	DI00721	9/9/2017	Normal	Serum	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00723	BS00723	DI00723	2/10/2020	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00724	BS00724	DI00724	3/3/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00726	BS00726	DI00726	1/26/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00727	BS00727	DI00727	12/20/2012	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00729	BS00729	DI00729	2/2/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00730	BS00730	DI00730	8/5/2013	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00732	BS00732	DI00732	1/8/2017	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00733	BS00733	DI00733	6/16/2015	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00735	BS00735	DI00735	3/18/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00736	BS00736	DI00736	2/20/2019	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00738	BS00738	DI00738	1/16/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00739	BS00739	DI00739	4/9/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00741	BS00741	DI00741	9/18/2013	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00742	BS00742	DI00742	5/25/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00747	BS00747	DI00747	8/7/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00748	BS00748	DI00748	2/5/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00750	BS00750	DI00750	8/9/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00751	BS00751	DI00751	4/12/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00753	BS00753	DI00753	9/18/2013	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00754	BS00754	DI00754	11/8/2019	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00756	BS00756	DI00756	11/13/2019	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00757	BS00757	DI00757	7/6/2020	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00759	BS00759	DI00759	10/22/2013	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00760	BS00760	DI00760	4/24/2016	Normal	Buffy coat	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00762	BS00762	DI00762	1/22/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00763	BS00763	DI00763	1/27/2018	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00765	BS00765	DI00765	12/29/2018	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00766	BS00766	DI00766	10/3/2014	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00768	BS00768	DI00768	6/17/2020	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00769	BS00769	DI00769	7/21/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00771	BS00771	DI00771	11/24/2012	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00772	BS00772	DI00772	10/17/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00786	BS00786	DI00786	10/31/2013	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00787	BS00787	DI00787	12/20/2019	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00789	BS00789	DI00789	11/29/2019	Normal	Plasma	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00790	BS00790	DI00790	12/25/2017	Normal	Plasma	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00792	BS00792	DI00792	7/14/2018	Normal	Serum	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00793	BS00793	DI00793	11/6/2018	Normal	Serum	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00795	BS00795	DI00795	3/17/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00796	BS00796	DI00796	10/10/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00798	BS00798	DI00798	11/14/2012	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00799	BS00799	DI00799	10/14/2018	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00804	BS00804	DI00804	8/9/2014	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00805	BS00805	DI00805	11/21/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00807	BS00807	DI00807	7/17/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00808	BS00808	DI00808	1/24/2017	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00810	BS00810	DI00810	10/1/2016	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00811	BS00811	DI00811	3/26/2018	Normal	Blood derived	Normal		C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	FALSE
+ST0003	PT00816	BS00816	DI00816	7/19/2015	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00817	BS00817	DI00817	3/24/2020	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00819	BS00819	DI00819	2/25/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00820	BS00820	DI00820	6/10/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00822	BS00822	DI00822	9/21/2016	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00823	BS00823	DI00823	4/29/2020	Normal	Blood derived - peripheral blood	Normal		C42.0	Blood			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00711	BS00711	DI00711	2/24/2017	Normal	Blood derived - bone marrow	Normal		C42.1	Bone marrow			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00712	BS00712	DI00712	6/20/2020	Normal	Blood derived - bone marrow	Normal		C42.1	Bone marrow			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00783	BS00783	DI00783	11/18/2014	Normal	Blood derived - bone marrow	Normal		C42.1	Bone marrow			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE
+ST0003	PT00784	BS00784	DI00784	6/24/2020	Normal	Blood derived - bone marrow	Normal		C42.1	Bone marrow			Cryopreservation of live cells in liquid nitrogen	Frozen in liquid nitrogen	FALSE

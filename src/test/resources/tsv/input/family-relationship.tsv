@@ -1,202 +1,202 @@
-submitter_family_id	submitter_donor_id_1	submitter_donor_id_2	family_type	study_id	familiy_1_2_relationship	family_2_1_relationship	gender
-FA0001	PT00627	PT00628	Case-parent trio	ST0003	Wife	Husband	Female
-FA0001	PT00629	PT00627	Case-parent trio	ST0003	Child	Mother	Male
-FA0001	PT00629	PT00628	Case-parent trio	ST0003	Child	Father	Unknown
-FA0002	PT00630	PT00631	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0002	PT00632	PT00630	Case-parent trio	ST0003	Son	Father	Female
-FA0002	PT00632	PT00631	Case-parent trio	ST0003	Son	Mother	Male
-FA0003	PT00633	PT00634	Case-parent trio	ST0003	Husband	Wife	Male
-FA0003	PT00635	PT00633	Case-parent trio	ST0003	Son	Father	Female
-FA0003	PT00635	PT00634	Case-parent trio	ST0003	Son	Mother	Male
-FA0004	PT00636	PT00637	Case-parent trio	ST0003	Husband	Wife	Male
-FA0004	PT00638	PT00636	Case-parent trio	ST0003	Daughter	Father	Female
-FA0004	PT00638	PT00637	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0005	PT00639	PT00640	Case-parent trio	ST0003	Husband	Wife	Male
-FA0005	PT00641	PT00639	Case-parent trio	ST0003	Son	Father	Female
-FA0005	PT00641	PT00640	Case-parent trio	ST0003	Son	Mother	Male
-FA0006	PT00642	PT00643	Case-parent trio	ST0003	Husband	Wife	Male
-FA0006	PT00644	PT00642	Case-parent trio	ST0003	Son	Father	Female
-FA0006	PT00644	PT00643	Case-parent trio	ST0003	Son	Mother	Male
-FA0007	PT00645	PT00646	Case-parent trio	ST0003	Wife	Husband	Female
-FA0007	PT00647	PT00645	Case-parent trio	ST0003	Son	Mother	Male
-FA0007	PT00647	PT00646	Case-parent trio	ST0003	Son	Father	Male
-FA0008	PT00648	PT00649	Case-parent trio	ST0003	Wife	Husband	Female
-FA0008	PT00650	PT00648	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0008	PT00650	PT00649	Case-parent trio	ST0003	Daughter	Father	Female
-FA0009	PT00651	PT00652	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0009	PT00653	PT00651	Case-parent trio	ST0003	Daughter	Father	Female
-FA0009	PT00653	PT00652	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0010	PT00654	PT00655	Case-parent trio	ST0003	Husband	Wife	Male
-FA0010	PT00656	PT00654	Case-parent trio	ST0003	Daughter	Father	Female
-FA0010	PT00656	PT00655	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0011	PT00657	PT00658	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0011	PT00659	PT00657	Case-parent trio	ST0003	Daughter	Father	Female
-FA0011	PT00659	PT00658	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0012	PT00660	PT00661	Case-parent trio	ST0003	Wife	Husband	Female
-FA0012	PT00662	PT00660	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0012	PT00662	PT00661	Case-parent trio	ST0003	Daughter	Father	Female
-FA0013	PT00663	PT00664	Case-parent trio	ST0003	Husband	Wife	Male
-FA0013	PT00665	PT00663	Case-parent trio	ST0003	Daughter	Father	Female
-FA0013	PT00665	PT00664	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0014	PT00666	PT00667	Case-parent trio	ST0003	Wife	Husband	Female
-FA0014	PT00668	PT00666	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0014	PT00668	PT00667	Case-parent trio	ST0003	Daughter	Father	Female
-FA0015	PT00669	PT00670	Case-parent trio	ST0003	Wife	Husband	Female
-FA0015	PT00671	PT00669	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0015	PT00671	PT00670	Case-parent trio	ST0003	Daughter	Father	Female
-FA0016	PT00672	PT00673	Case-parent trio	ST0003	Wife	Husband	Female
-FA0016	PT00674	PT00672	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0016	PT00674	PT00673	Case-parent trio	ST0003	Daughter	Father	Female
-FA0017	PT00675	PT00676	Case-parent trio	ST0003	Husband	Wife	Male
-FA0017	PT00677	PT00675	Case-parent trio	ST0003	Son	Father	Female
-FA0017	PT00677	PT00676	Case-parent trio	ST0003	Son	Mother	Male
-FA0018	PT00678	PT00679	Case-parent trio	ST0003	Husband	Wife	Male
-FA0018	PT00680	PT00678	Case-parent trio	ST0003	Daughter	Father	Female
-FA0018	PT00680	PT00679	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0019	PT00681	PT00682	Case-parent trio	ST0003	Wife	Husband	Female
-FA0019	PT00683	PT00681	Case-parent trio	ST0003	Son	Mother	Male
-FA0019	PT00683	PT00682	Case-parent trio	ST0003	Son	Father	Male
-FA0020	PT00684	PT00685	Case-parent trio	ST0003	Wife	Husband	Female
-FA0020	PT00686	PT00684	Case-parent trio	ST0003	Son	Mother	Male
-FA0020	PT00686	PT00685	Case-parent trio	ST0003	Son	Father	Male
-FA0021	PT00687	PT00688	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0021	PT00689	PT00687	Case-parent trio	ST0003	Daughter	Father	Female
-FA0021	PT00689	PT00688	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0022	PT00690	PT00691	Case-parent trio	ST0003	Spouse	Spouse	Female
-FA0022	PT00692	PT00690	Case-parent trio	ST0003	Daughter	Mother	Unknown
-FA0022	PT00692	PT00691	Case-parent trio	ST0003	Daughter	Parent	Female
-FA0023	PT00693	PT00694	Case-parent trio	ST0003	Wife	Husband	Female
-FA0023	PT00695	PT00693	Case-parent trio	ST0003	Son	Mother	Male
-FA0023	PT00695	PT00694	Case-parent trio	ST0003	Son	Father	Male
-FA0024	PT00696	PT00697	Case-parent trio	ST0003	Husband	Wife	Male
-FA0024	PT00698	PT00696	Case-parent trio	ST0003	Daughter	Father	Female
-FA0024	PT00698	PT00697	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0025	PT00699	PT00700	Case-parent trio	ST0003	Wife	Husband	Female
-FA0025	PT00701	PT00699	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0025	PT00701	PT00700	Case-parent trio	ST0003	Daughter	Father	Female
-FA0026	PT00702	PT00703	Case-parent trio	ST0003	Wife	Husband	Female
-FA0026	PT00704	PT00702	Case-parent trio	ST0003	Son	Mother	Male
-FA0026	PT00704	PT00703	Case-parent trio	ST0003	Son	Father	Male
-FA0027	PT00705	PT00706	Case-parent trio	ST0003	Husband	Wife	Male
-FA0027	PT00707	PT00705	Case-parent trio	ST0003	Daughter	Father	Female
-FA0027	PT00707	PT00706	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0028	PT00708	PT00709	Case-parent trio	ST0003	Wife	Husband	Female
-FA0028	PT00710	PT00708	Case-parent trio	ST0003	Son	Mother	Male
-FA0028	PT00710	PT00709	Case-parent trio	ST0003	Son	Father	Male
-FA0029	PT00711	PT00712	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0029	PT00713	PT00711	Case-parent trio	ST0003	Son	Father	Female
-FA0029	PT00713	PT00712	Case-parent trio	ST0003	Son	Mother	Male
-FA0030	PT00714	PT00715	Case-parent trio	ST0003	Wife	Husband	Female
-FA0030	PT00716	PT00714	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0030	PT00716	PT00715	Case-parent trio	ST0003	Daughter	Father	Female
-FA0031	PT00717	PT00718	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0031	PT00719	PT00717	Case-parent trio	ST0003	Son	Father	Female
-FA0031	PT00719	PT00718	Case-parent trio	ST0003	Son	Mother	Male
-FA0032	PT00720	PT00721	Case-parent trio	ST0003	Husband	Wife	Male
-FA0032	PT00722	PT00720	Case-parent trio	ST0003	Son	Father	Female
-FA0032	PT00722	PT00721	Case-parent trio	ST0003	Son	Mother	Male
-FA0033	PT00723	PT00724	Case-parent trio	ST0003	Husband	Wife	Male
-FA0033	PT00725	PT00723	Case-parent trio	ST0003	Child	Father	Female
-FA0033	PT00725	PT00724	Case-parent trio	ST0003	Child	Mother	Unknown
-FA0034	PT00726	PT00727	Case-parent trio	ST0003	Husband	Wife	Male
-FA0034	PT00728	PT00726	Case-parent trio	ST0003	Daughter	Father	Female
-FA0034	PT00728	PT00727	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0035	PT00729	PT00730	Case-parent trio	ST0003	Wife	Husband	Female
-FA0035	PT00731	PT00729	Case-parent trio	ST0003	Son	Mother	Male
-FA0035	PT00731	PT00730	Case-parent trio	ST0003	Son	Father	Male
-FA0036	PT00732	PT00733	Case-parent trio	ST0003	Husband	Wife	Male
-FA0036	PT00734	PT00732	Case-parent trio	ST0003	Daughter	Father	Female
-FA0036	PT00734	PT00733	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0037	PT00735	PT00736	Case-parent trio	ST0003	Husband	Wife	Male
-FA0037	PT00737	PT00735	Case-parent trio	ST0003	Son	Father	Female
-FA0037	PT00737	PT00736	Case-parent trio	ST0003	Son	Mother	Male
-FA0038	PT00737	PT00738	Case-parent trio	ST0003	Wife	Husband	Female
-FA0038	PT00739	PT00737	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0038	PT00739	PT00738	Case-parent trio	ST0003	Daughter	Father	Female
-FA0039	PT00740	PT00741	Case-parent trio	ST0003	Wife	Husband	Female
-FA0039	PT00742	PT00740	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0039	PT00742	PT00741	Case-parent trio	ST0003	Daughter	Father	Female
-FA0040	PT00743	PT00744	Case-parent trio	ST0003	Wife	Husband	Female
-FA0040	PT00745	PT00743	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0040	PT00745	PT00744	Case-parent trio	ST0003	Daughter	Father	Female
-FA0041	PT00747	PT00748	Case-parent trio	ST0003	Wife	Husband	Female
-FA0041	PT00749	PT00747	Case-parent trio	ST0003	Son	Mother	Male
-FA0041	PT00749	PT00748	Case-parent trio	ST0003	Son	Father	Male
-FA0042	PT00750	PT00751	Case-parent trio	ST0003	Husband	Wife	Male
-FA0042	PT00752	PT00750	Case-parent trio	ST0003	Daughter	Father	Female
-FA0042	PT00752	PT00751	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0043	PT00753	PT00754	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0043	PT00755	PT00753	Case-parent trio	ST0003	Child	Father	Female
-FA0043	PT00755	PT00754	Case-parent trio	ST0003	Child	Mother	Unknown
-FA0044	PT00756	PT00757	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0044	PT00758	PT00756	Case-parent trio	ST0003	Son	Father	Female
-FA0044	PT00758	PT00757	Case-parent trio	ST0003	Son	Mother	Male
-FA0045	PT00759	PT00760	Case-parent trio	ST0003	Husband	Wife	Male
-FA0045	PT00761	PT00759	Case-parent trio	ST0003	Daughter	Father	Female
-FA0045	PT00761	PT00760	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0046	PT00762	PT00763	Case-parent trio	ST0003	Husband	Wife	Male
-FA0046	PT00764	PT00762	Case-parent trio	ST0003	Daughter	Father	Female
-FA0046	PT00764	PT00763	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0047	PT00765	PT00766	Case-parent trio	ST0003	Husband	Wife	Male
-FA0047	PT00767	PT00765	Case-parent trio	ST0003	Son	Father	Female
-FA0047	PT00767	PT00766	Case-parent trio	ST0003	Son	Mother	Male
-FA0048	PT00768	PT00769	Case-parent trio	ST0003	Husband	Wife	Male
-FA0048	PT00770	PT00768	Case-parent trio	ST0003	Daughter	Father	Female
-FA0048	PT00770	PT00769	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0049	PT00771	PT00772	Case-parent trio	ST0003	Wife	Husband	Female
-FA0049	PT00773	PT00771	Case-parent trio	ST0003	Son	Mother	Male
-FA0049	PT00773	PT00772	Case-parent trio	ST0003	Son	Father	Male
-FA0050	PT00774	PT00775	Case-parent trio	ST0003	Wife	Husband	Female
-FA0050	PT00776	PT00774	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0050	PT00776	PT00775	Case-parent trio	ST0003	Daughter	Father	Female
-FA0051	PT00777	PT00778	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0051	PT00779	PT00777	Case-parent trio	ST0003	Son	Father	Female
-FA0051	PT00779	PT00778	Case-parent trio	ST0003	Son	Mother	Male
-FA0052	PT00780	PT00781	Case-parent trio	ST0003	Wife	Husband	Female
-FA0052	PT00782	PT00780	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0052	PT00782	PT00781	Case-parent trio	ST0003	Daughter	Father	Female
-FA0053	PT00783	PT00784	Case-parent trio	ST0003	Wife	Husband	Female
-FA0053	PT00785	PT00783	Case-parent trio	ST0003	Son	Mother	Male
-FA0053	PT00785	PT00784	Case-parent trio	ST0003	Son	Father	Male
-FA0054	PT00786	PT00787	Case-parent trio	ST0003	Former spouse	Former spouse	Female
-FA0054	PT00788	PT00786	Case-parent trio	ST0003	Child	Mother	Male
-FA0054	PT00788	PT00787	Case-parent trio	ST0003	Child	Father	Unknown
-FA0055	PT00789	PT00790	Case-parent trio	ST0003	Wife	Husband	Female
-FA0055	PT00791	PT00789	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0055	PT00791	PT00790	Case-parent trio	ST0003	Daughter	Father	Female
-FA0056	PT00792	PT00793	Case-parent trio	ST0003	Wife	Husband	Female
-FA0056	PT00794	PT00792	Case-parent trio	ST0003	Son	Mother	Male
-FA0056	PT00794	PT00793	Case-parent trio	ST0003	Son	Father	Male
-FA0057	PT00795	PT00796	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0057	PT00797	PT00795	Case-parent trio	ST0003	Son	Father	Female
-FA0057	PT00797	PT00796	Case-parent trio	ST0003	Son	Mother	Male
-FA0058	PT00798	PT00799	Case-parent trio	ST0003	Former spouse	Former spouse	Female
-FA0058	PT00800	PT00798	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0058	PT00800	PT00799	Case-parent trio	ST0003	Daughter	Father	Female
-FA0059	PT00801	PT00802	Case-parent trio	ST0003	Husband	Wife	Male
-FA0059	PT00803	PT00801	Case-parent trio	ST0003	Daughter	Father	Female
-FA0059	PT00803	PT00802	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0060	PT00804	PT00805	Case-parent trio	ST0003	Wife	Husband	Female
-FA0060	PT00806	PT00804	Case-parent trio	ST0003	Daughter	Mother	Male
-FA0060	PT00806	PT00805	Case-parent trio	ST0003	Daughter	Father	Female
-FA0061	PT00807	PT00808	Case-parent trio	ST0003	Husband	Wife	Male
-FA0061	PT00809	PT00807	Case-parent trio	ST0003	Daughter	Father	Female
-FA0061	PT00809	PT00808	Case-parent trio	ST0003	Daughter	Mother	Female
-FA0062	PT00810	PT00811	Case-parent trio	ST0003	Wife	Husband	Female
-FA0062	PT00812	PT00810	Case-parent trio	ST0003	Son	Mother	Male
-FA0062	PT00812	PT00811	Case-parent trio	ST0003	Son	Father	Male
-FA0063	PT00813	PT00814	Case-parent trio	ST0003	Wife	Husband	Female
-FA0063	PT00815	PT00813	Case-parent trio	ST0003	Child	Mother	Male
-FA0063	PT00815	PT00814	Case-parent trio	ST0003	Child	Father	Unknown
-FA0064	PT00816	PT00817	Case-parent trio	ST0003	Former spouse	Former spouse	Male
-FA0064	PT00818	PT00816	Case-parent trio	ST0003	Son	Father	Female
-FA0064	PT00818	PT00817	Case-parent trio	ST0003	Son	Mother	Male
-FA0065	PT00819	PT00820	Case-parent trio	ST0003	Wife	Husband	Female
-FA0065	PT00821	PT00819	Case-parent trio	ST0003	Son	Mother	Male
-FA0065	PT00821	PT00820	Case-parent trio	ST0003	Son	Father	Male
-FA0066	PT00822	PT00823	Case-parent trio	ST0003	Wife	Husband	Female
-FA0066	PT00824	PT00822	Other	ST0003	Daughter	Mother	Male
-FA0066	PT00824	PT00823	Other	ST0003	Daughter	Father	Female
-FA0066	PT00825	PT00822	Other	ST0003	Daughter	Mother	Female
-FA0066	PT00825	PT00823	Other	ST0003	Daughter	Father	Female
-FA0066	PT00824	PT00825	Other	ST0003	Sister	Sister	Female
+study_id	submitter_family_id	submitter_donor_id_1	submitter_donor_id_2	family_type	familiy_1_2_relationship	family_2_1_relationship
+ST0003	FA0001	PT00629	PT00627	Case-parent trio	Daughter	Mother
+ST0003	FA0001	PT00629	PT00628	Case-parent trio	Daughter	Father
+ST0003	FA0033	PT00725	PT00723	Case-parent trio	Daughter	Father
+ST0003	FA0033	PT00725	PT00724	Case-parent trio	Daughter	Mother
+ST0003	FA0043	PT00755	PT00753	Case-parent trio	son	Father
+ST0003	FA0043	PT00755	PT00754	Case-parent trio	Daughter	Mother
+ST0003	FA0054	PT00788	PT00786	Case-parent trio	Daughter	Mother
+ST0003	FA0054	PT00788	PT00787	Case-parent trio	Daughter	Father
+ST0003	FA0063	PT00815	PT00813	Case-parent trio	son	Mother
+ST0003	FA0063	PT00815	PT00814	Case-parent trio	son	Father
+ST0003	FA0004	PT00638	PT00636	Case-parent trio	Daughter	Father
+ST0003	FA0004	PT00638	PT00637	Case-parent trio	Daughter	Mother
+ST0003	FA0008	PT00650	PT00648	Case-parent trio	Daughter	Mother
+ST0003	FA0008	PT00650	PT00649	Case-parent trio	Daughter	Father
+ST0003	FA0009	PT00653	PT00651	Case-parent trio	Daughter	Father
+ST0003	FA0009	PT00653	PT00652	Case-parent trio	Daughter	Mother
+ST0003	FA0010	PT00656	PT00654	Case-parent trio	Daughter	Father
+ST0003	FA0010	PT00656	PT00655	Case-parent trio	Daughter	Mother
+ST0003	FA0011	PT00659	PT00657	Case-parent trio	Daughter	Father
+ST0003	FA0011	PT00659	PT00658	Case-parent trio	Daughter	Mother
+ST0003	FA0012	PT00662	PT00660	Case-parent trio	Daughter	Mother
+ST0003	FA0012	PT00662	PT00661	Case-parent trio	Daughter	Father
+ST0003	FA0013	PT00665	PT00663	Case-parent trio	Daughter	Father
+ST0003	FA0013	PT00665	PT00664	Case-parent trio	Daughter	Mother
+ST0003	FA0014	PT00668	PT00666	Case-parent trio	Daughter	Mother
+ST0003	FA0014	PT00668	PT00667	Case-parent trio	Daughter	Father
+ST0003	FA0015	PT00671	PT00669	Case-parent trio	Daughter	Mother
+ST0003	FA0015	PT00671	PT00670	Case-parent trio	Daughter	Father
+ST0003	FA0016	PT00674	PT00672	Case-parent trio	Daughter	Mother
+ST0003	FA0016	PT00674	PT00673	Case-parent trio	Daughter	Father
+ST0003	FA0018	PT00680	PT00678	Case-parent trio	Daughter	Father
+ST0003	FA0018	PT00680	PT00679	Case-parent trio	Daughter	Mother
+ST0003	FA0021	PT00689	PT00687	Case-parent trio	Daughter	Father
+ST0003	FA0021	PT00689	PT00688	Case-parent trio	Daughter	Mother
+ST0003	FA0022	PT00692	PT00690	Case-parent trio	Daughter	Mother
+ST0003	FA0022	PT00692	PT00691	Case-parent trio	Daughter	Parent
+ST0003	FA0024	PT00698	PT00696	Case-parent trio	Daughter	Father
+ST0003	FA0024	PT00698	PT00697	Case-parent trio	Daughter	Mother
+ST0003	FA0025	PT00701	PT00699	Case-parent trio	Daughter	Mother
+ST0003	FA0025	PT00701	PT00700	Case-parent trio	Daughter	Father
+ST0003	FA0027	PT00707	PT00705	Case-parent trio	Daughter	Father
+ST0003	FA0027	PT00707	PT00706	Case-parent trio	Daughter	Mother
+ST0003	FA0030	PT00716	PT00714	Case-parent trio	Daughter	Mother
+ST0003	FA0030	PT00716	PT00715	Case-parent trio	Daughter	Father
+ST0003	FA0034	PT00728	PT00726	Case-parent trio	Daughter	Father
+ST0003	FA0034	PT00728	PT00727	Case-parent trio	Daughter	Mother
+ST0003	FA0036	PT00734	PT00732	Case-parent trio	Daughter	Father
+ST0003	FA0036	PT00734	PT00733	Case-parent trio	Daughter	Mother
+ST0003	FA0038	PT00739	PT00737	Case-parent trio	Daughter	Mother
+ST0003	FA0038	PT00739	PT00738	Case-parent trio	Daughter	Father
+ST0003	FA0039	PT00742	PT00740	Case-parent trio	Daughter	Mother
+ST0003	FA0039	PT00742	PT00741	Case-parent trio	Daughter	Father
+ST0003	FA0040	PT00745	PT00743	Case-parent trio	Daughter	Mother
+ST0003	FA0040	PT00745	PT00744	Case-parent trio	Daughter	Father
+ST0003	FA0042	PT00752	PT00750	Case-parent trio	Daughter	Father
+ST0003	FA0042	PT00752	PT00751	Case-parent trio	Daughter	Mother
+ST0003	FA0045	PT00761	PT00759	Case-parent trio	Daughter	Father
+ST0003	FA0045	PT00761	PT00760	Case-parent trio	Daughter	Mother
+ST0003	FA0046	PT00764	PT00762	Case-parent trio	Daughter	Father
+ST0003	FA0046	PT00764	PT00763	Case-parent trio	Daughter	Mother
+ST0003	FA0048	PT00770	PT00768	Case-parent trio	Daughter	Father
+ST0003	FA0048	PT00770	PT00769	Case-parent trio	Daughter	Mother
+ST0003	FA0050	PT00776	PT00774	Case-parent trio	Daughter	Mother
+ST0003	FA0050	PT00776	PT00775	Case-parent trio	Daughter	Father
+ST0003	FA0052	PT00782	PT00780	Case-parent trio	Daughter	Mother
+ST0003	FA0052	PT00782	PT00781	Case-parent trio	Daughter	Father
+ST0003	FA0055	PT00791	PT00789	Case-parent trio	Daughter	Mother
+ST0003	FA0055	PT00791	PT00790	Case-parent trio	Daughter	Father
+ST0003	FA0058	PT00800	PT00798	Case-parent trio	Daughter	Mother
+ST0003	FA0058	PT00800	PT00799	Case-parent trio	Daughter	Father
+ST0003	FA0059	PT00803	PT00801	Case-parent trio	Daughter	Father
+ST0003	FA0059	PT00803	PT00802	Case-parent trio	Daughter	Mother
+ST0003	FA0060	PT00806	PT00804	Case-parent trio	Daughter	Mother
+ST0003	FA0060	PT00806	PT00805	Case-parent trio	Daughter	Father
+ST0003	FA0061	PT00809	PT00807	Case-parent trio	Daughter	Father
+ST0003	FA0061	PT00809	PT00808	Case-parent trio	Daughter	Mother
+ST0003	FA0066	PT00824	PT00822	Other	Daughter	Mother
+ST0003	FA0066	PT00824	PT00823	Other	Daughter	Father
+ST0003	FA0066	PT00825	PT00822	Other	Daughter	Mother
+ST0003	FA0066	PT00825	PT00823	Other	Daughter	Father
+ST0003	FA0002	PT00630	PT00631	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0009	PT00651	PT00652	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0011	PT00657	PT00658	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0021	PT00687	PT00688	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0029	PT00711	PT00712	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0031	PT00717	PT00718	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0043	PT00753	PT00754	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0044	PT00756	PT00757	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0051	PT00777	PT00778	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0054	PT00786	PT00787	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0057	PT00795	PT00796	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0058	PT00798	PT00799	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0064	PT00816	PT00817	Case-parent trio	Former spouse	Former spouse
+ST0003	FA0003	PT00633	PT00634	Case-parent trio	Husband	Wife
+ST0003	FA0004	PT00636	PT00637	Case-parent trio	Husband	Wife
+ST0003	FA0005	PT00639	PT00640	Case-parent trio	Husband	Wife
+ST0003	FA0006	PT00642	PT00643	Case-parent trio	Husband	Wife
+ST0003	FA0010	PT00654	PT00655	Case-parent trio	Husband	Wife
+ST0003	FA0013	PT00663	PT00664	Case-parent trio	Husband	Wife
+ST0003	FA0017	PT00675	PT00676	Case-parent trio	Husband	Wife
+ST0003	FA0018	PT00678	PT00679	Case-parent trio	Husband	Wife
+ST0003	FA0024	PT00696	PT00697	Case-parent trio	Husband	Wife
+ST0003	FA0027	PT00705	PT00706	Case-parent trio	Husband	Wife
+ST0003	FA0032	PT00720	PT00721	Case-parent trio	Husband	Wife
+ST0003	FA0033	PT00723	PT00724	Case-parent trio	Husband	Wife
+ST0003	FA0034	PT00726	PT00727	Case-parent trio	Husband	Wife
+ST0003	FA0036	PT00732	PT00733	Case-parent trio	Husband	Wife
+ST0003	FA0037	PT00735	PT00736	Case-parent trio	Husband	Wife
+ST0003	FA0042	PT00750	PT00751	Case-parent trio	Husband	Wife
+ST0003	FA0045	PT00759	PT00760	Case-parent trio	Husband	Wife
+ST0003	FA0046	PT00762	PT00763	Case-parent trio	Husband	Wife
+ST0003	FA0047	PT00765	PT00766	Case-parent trio	Husband	Wife
+ST0003	FA0048	PT00768	PT00769	Case-parent trio	Husband	Wife
+ST0003	FA0059	PT00801	PT00802	Case-parent trio	Husband	Wife
+ST0003	FA0061	PT00807	PT00808	Case-parent trio	Husband	Wife
+ST0003	FA0066	PT00824	PT00825	Other	Sister	Sister
+ST0003	FA0002	PT00632	PT00630	Case-parent trio	Son	Father
+ST0003	FA0002	PT00632	PT00631	Case-parent trio	Son	Mother
+ST0003	FA0003	PT00635	PT00633	Case-parent trio	Son	Father
+ST0003	FA0003	PT00635	PT00634	Case-parent trio	Son	Mother
+ST0003	FA0005	PT00641	PT00639	Case-parent trio	Son	Father
+ST0003	FA0005	PT00641	PT00640	Case-parent trio	Son	Mother
+ST0003	FA0006	PT00644	PT00642	Case-parent trio	Son	Father
+ST0003	FA0006	PT00644	PT00643	Case-parent trio	Son	Mother
+ST0003	FA0007	PT00647	PT00645	Case-parent trio	Son	Mother
+ST0003	FA0007	PT00647	PT00646	Case-parent trio	Son	Father
+ST0003	FA0017	PT00677	PT00675	Case-parent trio	Son	Father
+ST0003	FA0017	PT00677	PT00676	Case-parent trio	Son	Mother
+ST0003	FA0019	PT00683	PT00681	Case-parent trio	Son	Mother
+ST0003	FA0019	PT00683	PT00682	Case-parent trio	Son	Father
+ST0003	FA0020	PT00686	PT00684	Case-parent trio	Son	Mother
+ST0003	FA0020	PT00686	PT00685	Case-parent trio	Son	Father
+ST0003	FA0023	PT00695	PT00693	Case-parent trio	Son	Mother
+ST0003	FA0023	PT00695	PT00694	Case-parent trio	Son	Father
+ST0003	FA0026	PT00704	PT00702	Case-parent trio	Son	Mother
+ST0003	FA0026	PT00704	PT00703	Case-parent trio	Son	Father
+ST0003	FA0028	PT00710	PT00708	Case-parent trio	Son	Mother
+ST0003	FA0028	PT00710	PT00709	Case-parent trio	Son	Father
+ST0003	FA0029	PT00713	PT00711	Case-parent trio	Son	Father
+ST0003	FA0029	PT00713	PT00712	Case-parent trio	Son	Mother
+ST0003	FA0031	PT00719	PT00717	Case-parent trio	Son	Father
+ST0003	FA0031	PT00719	PT00718	Case-parent trio	Son	Mother
+ST0003	FA0032	PT00722	PT00720	Case-parent trio	Son	Father
+ST0003	FA0032	PT00722	PT00721	Case-parent trio	Son	Mother
+ST0003	FA0035	PT00731	PT00729	Case-parent trio	Son	Mother
+ST0003	FA0035	PT00731	PT00730	Case-parent trio	Son	Father
+ST0003	FA0037	PT00737	PT00735	Case-parent trio	Son	Father
+ST0003	FA0037	PT00737	PT00736	Case-parent trio	Son	Mother
+ST0003	FA0041	PT00749	PT00747	Case-parent trio	Son	Mother
+ST0003	FA0041	PT00749	PT00748	Case-parent trio	Son	Father
+ST0003	FA0044	PT00758	PT00756	Case-parent trio	Son	Father
+ST0003	FA0044	PT00758	PT00757	Case-parent trio	Son	Mother
+ST0003	FA0047	PT00767	PT00765	Case-parent trio	Son	Father
+ST0003	FA0047	PT00767	PT00766	Case-parent trio	Son	Mother
+ST0003	FA0049	PT00773	PT00771	Case-parent trio	Son	Mother
+ST0003	FA0049	PT00773	PT00772	Case-parent trio	Son	Father
+ST0003	FA0051	PT00779	PT00777	Case-parent trio	Son	Father
+ST0003	FA0051	PT00779	PT00778	Case-parent trio	Son	Mother
+ST0003	FA0053	PT00785	PT00783	Case-parent trio	Son	Mother
+ST0003	FA0053	PT00785	PT00784	Case-parent trio	Son	Father
+ST0003	FA0056	PT00794	PT00792	Case-parent trio	Son	Mother
+ST0003	FA0056	PT00794	PT00793	Case-parent trio	Son	Father
+ST0003	FA0057	PT00797	PT00795	Case-parent trio	Son	Father
+ST0003	FA0057	PT00797	PT00796	Case-parent trio	Son	Mother
+ST0003	FA0062	PT00812	PT00810	Case-parent trio	Son	Mother
+ST0003	FA0062	PT00812	PT00811	Case-parent trio	Son	Father
+ST0003	FA0064	PT00818	PT00816	Case-parent trio	Son	Father
+ST0003	FA0064	PT00818	PT00817	Case-parent trio	Son	Mother
+ST0003	FA0065	PT00821	PT00819	Case-parent trio	Son	Mother
+ST0003	FA0065	PT00821	PT00820	Case-parent trio	Son	Father
+ST0003	FA0022	PT00690	PT00691	Case-parent trio	Spouse	Spouse
+ST0003	FA0001	PT00627	PT00628	Case-parent trio	Wife	Husband
+ST0003	FA0007	PT00645	PT00646	Case-parent trio	Wife	Husband
+ST0003	FA0008	PT00648	PT00649	Case-parent trio	Wife	Husband
+ST0003	FA0012	PT00660	PT00661	Case-parent trio	Wife	Husband
+ST0003	FA0014	PT00666	PT00667	Case-parent trio	Wife	Husband
+ST0003	FA0015	PT00669	PT00670	Case-parent trio	Wife	Husband
+ST0003	FA0016	PT00672	PT00673	Case-parent trio	Wife	Husband
+ST0003	FA0019	PT00681	PT00682	Case-parent trio	Wife	Husband
+ST0003	FA0020	PT00684	PT00685	Case-parent trio	Wife	Husband
+ST0003	FA0023	PT00693	PT00694	Case-parent trio	Wife	Husband
+ST0003	FA0025	PT00699	PT00700	Case-parent trio	Wife	Husband
+ST0003	FA0026	PT00702	PT00703	Case-parent trio	Wife	Husband
+ST0003	FA0028	PT00708	PT00709	Case-parent trio	Wife	Husband
+ST0003	FA0030	PT00714	PT00715	Case-parent trio	Wife	Husband
+ST0003	FA0035	PT00729	PT00730	Case-parent trio	Wife	Husband
+ST0003	FA0038	PT00737	PT00738	Case-parent trio	Wife	Husband
+ST0003	FA0039	PT00740	PT00741	Case-parent trio	Wife	Husband
+ST0003	FA0040	PT00743	PT00744	Case-parent trio	Wife	Husband
+ST0003	FA0041	PT00747	PT00748	Case-parent trio	Wife	Husband
+ST0003	FA0049	PT00771	PT00772	Case-parent trio	Wife	Husband
+ST0003	FA0050	PT00774	PT00775	Case-parent trio	Wife	Husband
+ST0003	FA0052	PT00780	PT00781	Case-parent trio	Wife	Husband
+ST0003	FA0053	PT00783	PT00784	Case-parent trio	Wife	Husband
+ST0003	FA0055	PT00789	PT00790	Case-parent trio	Wife	Husband
+ST0003	FA0056	PT00792	PT00793	Case-parent trio	Wife	Husband
+ST0003	FA0060	PT00804	PT00805	Case-parent trio	Wife	Husband
+ST0003	FA0062	PT00810	PT00811	Case-parent trio	Wife	Husband
+ST0003	FA0063	PT00813	PT00814	Case-parent trio	Wife	Husband
+ST0003	FA0065	PT00819	PT00820	Case-parent trio	Wife	Husband
+ST0003	FA0066	PT00822	PT00823	Case-parent trio	Wife	Husband

@@ -7,6 +7,7 @@ import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.catalyst.encoders.RowEncoder
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.{DataType, StringType}
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
 import java.text.{Normalizer, SimpleDateFormat}
@@ -404,13 +405,13 @@ object EtlUtils {
     ) as "file_size"
 
     val phenotypeObserved: Column = when(
-      col("phenotype_observed") isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1),
+      col("phenotype_observed").cast(StringType).isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1),
       lit(true)).otherwise(lit(false)
     ) as "phenotype_observed_bool"
 
     val isCancer: Column =
       when(
-        col("is_cancer").isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1), lit(true)
+        col("is_cancer").cast(StringType).isin("YES", "Yes", "yes", "TRUE", "True", "true", "Y", "y", "1", 1), lit(true)
       ).otherwise(lit(false))
 
     val ageAtRecruitment: Column = when(
