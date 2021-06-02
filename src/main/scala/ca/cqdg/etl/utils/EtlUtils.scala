@@ -151,7 +151,28 @@ object EtlUtils {
       .filter(phenotypes_with_ancestors.col("id").isNotNull)
 
     val combinedDF: DataFrame = taggedPhenotypes.union(parentsPhenotypes)
-    val combinedPhenotypes = combinedDF
+
+    val groupAgesAtPhenotype = combinedDF
+      .groupBy(
+        $"study_id",
+        $"submitter_donor_id",
+        $"id",
+        $"name",
+        $"parents",
+        $"phenotype_observed_bool",
+        $"is_leaf",
+        $"is_tagged",
+      )
+      .agg(collect_list(
+        array(cols = $"age_at_phenotype")
+      ) as "age_at_phenotype_raw")
+      .select(
+        $"*",
+        flatten($"age_at_phenotype_raw") as "age_at_phenotype"
+      )
+      .drop($"age_at_phenotype_raw")
+
+    val combinedPhenotypes = groupAgesAtPhenotype
       .groupBy($"study_id", $"submitter_donor_id")
       .agg(collect_list(
         struct(cols =
@@ -219,7 +240,6 @@ object EtlUtils {
         ) as "biospecimen"
       ) as "biospecimenWithSamples"
 
-    //result.show(1, 0, true)
     result
   }
 
@@ -267,9 +287,6 @@ object EtlUtils {
       .withColumn("ethnicity", notNullCol($"ethnicity"))
       .withColumn("age_at_recruitment", ageAtRecruitment)
 
-
-    //result.printSchema();
-    //result.show(1, 0, true)
     result
   }
 
@@ -328,7 +345,6 @@ object EtlUtils {
         ) as "diagnosis_per_donor_per_study"
       ) as "diagnosisGroup"
 
-    //result.show(1, 0, true)
     result
   }
 
