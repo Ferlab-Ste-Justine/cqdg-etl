@@ -11,7 +11,7 @@ import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object EtlApp extends App {
 
@@ -71,23 +71,37 @@ object EtlApp extends App {
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")
 
-      val broadcastStudies = spark.sparkContext.broadcast(study)
+      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
 
-      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _, _, _, _, _) = loadAll(dfList)(ontologyDfs)
       val inputData = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
         "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
         "biospecimenWithSamples" -> biospecimenWithSamples,
         "dataAccess" -> dataAccess,
+        "treatmentsPerDonorAndStudy" -> treatmentsPerDonorAndStudy,
+        "exposuresPerDonorAndStudy" -> exposuresPerDonorAndStudy,
+        "followUpsPerDonorAndStudy" -> followUpsPerDonorAndStudy,
+        "familyHistoryPerDonorAndStudy" -> familyHistoryPerDonorAndStudy,
+        "familyRelationshipPerDonorAndStudy" -> familyRelationshipPerDonorAndStudy,
         "file" -> file)
 
-      Donor.run(broadcastStudies, dfList, ontologyDfs, s"$outputPath/donors" )
-      Study.run(broadcastStudies, dfList, ontologyDfs, s"$outputPath/studies")
+      Donor.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/donors" )
+      Study.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/studies")
 
-      new FileIndex(study, studyNDF, inputData)(etlConfiguration).run()
+      val files = new FileIndex(study, studyNDF, inputData)(etlConfiguration);
+      write(files.transform(files.extract()), s"$outputPath/files")
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);
+  }
+
+  def write(files: DataFrame, outputPath: String)(implicit spark: SparkSession): Unit = {
+    files
+      .coalesce(1)
+      .write
+      .mode(SaveMode.Overwrite)
+      .partitionBy("study_id", "dictionary_version", "study_version", "study_version_creation_date")
+      .json(outputPath)
   }
 
   spark.stop()

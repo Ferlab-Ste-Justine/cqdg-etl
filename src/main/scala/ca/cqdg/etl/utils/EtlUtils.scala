@@ -1,13 +1,11 @@
 package ca.cqdg.etl.utils
 
-import ca.cqdg.etl.EtlApp.spark
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, isCancer, notNullCol, phenotypeObserved}
 import org.apache.spark.broadcast.Broadcast
-import org.apache.spark.sql.catalyst.encoders.RowEncoder
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types.{DataType, StringType}
+import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
 import java.text.{Normalizer, SimpleDateFormat}
@@ -364,7 +362,6 @@ object EtlUtils {
   }
 
   def loadPerDonorAndStudy(dataFrame: DataFrame, namedAs: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
 
     dataFrame
       .groupBy("study_id",submitterDonorIdColName)

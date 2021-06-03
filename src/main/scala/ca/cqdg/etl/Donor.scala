@@ -1,27 +1,38 @@
 package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
-import ca.cqdg.etl.utils.EtlUtils._
 import ca.cqdg.etl.utils.EtlUtils.columns._
 import ca.cqdg.etl.utils.{DataAccessUtils, SummaryUtils}
-import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object Donor {
-  def run(broadcastStudies: Broadcast[DataFrame],
-          dfList: List[NamedDataFrame],
+  def run(study: DataFrame,
+          studyNDF: NamedDataFrame,
+          inputData: Map[String, DataFrame],
           ontologyDf: Map[String, DataFrame],
           outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, dfList, ontologyDf), outputPath)
+    write(build(study, studyNDF, inputData, ontologyDf), outputPath)
   }
 
-  def build(broadcastStudies: Broadcast[DataFrame],
-            dfList: List[NamedDataFrame],
+  def build(study: DataFrame,
+            studyNDF: NamedDataFrame,
+            data: Map[String, DataFrame],
             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
+    val donor = data("donor").as("donor")
+    val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
+    val phenotypesPerDonorAndStudy = data("phenotypesPerDonorAndStudy").as("phenotypeGroup")
+    val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
+    val dataAccess = data("dataAccess").as("dataAccess")
+    val treatmentsPerDonorAndStudy = data("treatmentsPerDonorAndStudy").as("treatmentsPerDonorAndStudy")
+    val exposuresPerDonorAndStudy = data("exposuresPerDonorAndStudy").as("exposuresPerDonorAndStudy")
+    val followUpsPerDonorAndStudy = data("followUpsPerDonorAndStudy").as("followUpsPerDonorAndStudy")
+    val familyHistoryPerDonorAndStudy = data("familyHistoryPerDonorAndStudy").as("familyHistoryPerDonorAndStudy")
+    val familyRelationshipPerDonorAndStudy = data("familyRelationshipPerDonorAndStudy").as("familyRelationshipPerDonorAndStudy")
+    val file = data("file").as("file")
+    
     import spark.implicits._
 
     val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "donor", "submitter_donor_id")
@@ -70,7 +81,7 @@ object Donor {
       .as("fileGroup")
 
     val donorStudyJoin = donor
-      .join(broadcastStudies.value, $"donor.study_id" === $"study.study_id")
+      .join(study, $"donor.study_id" === $"study.study_id")
       .select( cols =
         $"donor.*",
         array(struct("study.*")).as("study"),
@@ -94,7 +105,6 @@ object Donor {
         $"dataAccessGroup.data_access_codes"
       )
 
-    val studyNDF: NamedDataFrame = getDataframe("study", dfList)
     result
       .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
       .withColumn("study_version", lit(studyNDF.studyVersion))

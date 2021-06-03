@@ -1,7 +1,7 @@
 package ca.cqdg.etl.utils
 
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions.{col, collect_list, collect_set, explode, split, struct, trim}
 
 object DataAccessUtils {
 

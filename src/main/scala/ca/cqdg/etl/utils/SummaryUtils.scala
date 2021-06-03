@@ -1,11 +1,11 @@
 package ca.cqdg.etl.utils
 
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions.{col, collect_list, countDistinct, lit, struct}
 
 object SummaryUtils {
 
-  val CROSS_JOIN_PARTITION_SIZE = 10
+  val CROSS_JOIN_PARTITION_SIZE = 1
 
   def prepareSummaryDataFrames(donor: DataFrame, file: DataFrame): (DataFrame, DataFrame, DataFrame, DataFrame) = {
     val donorPerFile = donor
@@ -131,7 +131,6 @@ object SummaryUtils {
 
 
   private def computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations: DataFrame, dataFrame: DataFrame, keyName: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
 
     val columnsToFullJoin = Seq("study_id", "submitter_donor_id")
 

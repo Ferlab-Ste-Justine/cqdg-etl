@@ -3,7 +3,8 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.testutils.TestData.hashCodesList
 import ca.cqdg.etl.testutils.WithSparkSession
-import ca.cqdg.etl.testutils.model.PHENOTYPES
+import ca.cqdg.etl.testutils.model.{BiospecimenOutput, DataAccessInput, DonorDiagnosisOutput, DonorOutput, FileInput, HpoTermsInput, MondoTermsInput, PHENOTYPES, PhenotypeWithHpoOutput}
+import ca.cqdg.etl.utils.EtlUtils.getDataframe
 import ca.cqdg.etl.utils.PreProcessingUtils.getOntologyDfs
 import ca.cqdg.etl.utils.{EtlUtils, PreProcessingUtils, S3Utils, Schema}
 import com.amazonaws.auth.{AWSStaticCredentialsProvider, BasicAWSCredentials}
@@ -21,6 +22,7 @@ import java.nio.charset.StandardCharsets
 
 class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with WithSparkSession
 {
+  import spark.implicits._
   val CLINDATA_BUCKET = "cqdg"
 
   val s3Credential = new BasicAWSCredentials("minio", "minio123")
@@ -67,7 +69,6 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val schemaJsonFile = new File("../cqdg-etl/src/test/resources/schema/schema.json")
 
-
   val schemaList: List[Schema] = PreProcessingUtils.getSchemaList(FileUtils.readFileToString(schemaJsonFile, StandardCharsets.UTF_8))
 
   val dictionarySchemas: Map[String, List[Schema]] = Map("5.44" -> schemaList)
@@ -80,11 +81,33 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
 
+  val studyNDF = getDataframe("study", readyToProcess.head._2)
+
+  val study: DataFrame =
+    studyNDF.dataFrame
+      .select(cols =
+        $"*",
+        $"study_id" as "study_id_keyword",
+        $"short_name" as "short_name_keyword",
+        $"short_name" as "short_name_ngrams"
+      )
+      .as("study")
+
+  val inputData = Map(
+    "hpo" -> Seq(HpoTermsInput()).toDF(),
+    "mondo" -> Seq(MondoTermsInput()).toDF(),
+    "donor" -> Seq(DonorOutput(`submitter_donor_id` = "PT00060")).toDF(),
+    "diagnosisPerDonorAndStudy" -> Seq(DonorDiagnosisOutput(`submitter_donor_id` = "PT00060")).toDF(),
+    "phenotypesPerDonorAndStudy" -> Seq(PhenotypeWithHpoOutput(`study_id` = "ST0003", `submitter_donor_id` = "PT00060")).toDF(),
+    "biospecimenWithSamples" -> Seq(BiospecimenOutput(`submitter_biospecimen_id` = "BS00001")).toDF(),
+    "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
+    "dataAccess" -> Seq(DataAccessInput()).toDF(),
+  )
+
   "Donors" should "map hpo terms per donors" in {
     import spark.implicits._
 
-    val broadcastDf = EtlUtils.broadcastStudies(readyToProcess.head._2)
-    val df = Donor.build(broadcastDf, readyToProcess.head._2, ontologyDfs)
+    val df = Donor.build(study, studyNDF, inputData, ontologyDfs)
     val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").filter($"phenotypes".isNotNull).select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
 
     //Fixme, age at phenotype for same phenotypes should be in a Set

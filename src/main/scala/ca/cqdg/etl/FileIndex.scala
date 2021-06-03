@@ -5,7 +5,6 @@ import bio.ferlab.datalake.spark3.etl.ETL
 import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.DataAccessUtils
 import ca.cqdg.etl.utils.EtlUtils.columns._
-import ca.cqdg.etl.utils.EtlUtils.getDataframe
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
