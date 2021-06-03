@@ -19,7 +19,8 @@ object Donor {
             dfList: List[NamedDataFrame],
             ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDf)
+    val (donor,
+    diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 
@@ -60,8 +61,10 @@ object Donor {
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
-        $"diagnosis_per_donor_per_study" as "diagnoses",
+        $"diagnosis_per_donor_per_study" as "diagnoses_tagged",
         $"phenotypes",
+        $"observed_phenotypes",
+        $"non_observed_phenotypes",
         $"files_per_donor_per_study" as "files"
       )
 

@@ -84,8 +84,7 @@ case class TREATMENTS(`submitter_treatment_id`: String = "TX00134",
 case class PHENOTYPES(`phenotype_id`: String = "HP:0001513",
                       `name`: String = "Obesity",
                       `parents`: Seq[String] = Seq("Increased body weight HP:0004324"),
-                      `age_at_phenotype`: Set[Int] = Set(54),
-                      `phenotype_observed_bool`: Boolean = true,
+                      `age_at_event`: Set[Int] = Set(54),
                       `is_leaf`: Boolean = false,
                       `is_tagged`: Boolean = false)
 

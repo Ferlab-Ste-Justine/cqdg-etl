@@ -35,11 +35,13 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
 
   "addAncestorsToTerm" should "transform data in expected format" in {
 
-    val phenotypesDf = Seq(PhenotypeInput(`phenotype_HPO_code` = "HP:0001694")).toDF
+    val phenotypesDf =
+      Seq(PhenotypeInput(`phenotype_HPO_code` = "HP:0001694")).toDF
+      .withColumnRenamed("age_at_phenotype", "age_at_event")
 
     val hpoDf = Seq(HpoTermsInput()).toDF()
 
-    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code")(phenotypesDf, hpoDf)
+    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code", "phenotypes")(phenotypesDf, hpoDf)
 
     result.as[PhenotypeWithHpoOutput].collect().head shouldBe PhenotypeWithHpoOutput()
   }

@@ -146,6 +146,7 @@ object PreProcessingUtils{
     val idServicePayload = enhancedDF.select("cqdg_hash", "cqdg_entity").as[(String, String)].collect().toMap
     val jsonResponse = buildIds(gson.toJson(JavaConverters.mapAsJavaMap(idServicePayload)))
     val cqdgIDsDF = spark.read.json(Seq(jsonResponse).toDS()).toDF("hash", "internal_id")
+
     val result = enhancedDF
       .join(cqdgIDsDF, $"cqdg_hash" === $"hash")
       .drop("cqdg_hash", "hash")

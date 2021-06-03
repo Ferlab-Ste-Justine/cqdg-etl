@@ -129,15 +129,15 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
           List(FAMILYHISTORY("Yes", 48, "Multiple sclerosis", "maternal aunt", "FC00060")), "NO",
           List(FILES("Controled", "Sequencing reads", "Aligned reads", "WGS", "cram", "uK9WHQ0.cram", "uK9WHQ0.cram", "uK9WHQ0.cram", 13.02056279174796, None, true, "Illumina", "BS00060")),
           "Female", "YES", "Not applicable", "Not applicable", "NO", "NO", "YES",
-          List(PHENOTYPES("HP:0001513", "Obesity", List("Increased body weight HP:0004324"), Set(54), true, false, false)), "NO",
+          List(PHENOTYPES("HP:0001513", "Obesity", List("Increased body weight HP:0004324"), Set(54), false, false)), "NO",
           List(STUDY("population-based cohort focusing on complex conditions", "General Health", "Common chronic disorders; Prospective cohort; Reference genome", "Study1",
             "Adult", "ST1", "ST1", "ST1", "ST0001", "ST0001")), "PT00060", "alive")),
         List(BIOSPECIMEN("BS00001", "DI00001", "11/22/2009", "Normal", "No", None, "Acute myocardial infarction", "Cryopreservation - other", "Frozen in -70 freezer",
           "Yes", "Blood derived - peripheral blood", "Normal", "C42.0: Blood",
           List(SAMPLES("SA00001", "Total DNA")))), null,
         List(
-          PHENOTYPES("HP:0001694", "Right-to-left shunt", List("Cardiac shunt (HP:0001693)"), Set(63), true, true, true),
-          PHENOTYPES("HP:0001626", "Abnormality of the cardiovascular system", List("Phenotypic abnormality (HP:0000118)"), Set(63), true, false, false)),
+          PHENOTYPES("HP:0001694", "Right-to-left shunt", List("Cardiac shunt (HP:0001693)"), Set(63), true, true),
+          PHENOTYPES("HP:0001626", "Abnormality of the cardiovascular system", List("Phenotypic abnormality (HP:0000118)"), Set(63), false, false)),
         "5.44", "1.0", "2020/05/01")
 
     df.as[FileIndexOutput].collect().head.copy(`file_size` = 1) shouldBe expectedResult.copy(`file_size` = 1)
@@ -146,11 +146,12 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
 
   "File" should "map hpo terms per file" in {
 
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
+    biospecimenWithSamples, file, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
     val inputData: Map[String, DataFrame] = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
+        "phenotypesPerDonorAndStudy" -> phenotypesPerStudyIdAndDonor,
         "biospecimenWithSamples" -> biospecimenWithSamples,
         "file" -> file
     )
@@ -168,8 +169,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
         `phenotype_id` = "HP:0001513",
         `name` = "Obesity",
         `parents` = Seq("Increased body weight (HP:0004324)"),
-        `age_at_phenotype` = Set(32),
-        `phenotype_observed_bool` = true,
+        `age_at_event` = Set(32),
         `is_leaf` = false,
         `is_tagged` = true
       ),
@@ -177,31 +177,31 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
         `phenotype_id` = "HP:0004324",
         `name` = "Increased body weight",
         `parents` = Seq("Abnormality of body weight (HP:0004323)"),
-        `age_at_phenotype` = Set(32),
+        `age_at_event` = Set(32),
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0004323",
         `name` = "Abnormality of body weight",
         `parents` = Seq("Growth abnormality (HP:0001507)"),
-        `age_at_phenotype` = Set(32),
+        `age_at_event` = Set(32),
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0001507",
         `name` = "Growth abnormality",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
-        `age_at_phenotype` = Set(32)
+        `age_at_event` = Set(32)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
-        `age_at_phenotype` = Set(32)
+        `age_at_event` = Set(32)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
-        `age_at_phenotype` = Set(32)
+        `age_at_event` = Set(32)
       )
     )
   }

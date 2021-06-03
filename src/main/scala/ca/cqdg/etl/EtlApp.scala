@@ -73,11 +73,11 @@ object EtlApp extends App {
 
       val broadcastStudies = spark.sparkContext.broadcast(study)
 
-      val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDfs)
+      val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, _) = loadAll(dfList)(ontologyDfs)
       val inputData = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
+        "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
         "biospecimenWithSamples" -> biospecimenWithSamples,
         "file" -> file)
 

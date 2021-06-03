@@ -61,14 +61,15 @@ object Study {
              dfList: List[NamedDataFrame],
              ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
+    biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 
     val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
     val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
     val summaryDiagnosis = computeDonorsByField(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
-    val summaryPhenotype = computeDonorsByField(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
+    val summaryPhenotype = computeDonorsByField(phenotypesPerStudyIdAndDonor, "phenotype").as("summaryPhenotype")
     val summaryTreatment = computeDonorsByField(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
 
     val summaryGroup = summaryByCategory
@@ -91,7 +92,7 @@ object Study {
 
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
       .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"donor.study_id" === $"phenotypeGroup.study_id" && $"donor.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
+      .join(phenotypesPerStudyIdAndDonor, $"donor.study_id" === $"phenotypeGroup.study_id" && $"donor.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
       .drop($"diagnosisGroup.study_id")
       .drop($"diagnosisGroup.submitter_donor_id")
       .drop($"phenotypeGroup.study_id")

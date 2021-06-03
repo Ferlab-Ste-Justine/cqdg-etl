@@ -11,6 +11,7 @@ import com.amazonaws.client.builder.AwsClientBuilder
 import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.commons.io.FileUtils
+import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.DataFrame
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AnyFlatSpec
@@ -80,22 +81,20 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
 
-  "Donors" should "map hpo terms per donors" in {
+  val broadcastDf: Broadcast[DataFrame] = EtlUtils.broadcastStudies(readyToProcess.head._2)
+  val df: DataFrame = Donor.build(broadcastDf, readyToProcess.head._2, ontologyDfs)
+
+  "Donors" should "map observed hpo terms per donors" in {
     import spark.implicits._
 
-    val broadcastDf = EtlUtils.broadcastStudies(readyToProcess.head._2)
-    val df = Donor.build(broadcastDf, readyToProcess.head._2, ontologyDfs)
-    val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
+    val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").select(col = "observed_phenotypes").as[Seq[PHENOTYPES]].collect().head
 
-
-    //Fixme, age at phenotype for same phenotypes should be in a Set
     phenotypesForDonor14 should contain theSameElementsAs Seq(
       PHENOTYPES(
         `phenotype_id` = "HP:0000501",
         `name` = "Glaucoma",
         `parents` = Seq("Abnormal eye physiology (HP:0012373)"),
-        `age_at_phenotype` = Set(63),
-        `phenotype_observed_bool` = true,
+        `age_at_event` = Set(63),
         `is_leaf` = false,
         `is_tagged` = true
       ),
@@ -103,7 +102,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
         `phenotype_id` = "HP:0100279",
         `name` = "Ulcerative colitis",
         `parents` = Seq("Chronic colitis (HP:0100281)"),
-        `age_at_phenotype` = Set(56),
+        `age_at_event` = Set(56),
         `is_leaf` = true,
         `is_tagged` = true
       ),
@@ -111,121 +110,150 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
         `phenotype_id` = "HP:0012373",
         `name` = "Abnormal eye physiology",
         `parents` = Seq("Abnormality of the eye (HP:0000478)"),
-        `age_at_phenotype` = Set(63),
+        `age_at_event` = Set(63),
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0000478",
         `name` = "Abnormality of the eye",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
-        `age_at_phenotype` = Set(63)
+        `age_at_event` = Set(63)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
-        `age_at_phenotype` = Set(56, 63)
+        `age_at_event` = Set(56, 63)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0025032",
         `name` = "Abnormality of digestive system physiology",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0011024",
         `name` = "Abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0002583",
         `name` = "Colitis",
         `parents` = Seq("Inflammation of the large intestine (HP:0002037)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0002037",
         `name` = "Inflammation of the large intestine",
         `parents` = Seq("Abnormal large intestine morphology (HP:0002250)", "Gastrointestinal inflammation (HP:0004386)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0002715",
         `name` = "Abnormality of the immune system",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
-        `age_at_phenotype` = Set(56, 63)
+        `age_at_event` = Set(56, 63)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0025031",
         `name` = "Abnormality of the digestive system",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0012718",
         `name` = "Morphological abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system morphology (HP:0025033)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0004386",
         `name` = "Gastrointestinal inflammation",
         `parents` = Seq("Increased inflammatory response (HP:0012649)", "Functional abnormality of the gastrointestinal tract (HP:0012719)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0012649",
         `name` = "Increased inflammatory response",
         `parents` = Seq("Abnormal inflammatory response (HP:0012647)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0010978",
         `name` = "Abnormality of immune system physiology",
         `parents` = Seq("Abnormality of the immune system (HP:0002715)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0012719",
         `name` = "Functional abnormality of the gastrointestinal tract",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system physiology (HP:0025032)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0002250",
         `name` = "Abnormal large intestine morphology",
         `parents` = Seq("Abnormal intestine morphology (HP:0002242)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0012647",
         `name` = "Abnormal inflammatory response",
         `parents` = Seq("Abnormality of immune system physiology (HP:0010978)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0100281",
         `name` = "Chronic colitis",
         `parents` = Seq("Colitis (HP:0002583)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0002242",
         `name` = "Abnormal intestine morphology",
         `parents` = Seq("Morphological abnormality of the gastrointestinal tract (HP:0012718)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
       ),
       PHENOTYPES(
         `phenotype_id` = "HP:0025033",
         `name` = "Abnormality of digestive system morphology",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
-        `age_at_phenotype` = Set(56)
+        `age_at_event` = Set(56)
+      )
+    )
+  }
+
+  "Donors" should "map non observed hpo terms per donors" in {
+    import spark.implicits._
+
+    val phenotypesForDonor14 = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "non_observed_phenotypes").as[Seq[PHENOTYPES]].collect().head
+
+    phenotypesForDonor14 should contain theSameElementsAs Seq(
+      PHENOTYPES(
+        `phenotype_id` = "HP:0025031",
+        `name` = "Abnormality of the digestive system",
+        `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
+        `age_at_event` = Set(54),
+        `is_leaf` = false,
+        `is_tagged` = true
+      ),
+      PHENOTYPES(
+        `phenotype_id` = "HP:0000118",
+        `name` = "Phenotypic abnormality",
+        `parents` = Seq("All (HP:0000001)"),
+        `age_at_event` = Set(54)
+      ),
+      PHENOTYPES(
+        `phenotype_id` = "HP:0000001",
+        `name` = "All",
+        `parents` = Nil,
+        `age_at_event` = Set(54)
       )
     )
   }

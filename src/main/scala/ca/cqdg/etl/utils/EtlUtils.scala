@@ -1,10 +1,8 @@
 package ca.cqdg.etl.utils
 
-import ca.cqdg.etl.EtlApp.spark
 import ca.cqdg.etl.model.NamedDataFrame
-import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, isCancer, notNullCol, phenotypeObserved}
+import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, notNullCol, phenotypeObserved}
 import org.apache.spark.broadcast.Broadcast
-import org.apache.spark.sql.catalyst.encoders.RowEncoder
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
@@ -75,6 +73,8 @@ object EtlUtils {
 
   def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
              (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+    import spark.implicits._
+
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -96,17 +96,54 @@ object EtlUtils {
       treatmentNDF.dataFrame as "treatment",
       followUpNDF.dataFrame as "follow_up")
 
-    val phenotypesPerStudyIdAndDonor = addAncestorsToTerm("phenotype_HPO_code")(phenotypeNDF.dataFrame, ontologies.head._2)
+    val phenotypeNDFCleanObserved = phenotypeNDF.dataFrame
+      .withColumnRenamed("age_at_phenotype", "age_at_event")
+      .select(cols = $"*", phenotypeObserved)
+      .drop($"phenotype_observed")
+
+    val phenotypesObservedPerStudyIdAndDonor =
+      addAncestorsToTerm("phenotype_HPO_code", "observed_phenotypes")(
+        phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === true),
+        ontologies("hpo")
+      )
+
+    val phenotypesNotObservedPerStudyIdAndDonor =
+      addAncestorsToTerm("phenotype_HPO_code", "non_observed_phenotypes")(
+        phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === false),
+        ontologies("hpo")
+      )
+
+    val phenotypesPerStudyIdAndDonor = phenotypeNDFCleanObserved
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"submitter_phenotype_id",
+            $"phenotype_HPO_code",
+            $"age_at_event",
+            $"phenotype_observed_bool"
+          )
+        ).as("phenotypes")
+      )
+      .join(phenotypesObservedPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesNotObservedPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
+
+//    val mondoPerStudyIdAndDonor = addAncestorsToTerm("diagnosis_mondo_code", "mondo")(diagnosisNDF.dataFrame.withColumnRenamed("age_at_diagnosis", "age_at_event"), ontologies("mondo"))
 
     val treatmentsPerDonorAndStudy: DataFrame = loadTreatments(treatmentNDF.dataFrame as "treatment")
 
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy)
+    (donor,
+      diagnosisPerDonorAndStudy,
+      phenotypesPerStudyIdAndDonor,
+      biospecimenWithSamples,
+      file,
+      treatmentsPerDonorAndStudy)
   }
 
-  def addAncestorsToTerm(dataColName: String)(dataDf: DataFrame, termsDf: DataFrame)
+  def addAncestorsToTerm(dataColName: String, ontologyTermName: String)(dataDf: DataFrame, termsDf: DataFrame)
                         (implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
     val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
@@ -119,8 +156,7 @@ object EtlUtils {
           $"id" ,
           $"name",
           $"parents",
-          $"age_at_phenotype",
-          phenotypeObserved,
+          $"age_at_event",
           $"is_leaf"
         )
         .withColumn("is_tagged", lit(true))
@@ -131,8 +167,7 @@ object EtlUtils {
         .select(cols=
           $"study_id",
           $"submitter_donor_id",
-          $"age_at_phenotype",
-          $"phenotype_observed",
+          $"age_at_event",
           explode_outer($"ancestors") as "ancestors_exploded"
         )
         .withColumn("is_leaf", lit(false))
@@ -143,8 +178,7 @@ object EtlUtils {
       $"ancestors_exploded.id" as "id",
       $"ancestors_exploded.name" as "name",
       $"ancestors_exploded.parents" as "parents",
-      $"age_at_phenotype",
-      phenotypeObserved
+      $"age_at_event",
     )
       .withColumn("is_leaf", lit(false))
       .withColumn("is_tagged", lit(false))
@@ -159,18 +193,17 @@ object EtlUtils {
         $"id",
         $"name",
         $"parents",
-        $"phenotype_observed_bool",
         $"is_leaf",
         $"is_tagged",
       )
       .agg(collect_list(
-        array(cols = $"age_at_phenotype")
-      ) as "age_at_phenotype_raw")
+        array(cols = $"age_at_event")
+      ) as "age_at_event_raw")
       .select(
         $"*",
-        flatten($"age_at_phenotype_raw") as "age_at_phenotype"
+        array_distinct(sort_array(flatten($"age_at_event_raw"))) as "age_at_event"
       )
-      .drop($"age_at_phenotype_raw")
+      .drop($"age_at_event_raw")
 
     val combinedPhenotypes = groupAgesAtPhenotype
       .groupBy($"study_id", $"submitter_donor_id")
@@ -179,12 +212,11 @@ object EtlUtils {
           $"id".as("phenotype_id"),
           $"name",
           $"parents",
-          $"age_at_phenotype",
-          $"phenotype_observed_bool",
+          $"age_at_event",
           $"is_leaf",
           $"is_tagged"
         )
-      ) as "phenotypes") as "phenotypeGroup"
+      ) as s"$ontologyTermName") as "phenotypeGroup"
 
     combinedPhenotypes
   }
@@ -318,11 +350,10 @@ object EtlUtils {
         ) as "follow_ups"
       ) as "followUpsPerDiagnosis"
 
-
     val diagnosisWithTreatmentAndFollowUps = diagnosis
       .join(treatmentPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
       .join(followUpPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
-      .withColumn("is_cancer", isCancer)
+//      .withColumn("is_cancer", isCancer) //FIXME is this necessary?
     // TODO: load the following based on their respective code.
     /*.select(cols =
         $"*",
