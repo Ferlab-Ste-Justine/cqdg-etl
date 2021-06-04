@@ -150,7 +150,7 @@ object PreProcessingUtils{
       enhancedDF
       .join(cqdgIDsDF, $"cqdg_hash" === $"hash")
       .drop("cqdg_hash", "hash")
-      .withColumnRenamed("internal_id", s"${entityType}_cqdg_id")
+      .withColumnRenamed("internal_id", s"internal_${sanitize(entityType)}_id")
     } else {
       enhancedDF
     }
@@ -205,23 +205,23 @@ object PreProcessingUtils{
     val jsonResponse: JsonArray = JsonParser.parseString(responseString).getAsJsonArray
     jsonResponse.forEach(el => {
       val jsonSchemas = el.getAsJsonObject.get("schemas").getAsJsonArray
-      jsonSchemas.forEach(x => schemas += Schema(
-        sanitize(x.getAsJsonObject.get("name").getAsString),
-        getSchemaFields(x.getAsJsonObject.get("fields").getAsJsonArray)
-      ))
+      jsonSchemas.forEach(x => {
+        val entityType = sanitize(x.getAsJsonObject.get("name").getAsString)
+        schemas += Schema(entityType, getSchemaFields(entityType, x.getAsJsonObject.get("fields").getAsJsonArray))
+      })
     })
 
     // Add the file schema which is used for mapping the genomic files to the clinical data
-    schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "file_name",
+    schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "internal_file_id", "file_name",
       "data_category", "data_type", "is_harmonized", "experimental_strategy", "data_access", "file_format", "platform", "variant_class"))
 
     schemas.toList
   }
 
-  private def getSchemaFields(fields: JsonArray): List[String] = {
+  private def getSchemaFields(entityType: String, fields: JsonArray): List[String] = {
     val fieldsList: mutable.MutableList[String] = mutable.MutableList()
     fields.forEach(field => fieldsList += field.getAsJsonObject.get("name").getAsString)
-    fieldsList += "cqdg_id"
+    fieldsList += s"internal_${entityType}_id"
     fieldsList.toList
   }
 
