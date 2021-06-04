@@ -223,7 +223,6 @@ object EtlUtils {
         ) as "biospecimen"
       ) as "biospecimenWithSamples"
 
-    //result.show(1, 0, true)
     result
   }
 
@@ -271,9 +270,6 @@ object EtlUtils {
       .withColumn("ethnicity", notNullCol($"ethnicity"))
       .withColumn("age_at_recruitment", ageAtRecruitment)
 
-
-    //result.printSchema();
-    //result.show(1, 0, true)
     result
   }
 
@@ -332,7 +328,6 @@ object EtlUtils {
         ) as "diagnoses"
       ) as "diagnosisGroup"
 
-    //result.show(1, 0, true)
     result
   }
 
@@ -392,7 +387,7 @@ object EtlUtils {
     }
 
     def toBoolean(col: Column): Column = when(
-      col.isin("1",1),lit(true)
+      col.geq(1),lit(true)
     ) otherwise( lit(false))
 
     //TODO: Calculate the real file size - in mb

@@ -81,6 +81,9 @@ object Study {
       .drop($"biospecimenWithSamples.study_id")
       .drop($"biospecimenWithSamples.submitter_biospecimen_id")
       .drop($"file.submitter_biospecimen_id")
+      .drop($"file.file_name")
+      .drop($"file.file_name_keyword")
+      .drop($"file.file_name_ngrams")
       .groupBy($"study_id")
       .agg(
         collect_list(

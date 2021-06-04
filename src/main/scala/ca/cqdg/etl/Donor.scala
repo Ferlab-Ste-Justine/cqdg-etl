@@ -68,14 +68,16 @@ object Donor {
       .withColumnRenamed("variant_class", "file_variant_class")
 
     val fileWithBiospecimen: DataFrame = fileWithRenamedColumns
-      .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
-      .drop($"biospecimenWithSamples.submitter_biospecimen_id")
+      .join(biospecimenWithSamples, Seq("submitter_biospecimen_id"), "left")
+      .drop($"biospecimenWithSamples.file_name")
+      .drop($"biospecimenWithSamples.file_name_keyword")
+      .drop($"biospecimenWithSamples.file_name_ngrams")
 
     val filesPerDonorAndStudy = fileWithBiospecimen
       .groupBy($"file.submitter_donor_id", $"file.study_id")
       .agg(
         collect_list(
-          struct(fileWithBiospecimen.columns.filterNot(List("study_id", "submitter_donor_id").contains(_)).map(col) : _*)
+          struct(fileWithBiospecimen.columns.filterNot(List("study_id", "submitter_donor_id", "file_name", "file_name_keyword", "file_name_ngrams").contains(_)).map(col) : _*)
         ) as "files_per_donor_per_study"
       )
       .as("fileGroup")
@@ -86,7 +88,6 @@ object Donor {
         $"donor.*",
         array(struct("study.*")).as("study"),
         $"familyConditions" as "familyHistory",
-        $"exposures" as "exposure"
       )
       .as("donorWithStudy")
 
