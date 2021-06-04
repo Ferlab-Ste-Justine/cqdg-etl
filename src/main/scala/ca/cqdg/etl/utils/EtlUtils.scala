@@ -124,6 +124,7 @@ object EtlUtils {
           $"name",
           $"parents",
           $"age_at_phenotype",
+          $"internal_phenotype_id",
           phenotypeObserved,
           $"is_leaf"
         )
@@ -136,8 +137,9 @@ object EtlUtils {
           $"study_id",
           $"submitter_donor_id",
           $"age_at_phenotype",
+          $"internal_phenotype_id",
           $"phenotype_observed",
-          explode_outer($"ancestors") as "ancestors_exploded"
+          explode_outer($"ancestors") as "ancestors_exploded",
         )
         .withColumn("is_leaf", lit(false))
 
@@ -148,6 +150,7 @@ object EtlUtils {
       $"ancestors_exploded.name" as "name",
       $"ancestors_exploded.parents" as "parents",
       $"age_at_phenotype",
+      $"internal_phenotype_id",
       phenotypeObserved
     )
       .withColumn("is_leaf", lit(false))
@@ -163,6 +166,7 @@ object EtlUtils {
           $"name",
           $"parents",
           $"age_at_phenotype",
+          $"internal_phenotype_id",
           $"phenotype_observed_bool",
           $"is_leaf",
           $"is_tagged"
