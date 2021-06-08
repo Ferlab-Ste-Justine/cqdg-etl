@@ -66,7 +66,6 @@ object EtlApp extends App {
           $"*",
           $"study_id" as "study_id_keyword",
           $"short_name" as "short_name_keyword",
-          $"short_name" as "short_name_ngrams"
         )
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")

@@ -284,20 +284,6 @@ object EtlUtils {
     (combinedPhenotypes, taggedPhenotypes)
   }
 
-  def broadcastStudies(listNamedDF: List[NamedDataFrame])(implicit spark: SparkSession): Broadcast[DataFrame] = {
-    import spark.implicits._
-
-    val study: DataFrame = getDataframe("study", listNamedDF).dataFrame
-      .select( cols=
-        $"*",
-        $"study_id" as "study_id_keyword",
-        $"short_name" as "short_name_keyword",
-        $"short_name" as "short_name_ngrams"
-      )
-      .as("study")
-
-    spark.sparkContext.broadcast(study)
-  }
 
   def loadBiospecimens(biospecimen: DataFrame, samples: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
