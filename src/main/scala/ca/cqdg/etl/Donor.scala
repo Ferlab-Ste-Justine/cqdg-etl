@@ -61,8 +61,10 @@ object Donor {
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
-        $"diagnosis_per_donor_per_study" as "diagnoses_tagged",
-        $"phenotypes",
+        $"diagnosis_per_donor_per_study" as "diagnoses",
+        $"mondo",
+        $"observed_phenotype_tagged",
+        $"not_observed_phenotype_tagged",
         $"observed_phenotypes",
         $"non_observed_phenotypes",
         $"files_per_donor_per_study" as "files"

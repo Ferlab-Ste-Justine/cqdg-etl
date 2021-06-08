@@ -35,7 +35,7 @@ case class STUDY_DONORS(`age_at_recruitment`: String = "62",
                         `laboratory_measures_available`: String = "NO",
                         `lifestyle_available`: String = "NO",
                         `medication_available`: String = "NO",
-                        `phenotypes`: List[PHENOTYPES] = List(PHENOTYPES()),
+                        `phenotypes`: List[ONTOLOGY_TERM] = List(ONTOLOGY_TERM()),
                         `physical_measures_available`: String = "NO",
                         `submitter_donor_id`: String = "PT00134",
                         `vital_status`: String = "alive")
@@ -81,12 +81,12 @@ case class TREATMENTS(`submitter_treatment_id`: String = "TX00134",
                       `treatment_response`: String = "Partial Response",
                       `treatment_type`: String = "Stem cell transplant")
 
-case class PHENOTYPES(`phenotype_id`: String = "HP:0001513",
-                      `name`: String = "Obesity",
-                      `parents`: Seq[String] = Seq("Increased body weight HP:0004324"),
-                      `age_at_event`: Set[Int] = Set(54),
-                      `is_leaf`: Boolean = false,
-                      `is_tagged`: Boolean = false)
+case class ONTOLOGY_TERM(`phenotype_id`: String = "HP:0001513",
+                         `name`: String = "Obesity",
+                         `parents`: Seq[String] = Seq("Increased body weight HP:0004324"),
+                         `age_at_event`: Set[Int] = Set(54),
+                         `is_leaf`: Boolean = false,
+                         `is_tagged`: Boolean = false)
 
 case class DIAGNOSIS_PER_DONOR_PER_STUDY(`age_at_diagnosis`: Long = 56,
                                          `diagnosis_source_text`: Option[String] = None,

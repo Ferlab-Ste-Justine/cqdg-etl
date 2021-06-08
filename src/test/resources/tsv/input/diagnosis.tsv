@@ -290,9 +290,6 @@ ST0001	PT00339	DI00339	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oro
 ST0002	PT00502	DI00502	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1c	N1mi	M1e
 ST0002	PT00503	DI00503	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T1b1	N4	M1e
 ST0003	PT00758	DI00758	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia3	T1a	N2c	M1c(1)
-ST0002	PT00553	DI00553	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	TX	N3	M1d(0)
-ST0003	PT00632	DI00632	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Tis pd	N2mi	M1c(1)
-ST0003	PT00779	DI00779	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1b2	N2	M1d(0)
 ST0001	PT00020	DI00020	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3	N1b	M1d(1)
 ST0001	PT00174	DI00174	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	T4	N2c	M1d(0)
 ST0001	PT00329	DI00329	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T2d	N1b	M1c(1)

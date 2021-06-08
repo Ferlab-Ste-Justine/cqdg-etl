@@ -7,14 +7,14 @@ package ca.cqdg.etl.testutils.model
 
 case class PhenotypeWithHpoOutput(`study_id`: String = "ST0001",
                                   `submitter_donor_id`: String = "PT00001",
-                                  `phenotypes`: List[PHENOTYPES] = List(PHENOTYPES(
+                                  `phenotypes`: List[ONTOLOGY_TERM] = List(ONTOLOGY_TERM(
                                     `phenotype_id` = "HP:0001694",
                                     `name` = "Right-to-left shunt",
                                     `parents` = List("Cardiac shunt (HP:0001693)"),
                                     `age_at_event` = Set(63),
                                     `is_leaf` = true,
                                     `is_tagged` = true),
-                                    PHENOTYPES(
+                                    ONTOLOGY_TERM(
                                       `phenotype_id` = "HP:0001626",
                                       `name` = "Abnormality of the cardiovascular system",
                                       `parents` = List("Phenotypic abnormality (HP:0000118)"),

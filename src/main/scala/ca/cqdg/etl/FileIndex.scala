@@ -52,7 +52,7 @@ class FileIndex(studyDf: DataFrame,
       .drop($"variant_class")
       .as("fileWithStudy")
 
-     fileStudyJoin
+    fileStudyJoin
       .join(diagnosisPerDonorAndStudy, $"fileWithStudy.study_id" === $"diagnosisGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
       .join(phenotypesPerDonorAndStudy, $"fileWithStudy.study_id" === $"phenotypeGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
       .join(fileDonors, $"fileWithStudy.study_id" === $"fileWithDonors.study_id" && $"fileWithStudy.file_name" === $"fileWithDonors.file_name")
@@ -60,9 +60,13 @@ class FileIndex(studyDf: DataFrame,
       .select( cols =
         $"fileWithStudy.*",
         $"fileWithDonors.donors",
+        $"mondo",
         $"biospecimenWithSamples.biospecimen" as "biospecimen",
         $"diagnosis_per_donor_per_study" as "diagnoses",
-        $"phenotypes"
+        $"observed_phenotype_tagged",
+        $"not_observed_phenotype_tagged",
+        $"observed_phenotypes",
+        $"non_observed_phenotypes"
       )
       .drop($"submitter_donor_id")
       .drop($"submitter_biospecimen_id")
