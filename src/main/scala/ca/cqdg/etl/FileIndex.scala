@@ -22,7 +22,7 @@ class FileIndex(studyDf: DataFrame,
 
     val donor = data("donor").as("donor")
     val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
-    val phenotypesPerDonorAndStudy = data("phenotypesPerDonorAndStudy").as("phenotypeGroup")
+    val phenotypesPerStudyIdAndDonor = data("phenotypesPerStudyIdAndDonor").as("phenotypeGroup")
     val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
     val dataAccess = data("dataAccess").as("dataAccess")
     val file = data("file").as("file")
@@ -57,7 +57,7 @@ class FileIndex(studyDf: DataFrame,
 
     fileStudyJoin
       .join(diagnosisPerDonorAndStudy, $"fileWithStudy.study_id" === $"diagnosisGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"fileWithStudy.study_id" === $"phenotypeGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
+      .join(phenotypesPerStudyIdAndDonor, $"fileWithStudy.study_id" === $"phenotypeGroup.study_id" && $"fileWithStudy.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
       .join(fileDonors, $"fileWithStudy.study_id" === $"fileWithDonors.study_id" && $"fileWithStudy.file_name" === $"fileWithDonors.file_name")
       .join(biospecimenWithSamples, $"fileWithStudy.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .join(dataAccessGroup, Seq("file_name"), "left")

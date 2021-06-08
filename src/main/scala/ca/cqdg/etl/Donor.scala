@@ -23,7 +23,7 @@ object Donor {
 
     val donor = data("donor").as("donor")
     val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
-    val phenotypesPerDonorAndStudy = data("phenotypesPerDonorAndStudy").as("phenotypeGroup")
+    val phenotypesPerStudyIdAndDonor = data("phenotypesPerStudyIdAndDonor").as("phenotypeGroup")
     val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
     val dataAccess = data("dataAccess").as("dataAccess")
     val treatmentsPerDonorAndStudy = data("treatmentsPerDonorAndStudy").as("treatmentsPerDonorAndStudy")
@@ -40,7 +40,7 @@ object Donor {
     val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
     val summaryByStrategy = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "experimental_strategy").as("summaryByStrategy")
-    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
       .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
@@ -93,7 +93,7 @@ object Donor {
 
     val result = donorStudyJoin
       .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
-      .join(phenotypesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .join(summaryGroup, Seq("study_id", "submitter_donor_id"), "left")
       .join(dataAccessGroup, Seq("submitter_donor_id"), "left")

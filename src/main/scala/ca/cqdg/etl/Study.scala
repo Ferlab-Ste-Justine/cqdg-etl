@@ -72,8 +72,6 @@ object Study {
         ) as "donors"
       ) as "donorsGroup"
 
-    donorWithPhenotypesAndDiagnosesPerStudy.show(false)
-
     val fileWithBiospecimenPerStudy: DataFrame = file
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .drop($"biospecimenWithSamples.study_id")

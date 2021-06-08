@@ -101,13 +101,13 @@ object EtlUtils {
       .as("phenotypesClean")
 
     val phenotypesObservedPerStudyIdAndDonor =
-      addAncestorsToTerm("phenotype_HPO_code", "observed_phenotypes")(
+      addAncestorsToTerm("phenotype_HPO_code", "observed_phenotypes", "internal_phenotype_id")(
         phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === true),
         ontologies("hpo")
       )
 
     val phenotypesNotObservedPerStudyIdAndDonor =
-      addAncestorsToTerm("phenotype_HPO_code", "non_observed_phenotypes")(
+      addAncestorsToTerm("phenotype_HPO_code", "non_observed_phenotypes", "internal_phenotype_id")(
         phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === false),
         ontologies("hpo")
       )
@@ -129,6 +129,7 @@ object EtlUtils {
             $"parents",
             $"is_leaf",
             $"is_tagged",
+            $"internal_phenotype_id",
             array($"age_at_event").as("age_at_event")
           )
         ).as("observed_phenotype_tagged")
@@ -143,6 +144,7 @@ object EtlUtils {
             $"parents",
             $"is_leaf",
             $"is_tagged",
+            $"internal_phenotype_id",
             array($"age_at_event").as("age_at_event")
           )
         ).as("not_observed_phenotype_tagged")
@@ -156,7 +158,7 @@ object EtlUtils {
       .join(phenotypesNotObservedPerStudyIdAndDonor._1, Seq("study_id", "submitter_donor_id"), "left")
 
     val mondoPerStudyIdAndDonor =
-      addAncestorsToTerm("diagnosis_mondo_code", "mondo")(
+      addAncestorsToTerm("diagnosis_mondo_code", "mondo", "internal_diagnosis_id")(
         diagnosisNDF.dataFrame
           .withColumnRenamed("age_at_diagnosis", "age_at_event"),
         ontologies("mondo"))
@@ -175,7 +177,8 @@ object EtlUtils {
           $"parents",
           array($"age_at_event").as("age_at_event"),
           $"is_leaf",
-          $"is_tagged"
+          $"is_tagged",
+          $"diagnosis.internal_diagnosis_id"
         ).as("tagged_mondo")
       )
 
@@ -198,7 +201,7 @@ object EtlUtils {
     (dataAccessNDF.dataFrame, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
-  def addAncestorsToTerm(dataColName: String, ontologyTermName: String)(dataDf: DataFrame, termsDf: DataFrame)
+  def addAncestorsToTerm(dataColName: String, ontologyTermName: String, internalIdColumnName:String)(dataDf: DataFrame, termsDf: DataFrame)
                         (implicit spark: SparkSession): (DataFrame, DataFrame) = {
     import spark.implicits._
     val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
@@ -212,8 +215,7 @@ object EtlUtils {
           $"name",
           $"parents",
           $"age_at_event",
-          $"internal_phenotype_id",
-          phenotypeObserved,
+          col(internalIdColumnName),
           $"is_leaf"
         )
         .withColumn("is_tagged", lit(true))
@@ -225,8 +227,7 @@ object EtlUtils {
           $"study_id",
           $"submitter_donor_id",
           $"age_at_event",
-          $"internal_phenotype_id",
-          $"phenotype_observed",
+          col(internalIdColumnName),
           explode_outer($"ancestors") as "ancestors_exploded",
         )
         .withColumn("is_leaf", lit(false))
@@ -238,8 +239,7 @@ object EtlUtils {
       $"ancestors_exploded.name" as "name",
       $"ancestors_exploded.parents" as "parents",
       $"age_at_event",
-      $"internal_phenotype_id",
-      phenotypeObserved
+      col(internalIdColumnName)
     )
       .withColumn("is_leaf", lit(false))
       .withColumn("is_tagged", lit(false))
@@ -256,6 +256,7 @@ object EtlUtils {
         $"parents",
         $"is_leaf",
         $"is_tagged",
+        col(internalIdColumnName),
       )
       .agg(collect_list(
         array(cols = $"age_at_event")
@@ -274,8 +275,7 @@ object EtlUtils {
           $"name",
           $"parents",
           $"age_at_event",
-          $"internal_phenotype_id",
-          $"phenotype_observed_bool",
+          col(internalIdColumnName),
           $"is_leaf",
           $"is_tagged"
         )
@@ -443,31 +443,6 @@ object EtlUtils {
       ) as "diagnosisGroup"
 
     result
-  }
-
-  def loadPhenotypes(phenotype: DataFrame)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    val phenotypeWithRenamedColumns = phenotype.select(cols =
-      $"*",
-      $"phenotype_HPO_code" as "hpo_code",
-      // TODO: Derive the following from phenotype_HPO_code
-      /*
-      $"phenotype_HPO_category" as "hpo_category",
-      $"phenotype_HPO_category" as "hpo_category_keyword",
-      $"phenotype_HPO_term" as "hpo_term",
-      $"phenotype_HPO_term" as "hpo_term_keyword",*/
-      phenotypeObserved
-    ).drop("phenotype_observed", "phenotype_HPO_code")
-
-    phenotypeWithRenamedColumns
-      .where($"phenotype_observed_bool" === "true")
-      .groupBy($"submitter_donor_id", $"study_id")
-      .agg(
-        collect_list(
-          struct(phenotypeWithRenamedColumns.columns.filterNot(List("study_id", "submitter_donor_id", "phenotype_observed_bool").contains(_)).map(col): _*)
-        ) as "phenotypes_per_donor_per_study"
-      ) as "phenotypeGroup"
   }
 
   def loadPerDonorAndStudy(dataFrame: DataFrame, namedAs: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {
