@@ -71,12 +71,12 @@ object EtlApp extends App {
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")
 
-      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
+      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
 
       val inputData = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
+        "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
         "biospecimenWithSamples" -> biospecimenWithSamples,
         "dataAccess" -> dataAccess,
         "treatmentsPerDonorAndStudy" -> treatmentsPerDonorAndStudy,

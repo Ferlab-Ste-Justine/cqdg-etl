@@ -100,7 +100,11 @@ object Donor {
       .select( cols =
         $"donorWithStudy.*",
         $"diagnoses",
-        $"phenotypes",
+        $"mondo",
+        $"observed_phenotype_tagged",
+        $"not_observed_phenotype_tagged",
+        $"observed_phenotypes",
+        $"non_observed_phenotypes",
         $"files_per_donor_per_study" as "files",
         $"summaryGroup.summary",
         $"dataAccessGroup.data_access_codes"

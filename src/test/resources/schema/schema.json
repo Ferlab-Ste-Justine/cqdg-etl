@@ -872,11 +872,11 @@
             "description":"Mondo code used to define a condtion",
             "restrictions":{
               "required":true,
-              "regex":"^(MONDO_|HP_)[0-9]{7}$"
+              "regex":"^(MONDO:|HP:)[0-9]{7}$"
             },
             "meta":{
               "core":true,
-              "examples":"MONDO_0002131, MONDO_0001056",
+              "examples":"MONDO:0002131, MONDO:0001056",
               "notes":"Write the exact MONDO code. For MONDO codes, refer to https://www.ebi.ac.uk/ols/ontologies/mondo",
               "displayName":"Diagnosis Mondo code"
             }
