@@ -71,7 +71,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
 
   val schemaList: List[Schema] = PreProcessingUtils.getSchemaList(FileUtils.readFileToString(schemaJsonFile, StandardCharsets.UTF_8))
 
-  val dictionarySchemas: Map[String, List[Schema]] = Map("5.44" -> schemaList)
+  val dictionarySchemas: Map[String, List[Schema]] = Map("5.57" -> schemaList)
 
   val hashString: String = "[" + hashCodesList.map(l => s"""{"hash":"$l","internal_id":"123"}""").mkString(",") + "]"
   val mockBuildIds: String => String = (_: String) => hashString
@@ -96,8 +96,9 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
   val inputData: Map[String, DataFrame] = Map(
     "donor" -> donor,
     "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-    "phenotypesPerDonorAndStudy" -> phenotypesPerStudyIdAndDonor,
+    "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
     "biospecimenWithSamples" -> biospecimenWithSamples,
+    "dataAccess" -> Seq(DataAccessInput()).toDF(),
     "file" -> file
   )
 
