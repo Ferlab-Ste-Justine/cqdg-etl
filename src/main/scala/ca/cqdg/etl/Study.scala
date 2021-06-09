@@ -50,7 +50,7 @@ object Study {
       .filter(col("study_id").isNotNull)
       .groupBy($"study_id")
       .agg(
-        collect_list(
+        first(  // create an object, no need of an array
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",

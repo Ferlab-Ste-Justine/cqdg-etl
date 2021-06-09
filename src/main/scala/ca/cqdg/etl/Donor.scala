@@ -50,7 +50,7 @@ object Donor {
       .filter(col("submitter_donor_id").isNotNull)
       .groupBy($"study_id", $"submitter_donor_id")
       .agg(
-        collect_list(
+        first(
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
