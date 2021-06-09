@@ -3,17 +3,15 @@ package ca.cqdg.etl
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.testutils.TestData.hashCodesList
 import ca.cqdg.etl.testutils.WithSparkSession
-import ca.cqdg.etl.testutils.model.{BiospecimenOutput, DataAccessInput, DonorDiagnosisOutput, DonorOutput, FileInput, HpoTermsInput, MondoTermsInput, PhenotypeWithHpoOutput}
-import ca.cqdg.etl.utils.EtlUtils.getDataframe
-import ca.cqdg.etl.testutils.model.ONTOLOGY_TERM
+import ca.cqdg.etl.testutils.model._
+import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
 import ca.cqdg.etl.utils.PreProcessingUtils.getOntologyDfs
-import ca.cqdg.etl.utils.{EtlUtils, PreProcessingUtils, S3Utils, Schema}
+import ca.cqdg.etl.utils.{PreProcessingUtils, S3Utils, Schema}
 import com.amazonaws.auth.{AWSStaticCredentialsProvider, BasicAWSCredentials}
 import com.amazonaws.client.builder.AwsClientBuilder
 import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.commons.io.FileUtils
-import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.DataFrame
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AnyFlatSpec
@@ -73,7 +71,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val schemaList: List[Schema] = PreProcessingUtils.getSchemaList(FileUtils.readFileToString(schemaJsonFile, StandardCharsets.UTF_8))
 
-  val dictionarySchemas: Map[String, List[Schema]] = Map("5.44" -> schemaList)
+  val dictionarySchemas: Map[String, List[Schema]] = Map("5.57" -> schemaList)
 
   val hashString: String = "[" + hashCodesList.map(l => s"""{"hash":"$l","internal_id":"123"}""").mkString(",") + "]"
   val mockBuildIds: String => String = (_: String) => hashString
@@ -83,7 +81,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
 
-  val studyNDF = getDataframe("study", readyToProcess.head._2)
+  val studyNDF: NamedDataFrame = getDataframe("study", readyToProcess.head._2)
 
   val study: DataFrame =
     studyNDF.dataFrame
@@ -95,18 +93,25 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       )
       .as("study")
 
+
+  val (_,donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
+  biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
+
   val inputData = Map(
-    "hpo" -> Seq(HpoTermsInput()).toDF(),
-    "mondo" -> Seq(MondoTermsInput()).toDF(),
-    "donor" -> Seq(DonorOutput(`submitter_donor_id` = "PT00060")).toDF(),
-    "diagnosisPerDonorAndStudy" -> Seq(DonorDiagnosisOutput(`submitter_donor_id` = "PT00060")).toDF(),
-    "phenotypesPerDonorAndStudy" -> Seq(PhenotypeWithHpoOutput(`study_id` = "ST0003", `submitter_donor_id` = "PT00060")).toDF(),
+    "donor" -> donor,
+    "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
+    "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
     "biospecimenWithSamples" -> Seq(BiospecimenOutput(`submitter_biospecimen_id` = "BS00001")).toDF(),
-    "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
     "dataAccess" -> Seq(DataAccessInput()).toDF(),
+    "treatmentsPerDonorAndStudy" -> Seq(TreatmentInput()).toDF(),
+    "exposuresPerDonorAndStudy" -> Seq(ExposureInput()).toDF(),
+    "followUpsPerDonorAndStudy" -> Seq(FollowUpInput()).toDF(),
+    "familyHistoryPerDonorAndStudy" -> Seq(FamilyHistoryInput()).toDF(),
+    "familyRelationshipPerDonorAndStudy" -> Seq(FamilyRelationshipInput()).toDF(),
+    "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
   )
 
-  val df = Donor.build(study, studyNDF, inputData, ontologyDfs)
+  val df: DataFrame = Donor.build(study, studyNDF, inputData, ontologyDfs)
 
   "Donors" should "map hpo terms per donors" in {
     import spark.implicits._
