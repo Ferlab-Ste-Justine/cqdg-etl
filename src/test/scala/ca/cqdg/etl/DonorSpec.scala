@@ -1,5 +1,6 @@
 package ca.cqdg.etl
 
+import ca.cqdg.etl.EtlApp.ontologyDfs
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.testutils.TestData.hashCodesList
 import ca.cqdg.etl.testutils.WithSparkSession
@@ -406,6 +407,47 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
         `parents` = Nil,
         `age_at_event` = Set(59)
       )
+    )
+  }
+
+  "Donors" should "map icd terms" in {
+    import spark.implicits._
+
+    val icdDiagnosisForDonor14 = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "icd").as[Seq[ONTOLOGY_TERM]].collect().head
+    val icdDiagnosisForDonor14Tagged = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "diagnoses.tagged_icd").as[Seq[ONTOLOGY_TERM]].collect().head
+
+    icdDiagnosisForDonor14Tagged should contain theSameElementsAs Seq(
+      ONTOLOGY_TERM(
+        `phenotype_id` = "H40",
+        `name` = "Glaucoma",
+        `parents` = Seq("Glaucoma (H40-H42)"),
+        `age_at_event` = Set(59),
+        `is_leaf` = false,
+        `is_tagged` = true
+      )
+    )
+
+    icdDiagnosisForDonor14 should contain theSameElementsAs Seq(
+      ONTOLOGY_TERM(
+        `phenotype_id` = "H40",
+        `name` = "Glaucoma",
+        `parents` = Seq("Glaucoma (H40-H42)"),
+        `age_at_event` = Set(59),
+        `is_leaf` = false,
+        `is_tagged` = true
+      ),
+      ONTOLOGY_TERM(
+        `phenotype_id` = "H40-H42",
+        `name` = "Glaucoma",
+        `parents` = Nil,
+        `age_at_event` = Set(59)
+      ),
+      ONTOLOGY_TERM(
+        `phenotype_id` = "",
+        `name` = "Diseases of the eye and adnexa",
+        `parents` = Nil,
+        `age_at_event` = Set(59),
+      ),
     )
   }
 }
