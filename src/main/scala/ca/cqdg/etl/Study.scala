@@ -1,6 +1,7 @@
 package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
+import ca.cqdg.etl.utils.EtlUtils.columns.fileSize
 import ca.cqdg.etl.utils.{DataAccessUtils, SummaryUtils}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
@@ -72,7 +73,12 @@ object Study {
         ) as "donors"
       ) as "donorsGroup"
 
-    val fileWithBiospecimenPerStudy: DataFrame = file
+    val fileWithSize = file
+      .select( cols =
+        $"*",
+        fileSize)
+
+    val fileWithBiospecimenPerStudy: DataFrame = fileWithSize
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .drop($"biospecimenWithSamples.study_id")
       .drop($"biospecimenWithSamples.submitter_biospecimen_id")
@@ -85,6 +91,7 @@ object Study {
         collect_list(
           struct(cols =
             $"file.*",
+            $"file_size",
             $"biospecimenWithSamples.*"
           )
         ) as "files"
