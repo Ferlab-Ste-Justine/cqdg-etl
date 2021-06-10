@@ -4,7 +4,7 @@ import ca.cqdg.etl.model.NamedDataFrame
 import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, notNullCol, phenotypeObserved}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.expressions.UserDefinedFunction
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.{first, _}
 import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
@@ -130,7 +130,8 @@ object EtlUtils {
             $"is_leaf",
             $"is_tagged",
             $"internal_phenotype_id",
-            array($"age_at_event").as("age_at_event")
+            array($"age_at_event").as("age_at_event"),
+            $"main_category"
           )
         ).as("observed_phenotype_tagged")
       )
@@ -145,7 +146,8 @@ object EtlUtils {
             $"is_leaf",
             $"is_tagged",
             $"internal_phenotype_id",
-            array($"age_at_event").as("age_at_event")
+            array($"age_at_event").as("age_at_event"),
+            $"main_category"
           )
         ).as("not_observed_phenotype_tagged")
       )
@@ -179,9 +181,7 @@ object EtlUtils {
 
     val diagnosisWithMondoICDTagged = diagnosisNDF.dataFrame.as("diagnosis")
       .join(mondoPerStudyIdAndDonor._2.as("diagnosis_mondo_tagged"),
-      $"diagnosis.study_id" ===  $"diagnosis_mondo_tagged.study_id" &&
-        $"diagnosis.submitter_donor_id" ===  $"diagnosis_mondo_tagged.submitter_donor_id" &&
-        $"diagnosis_mondo_code" ===  $"id",
+        Seq("study_id", "submitter_donor_id", "submitter_diagnosis_id"),
       "left")
       .select(
         $"diagnosis.*",
@@ -189,6 +189,7 @@ object EtlUtils {
           $"id" as ("phenotype_id"),
           $"name",
           $"parents",
+          $"main_category",
           array($"age_at_event").as("age_at_event"),
           $"is_leaf",
           $"is_tagged",
@@ -196,9 +197,7 @@ object EtlUtils {
         ).as("tagged_mondo")
       )
       .join(icdPerStudyIdAndDonor._2.as("diagnosis_icd_tagged"),
-        $"diagnosis.study_id" ===  $"diagnosis_icd_tagged.study_id" &&
-          $"diagnosis.submitter_donor_id" ===  $"diagnosis_icd_tagged.submitter_donor_id" &&
-          $"diagnosis_ICD_code" ===  $"id",
+        Seq("study_id", "submitter_donor_id", "submitter_diagnosis_id"),
         "left")
       .select(
         $"diagnosis.*",
@@ -207,6 +206,7 @@ object EtlUtils {
           $"id" as ("phenotype_id"),
           $"name",
           $"parents",
+          $"main_category",
           array($"age_at_event").as("age_at_event"),
           $"is_leaf",
           $"is_tagged",
@@ -235,6 +235,27 @@ object EtlUtils {
     (dataAccessNDF.dataFrame, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
+  private def extractMainCategory(
+                                   ontology_with_ancestors: DataFrame,
+                                   dataColName: String,
+                                   whereCondition: Column,
+                                 _type: String)(implicit spark: SparkSession) = {
+    import spark.implicits._
+
+    ontology_with_ancestors
+      .select($"study_id",
+        $"submitter_donor_id",
+        col(s"submitter_${_type}_id"),
+        col(dataColName) as "id",
+        explode_outer($"ancestors") as "main_category"
+      )
+      .where(whereCondition)
+      .groupBy($"study_id", $"submitter_donor_id", col(s"submitter_${_type}_id"), $"id")
+      .agg(
+        concat(first($"main_category.name"), lit(" ("), first($"main_category.id"), lit(")"))
+          .as("main_category"))
+  }
+
   def addAncestorsToTerm(dataColName: String, ontologyTermName: String, internalIdColumnName:String)(dataDf: DataFrame, termsDf: DataFrame)
                         (implicit spark: SparkSession): (DataFrame, DataFrame) = {
     import spark.implicits._
@@ -242,10 +263,22 @@ object EtlUtils {
 
     val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
 
+    val (condition: Column, _type: String) = dataColName match {
+      case "phenotype_HPO_code" =>
+        (array_contains(col("main_category.parents"), "Phenotypic abnormality (HP:0000118)"), "phenotype")
+      case "diagnosis_mondo_code" =>
+        (array_contains(col("main_category.parents"), "disease or disorder (MONDO:0000001)"), "diagnosis")
+      //"diagnosis_ICD_code"
+      case _ =>
+        ($"main_category.id".rlike("^[A-Z][0-9]{2}-[A-Z][0-9]{2}"), "diagnosis")
+    }
+    val main_categoryDf = extractMainCategory(phenotypes_with_ancestors, dataColName, condition, _type)
+
     val taggedPhenotypes =
       phenotypes_with_ancestors
         .select(cols=
           $"study_id",
+          col(s"submitter_${_type}_id"),
           $"submitter_donor_id",
           $"id" ,
           $"name",
@@ -281,7 +314,7 @@ object EtlUtils {
       .withColumn("is_tagged", lit(false))
       .filter(phenotypes_with_ancestors.col("id").isNotNull)
 
-    val combinedDF: DataFrame = taggedPhenotypes.union(parentsPhenotypes)
+    val combinedDF: DataFrame = taggedPhenotypes.drop(col(s"submitter_${_type}_id")).union(parentsPhenotypes)
 
     val groupAgesAtPhenotype = combinedDF
       .groupBy(
@@ -317,7 +350,11 @@ object EtlUtils {
         )
       ) as s"$ontologyTermName") as "phenotypeGroup"
 
-    (combinedPhenotypes, taggedPhenotypes)
+    val tagged_with_main_category = taggedPhenotypes
+      .join(main_categoryDf, Seq("study_id", "submitter_donor_id", s"submitter_${_type}_id", "id"), "left")
+      .drop($"internal_diagnosis_id")
+
+    (combinedPhenotypes, tagged_with_main_category)
   }
 
 

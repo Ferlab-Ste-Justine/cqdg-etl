@@ -118,10 +118,15 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
     import spark.implicits._
 
     val phenotypesForDonor14 = df.filter($"submitter_donor_id" === "PT00014").select(col = "observed_phenotypes").as[Seq[ONTOLOGY_TERM]].collect().head
-    val phenotypesForDonor14Tagged =
-      df.filter($"submitter_donor_id" === "PT00014")
-        .select($"observed_phenotype_tagged")
-        .as[Seq[ONTOLOGY_TERM]].collect().head
+
+    val phenotypesForDonor14TaggedDf =  df.filter($"submitter_donor_id" === "PT00014")
+      .select($"observed_phenotype_tagged")
+
+    val phenotypesForDonor14Tagged = phenotypesForDonor14TaggedDf.as[Seq[ONTOLOGY_TERM]].collect().head
+    val main_category14 = phenotypesForDonor14TaggedDf.select($"observed_phenotype_tagged.main_category")
+
+    main_category14.as[Seq[String]].collect().head should contain theSameElementsAs Seq(
+      "Abnormality of the immune system (HP:0002715)", "Abnormality of the eye (HP:0000478)")
 
     phenotypesForDonor14Tagged should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
@@ -139,7 +144,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
         `age_at_event` = Set(56),
         `is_leaf` = true,
         `is_tagged` = true
-      )
+      ),
     )
 
     phenotypesForDonor14 should contain theSameElementsAs Seq(
@@ -287,10 +292,9 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
     val phenotypesForDonor14 = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "non_observed_phenotypes").as[Seq[ONTOLOGY_TERM]].collect().head
 
-    val phenotypesForDonor14Tagged =
-      df.filter($"submitter_donor_id" === "PT00014")
-        .select($"not_observed_phenotype_tagged")
-        .as[Seq[ONTOLOGY_TERM]].collect().head
+    val phenotypesForDonor14TaggedDf = df.filter($"submitter_donor_id" === "PT00014")
+      .select($"not_observed_phenotype_tagged")
+    val phenotypesForDonor14Tagged = phenotypesForDonor14TaggedDf.as[Seq[ONTOLOGY_TERM]].collect().head
 
     phenotypesForDonor14Tagged should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
@@ -331,7 +335,11 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
     import spark.implicits._
 
     val mondoDiagnosisForDonor14 = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "mondo").as[Seq[ONTOLOGY_TERM]].collect().head
-    val mondoDiagnosisForDonor14Tagged = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "diagnoses.tagged_mondo").as[Seq[ONTOLOGY_TERM]].collect().head
+    val mondoDiagnosisForDonor14TaggedDf = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "diagnoses.tagged_mondo")
+    val mondoDiagnosisForDonor14Tagged = mondoDiagnosisForDonor14TaggedDf.as[Seq[ONTOLOGY_TERM]].collect().head
+    val main_category14 = mondoDiagnosisForDonor14TaggedDf.select($"tagged_mondo.main_category")
+
+    main_category14.as[Seq[String]].collect().head should contain theSameElementsAs Seq("disease by anatomical system (MONDO:0021199)")
 
     mondoDiagnosisForDonor14Tagged should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
@@ -413,8 +421,12 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
   "Donors" should "map icd terms" in {
     import spark.implicits._
 
+    val icdDiagnosisForDonor14TaggedDf = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "diagnoses.tagged_icd")
     val icdDiagnosisForDonor14 = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "icd").as[Seq[ONTOLOGY_TERM]].collect().head
-    val icdDiagnosisForDonor14Tagged = df.filter($"study_id" === "ST0001" && $"submitter_donor_id" === "PT00014").select(col = "diagnoses.tagged_icd").as[Seq[ONTOLOGY_TERM]].collect().head
+    val icdDiagnosisForDonor14Tagged = icdDiagnosisForDonor14TaggedDf.as[Seq[ONTOLOGY_TERM]].collect().head
+    val main_category14 = icdDiagnosisForDonor14TaggedDf.select($"tagged_icd.main_category")
+
+    main_category14.as[Seq[String]].collect().head should contain theSameElementsAs Seq("Glaucoma (H40-H42)")
 
     icdDiagnosisForDonor14Tagged should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
