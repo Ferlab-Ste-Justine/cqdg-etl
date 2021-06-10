@@ -101,6 +101,7 @@ object Donor {
         $"donorWithStudy.*",
         $"diagnoses",
         $"mondo",
+        $"icd",
         $"observed_phenotype_tagged",
         $"not_observed_phenotype_tagged",
         $"observed_phenotypes",

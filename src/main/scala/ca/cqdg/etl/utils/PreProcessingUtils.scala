@@ -161,6 +161,7 @@ object PreProcessingUtils{
     files.flatMap(f => f.filename match {
       case "hpo_terms.json.gz" => Some("hpo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case "mondo_terms.json.gz" => Some("mondo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "icd_terms.json.gz" => Some("icd" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case _ => None
     }).toMap
   }

@@ -163,10 +163,24 @@ object EtlUtils {
           .withColumnRenamed("age_at_diagnosis", "age_at_event"),
         ontologies("mondo"))
 
-    val diagnosisWithMondoTagged = diagnosisNDF.dataFrame.as("diagnosis")
-      .join(mondoPerStudyIdAndDonor._2.as("diagnosis_tagged"),
-      $"diagnosis.study_id" ===  $"diagnosis_tagged.study_id" &&
-        $"diagnosis.submitter_donor_id" ===  $"diagnosis_tagged.submitter_donor_id" &&
+    val regexIcd = "^(.*)\\|([1-9]*)"
+
+    val splitIcd = ontologies("icd")
+      .withColumn("id_extract", regexp_extract($"id", regexIcd, 1))
+      .withColumn("chapter", regexp_extract($"id", regexIcd, 2))
+      .drop("id")
+      .withColumnRenamed("id_extract", "id")
+
+    val icdPerStudyIdAndDonor =
+      addAncestorsToTerm("diagnosis_ICD_code", "icd", "internal_diagnosis_id")(
+        diagnosisNDF.dataFrame
+          .withColumnRenamed("age_at_diagnosis", "age_at_event"),
+        splitIcd)
+
+    val diagnosisWithMondoICDTagged = diagnosisNDF.dataFrame.as("diagnosis")
+      .join(mondoPerStudyIdAndDonor._2.as("diagnosis_mondo_tagged"),
+      $"diagnosis.study_id" ===  $"diagnosis_mondo_tagged.study_id" &&
+        $"diagnosis.submitter_donor_id" ===  $"diagnosis_mondo_tagged.submitter_donor_id" &&
         $"diagnosis_mondo_code" ===  $"id",
       "left")
       .select(
@@ -181,12 +195,32 @@ object EtlUtils {
           $"diagnosis.internal_diagnosis_id"
         ).as("tagged_mondo")
       )
+      .join(icdPerStudyIdAndDonor._2.as("diagnosis_icd_tagged"),
+        $"diagnosis.study_id" ===  $"diagnosis_icd_tagged.study_id" &&
+          $"diagnosis.submitter_donor_id" ===  $"diagnosis_icd_tagged.submitter_donor_id" &&
+          $"diagnosis_ICD_code" ===  $"id",
+        "left")
+      .select(
+        $"diagnosis.*",
+        $"tagged_mondo",
+        struct(
+          $"id" as ("phenotype_id"),
+          $"name",
+          $"parents",
+          array($"age_at_event").as("age_at_event"),
+          $"is_leaf",
+          $"is_tagged",
+          $"diagnosis.internal_diagnosis_id"
+        ).as("tagged_icd")
+      )
 
     val diagnosisPerDonorAndStudy: DataFrame =
-      loadDiagnoses(diagnosisWithMondoTagged as "diagnosis",
+      loadDiagnoses(diagnosisWithMondoICDTagged as "diagnosis",
         treatmentNDF.dataFrame as "treatment",
         followUpNDF.dataFrame as "follow_up")
         .join(mondoPerStudyIdAndDonor._1.as("mondo"),
+          Seq("study_id", "submitter_donor_id"),"left")
+        .join(icdPerStudyIdAndDonor._1.as("icd"),
           Seq("study_id", "submitter_donor_id"),"left")
 
     val treatmentsPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(treatmentNDF.dataFrame, "treatment")
@@ -204,6 +238,8 @@ object EtlUtils {
   def addAncestorsToTerm(dataColName: String, ontologyTermName: String, internalIdColumnName:String)(dataDf: DataFrame, termsDf: DataFrame)
                         (implicit spark: SparkSession): (DataFrame, DataFrame) = {
     import spark.implicits._
+
+
     val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
 
     val taggedPhenotypes =

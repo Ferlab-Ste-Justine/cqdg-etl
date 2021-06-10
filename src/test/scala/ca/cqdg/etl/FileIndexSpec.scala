@@ -222,4 +222,22 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       )
     )
   }
+
+  "File" should "map icd terms per file" in {
+
+    val phenotypesTestFile = df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_icd").as[Seq[ONTOLOGY_TERM]].collect().head
+    df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_mondo").as[Seq[ONTOLOGY_TERM]].collect().head
+
+
+    phenotypesTestFile should contain theSameElementsAs Seq(
+      ONTOLOGY_TERM(
+        `phenotype_id` = "N18",
+        `name` = "Chronic kidney disease (CKD)",
+        `parents` = Seq("Acute kidney failure and chronic kidney disease (N17-N19)"),
+        `age_at_event` = Set(29),
+        `is_leaf` = false,
+        `is_tagged` = true
+      )
+    )
+  }
 }
