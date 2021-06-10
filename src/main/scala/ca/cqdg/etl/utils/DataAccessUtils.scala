@@ -21,7 +21,7 @@ object DataAccessUtils {
         ).as("access_requirements")
       ).groupBy(entityIdColumnName)
       .agg(
-        collect_list(
+        first(
           struct(cols =
             $"access_limitations",
             $"access_requirements"
