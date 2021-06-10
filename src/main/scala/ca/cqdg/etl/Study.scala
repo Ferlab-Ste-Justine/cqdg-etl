@@ -36,8 +36,6 @@ object Study {
     val familyHistoryPerDonorAndStudy = data("familyHistoryPerDonorAndStudy").as("familyHistoryPerDonorAndStudy")
     val familyRelationshipPerDonorAndStudy = data("familyRelationshipPerDonorAndStudy").as("familyRelationshipPerDonorAndStudy")
     val file = data("file").as("file")
-    
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id")
 
     val (donorPerFile, allDistinctStudies, _, _) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
@@ -101,7 +99,6 @@ object Study {
       .join(donorWithPhenotypesAndDiagnosesPerStudy, Seq("study_id"), "left")
       .join(fileWithBiospecimenPerStudy, Seq("study_id"), "left")
       .join(summaryGroup, Seq("study_id"), "left")
-      .join(dataAccessGroup, Seq("study_id"), "left")
 
     result
       .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
