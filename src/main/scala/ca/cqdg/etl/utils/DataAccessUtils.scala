@@ -22,14 +22,14 @@ object DataAccessUtils {
       .drop("access_limitations")
       .select(
         $"entity_type",
-        $"submitter_donor_id",
+        col(entityIdColumnName),
         concat($"name", lit(" ("), $"id", lit(")")) as "access_limitations",
         $"access_requirements")
       .join(duoCodeList, $"access_requirements" === $"id", "left")
       .drop("access_requirements")
       .select(
         $"entity_type",
-        $"submitter_donor_id",
+        col(entityIdColumnName),
         $"access_limitations",
         concat($"name", lit(" ("), $"id", lit(")")) as "access_requirements")
       .groupBy(entityIdColumnName, "access_limitations")

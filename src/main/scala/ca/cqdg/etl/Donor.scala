@@ -44,12 +44,14 @@ object Donor {
     val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
     val summaryByStrategy = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "experimental_strategy").as("summaryByStrategy")
-    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
-      .as("summaryOfClinicalDataAvailable")
+    val (summaryOfClinicalDataAvailable, summaryOfClinicalDataAvailableOnly) = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+
+
 
     val summaryGroup = summaryByCategory
       .join(summaryByStrategy, Seq("study_id","submitter_donor_id"))
       .join(summaryOfClinicalDataAvailable, Seq("study_id","submitter_donor_id"))
+      .join(summaryOfClinicalDataAvailableOnly, Seq("study_id","submitter_donor_id"))
       .filter(col("study_id").isNotNull)
       .filter(col("submitter_donor_id").isNotNull)
       .groupBy($"study_id", $"submitter_donor_id")
@@ -59,6 +61,7 @@ object Donor {
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
             $"summaryOfClinicalDataAvailable.clinical_data_available",
+            $"summaryOfClinicalDataAvailableOnly.clinical_data_available_only",
           )
         ).as("summary")
       ).as("summaryGroup")
