@@ -144,7 +144,7 @@ object SummaryUtils {
       )
   }
 
-  def computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations: DataFrame, diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame, exposuresPerDonorAndStudy: DataFrame, followUpsPerDonorAndStudy: DataFrame, familyHistoryPerDonorAndStudy: DataFrame, familyRelationshipPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  def computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations: DataFrame, diagnosisPerDonorAndStudy: DataFrame, phenotypesPerDonorAndStudy: DataFrame, treatmentsPerDonorAndStudy: DataFrame, exposuresPerDonorAndStudy: DataFrame, followUpsPerDonorAndStudy: DataFrame, familyHistoryPerDonorAndStudy: DataFrame, familyRelationshipPerDonorAndStudy: DataFrame)(implicit spark: SparkSession): (DataFrame, DataFrame) = {
     import spark.implicits._
 
     val summaryDiagnosis = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, "diagnosis")
@@ -157,7 +157,7 @@ object SummaryUtils {
 
     val columnsToFullJoin = Seq("study_id", "submitter_donor_id", "key", "available");
 
-    summaryDiagnosis
+    val summaryOfClinicalDataAvailable = summaryDiagnosis
       .join(summaryPhenotype, columnsToFullJoin, "full")
       .join(summaryTreatment, columnsToFullJoin,"full")
       .join(summaryExposure,columnsToFullJoin,"full")
@@ -172,7 +172,25 @@ object SummaryUtils {
             $"available",
           )
         ).as("clinical_data_available")
-      )
-  }
+      ).as("summaryOfClinicalDataAvailable")
 
+    val summaryOfClinicalDataAvailableOnly = summaryDiagnosis
+      .join(summaryPhenotype, columnsToFullJoin, "full")
+      .join(summaryTreatment, columnsToFullJoin,"full")
+      .join(summaryExposure,columnsToFullJoin,"full")
+      .join(summaryFollowUp, columnsToFullJoin,"full")
+      .join(summaryFamilyHistory, columnsToFullJoin,"full")
+      .join(summaryFamilyRelationship, columnsToFullJoin,"full")
+      .filter("available == true")
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(
+        collect_list(
+          struct(cols =
+            $"key",
+          )
+        ).as("clinical_data_available_only")
+      ).as("summaryOfClinicalDataAvailableOnly")
+
+    (summaryOfClinicalDataAvailable, summaryOfClinicalDataAvailableOnly)
+  }
 }

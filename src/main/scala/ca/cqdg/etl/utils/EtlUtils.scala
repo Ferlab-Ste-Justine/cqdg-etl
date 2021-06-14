@@ -1,10 +1,10 @@
 package ca.cqdg.etl.utils
 
 import ca.cqdg.etl.model.NamedDataFrame
-import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, isCancer, notNullCol, phenotypeObserved}
+import ca.cqdg.etl.utils.EtlUtils.columns.{ageAtRecruitment, notNullCol, phenotypeObserved}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.expressions.UserDefinedFunction
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.{first, _}
 import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
@@ -74,6 +74,8 @@ object EtlUtils {
 
   def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
              (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+    import spark.implicits._
+
     val donorsNDF = getDataframe("donor", dfList)
     val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
@@ -92,11 +94,134 @@ object EtlUtils {
       familyHistoryNDF.dataFrame as "familyHistory",
       exposureNDF.dataFrame as "exposure") as "donor"
 
-    val diagnosisPerDonorAndStudy: DataFrame = loadDiagnoses(diagnosisNDF.dataFrame as "diagnosis",
-      treatmentNDF.dataFrame as "treatment",
-      followUpNDF.dataFrame as "follow_up")
+    val phenotypeNDFCleanObserved = phenotypeNDF.dataFrame
+      .withColumnRenamed("age_at_phenotype", "age_at_event")
+      .select(cols = $"*", phenotypeObserved)
+      .drop($"phenotype_observed")
+      .as("phenotypesClean")
 
-    val phenotypesPerStudyIdAndDonor = addAncestorsToTerm("phenotype_HPO_code")(phenotypeNDF.dataFrame, ontologies.head._2)
+    val phenotypesObservedPerStudyIdAndDonor =
+      addAncestorsToTerm("phenotype_HPO_code", "observed_phenotypes", "internal_phenotype_id")(
+        phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === true),
+        ontologies("hpo")
+      )
+
+    val phenotypesNotObservedPerStudyIdAndDonor =
+      addAncestorsToTerm("phenotype_HPO_code", "non_observed_phenotypes", "internal_phenotype_id")(
+        phenotypeNDFCleanObserved.filter($"phenotype_observed_bool" === false),
+        ontologies("hpo")
+      )
+
+    val taggedObservedPhenotypes = phenotypesObservedPerStudyIdAndDonor._2
+      .withColumnRenamed("id", "phenotype_id" )
+      .as("observed_phenotypes_tagged")
+
+    val taggedNotObservedPhenotypes = phenotypesNotObservedPerStudyIdAndDonor._2
+      .withColumnRenamed("id", "phenotype_id" )
+      .as("not_observed_phenotypes_tagged")
+
+    val taggedObservedPhenotypesGrouped = taggedObservedPhenotypes
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(
+        collect_list(
+          struct($"phenotype_id",
+            $"name",
+            $"parents",
+            $"is_leaf",
+            $"is_tagged",
+            $"internal_phenotype_id",
+            array($"age_at_event").as("age_at_event"),
+            $"main_category"
+          )
+        ).as("observed_phenotype_tagged")
+      )
+
+    val taggedNotObservedPhenotypesGrouped = taggedNotObservedPhenotypes
+      .groupBy($"study_id", $"submitter_donor_id")
+      .agg(
+        collect_list(
+          struct($"phenotype_id",
+            $"name",
+            $"parents",
+            $"is_leaf",
+            $"is_tagged",
+            $"internal_phenotype_id",
+            array($"age_at_event").as("age_at_event"),
+            $"main_category"
+          )
+        ).as("not_observed_phenotype_tagged")
+      )
+
+    val phenotypesPerStudyIdAndDonor = phenotypeNDFCleanObserved
+      .select($"study_id", $"submitter_donor_id").distinct()
+      .join(taggedObservedPhenotypesGrouped, Seq("study_id", "submitter_donor_id"), "left")
+      .join(taggedNotObservedPhenotypesGrouped, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesObservedPerStudyIdAndDonor._1, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesNotObservedPerStudyIdAndDonor._1, Seq("study_id", "submitter_donor_id"), "left")
+
+    val mondoPerStudyIdAndDonor =
+      addAncestorsToTerm("diagnosis_mondo_code", "mondo", "internal_diagnosis_id")(
+        diagnosisNDF.dataFrame
+          .withColumnRenamed("age_at_diagnosis", "age_at_event"),
+        ontologies("mondo"))
+
+    val regexIcd = "^(.*)\\|([1-9]*)"
+
+    val splitIcd = ontologies("icd")
+      .withColumn("id_extract", regexp_extract($"id", regexIcd, 1))
+      .withColumn("chapter", regexp_extract($"id", regexIcd, 2))
+      .drop("id")
+      .withColumnRenamed("id_extract", "id")
+
+    val icdPerStudyIdAndDonor =
+      addAncestorsToTerm("diagnosis_ICD_code", "icd", "internal_diagnosis_id")(
+        diagnosisNDF.dataFrame
+          .withColumnRenamed("age_at_diagnosis", "age_at_event"),
+        splitIcd)
+
+    val diagnosisWithMondoICDTagged = diagnosisNDF.dataFrame.as("diagnosis")
+      .join(mondoPerStudyIdAndDonor._2.as("diagnosis_mondo_tagged"),
+        Seq("study_id", "submitter_donor_id", "submitter_diagnosis_id"),
+      "left")
+      .select(
+        $"diagnosis.*",
+        struct(
+          $"id" as ("phenotype_id"),
+          $"name",
+          $"parents",
+          $"main_category",
+          array($"age_at_event").as("age_at_event"),
+          $"is_leaf",
+          $"is_tagged",
+          $"diagnosis.internal_diagnosis_id"
+        ).as("tagged_mondo")
+      )
+      .join(icdPerStudyIdAndDonor._2.as("diagnosis_icd_tagged"),
+        Seq("study_id", "submitter_donor_id", "submitter_diagnosis_id"),
+        "left")
+      .select(
+        $"diagnosis.*",
+        $"tagged_mondo",
+        struct(
+          $"id" as ("phenotype_id"),
+          $"name",
+          $"parents",
+          $"main_category",
+          array($"age_at_event").as("age_at_event"),
+          $"is_leaf",
+          $"is_tagged",
+          $"diagnosis.internal_diagnosis_id"
+        ).as("tagged_icd")
+      )
+
+    val diagnosisPerDonorAndStudy: DataFrame =
+      loadDiagnoses(diagnosisWithMondoICDTagged as "diagnosis",
+        treatmentNDF.dataFrame as "treatment",
+        followUpNDF.dataFrame as "follow_up")
+        .join(mondoPerStudyIdAndDonor._1.as("mondo"),
+          Seq("study_id", "submitter_donor_id"),"left")
+        .join(icdPerStudyIdAndDonor._1.as("icd"),
+          Seq("study_id", "submitter_donor_id"),"left")
 
     val treatmentsPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(treatmentNDF.dataFrame, "treatment")
     val exposuresPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(exposureNDF.dataFrame, "exposure")
@@ -110,22 +235,56 @@ object EtlUtils {
     (dataAccessNDF.dataFrame, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
-  def addAncestorsToTerm(dataColName: String)(dataDf: DataFrame, termsDf: DataFrame)
-                        (implicit spark: SparkSession): DataFrame = {
+  private def extractMainCategory(
+                                   ontology_with_ancestors: DataFrame,
+                                   dataColName: String,
+                                   whereCondition: Column,
+                                 _type: String)(implicit spark: SparkSession) = {
     import spark.implicits._
+
+    ontology_with_ancestors
+      .select($"study_id",
+        $"submitter_donor_id",
+        col(s"submitter_${_type}_id"),
+        col(dataColName) as "id",
+        explode_outer($"ancestors") as "main_category"
+      )
+      .where(whereCondition)
+      .groupBy($"study_id", $"submitter_donor_id", col(s"submitter_${_type}_id"), $"id")
+      .agg(
+        concat(first($"main_category.name"), lit(" ("), first($"main_category.id"), lit(")"))
+          .as("main_category"))
+  }
+
+  def addAncestorsToTerm(dataColName: String, ontologyTermName: String, internalIdColumnName:String)(dataDf: DataFrame, termsDf: DataFrame)
+                        (implicit spark: SparkSession): (DataFrame, DataFrame) = {
+    import spark.implicits._
+
+
     val phenotypes_with_ancestors = dataDf.join(termsDf, dataDf(dataColName) === termsDf("id"), "left_outer")
+
+    val (condition: Column, _type: String) = dataColName match {
+      case "phenotype_HPO_code" =>
+        (array_contains(col("main_category.parents"), "Phenotypic abnormality (HP:0000118)"), "phenotype")
+      case "diagnosis_mondo_code" =>
+        (array_contains(col("main_category.parents"), "disease or disorder (MONDO:0000001)"), "diagnosis")
+      //"diagnosis_ICD_code"
+      case _ =>
+        ($"main_category.id".rlike("^[A-Z][0-9]{2}-[A-Z][0-9]{2}"), "diagnosis")
+    }
+    val main_categoryDf = extractMainCategory(phenotypes_with_ancestors, dataColName, condition, _type)
 
     val taggedPhenotypes =
       phenotypes_with_ancestors
         .select(cols=
           $"study_id",
+          col(s"submitter_${_type}_id"),
           $"submitter_donor_id",
           $"id" ,
           $"name",
           $"parents",
-          $"age_at_phenotype",
-          $"internal_phenotype_id",
-          phenotypeObserved,
+          $"age_at_event",
+          col(internalIdColumnName),
           $"is_leaf"
         )
         .withColumn("is_tagged", lit(true))
@@ -136,9 +295,8 @@ object EtlUtils {
         .select(cols=
           $"study_id",
           $"submitter_donor_id",
-          $"age_at_phenotype",
-          $"internal_phenotype_id",
-          $"phenotype_observed",
+          $"age_at_event",
+          col(internalIdColumnName),
           explode_outer($"ancestors") as "ancestors_exploded",
         )
         .withColumn("is_leaf", lit(false))
@@ -149,47 +307,56 @@ object EtlUtils {
       $"ancestors_exploded.id" as "id",
       $"ancestors_exploded.name" as "name",
       $"ancestors_exploded.parents" as "parents",
-      $"age_at_phenotype",
-      $"internal_phenotype_id",
-      phenotypeObserved
+      $"age_at_event",
+      col(internalIdColumnName)
     )
       .withColumn("is_leaf", lit(false))
       .withColumn("is_tagged", lit(false))
       .filter(phenotypes_with_ancestors.col("id").isNotNull)
 
-    val combinedDF: DataFrame = taggedPhenotypes.union(parentsPhenotypes)
-    val combinedPhenotypes = combinedDF
+    val combinedDF: DataFrame = taggedPhenotypes.drop(col(s"submitter_${_type}_id")).union(parentsPhenotypes)
+
+    val groupAgesAtPhenotype = combinedDF
+      .groupBy(
+        $"study_id",
+        $"submitter_donor_id",
+        $"id",
+        $"name",
+        $"parents",
+        $"is_leaf",
+        $"is_tagged",
+        col(internalIdColumnName),
+      )
+      .agg(collect_list(
+        array(cols = $"age_at_event")
+      ) as "age_at_event_raw")
+      .select(
+        $"*",
+        array_distinct(sort_array(flatten($"age_at_event_raw"))) as "age_at_event"
+      )
+      .drop($"age_at_event_raw")
+
+    val combinedPhenotypes = groupAgesAtPhenotype
       .groupBy($"study_id", $"submitter_donor_id")
       .agg(collect_list(
         struct(cols =
           $"id".as("phenotype_id"),
           $"name",
           $"parents",
-          $"age_at_phenotype",
-          $"internal_phenotype_id",
-          $"phenotype_observed_bool",
+          $"age_at_event",
+          col(internalIdColumnName),
           $"is_leaf",
           $"is_tagged"
         )
-      ) as "phenotypes") as "phenotypeGroup"
+      ) as s"$ontologyTermName") as "phenotypeGroup"
 
-    combinedPhenotypes
+    val tagged_with_main_category = taggedPhenotypes
+      .join(main_categoryDf, Seq("study_id", "submitter_donor_id", s"submitter_${_type}_id", "id"), "left")
+      .drop($"internal_diagnosis_id")
+
+    (combinedPhenotypes, tagged_with_main_category)
   }
 
-  def broadcastStudies(listNamedDF: List[NamedDataFrame])(implicit spark: SparkSession): Broadcast[DataFrame] = {
-    import spark.implicits._
-
-    val study: DataFrame = getDataframe("study", listNamedDF).dataFrame
-      .select( cols=
-        $"*",
-        $"study_id" as "study_id_keyword",
-        $"short_name" as "short_name_keyword",
-        $"short_name" as "short_name_ngrams"
-      )
-      .as("study")
-
-    spark.sparkContext.broadcast(study)
-  }
 
   def loadBiospecimens(biospecimen: DataFrame, samples: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
@@ -278,7 +445,10 @@ object EtlUtils {
   }
 
 
-  def loadDiagnoses(diagnosis: DataFrame, treatment: DataFrame, followUp: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  def loadDiagnoses(
+                     diagnosis: DataFrame,
+                     treatment: DataFrame,
+                     followUp: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     // TODO: Replace empty array by icd_term loaded from ICD based on diagnosis_ICD_code
@@ -305,11 +475,10 @@ object EtlUtils {
         ) as "follow_ups"
       ) as "followUpsPerDiagnosis"
 
-
     val diagnosisWithTreatmentAndFollowUps = diagnosis
       .join(treatmentPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
       .join(followUpPerDiagnosis, Seq("submitter_diagnosis_id"), "left")
-      .withColumn("is_cancer", isCancer)
+//      .withColumn("is_cancer", isCancer) //FIXME is this necessary?
     // TODO: load the following based on their respective code.
     /*.select(cols =
         $"*",
@@ -333,31 +502,6 @@ object EtlUtils {
       ) as "diagnosisGroup"
 
     result
-  }
-
-  def loadPhenotypes(phenotype: DataFrame)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    val phenotypeWithRenamedColumns = phenotype.select(cols =
-      $"*",
-      $"phenotype_HPO_code" as "hpo_code",
-      // TODO: Derive the following from phenotype_HPO_code
-      /*
-      $"phenotype_HPO_category" as "hpo_category",
-      $"phenotype_HPO_category" as "hpo_category_keyword",
-      $"phenotype_HPO_term" as "hpo_term",
-      $"phenotype_HPO_term" as "hpo_term_keyword",*/
-      phenotypeObserved
-    ).drop("phenotype_observed", "phenotype_HPO_code")
-
-    phenotypeWithRenamedColumns
-      .where($"phenotype_observed_bool" === "true")
-      .groupBy($"submitter_donor_id", $"study_id")
-      .agg(
-        collect_list(
-          struct(phenotypeWithRenamedColumns.columns.filterNot(List("study_id", "submitter_donor_id", "phenotype_observed_bool").contains(_)).map(col): _*)
-        ) as "phenotypes_per_donor_per_study"
-      ) as "phenotypeGroup"
   }
 
   def loadPerDonorAndStudy(dataFrame: DataFrame, namedAs: String, submitterDonorIdColName: String = "submitter_donor_id")(implicit spark: SparkSession): DataFrame = {

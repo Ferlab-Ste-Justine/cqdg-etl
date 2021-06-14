@@ -5,7 +5,7 @@ import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe, loadAll}
 import ca.cqdg.etl.utils.PreProcessingUtils.{getOntologyDfs, loadSchemas, preProcess}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
-import ca.cqdg.etl.utils.{S3Utils, Schema}
+import ca.cqdg.etl.utils.{DataAccessUtils, S3Utils, Schema}
 import com.amazonaws.ClientConfiguration
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.regions.Regions
@@ -61,22 +61,25 @@ object EtlApp extends App {
     val outputPath= s"s3a://${s3Bucket}/clinical-data-etl-indexer"
 
     val studyNDF = getDataframe("study", dfList)
-      val study: DataFrame = studyNDF.dataFrame
+    
+    val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
+
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id", ontologyDfs("duo_code"))
+
+    val study: DataFrame = studyNDF.dataFrame
+      .join(dataAccessGroup, Seq("study_id"), "left")
         .select(
           $"*",
           $"study_id" as "study_id_keyword",
           $"short_name" as "short_name_keyword",
-          $"short_name" as "short_name_ngrams"
         )
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")
-
-      val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
-
+    
       val inputData = Map(
         "donor" -> donor,
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
+        "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
         "biospecimenWithSamples" -> biospecimenWithSamples,
         "dataAccess" -> dataAccess,
         "treatmentsPerDonorAndStudy" -> treatmentsPerDonorAndStudy,
@@ -86,10 +89,10 @@ object EtlApp extends App {
         "familyRelationshipPerDonorAndStudy" -> familyRelationshipPerDonorAndStudy,
         "file" -> file)
 
-      Donor.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/donors" )
+      Donor.run(study, studyNDF, inputData, ontologyDfs("duo_code"), s"$outputPath/donors" )
       Study.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/studies")
 
-      val files = new FileIndex(study, studyNDF, inputData)(etlConfiguration);
+      val files = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(etlConfiguration);
       write(files.transform(files.extract()), s"$outputPath/files")
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);

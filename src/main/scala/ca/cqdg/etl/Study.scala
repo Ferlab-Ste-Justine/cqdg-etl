@@ -1,6 +1,7 @@
 package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
+import ca.cqdg.etl.utils.EtlUtils.columns.fileSize
 import ca.cqdg.etl.utils.{DataAccessUtils, SummaryUtils}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
@@ -26,7 +27,7 @@ object Study {
 
     val donor = data("donor").as("donor")
     val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
-    val phenotypesPerDonorAndStudy = data("phenotypesPerDonorAndStudy").as("phenotypeGroup")
+    val phenotypesPerStudyIdAndDonor = data("phenotypesPerStudyIdAndDonor").as("phenotypeGroup")
     val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
     val dataAccess = data("dataAccess").as("dataAccess")
     val treatmentsPerDonorAndStudy = data("treatmentsPerDonorAndStudy").as("treatmentsPerDonorAndStudy")
@@ -35,13 +36,11 @@ object Study {
     val familyHistoryPerDonorAndStudy = data("familyHistoryPerDonorAndStudy").as("familyHistoryPerDonorAndStudy")
     val familyRelationshipPerDonorAndStudy = data("familyRelationshipPerDonorAndStudy").as("familyRelationshipPerDonorAndStudy")
     val file = data("file").as("file")
-    
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id")
 
     val (donorPerFile, allDistinctStudies, _, _) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
     val summaryByStrategy = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "experimental_strategy").as("summaryByStrategy")
-    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
       .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
@@ -60,23 +59,24 @@ object Study {
       ).as("summaryGroup")
 
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
-      .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"donor.study_id" === $"phenotypeGroup.study_id" && $"donor.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
-      .drop($"diagnosisGroup.study_id")
-      .drop($"diagnosisGroup.submitter_donor_id")
-      .drop($"phenotypeGroup.study_id")
-      .drop($"phenotypeGroup.submitter_donor_id")
+      .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
             (donor.columns.filterNot(List("study_id", "submitter_family_id").contains(_)).map(col) ++
-              List($"diagnosisGroup.*", $"phenotypeGroup.phenotypes" as "phenotypes")) : _*
+              List($"diagnosisGroup.*", $"observed_phenotype_tagged", $"not_observed_phenotype_tagged")) : _*
           )
         ) as "donors"
       ) as "donorsGroup"
 
-    val fileWithBiospecimenPerStudy: DataFrame = file
+    val fileWithSize = file
+      .select( cols =
+        $"*",
+        fileSize)
+
+    val fileWithBiospecimenPerStudy: DataFrame = fileWithSize
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .drop($"biospecimenWithSamples.study_id")
       .drop($"biospecimenWithSamples.submitter_biospecimen_id")
@@ -89,6 +89,7 @@ object Study {
         collect_list(
           struct(cols =
             $"file.*",
+            $"file_size",
             $"biospecimenWithSamples.*"
           )
         ) as "files"
@@ -98,7 +99,6 @@ object Study {
       .join(donorWithPhenotypesAndDiagnosesPerStudy, Seq("study_id"), "left")
       .join(fileWithBiospecimenPerStudy, Seq("study_id"), "left")
       .join(summaryGroup, Seq("study_id"), "left")
-      .join(dataAccessGroup, Seq("study_id"), "left")
 
     result
       .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
