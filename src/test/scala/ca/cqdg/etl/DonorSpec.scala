@@ -103,7 +103,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
     "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
     "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
     "biospecimenWithSamples" -> Seq(BiospecimenOutput(`submitter_biospecimen_id` = "BS00001")).toDF(),
-    "dataAccess" -> Seq(DataAccessInput()).toDF(),
+    "dataAccess" -> Seq(DataAccessInput(`entity_type` = "donor", `entity_id` = "PT00444")).toDF(),
     "treatmentsPerDonorAndStudy" -> Seq(TreatmentInput()).toDF(),
     "exposuresPerDonorAndStudy" -> Seq(ExposureInput()).toDF(),
     "followUpsPerDonorAndStudy" -> Seq(FollowUpInput()).toDF(),
@@ -112,7 +112,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
     "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
   )
 
-  val df: DataFrame = Donor.build(study, studyNDF, inputData, ontologyDfs)
+  val df: DataFrame = Donor.build(study, studyNDF, inputData, ontologyDfs("duo_code"))
 
   "Donors" should "map hpo terms per donors" in {
     import spark.implicits._

@@ -79,6 +79,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
   val readyToProcess: Map[String, List[NamedDataFrame]] =
     PreProcessingUtils.preProcess(filesPerFolder, CLINDATA_BUCKET, mockBuildIds)(dictionarySchemas)
 
+  val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
 
   val studyNDF: NamedDataFrame = getDataframe("study", readyToProcess.head._2)
   val study: DataFrame =
@@ -92,7 +93,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       .as("study")
 
   val (_,donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
-  biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
+  biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(ontologyDfs)
   val inputData: Map[String, DataFrame] = Map(
     "donor" -> donor,
     "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
@@ -102,7 +103,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
     "file" -> file
   )
 
-  val job = new FileIndex(study, studyNDF, inputData)(testConf)
+  val job = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(testConf)
 
   val df: DataFrame = job.transform(job.extract())
 
@@ -127,7 +128,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
     )
 
 
-    val df = new FileIndex(study, studyNDF, inputData)(testConf).transform(inputData)
+    val df = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(testConf).transform(inputData)
 
     val expectedResult =
       FileIndexOutput(

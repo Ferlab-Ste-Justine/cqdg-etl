@@ -5,7 +5,10 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object DataAccessUtils {
 
-  def computeDataAccessByEntityType(dataAccess: DataFrame, entityType: String, entityIdColumnName: String)(implicit spark: SparkSession) = {
+  def computeDataAccessByEntityType(dataAccess: DataFrame,
+                                    entityType: String,
+                                    entityIdColumnName: String,
+                                    duoCodeList: DataFrame)(implicit spark: SparkSession) = {
 
     import spark.implicits._
 
@@ -14,11 +17,24 @@ object DataAccessUtils {
       .withColumnRenamed("entity_id", entityIdColumnName)
       .withColumn("access_requirements", explode(split($"access_requirements", ";")))
       .filter(EtlUtils.columns.isNotBlank($"access_requirements"))
+      .withColumn("access_requirements", trim($"access_requirements"))
+      .join(duoCodeList, $"access_limitations" === $"id", "left")
+      .drop("access_limitations")
+      .select(
+        $"entity_type",
+        $"submitter_donor_id",
+        concat($"name", lit(" ("), $"id", lit(")")) as "access_limitations",
+        $"access_requirements")
+      .join(duoCodeList, $"access_requirements" === $"id", "left")
+      .drop("access_requirements")
+      .select(
+        $"entity_type",
+        $"submitter_donor_id",
+        $"access_limitations",
+        concat($"name", lit(" ("), $"id", lit(")")) as "access_requirements")
       .groupBy(entityIdColumnName, "access_limitations")
       .agg(
-        collect_set(
-          trim($"access_requirements").as("access_requirements")
-        ).as("access_requirements")
+        collect_set($"access_requirements").as("access_requirements")
       ).groupBy(entityIdColumnName)
       .agg(
         first(

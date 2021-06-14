@@ -162,6 +162,7 @@ object PreProcessingUtils{
       case "hpo_terms.json.gz" => Some("hpo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case "mondo_terms.json.gz" => Some("mondo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case "icd_terms.json.gz" => Some("icd" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "duo_code_terms.json.gz" => Some("duo_code" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case _ => None
     }).toMap
   }

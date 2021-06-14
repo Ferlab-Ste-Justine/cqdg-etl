@@ -10,7 +10,8 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 class FileIndex(studyDf: DataFrame,
                 studyNDF: NamedDataFrame,
-                inputData: Map[String, DataFrame])(implicit configuration: Configuration) extends ETL {
+                inputData: Map[String, DataFrame],
+                duoCodeDf: DataFrame)(implicit configuration: Configuration) extends ETL {
 
   override val destination: DatasetConf = conf.getDataset("files")
 
@@ -29,7 +30,10 @@ class FileIndex(studyDf: DataFrame,
 
     import spark.implicits._
 
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "file", "file_name")
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess,
+      "file",
+      "file_name",
+      duoCodeDf)
 
     val fileDonors = file
       .join(donor, $"file.submitter_donor_id" === $"donor.submitter_donor_id")

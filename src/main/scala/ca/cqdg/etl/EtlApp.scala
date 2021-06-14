@@ -64,7 +64,7 @@ object EtlApp extends App {
     
     val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
 
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id")
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id", ontologyDfs("duo_code"))
 
     val study: DataFrame = studyNDF.dataFrame
       .join(dataAccessGroup, Seq("study_id"), "left")
@@ -89,10 +89,10 @@ object EtlApp extends App {
         "familyRelationshipPerDonorAndStudy" -> familyRelationshipPerDonorAndStudy,
         "file" -> file)
 
-      Donor.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/donors" )
+      Donor.run(study, studyNDF, inputData, ontologyDfs("duo_code"), s"$outputPath/donors" )
       Study.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/studies")
 
-      val files = new FileIndex(study, studyNDF, inputData)(etlConfiguration);
+      val files = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(etlConfiguration);
       write(files.transform(files.extract()), s"$outputPath/files")
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);

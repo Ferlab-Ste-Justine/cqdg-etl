@@ -10,15 +10,15 @@ object Donor {
   def run(study: DataFrame,
           studyNDF: NamedDataFrame,
           inputData: Map[String, DataFrame],
-          ontologyDf: Map[String, DataFrame],
+          duoCodeDf: DataFrame,
           outputPath: String)(implicit spark: SparkSession): Unit = {
-    write(build(study, studyNDF, inputData, ontologyDf), outputPath)
+    write(build(study, studyNDF, inputData, duoCodeDf), outputPath)
   }
 
   def build(study: DataFrame,
             studyNDF: NamedDataFrame,
             data: Map[String, DataFrame],
-            ontologyDf: Map[String, DataFrame]
+            duoCodeDf: DataFrame
            )(implicit spark: SparkSession): DataFrame = {
 
     val donor = data("donor").as("donor")
@@ -32,10 +32,14 @@ object Donor {
     val familyHistoryPerDonorAndStudy = data("familyHistoryPerDonorAndStudy").as("familyHistoryPerDonorAndStudy")
     val familyRelationshipPerDonorAndStudy = data("familyRelationshipPerDonorAndStudy").as("familyRelationshipPerDonorAndStudy")
     val file = data("file").as("file")
-    
+
     import spark.implicits._
 
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "donor", "submitter_donor_id")
+    val dataAccessGroup =
+      DataAccessUtils.computeDataAccessByEntityType(dataAccess,
+        "donor",
+        "submitter_donor_id",
+        duoCodeDf)
 
     val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
