@@ -26,6 +26,8 @@ libraryDependencies += "com.amazonaws" % "aws-java-sdk-s3" % "1.11.975"
 libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.1.7"
 libraryDependencies += "com.google.code.gson" % "gson" % "2.8.6"
 libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.41"
+libraryDependencies += "com.typesafe" % "config" % "1.4.1"
+libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
 
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"

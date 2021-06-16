@@ -5,7 +5,7 @@ import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe, loadAll}
 import ca.cqdg.etl.utils.PreProcessingUtils.{getOntologyDfs, loadSchemas, preProcess}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
-import ca.cqdg.etl.utils.{DataAccessUtils, S3Utils, Schema}
+import ca.cqdg.etl.utils.{DataAccessUtils, KeycloakUtils, S3Utils, Schema}
 import com.amazonaws.ClientConfiguration
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.regions.Regions
@@ -93,7 +93,15 @@ object EtlApp extends App {
       Study.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/studies")
 
       val files = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(etlConfiguration);
-      write(files.transform(files.extract()), s"$outputPath/files")
+      val transformedFiles = files.transform(files.extract())
+      write(transformedFiles, s"$outputPath/files")
+
+      if(KeycloakUtils.isEnabled) {
+        import scala.collection.JavaConverters._
+        val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().collectAsList()
+          .asScala.toList.map(_.getString(0)).toSet // only one column at index 0
+        KeycloakUtils.createResources(allFilesInternalIDs)
+      }
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);
   }
