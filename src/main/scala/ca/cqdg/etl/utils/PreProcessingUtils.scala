@@ -143,14 +143,17 @@ object PreProcessingUtils{
       case _ => throw new RuntimeException(s"Could not find the corresponding schema to the given file ${f.filename}")
     }
 
+    val result = if(enhancedDF.columns.contains("cqdg_hash")) {
     val idServicePayload = enhancedDF.select("cqdg_hash", "cqdg_entity").as[(String, String)].collect().toMap
     val jsonResponse = buildIds(gson.toJson(JavaConverters.mapAsJavaMap(idServicePayload)))
     val cqdgIDsDF = spark.read.json(Seq(jsonResponse).toDS()).toDF("hash", "internal_id")
-    val result = enhancedDF
+      enhancedDF
       .join(cqdgIDsDF, $"cqdg_hash" === $"hash")
       .drop("cqdg_hash", "hash")
-      .withColumnRenamed("internal_id", s"${entityType}_cqdg_id")
-
+      .withColumnRenamed("internal_id", s"internal_${sanitize(entityType)}_id")
+    } else {
+      enhancedDF
+    }
     result
   }
 
@@ -158,6 +161,8 @@ object PreProcessingUtils{
     files.flatMap(f => f.filename match {
       case "hpo_terms.json.gz" => Some("hpo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case "mondo_terms.json.gz" => Some("mondo" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "icd_terms.json.gz" => Some("icd" -> spark.read.json(s"s3a://cqdg/${f.key}"))
+      case "duo_code_terms.json.gz" => Some("duo_code" -> spark.read.json(s"s3a://cqdg/${f.key}"))
       case _ => None
     }).toMap
   }
@@ -202,23 +207,23 @@ object PreProcessingUtils{
     val jsonResponse: JsonArray = JsonParser.parseString(responseString).getAsJsonArray
     jsonResponse.forEach(el => {
       val jsonSchemas = el.getAsJsonObject.get("schemas").getAsJsonArray
-      jsonSchemas.forEach(x => schemas += Schema(
-        sanitize(x.getAsJsonObject.get("name").getAsString),
-        getSchemaFields(x.getAsJsonObject.get("fields").getAsJsonArray)
-      ))
+      jsonSchemas.forEach(x => {
+        val entityType = sanitize(x.getAsJsonObject.get("name").getAsString)
+        schemas += Schema(entityType, getSchemaFields(entityType, x.getAsJsonObject.get("fields").getAsJsonArray))
+      })
     })
 
     // Add the file schema which is used for mapping the genomic files to the clinical data
-    schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "file_name",
+    schemas += Schema("file", Seq("submitter_biospecimen_id", "submitter_donor_id", "study_id", "internal_file_id", "file_name",
       "data_category", "data_type", "is_harmonized", "experimental_strategy", "data_access", "file_format", "platform", "variant_class"))
 
     schemas.toList
   }
 
-  private def getSchemaFields(fields: JsonArray): List[String] = {
+  private def getSchemaFields(entityType: String, fields: JsonArray): List[String] = {
     val fieldsList: mutable.MutableList[String] = mutable.MutableList()
     fields.forEach(field => fieldsList += field.getAsJsonObject.get("name").getAsString)
-    fieldsList += "cqdg_id"
+    fieldsList += s"internal_${entityType}_id"
     fieldsList.toList
   }
 

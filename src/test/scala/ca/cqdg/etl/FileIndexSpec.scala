@@ -24,7 +24,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
   import spark.implicits._
   val CLINDATA_BUCKET = "cqdg"
 
-  val s3Credential = new BasicAWSCredentials("minioadmin", "minioadmin")
+  val s3Credential = new BasicAWSCredentials("minio", "minio123")
   val s3Client: AmazonS3 = AmazonS3ClientBuilder
     .standard()
     .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:9000", Regions.US_EAST_1.name()))
@@ -71,7 +71,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
 
   val schemaList: List[Schema] = PreProcessingUtils.getSchemaList(FileUtils.readFileToString(schemaJsonFile, StandardCharsets.UTF_8))
 
-  val dictionarySchemas: Map[String, List[Schema]] = Map("5.44" -> schemaList)
+  val dictionarySchemas: Map[String, List[Schema]] = Map("5.57" -> schemaList)
 
   val hashString: String = "[" + hashCodesList.map(l => s"""{"hash":"$l","internal_id":"123"}""").mkString(",") + "]"
   val mockBuildIds: String => String = (_: String) => hashString
@@ -79,8 +79,9 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
   val readyToProcess: Map[String, List[NamedDataFrame]] =
     PreProcessingUtils.preProcess(filesPerFolder, CLINDATA_BUCKET, mockBuildIds)(dictionarySchemas)
 
+  val ontologyDfs: Map[String, DataFrame] = getOntologyDfs(ontologyTermFiles)
 
-  val studyNDF = getDataframe("study", readyToProcess.head._2)
+  val studyNDF: NamedDataFrame = getDataframe("study", readyToProcess.head._2)
   val study: DataFrame =
     studyNDF.dataFrame
       .select(cols =
@@ -91,6 +92,20 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       )
       .as("study")
 
+  val (_,donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
+  biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(ontologyDfs)
+  val inputData: Map[String, DataFrame] = Map(
+    "donor" -> donor,
+    "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
+    "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
+    "biospecimenWithSamples" -> biospecimenWithSamples,
+    "dataAccess" -> Seq(DataAccessInput()).toDF(),
+    "file" -> file
+  )
+
+  val job = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(testConf)
+
+  val df: DataFrame = job.transform(job.extract())
 
 
   "File" should "transform data in expected format" in {
@@ -108,11 +123,12 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       "diagnosisPerDonorAndStudy" -> Seq(DonorDiagnosisOutput(`submitter_donor_id` = "PT00060")).toDF(),
       "phenotypesPerDonorAndStudy" -> Seq(PhenotypeWithHpoOutput(`study_id` = "ST0003", `submitter_donor_id` = "PT00060")).toDF(),
       "biospecimenWithSamples" -> Seq(BiospecimenOutput(`submitter_biospecimen_id` = "BS00001")).toDF(),
-      "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF()
+      "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
+      "dataAccess" -> Seq(DataAccessInput()).toDF(),
     )
 
 
-    val df = new FileIndex(study, studyNDF, inputData)(testConf).transform(inputData)
+    val df = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(testConf).transform(inputData)
 
     val expectedResult =
       FileIndexOutput(
@@ -129,15 +145,15 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
           List(FAMILYHISTORY("Yes", 48, "Multiple sclerosis", "maternal aunt", "FC00060")), "NO",
           List(FILES("Controled", "Sequencing reads", "Aligned reads", "WGS", "cram", "uK9WHQ0.cram", "uK9WHQ0.cram", "uK9WHQ0.cram", 13.02056279174796, None, true, "Illumina", "BS00060")),
           "Female", "YES", "Not applicable", "Not applicable", "NO", "NO", "YES",
-          List(PHENOTYPES("HP:0001513", "Obesity", List("Increased body weight HP:0004324"), 54, true, false, false)), "NO",
+          List(ONTOLOGY_TERM("HP:0001513", "Obesity", List("Increased body weight HP:0004324"), Set(54), false, false)), "NO",
           List(STUDY("population-based cohort focusing on complex conditions", "General Health", "Common chronic disorders; Prospective cohort; Reference genome", "Study1",
             "Adult", "ST1", "ST1", "ST1", "ST0001", "ST0001")), "PT00060", "alive")),
         List(BIOSPECIMEN("BS00001", "DI00001", "11/22/2009", "Normal", "No", None, "Acute myocardial infarction", "Cryopreservation - other", "Frozen in -70 freezer",
           "Yes", "Blood derived - peripheral blood", "Normal", "C42.0: Blood",
           List(SAMPLES("SA00001", "Total DNA")))), null,
         List(
-          PHENOTYPES("HP:0001694", "Right-to-left shunt", List("Cardiac shunt (HP:0001693)"), 63, true, true, true),
-          PHENOTYPES("HP:0001626", "Abnormality of the cardiovascular system", List("Phenotypic abnormality (HP:0000118)"), 63, true, false, false)),
+          ONTOLOGY_TERM("HP:0001694", "Right-to-left shunt", List("Cardiac shunt (HP:0001693)"), Set(63), true, true),
+          ONTOLOGY_TERM("HP:0001626", "Abnormality of the cardiovascular system", List("Phenotypic abnormality (HP:0000118)"), Set(63), false, false)),
         "5.44", "1.0", "2020/05/01")
 
     df.as[FileIndexOutput].collect().head.copy(`file_size` = 1) shouldBe expectedResult.copy(`file_size` = 1)
@@ -146,62 +162,82 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
 
   "File" should "map hpo terms per file" in {
 
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
-    val inputData: Map[String, DataFrame] = Map(
-        "donor" -> donor,
-        "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
-        "phenotypesPerDonorAndStudy" -> phenotypesPerDonorAndStudy,
-        "biospecimenWithSamples" -> biospecimenWithSamples,
-        "file" -> file
-    )
+    val phenotypesTestFile = df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "observed_phenotypes").as[Seq[ONTOLOGY_TERM]].collect().head
 
-    val job = new FileIndex(study, studyNDF, inputData)(testConf)
-
-    val df = job.transform(job.extract())
-
-    val phenotypesTestFile = df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "phenotypes").as[Seq[PHENOTYPES]].collect().head
-
-
-    //Fixme, age at phenotype for same phenotypes should be in a Set (no duplicates)
     phenotypesTestFile should contain theSameElementsAs Seq(
-      PHENOTYPES(
-        `id` = "HP:0001513",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0001513",
         `name` = "Obesity",
         `parents` = Seq("Increased body weight (HP:0004324)"),
-        `age_at_phenotype` = 32,
-        `phenotype_observed_bool` = true,
+        `age_at_event` = Set(32),
         `is_leaf` = false,
         `is_tagged` = true
       ),
-      PHENOTYPES(
-        `id` = "HP:0004324",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0004324",
         `name` = "Increased body weight",
         `parents` = Seq("Abnormality of body weight (HP:0004323)"),
-        `age_at_phenotype` = 32,
+        `age_at_event` = Set(32),
       ),
-      PHENOTYPES(
-        `id` = "HP:0004323",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0004323",
         `name` = "Abnormality of body weight",
         `parents` = Seq("Growth abnormality (HP:0001507)"),
-        `age_at_phenotype` = 32,
+        `age_at_event` = Set(32),
       ),
-      PHENOTYPES(
-        `id` = "HP:0001507",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0001507",
         `name` = "Growth abnormality",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
-        `age_at_phenotype` = 32
+        `age_at_event` = Set(32)
       ),
-      PHENOTYPES(
-        `id` = "HP:0000118",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
         `parents` = Seq("All (HP:0000001)"),
-        `age_at_phenotype` = 32
+        `age_at_event` = Set(32)
       ),
-      PHENOTYPES(
-        `id` = "HP:0000001",
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0000001",
         `name` = "All",
         `parents` = Nil,
-        `age_at_phenotype` = 32
+        `age_at_event` = Set(32)
+      )
+    )
+  }
+
+  "File" should "map mondo terms per file" in {
+
+    val phenotypesTestFile = df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_mondo").as[Seq[ONTOLOGY_TERM]].collect().head
+    df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_mondo").as[Seq[ONTOLOGY_TERM]].collect().head
+
+
+    phenotypesTestFile should contain theSameElementsAs Seq(
+      ONTOLOGY_TERM(
+        `phenotype_id` = "MONDO:0005300",
+        `name` = "chronic kidney disease",
+        `parents` = Seq("kidney disease (MONDO:0005240)"),
+        `age_at_event` = Set(29),
+        `is_leaf` = false,
+        `is_tagged` = true
+      )
+    )
+  }
+
+  "File" should "map icd terms per file" in {
+
+    val phenotypesTestFile = df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_icd").as[Seq[ONTOLOGY_TERM]].collect().head
+    df.filter($"file_name_keyword" === "I21OuzF.cram").select(col = "diagnoses.tagged_mondo").as[Seq[ONTOLOGY_TERM]].collect().head
+
+
+    phenotypesTestFile should contain theSameElementsAs Seq(
+      ONTOLOGY_TERM(
+        `phenotype_id` = "N18",
+        `name` = "Chronic kidney disease (CKD)",
+        `parents` = Seq("Acute kidney failure and chronic kidney disease (N17-N19)"),
+        `age_at_event` = Set(29),
+        `is_leaf` = false,
+        `is_tagged` = true
       )
     )
   }

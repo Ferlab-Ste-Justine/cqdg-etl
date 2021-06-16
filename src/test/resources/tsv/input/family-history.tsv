@@ -1,1000 +1,1000 @@
 study_id	submitter_donor_id	submitter_family_condition_id	family_condition_name	family_condition_age	family_condition_relationship	family_cancer_history	age TODAY
-ST0001	PT00001	FC00001	Brain cancer	20	granddaughter	No	74
-ST0001	PT00002	FC00002	Schizophrenia	62	paternal grandfather	Yes	68
-ST0001	PT00003	FC00003	Leukemia	27	father	No	54
-ST0001	PT00004	FC00004	Systemic lupus erythematosus 	66	maternal aunt	Yes	65
-ST0001	PT00005	FC00005	Biopolar disorder	28	fraternal twin brother	No	50
-ST0001	PT00006	FC00006	Melanoma	42	paternal aunt	No	78
-ST0001	PT00007	FC00007	Heart disease	60	maternal great-grandfather	No	54
-ST0001	PT00008	FC00008	Schizophrenia	23	maternal grandmother	Yes	67
-ST0001	PT00009	FC00009	Alzheimer disease	50	identical twin sister	Yes	70
-ST0001	PT00010	FC00010	Pancreatic cancer	50	son	No	58
-ST0001	PT00011	FC00011	Crohn's disease	52	great grandmother	Yes	55
-ST0001	PT00012	FC00012	Parkinson's disease	66	sister	Yes	51
-ST0001	PT00013	FC00013	Multiple sclerosis	59	niece	No	73
-ST0001	PT00014	FC00014	Hypertension	65	maternal cousin	No	75
-ST0001	PT00015	FC00015	Renal failure	31	maternal grandfather	No	72
-ST0001	PT00016	FC00016	Lung cancer	50	identical twin brother	No	75
-ST0001	PT00017	FC00017	Cancer (undefined)	71	brother	No	70
-ST0001	PT00018	FC00018	Diabetes	50	mother	No	49
-ST0001	PT00019	FC00019	Stroke 	28	half-sister	No	80
-ST0001	PT00020	FC00020	COPD	56	great grandfather	Yes	64
-ST0001	PT00021	FC00021	Brain cancer	71	paternal grandfather	No	58
-ST0001	PT00022	FC00022	Diabetes	62	paternal cousin	Yes	79
-ST0001	PT00023	FC00023	Brain cancer	58	maternal great-grandfather	Yes	61
-ST0001	PT00024	FC00024	Biopolar disorder	29	maternal uncle	No	61
-ST0001	PT00025	FC00025	Hypertension	48	daughter	No	50
-ST0001	PT00026	FC00026	Biopolar disorder	27	paternal grandmother	No	69
-ST0001	PT00027	FC00027	Crohn's disease	51	paternal great-grandfather	No	71
-ST0001	PT00028	FC00028	Crohn's disease	43	grandson	No	70
-ST0001	PT00029	FC00029	Multiple sclerosis	65	fraternal twin sister	No	76
-ST0001	PT00030	FC00030	Heart disease	33	paternal uncle	Yes	74
-ST0001	PT00031	FC00031	Renal failure	74	half-brother	Yes	53
-ST0001	PT00032	FC00032	Diabetes	50	paternal great-grandmother	Yes	77
-ST0001	PT00033	FC00033	Pancreatic cancer	50	maternal great-grandmother	No	74
-ST0001	PT00034	FC00034	Hypertension	24	great grandparent	No	70
-ST0001	PT00035	FC00035	Multiple sclerosis	41	maternal grandfather	Yes	52
-ST0001	PT00036	FC00036	Heart disease	20	paternal great-grandfather	Yes	72
-ST0001	PT00037	FC00037	Multiple sclerosis	45	paternal grandfather	No	65
-ST0001	PT00038	FC00038	Renal failure	60	son	Yes	57
-ST0001	PT00039	FC00039	COPD	22	grandson	Yes	65
-ST0001	PT00040	FC00040	Cancer (undefined)	54	father	No	60
-ST0001	PT00041	FC00041	Diabetes	29	paternal great-grandfather	Yes	60
-ST0001	PT00042	FC00042	Alzheimer disease	75	sister	No	59
-ST0001	PT00043	FC00043	Biopolar disorder	66	grandson	Yes	69
-ST0001	PT00044	FC00044	Schizophrenia	56	daughter	No	66
-ST0001	PT00045	FC00045	COPD	46	brother	No	74
-ST0001	PT00046	FC00046	Cancer (undefined)	47	maternal cousin	No	81
-ST0001	PT00047	FC00047	Biopolar disorder	70	paternal cousin	Yes	66
-ST0001	PT00048	FC00048	Cancer (undefined)	43	maternal great-grandmother	No	68
-ST0001	PT00049	FC00049	Heart disease	27	granddaughter	No	78
-ST0001	PT00050	FC00050	Cancer (undefined)	36	daughter	No	56
-ST0001	PT00051	FC00051	Cancer (undefined)	22	maternal uncle	No	60
-ST0001	PT00052	FC00052	Stroke 	35	father	No	74
-ST0001	PT00053	FC00053	Alzheimer disease	43	niece	No	59
-ST0001	PT00054	FC00054	Brain cancer	28	maternal great-grandfather	No	67
-ST0001	PT00055	FC00055	Systemic lupus erythematosus 	21	great grandparent	No	75
-ST0001	PT00056	FC00056	Pancreatic cancer	39	father	Yes	80
-ST0001	PT00057	FC00057	Multiple sclerosis	35	paternal aunt	Yes	79
-ST0001	PT00058	FC00058	Multiple sclerosis	64	granddaughter	Yes	62
-ST0001	PT00059	FC00059	Brain cancer	23	maternal uncle	No	53
-ST0001	PT00060	FC00060	Multiple sclerosis	48	maternal aunt	Yes	69
-ST0001	PT00061	FC00061	Systemic lupus erythematosus 	65	granddaughter	No	53
-ST0001	PT00062	FC00062	Parkinson's disease	20	mother	Yes	62
-ST0001	PT00063	FC00063	Renal failure	62	maternal cousin	No	66
-ST0001	PT00064	FC00064	Cancer (undefined)	37	maternal aunt	Yes	78
-ST0001	PT00065	FC00065	Multiple sclerosis	59	maternal grandmother	No	73
-ST0001	PT00066	FC00066	Alzheimer disease	54	great grandparent	Yes	56
-ST0001	PT00067	FC00067	Biopolar disorder	75	paternal grandfather	Yes	56
-ST0001	PT00068	FC00068	Alzheimer disease	48	fraternal twin brother	Yes	71
-ST0001	PT00069	FC00069	Brain cancer	73	half-brother	No	71
-ST0001	PT00070	FC00070	Alzheimer disease	60	paternal uncle	No	60
-ST0001	PT00071	FC00071	Crohn's disease	29	brother	No	79
-ST0001	PT00072	FC00072	Hypertension	55	son	No	77
-ST0001	PT00073	FC00073	Renal failure	55	identical twin brother	Yes	75
-ST0001	PT00074	FC00074	Parkinson's disease	28	paternal great-grandfather	No	74
-ST0001	PT00075	FC00075	Alzheimer disease	20	paternal great-grandmother	Yes	61
-ST0001	PT00076	FC00076	Brain cancer	63	paternal great-grandfather	No	65
-ST0001	PT00077	FC00077	Alzheimer disease	51	granddaughter	Yes	56
-ST0001	PT00078	FC00078	Leukemia	36	maternal grandmother	No	78
-ST0001	PT00079	FC00079	Brain cancer	34	son	No	77
-ST0001	PT00080	FC00080	Arthritis	49	great grandparent	No	79
-ST0001	PT00081	FC00081	Diabetes	60	paternal aunt	Yes	55
-ST0001	PT00082	FC00082	Hypertension	28	maternal grandfather	Yes	49
-ST0001	PT00083	FC00083	Schizophrenia	37	niece	No	50
-ST0001	PT00084	FC00084	Lung cancer	73	maternal grandfather	Yes	66
-ST0001	PT00085	FC00085	Arthritis	32	maternal aunt	Yes	74
-ST0001	PT00086	FC00086	Diabetes	59	great grandmother	No	60
-ST0001	PT00087	FC00087	Lung cancer	54	paternal cousin	Yes	76
-ST0001	PT00088	FC00088	Pancreatic cancer	47	maternal uncle	No	73
-ST0001	PT00089	FC00089	Schizophrenia	20	fraternal twin sister	No	72
-ST0001	PT00090	FC00090	Melanoma	46	niece	No	58
-ST0001	PT00091	FC00091	Crohn's disease	29	paternal aunt	No	65
-ST0001	PT00092	FC00092	Alzheimer disease	23	brother	No	58
-ST0001	PT00093	FC00093	Renal failure	63	mother	Yes	61
-ST0001	PT00094	FC00094	Arthritis	45	maternal grandfather	No	81
-ST0001	PT00095	FC00095	Cancer (undefined)	73	paternal uncle	No	63
-ST0001	PT00096	FC00096	Cancer (undefined)	40	maternal grandfather	Yes	56
-ST0001	PT00097	FC00097	Leukemia	67	identical twin sister	No	57
-ST0001	PT00098	FC00098	Arthritis	51	half-brother	No	65
-ST0001	PT00099	FC00099	Parkinson's disease	41	niece	Yes	54
-ST0001	PT00100	FC00100	Systemic lupus erythematosus 	61	maternal grandmother	No	79
-ST0001	PT00101	FC00101	Alzheimer disease	44	maternal great-grandfather	No	50
-ST0001	PT00102	FC00102	COPD	58	paternal grandfather	No	73
-ST0001	PT00103	FC00103	Biopolar disorder	70	sister	No	65
-ST0001	PT00104	FC00104	Leukemia	34	father	No	52
-ST0001	PT00105	FC00105	Biopolar disorder	61	niece	No	61
-ST0001	PT00106	FC00106	Systemic lupus erythematosus 	22	half-brother	No	62
-ST0001	PT00107	FC00107	Hypertension	35	maternal grandmother	No	72
-ST0001	PT00108	FC00108	Brain cancer	45	maternal great-grandfather	No	59
-ST0001	PT00109	FC00109	Melanoma	33	father	Yes	60
-ST0001	PT00110	FC00110	Melanoma	26	brother	No	53
-ST0001	PT00111	FC00111	Diabetes	28	paternal uncle	No	80
-ST0001	PT00112	FC00112	Parkinson's disease	68	great grandmother	No	63
-ST0001	PT00113	FC00113	Systemic lupus erythematosus 	47	great grandmother	No	71
-ST0001	PT00114	FC00114	Systemic lupus erythematosus 	31	maternal cousin	No	50
-ST0001	PT00115	FC00115	Diabetes	61	father	Yes	57
-ST0001	PT00116	FC00116	Melanoma	53	identical twin sister	Yes	79
-ST0001	PT00117	FC00117	Schizophrenia	68	maternal grandfather	No	77
-ST0001	PT00118	FC00118	Brain cancer	51	great grandmother	Yes	68
-ST0001	PT00119	FC00119	Leukemia	70	maternal grandmother	No	63
-ST0001	PT00120	FC00120	Leukemia	35	maternal uncle	No	51
-ST0001	PT00121	FC00121	Systemic lupus erythematosus 	47	identical twin sister	Yes	66
-ST0001	PT00122	FC00122	Multiple sclerosis	48	maternal cousin	No	61
-ST0001	PT00123	FC00123	Stroke 	70	daughter	Yes	55
-ST0001	PT00124	FC00124	Hypertension	33	niece	Yes	56
-ST0001	PT00125	FC00125	Schizophrenia	33	paternal great-grandfather	No	50
-ST0001	PT00126	FC00126	Leukemia	68	paternal great-grandmother	No	61
-ST0001	PT00127	FC00127	Melanoma	75	maternal great-grandfather	No	76
-ST0001	PT00128	FC00128	Heart disease	49	son	No	78
-ST0001	PT00129	FC00129	Cancer (undefined)	65	paternal uncle	No	61
-ST0001	PT00130	FC00130	Schizophrenia	30	paternal grandmother	No	54
-ST0001	PT00131	FC00131	Diabetes	53	paternal great-grandfather	No	64
-ST0001	PT00132	FC00132	Renal failure	61	half-sister	Yes	69
-ST0001	PT00133	FC00133	Systemic lupus erythematosus 	38	paternal grandfather	Yes	56
-ST0001	PT00134	FC00134	Lung cancer	53	paternal aunt	Yes	73
-ST0001	PT00135	FC00135	Heart disease	36	paternal uncle	No	67
-ST0001	PT00136	FC00136	Crohn's disease	25	sister	No	66
-ST0001	PT00137	FC00137	Stroke 	52	paternal cousin	Yes	56
-ST0001	PT00138	FC00138	Renal failure	38	paternal cousin	No	75
-ST0001	PT00139	FC00139	Alzheimer disease	61	paternal aunt	Yes	79
-ST0001	PT00140	FC00140	Diabetes	37	daughter	No	54
-ST0001	PT00141	FC00141	Alzheimer disease	20	maternal great-grandmother	No	74
-ST0001	PT00142	FC00142	Alzheimer disease	67	maternal great-grandfather	No	65
-ST0001	PT00143	FC00143	Heart disease	38	maternal great-grandfather	No	56
-ST0001	PT00144	FC00144	Diabetes	71	daughter	Yes	79
-ST0001	PT00145	FC00145	Systemic lupus erythematosus 	54	fraternal twin brother	No	49
-ST0001	PT00146	FC00146	Renal failure	52	great grandfather	Yes	75
-ST0001	PT00147	FC00147	Alzheimer disease	26	great grandmother	No	56
-ST0001	PT00148	FC00148	Biopolar disorder	61	maternal great-grandfather	No	74
-ST0001	PT00149	FC00149	Arthritis	65	paternal great-grandfather	No	52
-ST0001	PT00150	FC00150	Crohn's disease	66	grandson	No	54
-ST0001	PT00151	FC00151	Parkinson's disease	21	maternal grandfather	No	59
-ST0001	PT00152	FC00152	Cancer (undefined)	50	brother	Yes	70
-ST0001	PT00153	FC00153	Alzheimer disease	47	maternal great-grandfather	Yes	62
-ST0001	PT00154	FC00154	Pancreatic cancer	21	sister	No	55
-ST0001	PT00155	FC00155	Brain cancer	29	daughter	Yes	70
-ST0001	PT00156	FC00156	Systemic lupus erythematosus 	47	great grandmother	No	81
-ST0001	PT00157	FC00157	Cancer (undefined)	41	maternal grandfather	Yes	66
-ST0001	PT00158	FC00158	Parkinson's disease	28	grandson	Yes	52
-ST0001	PT00159	FC00159	Parkinson's disease	25	maternal grandmother	No	58
-ST0001	PT00160	FC00160	Diabetes	49	great grandmother	No	77
-ST0001	PT00161	FC00161	Stroke 	47	maternal aunt	No	53
-ST0001	PT00162	FC00162	Crohn's disease	44	niece	Yes	61
-ST0001	PT00163	FC00163	Arthritis	29	paternal grandfather	Yes	54
-ST0001	PT00164	FC00164	Pancreatic cancer	62	half-sister	No	79
-ST0001	PT00165	FC00165	Heart disease	41	maternal grandfather	Yes	67
-ST0001	PT00166	FC00166	Schizophrenia	37	son	No	59
-ST0001	PT00167	FC00167	Stroke 	49	identical twin sister	No	56
-ST0001	PT00168	FC00168	Lung cancer	37	paternal great-grandmother	Yes	52
-ST0001	PT00169	FC00169	Renal failure	71	great grandfather	Yes	80
-ST0001	PT00170	FC00170	Brain cancer	29	paternal grandfather	No	65
-ST0001	PT00171	FC00171	Biopolar disorder	40	maternal aunt	Yes	66
-ST0001	PT00172	FC00172	Heart disease	58	great grandfather	Yes	69
-ST0001	PT00173	FC00173	Lung cancer	41	paternal grandmother	No	55
-ST0001	PT00174	FC00174	Heart disease	30	father	Yes	77
-ST0001	PT00175	FC00175	Schizophrenia	33	paternal uncle	No	73
-ST0001	PT00176	FC00176	Hypertension	28	father	No	78
-ST0001	PT00177	FC00177	Pancreatic cancer	20	paternal great-grandfather	Yes	62
-ST0001	PT00178	FC00178	Alzheimer disease	29	granddaughter	No	65
-ST0001	PT00179	FC00179	Leukemia	29	daughter	No	75
-ST0001	PT00180	FC00180	Systemic lupus erythematosus 	45	paternal cousin	Yes	69
-ST0001	PT00181	FC00181	Cancer (undefined)	36	great grandfather	No	54
-ST0001	PT00182	FC00182	Stroke 	74	great grandfather	Yes	81
-ST0001	PT00183	FC00183	COPD	61	paternal grandmother	Yes	79
-ST0001	PT00184	FC00184	Diabetes	51	fraternal twin sister	No	77
-ST0001	PT00185	FC00185	Biopolar disorder	25	brother	Yes	53
-ST0001	PT00186	FC00186	Hypertension	25	identical twin brother	No	81
-ST0001	PT00187	FC00187	Hypertension	61	identical twin sister	No	75
-ST0001	PT00188	FC00188	Diabetes	73	identical twin brother	No	55
-ST0001	PT00189	FC00189	Renal failure	68	fraternal twin brother	No	55
-ST0001	PT00190	FC00190	Renal failure	66	maternal grandfather	Yes	56
-ST0001	PT00191	FC00191	Crohn's disease	34	great grandfather	No	68
-ST0001	PT00192	FC00192	Multiple sclerosis	62	maternal cousin	Yes	55
-ST0001	PT00193	FC00193	Multiple sclerosis	30	identical twin sister	No	81
-ST0001	PT00194	FC00194	Leukemia	52	great grandfather	No	51
-ST0001	PT00195	FC00195	Schizophrenia	28	son	No	69
-ST0001	PT00196	FC00196	Lung cancer	44	paternal great-grandmother	No	59
-ST0001	PT00197	FC00197	Leukemia	52	niece	No	69
-ST0001	PT00198	FC00198	Crohn's disease	24	paternal great-grandmother	No	62
-ST0001	PT00199	FC00199	Alzheimer disease	75	daughter	No	52
-ST0001	PT00200	FC00200	Brain cancer	68	maternal aunt	No	67
-ST0001	PT00201	FC00201	Brain cancer	54	maternal grandmother	Yes	63
-ST0001	PT00202	FC00202	Alzheimer disease	54	grandson	No	67
-ST0001	PT00203	FC00203	Brain cancer	22	half-brother	Yes	64
-ST0001	PT00204	FC00204	Diabetes	32	maternal grandfather	Yes	75
-ST0001	PT00205	FC00205	Biopolar disorder	21	maternal aunt	No	68
-ST0001	PT00206	FC00206	Arthritis	58	identical twin sister	Yes	74
-ST0001	PT00207	FC00207	Brain cancer	35	paternal great-grandmother	Yes	79
-ST0001	PT00208	FC00208	Alzheimer disease	66	maternal aunt	No	68
-ST0001	PT00209	FC00209	Hypertension	67	fraternal twin brother	Yes	65
-ST0001	PT00210	FC00210	Parkinson's disease	39	fraternal twin brother	No	78
-ST0001	PT00211	FC00211	Alzheimer disease	68	granddaughter	No	52
-ST0001	PT00212	FC00212	Stroke 	43	maternal great-grandmother	Yes	76
-ST0001	PT00213	FC00213	Leukemia	44	great grandfather	Yes	59
+ST0001	PT00092	FC00092	Alzheimer disease	69	brother	No	58
+ST0001	PT00199	FC00199	Alzheimer disease	32	daughter	No	52
+ST0001	PT00178	FC00178	Alzheimer disease	70	granddaughter	No	65
+ST0001	PT00211	FC00211	Alzheimer disease	32	granddaughter	Unknown	52
+ST0001	PT00202	FC00202	Alzheimer disease	30	grandson	No	67
+ST0002	PT00510	FC00510	Alzheimer disease	21	maternal grandfather	No	6
+ST0001	PT00147	FC00147	Alzheimer disease	21	maternal grandmother	No	56
+ST0001	PT00244	FC00244	Alzheimer disease	74	half-sister	No	64
+ST0001	PT00354	FC00354	Alzheimer disease	38	identical twin	No	56
+ST0001	PT00234	FC00234	Alzheimer disease	42	identical twin	No	52
+ST0001	PT00208	FC00208	Alzheimer disease	72	maternal aunt	No	68
+ST0002	PT00542	FC00542	Alzheimer disease	49	maternal aunt	Unknown	15
+ST0001	PT00101	FC00101	Alzheimer disease	33	maternal grandmother	No	50
+ST0001	PT00142	FC00142	Alzheimer disease	53	maternal grandmother	No	65
+ST0001	PT00269	FC00269	Alzheimer disease	73	maternal grandmother	No	76
+ST0002	PT00590	FC00590	Alzheimer disease	73	maternal grandmother	No	14
+ST0001	PT00141	FC00141	Alzheimer disease	20	maternal grandfather	No	74
+ST0001	PT00053	FC00053	Alzheimer disease	36	niece	No	59
+ST0002	PT00555	FC00555	Alzheimer disease	67	paternal aunt	No	16
+ST0002	PT00513	FC00513	Alzheimer disease	29	paternal cousin	No	1
+ST0002	PT00551	FC00551	Alzheimer disease	45	paternal grandfather	No	19
+ST0001	PT00375	FC00375	Alzheimer disease	54	paternal grandmother	No	63
+ST0001	PT00070	FC00070	Alzheimer disease	23	paternal uncle	No	60
+ST0001	PT00042	FC00042	Alzheimer disease	32	sister	No	59
+ST0003	PT00698	FC00698	Alzheimer disease	42	brother	Yes	24
+ST0004	PT00891	FC00891	Alzheimer disease	48	brother	Yes	61
+ST0004	PT00990	FC00990	Alzheimer disease	38	brother	Yes	71
+ST0001	PT00068	FC00068	Alzheimer disease	24	fraternal twin brother	Yes	71
+ST0001	PT00077	FC00077	Alzheimer disease	43	granddaughter	Yes	56
+ST0004	PT00979	FC00979	Alzheimer disease	65	paternal grandmother	Yes	78
+ST0001	PT00066	FC00066	Alzheimer disease	42	paternal grandmother	Yes	56
+ST0001	PT00009	FC00009	Alzheimer disease	58	identical twin	Yes	70
+ST0002	PT00496	FC00496	Alzheimer disease	55	identical twin	Yes	16
+ST0003	PT00695	FC00695	Alzheimer disease	44	maternal grandfather	Yes	48
+ST0003	PT00713	FC00713	Alzheimer disease	39	maternal grandfather	Yes	27
+ST0003	PT00797	FC00797	Alzheimer disease	61	maternal grandfather	Yes	49
+ST0004	PT00831	FC00831	Alzheimer disease	71	maternal grandfather	Yes	54
+ST0001	PT00261	FC00261	Alzheimer disease	68	maternal grandmother	Yes	54
+ST0001	PT00153	FC00153	Alzheimer disease	48	maternal grandmother	Yes	62
+ST0004	PT00904	FC00904	Alzheimer disease	53	maternal grandfather	Unknown	58
+ST0004	PT00972	FC00972	Alzheimer disease	66	maternal grandfather	Yes	74
+ST0001	PT00139	FC00139	Alzheimer disease	46	paternal aunt	Yes	79
 ST0001	PT00214	FC00214	Alzheimer disease	44	paternal cousin	Yes	59
-ST0001	PT00215	FC00215	Arthritis	58	maternal great-grandfather	No	49
-ST0001	PT00216	FC00216	Parkinson's disease	38	fraternal twin sister	No	79
-ST0001	PT00217	FC00217	Hypertension	42	sister	No	57
-ST0001	PT00218	FC00218	Parkinson's disease	29	maternal grandfather	No	60
-ST0001	PT00219	FC00219	Melanoma	50	identical twin sister	No	75
-ST0001	PT00220	FC00220	Leukemia	28	paternal grandmother	No	76
-ST0001	PT00221	FC00221	Leukemia	24	paternal grandfather	Yes	77
-ST0001	PT00222	FC00222	Brain cancer	24	great grandmother	No	62
-ST0001	PT00223	FC00223	Schizophrenia	54	maternal grandfather	Yes	72
-ST0001	PT00224	FC00224	Leukemia	29	grandson	No	73
-ST0001	PT00225	FC00225	Cancer (undefined)	41	maternal great-grandfather	No	51
-ST0001	PT00226	FC00226	Renal failure	27	sister	No	50
-ST0001	PT00227	FC00227	Cancer (undefined)	44	paternal great-grandmother	Yes	78
-ST0001	PT00228	FC00228	Melanoma	67	maternal aunt	No	56
+ST0004	PT00948	FC00948	Alzheimer disease	56	paternal grandfather	Yes	58
+ST0004	PT00994	FC00994	Alzheimer disease	60	paternal grandfather	Yes	60
+ST0004	PT00991	FC00991	Alzheimer disease	44	paternal grandmother	Yes	67
+ST0001	PT00075	FC00075	Alzheimer disease	52	paternal grandmother	Yes	61
+ST0004	PT00984	FC00984	Alzheimer disease	51	sister	Yes	81
+ST0003	PT00732	FC00732	Alzheimer disease	50	maternal grandfather	No	69
+ST0003	PT00673	FC00673	Alzheimer disease	64	maternal grandmother	No	54
+ST0003	PT00646	FC00646	Alzheimer disease	61	paternal grandmother	Unknown	74
+ST0003	PT00700	FC00700	Alzheimer disease	30	identical twin	No	77
+ST0003	PT00765	FC00765	Alzheimer disease	68	maternal grandfather	No	50
+ST0003	PT00699	FC00699	Alzheimer disease	64	maternal grandmother	No	69
+ST0003	PT00811	FC00811	Alzheimer disease	40	niece	No	77
+ST0003	PT00808	FC00808	Alzheimer disease	53	sister	No	70
+ST0001	PT00365	FC00365	Arthritis	44	father	No	64
+ST0001	PT00297	FC00297	Arthritis	35	fraternal twin sister	Unknown	69
+ST0001	PT00306	FC00306	Arthritis	58	grandson	No	69
+ST0001	PT00080	FC00080	Arthritis	50	paternal grandmother	No	79
+ST0001	PT00098	FC00098	Arthritis	27	half-brother	No	65
+ST0002	PT00382	FC00382	Arthritis	56	half-sister	No	19
+ST0002	PT00486	FC00486	Arthritis	34	half-sister	No	20
+ST0001	PT00295	FC00295	Arthritis	65	identical twin	No	52
+ST0002	PT00442	FC00442	Arthritis	36	identical twin	No	8
+ST0001	PT00273	FC00273	Arthritis	27	identical twin	No	60
+ST0002	PT00508	FC00508	Arthritis	27	identical twin	No	7
+ST0001	PT00094	FC00094	Arthritis	71	maternal grandfather	No	81
+ST0001	PT00215	FC00215	Arthritis	40	maternal grandmother	No	49
+ST0001	PT00267	FC00267	Arthritis	37	maternal grandfather	No	67
+ST0001	PT00268	FC00268	Arthritis	31	maternal grandfather	No	80
+ST0001	PT00343	FC00343	Arthritis	25	maternal uncle	No	54
+ST0002	PT00524	FC00524	Arthritis	75	maternal uncle	No	15
+ST0001	PT00247	FC00247	Arthritis	42	paternal aunt	No	56
+ST0002	PT00518	FC00518	Arthritis	39	paternal cousin	No	11
+ST0002	PT00532	FC00532	Arthritis	24	paternal cousin	Unknown	8
+ST0001	PT00325	FC00325	Arthritis	21	paternal grandmother	No	78
+ST0001	PT00347	FC00347	Arthritis	21	paternal grandmother	No	65
+ST0002	PT00434	FC00434	Arthritis	28	paternal grandmother	No	9
+ST0002	PT00484	FC00484	Arthritis	27	paternal grandmother	No	11
+ST0001	PT00149	FC00149	Arthritis	62	paternal grandmother	No	52
+ST0001	PT00367	FC00367	Arthritis	48	paternal grandmother	No	72
+ST0002	PT00607	FC00607	Arthritis	48	paternal grandmother	No	15
+ST0002	PT00455	FC00455	Arthritis	27	sister	No	15
+ST0004	PT00998	FC00998	Arthritis	64	brother	Yes	73
+ST0004	PT00888	FC00888	Arthritis	65	fraternal twin brother	Yes	62
+ST0003	PT00662	FC00662	Arthritis	50	half-brother	Yes	40
+ST0002	PT00562	FC00562	Arthritis	42	half-sister	Yes	1
+ST0004	PT00931	FC00931	Arthritis	39	identical twin	Yes	61
+ST0001	PT00206	FC00206	Arthritis	30	identical twin	Unknown	74
+ST0002	PT00453	FC00453	Arthritis	24	identical twin	Yes	3
+ST0001	PT00085	FC00085	Arthritis	22	maternal aunt	Yes	74
+ST0002	PT00431	FC00431	Arthritis	51	maternal grandmother	Unknown	18
+ST0002	PT00563	FC00563	Arthritis	62	maternal grandmother	Yes	4
+ST0004	PT00961	FC00961	Arthritis	71	niece	Yes	73
+ST0001	PT00315	FC00315	Arthritis	34	paternal cousin	Yes	73
+ST0001	PT00163	FC00163	Arthritis	46	paternal grandfather	Yes	54
+ST0004	PT00942	FC00942	Arthritis	73	paternal grandfather	Yes	50
+ST0004	PT00955	FC00955	Arthritis	49	paternal grandmother	Yes	58
+ST0003	PT00806	FC00806	Arthritis	75	paternal uncle	Yes	38
+ST0003	PT00650	FC00650	Arthritis	62	sister	Yes	32
+ST0003	PT00651	FC00651	Arthritis	38	fraternal twin sister	No	56
+ST0003	PT00648	FC00648	Arthritis	41	maternal grandfather	No	51
+ST0003	PT00724	FC00724	Arthritis	23	paternal grandmother	No	74
+ST0001	PT00005	FC00005	Biopolar disorder	62	fraternal twin brother	No	50
+ST0001	PT00349	FC00349	Biopolar disorder	48	grandson	No	62
+ST0002	PT00406	FC00406	Biopolar disorder	43	identical twin	No	4
+ST0001	PT00205	FC00205	Biopolar disorder	20	maternal aunt	No	68
+ST0002	PT00400	FC00400	Biopolar disorder	68	maternal cousin	No	21
+ST0001	PT00148	FC00148	Biopolar disorder	60	maternal grandmother	Unknown	74
+ST0001	PT00373	FC00373	Biopolar disorder	70	maternal grandmother	No	77
+ST0001	PT00024	FC00024	Biopolar disorder	68	maternal uncle	No	61
+ST0001	PT00105	FC00105	Biopolar disorder	37	niece	No	61
+ST0001	PT00323	FC00323	Biopolar disorder	68	paternal aunt	No	64
+ST0002	PT00499	FC00499	Biopolar disorder	39	paternal aunt	No	1
+ST0002	PT00522	FC00522	Biopolar disorder	43	paternal aunt	No	10
+ST0002	PT00572	FC00572	Biopolar disorder	74	paternal aunt	No	11
+ST0001	PT00026	FC00026	Biopolar disorder	27	paternal grandmother	No	69
+ST0002	PT00394	FC00394	Biopolar disorder	46	paternal grandmother	No	4
+ST0001	PT00103	FC00103	Biopolar disorder	42	sister	No	65
+ST0001	PT00185	FC00185	Biopolar disorder	43	brother	Yes	53
+ST0002	PT00581	FC00581	Biopolar disorder	38	father	Yes	1
+ST0001	PT00285	FC00285	Biopolar disorder	59	fraternal twin brother	Yes	67
+ST0001	PT00043	FC00043	Biopolar disorder	54	grandson	Yes	69
+ST0001	PT00235	FC00235	Biopolar disorder	30	grandson	Yes	64
+ST0004	PT00860	FC00860	Biopolar disorder	70	maternal grandfather	Yes	65
+ST0004	PT00870	FC00870	Biopolar disorder	54	maternal grandmother	Yes	80
+ST0004	PT00874	FC00874	Biopolar disorder	30	identical twin	Yes	66
+ST0001	PT00171	FC00171	Biopolar disorder	72	maternal aunt	Yes	66
+ST0004	PT00909	FC00909	Biopolar disorder	36	maternal grandmother	Yes	76
+ST0004	PT00983	FC00983	Biopolar disorder	26	maternal grandfather	Yes	73
+ST0002	PT00391	FC00391	Biopolar disorder	55	maternal grandfather	Yes	1
+ST0004	PT00855	FC00855	Biopolar disorder	52	maternal uncle	Yes	74
+ST0001	PT00047	FC00047	Biopolar disorder	69	paternal cousin	Yes	66
+ST0001	PT00067	FC00067	Biopolar disorder	67	paternal grandfather	Yes	56
+ST0003	PT00707	FC00707	Biopolar disorder	74	paternal grandfather	Yes	40
+ST0003	PT00800	FC00800	Biopolar disorder	45	paternal grandfather	Yes	13
+ST0004	PT00892	FC00892	Biopolar disorder	54	paternal grandfather	Yes	59
+ST0002	PT00573	FC00573	Biopolar disorder	65	paternal grandmother	Yes	10
+ST0004	PT00858	FC00858	Biopolar disorder	51	paternal grandmother	Yes	77
+ST0002	PT00626	FC00626	Biopolar disorder	72	paternal uncle	Yes	13
+ST0003	PT00786	FC00786	Biopolar disorder	71	granddaughter	No	47
+ST0003	PT00760	FC00760	Biopolar disorder	71	grandson	No	54
+ST0003	PT00717	FC00717	Biopolar disorder	74	maternal grandmother	No	74
+ST0003	PT00813	FC00813	Biopolar disorder	50	maternal grandfather	No	31
+ST0003	PT00693	FC00693	Biopolar disorder	22	maternal grandmother	No	70
+ST0003	PT00714	FC00714	Biopolar disorder	53	mother	No	73
+ST0003	PT00777	FC00777	Biopolar disorder	37	paternal grandmother	No	77
+ST0003	PT00802	FC00802	Biopolar disorder	40	paternal grandmother	No	46
+ST0003	PT00632	FC00632	Biopolar disorder	72	paternal uncle	Unknown	29
+ST0001	PT00001	FC00001	Brain cancer	20	granddaughter	Yes	74
+ST0001	PT00222	FC00222	Brain cancer	27	maternal grandmother	Yes	62
+ST0001	PT00069	FC00069	Brain cancer	51	half-brother	Yes	71
+ST0002	PT00454	FC00454	Brain cancer	28	identical twin	Yes	16
+ST0001	PT00200	FC00200	Brain cancer	20	maternal aunt	Yes	67
+ST0001	PT00287	FC00287	Brain cancer	27	maternal aunt	Yes	59
+ST0001	PT00331	FC00331	Brain cancer	64	maternal aunt	Yes	58
+ST0002	PT00407	FC00407	Brain cancer	62	maternal grandmother	Yes	11
+ST0001	PT00054	FC00054	Brain cancer	74	maternal grandmother	Yes	67
+ST0001	PT00108	FC00108	Brain cancer	75	maternal grandmother	Yes	59
+ST0001	PT00059	FC00059	Brain cancer	31	maternal uncle	Yes	53
+ST0001	PT00333	FC00333	Brain cancer	44	mother	Yes	74
+ST0002	PT00414	FC00414	Brain cancer	56	mother	Yes	19
+ST0002	PT00550	FC00550	Brain cancer	40	mother	Yes	1
+ST0001	PT00289	FC00289	Brain cancer	35	paternal aunt	Yes	81
+ST0001	PT00021	FC00021	Brain cancer	41	paternal grandfather	Yes	58
+ST0001	PT00170	FC00170	Brain cancer	49	paternal grandfather	Yes	65
+ST0002	PT00470	FC00470	Brain cancer	73	paternal grandfather	Yes	14
+ST0001	PT00076	FC00076	Brain cancer	30	paternal grandmother	Yes	65
+ST0002	PT00393	FC00393	Brain cancer	41	paternal grandmother	Yes	12
+ST0002	PT00523	FC00523	Brain cancer	68	paternal grandmother	Yes	8
+ST0001	PT00079	FC00079	Brain cancer	58	son	Yes	77
+ST0001	PT00344	FC00344	Brain cancer	37	son	Yes	75
+ST0001	PT00155	FC00155	Brain cancer	38	daughter	Yes	70
+ST0004	PT00993	FC00993	Brain cancer	59	fraternal twin brother	Yes	50
+ST0002	PT00543	FC00543	Brain cancer	75	fraternal twin sister	Yes	10
+ST0003	PT00689	FC00689	Brain cancer	75	fraternal twin sister	Yes	27
+ST0001	PT00264	FC00264	Brain cancer	70	granddaughter	Yes	65
+ST0004	PT00982	FC00982	Brain cancer	75	grandson	Yes	57
+ST0001	PT00254	FC00254	Brain cancer	25	parternal grandfather	Yes	78
+ST0001	PT00118	FC00118	Brain cancer	75	maternal grandmother	Yes	68
+ST0001	PT00203	FC00203	Brain cancer	50	half-brother	Yes	64
+ST0002	PT00415	FC00415	Brain cancer	24	half-brother	Yes	19
+ST0004	PT00971	FC00971	Brain cancer	37	identical twin	Yes	75
+ST0004	PT00980	FC00980	Brain cancer	56	identical twin	Yes	76
+ST0002	PT00505	FC00505	Brain cancer	51	identical twin	Yes	18
+ST0004	PT00847	FC00847	Brain cancer	25	identical twin	Yes	81
+ST0003	PT00710	FC00710	Brain cancer	35	maternal grandfather	Yes	20
+ST0004	PT00921	FC00921	Brain cancer	74	maternal grandfather	Yes	73
+ST0004	PT00932	FC00932	Brain cancer	44	maternal grandfather	Yes	76
+ST0001	PT00201	FC00201	Brain cancer	49	maternal grandmother	Yes	63
+ST0001	PT00023	FC00023	Brain cancer	49	maternal grandmother	Yes	61
+ST0004	PT00853	FC00853	Brain cancer	39	maternal grandfather	Yes	63
+ST0003	PT00773	FC00773	Brain cancer	66	mother	Yes	20
+ST0001	PT00237	FC00237	Brain cancer	27	paternal cousin	Yes	70
+ST0001	PT00336	FC00336	Brain cancer	49	paternal cousin	Yes	64
+ST0002	PT00384	FC00384	Brain cancer	52	paternal grandfather	Yes	16
+ST0004	PT00989	FC00989	Brain cancer	56	paternal grandfather	Yes	81
+ST0002	PT00403	FC00403	Brain cancer	26	paternal grandmother	Yes	12
+ST0002	PT00540	FC00540	Brain cancer	71	paternal grandmother	Yes	1
+ST0003	PT00818	FC00818	Brain cancer	24	paternal grandmother	Yes	38
+ST0001	PT00207	FC00207	Brain cancer	56	paternal grandmother	Yes	79
+ST0003	PT00819	FC00819	Brain cancer	45	half-sister	Yes	59
+ST0003	PT00712	FC00712	Brain cancer	66	identical twin	Yes	59
+ST0003	PT00637	FC00637	Brain cancer	31	maternal grandmother	Yes	65
+ST0003	PT00756	FC00756	Brain cancer	44	maternal grandfather	Yes	63
+ST0003	PT00814	FC00814	Brain cancer	73	paternal uncle	Yes	45
+ST0001	PT00017	FC00017	Cancer (undefined)	60	brother	Yes	70
+ST0001	PT00050	FC00050	Cancer (undefined)	31	daughter	Yes	56
+ST0001	PT00277	FC00277	Cancer (undefined)	58	daughter	Yes	54
+ST0001	PT00040	FC00040	Cancer (undefined)	48	father	Yes	60
+ST0001	PT00274	FC00274	Cancer (undefined)	51	father	Yes	53
+ST0002	PT00495	FC00495	Cancer (undefined)	52	fraternal twin sister	Yes	17
+ST0001	PT00181	FC00181	Cancer (undefined)	35	parternal grandfather	Yes	54
+ST0001	PT00362	FC00362	Cancer (undefined)	52	half-brother	Yes	53
+ST0002	PT00533	FC00533	Cancer (undefined)	49	identical twin	Yes	20
+ST0001	PT00046	FC00046	Cancer (undefined)	22	maternal cousin	Yes	81
+ST0001	PT00288	FC00288	Cancer (undefined)	57	maternal grandfather	Yes	74
+ST0002	PT00474	FC00474	Cancer (undefined)	46	maternal grandfather	Yes	18
+ST0002	PT00473	FC00473	Cancer (undefined)	64	maternal grandmother	Yes	19
+ST0001	PT00225	FC00225	Cancer (undefined)	57	maternal grandmother	Yes	51
+ST0001	PT00360	FC00360	Cancer (undefined)	35	maternal grandmother	Yes	58
+ST0002	PT00535	FC00535	Cancer (undefined)	38	maternal grandmother	Yes	8
+ST0002	PT00582	FC00582	Cancer (undefined)	35	maternal grandmother	Yes	15
+ST0001	PT00048	FC00048	Cancer (undefined)	27	maternal grandfather	Yes	68
+ST0001	PT00051	FC00051	Cancer (undefined)	38	maternal uncle	Yes	60
+ST0001	PT00332	FC00332	Cancer (undefined)	41	paternal cousin	Yes	77
+ST0001	PT00350	FC00350	Cancer (undefined)	66	paternal grandfather	Yes	53
+ST0002	PT00404	FC00404	Cancer (undefined)	34	paternal grandfather	Yes	15
+ST0001	PT00095	FC00095	Cancer (undefined)	28	paternal uncle	Yes	63
+ST0001	PT00129	FC00129	Cancer (undefined)	59	paternal uncle	Yes	61
+ST0001	PT00152	FC00152	Cancer (undefined)	39	brother	Yes	70
+ST0002	PT00552	FC00552	Cancer (undefined)	50	brother	Yes	5
+ST0004	PT00887	FC00887	Cancer (undefined)	38	brother	Yes	56
+ST0001	PT00342	FC00342	Cancer (undefined)	69	daughter	Yes	72
+ST0004	PT00953	FC00953	Cancer (undefined)	57	fraternal twin brother	Yes	56
+ST0002	PT00509	FC00509	Cancer (undefined)	54	maternal grandfather	Yes	6
+ST0003	PT00743	FC00743	Cancer (undefined)	69	identical twin	Yes	44
+ST0004	PT00882	FC00882	Cancer (undefined)	53	identical twin	Yes	50
+ST0002	PT00527	FC00527	Cancer (undefined)	70	identical twin	Yes	1
+ST0004	PT00985	FC00985	Cancer (undefined)	44	identical twin	Yes	49
+ST0001	PT00064	FC00064	Cancer (undefined)	74	maternal aunt	Yes	78
+ST0001	PT00096	FC00096	Cancer (undefined)	63	maternal grandfather	Yes	56
+ST0001	PT00157	FC00157	Cancer (undefined)	50	maternal grandfather	Yes	66
+ST0003	PT00746	FC00746	Cancer (undefined)	56	maternal grandfather	Yes	38
+ST0004	PT00861	FC00861	Cancer (undefined)	42	maternal grandfather	Yes	52
+ST0001	PT00353	FC00353	Cancer (undefined)	29	maternal grandmother	Yes	79
+ST0004	PT00836	FC00836	Cancer (undefined)	32	maternal grandmother	Yes	62
+ST0003	PT00734	FC00734	Cancer (undefined)	63	maternal grandfather	Yes	51
+ST0004	PT00835	FC00835	Cancer (undefined)	32	paternal aunt	Yes	61
+ST0004	PT00841	FC00841	Cancer (undefined)	65	paternal grandfather	Yes	74
+ST0002	PT00593	FC00593	Cancer (undefined)	57	paternal grandmother	Yes	1
+ST0002	PT00586	FC00586	Cancer (undefined)	43	paternal grandmother	Yes	20
+ST0002	PT00599	FC00599	Cancer (undefined)	68	paternal grandmother	Yes	1
+ST0003	PT00653	FC00653	Cancer (undefined)	43	paternal grandmother	Yes	42
+ST0003	PT00668	FC00668	Cancer (undefined)	70	paternal grandmother	Yes	36
+ST0004	PT00934	FC00934	Cancer (undefined)	72	paternal grandmother	Yes	77
+ST0001	PT00227	FC00227	Cancer (undefined)	26	paternal grandmother	Yes	78
+ST0002	PT00619	FC00619	Cancer (undefined)	50	paternal grandmother	Yes	7
+ST0004	PT00935	FC00935	Cancer (undefined)	66	paternal uncle	Yes	71
+ST0003	PT00701	FC00701	Cancer (undefined)	26	son	Yes	45
+ST0003	PT00769	FC00769	Cancer (undefined)	37	daughter	Yes	44
+ST0003	PT00733	FC00733	Cancer (undefined)	70	fraternal twin brother	Yes	79
+ST0003	PT00754	FC00754	Cancer (undefined)	25	half-brother	Yes	37
+ST0003	PT00670	FC00670	Cancer (undefined)	53	maternal grandmother	Yes	78
+ST0003	PT00666	FC00666	Cancer (undefined)	71	maternal uncle	Yes	53
+ST0003	PT00795	FC00795	Cancer (undefined)	34	paternal grandmother	No	81
+ST0003	PT00790	FC00790	Cancer (undefined)	44	sister	Yes	51
+ST0003	PT00629	FC00629	Cancer (undefined)	58	paternal uncle	Yes	40
+ST0001	PT00045	FC00045	COPD	69	brother	No	74
+ST0002	PT00554	FC00554	COPD	35	brother	No	6
+ST0002	PT00492	FC00492	COPD	25	father	No	19
+ST0002	PT00469	FC00469	COPD	22	fraternal twin sister	No	1
+ST0002	PT00624	FC00624	COPD	61	maternal aunt	No	12
+ST0001	PT00231	FC00231	COPD	20	maternal cousin	No	59
+ST0002	PT00465	FC00465	COPD	35	maternal grandfather	No	21
+ST0001	PT00302	FC00302	COPD	63	maternal uncle	No	55
+ST0001	PT00334	FC00334	COPD	69	mother	No	61
+ST0001	PT00296	FC00296	COPD	29	paternal cousin	No	69
+ST0001	PT00102	FC00102	COPD	28	paternal grandfather	No	73
+ST0001	PT00251	FC00251	COPD	67	paternal grandfather	No	65
+ST0001	PT00276	FC00276	COPD	64	paternal grandmother	No	72
+ST0002	PT00424	FC00424	COPD	52	paternal grandmother	No	2
+ST0002	PT00602	FC00602	COPD	20	paternal grandmother	No	4
+ST0002	PT00517	FC00517	COPD	55	paternal uncle	Unknown	16
+ST0001	PT00310	FC00310	COPD	30	son	No	79
+ST0001	PT00039	FC00039	COPD	27	grandson	No	65
+ST0001	PT00020	FC00020	COPD	69	parternal grandfather	Yes	64
+ST0004	PT00927	FC00927	COPD	55	maternal grandfather	Yes	77
+ST0003	PT00665	FC00665	COPD	29	paternal grandmother	No	18
+ST0004	PT00906	FC00906	COPD	58	paternal grandmother	No	53
+ST0004	PT00946	FC00946	COPD	22	paternal grandmother	Yes	74
+ST0004	PT00859	FC00859	COPD	35	half-brother	Yes	65
+ST0003	PT00647	FC00647	COPD	74	half-sister	No	17
+ST0002	PT00567	FC00567	COPD	35	identical twin	Yes	20
+ST0004	PT00826	FC00826	COPD	33	identical twin	No	55
+ST0004	PT00968	FC00968	COPD	40	identical twin	Unknown	73
+ST0002	PT00436	FC00436	COPD	66	maternal cousin	Yes	12
+ST0004	PT00973	FC00973	COPD	75	maternal grandfather	Yes	60
+ST0002	PT00428	FC00428	COPD	56	mother	No	16
+ST0004	PT00974	FC00974	COPD	71	paternal grandfather	Unknown	51
+ST0001	PT00183	FC00183	COPD	63	paternal grandmother	Unknown	79
+ST0003	PT00719	FC00719	COPD	72	paternal grandmother	Yes	50
+ST0004	PT00960	FC00960	COPD	52	paternal grandmother	Yes	54
+ST0002	PT00447	FC00447	COPD	28	paternal grandmother	Yes	18
+ST0003	PT00738	FC00738	COPD	43	maternal grandmother	No	28
+ST0003	PT00817	FC00817	COPD	47	maternal grandmother	No	66
+ST0003	PT00748	FC00748	COPD	24	paternal grandmother	No	59
+ST0003	PT00720	FC00720	COPD	48	paternal uncle	Unknown	79
+ST0003	PT00798	FC00798	COPD	31	paternal uncle	No	41
+ST0001	PT00071	FC00071	Crohn's disease	51	brother	No	79
+ST0001	PT00028	FC00028	Crohn's disease	23	grandson	No	70
+ST0001	PT00150	FC00150	Crohn's disease	65	grandson	No	54
+ST0001	PT00191	FC00191	Crohn's disease	72	parternal grandfather	Unknown	68
+ST0002	PT00623	FC00623	Crohn's disease	37	half-brother	No	20
+ST0002	PT00603	FC00603	Crohn's disease	28	identical twin	No	17
+ST0002	PT00612	FC00612	Crohn's disease	67	identical twin	No	21
+ST0002	PT00429	FC00429	Crohn's disease	66	maternal cousin	No	14
+ST0002	PT00448	FC00448	Crohn's disease	54	maternal grandmother	No	7
+ST0002	PT00501	FC00501	Crohn's disease	75	maternal grandmother	No	13
+ST0001	PT00236	FC00236	Crohn's disease	47	maternal grandfather	Unknown	68
+ST0001	PT00308	FC00308	Crohn's disease	34	mother	No	53
+ST0001	PT00091	FC00091	Crohn's disease	36	paternal aunt	No	65
+ST0002	PT00476	FC00476	Crohn's disease	71	paternal aunt	No	12
+ST0002	PT00538	FC00538	Crohn's disease	61	paternal aunt	No	9
+ST0001	PT00027	FC00027	Crohn's disease	41	paternal grandmother	No	71
+ST0002	PT00556	FC00556	Crohn's disease	24	paternal grandmother	No	12
+ST0001	PT00198	FC00198	Crohn's disease	45	paternal grandmother	No	62
+ST0001	PT00136	FC00136	Crohn's disease	34	sister	No	66
+ST0001	PT00368	FC00368	Crohn's disease	41	son	No	50
+ST0004	PT00988	FC00988	Crohn's disease	56	maternal grandfather	Yes	52
+ST0001	PT00011	FC00011	Crohn's disease	65	maternal grandmother	Yes	55
+ST0003	PT00824	FC00824	Crohn's disease	21	maternal grandmother	Yes	4
+ST0004	PT00933	FC00933	Crohn's disease	62	half-brother	Yes	81
+ST0002	PT00615	FC00615	Crohn's disease	23	identical twin	Yes	10
+ST0002	PT00438	FC00438	Crohn's disease	38	maternal grandfather	Yes	21
+ST0002	PT00559	FC00559	Crohn's disease	29	maternal grandfather	Yes	21
+ST0004	PT00834	FC00834	Crohn's disease	49	maternal grandmother	Yes	69
+ST0004	PT00884	FC00884	Crohn's disease	57	maternal uncle	Yes	58
+ST0002	PT00423	FC00423	Crohn's disease	62	mother	Yes	4
+ST0001	PT00162	FC00162	Crohn's disease	49	niece	Yes	61
+ST0004	PT00987	FC00987	Crohn's disease	70	paternal cousin	Yes	81
+ST0003	PT00782	FC00782	Crohn's disease	43	paternal grandfather	Yes	46
+ST0003	PT00671	FC00671	Crohn's disease	57	paternal grandmother	Yes	26
+ST0001	PT00260	FC00260	Crohn's disease	49	paternal grandmother	Yes	52
+ST0001	PT00309	FC00309	Crohn's disease	60	paternal grandmother	Yes	56
+ST0004	PT00922	FC00922	Crohn's disease	29	paternal grandmother	Yes	76
+ST0002	PT00471	FC00471	Crohn's disease	20	paternal uncle	Yes	11
+ST0003	PT00677	FC00677	Crohn's disease	33	paternal uncle	Yes	15
+ST0003	PT00803	FC00803	Crohn's disease	42	paternal uncle	Yes	17
+ST0004	PT00940	FC00940	Crohn's disease	47	paternal uncle	Yes	68
+ST0002	PT00392	FC00392	Crohn's disease	24	sister	Unknown	21
+ST0001	PT00316	FC00316	Crohn's disease	33	son	Unknown	50
+ST0003	PT00681	FC00681	Crohn's disease	40	identical twin	No	59
+ST0003	PT00792	FC00792	Crohn's disease	28	paternal grandmother	No	69
+ST0003	PT00641	FC00641	Crohn's disease	70	sister	No	23
+ST0001	PT00140	FC00140	Diabetes	29	daughter	No	54
+ST0001	PT00250	FC00250	Diabetes	41	father	No	51
+ST0001	PT00184	FC00184	Diabetes	36	fraternal twin sister	No	77
+ST0002	PT00539	FC00539	Diabetes	50	fraternal twin sister	No	14
+ST0001	PT00086	FC00086	Diabetes	40	maternal grandmother	No	60
+ST0001	PT00160	FC00160	Diabetes	68	maternal grandmother	Unknown	77
+ST0001	PT00293	FC00293	Diabetes	25	half-brother	No	49
+ST0001	PT00188	FC00188	Diabetes	42	identical twin	No	55
+ST0002	PT00379	FC00379	Diabetes	75	maternal grandfather	No	15
+ST0002	PT00506	FC00506	Diabetes	74	maternal uncle	No	16
+ST0001	PT00018	FC00018	Diabetes	67	mother	No	49
+ST0002	PT00420	FC00420	Diabetes	48	paternal grandfather	No	4
+ST0001	PT00131	FC00131	Diabetes	48	paternal grandmother	No	64
+ST0002	PT00466	FC00466	Diabetes	54	paternal grandmother	No	17
+ST0001	PT00111	FC00111	Diabetes	57	paternal uncle	No	80
+ST0001	PT00282	FC00282	Diabetes	47	sister	No	73
+ST0002	PT00458	FC00458	Diabetes	75	sister	No	11
+ST0001	PT00144	FC00144	Diabetes	47	daughter	Yes	79
+ST0001	PT00115	FC00115	Diabetes	42	father	Yes	57
+ST0003	PT00758	FC00758	Diabetes	63	maternal grandmother	Yes	31
+ST0004	PT00885	FC00885	Diabetes	35	paternal grandmother	Yes	76
+ST0001	PT00318	FC00318	Diabetes	49	half-brother	Yes	64
+ST0004	PT00875	FC00875	Diabetes	54	maternal aunt	Yes	53
+ST0003	PT00725	FC00725	Diabetes	56	maternal cousin	Yes	46
+ST0001	PT00204	FC00204	Diabetes	31	maternal grandfather	Yes	75
+ST0003	PT00704	FC00704	Diabetes	28	maternal grandfather	Yes	37
+ST0004	PT00925	FC00925	Diabetes	58	mother	Yes	77
+ST0001	PT00081	FC00081	Diabetes	21	paternal aunt	Yes	55
+ST0001	PT00022	FC00022	Diabetes	46	paternal cousin	Unknown	79
+ST0002	PT00557	FC00557	Diabetes	27	paternal grandfather	Yes	15
+ST0004	PT00868	FC00868	Diabetes	42	paternal grandmother	Yes	79
+ST0001	PT00041	FC00041	Diabetes	67	paternal grandmother	Yes	60
+ST0003	PT00791	FC00791	Diabetes	72	paternal grandmother	Yes	13
+ST0001	PT00032	FC00032	Diabetes	71	paternal grandmother	Yes	77
+ST0004	PT00901	FC00901	Diabetes	65	paternal uncle	Yes	63
+ST0003	PT00726	FC00726	Diabetes	29	granddaughter	No	59
+ST0003	PT00751	FC00751	Diabetes	33	granddaughter	No	74
+ST0003	PT00793	FC00793	Diabetes	73	maternal grandmother	No	77
+ST0003	PT00627	FC00627	Diabetes	72	maternal uncle	No	67
+ST0003	PT00697	FC00697	Diabetes	20	paternal cousin	No	54
+ST0003	PT00747	FC00747	Diabetes	46	paternal grandmother	No	70
+ST0002	PT00622	FC00622	Heart disease	64	fraternal twin brother	No	17
+ST0001	PT00049	FC00049	Heart disease	67	granddaughter	No	78
+ST0001	PT00239	FC00239	Heart disease	23	paternal grandmother	No	73
+ST0002	PT00426	FC00426	Heart disease	52	identical twin	No	13
+ST0002	PT00430	FC00430	Heart disease	43	identical twin	No	16
+ST0002	PT00396	FC00396	Heart disease	74	identical twin	No	18
+ST0001	PT00281	FC00281	Heart disease	63	maternal cousin	No	74
+ST0002	PT00389	FC00389	Heart disease	32	maternal grandmother	No	0
+ST0002	PT00606	FC00606	Heart disease	49	maternal grandmother	No	21
+ST0001	PT00007	FC00007	Heart disease	60	maternal grandmother	No	54
+ST0001	PT00143	FC00143	Heart disease	62	maternal grandmother	Unknown	56
+ST0001	PT00361	FC00361	Heart disease	23	maternal grandmother	No	77
+ST0002	PT00441	FC00441	Heart disease	74	maternal grandmother	No	19
+ST0002	PT00614	FC00614	Heart disease	45	maternal grandfather	No	13
+ST0002	PT00401	FC00401	Heart disease	25	mother	No	2
+ST0002	PT00439	FC00439	Heart disease	48	paternal cousin	No	5
+ST0001	PT00346	FC00346	Heart disease	70	paternal grandfather	No	74
+ST0001	PT00351	FC00351	Heart disease	62	paternal grandfather	No	70
+ST0001	PT00135	FC00135	Heart disease	74	paternal uncle	No	67
+ST0001	PT00338	FC00338	Heart disease	34	paternal uncle	No	49
+ST0001	PT00128	FC00128	Heart disease	66	son	No	78
+ST0004	PT00903	FC00903	Heart disease	67	brother	Yes	51
+ST0004	PT00916	FC00916	Heart disease	59	daughter	Yes	72
+ST0001	PT00174	FC00174	Heart disease	37	father	Yes	77
+ST0004	PT00947	FC00947	Heart disease	61	granddaughter	Yes	81
+ST0001	PT00172	FC00172	Heart disease	69	parternal grandfather	Yes	69
+ST0001	PT00337	FC00337	Heart disease	22	identical twin	Yes	53
+ST0003	PT00825	FC00825	Heart disease	59	identical twin	Yes	2
+ST0001	PT00238	FC00238	Heart disease	37	maternal aunt	Yes	57
+ST0004	PT00951	FC00951	Heart disease	21	maternal aunt	Yes	67
+ST0001	PT00165	FC00165	Heart disease	66	maternal grandfather	Yes	67
+ST0001	PT00352	FC00352	Heart disease	37	maternal grandmother	Yes	53
+ST0004	PT00877	FC00877	Heart disease	35	maternal grandmother	Yes	81
+ST0002	PT00625	FC00625	Heart disease	55	maternal grandfather	Yes	6
+ST0004	PT00833	FC00833	Heart disease	46	paternal cousin	Yes	52
+ST0002	PT00490	FC00490	Heart disease	26	paternal grandfather	Yes	14
+ST0001	PT00036	FC00036	Heart disease	42	paternal grandmother	Yes	72
+ST0002	PT00564	FC00564	Heart disease	39	paternal grandmother	Yes	19
+ST0004	PT00963	FC00963	Heart disease	60	paternal grandmother	Yes	62
+ST0003	PT00674	FC00674	Heart disease	57	paternal grandmother	Yes	14
+ST0001	PT00030	FC00030	Heart disease	73	paternal uncle	Yes	74
+ST0004	PT00869	FC00869	Heart disease	30	son	Yes	51
+ST0003	PT00763	FC00763	Heart disease	29	fraternal twin sister	No	59
+ST0003	PT00742	FC00742	Heart disease	26	maternal cousin	No	76
+ST0003	PT00730	FC00730	Heart disease	34	maternal grandmother	No	30
+ST0003	PT00804	FC00804	Heart disease	28	maternal uncle	No	66
+ST0002	PT00546	FC00546	Hypertension	44	brother	No	21
+ST0001	PT00025	FC00025	Hypertension	38	daughter	No	50
+ST0001	PT00176	FC00176	Hypertension	33	father	Unknown	78
+ST0001	PT00272	FC00272	Hypertension	27	father	No	66
+ST0002	PT00500	FC00500	Hypertension	68	father	No	18
+ST0001	PT00356	FC00356	Hypertension	22	fraternal twin sister	No	73
+ST0001	PT00034	FC00034	Hypertension	33	paternal grandmother	No	70
+ST0002	PT00445	FC00445	Hypertension	52	half-brother	No	10
+ST0002	PT00463	FC00463	Hypertension	41	half-brother	No	0
+ST0002	PT00516	FC00516	Hypertension	25	half-brother	No	8
+ST0002	PT00544	FC00544	Hypertension	40	half-brother	No	18
+ST0001	PT00186	FC00186	Hypertension	73	identical twin	No	81
+ST0001	PT00187	FC00187	Hypertension	25	identical twin	No	75
+ST0001	PT00014	FC00014	Hypertension	27	maternal cousin	No	75
+ST0002	PT00464	FC00464	Hypertension	49	maternal grandfather	No	3
+ST0001	PT00107	FC00107	Hypertension	48	maternal grandmother	No	72
+ST0001	PT00317	FC00317	Hypertension	45	maternal grandmother	No	81
+ST0002	PT00504	FC00504	Hypertension	44	maternal grandmother	No	7
+ST0002	PT00597	FC00597	Hypertension	25	maternal grandmother	No	3
+ST0002	PT00411	FC00411	Hypertension	73	maternal grandmother	No	7
+ST0002	PT00519	FC00519	Hypertension	20	maternal grandmother	No	20
+ST0002	PT00574	FC00574	Hypertension	49	maternal uncle	No	8
+ST0002	PT00478	FC00478	Hypertension	39	paternal grandfather	No	2
+ST0002	PT00507	FC00507	Hypertension	27	paternal grandmother	No	0
+ST0002	PT00529	FC00529	Hypertension	51	paternal grandmother	No	20
+ST0001	PT00217	FC00217	Hypertension	71	sister	No	57
+ST0001	PT00376	FC00376	Hypertension	58	sister	No	55
+ST0001	PT00072	FC00072	Hypertension	50	son	No	77
+ST0004	PT00851	FC00851	Hypertension	61	father	Yes	56
+ST0001	PT00209	FC00209	Hypertension	64	fraternal twin brother	Yes	65
+ST0001	PT00262	FC00262	Hypertension	54	fraternal twin brother	Yes	54
+ST0003	PT00788	FC00788	Hypertension	36	fraternal twin sister	Yes	12
+ST0004	PT00893	FC00893	Hypertension	28	fraternal twin sister	Yes	63
+ST0001	PT00341	FC00341	Hypertension	68	granddaughter	Yes	67
+ST0003	PT00686	FC00686	Hypertension	68	maternal grandfather	Yes	22
+ST0001	PT00240	FC00240	Hypertension	72	half-sister	Yes	69
+ST0001	PT00303	FC00303	Hypertension	26	half-sister	Yes	59
+ST0002	PT00541	FC00541	Hypertension	60	maternal cousin	Yes	16
+ST0001	PT00082	FC00082	Hypertension	28	maternal grandfather	Yes	49
+ST0004	PT00949	FC00949	Hypertension	61	maternal grandfather	Yes	56
+ST0004	PT00992	FC00992	Hypertension	70	maternal grandfather	Yes	61
+ST0004	PT00828	FC00828	Hypertension	41	maternal uncle	Yes	54
+ST0001	PT00124	FC00124	Hypertension	39	niece	Unknown	56
+ST0002	PT00534	FC00534	Hypertension	50	paternal aunt	Unknown	19
+ST0001	PT00278	FC00278	Hypertension	26	paternal grandmother	Yes	57
+ST0004	PT00846	FC00846	Hypertension	67	paternal grandmother	Yes	63
+ST0004	PT00878	FC00878	Hypertension	29	paternal uncle	Yes	78
+ST0004	PT00854	FC00854	Hypertension	69	son	Yes	75
+ST0003	PT00628	FC00628	Hypertension	58	grandson	No	68
+ST0003	PT00702	FC00702	Hypertension	72	maternal grandfather	No	64
+ST0003	PT00822	FC00822	Hypertension	45	paternal grandmother	No	30
+ST0003	PT00816	FC00816	Hypertension	20	identical twin	No	71
+ST0003	PT00727	FC00727	Hypertension	78	maternal aunt	No	52
+ST0003	PT00655	FC00655	Hypertension	22	maternal grandmother	No	50
+ST0003	PT00789	FC00789	Hypertension	65	maternal uncle	No	41
+ST0003	PT00661	FC00661	Hypertension	41	niece	No	79
+ST0003	PT00736	FC00736	Hypertension	52	son	No	65
+ST0002	PT00385	FC00385	Leukemia	44	brother	No	10
+ST0001	PT00179	FC00179	Leukemia	32	daughter	Yes	75
+ST0001	PT00003	FC00003	Leukemia	49	father	Yes	54
+ST0001	PT00104	FC00104	Leukemia	30	father	Yes	52
+ST0001	PT00224	FC00224	Leukemia	47	grandson	Yes	73
+ST0001	PT00270	FC00270	Leukemia	52	grandson	Yes	53
+ST0001	PT00194	FC00194	Leukemia	22	parternal grandfather	Yes	51
+ST0001	PT00097	FC00097	Leukemia	39	identical twin	Yes	57
+ST0002	PT00481	FC00481	Leukemia	59	identical twin	Yes	3
+ST0002	PT00491	FC00491	Leukemia	71	maternal cousin	Yes	6
+ST0002	PT00589	FC00589	Leukemia	37	maternal cousin	Yes	2
+ST0002	PT00588	FC00588	Leukemia	63	maternal grandfather	Yes	10
+ST0001	PT00078	FC00078	Leukemia	56	maternal grandmother	Yes	78
+ST0001	PT00119	FC00119	Leukemia	24	maternal grandmother	Yes	63
+ST0002	PT00537	FC00537	Leukemia	65	maternal grandmother	Yes	7
+ST0002	PT00422	FC00422	Leukemia	55	maternal grandfather	Yes	14
+ST0001	PT00120	FC00120	Leukemia	63	maternal uncle	Yes	51
+ST0001	PT00197	FC00197	Leukemia	47	niece	Yes	69
+ST0002	PT00451	FC00451	Leukemia	60	paternal cousin	Yes	7
+ST0001	PT00220	FC00220	Leukemia	50	paternal grandmother	Yes	76
+ST0001	PT00286	FC00286	Leukemia	47	paternal grandmother	Yes	81
+ST0001	PT00363	FC00363	Leukemia	64	paternal grandmother	Yes	68
+ST0002	PT00477	FC00477	Leukemia	32	paternal grandmother	Yes	2
+ST0001	PT00126	FC00126	Leukemia	38	paternal grandmother	Yes	61
+ST0001	PT00366	FC00366	Leukemia	66	paternal grandmother	Yes	78
+ST0004	PT00913	FC00913	Leukemia	42	brother	Yes	59
+ST0001	PT00213	FC00213	Leukemia	43	parternal grandfather	Yes	59
+ST0004	PT00895	FC00895	Leukemia	71	maternal grandfather	Yes	53
+ST0004	PT00866	FC00866	Leukemia	54	maternal grandmother	Yes	51
+ST0004	PT00966	FC00966	Leukemia	42	paternal grandmother	Yes	64
+ST0004	PT00915	FC00915	Leukemia	26	half-sister	Yes	57
+ST0004	PT00873	FC00873	Leukemia	55	identical twin	Yes	71
+ST0002	PT00526	FC00526	Leukemia	43	maternal grandmother	Yes	8
+ST0002	PT00600	FC00600	Leukemia	28	maternal grandmother	Yes	0
+ST0002	PT00462	FC00462	Leukemia	28	maternal grandfather	Yes	20
+ST0002	PT00520	FC00520	Leukemia	68	maternal uncle	Yes	15
+ST0002	PT00592	FC00592	Leukemia	30	maternal uncle	Yes	4
+ST0001	PT00355	FC00355	Leukemia	39	niece	Yes	55
+ST0004	PT00896	FC00896	Leukemia	42	paternal aunt	Yes	60
+ST0001	PT00221	FC00221	Leukemia	58	paternal grandfather	Yes	77
+ST0004	PT00939	FC00939	Leukemia	41	paternal grandmother	Yes	75
+ST0002	PT00444	FC00444	Leukemia	74	paternal grandmother	Yes	7
+ST0004	PT00899	FC00899	Leukemia	65	sister	Yes	55
+ST0003	PT00657	FC00657	Leukemia	14	daughter	Yes	77
+ST0003	PT00708	FC00708	Leukemia	22	maternal grandmother	Yes	56
+ST0003	PT00721	FC00721	Leukemia	28	maternal grandmother	Yes	64
+ST0003	PT00676	FC00676	Leukemia	37	niece	Yes	49
+ST0001	PT00259	FC00259	Lung cancer	63	paternal grandmother	Yes	58
+ST0001	PT00016	FC00016	Lung cancer	22	identical twin	Yes	75
+ST0001	PT00255	FC00255	Lung cancer	58	identical twin	Yes	76
+ST0001	PT00345	FC00345	Lung cancer	40	maternal cousin	Yes	75
+ST0002	PT00525	FC00525	Lung cancer	58	maternal grandfather	Yes	8
+ST0002	PT00449	FC00449	Lung cancer	56	maternal grandmother	Yes	3
+ST0002	PT00575	FC00575	Lung cancer	36	maternal grandmother	Yes	9
+ST0001	PT00233	FC00233	Lung cancer	49	maternal grandmother	Yes	66
+ST0002	PT00452	FC00452	Lung cancer	56	maternal grandmother	Yes	4
+ST0002	PT00566	FC00566	Lung cancer	46	maternal grandmother	Yes	15
+ST0001	PT00320	FC00320	Lung cancer	27	maternal grandfather	Yes	67
+ST0001	PT00359	FC00359	Lung cancer	47	maternal grandfather	Yes	53
+ST0001	PT00301	FC00301	Lung cancer	45	maternal uncle	Yes	50
+ST0002	PT00479	FC00479	Lung cancer	54	paternal grandfather	Yes	10
+ST0001	PT00173	FC00173	Lung cancer	40	paternal grandmother	Yes	55
+ST0002	PT00617	FC00617	Lung cancer	49	paternal grandmother	Yes	4
+ST0001	PT00196	FC00196	Lung cancer	24	paternal grandmother	Yes	59
+ST0001	PT00252	FC00252	Lung cancer	64	paternal grandmother	Yes	58
+ST0004	PT00897	FC00897	Lung cancer	62	fraternal twin sister	Yes	51
+ST0003	PT00821	FC00821	Lung cancer	41	maternal grandmother	Yes	33
+ST0004	PT00938	FC00938	Lung cancer	52	half-brother	Yes	61
+ST0004	PT00967	FC00967	Lung cancer	70	half-brother	Yes	65
+ST0004	PT00880	FC00880	Lung cancer	24	half-sister	Yes	64
+ST0001	PT00284	FC00284	Lung cancer	24	identical twin	Yes	75
+ST0001	PT00314	FC00314	Lung cancer	50	identical twin	Yes	68
+ST0004	PT00919	FC00919	Lung cancer	68	maternal aunt	Yes	52
+ST0004	PT00857	FC00857	Lung cancer	37	maternal cousin	Yes	75
+ST0001	PT00084	FC00084	Lung cancer	40	maternal grandfather	Yes	66
+ST0004	PT00843	FC00843	Lung cancer	48	maternal grandfather	Yes	72
+ST0004	PT00865	FC00865	Lung cancer	31	maternal grandmother	Yes	69
+ST0001	PT00291	FC00291	Lung cancer	47	maternal grandmother	Yes	80
+ST0002	PT00565	FC00565	Lung cancer	20	maternal grandmother	Yes	6
+ST0003	PT00752	FC00752	Lung cancer	20	maternal grandmother	Yes	23
+ST0004	PT00912	FC00912	Lung cancer	66	maternal grandfather	Yes	53
+ST0004	PT00999	FC00999	Lung cancer	39	maternal grandfather	Yes	77
+ST0004	PT00863	FC00863	Lung cancer	21	maternal grandfather	Yes	66
+ST0004	PT00943	FC00943	Lung cancer	58	maternal uncle	Yes	70
+ST0002	PT00591	FC00591	Lung cancer	27	mother	Yes	7
+ST0004	PT00907	FC00907	Lung cancer	53	mother	Yes	69
+ST0004	PT00952	FC00952	Lung cancer	36	niece	Yes	70
+ST0001	PT00134	FC00134	Lung cancer	40	paternal aunt	Yes	73
+ST0002	PT00443	FC00443	Lung cancer	31	paternal aunt	Yes	15
+ST0001	PT00087	FC00087	Lung cancer	48	paternal cousin	Yes	76
+ST0002	PT00587	FC00587	Lung cancer	64	paternal cousin	Yes	14
+ST0003	PT00716	FC00716	Lung cancer	30	paternal grandmother	Yes	43
+ST0001	PT00168	FC00168	Lung cancer	66	paternal grandmother	Yes	52
+ST0004	PT00839	FC00839	Lung cancer	55	paternal uncle	Yes	75
+ST0004	PT00871	FC00871	Lung cancer	55	paternal uncle	Yes	71
+ST0004	PT00920	FC00920	Lung cancer	44	paternal uncle	Yes	63
+ST0003	PT00652	FC00652	Lung cancer	45	father	Yes	68
+ST0003	PT00682	FC00682	Lung cancer	44	maternal grandfather	Yes	68
+ST0003	PT00823	FC00823	Lung cancer	74	paternal grandmother	Yes	32
+ST0003	PT00688	FC00688	Lung cancer	56	paternal grandmother	Yes	64
+ST0003	PT00729	FC00729	Lung cancer	49	sister	Yes	29
+ST0003	PT00633	FC00633	Lung cancer	57	son	Yes	58
+ST0001	PT00110	FC00110	Melanoma	47	brother	Yes	53
+ST0001	PT00307	FC00307	Melanoma	71	half-sister	Yes	70
+ST0001	PT00219	FC00219	Melanoma	26	identical twin	Yes	75
+ST0001	PT00228	FC00228	Melanoma	71	maternal aunt	Yes	56
+ST0002	PT00596	FC00596	Melanoma	61	maternal grandfather	Yes	3
+ST0001	PT00127	FC00127	Melanoma	64	maternal grandmother	Yes	76
+ST0001	PT00335	FC00335	Melanoma	52	maternal grandfather	Yes	58
+ST0001	PT00090	FC00090	Melanoma	50	niece	Yes	58
+ST0001	PT00006	FC00006	Melanoma	32	paternal aunt	Yes	78
+ST0001	PT00232	FC00232	Melanoma	27	paternal grandfather	Yes	68
+ST0001	PT00313	FC00313	Melanoma	59	paternal grandmother	Yes	75
+ST0002	PT00621	FC00621	Melanoma	57	paternal uncle	Yes	4
+ST0002	PT00595	FC00595	Melanoma	43	sister	Yes	11
+ST0001	PT00109	FC00109	Melanoma	47	father	Yes	60
+ST0003	PT00767	FC00767	Melanoma	65	fraternal twin brother	Yes	19
+ST0003	PT00809	FC00809	Melanoma	75	fraternal twin brother	Yes	48
+ST0002	PT00580	FC00580	Melanoma	53	fraternal twin sister	Yes	1
+ST0004	PT00910	FC00910	Melanoma	37	fraternal twin sister	Yes	75
+ST0004	PT00905	FC00905	Melanoma	64	granddaughter	Yes	66
+ST0004	PT00962	FC00962	Melanoma	47	maternal grandfather	Yes	61
+ST0003	PT00731	FC00731	Melanoma	73	maternal grandmother	Yes	2
+ST0003	PT00740	FC00740	Melanoma	46	paternal grandmother	Yes	7
+ST0001	PT00116	FC00116	Melanoma	41	identical twin	Yes	79
+ST0004	PT00958	FC00958	Melanoma	64	identical twin	Yes	66
+ST0003	PT00692	FC00692	Melanoma	30	maternal grandfather	Yes	22
+ST0003	PT00785	FC00785	Melanoma	73	maternal grandmother	Yes	19
+ST0004	PT00872	FC00872	Melanoma	32	maternal grandmother	Yes	50
+ST0002	PT00613	FC00613	Melanoma	68	maternal uncle	Yes	20
+ST0004	PT00926	FC00926	Melanoma	59	mother	Yes	77
+ST0002	PT00399	FC00399	Melanoma	20	paternal aunt	Yes	16
+ST0002	PT00503	FC00503	Melanoma	43	paternal grandmother	Yes	13
+ST0002	PT00381	FC00381	Melanoma	24	paternal grandmother	Yes	15
+ST0004	PT00945	FC00945	Melanoma	32	paternal grandmother	Yes	54
+ST0002	PT00397	FC00397	Melanoma	38	paternal uncle	Yes	11
+ST0003	PT00739	FC00739	Melanoma	27	daughter	Yes	31
+ST0003	PT00775	FC00775	Melanoma	41	fraternal twin sister	Yes	75
+ST0003	PT00672	FC00672	Melanoma	63	grandson	Yes	54
+ST0003	PT00630	FC00630	Melanoma	23	maternal grandfather	Yes	62
+ST0003	PT00631	FC00631	Melanoma	28	maternal grandmother	Yes	61
+ST0003	PT00780	FC00780	Melanoma	25	maternal aunt	Yes	69
+ST0003	PT00781	FC00781	Melanoma	64	maternal grandfather	Yes	81
+ST0003	PT00679	FC00679	Melanoma	23	niece	Yes	61
+ST0003	PT00745	FC00745	Melanoma	38	niece	Yes	73
+ST0001	PT00248	FC00248	Multiple sclerosis	27	brother	No	74
+ST0001	PT00275	FC00275	Multiple sclerosis	38	brother	No	73
+ST0001	PT00029	FC00029	Multiple sclerosis	65	fraternal twin sister	No	76
+ST0001	PT00292	FC00292	Multiple sclerosis	34	grandson	No	67
+ST0001	PT00300	FC00300	Multiple sclerosis	42	grandson	No	70
+ST0001	PT00246	FC00246	Multiple sclerosis	63	parternal grandfather	No	75
+ST0002	PT00585	FC00585	Multiple sclerosis	66	identical twin	Unknown	21
+ST0001	PT00193	FC00193	Multiple sclerosis	37	identical twin	No	81
+ST0001	PT00122	FC00122	Multiple sclerosis	41	maternal cousin	No	61
+ST0001	PT00372	FC00372	Multiple sclerosis	72	maternal grandfather	Unknown	54
+ST0002	PT00419	FC00419	Multiple sclerosis	58	maternal grandfather	No	15
+ST0001	PT00065	FC00065	Multiple sclerosis	63	maternal grandmother	No	73
+ST0002	PT00432	FC00432	Multiple sclerosis	70	maternal uncle	No	5
+ST0001	PT00013	FC00013	Multiple sclerosis	55	niece	Unknown	73
+ST0001	PT00037	FC00037	Multiple sclerosis	28	paternal grandfather	No	65
+ST0002	PT00576	FC00576	Multiple sclerosis	56	paternal grandfather	No	4
+ST0002	PT00446	FC00446	Multiple sclerosis	21	paternal grandmother	No	12
+ST0002	PT00560	FC00560	Multiple sclerosis	62	paternal grandmother	No	15
+ST0002	PT00571	FC00571	Multiple sclerosis	25	paternal grandmother	No	8
+ST0002	PT00489	FC00489	Multiple sclerosis	58	paternal grandmother	No	13
+ST0002	PT00569	FC00569	Multiple sclerosis	37	paternal uncle	No	2
+ST0002	PT00608	FC00608	Multiple sclerosis	23	sister	No	21
+ST0002	PT00413	FC00413	Multiple sclerosis	65	brother	Unknown	16
+ST0001	PT00253	FC00253	Multiple sclerosis	22	daughter	Unknown	58
+ST0004	PT00978	FC00978	Multiple sclerosis	50	father	No	52
+ST0001	PT00370	FC00370	Multiple sclerosis	28	fraternal twin sister	No	68
+ST0001	PT00058	FC00058	Multiple sclerosis	49	granddaughter	Unknown	62
+ST0001	PT00321	FC00321	Multiple sclerosis	67	granddaughter	Unknown	57
+ST0004	PT00852	FC00852	Multiple sclerosis	29	maternal grandfather	Unknown	54
+ST0004	PT00944	FC00944	Multiple sclerosis	23	paternal grandmother	Unknown	62
+ST0004	PT00867	FC00867	Multiple sclerosis	63	half-brother	No	53
+ST0003	PT00644	FC00644	Multiple sclerosis	16	identical twin	No	19
+ST0001	PT00060	FC00060	Multiple sclerosis	59	maternal aunt	No	69
+ST0001	PT00192	FC00192	Multiple sclerosis	46	maternal cousin	No	55
+ST0001	PT00035	FC00035	Multiple sclerosis	63	maternal grandfather	No	52
+ST0002	PT00610	FC00610	Multiple sclerosis	72	maternal grandfather	No	9
+ST0001	PT00263	FC00263	Multiple sclerosis	37	maternal grandmother	No	58
+ST0001	PT00330	FC00330	Multiple sclerosis	27	maternal grandmother	No	69
+ST0002	PT00472	FC00472	Multiple sclerosis	75	maternal uncle	No	11
+ST0001	PT00057	FC00057	Multiple sclerosis	37	paternal aunt	No	79
+ST0003	PT00776	FC00776	Multiple sclerosis	35	paternal cousin	No	21
+ST0004	PT00911	FC00911	Multiple sclerosis	65	paternal grandfather	Unknown	75
+ST0004	PT00930	FC00930	Multiple sclerosis	57	paternal grandfather	No	64
+ST0002	PT00521	FC00521	Multiple sclerosis	31	paternal grandmother	No	17
+ST0003	PT00728	FC00728	Multiple sclerosis	73	paternal grandmother	No	26
+ST0004	PT00862	FC00862	Multiple sclerosis	48	paternal grandmother	No	49
+ST0002	PT00493	FC00493	Multiple sclerosis	57	paternal uncle	No	17
+ST0003	PT00722	FC00722	Multiple sclerosis	61	son	No	36
+ST0003	PT00669	FC00669	Multiple sclerosis	34	paternal grandmother	No	58
+ST0003	PT00649	FC00649	Multiple sclerosis	56	maternal grandmother	No	72
+ST0003	PT00768	FC00768	Multiple sclerosis	54	maternal grandmother	No	33
+ST0003	PT00784	FC00784	Multiple sclerosis	48	maternal grandmother	No	81
+ST0003	PT00766	FC00766	Multiple sclerosis	67	maternal grandfather	No	54
+ST0003	PT00675	FC00675	Multiple sclerosis	22	mother	No	61
+ST0002	PT00409	FC00409	Pancreatic cancer	53	brother	Yes	1
+ST0002	PT00416	FC00416	Pancreatic cancer	23	brother	Yes	15
+ST0002	PT00440	FC00440	Pancreatic cancer	58	fraternal twin brother	Yes	5
+ST0002	PT00460	FC00460	Pancreatic cancer	73	half-brother	Yes	3
+ST0001	PT00164	FC00164	Pancreatic cancer	62	half-sister	Yes	79
+ST0001	PT00230	FC00230	Pancreatic cancer	45	maternal cousin	Yes	76
+ST0002	PT00536	FC00536	Pancreatic cancer	68	maternal cousin	Yes	19
+ST0001	PT00256	FC00256	Pancreatic cancer	43	maternal grandfather	Yes	71
+ST0002	PT00387	FC00387	Pancreatic cancer	59	maternal grandfather	Yes	16
+ST0002	PT00418	FC00418	Pancreatic cancer	43	maternal grandfather	Yes	12
+ST0002	PT00531	FC00531	Pancreatic cancer	55	maternal grandfather	Yes	18
+ST0001	PT00348	FC00348	Pancreatic cancer	51	maternal grandmother	Yes	68
+ST0001	PT00033	FC00033	Pancreatic cancer	48	maternal grandfather	Yes	74
+ST0001	PT00088	FC00088	Pancreatic cancer	59	maternal uncle	Yes	73
+ST0002	PT00545	FC00545	Pancreatic cancer	63	mother	Yes	17
+ST0002	PT00405	FC00405	Pancreatic cancer	30	paternal cousin	Yes	16
+ST0001	PT00377	FC00377	Pancreatic cancer	41	paternal grandmother	Yes	50
+ST0001	PT00154	FC00154	Pancreatic cancer	24	sister	Yes	55
+ST0002	PT00620	FC00620	Pancreatic cancer	48	sister	Yes	11
+ST0001	PT00010	FC00010	Pancreatic cancer	41	son	Yes	58
+ST0004	PT00838	FC00838	Pancreatic cancer	70	brother	Yes	59
+ST0004	PT00879	FC00879	Pancreatic cancer	35	daughter	Yes	65
+ST0001	PT00056	FC00056	Pancreatic cancer	38	father	Yes	80
+ST0004	PT00914	FC00914	Pancreatic cancer	68	father	Yes	54
+ST0004	PT00950	FC00950	Pancreatic cancer	58	paternal grandmother	Yes	74
+ST0001	PT00324	FC00324	Pancreatic cancer	40	paternal grandmother	Yes	76
+ST0004	PT00929	FC00929	Pancreatic cancer	56	half-sister	Yes	60
+ST0004	PT00977	FC00977	Pancreatic cancer	61	half-sister	Yes	81
+ST0002	PT00383	FC00383	Pancreatic cancer	30	maternal aunt	Yes	7
+ST0003	PT00794	FC00794	Pancreatic cancer	56	maternal cousin	Yes	31
+ST0001	PT00339	FC00339	Pancreatic cancer	33	maternal grandmother	Yes	65
+ST0003	PT00779	FC00779	Pancreatic cancer	47	maternal grandmother	Yes	29
+ST0001	PT00265	FC00265	Pancreatic cancer	70	paternal cousin	Yes	63
+ST0002	PT00530	FC00530	Pancreatic cancer	66	paternal cousin	Yes	20
+ST0003	PT00737	FC00737	Pancreatic cancer	30	paternal grandfather	Yes	45
+ST0001	PT00177	FC00177	Pancreatic cancer	34	paternal grandmother	Yes	62
+ST0002	PT00488	FC00488	Pancreatic cancer	30	paternal grandmother	Yes	17
+ST0001	PT00298	FC00298	Pancreatic cancer	50	paternal uncle	Yes	74
+ST0004	PT00832	FC00832	Pancreatic cancer	44	paternal uncle	Yes	66
+ST0003	PT00711	FC00711	Pancreatic cancer	74	brother	Yes	78
+ST0003	PT00639	FC00639	Pancreatic cancer	65	fraternal twin brother	Yes	77
+ST0003	PT00718	FC00718	Pancreatic cancer	53	fraternal twin brother	Yes	70
+ST0003	PT00715	FC00715	Pancreatic cancer	54	maternal grandmother	Yes	77
+ST0003	PT00667	FC00667	Pancreatic cancer	49	maternal grandmother	Yes	68
+ST0003	PT00762	FC00762	Pancreatic cancer	60	maternal grandmother	Yes	78
+ST0003	PT00705	FC00705	Pancreatic cancer	63	mother	Yes	79
+ST0003	PT00796	FC00796	Pancreatic cancer	46	paternal cousin	Yes	70
+ST0003	PT00654	FC00654	Pancreatic cancer	65	paternal grandmother	Yes	80
+ST0003	PT00799	FC00799	Pancreatic cancer	50	paternal grandmother	Yes	45
+ST0002	PT00548	FC00548	Parkinson's disease	47	father	No	13
+ST0001	PT00210	FC00210	Parkinson's disease	38	fraternal twin brother	No	78
+ST0001	PT00241	FC00241	Parkinson's disease	55	fraternal twin brother	No	58
+ST0001	PT00249	FC00249	Parkinson's disease	33	fraternal twin brother	No	55
+ST0002	PT00584	FC00584	Parkinson's disease	74	fraternal twin brother	No	5
+ST0001	PT00216	FC00216	Parkinson's disease	24	fraternal twin sister	No	79
+ST0001	PT00112	FC00112	Parkinson's disease	30	maternal grandmother	No	63
+ST0001	PT00258	FC00258	Parkinson's disease	54	maternal grandmother	No	50
+ST0001	PT00294	FC00294	Parkinson's disease	46	identical twin	No	55
+ST0002	PT00480	FC00480	Parkinson's disease	74	identical twin	No	9
+ST0002	PT00485	FC00485	Parkinson's disease	42	identical twin	No	10
+ST0001	PT00151	FC00151	Parkinson's disease	33	maternal grandfather	No	59
+ST0001	PT00218	FC00218	Parkinson's disease	52	maternal grandfather	No	60
+ST0001	PT00364	FC00364	Parkinson's disease	56	maternal grandfather	No	81
+ST0001	PT00159	FC00159	Parkinson's disease	55	maternal grandmother	No	58
+ST0002	PT00609	FC00609	Parkinson's disease	60	maternal grandmother	Unknown	12
+ST0002	PT00380	FC00380	Parkinson's disease	58	maternal grandmother	Unknown	6
+ST0002	PT00398	FC00398	Parkinson's disease	53	maternal grandmother	Unknown	16
+ST0001	PT00340	FC00340	Parkinson's disease	60	maternal uncle	Unknown	75
+ST0002	PT00497	FC00497	Parkinson's disease	42	maternal uncle	No	11
+ST0001	PT00243	FC00243	Parkinson's disease	52	paternal grandfather	No	69
+ST0001	PT00326	FC00326	Parkinson's disease	56	paternal grandfather	No	61
+ST0002	PT00549	FC00549	Parkinson's disease	39	paternal grandfather	No	18
+ST0002	PT00604	FC00604	Parkinson's disease	40	paternal grandfather	No	8
+ST0001	PT00074	FC00074	Parkinson's disease	73	paternal grandmother	No	74
+ST0002	PT00467	FC00467	Parkinson's disease	70	paternal grandmother	No	16
+ST0001	PT00311	FC00311	Parkinson's disease	28	paternal grandmother	No	68
+ST0002	PT00482	FC00482	Parkinson's disease	28	paternal grandmother	No	10
+ST0004	PT00840	FC00840	Parkinson's disease	24	father	No	52
+ST0004	PT00883	FC00883	Parkinson's disease	39	father	No	75
+ST0004	PT00941	FC00941	Parkinson's disease	34	fraternal twin sister	No	56
+ST0001	PT00158	FC00158	Parkinson's disease	29	grandson	No	52
+ST0001	PT00329	FC00329	Parkinson's disease	39	grandson	No	65
+ST0002	PT00427	FC00427	Parkinson's disease	67	maternal aunt	No	4
+ST0002	PT00487	FC00487	Parkinson's disease	33	maternal aunt	No	13
+ST0002	PT00425	FC00425	Parkinson's disease	47	maternal cousin	No	10
+ST0002	PT00601	FC00601	Parkinson's disease	49	maternal cousin	No	15
+ST0004	PT00986	FC00986	Parkinson's disease	63	maternal cousin	No	81
+ST0002	PT00457	FC00457	Parkinson's disease	39	maternal grandfather	No	9
+ST0003	PT00659	FC00659	Parkinson's disease	66	maternal grandfather	Yes	29
+ST0001	PT00283	FC00283	Parkinson's disease	52	maternal grandmother	Yes	54
+ST0004	PT00864	FC00864	Parkinson's disease	57	maternal grandmother	Yes	76
+ST0004	PT00959	FC00959	Parkinson's disease	65	maternal grandfather	Yes	51
+ST0004	PT00830	FC00830	Parkinson's disease	24	maternal grandfather	No	66
+ST0002	PT00528	FC00528	Parkinson's disease	21	maternal uncle	Yes	19
+ST0001	PT00062	FC00062	Parkinson's disease	28	mother	Yes	62
+ST0001	PT00099	FC00099	Parkinson's disease	50	niece	Yes	54
+ST0004	PT00856	FC00856	Parkinson's disease	59	paternal cousin	Yes	51
+ST0001	PT00012	FC00012	Parkinson's disease	23	sister	Yes	51
+ST0003	PT00694	FC00694	Parkinson's disease	22	half-brother	No	78
+ST0003	PT00757	FC00757	Parkinson's disease	22	identical twin	No	62
+ST0003	PT00678	FC00678	Parkinson's disease	61	maternal aunt	No	68
+ST0003	PT00696	FC00696	Parkinson's disease	67	maternal aunt	No	62
+ST0003	PT00640	FC00640	Parkinson's disease	40	mother	No	61
+ST0003	PT00636	FC00636	Parkinson's disease	55	paternal grandfather	No	70
+ST0003	PT00643	FC00643	Parkinson's disease	59	paternal uncle	No	54
+ST0003	PT00741	FC00741	Parkinson's disease	60	paternal uncle	No	71
+ST0003	PT00801	FC00801	Parkinson's disease	73	sister	No	50
+ST0001	PT00304	FC00304	Renal failure	67	brother	No	58
+ST0001	PT00357	FC00357	Renal failure	51	daughter	Unknown	80
+ST0002	PT00594	FC00594	Renal failure	39	father	No	0
+ST0001	PT00189	FC00189	Renal failure	50	fraternal twin brother	No	55
+ST0001	PT00280	FC00280	Renal failure	25	fraternal twin brother	No	74
+ST0002	PT00378	FC00378	Renal failure	72	fraternal twin brother	Unknown	10
+ST0002	PT00456	FC00456	Renal failure	20	fraternal twin brother	No	7
+ST0001	PT00063	FC00063	Renal failure	49	maternal cousin	No	66
+ST0001	PT00299	FC00299	Renal failure	58	maternal cousin	Unknown	81
+ST0001	PT00015	FC00015	Renal failure	50	maternal grandfather	Unknown	72
+ST0002	PT00511	FC00511	Renal failure	38	maternal grandfather	No	12
+ST0001	PT00319	FC00319	Renal failure	66	maternal grandfather	No	56
+ST0001	PT00138	FC00138	Renal failure	22	paternal cousin	No	75
+ST0002	PT00514	FC00514	Renal failure	57	paternal cousin	No	13
+ST0002	PT00611	FC00611	Renal failure	44	paternal grandmother	No	2
+ST0001	PT00226	FC00226	Renal failure	57	sister	No	50
+ST0004	PT00970	FC00970	Renal failure	40	father	Yes	74
+ST0002	PT00616	FC00616	Renal failure	47	fraternal twin sister	Yes	10
+ST0004	PT00996	FC00996	Renal failure	39	fraternal twin sister	Yes	74
+ST0001	PT00146	FC00146	Renal failure	66	parternal grandfather	Unknown	75
+ST0001	PT00169	FC00169	Renal failure	30	parternal grandfather	Unknown	80
+ST0002	PT00577	FC00577	Renal failure	32	maternal grandfather	Yes	20
+ST0001	PT00031	FC00031	Renal failure	75	half-brother	Yes	53
+ST0001	PT00132	FC00132	Renal failure	47	half-sister	Yes	69
+ST0001	PT00073	FC00073	Renal failure	69	identical twin	Yes	75
+ST0004	PT00886	FC00886	Renal failure	51	identical twin	Unknown	60
+ST0002	PT00408	FC00408	Renal failure	27	maternal cousin	Yes	13
+ST0001	PT00190	FC00190	Renal failure	68	maternal grandfather	Yes	56
+ST0001	PT00371	FC00371	Renal failure	24	maternal grandfather	Yes	68
+ST0004	PT00850	FC00850	Renal failure	39	maternal grandfather	Yes	80
+ST0004	PT00908	FC00908	Renal failure	53	maternal grandmother	Yes	76
+ST0002	PT00410	FC00410	Renal failure	20	maternal grandfather	Yes	18
+ST0004	PT00924	FC00924	Renal failure	44	maternal uncle	Yes	55
+ST0001	PT00093	FC00093	Renal failure	25	mother	Yes	61
+ST0003	PT00680	FC00680	Renal failure	30	niece	Yes	29
+ST0001	PT00322	FC00322	Renal failure	23	paternal grandfather	Yes	61
+ST0003	PT00770	FC00770	Renal failure	62	paternal grandfather	Yes	4
+ST0001	PT00358	FC00358	Renal failure	52	paternal grandmother	No	49
+ST0002	PT00494	FC00494	Renal failure	22	paternal grandmother	No	10
+ST0004	PT00975	FC00975	Renal failure	65	paternal grandmother	Yes	64
+ST0004	PT00881	FC00881	Renal failure	68	paternal grandmother	Yes	80
+ST0001	PT00038	FC00038	Renal failure	26	son	Yes	57
+ST0003	PT00703	FC00703	Renal failure	22	fraternal twin sister	No	63
+ST0003	PT00723	FC00723	Renal failure	36	grandson	No	71
+ST0003	PT00690	FC00690	Renal failure	58	maternal grandmother	No	57
+ST0003	PT00645	FC00645	Renal failure	27	maternal grandfather	No	54
+ST0003	PT00810	FC00810	Renal failure	64	niece	No	74
+ST0003	PT00706	FC00706	Renal failure	70	paternal grandfather	No	67
+ST0003	PT00759	FC00759	Renal failure	28	paternal grandmother	No	72
+ST0003	PT00735	FC00735	Renal failure	67	paternal grandmother	No	73
+ST0003	PT00771	FC00771	Renal failure	38	paternal uncle	No	55
+ST0003	PT00635	FC00635	Renal failure	46	paternal uncle	Unknown	22
+ST0001	PT00044	FC00044	Schizophrenia	73	daughter	No	66
+ST0002	PT00395	FC00395	Schizophrenia	39	father	No	3
+ST0001	PT00089	FC00089	Schizophrenia	75	fraternal twin sister	No	72
+ST0002	PT00402	FC00402	Schizophrenia	24	fraternal twin sister	No	4
+ST0002	PT00388	FC00388	Schizophrenia	34	half-brother	No	16
+ST0002	PT00598	FC00598	Schizophrenia	43	identical twin	Unknown	6
+ST0001	PT00117	FC00117	Schizophrenia	49	maternal grandfather	No	77
+ST0002	PT00412	FC00412	Schizophrenia	56	maternal grandfather	No	16
+ST0001	PT00305	FC00305	Schizophrenia	62	maternal grandmother	No	62
+ST0002	PT00558	FC00558	Schizophrenia	44	maternal grandmother	No	15
+ST0002	PT00483	FC00483	Schizophrenia	28	maternal grandfather	No	18
+ST0002	PT00433	FC00433	Schizophrenia	62	maternal uncle	No	4
+ST0001	PT00083	FC00083	Schizophrenia	29	niece	No	50
+ST0002	PT00468	FC00468	Schizophrenia	43	paternal grandfather	No	5
+ST0002	PT00579	FC00579	Schizophrenia	55	paternal grandfather	No	3
+ST0001	PT00130	FC00130	Schizophrenia	58	paternal grandmother	No	54
+ST0001	PT00125	FC00125	Schizophrenia	67	paternal grandmother	No	50
+ST0001	PT00175	FC00175	Schizophrenia	71	paternal uncle	No	73
+ST0001	PT00245	FC00245	Schizophrenia	70	paternal uncle	No	62
+ST0002	PT00561	FC00561	Schizophrenia	26	paternal uncle	No	8
+ST0001	PT00166	FC00166	Schizophrenia	67	son	No	59
+ST0001	PT00195	FC00195	Schizophrenia	68	son	No	69
+ST0001	PT00369	FC00369	Schizophrenia	59	fraternal twin brother	No	76
+ST0001	PT00271	FC00271	Schizophrenia	64	grandson	No	56
+ST0003	PT00812	FC00812	Schizophrenia	20	grandson	No	48
+ST0002	PT00512	FC00512	Schizophrenia	55	maternal grandfather	No	18
+ST0004	PT00844	FC00844	Schizophrenia	29	maternal grandmother	Yes	54
+ST0004	PT00964	FC00964	Schizophrenia	50	half-brother	No	57
+ST0004	PT00954	FC00954	Schizophrenia	72	identical twin	No	56
+ST0003	PT00656	FC00656	Schizophrenia	72	maternal cousin	No	30
+ST0001	PT00223	FC00223	Schizophrenia	32	maternal grandfather	No	72
+ST0001	PT00008	FC00008	Schizophrenia	20	maternal grandmother	No	67
+ST0004	PT00976	FC00976	Schizophrenia	75	maternal grandmother	No	60
+ST0004	PT00928	FC00928	Schizophrenia	53	maternal grandfather	Unknown	60
+ST0004	PT00845	FC00845	Schizophrenia	48	maternal grandfather	No	65
+ST0004	PT00997	FC00997	Schizophrenia	37	maternal uncle	No	70
+ST0003	PT00764	FC00764	Schizophrenia	69	niece	No	29
+ST0004	PT00917	FC00917	Schizophrenia	36	niece	Unknown	72
+ST0001	PT00002	FC00002	Schizophrenia	57	paternal grandfather	No	68
+ST0001	PT00290	FC00290	Schizophrenia	48	paternal grandfather	No	55
+ST0004	PT00894	FC00894	Schizophrenia	51	paternal grandfather	Unknown	59
+ST0004	PT00898	FC00898	Schizophrenia	24	paternal grandmother	Unknown	63
+ST0004	PT00995	FC00995	Schizophrenia	37	paternal grandmother	No	70
+ST0003	PT00691	FC00691	Schizophrenia	57	maternal aunt	No	58
+ST0003	PT00772	FC00772	Schizophrenia	23	maternal cousin	No	74
+ST0003	PT00709	FC00709	Schizophrenia	74	maternal grandmother	No	62
+ST0003	PT00664	FC00664	Schizophrenia	64	niece	No	50
+ST0003	PT00774	FC00774	Schizophrenia	30	paternal uncle	No	52
+ST0001	PT00328	FC00328	Stroke 	43	brother	Unknown	58
+ST0001	PT00242	FC00242	Stroke 	43	daughter	No	74
+ST0001	PT00052	FC00052	Stroke 	52	father	No	74
+ST0001	PT00279	FC00279	Stroke 	62	father	No	79
+ST0001	PT00266	FC00266	Stroke 	22	fraternal twin brother	No	76
+ST0002	PT00568	FC00568	Stroke 	29	fraternal twin brother	No	11
 ST0001	PT00229	FC00229	Stroke 	45	granddaughter	No	76
-ST0001	PT00230	FC00230	Pancreatic cancer	34	maternal cousin	No	76
-ST0001	PT00231	FC00231	COPD	58	maternal cousin	No	59
-ST0001	PT00232	FC00232	Melanoma	75	paternal grandfather	No	68
-ST0001	PT00233	FC00233	Lung cancer	41	maternal great-grandfather	No	66
-ST0001	PT00234	FC00234	Alzheimer disease	27	identical twin sister	No	52
-ST0001	PT00235	FC00235	Biopolar disorder	24	grandson	Yes	64
-ST0001	PT00236	FC00236	Crohn's disease	51	maternal great-grandmother	No	68
-ST0001	PT00237	FC00237	Brain cancer	67	paternal cousin	Yes	70
-ST0001	PT00238	FC00238	Heart disease	24	maternal aunt	Yes	57
-ST0001	PT00239	FC00239	Heart disease	26	great grandparent	No	73
-ST0001	PT00240	FC00240	Hypertension	29	half-sister	Yes	69
-ST0001	PT00241	FC00241	Parkinson's disease	42	fraternal twin brother	No	58
-ST0001	PT00242	FC00242	Stroke 	26	daughter	No	74
-ST0001	PT00243	FC00243	Parkinson's disease	61	paternal grandfather	No	69
-ST0001	PT00244	FC00244	Alzheimer disease	36	half-sister	No	64
-ST0001	PT00245	FC00245	Schizophrenia	49	paternal uncle	No	62
-ST0001	PT00246	FC00246	Multiple sclerosis	50	great grandfather	No	75
-ST0001	PT00247	FC00247	Arthritis	65	paternal aunt	No	56
-ST0001	PT00248	FC00248	Multiple sclerosis	35	brother	No	74
-ST0001	PT00249	FC00249	Parkinson's disease	34	fraternal twin brother	No	55
-ST0001	PT00250	FC00250	Diabetes	55	father	No	51
-ST0001	PT00251	FC00251	COPD	27	paternal grandfather	No	65
-ST0001	PT00252	FC00252	Lung cancer	71	paternal great-grandmother	No	58
-ST0001	PT00253	FC00253	Multiple sclerosis	44	daughter	Yes	58
-ST0001	PT00254	FC00254	Brain cancer	37	great grandfather	Yes	78
-ST0001	PT00255	FC00255	Lung cancer	67	identical twin brother	No	76
-ST0001	PT00256	FC00256	Pancreatic cancer	49	maternal grandfather	No	71
-ST0001	PT00257	FC00257	Systemic lupus erythematosus 	56	paternal aunt	No	61
-ST0001	PT00258	FC00258	Parkinson's disease	30	great grandmother	No	50
-ST0001	PT00259	FC00259	Lung cancer	42	great grandparent	No	58
-ST0001	PT00260	FC00260	Crohn's disease	27	paternal great-grandfather	Yes	52
-ST0001	PT00261	FC00261	Alzheimer disease	47	maternal grandmother	Yes	54
-ST0001	PT00262	FC00262	Hypertension	42	fraternal twin brother	Yes	54
-ST0001	PT00263	FC00263	Multiple sclerosis	62	maternal grandmother	Yes	58
-ST0001	PT00264	FC00264	Brain cancer	75	granddaughter	Yes	65
-ST0001	PT00265	FC00265	Pancreatic cancer	64	paternal cousin	Yes	63
-ST0001	PT00266	FC00266	Stroke 	39	fraternal twin brother	No	76
-ST0001	PT00267	FC00267	Arthritis	59	maternal great-grandmother	No	67
-ST0001	PT00268	FC00268	Arthritis	46	maternal great-grandmother	No	80
-ST0001	PT00269	FC00269	Alzheimer disease	59	maternal great-grandfather	No	76
-ST0001	PT00270	FC00270	Leukemia	67	grandson	No	53
-ST0001	PT00271	FC00271	Schizophrenia	47	grandson	Yes	56
-ST0001	PT00272	FC00272	Hypertension	52	father	No	66
-ST0001	PT00273	FC00273	Arthritis	23	identical twin sister	No	60
-ST0001	PT00274	FC00274	Cancer (undefined)	48	father	No	53
-ST0001	PT00275	FC00275	Multiple sclerosis	56	brother	No	73
-ST0001	PT00276	FC00276	COPD	37	paternal great-grandfather	No	72
-ST0001	PT00277	FC00277	Cancer (undefined)	55	daughter	No	54
-ST0001	PT00278	FC00278	Hypertension	54	paternal great-grandfather	Yes	57
-ST0001	PT00279	FC00279	Stroke 	30	father	No	79
-ST0001	PT00280	FC00280	Renal failure	26	fraternal twin brother	No	74
-ST0001	PT00281	FC00281	Heart disease	46	maternal cousin	No	74
-ST0001	PT00282	FC00282	Diabetes	67	sister	No	73
-ST0001	PT00283	FC00283	Parkinson's disease	43	maternal grandmother	Yes	54
-ST0001	PT00284	FC00284	Lung cancer	49	identical twin sister	Yes	75
-ST0001	PT00285	FC00285	Biopolar disorder	24	fraternal twin brother	Yes	67
-ST0001	PT00286	FC00286	Leukemia	65	paternal great-grandfather	No	81
-ST0001	PT00287	FC00287	Brain cancer	27	maternal aunt	No	59
-ST0001	PT00288	FC00288	Cancer (undefined)	67	maternal grandfather	No	74
-ST0001	PT00289	FC00289	Brain cancer	65	paternal aunt	No	81
-ST0001	PT00290	FC00290	Schizophrenia	65	paternal grandfather	Yes	55
-ST0001	PT00291	FC00291	Lung cancer	56	maternal great-grandfather	Yes	80
-ST0001	PT00292	FC00292	Multiple sclerosis	28	grandson	No	67
-ST0001	PT00293	FC00293	Diabetes	66	half-brother	No	49
-ST0001	PT00294	FC00294	Parkinson's disease	42	identical twin brother	No	55
-ST0001	PT00295	FC00295	Arthritis	40	identical twin brother	No	52
-ST0001	PT00296	FC00296	COPD	35	paternal cousin	No	69
-ST0001	PT00297	FC00297	Arthritis	47	fraternal twin sister	No	69
-ST0001	PT00298	FC00298	Pancreatic cancer	24	paternal uncle	Yes	74
-ST0001	PT00299	FC00299	Renal failure	25	maternal cousin	No	81
-ST0001	PT00300	FC00300	Multiple sclerosis	28	grandson	No	70
-ST0001	PT00301	FC00301	Lung cancer	21	maternal uncle	No	50
-ST0001	PT00302	FC00302	COPD	23	maternal uncle	No	55
-ST0001	PT00303	FC00303	Hypertension	73	half-sister	Yes	59
-ST0001	PT00304	FC00304	Renal failure	38	brother	No	58
-ST0001	PT00305	FC00305	Schizophrenia	56	maternal grandmother	No	62
-ST0001	PT00306	FC00306	Arthritis	23	grandson	No	69
-ST0001	PT00307	FC00307	Melanoma	60	half-sister	No	70
-ST0001	PT00308	FC00308	Crohn's disease	32	mother	No	53
-ST0001	PT00309	FC00309	Crohn's disease	47	paternal great-grandfather	Yes	56
-ST0001	PT00310	FC00310	COPD	36	son	No	79
-ST0001	PT00311	FC00311	Parkinson's disease	69	paternal great-grandmother	No	68
-ST0001	PT00312	FC00312	Systemic lupus erythematosus 	20	maternal grandfather	No	75
-ST0001	PT00313	FC00313	Melanoma	28	paternal great-grandmother	No	75
-ST0001	PT00314	FC00314	Lung cancer	31	identical twin sister	Yes	68
-ST0001	PT00315	FC00315	Arthritis	63	paternal cousin	Yes	73
-ST0001	PT00316	FC00316	Crohn's disease	30	son	Yes	50
-ST0001	PT00317	FC00317	Hypertension	64	maternal grandmother	No	81
-ST0001	PT00318	FC00318	Diabetes	56	half-brother	Yes	64
-ST0001	PT00319	FC00319	Renal failure	23	maternal great-grandmother	No	56
-ST0001	PT00320	FC00320	Lung cancer	24	maternal great-grandmother	No	67
-ST0001	PT00321	FC00321	Multiple sclerosis	39	granddaughter	Yes	57
-ST0001	PT00322	FC00322	Renal failure	63	paternal grandfather	Yes	61
-ST0001	PT00323	FC00323	Biopolar disorder	25	paternal aunt	No	64
-ST0001	PT00324	FC00324	Pancreatic cancer	46	great grandparent	Yes	76
-ST0001	PT00325	FC00325	Arthritis	34	paternal grandmother	No	78
-ST0001	PT00326	FC00326	Parkinson's disease	26	paternal grandfather	No	61
-ST0001	PT00327	FC00327	Systemic lupus erythematosus 	68	half-brother	No	75
-ST0001	PT00328	FC00328	Stroke 	54	brother	No	58
-ST0001	PT00329	FC00329	Parkinson's disease	59	grandson	Yes	65
-ST0001	PT00330	FC00330	Multiple sclerosis	57	maternal grandmother	Yes	69
-ST0001	PT00331	FC00331	Brain cancer	39	maternal aunt	No	58
-ST0001	PT00332	FC00332	Cancer (undefined)	59	paternal cousin	No	77
-ST0001	PT00333	FC00333	Brain cancer	73	mother	No	74
-ST0001	PT00334	FC00334	COPD	39	mother	No	61
-ST0001	PT00335	FC00335	Melanoma	32	maternal great-grandmother	No	58
-ST0001	PT00336	FC00336	Brain cancer	38	paternal cousin	Yes	64
-ST0001	PT00337	FC00337	Heart disease	21	identical twin sister	Yes	53
-ST0001	PT00338	FC00338	Heart disease	61	paternal uncle	No	49
-ST0001	PT00339	FC00339	Pancreatic cancer	47	maternal grandmother	Yes	65
-ST0001	PT00340	FC00340	Parkinson's disease	35	maternal uncle	No	75
-ST0001	PT00341	FC00341	Hypertension	47	granddaughter	Yes	67
-ST0001	PT00342	FC00342	Cancer (undefined)	34	daughter	Yes	72
-ST0001	PT00343	FC00343	Arthritis	36	maternal uncle	No	54
-ST0001	PT00344	FC00344	Brain cancer	71	son	No	75
-ST0001	PT00345	FC00345	Lung cancer	41	maternal cousin	No	75
-ST0001	PT00346	FC00346	Heart disease	53	paternal grandfather	No	74
-ST0001	PT00347	FC00347	Arthritis	33	paternal grandmother	No	65
-ST0001	PT00348	FC00348	Pancreatic cancer	56	maternal great-grandfather	No	68
-ST0001	PT00349	FC00349	Biopolar disorder	26	grandson	No	62
-ST0001	PT00350	FC00350	Cancer (undefined)	70	paternal grandfather	No	53
-ST0001	PT00351	FC00351	Heart disease	74	paternal grandfather	No	70
-ST0001	PT00352	FC00352	Heart disease	23	maternal grandmother	Yes	53
-ST0001	PT00353	FC00353	Cancer (undefined)	26	maternal great-grandfather	Yes	79
-ST0001	PT00354	FC00354	Alzheimer disease	48	identical twin brother	No	56
-ST0001	PT00355	FC00355	Leukemia	36	niece	Yes	55
-ST0001	PT00356	FC00356	Hypertension	58	fraternal twin sister	No	73
-ST0001	PT00357	FC00357	Renal failure	42	daughter	No	80
-ST0001	PT00358	FC00358	Renal failure	75	paternal great-grandfather	Yes	49
-ST0001	PT00359	FC00359	Lung cancer	20	maternal great-grandmother	No	53
-ST0001	PT00360	FC00360	Cancer (undefined)	53	maternal great-grandfather	No	58
-ST0001	PT00361	FC00361	Heart disease	21	maternal great-grandfather	No	77
-ST0001	PT00362	FC00362	Cancer (undefined)	45	half-brother	No	53
-ST0001	PT00363	FC00363	Leukemia	21	paternal great-grandfather	No	68
-ST0001	PT00364	FC00364	Parkinson's disease	20	maternal grandfather	No	81
-ST0001	PT00365	FC00365	Arthritis	49	father	No	64
-ST0001	PT00366	FC00366	Leukemia	38	paternal great-grandmother	No	78
-ST0001	PT00367	FC00367	Arthritis	44	paternal great-grandfather	No	72
-ST0001	PT00368	FC00368	Crohn's disease	29	son	No	50
-ST0001	PT00369	FC00369	Schizophrenia	66	fraternal twin brother	Yes	76
-ST0001	PT00370	FC00370	Multiple sclerosis	23	fraternal twin sister	Yes	68
-ST0001	PT00371	FC00371	Renal failure	45	maternal grandfather	Yes	68
-ST0001	PT00372	FC00372	Multiple sclerosis	58	maternal grandfather	No	54
-ST0001	PT00373	FC00373	Biopolar disorder	25	maternal great-grandfather	No	77
-ST0001	PT00374	FC00374	Systemic lupus erythematosus 	21	great grandfather	No	51
-ST0001	PT00375	FC00375	Alzheimer disease	50	paternal grandmother	No	63
-ST0001	PT00376	FC00376	Hypertension	37	sister	No	55
-ST0001	PT00377	FC00377	Pancreatic cancer	73	paternal great-grandfather	No	50
-ST0002	PT00378	FC00378	Renal failure	21	fraternal twin brother	No	10
-ST0002	PT00379	FC00379	Diabetes	20	maternal grandfather	No	15
-ST0002	PT00380	FC00380	Parkinson's disease	29	maternal great-grandfather	No	6
-ST0002	PT00381	FC00381	Melanoma	62	paternal great-grandmother	Yes	15
-ST0002	PT00382	FC00382	Arthritis	24	half-sister	No	19
-ST0002	PT00383	FC00383	Pancreatic cancer	49	maternal aunt	Yes	7
-ST0002	PT00384	FC00384	Brain cancer	64	paternal grandfather	Yes	16
-ST0002	PT00385	FC00385	Leukemia	37	brother	No	10
-ST0002	PT00386	FC00386	Systemic lupus erythematosus 	41	great grandfather	Yes	2
-ST0002	PT00387	FC00387	Pancreatic cancer	23	maternal grandfather	No	16
-ST0002	PT00388	FC00388	Schizophrenia	61	half-brother	No	16
-ST0002	PT00389	FC00389	Heart disease	31	maternal grandmother	No	0
-ST0002	PT00390	FC00390	Stroke 	27	maternal uncle	No	19
-ST0002	PT00391	FC00391	Biopolar disorder	59	maternal great-grandmother	Yes	1
-ST0002	PT00392	FC00392	Crohn's disease	48	sister	Yes	21
-ST0002	PT00393	FC00393	Brain cancer	37	paternal great-grandfather	No	12
-ST0002	PT00394	FC00394	Biopolar disorder	53	paternal great-grandfather	No	4
-ST0002	PT00395	FC00395	Schizophrenia	57	father	No	3
-ST0002	PT00396	FC00396	Heart disease	62	identical twin sister	No	18
-ST0002	PT00397	FC00397	Melanoma	36	paternal uncle	Yes	11
-ST0002	PT00398	FC00398	Parkinson's disease	26	maternal great-grandfather	No	16
-ST0002	PT00399	FC00399	Melanoma	71	paternal aunt	Yes	16
-ST0002	PT00400	FC00400	Biopolar disorder	49	maternal cousin	No	21
-ST0002	PT00401	FC00401	Heart disease	49	mother	No	2
-ST0002	PT00402	FC00402	Schizophrenia	38	fraternal twin sister	No	4
-ST0002	PT00403	FC00403	Brain cancer	57	paternal grandmother	Yes	12
-ST0002	PT00404	FC00404	Cancer (undefined)	29	paternal grandfather	No	15
-ST0002	PT00405	FC00405	Pancreatic cancer	42	paternal cousin	No	16
-ST0002	PT00406	FC00406	Biopolar disorder	25	identical twin brother	No	4
-ST0002	PT00407	FC00407	Brain cancer	32	maternal grandmother	No	11
-ST0002	PT00408	FC00408	Renal failure	20	maternal cousin	Yes	13
-ST0002	PT00409	FC00409	Pancreatic cancer	55	brother	No	1
-ST0002	PT00410	FC00410	Renal failure	50	maternal great-grandmother	Yes	18
-ST0002	PT00411	FC00411	Hypertension	30	maternal great-grandfather	No	7
-ST0002	PT00412	FC00412	Schizophrenia	57	maternal grandfather	No	16
-ST0002	PT00413	FC00413	Multiple sclerosis	34	brother	Yes	16
-ST0002	PT00414	FC00414	Brain cancer	66	mother	No	19
-ST0002	PT00415	FC00415	Brain cancer	43	half-brother	Yes	19
-ST0002	PT00416	FC00416	Pancreatic cancer	63	brother	No	15
-ST0002	PT00417	FC00417	Systemic lupus erythematosus 	51	paternal grandmother	No	11
-ST0002	PT00418	FC00418	Pancreatic cancer	27	maternal grandfather	No	12
-ST0002	PT00419	FC00419	Multiple sclerosis	32	maternal grandfather	No	15
-ST0002	PT00420	FC00420	Diabetes	68	paternal grandfather	No	4
-ST0002	PT00421	FC00421	Stroke 	53	half-sister	No	16
-ST0002	PT00422	FC00422	Leukemia	51	maternal great-grandmother	No	14
-ST0002	PT00423	FC00423	Crohn's disease	64	mother	Yes	4
-ST0002	PT00424	FC00424	COPD	33	paternal great-grandmother	No	2
-ST0002	PT00425	FC00425	Parkinson's disease	20	maternal cousin	Yes	10
-ST0002	PT00426	FC00426	Heart disease	24	identical twin brother	No	13
-ST0002	PT00427	FC00427	Parkinson's disease	60	maternal aunt	Yes	4
-ST0002	PT00428	FC00428	COPD	58	mother	Yes	16
-ST0002	PT00429	FC00429	Crohn's disease	75	maternal cousin	No	14
-ST0002	PT00430	FC00430	Heart disease	25	identical twin brother	No	16
-ST0002	PT00431	FC00431	Arthritis	22	maternal great-grandfather	Yes	18
-ST0002	PT00432	FC00432	Multiple sclerosis	61	maternal uncle	No	5
-ST0002	PT00433	FC00433	Schizophrenia	63	maternal uncle	No	4
-ST0002	PT00434	FC00434	Arthritis	39	paternal grandmother	No	9
-ST0002	PT00435	FC00435	Systemic lupus erythematosus 	61	identical twin brother	Yes	20
-ST0002	PT00436	FC00436	COPD	69	maternal cousin	Yes	12
-ST0002	PT00437	FC00437	Systemic lupus erythematosus 	74	identical twin sister	No	21
-ST0002	PT00438	FC00438	Crohn's disease	40	maternal grandfather	Yes	21
-ST0002	PT00439	FC00439	Heart disease	42	paternal cousin	No	5
-ST0002	PT00440	FC00440	Pancreatic cancer	38	fraternal twin brother	No	5
-ST0002	PT00441	FC00441	Heart disease	44	maternal great-grandfather	No	19
-ST0002	PT00442	FC00442	Arthritis	43	identical twin brother	No	8
-ST0002	PT00443	FC00443	Lung cancer	68	paternal aunt	Yes	15
-ST0002	PT00444	FC00444	Leukemia	27	paternal great-grandmother	Yes	7
-ST0002	PT00445	FC00445	Hypertension	66	half-brother	No	10
-ST0002	PT00446	FC00446	Multiple sclerosis	68	paternal great-grandfather	No	12
-ST0002	PT00447	FC00447	COPD	47	paternal great-grandmother	Yes	18
-ST0002	PT00448	FC00448	Crohn's disease	66	maternal grandmother	No	7
-ST0002	PT00449	FC00449	Lung cancer	43	maternal grandmother	No	3
-ST0002	PT00450	FC00450	Stroke 	49	paternal great-grandfather	No	14
-ST0002	PT00451	FC00451	Leukemia	58	paternal cousin	No	7
-ST0002	PT00452	FC00452	Lung cancer	41	maternal great-grandfather	No	4
-ST0002	PT00453	FC00453	Arthritis	51	identical twin sister	Yes	3
-ST0002	PT00454	FC00454	Brain cancer	58	identical twin sister	No	16
-ST0002	PT00455	FC00455	Arthritis	26	sister	No	15
-ST0002	PT00456	FC00456	Renal failure	56	fraternal twin brother	No	7
-ST0002	PT00457	FC00457	Parkinson's disease	56	maternal grandfather	Yes	9
-ST0002	PT00458	FC00458	Diabetes	22	sister	No	11
-ST0002	PT00459	FC00459	Stroke 	60	paternal grandfather	No	15
-ST0002	PT00460	FC00460	Pancreatic cancer	31	half-brother	No	3
-ST0002	PT00461	FC00461	Systemic lupus erythematosus 	55	maternal grandfather	Yes	10
-ST0002	PT00462	FC00462	Leukemia	24	maternal great-grandmother	Yes	20
-ST0002	PT00463	FC00463	Hypertension	42	half-brother	No	0
-ST0002	PT00464	FC00464	Hypertension	51	maternal grandfather	No	3
-ST0002	PT00465	FC00465	COPD	74	maternal grandfather	No	21
-ST0002	PT00466	FC00466	Diabetes	29	paternal great-grandfather	No	17
-ST0002	PT00467	FC00467	Parkinson's disease	20	paternal great-grandfather	No	16
-ST0002	PT00468	FC00468	Schizophrenia	44	paternal grandfather	No	5
-ST0002	PT00469	FC00469	COPD	71	fraternal twin sister	No	1
-ST0002	PT00470	FC00470	Brain cancer	59	paternal grandfather	No	14
-ST0002	PT00471	FC00471	Crohn's disease	67	paternal uncle	Yes	11
-ST0002	PT00472	FC00472	Multiple sclerosis	47	maternal uncle	Yes	11
-ST0002	PT00473	FC00473	Cancer (undefined)	36	maternal grandmother	No	19
-ST0002	PT00474	FC00474	Cancer (undefined)	47	maternal grandfather	No	18
-ST0002	PT00475	FC00475	Systemic lupus erythematosus 	38	fraternal twin brother	No	20
-ST0002	PT00476	FC00476	Crohn's disease	39	paternal aunt	No	12
-ST0002	PT00477	FC00477	Leukemia	53	paternal great-grandfather	No	2
-ST0002	PT00478	FC00478	Hypertension	27	paternal grandfather	No	2
-ST0002	PT00479	FC00479	Lung cancer	74	paternal grandfather	No	10
-ST0002	PT00480	FC00480	Parkinson's disease	73	identical twin brother	No	9
-ST0002	PT00481	FC00481	Leukemia	22	identical twin sister	No	3
-ST0002	PT00482	FC00482	Parkinson's disease	46	paternal great-grandmother	No	10
-ST0002	PT00483	FC00483	Schizophrenia	67	maternal great-grandmother	No	18
-ST0002	PT00484	FC00484	Arthritis	24	paternal grandmother	No	11
-ST0002	PT00485	FC00485	Parkinson's disease	30	identical twin sister	No	10
-ST0002	PT00486	FC00486	Arthritis	24	half-sister	No	20
-ST0002	PT00487	FC00487	Parkinson's disease	72	maternal aunt	Yes	13
-ST0002	PT00488	FC00488	Pancreatic cancer	75	paternal great-grandfather	Yes	17
-ST0002	PT00489	FC00489	Multiple sclerosis	49	paternal great-grandmother	No	13
-ST0002	PT00490	FC00490	Heart disease	32	paternal grandfather	Yes	14
-ST0002	PT00491	FC00491	Leukemia	52	maternal cousin	No	6
-ST0002	PT00492	FC00492	COPD	30	father	No	19
-ST0002	PT00493	FC00493	Multiple sclerosis	64	paternal uncle	Yes	17
-ST0002	PT00494	FC00494	Renal failure	49	paternal great-grandfather	Yes	10
-ST0002	PT00495	FC00495	Cancer (undefined)	35	fraternal twin sister	No	17
-ST0002	PT00496	FC00496	Alzheimer disease	38	identical twin sister	Yes	16
-ST0002	PT00497	FC00497	Parkinson's disease	20	maternal uncle	No	11
-ST0002	PT00498	FC00498	Systemic lupus erythematosus 	36	sister	No	19
-ST0002	PT00499	FC00499	Biopolar disorder	20	paternal aunt	No	1
-ST0002	PT00500	FC00500	Hypertension	39	father	No	18
-ST0002	PT00501	FC00501	Crohn's disease	33	maternal great-grandfather	No	13
-ST0002	PT00502	FC00502	Stroke 	68	paternal great-grandfather	Yes	1
-ST0002	PT00503	FC00503	Melanoma	46	paternal great-grandfather	Yes	13
-ST0002	PT00504	FC00504	Hypertension	33	maternal grandmother	No	7
-ST0002	PT00505	FC00505	Brain cancer	69	identical twin sister	Yes	18
-ST0002	PT00506	FC00506	Diabetes	69	maternal uncle	No	16
-ST0002	PT00507	FC00507	Hypertension	51	paternal great-grandfather	No	0
-ST0002	PT00508	FC00508	Arthritis	60	identical twin sister	No	7
-ST0002	PT00509	FC00509	Cancer (undefined)	72	great grandfather	Yes	6
-ST0002	PT00510	FC00510	Alzheimer disease	34	great grandfather	No	6
-ST0002	PT00511	FC00511	Renal failure	23	maternal grandfather	No	12
-ST0002	PT00512	FC00512	Schizophrenia	53	great grandfather	Yes	18
-ST0002	PT00513	FC00513	Alzheimer disease	26	paternal cousin	No	1
-ST0002	PT00514	FC00514	Renal failure	24	paternal cousin	No	13
-ST0002	PT00515	FC00515	Systemic lupus erythematosus 	22	paternal aunt	Yes	2
-ST0002	PT00516	FC00516	Hypertension	52	half-brother	No	8
-ST0002	PT00517	FC00517	COPD	35	paternal uncle	No	16
-ST0002	PT00518	FC00518	Arthritis	43	paternal cousin	No	11
-ST0002	PT00519	FC00519	Hypertension	49	maternal great-grandfather	No	20
-ST0002	PT00520	FC00520	Leukemia	60	maternal uncle	Yes	15
-ST0002	PT00521	FC00521	Multiple sclerosis	60	paternal great-grandfather	Yes	17
-ST0002	PT00522	FC00522	Biopolar disorder	65	paternal aunt	No	10
-ST0002	PT00523	FC00523	Brain cancer	36	paternal great-grandmother	No	8
-ST0002	PT00524	FC00524	Arthritis	72	maternal uncle	No	15
-ST0002	PT00525	FC00525	Lung cancer	23	maternal grandfather	No	8
-ST0002	PT00526	FC00526	Leukemia	31	maternal grandmother	Yes	8
-ST0002	PT00527	FC00527	Cancer (undefined)	32	identical twin sister	Yes	1
-ST0002	PT00528	FC00528	Parkinson's disease	30	maternal uncle	Yes	19
-ST0002	PT00529	FC00529	Hypertension	40	paternal great-grandmother	No	20
-ST0002	PT00530	FC00530	Pancreatic cancer	69	paternal cousin	Yes	20
-ST0002	PT00531	FC00531	Pancreatic cancer	27	maternal grandfather	No	18
-ST0002	PT00532	FC00532	Arthritis	52	paternal cousin	No	8
-ST0002	PT00533	FC00533	Cancer (undefined)	45	identical twin sister	No	20
-ST0002	PT00534	FC00534	Hypertension	52	paternal aunt	Yes	19
-ST0002	PT00535	FC00535	Cancer (undefined)	25	maternal great-grandfather	No	8
-ST0002	PT00536	FC00536	Pancreatic cancer	63	maternal cousin	No	19
-ST0002	PT00537	FC00537	Leukemia	63	maternal great-grandfather	No	7
-ST0002	PT00538	FC00538	Crohn's disease	70	paternal aunt	No	9
-ST0002	PT00539	FC00539	Diabetes	20	fraternal twin sister	No	14
-ST0002	PT00540	FC00540	Brain cancer	52	paternal great-grandfather	Yes	1
-ST0002	PT00541	FC00541	Hypertension	29	maternal cousin	Yes	16
-ST0002	PT00542	FC00542	Alzheimer disease	36	maternal aunt	No	15
-ST0002	PT00543	FC00543	Brain cancer	58	fraternal twin sister	Yes	10
-ST0002	PT00544	FC00544	Hypertension	25	half-brother	No	18
-ST0002	PT00545	FC00545	Pancreatic cancer	74	mother	No	17
-ST0002	PT00546	FC00546	Hypertension	34	brother	No	21
-ST0002	PT00547	FC00547	Stroke 	47	half-sister	Yes	10
-ST0002	PT00548	FC00548	Parkinson's disease	29	father	No	13
-ST0002	PT00549	FC00549	Parkinson's disease	75	paternal grandfather	No	18
-ST0002	PT00550	FC00550	Brain cancer	67	mother	No	1
-ST0002	PT00551	FC00551	Alzheimer disease	74	paternal grandfather	No	19
-ST0002	PT00552	FC00552	Cancer (undefined)	51	brother	Yes	5
-ST0002	PT00553	FC00553	Systemic lupus erythematosus 	41	half-sister	Yes	19
-ST0002	PT00554	FC00554	COPD	49	brother	No	6
-ST0002	PT00555	FC00555	Alzheimer disease	63	paternal aunt	No	16
-ST0002	PT00556	FC00556	Crohn's disease	53	paternal great-grandfather	No	12
-ST0002	PT00557	FC00557	Diabetes	70	paternal grandfather	Yes	15
-ST0002	PT00558	FC00558	Schizophrenia	68	maternal grandmother	No	15
-ST0002	PT00559	FC00559	Crohn's disease	21	maternal grandfather	Yes	21
-ST0002	PT00560	FC00560	Multiple sclerosis	65	paternal great-grandfather	No	15
-ST0002	PT00561	FC00561	Schizophrenia	42	paternal uncle	No	8
-ST0002	PT00562	FC00562	Arthritis	45	half-sister	Yes	1
-ST0002	PT00563	FC00563	Arthritis	56	maternal great-grandfather	Yes	4
-ST0002	PT00564	FC00564	Heart disease	46	paternal great-grandfather	Yes	19
-ST0002	PT00565	FC00565	Lung cancer	38	maternal great-grandfather	Yes	6
-ST0002	PT00566	FC00566	Lung cancer	73	maternal great-grandfather	No	15
-ST0002	PT00567	FC00567	COPD	41	identical twin sister	Yes	20
-ST0002	PT00568	FC00568	Stroke 	68	fraternal twin brother	No	11
-ST0002	PT00569	FC00569	Multiple sclerosis	65	paternal uncle	No	2
-ST0002	PT00570	FC00570	Stroke 	27	paternal grandfather	No	20
-ST0002	PT00571	FC00571	Multiple sclerosis	53	paternal great-grandfather	No	8
-ST0002	PT00572	FC00572	Biopolar disorder	48	paternal aunt	No	11
-ST0002	PT00573	FC00573	Biopolar disorder	39	paternal great-grandfather	Yes	10
-ST0002	PT00574	FC00574	Hypertension	51	maternal uncle	No	8
-ST0002	PT00575	FC00575	Lung cancer	50	maternal grandmother	No	9
-ST0002	PT00576	FC00576	Multiple sclerosis	39	paternal grandfather	No	4
-ST0002	PT00577	FC00577	Renal failure	27	great grandfather	Yes	20
-ST0002	PT00578	FC00578	Systemic lupus erythematosus 	40	maternal grandfather	No	6
-ST0002	PT00579	FC00579	Schizophrenia	35	paternal grandfather	No	3
-ST0002	PT00580	FC00580	Melanoma	60	fraternal twin sister	Yes	1
-ST0002	PT00581	FC00581	Biopolar disorder	64	father	Yes	1
-ST0002	PT00582	FC00582	Cancer (undefined)	40	maternal great-grandfather	No	15
-ST0002	PT00583	FC00583	Systemic lupus erythematosus 	39	half-brother	No	12
-ST0002	PT00584	FC00584	Parkinson's disease	56	fraternal twin brother	No	5
-ST0002	PT00585	FC00585	Multiple sclerosis	30	identical twin brother	No	21
-ST0002	PT00586	FC00586	Cancer (undefined)	60	paternal great-grandfather	Yes	20
-ST0002	PT00587	FC00587	Lung cancer	22	paternal cousin	Yes	14
-ST0002	PT00588	FC00588	Leukemia	53	maternal grandfather	No	10
-ST0002	PT00589	FC00589	Leukemia	54	maternal cousin	No	2
-ST0002	PT00590	FC00590	Alzheimer disease	45	maternal great-grandfather	No	14
-ST0002	PT00591	FC00591	Lung cancer	70	mother	Yes	7
-ST0002	PT00592	FC00592	Leukemia	25	maternal uncle	Yes	4
-ST0002	PT00593	FC00593	Cancer (undefined)	73	paternal grandmother	Yes	1
-ST0002	PT00594	FC00594	Renal failure	61	father	No	0
-ST0002	PT00595	FC00595	Melanoma	64	sister	No	11
-ST0002	PT00596	FC00596	Melanoma	62	maternal grandfather	No	3
-ST0002	PT00597	FC00597	Hypertension	26	maternal grandmother	No	3
-ST0002	PT00598	FC00598	Schizophrenia	26	identical twin brother	No	6
-ST0002	PT00599	FC00599	Cancer (undefined)	26	paternal great-grandfather	Yes	1
-ST0002	PT00600	FC00600	Leukemia	32	maternal great-grandfather	Yes	0
-ST0002	PT00601	FC00601	Parkinson's disease	56	maternal cousin	Yes	15
-ST0002	PT00602	FC00602	COPD	72	paternal great-grandmother	No	4
-ST0002	PT00603	FC00603	Crohn's disease	22	identical twin brother	No	17
-ST0002	PT00604	FC00604	Parkinson's disease	21	paternal grandfather	No	8
-ST0002	PT00605	FC00605	Systemic lupus erythematosus 	53	maternal great-grandfather	No	10
-ST0002	PT00606	FC00606	Heart disease	70	maternal grandmother	No	21
-ST0002	PT00607	FC00607	Arthritis	43	paternal great-grandmother	No	15
-ST0002	PT00608	FC00608	Multiple sclerosis	64	sister	No	21
-ST0002	PT00609	FC00609	Parkinson's disease	71	maternal grandmother	No	12
-ST0002	PT00610	FC00610	Multiple sclerosis	31	maternal grandfather	Yes	9
-ST0002	PT00611	FC00611	Renal failure	57	paternal great-grandfather	No	2
-ST0002	PT00612	FC00612	Crohn's disease	74	identical twin sister	No	21
-ST0002	PT00613	FC00613	Melanoma	60	maternal uncle	Yes	20
-ST0002	PT00614	FC00614	Heart disease	56	maternal great-grandmother	No	13
-ST0002	PT00615	FC00615	Crohn's disease	21	identical twin brother	Yes	10
-ST0002	PT00616	FC00616	Renal failure	30	fraternal twin sister	Yes	10
-ST0002	PT00617	FC00617	Lung cancer	22	paternal great-grandfather	No	4
-ST0002	PT00618	FC00618	Systemic lupus erythematosus 	27	maternal grandmother	No	11
-ST0002	PT00619	FC00619	Cancer (undefined)	50	paternal great-grandmother	Yes	7
-ST0002	PT00620	FC00620	Pancreatic cancer	51	sister	No	11
-ST0002	PT00621	FC00621	Melanoma	56	paternal uncle	No	4
-ST0002	PT00622	FC00622	Heart disease	40	fraternal twin brother	No	17
-ST0002	PT00623	FC00623	Crohn's disease	66	half-brother	No	20
-ST0002	PT00624	FC00624	COPD	37	maternal aunt	No	12
-ST0002	PT00625	FC00625	Heart disease	21	maternal great-grandmother	Yes	6
-ST0002	PT00626	FC00626	Biopolar disorder	56	paternal uncle	Yes	13
-ST0003	PT00627	FC00627	Diabetes	38	maternal uncle		67
-ST0003	PT00628	FC00628	Hypertension	21	grandson		68
-ST0003	PT00629	FC00629					40
-ST0003	PT00630	FC00630	Melanoma	61	great grandfather		62
-ST0003	PT00631	FC00631	Melanoma	21	great grandmother		61
-ST0003	PT00632	FC00632					29
-ST0003	PT00633	FC00633	Lung cancer	56	son		58
-ST0003	PT00634	FC00634	Stroke 	28	identical twin brother		69
-ST0003	PT00635	FC00635					22
-ST0003	PT00636	FC00636	Parkinson's disease	61	paternal grandfather		70
-ST0003	PT00637	FC00637	Brain cancer	23	maternal grandmother		65
-ST0003	PT00638	FC00638					20
-ST0003	PT00639	FC00639	Pancreatic cancer	31	fraternal twin brother		77
-ST0003	PT00640	FC00640	Parkinson's disease	49	mother		61
-ST0003	PT00641	FC00641					23
-ST0003	PT00642	FC00642	Stroke 	38	granddaughter		56
-ST0003	PT00643	FC00643	Parkinson's disease	26	paternal uncle		54
-ST0003	PT00644	FC00644	Multiple sclerosis	16	identical twin sister	Yes	19
-ST0003	PT00645	FC00645	Renal failure	57	maternal great-grandmother		54
-ST0003	PT00646	FC00646	Alzheimer disease	53	great grandparent		74
-ST0003	PT00647	FC00647	COPD	40	half-sister	Yes	17
-ST0003	PT00648	FC00648	Arthritis	32	maternal grandfather		51
-ST0003	PT00649	FC00649	Multiple sclerosis	64	maternal great-grandfather		72
-ST0003	PT00650	FC00650	Arthritis	75	sister	Yes	32
-ST0003	PT00651	FC00651	Arthritis	63	fraternal twin sister		56
-ST0003	PT00652	FC00652	Lung cancer	21	father		68
-ST0003	PT00653	FC00653	Cancer (undefined)	35	paternal great-grandfather	Yes	42
-ST0003	PT00654	FC00654	Pancreatic cancer	25	paternal great-grandfather		80
-ST0003	PT00655	FC00655	Hypertension	29	maternal great-grandfather		50
-ST0003	PT00656	FC00656	Schizophrenia	48	maternal cousin	Yes	30
-ST0003	PT00657	FC00657	Leukemia	14	daughter		77
-ST0003	PT00658	FC00658	Systemic lupus erythematosus 	67	paternal grandmother		55
-ST0003	PT00659	FC00659	Parkinson's disease	31	maternal grandfather	Yes	29
-ST0003	PT00660	FC00660	Systemic lupus erythematosus 	24	brother		68
-ST0003	PT00661	FC00661	Hypertension	72	niece		79
-ST0003	PT00662	FC00662	Arthritis	34	half-brother	Yes	40
-ST0003	PT00663	FC00663	Systemic lupus erythematosus 	43	paternal uncle		79
-ST0003	PT00664	FC00664	Schizophrenia	21	niece		50
-ST0003	PT00665	FC00665	COPD	63	great grandparent	Yes	18
-ST0003	PT00666	FC00666	Cancer (undefined)	26	maternal uncle		53
-ST0003	PT00667	FC00667	Pancreatic cancer	34	maternal grandmother		68
-ST0003	PT00668	FC00668	Cancer (undefined)	47	paternal great-grandfather	Yes	36
-ST0003	PT00669	FC00669	Multiple sclerosis	58	great grandparent		58
-ST0003	PT00670	FC00670	Cancer (undefined)	55	maternal grandmother		78
-ST0003	PT00671	FC00671	Crohn's disease	48	paternal grandmother	Yes	26
-ST0003	PT00672	FC00672	Melanoma	41	grandson		54
-ST0003	PT00673	FC00673	Alzheimer disease	50	great grandmother		54
-ST0003	PT00674	FC00674	Heart disease	23	paternal great-grandmother	Yes	14
-ST0003	PT00675	FC00675	Multiple sclerosis	45	mother		61
-ST0003	PT00676	FC00676	Leukemia	20	niece		49
-ST0003	PT00677	FC00677	Crohn's disease	54	paternal uncle	Yes	15
-ST0003	PT00678	FC00678	Parkinson's disease	26	maternal aunt		68
-ST0003	PT00679	FC00679	Melanoma	29	niece		61
-ST0003	PT00680	FC00680	Renal failure	47	niece	Yes	29
-ST0003	PT00681	FC00681	Crohn's disease	20	identical twin brother		59
-ST0003	PT00682	FC00682	Lung cancer	38	great grandfather		68
-ST0003	PT00683	FC00683	Systemic lupus erythematosus 	69	granddaughter	Yes	32
-ST0003	PT00684	FC00684	Stroke 	61	maternal great-grandfather		51
-ST0003	PT00685	FC00685	Stroke 	61	half-sister		80
-ST0003	PT00686	FC00686	Hypertension	26	great grandfather	Yes	22
-ST0003	PT00687	FC00687	Stroke 	27	great grandparent		58
-ST0003	PT00688	FC00688	Lung cancer	35	paternal great-grandfather		64
-ST0003	PT00689	FC00689	Brain cancer	60	fraternal twin sister	Yes	27
-ST0003	PT00690	FC00690	Renal failure	48	maternal great-grandfather		57
-ST0003	PT00691	FC00691	Schizophrenia	65	maternal aunt		58
-ST0003	PT00692	FC00692	Melanoma	45	maternal grandfather	Yes	22
-ST0003	PT00693	FC00693	Biopolar disorder	42	maternal grandmother		70
-ST0003	PT00694	FC00694	Parkinson's disease	24	half-brother		78
-ST0003	PT00695	FC00695	Alzheimer disease	55	maternal grandfather	Yes	48
-ST0003	PT00696	FC00696	Parkinson's disease	67	maternal aunt		62
-ST0003	PT00697	FC00697	Diabetes	70	paternal cousin		54
-ST0003	PT00698	FC00698	Alzheimer disease	70	brother	Yes	24
-ST0003	PT00699	FC00699	Alzheimer disease	31	maternal great-grandfather		69
-ST0003	PT00700	FC00700	Alzheimer disease	59	identical twin brother		77
-ST0003	PT00701	FC00701	Cancer (undefined)	64	son	Yes	45
-ST0003	PT00702	FC00702	Hypertension	45	great grandfather		64
-ST0003	PT00703	FC00703	Renal failure	20	fraternal twin sister		63
-ST0003	PT00704	FC00704	Diabetes	60	maternal great-grandmother	Yes	37
-ST0003	PT00705	FC00705	Pancreatic cancer	22	mother		79
-ST0003	PT00706	FC00706	Renal failure	68	paternal grandfather		67
-ST0003	PT00707	FC00707	Biopolar disorder	48	paternal grandfather	Yes	40
-ST0003	PT00708	FC00708	Leukemia	63	maternal great-grandfather		56
-ST0003	PT00709	FC00709	Schizophrenia	74	maternal great-grandfather		62
-ST0003	PT00710	FC00710	Brain cancer	42	maternal grandfather	Yes	20
-ST0003	PT00711	FC00711	Pancreatic cancer	72	brother		78
-ST0003	PT00712	FC00712	Brain cancer	63	identical twin brother		59
-ST0003	PT00713	FC00713	Alzheimer disease	55	maternal grandfather	Yes	27
-ST0003	PT00714	FC00714	Biopolar disorder	74	mother		73
-ST0003	PT00715	FC00715	Pancreatic cancer	55	great grandmother		77
-ST0003	PT00716	FC00716	Lung cancer	67	paternal grandmother	Yes	43
-ST0003	PT00717	FC00717	Biopolar disorder	20	great grandmother		74
-ST0003	PT00718	FC00718	Pancreatic cancer	42	fraternal twin brother		70
-ST0003	PT00719	FC00719	COPD	45	paternal grandmother	Yes	50
-ST0003	PT00720	FC00720	COPD	24	paternal uncle		79
-ST0003	PT00721	FC00721	Leukemia	24	maternal great-grandfather		64
-ST0003	PT00722	FC00722	Multiple sclerosis	74	son	Yes	36
-ST0003	PT00723	FC00723	Renal failure	28	grandson		71
-ST0003	PT00724	FC00724	Arthritis	55	paternal great-grandfather		74
-ST0003	PT00725	FC00725	Diabetes	62	maternal cousin	Yes	46
-ST0003	PT00726	FC00726	Diabetes	66	granddaughter		59
-ST0003	PT00727	FC00727	Hypertension	78	maternal aunt		52
-ST0003	PT00728	FC00728	Multiple sclerosis	56	paternal great-grandfather	Yes	26
-ST0003	PT00729	FC00729	Lung cancer	37	sister		29
-ST0003	PT00730	FC00730	Heart disease	64	maternal great-grandfather		30
-ST0003	PT00731	FC00731	Melanoma	66	great grandmother	Yes	2
-ST0003	PT00732	FC00732	Alzheimer disease	68	great grandfather		69
-ST0003	PT00733	FC00733	Cancer (undefined)	22	fraternal twin brother		79
-ST0003	PT00734	FC00734	Cancer (undefined)	41	maternal great-grandmother	Yes	51
-ST0003	PT00735	FC00735	Renal failure	57	paternal great-grandmother		73
-ST0003	PT00736	FC00736	Hypertension	32	son		65
-ST0003	PT00737	FC00737	Pancreatic cancer	36	paternal grandfather	Yes	45
-ST0003	PT00738	FC00738	COPD	26	maternal great-grandfather		28
-ST0003	PT00739	FC00739	Melanoma	42	daughter		31
-ST0003	PT00740	FC00740	Melanoma	62	great grandparent	Yes	7
-ST0003	PT00741	FC00741	Parkinson's disease	47	paternal uncle		71
-ST0003	PT00742	FC00742	Heart disease	57	maternal cousin		76
-ST0003	PT00743	FC00743	Cancer (undefined)	32	identical twin brother	Yes	44
-ST0003	PT00744	FC00744	Stroke 	24	paternal great-grandmother		65
-ST0003	PT00745	FC00745	Melanoma	50	niece		73
-ST0003	PT00746	FC00746	Cancer (undefined)	27	maternal grandfather	Yes	38
-ST0003	PT00747	FC00747	Diabetes	41	paternal great-grandfather		70
-ST0003	PT00748	FC00748	COPD	26	paternal grandmother		59
-ST0003	PT00749	FC00749	Systemic lupus erythematosus 	39	maternal grandfather	Yes	39
-ST0003	PT00750	FC00750	Stroke 	68	daughter		56
-ST0003	PT00751	FC00751	Diabetes	67	granddaughter		74
-ST0003	PT00752	FC00752	Lung cancer	41	maternal great-grandfather	Yes	23
-ST0003	PT00753	FC00753	Systemic lupus erythematosus 	35	maternal great-grandfather		34
-ST0003	PT00754	FC00754	Cancer (undefined)	21	half-brother		37
-ST0003	PT00755	FC00755	Systemic lupus erythematosus 	43	maternal great-grandmother	Yes	11
-ST0003	PT00756	FC00756	Brain cancer	72	maternal great-grandmother		63
-ST0003	PT00757	FC00757	Parkinson's disease	62	identical twin sister		62
-ST0003	PT00758	FC00758	Diabetes	59	great grandmother	Yes	31
-ST0003	PT00759	FC00759	Renal failure	48	paternal grandmother		72
-ST0003	PT00760	FC00760	Biopolar disorder	41	grandson		54
-ST0003	PT00761	FC00761	Stroke 	71	maternal grandfather	Yes	24
-ST0003	PT00762	FC00762	Pancreatic cancer	63	maternal great-grandfather		78
-ST0003	PT00763	FC00763	Heart disease	50	fraternal twin sister		59
-ST0003	PT00764	FC00764	Schizophrenia	32	niece	Yes	29
-ST0003	PT00765	FC00765	Alzheimer disease	57	maternal grandfather		50
-ST0003	PT00766	FC00766	Multiple sclerosis	47	maternal great-grandmother		54
-ST0003	PT00767	FC00767	Melanoma	52	fraternal twin brother	Yes	19
-ST0003	PT00768	FC00768	Multiple sclerosis	58	maternal great-grandfather		33
-ST0003	PT00769	FC00769	Cancer (undefined)	41	daughter		44
-ST0003	PT00770	FC00770	Renal failure	56	paternal grandfather	Yes	4
-ST0003	PT00771	FC00771	Renal failure	21	paternal uncle		55
-ST0003	PT00772	FC00772	Schizophrenia	65	maternal cousin		74
-ST0003	PT00773	FC00773	Brain cancer	63	mother	Yes	20
-ST0003	PT00774	FC00774	Schizophrenia	74	paternal uncle		52
-ST0003	PT00775	FC00775	Melanoma	21	fraternal twin sister		75
-ST0003	PT00776	FC00776	Multiple sclerosis	64	paternal cousin	Yes	21
-ST0003	PT00777	FC00777	Biopolar disorder	58	paternal grandmother		77
-ST0003	PT00778	FC00778	Systemic lupus erythematosus 	40	paternal cousin		59
-ST0003	PT00779	FC00779	Pancreatic cancer	48	maternal great-grandfather	Yes	29
-ST0003	PT00780	FC00780	Melanoma	60	maternal aunt		69
-ST0003	PT00781	FC00781	Melanoma	55	maternal grandfather		81
-ST0003	PT00782	FC00782	Crohn's disease	20	paternal grandfather	Yes	46
-ST0003	PT00783	FC00783	Stroke 	75	brother		65
-ST0003	PT00784	FC00784	Multiple sclerosis	66	maternal great-grandfather		81
-ST0003	PT00785	FC00785	Melanoma	43	maternal great-grandfather	Yes	19
-ST0003	PT00786	FC00786	Biopolar disorder	37	granddaughter		47
-ST0003	PT00787	FC00787	Systemic lupus erythematosus 	71	paternal grandfather		59
-ST0003	PT00788	FC00788	Hypertension	26	fraternal twin sister	Yes	12
-ST0003	PT00789	FC00789	Hypertension	27	maternal uncle		41
-ST0003	PT00790	FC00790	Cancer (undefined)	34	sister		51
-ST0003	PT00791	FC00791	Diabetes	46	paternal great-grandfather	Yes	13
-ST0003	PT00792	FC00792	Crohn's disease	34	paternal great-grandmother		69
-ST0003	PT00793	FC00793	Diabetes	45	maternal grandmother		77
-ST0003	PT00794	FC00794	Pancreatic cancer	21	maternal cousin	Yes	31
-ST0003	PT00795	FC00795	Cancer (undefined)	46	paternal great-grandfather		81
-ST0003	PT00796	FC00796	Pancreatic cancer	64	paternal cousin		70
-ST0003	PT00797	FC00797	Alzheimer disease	39	maternal grandfather	Yes	49
-ST0003	PT00798	FC00798	COPD	53	paternal uncle		41
-ST0003	PT00799	FC00799	Pancreatic cancer	43	paternal great-grandmother		45
-ST0003	PT00800	FC00800	Biopolar disorder	51	paternal grandfather	Yes	13
-ST0003	PT00801	FC00801	Parkinson's disease	59	sister		50
-ST0003	PT00802	FC00802	Biopolar disorder	49	paternal great-grandfather		46
-ST0003	PT00803	FC00803	Crohn's disease	21	paternal uncle	Yes	17
-ST0003	PT00804	FC00804	Heart disease	31	maternal uncle		66
-ST0003	PT00805	FC00805	Stroke 	74	father		79
-ST0003	PT00806	FC00806	Arthritis	69	paternal uncle	Yes	38
-ST0003	PT00807	FC00807	Systemic lupus erythematosus 	56	maternal uncle		68
-ST0003	PT00808	FC00808	Alzheimer disease	38	sister		70
-ST0003	PT00809	FC00809	Melanoma	68	fraternal twin brother	Yes	48
-ST0003	PT00810	FC00810	Renal failure	65	niece		74
-ST0003	PT00811	FC00811	Alzheimer disease	26	niece		77
-ST0003	PT00812	FC00812	Schizophrenia	62	grandson	Yes	48
-ST0003	PT00813	FC00813	Biopolar disorder	44	maternal grandfather		31
-ST0003	PT00814	FC00814	Brain cancer	26	paternal uncle		45
-ST0003	PT00815	FC00815	Systemic lupus erythematosus 	32	paternal uncle	Yes	9
-ST0003	PT00816	FC00816	Hypertension	43	identical twin brother		71
-ST0003	PT00817	FC00817	COPD	50	maternal great-grandfather		66
-ST0003	PT00818	FC00818	Brain cancer	27	paternal great-grandfather	Yes	38
-ST0003	PT00819	FC00819	Brain cancer	75	half-sister		59
-ST0003	PT00820	FC00820	Systemic lupus erythematosus 	75	maternal grandmother		73
-ST0003	PT00821	FC00821	Lung cancer	71	great grandmother	Yes	33
-ST0003	PT00822	FC00822	Hypertension	43	great grandparent		30
-ST0003	PT00823	FC00823	Lung cancer	38	great grandparent		32
-ST0003	PT00824	FC00824	Crohn's disease	67	great grandmother	Yes	4
-ST0003	PT00825	FC00825	Heart disease	20	identical twin sister	Yes	2
-ST0004	PT00826	FC00826	COPD	73	identical twin sister	Yes	55
-ST0004	PT00827	FC00827	Systemic lupus erythematosus 	31	maternal grandfather	Yes	65
-ST0004	PT00828	FC00828	Hypertension	46	maternal uncle	Yes	54
-ST0004	PT00829	FC00829	Stroke 	21	maternal grandmother	Yes	69
-ST0004	PT00830	FC00830	Parkinson's disease	30	maternal great-grandmother	Yes	66
-ST0004	PT00831	FC00831	Alzheimer disease	66	maternal grandfather	Yes	54
-ST0004	PT00832	FC00832	Pancreatic cancer	56	paternal uncle	Yes	66
-ST0004	PT00833	FC00833	Heart disease	58	paternal cousin	Yes	52
-ST0004	PT00834	FC00834	Crohn's disease	66	maternal great-grandfather	Yes	69
-ST0004	PT00835	FC00835	Cancer (undefined)	36	paternal aunt	Yes	61
-ST0004	PT00836	FC00836	Cancer (undefined)	75	maternal great-grandfather	Yes	62
-ST0004	PT00837	FC00837	Systemic lupus erythematosus 	27	granddaughter	Yes	70
-ST0004	PT00838	FC00838	Pancreatic cancer	43	brother	Yes	59
-ST0004	PT00839	FC00839	Lung cancer	62	paternal uncle	Yes	75
-ST0004	PT00840	FC00840	Parkinson's disease	22	father	Yes	52
-ST0004	PT00841	FC00841	Cancer (undefined)	21	paternal grandfather	Yes	74
-ST0004	PT00842	FC00842	Stroke 	49	father	Yes	70
-ST0004	PT00843	FC00843	Lung cancer	33	maternal grandfather	Yes	72
-ST0004	PT00844	FC00844	Schizophrenia	24	great grandmother	Yes	54
-ST0004	PT00845	FC00845	Schizophrenia	20	maternal great-grandmother	Yes	65
-ST0004	PT00846	FC00846	Hypertension	74	paternal great-grandfather	Yes	63
-ST0004	PT00847	FC00847	Brain cancer	65	identical twin sister	Yes	81
-ST0004	PT00848	FC00848	Stroke 	47	fraternal twin sister	Yes	51
-ST0004	PT00849	FC00849	Stroke 	37	brother	Yes	66
-ST0004	PT00850	FC00850	Renal failure	27	maternal grandfather	Yes	80
-ST0004	PT00851	FC00851	Hypertension	33	father	Yes	56
-ST0004	PT00852	FC00852	Multiple sclerosis	75	great grandfather	Yes	54
-ST0004	PT00853	FC00853	Brain cancer	72	maternal great-grandmother	Yes	63
-ST0004	PT00854	FC00854	Hypertension	33	son	Yes	75
-ST0004	PT00855	FC00855	Biopolar disorder	39	maternal uncle	Yes	74
-ST0004	PT00856	FC00856	Parkinson's disease	41	paternal cousin	Yes	51
-ST0004	PT00857	FC00857	Lung cancer	51	maternal cousin	Yes	75
-ST0004	PT00858	FC00858	Biopolar disorder	72	paternal great-grandfather	Yes	77
-ST0004	PT00859	FC00859	COPD	29	half-brother	Yes	65
-ST0004	PT00860	FC00860	Biopolar disorder	65	great grandfather	Yes	65
-ST0004	PT00861	FC00861	Cancer (undefined)	23	maternal grandfather	Yes	52
-ST0004	PT00862	FC00862	Multiple sclerosis	65	paternal great-grandfather	Yes	49
-ST0004	PT00863	FC00863	Lung cancer	42	maternal great-grandmother	Yes	66
-ST0004	PT00864	FC00864	Parkinson's disease	59	maternal great-grandfather	Yes	76
-ST0004	PT00865	FC00865	Lung cancer	68	maternal grandmother	Yes	69
-ST0004	PT00866	FC00866	Leukemia	47	great grandmother	Yes	51
-ST0004	PT00867	FC00867	Multiple sclerosis	60	half-brother	Yes	53
-ST0004	PT00868	FC00868	Diabetes	23	paternal grandmother	Yes	79
-ST0004	PT00869	FC00869	Heart disease	52	son	Yes	51
-ST0004	PT00870	FC00870	Biopolar disorder	61	great grandmother	Yes	80
-ST0004	PT00871	FC00871	Lung cancer	21	paternal uncle	Yes	71
-ST0004	PT00872	FC00872	Melanoma	60	maternal great-grandfather	Yes	50
-ST0004	PT00873	FC00873	Leukemia	35	identical twin sister	Yes	71
-ST0004	PT00874	FC00874	Biopolar disorder	67	identical twin brother	Yes	66
-ST0004	PT00875	FC00875	Diabetes	23	maternal aunt	Yes	53
-ST0004	PT00876	FC00876	Systemic lupus erythematosus 	33	great grandmother	Yes	75
-ST0004	PT00877	FC00877	Heart disease	36	maternal grandmother	Yes	81
-ST0004	PT00878	FC00878	Hypertension	48	paternal uncle	Yes	78
-ST0004	PT00879	FC00879	Pancreatic cancer	59	daughter	Yes	65
-ST0004	PT00880	FC00880	Lung cancer	50	half-sister	Yes	64
-ST0004	PT00881	FC00881	Renal failure	48	paternal great-grandmother	Yes	80
-ST0004	PT00882	FC00882	Cancer (undefined)	29	identical twin brother	Yes	50
-ST0004	PT00883	FC00883	Parkinson's disease	62	father	Yes	75
-ST0004	PT00884	FC00884	Crohn's disease	24	maternal uncle	Yes	58
-ST0004	PT00885	FC00885	Diabetes	50	great grandparent	Yes	76
-ST0004	PT00886	FC00886	Renal failure	25	identical twin brother	Yes	60
-ST0004	PT00887	FC00887	Cancer (undefined)	60	brother	Yes	56
-ST0004	PT00888	FC00888	Arthritis	35	fraternal twin brother	Yes	62
-ST0004	PT00889	FC00889	Stroke 	27	maternal grandfather	Yes	80
-ST0004	PT00890	FC00890	Stroke 	75	paternal great-grandfather	Yes	63
-ST0004	PT00891	FC00891	Alzheimer disease	69	brother	Yes	61
-ST0004	PT00892	FC00892	Biopolar disorder	39	paternal grandfather	Yes	59
-ST0004	PT00893	FC00893	Hypertension	44	fraternal twin sister	Yes	63
-ST0004	PT00894	FC00894	Schizophrenia	47	paternal grandfather	Yes	59
-ST0004	PT00895	FC00895	Leukemia	56	great grandfather	Yes	53
-ST0004	PT00896	FC00896	Leukemia	69	paternal aunt	Yes	60
-ST0004	PT00897	FC00897	Lung cancer	46	fraternal twin sister	Yes	51
-ST0004	PT00898	FC00898	Schizophrenia	23	paternal grandmother	Yes	63
-ST0004	PT00899	FC00899	Leukemia	66	sister	Yes	55
-ST0004	PT00900	FC00900	Systemic lupus erythematosus 	54	grandson	Yes	70
-ST0004	PT00901	FC00901	Diabetes	74	paternal uncle	Yes	63
-ST0004	PT00902	FC00902	Systemic lupus erythematosus 	52	identical twin sister	Yes	55
-ST0004	PT00903	FC00903	Heart disease	51	brother	Yes	51
-ST0004	PT00904	FC00904	Alzheimer disease	21	maternal great-grandfather	Yes	58
-ST0004	PT00905	FC00905	Melanoma	21	granddaughter	Yes	66
-ST0004	PT00906	FC00906	COPD	36	great grandparent	Yes	53
-ST0004	PT00907	FC00907	Lung cancer	33	mother	Yes	69
-ST0004	PT00908	FC00908	Renal failure	31	maternal grandmother	Yes	76
-ST0004	PT00909	FC00909	Biopolar disorder	49	maternal grandmother	Yes	76
-ST0004	PT00910	FC00910	Melanoma	45	fraternal twin sister	Yes	75
-ST0004	PT00911	FC00911	Multiple sclerosis	48	paternal grandfather	Yes	75
-ST0004	PT00912	FC00912	Lung cancer	65	maternal great-grandfather	Yes	53
-ST0004	PT00913	FC00913	Leukemia	67	brother	Yes	59
-ST0004	PT00914	FC00914	Pancreatic cancer	38	father	Yes	54
-ST0004	PT00915	FC00915	Leukemia	75	half-sister	Yes	57
-ST0004	PT00916	FC00916	Heart disease	41	daughter	Yes	72
-ST0004	PT00917	FC00917	Schizophrenia	57	niece	Yes	72
-ST0004	PT00918	FC00918	Systemic lupus erythematosus 	33	great grandmother	Yes	71
-ST0004	PT00919	FC00919	Lung cancer	29	maternal aunt	Yes	52
-ST0004	PT00920	FC00920	Lung cancer	60	paternal uncle	Yes	63
-ST0004	PT00921	FC00921	Brain cancer	75	maternal grandfather	Yes	73
-ST0004	PT00922	FC00922	Crohn's disease	71	paternal great-grandmother	Yes	76
+ST0001	PT00019	FC00019	Stroke 	20	half-sister	No	80
+ST0002	PT00421	FC00421	Stroke 	34	half-sister	Unknown	16
+ST0001	PT00167	FC00167	Stroke 	57	identical twin	No	56
+ST0001	PT00161	FC00161	Stroke 	68	maternal aunt	Unknown	53
+ST0002	PT00390	FC00390	Stroke 	30	maternal uncle	No	19
+ST0002	PT00459	FC00459	Stroke 	30	paternal grandfather	No	15
+ST0002	PT00570	FC00570	Stroke 	47	paternal grandfather	Unknown	20
+ST0002	PT00450	FC00450	Stroke 	67	paternal grandmother	No	14
+ST0004	PT00849	FC00849	Stroke 	23	brother	No	66
+ST0001	PT00123	FC00123	Stroke 	23	daughter	No	55
+ST0004	PT00842	FC00842	Stroke 	75	father	No	70
+ST0004	PT00848	FC00848	Stroke 	73	fraternal twin sister	No	51
+ST0001	PT00182	FC00182	Stroke 	22	parternal grandfather	No	81
+ST0004	PT00936	FC00936	Stroke 	20	paternal grandmother	No	80
+ST0002	PT00547	FC00547	Stroke 	27	half-sister	Yes	10
+ST0003	PT00761	FC00761	Stroke 	20	maternal grandfather	No	24
+ST0004	PT00889	FC00889	Stroke 	41	maternal grandfather	Yes	80
+ST0004	PT00829	FC00829	Stroke 	53	maternal grandmother	Yes	69
+ST0001	PT00212	FC00212	Stroke 	41	maternal grandfather	Unknown	76
+ST0004	PT00937	FC00937	Stroke 	49	mother	Yes	77
+ST0004	PT00969	FC00969	Stroke 	63	mother	Yes	64
+ST0004	PT00965	FC00965	Stroke 	22	paternal aunt	No	66
+ST0001	PT00137	FC00137	Stroke 	51	paternal cousin	No	56
 ST0004	PT00923	FC00923	Stroke 	32	paternal grandfather	Yes	74
-ST0004	PT00924	FC00924	Renal failure	42	maternal uncle	Yes	55
-ST0004	PT00925	FC00925	Diabetes	44	mother	Yes	77
-ST0004	PT00926	FC00926	Melanoma	32	mother	Yes	77
-ST0004	PT00927	FC00927	COPD	25	great grandfather	Yes	77
-ST0004	PT00928	FC00928	Schizophrenia	43	maternal great-grandfather	Yes	60
-ST0004	PT00929	FC00929	Pancreatic cancer	42	half-sister	Yes	60
-ST0004	PT00930	FC00930	Multiple sclerosis	73	paternal grandfather	Yes	64
-ST0004	PT00931	FC00931	Arthritis	59	identical twin brother	Yes	61
-ST0004	PT00932	FC00932	Brain cancer	72	maternal grandfather	Yes	76
-ST0004	PT00933	FC00933	Crohn's disease	38	half-brother	Yes	81
-ST0004	PT00934	FC00934	Cancer (undefined)	68	paternal great-grandfather	Yes	77
-ST0004	PT00935	FC00935	Cancer (undefined)	56	paternal uncle	Yes	71
-ST0004	PT00936	FC00936	Stroke 	41	great grandmother	Yes	80
-ST0004	PT00937	FC00937	Stroke 	54	mother	Yes	77
-ST0004	PT00938	FC00938	Lung cancer	61	half-brother	Yes	61
-ST0004	PT00939	FC00939	Leukemia	33	paternal grandmother	Yes	75
-ST0004	PT00940	FC00940	Crohn's disease	25	paternal uncle	Yes	68
-ST0004	PT00941	FC00941	Parkinson's disease	64	fraternal twin sister	Yes	56
-ST0004	PT00942	FC00942	Arthritis	68	paternal grandfather	Yes	50
-ST0004	PT00943	FC00943	Lung cancer	60	maternal uncle	Yes	70
-ST0004	PT00944	FC00944	Multiple sclerosis	24	great grandmother	Yes	62
-ST0004	PT00945	FC00945	Melanoma	71	paternal great-grandmother	Yes	54
-ST0004	PT00946	FC00946	COPD	28	great grandparent	Yes	74
-ST0004	PT00947	FC00947	Heart disease	58	granddaughter	Yes	81
-ST0004	PT00948	FC00948	Alzheimer disease	23	paternal grandfather	Yes	58
-ST0004	PT00949	FC00949	Hypertension	25	maternal grandfather	Yes	56
-ST0004	PT00950	FC00950	Pancreatic cancer	49	great grandmother	Yes	74
-ST0004	PT00951	FC00951	Heart disease	61	maternal aunt	Yes	67
-ST0004	PT00952	FC00952	Lung cancer	52	niece	Yes	70
-ST0004	PT00953	FC00953	Cancer (undefined)	39	fraternal twin brother	Yes	56
-ST0004	PT00954	FC00954	Schizophrenia	52	identical twin sister	Yes	56
-ST0004	PT00955	FC00955	Arthritis	74	paternal great-grandfather	Yes	58
-ST0004	PT00956	FC00956	Stroke 	72	son	Yes	54
-ST0004	PT00957	FC00957	Stroke 	51	paternal uncle	Yes	72
-ST0004	PT00958	FC00958	Melanoma	71	identical twin sister	Yes	66
-ST0004	PT00959	FC00959	Parkinson's disease	54	maternal great-grandfather	Yes	51
-ST0004	PT00960	FC00960	COPD	60	paternal grandmother	Yes	54
-ST0004	PT00961	FC00961	Arthritis	38	niece	Yes	73
-ST0004	PT00962	FC00962	Melanoma	59	great grandfather	Yes	61
-ST0004	PT00963	FC00963	Heart disease	28	paternal great-grandfather	Yes	62
-ST0004	PT00964	FC00964	Schizophrenia	40	half-brother	Yes	57
-ST0004	PT00965	FC00965	Stroke 	51	paternal aunt	Yes	66
-ST0004	PT00966	FC00966	Leukemia	55	great grandparent	Yes	64
-ST0004	PT00967	FC00967	Lung cancer	55	half-brother	Yes	65
-ST0004	PT00968	FC00968	COPD	73	identical twin sister	Yes	73
-ST0004	PT00969	FC00969	Stroke 	66	mother	Yes	64
-ST0004	PT00970	FC00970	Renal failure	69	father	Yes	74
-ST0004	PT00971	FC00971	Brain cancer	30	identical twin brother	Yes	75
-ST0004	PT00972	FC00972	Alzheimer disease	37	maternal great-grandmother	Yes	74
-ST0004	PT00973	FC00973	COPD	30	maternal great-grandfather	Yes	60
-ST0004	PT00974	FC00974	COPD	31	paternal grandfather	Yes	51
-ST0004	PT00975	FC00975	Renal failure	35	paternal great-grandfather	Yes	64
-ST0004	PT00976	FC00976	Schizophrenia	67	maternal grandmother	Yes	60
-ST0004	PT00977	FC00977	Pancreatic cancer	49	half-sister	Yes	81
-ST0004	PT00978	FC00978	Multiple sclerosis	26	father	Yes	52
-ST0004	PT00979	FC00979	Alzheimer disease	35	great grandmother	Yes	78
-ST0004	PT00980	FC00980	Brain cancer	48	identical twin brother	Yes	76
-ST0004	PT00981	FC00981	Systemic lupus erythematosus 	21	son	Yes	59
-ST0004	PT00982	FC00982	Brain cancer	46	grandson	Yes	57
-ST0004	PT00983	FC00983	Biopolar disorder	69	maternal great-grandfather	Yes	73
-ST0004	PT00984	FC00984	Alzheimer disease	55	sister	Yes	81
-ST0004	PT00985	FC00985	Cancer (undefined)	27	identical twin sister	Yes	49
-ST0004	PT00986	FC00986	Parkinson's disease	41	maternal cousin	Yes	81
-ST0004	PT00987	FC00987	Crohn's disease	64	paternal cousin	Yes	81
-ST0004	PT00988	FC00988	Crohn's disease	64	great grandfather	Yes	52
-ST0004	PT00989	FC00989	Brain cancer	48	paternal grandfather	Yes	81
-ST0004	PT00990	FC00990	Alzheimer disease	43	brother	Yes	71
-ST0004	PT00991	FC00991	Alzheimer disease	28	paternal great-grandfather	Yes	67
-ST0004	PT00992	FC00992	Hypertension	44	maternal grandfather	Yes	61
-ST0004	PT00993	FC00993	Brain cancer	22	fraternal twin brother	Yes	50
-ST0004	PT00994	FC00994	Alzheimer disease	58	paternal grandfather	Yes	60
-ST0004	PT00995	FC00995	Schizophrenia	24	paternal grandmother	Yes	70
-ST0004	PT00996	FC00996	Renal failure	55	fraternal twin sister	Yes	74
-ST0004	PT00997	FC00997	Schizophrenia	25	maternal uncle	Yes	70
-ST0004	PT00998	FC00998	Arthritis	31	brother	Yes	73
-ST0004	PT00999	FC00999	Lung cancer	26	maternal great-grandfather	Yes	77
+ST0002	PT00502	FC00502	Stroke 	58	paternal grandmother	Yes	1
+ST0004	PT00890	FC00890	Stroke 	58	paternal grandmother	Yes	63
+ST0004	PT00957	FC00957	Stroke 	38	paternal uncle	Unknown	72
+ST0004	PT00956	FC00956	Stroke 	41	son	Yes	54
+ST0003	PT00783	FC00783	Stroke 	27	brother	No	65
+ST0003	PT00750	FC00750	Stroke 	43	daughter	No	56
+ST0003	PT00805	FC00805	Stroke 	40	father	No	79
+ST0003	PT00642	FC00642	Stroke 	24	granddaughter	No	56
+ST0003	PT00687	FC00687	Stroke 	72	paternal grandmother	No	58
+ST0003	PT00685	FC00685	Stroke 	48	half-sister	Unknown	80
+ST0003	PT00634	FC00634	Stroke 	30	identical twin	No	69
+ST0003	PT00684	FC00684	Stroke 	40	maternal grandmother	No	51
+ST0003	PT00744	FC00744	Stroke 	26	paternal grandmother	No	65
+ST0003	PT00638	FC00638	Stroke 	72	paternal grandmother	No	20
+ST0001	PT00145	FC00145	Systemic lupus erythematosus 	28	fraternal twin brother	No	49
+ST0002	PT00475	FC00475	Systemic lupus erythematosus 	52	fraternal twin brother	No	20
+ST0001	PT00061	FC00061	Systemic lupus erythematosus 	34	granddaughter	No	53
+ST0001	PT00374	FC00374	Systemic lupus erythematosus 	33	parternal grandfather	No	51
+ST0001	PT00113	FC00113	Systemic lupus erythematosus 	53	maternal grandmother	No	71
+ST0001	PT00156	FC00156	Systemic lupus erythematosus 	21	maternal grandmother	No	81
+ST0001	PT00055	FC00055	Systemic lupus erythematosus 	60	paternal grandmother	No	75
+ST0001	PT00106	FC00106	Systemic lupus erythematosus 	59	half-brother	No	62
+ST0001	PT00327	FC00327	Systemic lupus erythematosus 	37	half-brother	No	75
+ST0002	PT00583	FC00583	Systemic lupus erythematosus 	72	half-brother	No	12
+ST0002	PT00437	FC00437	Systemic lupus erythematosus 	49	identical twin	No	21
+ST0001	PT00114	FC00114	Systemic lupus erythematosus 	57	maternal cousin	No	50
+ST0001	PT00312	FC00312	Systemic lupus erythematosus 	26	maternal grandfather	No	75
+ST0002	PT00578	FC00578	Systemic lupus erythematosus 	46	maternal grandfather	No	6
+ST0001	PT00100	FC00100	Systemic lupus erythematosus 	68	maternal grandmother	No	79
+ST0002	PT00618	FC00618	Systemic lupus erythematosus 	47	maternal grandmother	No	11
+ST0002	PT00605	FC00605	Systemic lupus erythematosus 	39	maternal grandmother	No	10
+ST0001	PT00257	FC00257	Systemic lupus erythematosus 	39	paternal aunt	No	61
+ST0002	PT00417	FC00417	Systemic lupus erythematosus 	58	paternal grandmother	No	11
+ST0002	PT00498	FC00498	Systemic lupus erythematosus 	58	sister	No	19
+ST0003	PT00683	FC00683	Systemic lupus erythematosus 	20	granddaughter	Yes	32
+ST0004	PT00837	FC00837	Systemic lupus erythematosus 	21	granddaughter	No	70
+ST0004	PT00900	FC00900	Systemic lupus erythematosus 	56	grandson	Yes	70
+ST0002	PT00386	FC00386	Systemic lupus erythematosus 	35	parternal grandfather	Unknown	2
+ST0004	PT00876	FC00876	Systemic lupus erythematosus 	41	maternal grandmother	Yes	75
+ST0004	PT00918	FC00918	Systemic lupus erythematosus 	73	paternal grandmother	Yes	71
+ST0002	PT00553	FC00553	Systemic lupus erythematosus 	59	half-sister	Yes	19
+ST0002	PT00435	FC00435	Systemic lupus erythematosus 	58	identical twin	Yes	20
+ST0001	PT00121	FC00121	Systemic lupus erythematosus 	58	identical twin	Yes	66
+ST0004	PT00902	FC00902	Systemic lupus erythematosus 	68	identical twin	Yes	55
+ST0001	PT00004	FC00004	Systemic lupus erythematosus 	27	maternal aunt	Yes	65
+ST0002	PT00461	FC00461	Systemic lupus erythematosus 	69	maternal grandfather	Yes	10
+ST0003	PT00749	FC00749	Systemic lupus erythematosus 	22	maternal grandfather	Yes	39
+ST0004	PT00827	FC00827	Systemic lupus erythematosus 	44	maternal grandfather	Yes	65
+ST0003	PT00755	FC00755	Systemic lupus erythematosus 	64	maternal grandfather	Yes	11
+ST0002	PT00515	FC00515	Systemic lupus erythematosus 	34	paternal aunt	Yes	2
+ST0001	PT00180	FC00180	Systemic lupus erythematosus 	45	paternal cousin	Yes	69
+ST0001	PT00133	FC00133	Systemic lupus erythematosus 	43	paternal grandfather	Yes	56
+ST0003	PT00815	FC00815	Systemic lupus erythematosus 	72	paternal uncle	Yes	9
+ST0004	PT00981	FC00981	Systemic lupus erythematosus 	43	son	Yes	59
+ST0003	PT00660	FC00660	Systemic lupus erythematosus 	68	brother	No	68
+ST0003	PT00820	FC00820	Systemic lupus erythematosus 	33	maternal grandmother	No	73
+ST0003	PT00753	FC00753	Systemic lupus erythematosus 	72	maternal grandmother	No	34
+ST0003	PT00807	FC00807	Systemic lupus erythematosus 	68	maternal uncle	No	68
+ST0003	PT00778	FC00778	Systemic lupus erythematosus 	41	paternal cousin	No	59
+ST0003	PT00787	FC00787	Systemic lupus erythematosus 	35	paternal grandfather	No	59
+ST0003	PT00658	FC00658	Systemic lupus erythematosus 	57	paternal grandmother	No	55
+ST0003	PT00663	FC00663	Systemic lupus erythematosus 	24	paternal uncle	No	79

@@ -17,29 +17,22 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
     result.as[BiospecimenOutput].collect().head shouldBe BiospecimenOutput()
   }
 
-
-  "loadPhenotypes" should "transform data in expected format" in {
-    val phenotypesDf = Seq(PhenotypeInput()).toDF()
-    val result = EtlUtils.loadPhenotypes(phenotypesDf)
-
-    result.as[PhenotypeOutput].collect().head shouldBe PhenotypeOutput()
-  }
-
-
   "loadTreatments" should "transform data in expected format" in {
     val treatmentDf = Seq(TreatmentInput()).toDF()
-    val result = EtlUtils.loadTreatments(treatmentDf)
+    val result = EtlUtils.loadPerDonorAndStudy(treatmentDf, "treatment")
 
     result.as[TreatmentOutput].collect().head shouldBe TreatmentOutput()
   }
 
   "addAncestorsToTerm" should "transform data in expected format" in {
 
-    val phenotypesDf = Seq(PhenotypeInput(`phenotype_HPO_code` = "HP:0001694")).toDF
+    val phenotypesDf =
+      Seq(PhenotypeInput(`phenotype_HPO_code` = "HP:0001694")).toDF
+      .withColumnRenamed("age_at_phenotype", "age_at_event")
 
     val hpoDf = Seq(HpoTermsInput()).toDF()
 
-    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code")(phenotypesDf, hpoDf)
+    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code", "phenotypes", "internal_phenotype_id")(phenotypesDf, hpoDf)._1
 
     result.as[PhenotypeWithHpoOutput].collect().head shouldBe PhenotypeWithHpoOutput()
   }

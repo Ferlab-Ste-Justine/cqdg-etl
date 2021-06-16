@@ -1,1000 +1,813 @@
-study_id	submitter_donor_id	submitter_phenotype_id	phenotype_HPO_code	phenotype_HPO_term	phenotype_HPO_category	age_at_phenotype	phenotype_observed
-ST0001	PT00001	PH00001	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	63	Yes
-ST0001	PT00002	PH00002	HP:0001513	 Obesity	Growth abnormality	52	Yes
-ST0001	PT00003	PH00003	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	37	Yes
-ST0001	PT00004	PH00004	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00005	PH00005	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	36	Yes
-ST0001	PT00006	PH00006	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	59	Yes
-ST0001	PT00007	PH00007	HP:0001287	 Meningitis	Abnormality of the nervous system	41	Yes
-ST0001	PT00008	PH00008					
-ST0001	PT00009	PH00009	HP:0012126	 Stomach cancer	Neoplasm	49	Yes
-ST0001	PT00010	PH00010					
-ST0001	PT00011	PH00011	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00012	PH00012	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0001	PT00013	PH00013	HP:0001513	 Obesity	Growth abnormality	61	Yes
-ST0001	PT00014	PH00014	HP:0000501	 Glaucoma	Abnormality of the eye	63	Yes
-ST0001	PT00014	PH00015	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Yes
-ST0001	PT00016	PH00016	HP:0001513	 Obesity	Growth abnormality	54	Yes
-ST0001	PT00017	PH00017	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	52	Yes
-ST0001	PT00018	PH00018	HP:0001513	 Obesity	Growth abnormality	32	Yes
-ST0001	PT00019	PH00019	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	60	Yes
-ST0001	PT00020	PH00020					
-ST0001	PT00021	PH00021	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00022	PH00022	HP:0012125	 Prostate cancer	Neoplasm	68	Yes
-ST0001	PT00023	PH00023	HP:0012126	 Stomach cancer	Neoplasm	41	Yes
-ST0001	PT00024	PH00024	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	47	Yes
-ST0001	PT00025	PH00025	HP:0001513	 Obesity	Growth abnormality	38	Yes
-ST0001	PT00026	PH00026	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00027	PH00027	HP:0030242	 Portal vein thrombosis	Abnormality of blood and blood-forming tissues	59	Yes
-ST0001	PT00028	PH00028	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	54	Yes
-ST0001	PT00029	PH00029	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	59	Yes
-ST0001	PT00030	PH00030	HP:0001513	 Obesity	Growth abnormality	53	Yes
-ST0001	PT00031	PH00031	HP:0012189	 Hodgkin lymphoma	Neoplasm	41	Yes
-ST0001	PT00032	PH00032	HP:0001513	 Obesity	Growth abnormality	66	Yes
-ST0001	PT00033	PH00033	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00034	PH00034	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	51	Yes
-ST0001	PT00035	PH00035	HP:0100013	 Neoplasm of the breast	Neoplasm	40	Yes
-ST0001	PT00036	PH00036	HP:0001513	 Obesity	Growth abnormality	60	Yes
-ST0001	PT00037	PH00037	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00038	PH00038	HP:0003003	 Colon cancer	Neoplasm	37	Yes
-ST0001	PT00039	PH00039	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00040	PH00040	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	39	Yes
-ST0001	PT00041	PH00041	HP:0002894	 Neoplasm of the pancreas	Neoplasm	49	Yes
-ST0001	PT00042	PH00042	HP:0001513	 Obesity	Growth abnormality	48	Yes
-ST0001	PT00043	PH00043	HP:0030357	 Small cell lung carcinoma	Neoplasm	55	Yes
-ST0001	PT00044	PH00044	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	49	Yes
-ST0001	PT00045	PH00045					
-ST0001	PT00046	PH00046	HP:0001513	 Obesity	Growth abnormality	64	Yes
-ST0001	PT00047	PH00047	HP:0004808	 Acute myeloid leukemia	Neoplasm	49	Yes
-ST0001	PT00048	PH00048	HP:0001297	 Stroke	Abnormality of the cardiovascular system	48	Yes
-ST0001	PT00049	PH00049	HP:0001513	 Obesity	Growth abnormality	59	Yes
-ST0001	PT00050	PH00050					
-ST0001	PT00051	PH00051	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	43	Yes
-ST0001	PT00052	PH00052	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	55	Yes
-ST0001	PT00053	PH00053	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	47	Yes
-ST0001	PT00054	PH00054	HP:0100753	 Schizophrenia	Abnormality of the nervous system	51	Yes
-ST0001	PT00055	PH00055	HP:0100280	 Crohn's disease	Abnormality of the digestive system	60	Yes
-ST0001	PT00056	PH00056	HP:0001513	 Obesity	Growth abnormality	60	Yes
-ST0001	PT00057	PH00057	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0001	PT00058	PH00058	HP:0001513	 Obesity	Growth abnormality	50	Yes
-ST0001	PT00059	PH00059	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	38	Yes
-ST0001	PT00060	PH00060	HP:0002894	 Neoplasm of the pancreas	Neoplasm	48	Yes
-ST0001	PT00061	PH00061	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00062	PH00062	HP:0100013	 Neoplasm of the breast	Neoplasm	47	Yes
-ST0001	PT00063	PH00063	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00064	PH00064	HP:0012126	 Stomach cancer	Neoplasm	62	Yes
-ST0001	PT00065	PH00065	HP:0001513	 Obesity	Growth abnormality	53	Yes
-ST0001	PT00066	PH00066	HP:0100013	 Neoplasm of the breast	Neoplasm	36	Yes
-ST0001	PT00067	PH00067	HP:0001513	 Obesity	Growth abnormality	38	Yes
-ST0001	PT00068	PH00068	HP:0100013	 Neoplasm of the breast	Neoplasm	58	Yes
-ST0001	PT00069	PH00069	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	58	Yes
-ST0001	PT00070	PH00070	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00071	PH00071	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	59	Yes
-ST0001	PT00072	PH00072	HP:0001513	 Obesity	Growth abnormality	58	Yes
-ST0001	PT00073	PH00073	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	54	Yes
-ST0001	PT00074	PH00074	HP:0001513	 Obesity	Growth abnormality	60	Yes
-ST0001	PT00075	PH00075	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	42	Yes
-ST0001	PT00076	PH00076					
-ST0001	PT00077	PH00077					
-ST0001	PT00078	PH00078	HP:0001513	 Obesity	Growth abnormality	65	Yes
-ST0001	PT00079	PH00079	HP:0001513	 Obesity	Growth abnormality	64	Yes
-ST0001	PT00080	PH00080	HP:0001297	 Stroke	Abnormality of the cardiovascular system	65	Yes
-ST0001	PT00081	PH00081	HP:0001513	 Obesity	Growth abnormality	43	Yes
-ST0001	PT00082	PH00082	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00083	PH00083	HP:0100753	 Schizophrenia	Abnormality of the nervous system	40	Yes
-ST0001	PT00084	PH00084	HP:0006775	 Multiple myeloma	Neoplasm	52	Yes
-ST0001	PT00085	PH00085	HP:0012125	 Prostate cancer	Neoplasm	55	Yes
-ST0001	PT00086	PH00086	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	48	Yes
-ST0001	PT00087	PH00087	HP:0003003	 Colon cancer	Neoplasm	59	Yes
-ST0001	PT00088	PH00088	HP:0001513	 Obesity	Growth abnormality	57	Yes
-ST0001	PT00089	PH00089					
-ST0001	PT00090	PH00090	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00091	PH00091	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	44	Yes
-ST0001	PT00092	PH00092					
-ST0001	PT00093	PH00093	HP:0012125	 Prostate cancer	Neoplasm	49	Yes
-ST0001	PT00094	PH00094	HP:0001513	 Obesity	Growth abnormality	70	Yes
-ST0001	PT00095	PH00095	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00096	PH00096	HP:0001513	 Obesity	Growth abnormality	41	Yes
-ST0001	PT00097	PH00097	HP:0001513	 Obesity	Growth abnormality	39	Yes
-ST0001	PT00098	PH00098	HP:0001513	 Obesity	Growth abnormality	51	Yes
-ST0001	PT00099	PH00099					
-ST0001	PT00100	PH00100	HP:0100753	 Schizophrenia	Abnormality of the nervous system	60	Yes
-ST0001	PT00101	PH00101	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00102	PH00102	HP:0001287	 Meningitis	Abnormality of the nervous system	56	Yes
-ST0001	PT00103	PH00103	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	48	Yes
-ST0001	PT00104	PH00104	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	38	Yes
-ST0001	PT00105	PH00105	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00106	PH00106	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	41	Yes
-ST0001	PT00107	PH00107	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00108	PH00108					
-ST0001	PT00109	PH00109	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	46	Yes
-ST0001	PT00110	PH00110	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0001	PT00111	PH00111	HP:0001513	 Obesity	Growth abnormality	67	Yes
-ST0001	PT00112	PH00112	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	42	Yes
-ST0001	PT00113	PH00113	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	52	Yes
-ST0001	PT00114	PH00114	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00115	PH00115	HP:0012126	 Stomach cancer	Neoplasm	42	Yes
-ST0001	PT00116	PH00116	HP:0009592	 Astrocytoma	Neoplasm	68	Yes
-ST0001	PT00117	PH00117	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	57	Yes
-ST0001	PT00118	PH00118	HP:0001513	 Obesity	Growth abnormality	50	Yes
-ST0001	PT00119	PH00119	HP:0000501	 Glaucoma	Abnormality of the eye	43	Yes
-ST0001	PT00120	PH00120	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00121	PH00121	HP:0001513	 Obesity	Growth abnormality	46	Yes
-ST0001	PT00122	PH00122	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00123	PH00123	HP:0001513	 Obesity	Growth abnormality	41	Yes
-ST0001	PT00124	PH00124					
-ST0001	PT00125	PH00125	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00126	PH00126	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00127	PH00127	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	64	Yes
-ST0001	PT00128	PH00128	HP:0001513	 Obesity	Growth abnormality	58	Yes
-ST0001	PT00129	PH00129	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00130	PH00130					
-ST0001	PT00131	PH00131	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	50	Yes
-ST0001	PT00132	PH00132	HP:0003003	 Colon cancer	Neoplasm	51	Yes
-ST0001	PT00133	PH00133	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	34	Yes
-ST0001	PT00134	PH00134	HP:0001513	 Obesity	Growth abnormality	54	Yes
-ST0001	PT00135	PH00135	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	53	Yes
-ST0001	PT00136	PH00136	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00137	PH00137	HP:0012125	 Prostate cancer	Neoplasm	41	Yes
-ST0001	PT00138	PH00138	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	62	Yes
-ST0001	PT00139	PH00139	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	60	Yes
-ST0001	PT00140	PH00140	HP:0001513	 Obesity	Growth abnormality	40	Yes
-ST0001	PT00141	PH00141	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	53	Yes
-ST0001	PT00142	PH00142	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	48	Yes
-ST0001	PT00143	PH00143	HP:0001513	 Obesity	Growth abnormality	38	Yes
-ST0001	PT00144	PH00144	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	67	Yes
-ST0001	PT00145	PH00145	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	35	Yes
-ST0001	PT00146	PH00146	HP:0002894	 Neoplasm of the pancreas	Neoplasm	61	Yes
-ST0001	PT00147	PH00147	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	36	Yes
-ST0001	PT00148	PH00148	HP:0100753	 Schizophrenia	Abnormality of the nervous system	62	Yes
-ST0001	PT00149	PH00149	HP:0001297	 Stroke	Abnormality of the cardiovascular system	33	Yes
-ST0001	PT00150	PH00150	HP:0001513	 Obesity	Growth abnormality	40	Yes
-ST0001	PT00151	PH00151	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	46	Yes
-ST0001	PT00152	PH00152	HP:0002894	 Neoplasm of the pancreas	Neoplasm	56	Yes
-ST0001	PT00153	PH00153	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Yes
-ST0001	PT00154	PH00154	HP:0001513	 Obesity	Growth abnormality	43	Yes
-ST0001	PT00155	PH00155	HP:0006775	 Multiple myeloma	Neoplasm	57	Yes
-ST0001	PT00156	PH00156	HP:0001513	 Obesity	Growth abnormality	67	Yes
-ST0001	PT00157	PH00157	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	54	Yes
-ST0001	PT00158	PH00158	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00159	PH00159	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	44	Yes
-ST0001	PT00160	PH00160					
-ST0001	PT00161	PH00161	HP:0100614	 Myositis	Abnormality of the musculature	38	Yes
-ST0001	PT00162	PH00162	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00163	PH00163	HP:0012125	 Prostate cancer	Neoplasm	35	Yes
-ST0001	PT00164	PH00164	HP:0001287	 Meningitis	Abnormality of the nervous system	68	Yes
-ST0001	PT00165	PH00165					
-ST0001	PT00166	PH00166	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	38	Yes
-ST0001	PT00167	PH00167	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	43	Yes
-ST0001	PT00168	PH00168	HP:0001513	 Obesity	Growth abnormality	32	Yes
-ST0001	PT00169	PH00169	HP:0100013	 Neoplasm of the breast	Neoplasm	63	Yes
-ST0001	PT00170	PH00170	HP:0001513	 Obesity	Growth abnormality	49	Yes
-ST0001	PT00171	PH00171	HP:0002894	 Neoplasm of the pancreas	Neoplasm	45	Yes
-ST0001	PT00172	PH00172	HP:0100013	 Neoplasm of the breast	Neoplasm	52	Yes
-ST0001	PT00173	PH00173	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	36	Yes
-ST0001	PT00174	PH00174	HP:0001513	 Obesity	Growth abnormality	56	Yes
-ST0001	PT00175	PH00175	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	55	Yes
-ST0001	PT00176	PH00176	HP:0001513	 Obesity	Growth abnormality	61	Yes
-ST0001	PT00177	PH00177	HP:0002894	 Neoplasm of the pancreas	Neoplasm	46	Yes
-ST0001	PT00178	PH00178	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00179	PH00179	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	60	Yes
-ST0001	PT00180	PH00180	HP:0001513	 Obesity	Growth abnormality	49	Yes
-ST0001	PT00181	PH00181	HP:0001297	 Stroke	Abnormality of the cardiovascular system	34	Yes
-ST0001	PT00182	PH00182	HP:0001513	 Obesity	Growth abnormality	61	Yes
-ST0001	PT00183	PH00183	HP:0001513	 Obesity	Growth abnormality	60	Yes
-ST0001	PT00184	PH00184	HP:0001513	 Obesity	Growth abnormality	63	Yes
-ST0001	PT00185	PH00185	HP:0001513	 Obesity	Growth abnormality	35	Yes
-ST0001	PT00186	PH00186	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	65	Yes
-ST0001	PT00187	PH00187	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	61	Yes
-ST0001	PT00188	PH00188	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	33	Yes
-ST0001	PT00189	PH00189	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	36	Yes
-ST0001	PT00190	PH00190	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0001	PT00191	PH00191	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	47	Yes
-ST0001	PT00192	PH00192					
-ST0001	PT00193	PH00193	HP:0001513	 Obesity	Growth abnormality	69	Yes
-ST0001	PT00194	PH00194	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	40	Yes
-ST0001	PT00195	PH00195	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	48	Yes
-ST0001	PT00196	PH00196	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	39	Yes
-ST0001	PT00197	PH00197					
-ST0001	PT00198	PH00198	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	50	Yes
-ST0001	PT00199	PH00199	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	31	Yes
-ST0001	PT00200	PH00200					
-ST0001	PT00201	PH00201	HP:0012126	 Stomach cancer	Neoplasm	52	Yes
-ST0001	PT00202	PH00202	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	53	Yes
-ST0001	PT00203	PH00203	HP:0001513	 Obesity	Growth abnormality	50	Yes
-ST0001	PT00204	PH00204	HP:0002888	 Ependymoma	Abnormality of the nervous system	58	Yes
-ST0001	PT00205	PH00205	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	50	Yes
-ST0001	PT00206	PH00206	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00207	PH00207	HP:0002894	 Neoplasm of the pancreas	Neoplasm	64	Yes
-ST0001	PT00208	PH00208	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	55	Yes
-ST0001	PT00209	PH00209	HP:0100013	 Neoplasm of the breast	Neoplasm	49	Yes
-ST0001	PT00210	PH00210	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	59	Yes
-ST0001	PT00211	PH00211	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	34	Yes
-ST0001	PT00212	PH00212	HP:0006775	 Multiple myeloma	Neoplasm	60	Yes
-ST0001	PT00213	PH00213	HP:0002894	 Neoplasm of the pancreas	Neoplasm	39	Yes
-ST0001	PT00214	PH00214	HP:0012125	 Prostate cancer	Neoplasm	42	Yes
-ST0001	PT00215	PH00215	HP:0001513	 Obesity	Growth abnormality	29	Yes
-ST0001	PT00216	PH00216	HP:0001513	 Obesity	Growth abnormality	63	Yes
-ST0001	PT00217	PH00217	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00218	PH00218	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	43	Yes
-ST0001	PT00219	PH00219	HP:0001513	 Obesity	Growth abnormality	61	Yes
-ST0001	PT00220	PH00220	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	64	Yes
-ST0001	PT00221	PH00221	HP:0001513	 Obesity	Growth abnormality	63	Yes
-ST0001	PT00222	PH00222	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	48	Yes
-ST0001	PT00223	PH00223	HP:0012126	 Stomach cancer	Neoplasm	56	Yes
-ST0001	PT00224	PH00224	HP:0001513	 Obesity	Growth abnormality	51	Yes
-ST0001	PT00225	PH00225	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00226	PH00226	HP:0001513	 Obesity	Growth abnormality	29	Yes
-ST0001	PT00227	PH00227	HP:0012189	 Hodgkin lymphoma	Neoplasm	62	Yes
-ST0001	PT00228	PH00228	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	37	Yes
-ST0001	PT00229	PH00229	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	55	Yes
-ST0001	PT00230	PH00230	HP:0001297	 Stroke	Abnormality of the cardiovascular system	60	Yes
-ST0001	PT00231	PH00231	HP:0001513	 Obesity	Growth abnormality	48	Yes
-ST0001	PT00232	PH00232	HP:0001287	 Meningitis	Abnormality of the nervous system	53	Yes
-ST0001	PT00233	PH00233	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	52	Yes
-ST0001	PT00234	PH00234	HP:0001513	 Obesity	Growth abnormality	32	Yes
-ST0001	PT00235	PH00235	HP:0012125	 Prostate cancer	Neoplasm	45	Yes
-ST0001	PT00236	PH00236	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	49	Yes
-ST0001	PT00237	PH00237	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00238	PH00238	HP:0100013	 Neoplasm of the breast	Neoplasm	42	Yes
-ST0001	PT00239	PH00239	HP:0001297	 Stroke	Abnormality of the cardiovascular system	51	Yes
-ST0001	PT00240	PH00240	HP:0001513	 Obesity	Growth abnormality	49	Yes
-ST0001	PT00241	PH00241					
-ST0001	PT00242	PH00242	HP:0001513	 Obesity	Growth abnormality	54	Yes
-ST0001	PT00243	PH00243	HP:0001513	 Obesity	Growth abnormality	52	Yes
-ST0001	PT00244	PH00244	HP:0001513	 Obesity	Growth abnormality	51	Yes
-ST0001	PT00245	PH00245	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	42	Yes
-ST0001	PT00246	PH00246	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	55	Yes
-ST0001	PT00247	PH00247	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	40	Yes
-ST0001	PT00248	PH00248					
-ST0001	PT00249	PH00249	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	37	Yes
-ST0001	PT00250	PH00250	HP:0001513	 Obesity	Growth abnormality	31	Yes
-ST0001	PT00251	PH00251	HP:0001297	 Stroke	Abnormality of the cardiovascular system	48	Yes
-ST0001	PT00252	PH00252					
-ST0001	PT00253	PH00253	HP:0012189	 Hodgkin lymphoma	Neoplasm	38	Yes
-ST0001	PT00254	PH00254	HP:0012125	 Prostate cancer	Neoplasm	67	Yes
-ST0001	PT00255	PH00255	HP:0001287	 Meningitis	Abnormality of the nervous system	58	Yes
-ST0001	PT00256	PH00256	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Yes
-ST0001	PT00257	PH00257	HP:0001513	 Obesity	Growth abnormality	48	Yes
-ST0001	PT00258	PH00258	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	32	Yes
-ST0001	PT00259	PH00259	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00260	PH00260	HP:0006775	 Multiple myeloma	Neoplasm	41	Yes
-ST0001	PT00261	PH00261	HP:0004808	 Acute myeloid leukemia	Neoplasm	39	Yes
-ST0001	PT00262	PH00262	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	35	Yes
-ST0001	PT00263	PH00263	HP:0003003	 Colon cancer	Neoplasm	39	Yes
-ST0001	PT00264	PH00264	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00265	PH00265	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00266	PH00266	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00267	PH00267	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	51	Yes
-ST0001	PT00268	PH00268	HP:0001513	 Obesity	Growth abnormality	66	Yes
-ST0001	PT00269	PH00269	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00270	PH00270	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	34	Yes
-ST0001	PT00271	PH00271	HP:0001513	 Obesity	Growth abnormality	39	Yes
-ST0001	PT00272	PH00272	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00273	PH00273	HP:0001513	 Obesity	Growth abnormality	41	Yes
-ST0001	PT00274	PH00274					
-ST0001	PT00275	PH00275	HP:0100614	 Myositis	Abnormality of the musculature	56	Yes
-ST0001	PT00276	PH00276	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00277	PH00277	HP:0001297	 Stroke	Abnormality of the cardiovascular system	40	Yes
-ST0001	PT00278	PH00278	HP:0001513	 Obesity	Growth abnormality	38	Yes
-ST0001	PT00279	PH00279	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	63	Yes
-ST0001	PT00280	PH00280	HP:0001297	 Stroke	Abnormality of the cardiovascular system	62	Yes
-ST0001	PT00281	PH00281	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	63	Yes
-ST0001	PT00282	PH00282	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	56	Yes
-ST0001	PT00283	PH00283	HP:0012126	 Stomach cancer	Neoplasm	43	Yes
-ST0001	PT00284	PH00284	HP:0100013	 Neoplasm of the breast	Neoplasm	56	Yes
-ST0001	PT00285	PH00285	HP:0012125	 Prostate cancer	Neoplasm	55	Yes
-ST0001	PT00286	PH00286	HP:0001513	 Obesity	Growth abnormality	69	Yes
-ST0001	PT00287	PH00287	HP:0001297	 Stroke	Abnormality of the cardiovascular system	42	Yes
-ST0001	PT00288	PH00288	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	53	Yes
-ST0001	PT00289	PH00289	HP:0001513	 Obesity	Growth abnormality	64	Yes
-ST0001	PT00290	PH00290	HP:0100013	 Neoplasm of the breast	Neoplasm	37	Yes
-ST0001	PT00291	PH00291	HP:0002894	 Neoplasm of the pancreas	Neoplasm	66	Yes
-ST0001	PT00292	PH00292	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	52	Yes
-ST0001	PT00293	PH00293	HP:0001297	 Stroke	Abnormality of the cardiovascular system	33	Yes
-ST0001	PT00294	PH00294					
-ST0001	PT00295	PH00295	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0001	PT00296	PH00296	HP:0001513	 Obesity	Growth abnormality	57	Yes
-ST0001	PT00297	PH00297	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	52	Yes
-ST0001	PT00298	PH00298	HP:0004808	 Acute myeloid leukemia	Neoplasm	57	Yes
-ST0001	PT00299	PH00299	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	62	Yes
-ST0001	PT00300	PH00300	HP:0001287	 Meningitis	Abnormality of the nervous system	49	Yes
-ST0001	PT00301	PH00301	HP:0001287	 Meningitis	Abnormality of the nervous system	36	Yes
-ST0001	PT00302	PH00302					
-ST0001	PT00303	PH00303	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0001	PT00304	PH00304	HP:0001513	 Obesity	Growth abnormality	42	Yes
-ST0001	PT00305	PH00305	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	40	Yes
-ST0001	PT00306	PH00306	HP:0100614	 Myositis	Abnormality of the musculature	57	Yes
-ST0001	PT00307	PH00307	HP:0001513	 Obesity	Growth abnormality	54	Yes
-ST0001	PT00308	PH00308	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	34	Yes
-ST0001	PT00309	PH00309					
-ST0001	PT00310	PH00310	HP:0001513	 Obesity	Growth abnormality	62	Yes
-ST0001	PT00311	PH00311	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00312	PH00312	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	56	Yes
-ST0001	PT00313	PH00313	HP:0001513	 Obesity	Growth abnormality	60	Yes
-ST0001	PT00314	PH00314	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00315	PH00315	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0001	PT00316	PH00316	HP:0012125	 Prostate cancer	Neoplasm	34	Yes
-ST0001	PT00317	PH00317	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	69	Yes
-ST0001	PT00318	PH00318	HP:0001513	 Obesity	Growth abnormality	43	Yes
-ST0001	PT00319	PH00319	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	41	Yes
-ST0001	PT00320	PH00320	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	47	Yes
-ST0001	PT00321	PH00321	HP:0002665	 Lymphoma	Neoplasm	44	Yes
-ST0001	PT00322	PH00322					
-ST0001	PT00323	PH00323	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	51	Yes
-ST0001	PT00324	PH00324	HP:0001513	 Obesity	Growth abnormality	55	Yes
-ST0001	PT00325	PH00325	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	61	Yes
-ST0001	PT00326	PH00326	HP:0001513	 Obesity	Growth abnormality	40	Yes
-ST0001	PT00327	PH00327	HP:0001513	 Obesity	Growth abnormality	56	Yes
-ST0001	PT00328	PH00328	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	37	Yes
-ST0001	PT00329	PH00329					
-ST0001	PT00330	PH00330	HP:0001513	 Obesity	Growth abnormality	50	Yes
-ST0001	PT00331	PH00331	HP:0100280	 Crohn's disease	Abnormality of the digestive system	40	Yes
-ST0001	PT00332	PH00332	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Yes
-ST0001	PT00333	PH00333	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	63	Yes
-ST0001	PT00334	PH00334	HP:0001513	 Obesity	Growth abnormality	47	Yes
-ST0001	PT00335	PH00335	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	41	Yes
-ST0001	PT00336	PH00336	HP:0001513	 Obesity	Growth abnormality	46	Yes
-ST0001	PT00337	PH00337	HP:0012189	 Hodgkin lymphoma	Neoplasm	32	Yes
-ST0001	PT00338	PH00338	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	37	Yes
-ST0001	PT00339	PH00339					
-ST0001	PT00340	PH00340	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	57	Yes
-ST0001	PT00341	PH00341	HP:0012126	 Stomach cancer	Neoplasm	48	Yes
-ST0001	PT00342	PH00342	HP:0001513	 Obesity	Growth abnormality	58	Yes
-ST0001	PT00343	PH00343	HP:0001513	 Obesity	Growth abnormality	43	Yes
-ST0001	PT00344	PH00344	HP:0001513	 Obesity	Growth abnormality	54	Yes
-ST0001	PT00345	PH00345	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	62	Yes
-ST0001	PT00346	PH00346	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00347	PH00347	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0001	PT00348	PH00348	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00349	PH00349	HP:0001513	 Obesity	Growth abnormality	51	Yes
-ST0001	PT00350	PH00350					
-ST0001	PT00351	PH00351	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	54	Yes
-ST0001	PT00352	PH00352	HP:0001513	 Obesity	Growth abnormality	37	Yes
-ST0001	PT00353	PH00353	HP:0012126	 Stomach cancer	Neoplasm	60	Yes
-ST0001	PT00354	PH00354	HP:0001513	 Obesity	Growth abnormality	39	Yes
-ST0001	PT00355	PH00355	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Yes
-ST0001	PT00356	PH00356	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00357	PH00357	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	61	Yes
-ST0001	PT00358	PH00358	HP:0100013	 Neoplasm of the breast	Neoplasm	32	Yes
-ST0001	PT00359	PH00359	HP:0001513	 Obesity	Growth abnormality		
-ST0001	PT00360	PH00360					
-ST0001	PT00361	PH00361	HP:0001513	 Obesity	Growth abnormality	56	Yes
-ST0001	PT00362	PH00362	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	32	Yes
-ST0001	PT00363	PH00363	HP:0001297	 Stroke	Abnormality of the cardiovascular system	47	Yes
-ST0001	PT00364	PH00364	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	70	Yes
-ST0001	PT00365	PH00365	HP:0001297	 Stroke	Abnormality of the cardiovascular system	50	Yes
-ST0001	PT00366	PH00366					
-ST0001	PT00367	PH00367	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	54	Yes
-ST0001	PT00368	PH00368	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0001	PT00369	PH00369	HP:0001513	 Obesity	Growth abnormality	62	Yes
-ST0001	PT00370	PH00370	HP:0012126	 Stomach cancer	Neoplasm	52	Yes
-ST0001	PT00371	PH00371	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	54	Yes
-ST0001	PT00372	PH00372	HP:0001513	 Obesity	Growth abnormality	41	Yes
-ST0001	PT00373	PH00373	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	55	Yes
-ST0001	PT00374	PH00374	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	37	Yes
-ST0001	PT00375	PH00375	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	52	Yes
-ST0001	PT00376	PH00376	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	44	Yes
-ST0001	PT00377	PH00377	HP:0001297	 Stroke	Abnormality of the cardiovascular system	28	Yes
-ST0002	PT00378	PH00378	HP:0000501	 Glaucoma	Abnormality of the eye	9	Yes
-ST0002	PT00379	PH00379	HP:0002084	 Encephalocele	Abnormality of the nervous system	15	Yes
-ST0002	PT00380	PH00380	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	6	Yes
-ST0002	PT00381	PH00381	HP:0004808	 Acute myeloid leukemia	Neoplasm	15	Yes
-ST0002	PT00382	PH00382	HP:0001513	 Obesity	Growth abnormality	19	Yes
-ST0002	PT00383	PH00383	HP:0012189	 Hodgkin lymphoma	Neoplasm	7	Yes
-ST0002	PT00384	PH00384	HP:0002669	 Osteosarcoma	Neoplasm	16	Yes
-ST0002	PT00385	PH00385	HP:0002414	 Spina bifida	Abnormality of the nervous system	9	Yes
-ST0002	PT00386	PH00386	HP:0002665	 Lymphoma	Neoplasm	1	Yes
-ST0002	PT00387	PH00387	HP:0000175	 Cleft palate	Abnormality of head or neck	16	Yes
-ST0002	PT00388	PH00388	HP:0200046	 Cat cry	Abnormality of the voice	16	Yes
-ST0002	PT00389	PH00389	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	0	Yes
-ST0002	PT00390	PH00390	HP:0002084	 Encephalocele	Abnormality of the nervous system	18	Yes
-ST0002	PT00391	PH00391					
-ST0002	PT00392	PH00392					
-ST0002	PT00393	PH00393	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	12	Yes
-ST0002	PT00394	PH00394	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Yes
-ST0002	PT00395	PH00395	HP:0000252	 Microcephaly	Abnormality of head or neck	3	Yes
-ST0002	PT00396	PH00396	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Yes
-ST0002	PT00397	PH00397	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	10	Yes
-ST0002	PT00398	PH00398	HP:0000158	 Macroglossia	Abnormality of head or neck	16	Yes
-ST0002	PT00399	PH00399	HP:0012189	 Hodgkin lymphoma	Neoplasm	15	Yes
-ST0002	PT00400	PH00400	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	21	Yes
-ST0002	PT00401	PH00401	HP:0000621	 Entropion	Abnormality of head or neck	2	Yes
-ST0002	PT00402	PH00402	HP:0000158	 Macroglossia	Abnormality of head or neck	3	Yes
-ST0002	PT00403	PH00403					
-ST0002	PT00404	PH00404	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0002	PT00405	PH00405	HP:0002084	 Encephalocele	Abnormality of the nervous system	5	Yes
-ST0002	PT00406	PH00406	HP:0000256	 Macrocephaly	Abnormality of head or neck	4	Yes
-ST0002	PT00407	PH00407	HP:0000501	 Glaucoma	Abnormality of the eye	2	Yes
-ST0002	PT00408	PH00408	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	12	Yes
-ST0002	PT00409	PH00409	HP:0000175	 Cleft palate	Abnormality of head or neck	1	Yes
-ST0002	PT00410	PH00410					
-ST0002	PT00411	PH00411	HP:0000501	 Glaucoma	Abnormality of the eye	7	Yes
-ST0002	PT00412	PH00412	HP:0002084	 Encephalocele	Abnormality of the nervous system	16	Yes
-ST0002	PT00413	PH00413	HP:0002665	 Lymphoma	Neoplasm	15	Yes
-ST0002	PT00414	PH00414	HP:0000256	 Macrocephaly	Abnormality of head or neck	19	Yes
-ST0002	PT00415	PH00415	HP:0001513	 Obesity	Growth abnormality	19	Yes
-ST0002	PT00416	PH00416	HP:0000252	 Microcephaly	Abnormality of head or neck	14	Yes
-ST0002	PT00417	PH00417	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	11	Yes
-ST0002	PT00418	PH00418	HP:0002084	 Encephalocele	Abnormality of the nervous system	12	Yes
-ST0002	PT00419	PH00419	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Yes
-ST0002	PT00420	PH00420	HP:0200046	 Cat cry	Abnormality of the voice	4	Yes
-ST0002	PT00421	PH00421	HP:0001513	 Obesity	Growth abnormality	16	Yes
-ST0002	PT00422	PH00422	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Yes
-ST0002	PT00423	PH00423	HP:0004808	 Acute myeloid leukemia	Neoplasm	3	Yes
-ST0002	PT00424	PH00424	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Yes
-ST0002	PT00425	PH00425	HP:0004808	 Acute myeloid leukemia	Neoplasm	9	Yes
-ST0002	PT00426	PH00426	HP:0200046	 Cat cry	Abnormality of the voice	4	Yes
-ST0002	PT00427	PH00427	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	4	Yes
-ST0002	PT00428	PH00428	HP:0002894	 Neoplasm of the pancreas	Neoplasm	1	Yes
-ST0002	PT00429	PH00429	HP:0000175	 Cleft palate	Abnormality of head or neck	13	Yes
-ST0002	PT00430	PH00430	HP:0002084	 Encephalocele	Abnormality of the nervous system	16	Yes
-ST0002	PT00431	PH00431	HP:0002665	 Lymphoma	Neoplasm	18	Yes
-ST0002	PT00432	PH00432	HP:0002084	 Encephalocele	Abnormality of the nervous system	5	Yes
-ST0002	PT00433	PH00433	HP:0000256	 Macrocephaly	Abnormality of head or neck	4	Yes
-ST0002	PT00434	PH00434	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	9	Yes
-ST0002	PT00435	PH00435	HP:0002665	 Lymphoma	Neoplasm	20	Yes
-ST0002	PT00436	PH00436	HP:0009592	 Astrocytoma	Neoplasm	12	Yes
-ST0002	PT00437	PH00437	HP:0200046	 Cat cry	Abnormality of the voice	21	Yes
-ST0002	PT00438	PH00438	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	21	Yes
-ST0002	PT00439	PH00439	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Yes
-ST0002	PT00440	PH00440	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	5	Yes
-ST0002	PT00441	PH00441	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	1	Yes
-ST0002	PT00442	PH00442	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	7	Yes
-ST0002	PT00443	PH00443	HP:0001513	 Obesity	Growth abnormality	14	Yes
-ST0002	PT00444	PH00444	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	6	Yes
-ST0002	PT00445	PH00445	HP:0000175	 Cleft palate	Abnormality of head or neck	9	Yes
-ST0002	PT00446	PH00446	HP:0000158	 Macroglossia	Abnormality of head or neck	12	Yes
-ST0002	PT00447	PH00447	HP:0002665	 Lymphoma	Neoplasm	17	Yes
-ST0002	PT00448	PH00448	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Yes
-ST0002	PT00449	PH00449	HP:0002084	 Encephalocele	Abnormality of the nervous system	2	Yes
-ST0002	PT00450	PH00450	HP:0000621	 Entropion	Abnormality of head or neck	14	Yes
-ST0002	PT00451	PH00451	HP:0000501	 Glaucoma	Abnormality of the eye	7	Yes
-ST0002	PT00452	PH00452	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	3	Yes
-ST0002	PT00453	PH00453					
-ST0002	PT00454	PH00454	HP:0001513	 Obesity	Growth abnormality	16	Yes
-ST0002	PT00455	PH00455	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	15	Yes
-ST0002	PT00456	PH00456	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	6	Yes
-ST0002	PT00457	PH00457	HP:0002665	 Lymphoma	Neoplasm	9	Yes
-ST0002	PT00458	PH00458	HP:0000501	 Glaucoma	Abnormality of the eye	11	Yes
-ST0002	PT00459	PH00459	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	15	Yes
-ST0002	PT00460	PH00460	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	0	Yes
-ST0002	PT00461	PH00461					
-ST0002	PT00462	PH00462	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	15	Yes
-ST0002	PT00463	PH00463	HP:0000621	 Entropion	Abnormality of head or neck	0	Yes
-ST0002	PT00464	PH00464	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	3	Yes
-ST0002	PT00465	PH00465	HP:0001513	 Obesity	Growth abnormality	21	Yes
-ST0002	PT00466	PH00466	HP:0000158	 Macroglossia	Abnormality of head or neck	17	Yes
-ST0002	PT00467	PH00467	HP:0200046	 Cat cry	Abnormality of the voice	16	Yes
-ST0002	PT00468	PH00468	HP:0008551	 Microtia	Abnormality of the ear	5	Yes
-ST0002	PT00469	PH00469	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	1	Yes
-ST0002	PT00470	PH00470	HP:0000621	 Entropion	Abnormality of head or neck	14	Yes
-ST0002	PT00471	PH00471	HP:0003003	 Colon cancer	Neoplasm	10	Yes
-ST0002	PT00472	PH00472					
-ST0002	PT00473	PH00473	HP:0001513	 Obesity	Growth abnormality	10	Yes
-ST0002	PT00474	PH00474	HP:0000501	 Glaucoma	Abnormality of the eye	18	Yes
-ST0002	PT00475	PH00475	HP:0000252	 Microcephaly	Abnormality of head or neck	17	Yes
-ST0002	PT00476	PH00476	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	12	Yes
-ST0002	PT00477	PH00477	HP:0000256	 Macrocephaly	Abnormality of head or neck	2	Yes
-ST0002	PT00478	PH00478	HP:0008551	 Microtia	Abnormality of the ear	2	Yes
-ST0002	PT00479	PH00479	HP:0000256	 Macrocephaly	Abnormality of head or neck	9	Yes
-ST0002	PT00480	PH00480	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	9	Yes
-ST0002	PT00481	PH00481	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	3	Yes
-ST0002	PT00482	PH00482	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	10	Yes
-ST0002	PT00483	PH00483	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Yes
-ST0002	PT00484	PH00484	HP:0002414	 Spina bifida	Abnormality of the nervous system	11	Yes
-ST0002	PT00485	PH00485	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	9	Yes
-ST0002	PT00486	PH00486	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	20	Yes
-ST0002	PT00487	PH00487	HP:0008551	 Microtia	Abnormality of the ear	13	Yes
-ST0002	PT00488	PH00488	HP:0001513	 Obesity	Growth abnormality	17	Yes
-ST0002	PT00489	PH00489	HP:0000252	 Microcephaly	Abnormality of head or neck	13	Yes
-ST0002	PT00490	PH00490	HP:0004808	 Acute myeloid leukemia	Neoplasm	14	Yes
-ST0002	PT00491	PH00491	HP:0000158	 Macroglossia	Abnormality of head or neck	6	Yes
-ST0002	PT00492	PH00492	HP:0002084	 Encephalocele	Abnormality of the nervous system	19	Yes
-ST0002	PT00493	PH00493	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	17	Yes
-ST0002	PT00494	PH00494	HP:0004808	 Acute myeloid leukemia	Neoplasm	8	Yes
-ST0002	PT00495	PH00495	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	17	Yes
-ST0002	PT00496	PH00496	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Yes
-ST0002	PT00497	PH00497	HP:0000175	 Cleft palate	Abnormality of head or neck	11	Yes
-ST0002	PT00498	PH00498	HP:0002414	 Spina bifida	Abnormality of the nervous system	19	Yes
-ST0002	PT00499	PH00499	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	2	Yes
-ST0002	PT00500	PH00500	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Yes
-ST0002	PT00501	PH00501	HP:0000175	 Cleft palate	Abnormality of head or neck	12	Yes
-ST0002	PT00502	PH00502					
-ST0002	PT00503	PH00503					
-ST0002	PT00504	PH00504	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	7	Yes
-ST0002	PT00505	PH00505	HP:0001513	 Obesity	Growth abnormality	18	Yes
-ST0002	PT00506	PH00506	HP:0000501	 Glaucoma	Abnormality of the eye	16	Yes
-ST0002	PT00507	PH00507	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	0	Yes
-ST0002	PT00508	PH00508	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Yes
-ST0002	PT00509	PH00509	HP:0004808	 Acute myeloid leukemia	Neoplasm	1	Yes
-ST0002	PT00510	PH00510	HP:0002084	 Encephalocele	Abnormality of the nervous system	6	Yes
-ST0002	PT00511	PH00511	HP:0000256	 Macrocephaly	Abnormality of head or neck	12	Yes
-ST0002	PT00512	PH00512	HP:0001513	 Obesity	Growth abnormality	18	Yes
-ST0002	PT00513	PH00513	HP:0002414	 Spina bifida	Abnormality of the nervous system	1	Yes
-ST0002	PT00514	PH00514	HP:0000501	 Glaucoma	Abnormality of the eye	13	Yes
-ST0002	PT00515	PH00515	HP:0002665	 Lymphoma	Neoplasm	2	Yes
-ST0002	PT00516	PH00516	HP:0008749	 Laryngeal hypoplasia	Abnormality of the respiratory system	8	Yes
-ST0002	PT00517	PH00517	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	16	Yes
-ST0002	PT00518	PH00518	HP:0000252	 Microcephaly	Abnormality of head or neck	10	Yes
-ST0002	PT00519	PH00519	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	19	Yes
-ST0002	PT00520	PH00520	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0002	PT00521	PH00521	HP:0001513	 Obesity	Growth abnormality	17	Yes
-ST0002	PT00522	PH00522	HP:0000158	 Macroglossia	Abnormality of head or neck	9	Yes
-ST0002	PT00523	PH00523	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	8	Yes
-ST0002	PT00524	PH00524	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	15	Yes
-ST0002	PT00525	PH00525	HP:0012189	 Hodgkin lymphoma	Neoplasm	8	Yes
-ST0002	PT00526	PH00526	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	8	Yes
-ST0002	PT00527	PH00527	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	1	Yes
-ST0002	PT00528	PH00528	HP:0002669	 Osteosarcoma	Neoplasm	6	Yes
-ST0002	PT00529	PH00529	HP:0000256	 Macrocephaly	Abnormality of head or neck	20	Yes
-ST0002	PT00530	PH00530	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	7	Yes
-ST0002	PT00531	PH00531	HP:0002084	 Encephalocele	Abnormality of the nervous system	18	Yes
-ST0002	PT00532	PH00532	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	8	Yes
-ST0002	PT00533	PH00533	HP:0002084	 Encephalocele	Abnormality of the nervous system	20	Yes
-ST0002	PT00534	PH00534	HP:0001513	 Obesity	Growth abnormality	19	Yes
-ST0002	PT00535	PH00535	HP:0000621	 Entropion	Abnormality of head or neck	8	Yes
-ST0002	PT00536	PH00536	HP:0000621	 Entropion	Abnormality of head or neck	19	Yes
-ST0002	PT00537	PH00537	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	7	Yes
-ST0002	PT00538	PH00538	HP:0000252	 Microcephaly	Abnormality of head or neck	8	Yes
-ST0002	PT00539	PH00539	HP:0008749	 Laryngeal hypoplasia	Abnormality of the respiratory system	13	Yes
-ST0002	PT00540	PH00540	HP:0012189	 Hodgkin lymphoma	Neoplasm	1	Yes
-ST0002	PT00541	PH00541					
-ST0002	PT00542	PH00542	HP:0200046	 Cat cry	Abnormality of the voice	15	Yes
-ST0002	PT00543	PH00543	HP:0004808	 Acute myeloid leukemia	Neoplasm	5	Yes
-ST0002	PT00544	PH00544	HP:0000252	 Microcephaly	Abnormality of head or neck	18	Yes
-ST0002	PT00545	PH00545	HP:0000252	 Microcephaly	Abnormality of head or neck	17	Yes
-ST0002	PT00546	PH00546	HP:0000621	 Entropion	Abnormality of head or neck	21	Yes
-ST0002	PT00547	PH00547					
-ST0002	PT00548	PH00548	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	13	Yes
-ST0002	PT00549	PH00549	HP:0002414	 Spina bifida	Abnormality of the nervous system	18	Yes
-ST0002	PT00550	PH00550	HP:0000501	 Glaucoma	Abnormality of the eye	1	Yes
-ST0002	PT00551	PH00551	HP:0002084	 Encephalocele	Abnormality of the nervous system	19	Yes
-ST0002	PT00552	PH00552	HP:0004808	 Acute myeloid leukemia	Neoplasm	5	Yes
-ST0002	PT00553	PH00553	HP:0001513	 Obesity	Growth abnormality	18	Yes
-ST0002	PT00554	PH00554	HP:0002414	 Spina bifida	Abnormality of the nervous system	7	Yes
-ST0002	PT00555	PH00555	HP:0002084	 Encephalocele	Abnormality of the nervous system	15	Yes
-ST0002	PT00556	PH00556	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	12	Yes
-ST0002	PT00557	PH00557	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	14	Yes
-ST0002	PT00558	PH00558	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Yes
-ST0002	PT00559	PH00559	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	21	Yes
-ST0002	PT00560	PH00560	HP:0000252	 Microcephaly	Abnormality of head or neck	15	Yes
-ST0002	PT00561	PH00561	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	8	Yes
-ST0002	PT00562	PH00562	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Yes
-ST0002	PT00563	PH00563					
-ST0002	PT00564	PH00564					
-ST0002	PT00565	PH00565	HP:0012189	 Hodgkin lymphoma	Neoplasm	6	Yes
-ST0002	PT00566	PH00566	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0002	PT00567	PH00567					
-ST0002	PT00568	PH00568	HP:0000621	 Entropion	Abnormality of head or neck	10	Yes
-ST0002	PT00569	PH00569	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Yes
-ST0002	PT00570	PH00570	HP:0000158	 Macroglossia	Abnormality of head or neck	20	Yes
-ST0002	PT00571	PH00571	HP:0008551	 Microtia	Abnormality of the ear	8	Yes
-ST0002	PT00572	PH00572	HP:0000175	 Cleft palate	Abnormality of head or neck	11	Yes
-ST0002	PT00573	PH00573	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	10	Yes
-ST0002	PT00574	PH00574	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Yes
-ST0002	PT00575	PH00575	HP:0008551	 Microtia	Abnormality of the ear	4	Yes
-ST0002	PT00576	PH00576	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	4	Yes
-ST0002	PT00577	PH00577	HP:0001513	 Obesity	Growth abnormality	16	Yes
-ST0002	PT00578	PH00578	HP:0008551	 Microtia	Abnormality of the ear	5	Yes
-ST0002	PT00579	PH00579	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	3	Yes
-ST0002	PT00580	PH00580	HP:0002669	 Osteosarcoma	Neoplasm	0	Yes
-ST0002	PT00581	PH00581	HP:0012189	 Hodgkin lymphoma	Neoplasm	0	Yes
-ST0002	PT00582	PH00582	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0002	PT00583	PH00583	HP:0000252	 Microcephaly	Abnormality of head or neck	12	Yes
-ST0002	PT00584	PH00584	HP:0002414	 Spina bifida	Abnormality of the nervous system	4	Yes
-ST0002	PT00585	PH00585	HP:0000158	 Macroglossia	Abnormality of head or neck	21	Yes
-ST0002	PT00586	PH00586	HP:0002665	 Lymphoma	Neoplasm	20	Yes
-ST0002	PT00587	PH00587	HP:0012189	 Hodgkin lymphoma	Neoplasm	14	Yes
-ST0002	PT00588	PH00588	HP:0002414	 Spina bifida	Abnormality of the nervous system	10	Yes
-ST0002	PT00589	PH00589	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	2	Yes
-ST0002	PT00590	PH00590	HP:0002084	 Encephalocele	Abnormality of the nervous system	14	Yes
-ST0002	PT00591	PH00591					
-ST0002	PT00592	PH00592					
-ST0002	PT00593	PH00593	HP:0002665	 Lymphoma	Neoplasm	0	Yes
-ST0002	PT00594	PH00594	HP:0002084	 Encephalocele	Abnormality of the nervous system	0	Yes
-ST0002	PT00595	PH00595	HP:0008551	 Microtia	Abnormality of the ear	11	Yes
-ST0002	PT00596	PH00596	HP:0000158	 Macroglossia	Abnormality of head or neck	0	Yes
-ST0002	PT00597	PH00597	HP:0000252	 Microcephaly	Abnormality of head or neck	3	Yes
-ST0002	PT00598	PH00598	HP:0008551	 Microtia	Abnormality of the ear	2	Yes
-ST0002	PT00599	PH00599	HP:0002888	 Ependymoma	Abnormality of the nervous system	1	Yes
-ST0002	PT00600	PH00600	HP:0001513	 Obesity	Growth abnormality	0	Yes
-ST0002	PT00601	PH00601	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0002	PT00602	PH00602	HP:0002084	 Encephalocele	Abnormality of the nervous system	4	Yes
-ST0002	PT00603	PH00603	HP:0008551	 Microtia	Abnormality of the ear	17	Yes
-ST0002	PT00604	PH00604	HP:0000252	 Microcephaly	Abnormality of head or neck	8	Yes
-ST0002	PT00605	PH00605	HP:0000175	 Cleft palate	Abnormality of head or neck	10	Yes
-ST0002	PT00606	PH00606	HP:0000501	 Glaucoma	Abnormality of the eye	21	Yes
-ST0002	PT00607	PH00607	HP:0000252	 Microcephaly	Abnormality of head or neck	15	Yes
-ST0002	PT00608	PH00608	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	21	Yes
-ST0002	PT00609	PH00609	HP:0002414	 Spina bifida	Abnormality of the nervous system	10	Yes
-ST0002	PT00610	PH00610	HP:0002888	 Ependymoma	Abnormality of the nervous system	9	Yes
-ST0002	PT00611	PH00611	HP:0000158	 Macroglossia	Abnormality of head or neck	0	Yes
-ST0002	PT00612	PH00612	HP:0000175	 Cleft palate	Abnormality of head or neck	21	Yes
-ST0002	PT00613	PH00613	HP:0001513	 Obesity	Growth abnormality	21	Yes
-ST0002	PT00614	PH00614	HP:0000158	 Macroglossia	Abnormality of head or neck	13	Yes
-ST0002	PT00615	PH00615	HP:0012126	 Stomach cancer	Neoplasm	10	Yes
-ST0002	PT00616	PH00616					
-ST0002	PT00617	PH00617	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	3	Yes
-ST0002	PT00618	PH00618	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	10	Yes
-ST0002	PT00619	PH00619	HP:0002665	 Lymphoma	Neoplasm	7	Yes
-ST0002	PT00620	PH00620	HP:0200046	 Cat cry	Abnormality of the voice	11	Yes
-ST0002	PT00621	PH00621	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	4	Yes
-ST0002	PT00622	PH00622	HP:0008551	 Microtia	Abnormality of the ear	17	Yes
-ST0002	PT00623	PH00623	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	19	Yes
-ST0002	PT00624	PH00624	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	12	Yes
-ST0002	PT00625	PH00625	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	6	Yes
-ST0002	PT00626	PH00626	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	12	Yes
-ST0003	PT00627	PH00627					
-ST0003	PT00628	PH00628					
-ST0003	PT00629	PH00629	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0003	PT00630	PH00630					
-ST0003	PT00631	PH00631					
-ST0003	PT00632	PH00632	HP:0001513	 Obesity	Growth abnormality	23	Yes
-ST0003	PT00633	PH00633					
-ST0003	PT00634	PH00634					
-ST0003	PT00635	PH00635	HP:0002894	 Neoplasm of the pancreas	Neoplasm	16	Yes
-ST0003	PT00636	PH00636					
-ST0003	PT00637	PH00637					
-ST0003	PT00638	PH00638	HP:0009592	 Astrocytoma	Neoplasm	15	Yes
-ST0003	PT00639	PH00639					
-ST0003	PT00640	PH00640					
-ST0003	PT00641	PH00641	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	19	Yes
-ST0003	PT00642	PH00642					
-ST0003	PT00643	PH00643					
-ST0003	PT00644	PH00644	HP:0001513	 Obesity	Growth abnormality	12	Yes
-ST0003	PT00645	PH00645					
-ST0003	PT00646	PH00646					
-ST0003	PT00647	PH00647	HP:0006775	 Multiple myeloma	Neoplasm	9	Yes
-ST0003	PT00648	PH00648					
-ST0003	PT00649	PH00649					
-ST0003	PT00650	PH00650	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	24	Yes
-ST0003	PT00651	PH00651					
-ST0003	PT00652	PH00652					
-ST0003	PT00653	PH00653	HP:0012126	 Stomach cancer	Neoplasm	38	Yes
-ST0003	PT00654	PH00654					
-ST0003	PT00655	PH00655					
-ST0003	PT00656	PH00656	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	26	Yes
-ST0003	PT00657	PH00657					
-ST0003	PT00658	PH00658					
-ST0003	PT00659	PH00659	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	27	Yes
-ST0003	PT00660	PH00660					
-ST0003	PT00661	PH00661					
-ST0003	PT00662	PH00662					
-ST0003	PT00663	PH00663					
-ST0003	PT00664	PH00664					
-ST0003	PT00665	PH00665					
-ST0003	PT00666	PH00666					
-ST0003	PT00667	PH00667					
-ST0003	PT00668	PH00668	HP:0001513	 Obesity	Growth abnormality	32	Yes
-ST0003	PT00669	PH00669					
-ST0003	PT00670	PH00670					
-ST0003	PT00671	PH00671	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	25	Yes
-ST0003	PT00672	PH00672					
-ST0003	PT00673	PH00673					
-ST0003	PT00674	PH00674	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	11	Yes
-ST0003	PT00675	PH00675					
-ST0003	PT00676	PH00676					
-ST0003	PT00677	PH00677	HP:0009592	 Astrocytoma	Neoplasm	9	Yes
-ST0003	PT00678	PH00678					
-ST0003	PT00679	PH00679					
-ST0003	PT00680	PH00680	HP:0001513	 Obesity	Growth abnormality	28	Yes
-ST0003	PT00681	PH00681					
-ST0003	PT00682	PH00682					
-ST0003	PT00683	PH00683	HP:0002894	 Neoplasm of the pancreas	Neoplasm	28	Yes
-ST0003	PT00684	PH00684					
-ST0003	PT00685	PH00685					
-ST0003	PT00686	PH00686	HP:0012126	 Stomach cancer	Neoplasm	17	Yes
-ST0003	PT00687	PH00687					
-ST0003	PT00688	PH00688					
-ST0003	PT00689	PH00689					
-ST0003	PT00690	PH00690					
-ST0003	PT00691	PH00691					
-ST0003	PT00692	PH00692	HP:0001513	 Obesity	Growth abnormality	21	Yes
-ST0003	PT00693	PH00693					
-ST0003	PT00694	PH00694					
-ST0003	PT00695	PH00695	HP:0001513	 Obesity	Growth abnormality	46	Yes
-ST0003	PT00696	PH00696					
-ST0003	PT00697	PH00697					
-ST0003	PT00698	PH00698	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	17	Yes
-ST0003	PT00699	PH00699					
-ST0003	PT00700	PH00700					
-ST0003	PT00701	PH00701	HP:0001513	 Obesity	Growth abnormality	44	Yes
-ST0003	PT00702	PH00702					
-ST0003	PT00703	PH00703					
-ST0003	PT00704	PH00704					
-ST0003	PT00705	PH00705					
-ST0003	PT00706	PH00706					
-ST0003	PT00707	PH00707	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	36	Yes
-ST0003	PT00708	PH00708					
-ST0003	PT00709	PH00709					
-ST0003	PT00710	PH00710	HP:0003003	 Colon cancer	Neoplasm	19	Yes
-ST0003	PT00711	PH00711					
-ST0003	PT00712	PH00712					
-ST0003	PT00713	PH00713	HP:0006775	 Multiple myeloma	Neoplasm	27	Yes
-ST0003	PT00714	PH00714	HP:0001513	 Obesity	Growth abnormality		
-ST0003	PT00715	PH00715					
-ST0003	PT00716	PH00716	HP:0001513	 Obesity	Growth abnormality	42	Yes
-ST0003	PT00717	PH00717					
-ST0003	PT00718	PH00718					
-ST0003	PT00719	PH00719					
-ST0003	PT00720	PH00720					
-ST0003	PT00721	PH00721					
-ST0003	PT00722	PH00722	HP:0001513	 Obesity	Growth abnormality	30	Yes
-ST0003	PT00723	PH00723					
-ST0003	PT00724	PH00724					
-ST0003	PT00725	PH00725	HP:0001513	 Obesity	Growth abnormality	45	Yes
-ST0003	PT00726	PH00726					
-ST0003	PT00727	PH00727					
-ST0003	PT00728	PH00728	HP:0002669	 Osteosarcoma	Neoplasm	21	Yes
-ST0003	PT00729	PH00729					
-ST0003	PT00730	PH00730					
-ST0003	PT00731	PH00731					
-ST0003	PT00732	PH00732					
-ST0003	PT00733	PH00733					
-ST0003	PT00734	PH00734	HP:0006775	 Multiple myeloma	Neoplasm	48	Yes
-ST0003	PT00735	PH00735					
-ST0003	PT00736	PH00736					
-ST0003	PT00737	PH00737	HP:0001513	 Obesity	Growth abnormality	43	Yes
-ST0003	PT00738	PH00738					
-ST0003	PT00739	PH00739					
-ST0003	PT00740	PH00740	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	2	Yes
-ST0003	PT00741	PH00741					
-ST0003	PT00742	PH00742					
-ST0003	PT00743	PH00743	HP:0002888	 Ependymoma	Abnormality of the nervous system	37	Yes
-ST0003	PT00744	PH00744					
-ST0003	PT00745	PH00745					
-ST0003	PT00746	PH00746					
-ST0003	PT00747	PH00747					
-ST0003	PT00748	PH00748					
-ST0003	PT00749	PH00749	HP:0012189	 Hodgkin lymphoma	Neoplasm	32	Yes
-ST0003	PT00750	PH00750					
-ST0003	PT00751	PH00751					
-ST0003	PT00752	PH00752	HP:0001513	 Obesity	Growth abnormality	19	Yes
-ST0003	PT00753	PH00753					
-ST0003	PT00754	PH00754					
-ST0003	PT00755	PH00755	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	7	Yes
-ST0003	PT00756	PH00756					
-ST0003	PT00757	PH00757					
-ST0003	PT00758	PH00758	HP:0001513	 Obesity	Growth abnormality	29	Yes
-ST0003	PT00759	PH00759					
-ST0003	PT00760	PH00760					
-ST0003	PT00761	PH00761	HP:0002669	 Osteosarcoma	Neoplasm	16	Yes
-ST0003	PT00762	PH00762					
-ST0003	PT00763	PH00763					
-ST0003	PT00764	PH00764	HP:0001513	 Obesity	Growth abnormality	25	Yes
-ST0003	PT00765	PH00765					
-ST0003	PT00766	PH00766					
-ST0003	PT00767	PH00767	HP:0001513	 Obesity	Growth abnormality	15	Yes
-ST0003	PT00768	PH00768					
-ST0003	PT00769	PH00769					
-ST0003	PT00770	PH00770	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	1	Yes
-ST0003	PT00771	PH00771					
-ST0003	PT00772	PH00772					
-ST0003	PT00773	PH00773	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	17	Yes
-ST0003	PT00774	PH00774					
-ST0003	PT00775	PH00775					
-ST0003	PT00776	PH00776	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	17	Yes
-ST0003	PT00777	PH00777					
-ST0003	PT00778	PH00778					
-ST0003	PT00779	PH00779	HP:0030812	 Enlarged tonsil	Abnormality of the immune system	25	Yes
-ST0003	PT00780	PH00780					
-ST0003	PT00781	PH00781					
-ST0003	PT00782	PH00782	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	40	Yes
-ST0003	PT00783	PH00783					
-ST0003	PT00784	PH00784					
-ST0003	PT00785	PH00785	HP:0002669	 Osteosarcoma	Neoplasm	19	Yes
-ST0003	PT00786	PH00786					
-ST0003	PT00787	PH00787					
-ST0003	PT00788	PH00788	HP:0002669	 Osteosarcoma	Neoplasm	9	Yes
-ST0003	PT00789	PH00789					
-ST0003	PT00790	PH00790					
-ST0003	PT00791	PH00791	HP:0006775	 Multiple myeloma	Neoplasm	10	Yes
-ST0003	PT00792	PH00792					
-ST0003	PT00793	PH00793					
-ST0003	PT00794	PH00794	HP:0002861	 Melanoma	Neoplasm	29	Yes
-ST0003	PT00795	PH00795					
-ST0003	PT00796	PH00796					
-ST0003	PT00797	PH00797	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Yes
-ST0003	PT00798	PH00798					
-ST0003	PT00799	PH00799					
-ST0003	PT00800	PH00800	HP:0009592	 Astrocytoma	Neoplasm	7	Yes
-ST0003	PT00801	PH00801					
-ST0003	PT00802	PH00802					
-ST0003	PT00803	PH00803					
-ST0003	PT00804	PH00804					
-ST0003	PT00805	PH00805					
-ST0003	PT00806	PH00806	HP:0001513	 Obesity	Growth abnormality	32	Yes
-ST0003	PT00807	PH00807					
-ST0003	PT00808	PH00808					
-ST0003	PT00809	PH00809	HP:0002669	 Osteosarcoma	Neoplasm	41	Yes
-ST0003	PT00810	PH00810					
-ST0003	PT00811	PH00811					
-ST0003	PT00812	PH00812	HP:0012126	 Stomach cancer	Neoplasm	42	Yes
-ST0003	PT00813	PH00813					
-ST0003	PT00814	PH00814					
-ST0003	PT00815	PH00815	HP:0030812	 Enlarged tonsil	Abnormality of the immune system	5	Yes
-ST0003	PT00816	PH00816					
-ST0003	PT00817	PH00817					
-ST0003	PT00818	PH00818	HP:0001513	 Obesity	Growth abnormality	34	Yes
-ST0003	PT00819	PH00819					
-ST0003	PT00820	PH00820					
-ST0003	PT00821	PH00821	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	33	Yes
-ST0003	PT00822	PH00822					
-ST0003	PT00823	PH00823					
-ST0003	PT00824	PH00824	HP:0002669	 Osteosarcoma	Neoplasm	3	Yes
-ST0003	PT00825	PH00825	HP:0002669	 Osteosarcoma	Neoplasm	0	Yes
-ST0004	PT00826	PH00826	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00827	PH00827	HP:0012125	 Prostate cancer	Neoplasm	48	Yes
-ST0004	PT00828	PH00828	HP:0012125	 Prostate cancer	Neoplasm	47	Yes
-ST0004	PT00829	PH00829	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00830	PH00830	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00831	PH00831	HP:0012125	 Prostate cancer	Neoplasm	48	Yes
-ST0004	PT00832	PH00832	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00833	PH00833	HP:0012125	 Prostate cancer	Neoplasm	40	Yes
-ST0004	PT00834	PH00834	HP:0012125	 Prostate cancer	Neoplasm	56	Yes
-ST0004	PT00835	PH00835	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0004	PT00836	PH00836	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00837	PH00837	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00838	PH00838	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00839	PH00839	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00840	PH00840	HP:0012125	 Prostate cancer	Neoplasm	42	Yes
-ST0004	PT00841	PH00841	HP:0012125	 Prostate cancer	Neoplasm	66	Yes
-ST0004	PT00842	PH00842	HP:0012125	 Prostate cancer	Neoplasm	65	Yes
-ST0004	PT00843	PH00843	HP:0012125	 Prostate cancer	Neoplasm	63	Yes
-ST0004	PT00844	PH00844	HP:0012125	 Prostate cancer	Neoplasm	44	Yes
-ST0004	PT00845	PH00845	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00846	PH00846	HP:0012125	 Prostate cancer	Neoplasm	49	Yes
-ST0004	PT00847	PH00847	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00848	PH00848	HP:0012125	 Prostate cancer	Neoplasm	45	Yes
-ST0004	PT00849	PH00849	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00850	PH00850	HP:0012125	 Prostate cancer	Neoplasm	72	Yes
-ST0004	PT00851	PH00851	HP:0012125	 Prostate cancer	Neoplasm	44	Yes
-ST0004	PT00852	PH00852	HP:0012125	 Prostate cancer	Neoplasm	44	Yes
-ST0004	PT00853	PH00853	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00854	PH00854	HP:0012125	 Prostate cancer	Neoplasm	72	Yes
-ST0004	PT00855	PH00855	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00856	PH00856	HP:0012125	 Prostate cancer	Neoplasm	47	Yes
-ST0004	PT00857	PH00857	HP:0012125	 Prostate cancer	Neoplasm	63	Yes
-ST0004	PT00858	PH00858	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00859	PH00859	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0004	PT00860	PH00860	HP:0012125	 Prostate cancer	Neoplasm	56	Yes
-ST0004	PT00861	PH00861	HP:0012125	 Prostate cancer	Neoplasm	46	Yes
-ST0004	PT00862	PH00862	HP:0012125	 Prostate cancer	Neoplasm	37	Yes
-ST0004	PT00863	PH00863	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00864	PH00864	HP:0012125	 Prostate cancer	Neoplasm	74	Yes
-ST0004	PT00865	PH00865	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00866	PH00866	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00867	PH00867	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00868	PH00868	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00869	PH00869	HP:0012125	 Prostate cancer	Neoplasm	46	Yes
-ST0004	PT00870	PH00870	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00871	PH00871	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00872	PH00872	HP:0012125	 Prostate cancer	Neoplasm	35	Yes
-ST0004	PT00873	PH00873	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00874	PH00874	HP:0012125	 Prostate cancer	Neoplasm	62	Yes
-ST0004	PT00875	PH00875	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0004	PT00876	PH00876	HP:0012125	 Prostate cancer	Neoplasm	61	Yes
-ST0004	PT00877	PH00877	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00878	PH00878	HP:0012125	 Prostate cancer	Neoplasm	66	Yes
-ST0004	PT00879	PH00879	HP:0012125	 Prostate cancer	Neoplasm	46	Yes
-ST0004	PT00880	PH00880	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00881	PH00881	HP:0012125	 Prostate cancer	Neoplasm	76	Yes
-ST0004	PT00882	PH00882	HP:0012125	 Prostate cancer	Neoplasm	33	Yes
-ST0004	PT00883	PH00883	HP:0012125	 Prostate cancer	Neoplasm	58	Yes
-ST0004	PT00884	PH00884	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0004	PT00885	PH00885	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00886	PH00886	HP:0012125	 Prostate cancer	Neoplasm	49	Yes
-ST0004	PT00887	PH00887	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0004	PT00888	PH00888	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00889	PH00889	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00890	PH00890	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00891	PH00891	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00892	PH00892	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00893	PH00893	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00894	PH00894	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00895	PH00895	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0004	PT00896	PH00896	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00897	PH00897	HP:0012125	 Prostate cancer	Neoplasm	38	Yes
-ST0004	PT00898	PH00898	HP:0012125	 Prostate cancer	Neoplasm	56	Yes
-ST0004	PT00899	PH00899	HP:0012125	 Prostate cancer	Neoplasm	48	Yes
-ST0004	PT00900	PH00900	HP:0012125	 Prostate cancer	Neoplasm	66	Yes
-ST0004	PT00901	PH00901	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00902	PH00902	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0004	PT00903	PH00903	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00904	PH00904	HP:0012125	 Prostate cancer	Neoplasm	41	Yes
-ST0004	PT00905	PH00905	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00906	PH00906	HP:0012125	 Prostate cancer	Neoplasm	36	Yes
-ST0004	PT00907	PH00907	HP:0012125	 Prostate cancer	Neoplasm	58	Yes
-ST0004	PT00908	PH00908	HP:0012125	 Prostate cancer	Neoplasm	72	Yes
-ST0004	PT00909	PH00909	HP:0012125	 Prostate cancer	Neoplasm	67	Yes
-ST0004	PT00910	PH00910	HP:0012125	 Prostate cancer	Neoplasm	65	Yes
-ST0004	PT00911	PH00911	HP:0012125	 Prostate cancer	Neoplasm	66	Yes
-ST0004	PT00912	PH00912	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00913	PH00913	HP:0012125	 Prostate cancer	Neoplasm	45	Yes
-ST0004	PT00914	PH00914	HP:0012125	 Prostate cancer	Neoplasm	40	Yes
-ST0004	PT00915	PH00915	HP:0012125	 Prostate cancer	Neoplasm	44	Yes
-ST0004	PT00916	PH00916	HP:0012125	 Prostate cancer	Neoplasm	62	Yes
-ST0004	PT00917	PH00917	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00918	PH00918	HP:0012125	 Prostate cancer	Neoplasm	58	Yes
-ST0004	PT00919	PH00919	HP:0012125	 Prostate cancer	Neoplasm	47	Yes
-ST0004	PT00920	PH00920	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00921	PH00921	HP:0012125	 Prostate cancer	Neoplasm	71	Yes
-ST0004	PT00922	PH00922	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00923	PH00923	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00924	PH00924	HP:0012125	 Prostate cancer	Neoplasm	44	Yes
-ST0004	PT00925	PH00925	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00926	PH00926	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00927	PH00927	HP:0012125	 Prostate cancer	Neoplasm	67	Yes
-ST0004	PT00928	PH00928	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00929	PH00929	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00930	PH00930	HP:0012125	 Prostate cancer	Neoplasm	54	Yes
-ST0004	PT00931	PH00931	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00932	PH00932	HP:0012125	 Prostate cancer	Neoplasm	62	Yes
-ST0004	PT00933	PH00933	HP:0012125	 Prostate cancer	Neoplasm	73	Yes
-ST0004	PT00934	PH00934	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00935	PH00935	HP:0012125	 Prostate cancer	Neoplasm	63	Yes
-ST0004	PT00936	PH00936	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00937	PH00937	HP:0012125	 Prostate cancer	Neoplasm	68	Yes
-ST0004	PT00938	PH00938	HP:0012125	 Prostate cancer	Neoplasm	55	Yes
-ST0004	PT00939	PH00939	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00940	PH00940	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00941	PH00941	HP:0012125	 Prostate cancer	Neoplasm	48	Yes
-ST0004	PT00942	PH00942	HP:0012125	 Prostate cancer	Neoplasm	39	Yes
-ST0004	PT00943	PH00943	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00944	PH00944	HP:0012125	 Prostate cancer	Neoplasm	61	Yes
-ST0004	PT00945	PH00945	HP:0012125	 Prostate cancer	Neoplasm	40	Yes
-ST0004	PT00946	PH00946	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00947	PH00947	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00948	PH00948	HP:0012125	 Prostate cancer	Neoplasm	48	Yes
-ST0004	PT00949	PH00949	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00950	PH00950	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00951	PH00951	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00952	PH00952	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00953	PH00953	HP:0012125	 Prostate cancer	Neoplasm	45	Yes
-ST0004	PT00954	PH00954	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0004	PT00955	PH00955	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00956	PH00956	HP:0012125	 Prostate cancer	Neoplasm	43	Yes
-ST0004	PT00957	PH00957	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00958	PH00958	HP:0012125	 Prostate cancer	Neoplasm	52	Yes
-ST0004	PT00959	PH00959	HP:0012125	 Prostate cancer	Neoplasm	42	Yes
-ST0004	PT00960	PH00960	HP:0012125	 Prostate cancer	Neoplasm	42	Yes
-ST0004	PT00961	PH00961	HP:0012125	 Prostate cancer	Neoplasm	67	Yes
-ST0004	PT00962	PH00962	HP:0012125	 Prostate cancer	Neoplasm	55	Yes
-ST0004	PT00963	PH00963	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00964	PH00964	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00965	PH00965	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00966	PH00966	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00967	PH00967	HP:0012125	 Prostate cancer	Neoplasm	53	Yes
-ST0004	PT00968	PH00968	HP:0012125	 Prostate cancer	Neoplasm	58	Yes
-ST0004	PT00969	PH00969	HP:0012125	 Prostate cancer	Neoplasm	54	Yes
-ST0004	PT00970	PH00970	HP:0012125	 Prostate cancer	Neoplasm	66	Yes
-ST0004	PT00971	PH00971	HP:0012125	 Prostate cancer	Neoplasm	67	Yes
-ST0004	PT00972	PH00972	HP:0012125	 Prostate cancer	Neoplasm	57	Yes
-ST0004	PT00973	PH00973	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00974	PH00974	HP:0012125	 Prostate cancer	Neoplasm	36	Yes
-ST0004	PT00975	PH00975	HP:0012125	 Prostate cancer	Neoplasm	50	Yes
-ST0004	PT00976	PH00976	HP:0012125	 Prostate cancer	Neoplasm	51	Yes
-ST0004	PT00977	PH00977	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00978	PH00978	HP:0012125	 Prostate cancer	Neoplasm	35	Yes
-ST0004	PT00979	PH00979	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00980	PH00980	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00981	PH00981	HP:0012125	 Prostate cancer	Neoplasm	49	Yes
-ST0004	PT00982	PH00982	HP:0012125	 Prostate cancer	Neoplasm	46	Yes
-ST0004	PT00983	PH00983	HP:0012125	 Prostate cancer	Neoplasm	60	Yes
-ST0004	PT00984	PH00984	HP:0012125	 Prostate cancer	Neoplasm	64	Yes
-ST0004	PT00985	PH00985	HP:0012125	 Prostate cancer	Neoplasm	36	Yes
-ST0004	PT00986	PH00986	HP:0012125	 Prostate cancer	Neoplasm	70	Yes
-ST0004	PT00987	PH00987	HP:0012125	 Prostate cancer	Neoplasm	77	Yes
-ST0004	PT00988	PH00988	HP:0012125	 Prostate cancer	Neoplasm	40	Yes
-ST0004	PT00989	PH00989	HP:0012125	 Prostate cancer	Neoplasm	69	Yes
-ST0004	PT00990	PH00990	HP:0012125	 Prostate cancer	Neoplasm	61	Yes
-ST0004	PT00991	PH00991	HP:0012125	 Prostate cancer	Neoplasm	56	Yes
-ST0004	PT00992	PH00992	HP:0012125	 Prostate cancer	Neoplasm	46	Yes
-ST0004	PT00993	PH00993	HP:0012125	 Prostate cancer	Neoplasm	38	Yes
-ST0004	PT00994	PH00994	HP:0012125	 Prostate cancer	Neoplasm	47	Yes
-ST0004	PT00995	PH00995	HP:0012125	 Prostate cancer	Neoplasm	62	Yes
-ST0004	PT00996	PH00996	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00997	PH00997	HP:0012125	 Prostate cancer	Neoplasm	58	Yes
-ST0004	PT00998	PH00998	HP:0012125	 Prostate cancer	Neoplasm	59	Yes
-ST0004	PT00999	PH00999	HP:0012125	 Prostate cancer	Neoplasm	71	Yes
+study_id	submitter_donor_id	submitter_phenotype_id	phenotype_source_text	phenotype_HPO_code	phenotype_HPO_term	phenotype_HPO_category	age_at_phenotype	phenotype_severity	phenotype_observed
+ST0002	PT00408	PH00408	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	12	Borderline	TRUE
+ST0002	PT00427	PH00427	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	4	Mild	TRUE
+ST0002	PT00444	PH00444	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	6	Moderate	TRUE
+ST0002	PT00462	PH00462	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	15	Severe	TRUE
+ST0002	PT00493	PH00493	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	17	Profound	TRUE
+ST0002	PT00526	PH00526	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	8	Mild	TRUE
+ST0002	PT00530	PH00530	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	7	Profound	TRUE
+ST0002	PT00559	PH00559	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	21	Borderline	TRUE
+ST0002	PT00573	PH00573	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	10	Severe	TRUE
+ST0002	PT00625	PH00625	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	6	Moderate	TRUE
+ST0002	PT00626	PH00626	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	12	Severe	TRUE
+ST0003	PT00641	PH00641	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	19	Profound	TRUE
+ST0003	PT00707	PH00707	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	36	Borderline	TRUE
+ST0003	PT00740	PH00740	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	2	Moderate	TRUE
+ST0003	PT00755	PH00755	 Abnormal natural killer cell morphology	HP:0012176	 Abnormal natural killer cell morphology	Abnormality of the immune system	7	Severe	TRUE
+ST0002	PT00557	PH00557	 Abnormality of the rectum	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	14	Mild	TRUE
+ST0003	PT00671	PH00671	 Abnormality of the rectum	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	25	Profound	TRUE
+ST0003	PT00698	PH00698	 Abnormality of the rectum	HP:0002034	 Abnormality of the rectum	Abnormality of the digestive system	17	Severe	TRUE
+ST0001	PT00047	PH00047	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	49	Moderate	TRUE
+ST0001	PT00261	PH00261	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	39	Borderline	TRUE
+ST0001	PT00298	PH00298	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	57	Moderate	TRUE
+ST0002	PT00381	PH00381	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	15	Profound	TRUE
+ST0002	PT00423	PH00423	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	3	Mild	TRUE
+ST0002	PT00425	PH00425	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	9	Moderate	TRUE
+ST0002	PT00439	PH00439	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Borderline	TRUE
+ST0002	PT00490	PH00490	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	14	Profound	TRUE
+ST0002	PT00494	PH00494	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	8	Severe	TRUE
+ST0002	PT00496	PH00496	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Borderline	TRUE
+ST0002	PT00509	PH00509	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	1	Mild	TRUE
+ST0002	PT00543	PH00543	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	5	Mild	TRUE
+ST0002	PT00552	PH00552	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	5	Moderate	TRUE
+ST0002	PT00562	PH00562	 Acute myeloid leukemia	HP:0004808	 Acute myeloid leukemia	Neoplasm	0	Borderline	TRUE
+ST0002	PT00380	PH00380	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	6	Profound	TRUE
+ST0002	PT00441	PH00441	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	1	Mild	TRUE
+ST0002	PT00448	PH00448	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Severe	TRUE
+ST0002	PT00464	PH00464	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	3	Mild	TRUE
+ST0002	PT00486	PH00486	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	20	Severe	TRUE
+ST0002	PT00508	PH00508	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Borderline	TRUE
+ST0002	PT00523	PH00523	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	8	Moderate	TRUE
+ST0002	PT00532	PH00532	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	8	Profound	TRUE
+ST0002	PT00548	PH00548	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	13	Borderline	TRUE
+ST0002	PT00556	PH00556	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	12	Mild	TRUE
+ST0002	PT00574	PH00574	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	7	Moderate	TRUE
+ST0002	PT00576	PH00576	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	4	Moderate	TRUE
+ST0002	PT00589	PH00589	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	2	Profound	TRUE
+ST0002	PT00617	PH00617	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	3	Severe	TRUE
+ST0002	PT00621	PH00621	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	4	Moderate	TRUE
+ST0002	PT00623	PH00623	 Aganglionic megacolon	HP:0002251	 Aganglionic megacolon	Abnormality of the digestive system	19	Borderline	TRUE
+ST0001	PT00028	PH00028	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	54	Moderate	TRUE
+ST0001	PT00106	PH00106	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	41	Profound	TRUE
+ST0001	PT00159	PH00159	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	44	Borderline	TRUE
+ST0001	PT00194	PH00194	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	40	Mild	TRUE
+ST0001	PT00357	PH00357	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	61	Severe	TRUE
+ST0001	PT00364	PH00364	 Alzheimer disease	HP:0002511	 Alzheimer disease	Abnormality of the nervous system	70	Severe	TRUE
+ST0001	PT00026	PH00026	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Profound	TRUE
+ST0001	PT00136	PH00136	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Mild	TRUE
+ST0001	PT00145	PH00145	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	35	Moderate	TRUE
+ST0001	PT00208	PH00208	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	55	Moderate	TRUE
+ST0001	PT00276	PH00276	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	54	Severe	TRUE
+ST0001	PT00282	PH00282	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	56	Moderate	TRUE
+ST0001	PT00305	PH00305	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	40	Severe	TRUE
+ST0001	PT00308	PH00308	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	34	Borderline	TRUE
+ST0001	PT00376	PH00376	 Angina pectoris	HP:0001681	 Angina pectoris	Abnormality of the cardiovascular system	44	Severe	TRUE
+ST0001	PT00116	PH00116	 Astrocytoma	HP:0009592	 Astrocytoma	Neoplasm	68	Profound	TRUE
+ST0002	PT00436	PH00436	 Astrocytoma	HP:0009592	 Astrocytoma	Neoplasm	12	Profound	TRUE
+ST0003	PT00638	PH00638	 Astrocytoma	HP:0009592	 Astrocytoma	Neoplasm	15	Borderline	TRUE
+ST0003	PT00677	PH00677	 Astrocytoma	HP:0009592	 Astrocytoma	Neoplasm	9	Profound	TRUE
+ST0003	PT00800	PH00800	 Astrocytoma	HP:0009592	 Astrocytoma	Neoplasm	7	Mild	TRUE
+ST0001	PT00019	PH00019	 Bipolar affective disorder	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	60	Profound	TRUE
+ST0001	PT00188	PH00188	 Bipolar affective disorder	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	33	Borderline	TRUE
+ST0001	PT00198	PH00198	 Bipolar affective disorder	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	50	Severe	TRUE
+ST0001	PT00267	PH00267	 Bipolar affective disorder	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	51	Moderate	TRUE
+ST0001	PT00335	PH00335	 Bipolar affective disorder	HP:0007302	 Bipolar affective disorder	Abnormality of the nervous system	41	Severe	TRUE
+ST0001	PT00040	PH00040	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	39	Borderline	TRUE
+ST0001	PT00071	PH00071	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	59	Profound	TRUE
+ST0001	PT00199	PH00199	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	31	Mild	TRUE
+ST0001	PT00236	PH00236	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	49	Mild	TRUE
+ST0001	PT00297	PH00297	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	52	Severe	TRUE
+ST0001	PT00351	PH00351	 C3 nephritic factor positivity	HP:0030888	 C3 nephritic factor positivity	Abnormality of the immune system	54	Moderate	TRUE
+ST0001	PT00044	PH00044	 Cardiomyopathy	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	49	Mild	TRUE
+ST0001	PT00138	PH00138	 Cardiomyopathy	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	62	Profound	TRUE
+ST0001	PT00220	PH00220	 Cardiomyopathy	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	64	Profound	TRUE
+ST0001	PT00258	PH00258	 Cardiomyopathy	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	32	Moderate	TRUE
+ST0001	PT00320	PH00320	 Cardiomyopathy	HP:0001638	 Cardiomyopathy	Abnormality of the cardiovascular system	47	Profound	TRUE
+ST0002	PT00388	PH00388	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	16	Mild	TRUE
+ST0002	PT00420	PH00420	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	4	Moderate	TRUE
+ST0002	PT00426	PH00426	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	4	Severe	TRUE
+ST0002	PT00437	PH00437	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	21	Severe	TRUE
+ST0002	PT00467	PH00467	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	16	Profound	TRUE
+ST0002	PT00542	PH00542	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	15	Mild	TRUE
+ST0002	PT00620	PH00620	 Cat cry	HP:0200046	 Cat cry	Abnormality of the voice	11	Borderline	TRUE
+ST0001	PT00053	PH00053	 Cervical spondylosis	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	47	Borderline	TRUE
+ST0001	PT00112	PH00112	 Cervical spondylosis	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	42	Severe	TRUE
+ST0001	PT00187	PH00187	 Cervical spondylosis	HP:0008480	 Cervical spondylosis	Abnormality of the skeletal system	61	Moderate	TRUE
+ST0002	PT00387	PH00387	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	16	Severe	TRUE
+ST0002	PT00409	PH00409	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	1	Profound	TRUE
+ST0002	PT00429	PH00429	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	13	Severe	TRUE
+ST0002	PT00445	PH00445	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	9	Profound	TRUE
+ST0002	PT00497	PH00497	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	11	Mild	TRUE
+ST0002	PT00501	PH00501	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	12	Moderate	TRUE
+ST0002	PT00572	PH00572	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	11	Mild	TRUE
+ST0002	PT00605	PH00605	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	10	Mild	TRUE
+ST0002	PT00612	PH00612	 Cleft palate	HP:0000175	 Cleft palate	Abnormality of head or neck	21	Profound	TRUE
+ST0001	PT00038	PH00038	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	37	Profound	TRUE
+ST0001	PT00087	PH00087	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	59	Borderline	TRUE
+ST0001	PT00132	PH00132	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	51	Severe	TRUE
+ST0001	PT00263	PH00263	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	39	Severe	TRUE
+ST0002	PT00471	PH00471	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	10	Borderline	TRUE
+ST0003	PT00710	PH00710	 Colon cancer	HP:0003003	 Colon cancer	Neoplasm	19	Profound	TRUE
+ST0001	PT00055	PH00055	 Crohn's disease	HP:0100280	 Crohn's disease	Abnormality of the digestive system	60	Mild	TRUE
+ST0001	PT00331	PH00331	 Crohn's disease	HP:0100280	 Crohn's disease	Abnormality of the digestive system	40	Severe	TRUE
+ST0001	PT00166	PH00166	 Diabetes mellitus	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	38	Profound	TRUE
+ST0001	PT00195	PH00195	 Diabetes mellitus	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	48	Borderline	TRUE
+ST0001	PT00210	PH00210	 Diabetes mellitus	HP:0000819	 Diabetes mellitus	Abnormality of the endocrine system	59	Mild	TRUE
+ST0002	PT00393	PH00393	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	12	Profound	TRUE
+ST0002	PT00400	PH00400	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	21	Profound	TRUE
+ST0002	PT00417	PH00417	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	11	Mild	TRUE
+ST0002	PT00456	PH00456	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	6	Borderline	TRUE
+ST0002	PT00482	PH00482	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	10	Borderline	TRUE
+ST0002	PT00504	PH00504	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	7	Moderate	TRUE
+ST0002	PT00537	PH00537	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	7	Borderline	TRUE
+ST0002	PT00561	PH00561	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	8	Borderline	TRUE
+ST0002	PT00624	PH00624	 Duodenal atresia	HP:0002247	 Duodenal atresia	Abnormality of the digestive system	12	Profound	TRUE
+ST0002	PT00379	PH00379	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	15	Borderline	TRUE
+ST0002	PT00390	PH00390	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	18	Moderate	TRUE
+ST0002	PT00405	PH00405	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	5	Profound	TRUE
+ST0002	PT00412	PH00412	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	16	Moderate	TRUE
+ST0002	PT00418	PH00418	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	12	Moderate	TRUE
+ST0002	PT00430	PH00430	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	16	Profound	TRUE
+ST0002	PT00432	PH00432	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	5	Mild	TRUE
+ST0002	PT00449	PH00449	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	2	Profound	TRUE
+ST0002	PT00492	PH00492	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	19	Severe	TRUE
+ST0002	PT00510	PH00510	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	6	Profound	TRUE
+ST0002	PT00531	PH00531	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	18	Mild	TRUE
+ST0002	PT00533	PH00533	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	20	Borderline	TRUE
+ST0002	PT00551	PH00551	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	19	Severe	TRUE
+ST0002	PT00555	PH00555	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	15	Mild	TRUE
+ST0002	PT00590	PH00590	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	14	Borderline	TRUE
+ST0002	PT00594	PH00594	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	0	Borderline	TRUE
+ST0002	PT00602	PH00602	 Encephalocele	HP:0002084	 Encephalocele	Abnormality of the nervous system	4	Mild	TRUE
+ST0001	PT00069	PH00069	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	58	Moderate	TRUE
+ST0001	PT00086	PH00086	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	48	Moderate	TRUE
+ST0001	PT00205	PH00205	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	50	Borderline	TRUE
+ST0001	PT00228	PH00228	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	37	Profound	TRUE
+ST0001	PT00247	PH00247	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	40	Borderline	TRUE
+ST0001	PT00270	PH00270	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	34	Severe	TRUE
+ST0001	PT00345	PH00345	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	62	Severe	TRUE
+ST0001	PT00373	PH00373	 Endocarditis	HP:0100584	 Endocarditis	Abnormality of the cardiovascular system	55	Severe	TRUE
+ST0003	PT00779	PH00779	 Enlarged tonsil	HP:0030812	 Enlarged tonsil	Abnormality of the immune system	25	Borderline	TRUE
+ST0003	PT00815	PH00815	 Enlarged tonsil	HP:0030812	 Enlarged tonsil	Abnormality of the immune system	5	Severe	TRUE
+ST0002	PT00401	PH00401	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	2	Borderline	TRUE
+ST0002	PT00450	PH00450	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	14	Mild	TRUE
+ST0002	PT00463	PH00463	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	0	Severe	TRUE
+ST0002	PT00470	PH00470	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	14	Borderline	TRUE
+ST0002	PT00535	PH00535	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	8	Profound	TRUE
+ST0002	PT00536	PH00536	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	19	Mild	TRUE
+ST0002	PT00546	PH00546	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	21	Borderline	TRUE
+ST0002	PT00568	PH00568	 Entropion	HP:0000621	 Entropion	Abnormality of head or neck	10	Borderline	TRUE
+ST0001	PT00204	PH00204	 Ependymoma	HP:0002888	 Ependymoma	Abnormality of the nervous system	58	Profound	TRUE
+ST0002	PT00599	PH00599	 Ependymoma	HP:0002888	 Ependymoma	Abnormality of the nervous system	1	Borderline	TRUE
+ST0002	PT00610	PH00610	 Ependymoma	HP:0002888	 Ependymoma	Abnormality of the nervous system	9	Borderline	TRUE
+ST0003	PT00743	PH00743	 Ependymoma	HP:0002888	 Ependymoma	Abnormality of the nervous system	37	Borderline	TRUE
+ST0001	PT00005	PH00005	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	36	Moderate	TRUE
+ST0001	PT00029	PH00029	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	59	Moderate	TRUE
+ST0001	PT00091	PH00091	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	44	Severe	TRUE
+ST0001	PT00299	PH00299	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	62	Profound	TRUE
+ST0001	PT00312	PH00312	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	56	Moderate	TRUE
+ST0001	PT00319	PH00319	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	41	Moderate	TRUE
+ST0001	PT00374	PH00374	 Facet joint arthrosis	HP:0030871	 Facet joint arthrosis	Abnormality of the skeletal system	37	Mild	TRUE
+ST0001	PT00014	PH00014	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	63	Mild	TRUE
+ST0001	PT00119	PH00119	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	43	Profound	TRUE
+ST0002	PT00378	PH00378	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	9	Moderate	TRUE
+ST0002	PT00407	PH00407	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	2	Mild	TRUE
+ST0002	PT00411	PH00411	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	7	Profound	TRUE
+ST0002	PT00451	PH00451	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	7	Mild	TRUE
+ST0002	PT00458	PH00458	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	11	Profound	TRUE
+ST0002	PT00474	PH00474	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	18	Moderate	TRUE
+ST0002	PT00506	PH00506	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	16	Severe	TRUE
+ST0002	PT00514	PH00514	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	13	Mild	TRUE
+ST0002	PT00550	PH00550	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	1	Severe	TRUE
+ST0002	PT00606	PH00606	 Glaucoma	HP:0000501	 Glaucoma	Abnormality of the eye	21	Severe	TRUE
+ST0001	PT00031	PH00031	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	41	Severe	TRUE
+ST0001	PT00153	PH00153	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Borderline	TRUE
+ST0001	PT00227	PH00227	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	62	Profound	TRUE
+ST0001	PT00253	PH00253	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	38	Borderline	TRUE
+ST0001	PT00337	PH00337	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	32	Moderate	TRUE
+ST0001	PT00355	PH00355	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Moderate	TRUE
+ST0002	PT00383	PH00383	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	7	Borderline	TRUE
+ST0002	PT00399	PH00399	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	15	Moderate	TRUE
+ST0002	PT00525	PH00525	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	8	Mild	TRUE
+ST0002	PT00540	PH00540	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	1	Profound	TRUE
+ST0002	PT00565	PH00565	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	6	Severe	TRUE
+ST0002	PT00581	PH00581	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	0	Borderline	TRUE
+ST0002	PT00587	PH00587	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	14	Moderate	TRUE
+ST0003	PT00749	PH00749	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	32	Moderate	TRUE
+ST0003	PT00797	PH00797	 Hodgkin lymphoma	HP:0012189	 Hodgkin lymphoma	Neoplasm	42	Severe	TRUE
+ST0001	PT00024	PH00024	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	47	Profound	TRUE
+ST0001	PT00147	PH00147	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	36	Borderline	TRUE
+ST0001	PT00179	PH00179	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	60	Mild	TRUE
+ST0001	PT00229	PH00229	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	55	Moderate	TRUE
+ST0001	PT00245	PH00245	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	42	Mild	TRUE
+ST0001	PT00249	PH00249	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	37	Profound	TRUE
+ST0001	PT00281	PH00281	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	63	Profound	TRUE
+ST0001	PT00292	PH00292	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	52	Profound	TRUE
+ST0001	PT00333	PH00333	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	63	Severe	TRUE
+ST0001	PT00338	PH00338	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	37	Profound	TRUE
+ST0001	PT00340	PH00340	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	57	Borderline	TRUE
+ST0001	PT00375	PH00375	 Hypertension	HP:0000822	 Hypertension	Abnormality of the cardiovascular system	52	Moderate	TRUE
+ST0002	PT00434	PH00434	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	9	Moderate	TRUE
+ST0002	PT00440	PH00440	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	5	Mild	TRUE
+ST0002	PT00442	PH00442	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	7	Profound	TRUE
+ST0002	PT00455	PH00455	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	15	Borderline	TRUE
+ST0002	PT00469	PH00469	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	1	Profound	TRUE
+ST0002	PT00524	PH00524	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	15	Mild	TRUE
+ST0002	PT00608	PH00608	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	21	Borderline	TRUE
+ST0002	PT00618	PH00618	 Intellectual disability mild	HP:0001256	 Intellectual disability mild	Abnormality of the nervous system	10	Mild	TRUE
+ST0002	PT00516	PH00516	 Laryngeal hypoplasia	HP:0008749	 Laryngeal hypoplasia	Abnormality of the respiratory system	8	Severe	TRUE
+ST0002	PT00539	PH00539	 Laryngeal hypoplasia	HP:0008749	 Laryngeal hypoplasia	Abnormality of the respiratory system	13	Borderline	TRUE
+ST0001	PT00321	PH00321	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	44	Moderate	TRUE
+ST0002	PT00386	PH00386	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	1	Profound	TRUE
+ST0002	PT00413	PH00413	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	15	Profound	TRUE
+ST0002	PT00431	PH00431	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	18	Mild	TRUE
+ST0002	PT00435	PH00435	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	20	Profound	TRUE
+ST0002	PT00447	PH00447	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	17	Moderate	TRUE
+ST0002	PT00457	PH00457	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	9	Profound	TRUE
+ST0002	PT00515	PH00515	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	2	Moderate	TRUE
+ST0002	PT00586	PH00586	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	20	Profound	TRUE
+ST0002	PT00593	PH00593	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	0	Borderline	TRUE
+ST0002	PT00619	PH00619	 Lymphoma	HP:0002665	 Lymphoma	Neoplasm	7	Mild	TRUE
+ST0002	PT00396	PH00396	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Severe	TRUE
+ST0002	PT00406	PH00406	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	4	Profound	TRUE
+ST0002	PT00414	PH00414	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	19	Borderline	TRUE
+ST0002	PT00433	PH00433	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	4	Moderate	TRUE
+ST0002	PT00477	PH00477	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	2	Severe	TRUE
+ST0002	PT00479	PH00479	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	9	Mild	TRUE
+ST0002	PT00483	PH00483	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Moderate	TRUE
+ST0002	PT00500	PH00500	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	18	Profound	TRUE
+ST0002	PT00511	PH00511	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	12	Borderline	TRUE
+ST0002	PT00529	PH00529	 Macrocephaly	HP:0000256	 Macrocephaly	Abnormality of head or neck	20	Borderline	TRUE
+ST0002	PT00398	PH00398	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	16	Moderate	TRUE
+ST0002	PT00402	PH00402	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	3	Profound	TRUE
+ST0002	PT00419	PH00419	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Borderline	TRUE
+ST0002	PT00422	PH00422	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Profound	TRUE
+ST0002	PT00446	PH00446	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	12	Severe	TRUE
+ST0002	PT00466	PH00466	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	17	Moderate	TRUE
+ST0002	PT00491	PH00491	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	6	Profound	TRUE
+ST0002	PT00522	PH00522	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	9	Profound	TRUE
+ST0002	PT00558	PH00558	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	15	Severe	TRUE
+ST0002	PT00570	PH00570	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	20	Moderate	TRUE
+ST0002	PT00585	PH00585	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	21	Severe	TRUE
+ST0002	PT00596	PH00596	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	0	Mild	TRUE
+ST0002	PT00611	PH00611	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	0	Moderate	TRUE
+ST0002	PT00614	PH00614	 Macroglossia	HP:0000158	 Macroglossia	Abnormality of head or neck	13	Severe	TRUE
+ST0001	PT00262	PH00262	 Medullary thyroid carcinoma	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	35	Moderate	TRUE
+ST0001	PT00371	PH00371	 Medullary thyroid carcinoma	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	54	Profound	TRUE
+ST0003	PT00782	PH00782	 Medullary thyroid carcinoma	HP:0002865	 Medullary thyroid carcinoma	Neoplasm	40	Severe	TRUE
+ST0003	PT00794	PH00794	 Melanoma	HP:0002861	 Melanoma	Neoplasm	29	Profound	TRUE
+ST0001	PT00007	PH00007	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	41	Mild	TRUE
+ST0001	PT00102	PH00102	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	56	Borderline	TRUE
+ST0001	PT00164	PH00164	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	68	Moderate	TRUE
+ST0001	PT00232	PH00232	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	53	Moderate	TRUE
+ST0001	PT00255	PH00255	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	58	Profound	TRUE
+ST0001	PT00300	PH00300	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	49	Profound	TRUE
+ST0001	PT00301	PH00301	 Meningitis	HP:0001287	 Meningitis	Abnormality of the nervous system	36	Mild	TRUE
+ST0002	PT00395	PH00395	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	3	Mild	TRUE
+ST0002	PT00416	PH00416	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	14	Mild	TRUE
+ST0002	PT00475	PH00475	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	17	Moderate	TRUE
+ST0002	PT00489	PH00489	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	13	Moderate	TRUE
+ST0002	PT00518	PH00518	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	10	Moderate	TRUE
+ST0002	PT00538	PH00538	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	8	Mild	TRUE
+ST0002	PT00544	PH00544	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	18	Borderline	TRUE
+ST0002	PT00545	PH00545	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	17	Moderate	TRUE
+ST0002	PT00560	PH00560	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	15	Profound	TRUE
+ST0002	PT00583	PH00583	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	12	Mild	TRUE
+ST0002	PT00597	PH00597	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	3	Moderate	TRUE
+ST0002	PT00604	PH00604	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	8	Borderline	TRUE
+ST0002	PT00607	PH00607	 Microcephaly	HP:0000252	 Microcephaly	Abnormality of head or neck	15	Borderline	TRUE
+ST0002	PT00468	PH00468	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	5	Mild	TRUE
+ST0002	PT00478	PH00478	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	2	Severe	TRUE
+ST0002	PT00487	PH00487	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	13	Moderate	TRUE
+ST0002	PT00571	PH00571	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	8	Mild	TRUE
+ST0002	PT00575	PH00575	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	4	Mild	TRUE
+ST0002	PT00578	PH00578	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	5	Severe	TRUE
+ST0002	PT00595	PH00595	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	11	Severe	TRUE
+ST0002	PT00598	PH00598	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	2	Profound	TRUE
+ST0002	PT00603	PH00603	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	17	Moderate	TRUE
+ST0002	PT00622	PH00622	 Microtia	HP:0008551	 Microtia	Abnormality of the ear	17	Profound	TRUE
+ST0001	PT00003	PH00003	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	37	Moderate	TRUE
+ST0001	PT00052	PH00052	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	55	Mild	TRUE
+ST0001	PT00117	PH00117	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	57	Profound	TRUE
+ST0001	PT00191	PH00191	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	47	Profound	TRUE
+ST0001	PT00196	PH00196	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	39	Moderate	TRUE
+ST0001	PT00323	PH00323	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	51	Mild	TRUE
+ST0001	PT00346	PH00346	 Mitral valve prolapse	HP:0001634	 Mitral valve prolapse	Abnormality of the cardiovascular system	54	Mild	TRUE
+ST0001	PT00084	PH00084	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	52	Mild	TRUE
+ST0001	PT00155	PH00155	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	57	Severe	TRUE
+ST0001	PT00212	PH00212	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	60	Severe	TRUE
+ST0001	PT00260	PH00260	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	41	Mild	TRUE
+ST0003	PT00647	PH00647	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	9	Borderline	TRUE
+ST0003	PT00713	PH00713	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	27	Moderate	TRUE
+ST0003	PT00734	PH00734	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	48	Borderline	TRUE
+ST0003	PT00791	PH00791	 Multiple myeloma	HP:0006775	 Multiple myeloma	Neoplasm	10	Mild	TRUE
+ST0001	PT00001	PH00001	 Myocardial infarction	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	63	Mild	TRUE
+ST0001	PT00034	PH00034	 Myocardial infarction	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	51	Moderate	TRUE
+ST0001	PT00279	PH00279	 Myocardial infarction	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	63	Moderate	TRUE
+ST0001	PT00367	PH00367	 Myocardial infarction	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	54	Borderline	TRUE
+ST0001	PT00161	PH00161	 Myositis	HP:0100614	 Myositis	Abnormality of the musculature	38	Severe	TRUE
+ST0001	PT00275	PH00275	 Myositis	HP:0100614	 Myositis	Abnormality of the musculature	56	Mild	TRUE
+ST0001	PT00306	PH00306	 Myositis	HP:0100614	 Myositis	Abnormality of the musculature	57	Mild	TRUE
+ST0001	PT00035	PH00035	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	40	Borderline	TRUE
+ST0001	PT00062	PH00062	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	47	Profound	TRUE
+ST0001	PT00066	PH00066	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	36	Mild	TRUE
+ST0001	PT00068	PH00068	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	58	Severe	TRUE
+ST0001	PT00169	PH00169	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	63	Severe	TRUE
+ST0001	PT00172	PH00172	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	52	Borderline	TRUE
+ST0001	PT00209	PH00209	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	49	Borderline	TRUE
+ST0001	PT00238	PH00238	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	42	Profound	TRUE
+ST0001	PT00284	PH00284	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	56	Profound	TRUE
+ST0001	PT00290	PH00290	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	37	Profound	TRUE
+ST0001	PT00358	PH00358	 Neoplasm of the breast	HP:0100013	 Neoplasm of the breast	Neoplasm	32	Profound	TRUE
+ST0001	PT00041	PH00041	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	49	Mild	TRUE
+ST0001	PT00060	PH00060	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	48	Severe	TRUE
+ST0001	PT00146	PH00146	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	61	Severe	TRUE
+ST0001	PT00152	PH00152	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	56	Moderate	TRUE
+ST0001	PT00171	PH00171	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	45	Borderline	TRUE
+ST0001	PT00177	PH00177	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	46	Profound	TRUE
+ST0001	PT00207	PH00207	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	64	Profound	TRUE
+ST0001	PT00213	PH00213	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	39	Borderline	TRUE
+ST0001	PT00291	PH00291	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	66	Mild	TRUE
+ST0002	PT00428	PH00428	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	1	Profound	TRUE
+ST0003	PT00635	PH00635	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	16	Borderline	TRUE
+ST0003	PT00683	PH00683	 Neoplasm of the pancreas	HP:0002894	 Neoplasm of the pancreas	Neoplasm	28	Mild	TRUE
+ST0001	PT00017	PH00017	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	52	Profound	TRUE
+ST0001	PT00104	PH00104	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	38	Borderline	TRUE
+ST0001	PT00135	PH00135	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	53	Borderline	TRUE
+ST0001	PT00151	PH00151	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	46	Profound	TRUE
+ST0001	PT00218	PH00218	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	43	Mild	TRUE
+ST0001	PT00317	PH00317	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	69	Severe	TRUE
+ST0001	PT00362	PH00362	 Nephrotic syndrome	HP:0000100	 Nephrotic syndrome	Abnormality of the genitourinary system	32	Mild	TRUE
+ST0001	PT00139	PH00139	 Non-medullary thyroid carcinoma	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	60	Profound	TRUE
+ST0001	PT00144	PH00144	 Non-medullary thyroid carcinoma	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	67	Severe	TRUE
+ST0002	PT00527	PH00527	 Non-medullary thyroid carcinoma	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	1	Severe	TRUE
+ST0003	PT00776	PH00776	 Non-medullary thyroid carcinoma	HP:0040198	 Non-medullary thyroid carcinoma	Neoplasm	17	Borderline	TRUE
+ST0001	PT00073	PH00073	 Non-small cell lung carcinoma	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	54	Severe	TRUE
+ST0001	PT00157	PH00157	 Non-small cell lung carcinoma	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	54	Profound	TRUE
+ST0003	PT00650	PH00650	 Non-small cell lung carcinoma	HP:0030358	 Non-small cell lung carcinoma	Neoplasm	24	Mild	TRUE
+ST0001	PT00002	PH00002	 Obesity	HP:0001513	 Obesity	Growth abnormality	52	Severe	TRUE
+ST0001	PT00004	PH00004	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Profound	TRUE
+ST0001	PT00011	PH00011	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Borderline	TRUE
+ST0001	PT00012	PH00012	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Borderline	TRUE
+ST0001	PT00013	PH00013	 Obesity	HP:0001513	 Obesity	Growth abnormality	61	Mild	TRUE
+ST0001	PT00014	PH00016	 Obesity	HP:0025031	 Abnormality of the digestive system	Abnormality of the digestive system	54	Mild	No
+ST0001	PT00018	PH00018	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Borderline	TRUE
+ST0001	PT00021	PH00021	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Profound	TRUE
+ST0001	PT00025	PH00025	 Obesity	HP:0001513	 Obesity	Growth abnormality	38	Profound	TRUE
+ST0001	PT00030	PH00030	 Obesity	HP:0001513	 Obesity	Growth abnormality	53	Severe	TRUE
+ST0001	PT00032	PH00032	 Obesity	HP:0001513	 Obesity	Growth abnormality	66	Profound	TRUE
+ST0001	PT00036	PH00036	 Obesity	HP:0001513	 Obesity	Growth abnormality	60	Borderline	TRUE
+ST0001	PT00037	PH00037	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Borderline	TRUE
+ST0001	PT00039	PH00039	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Moderate	TRUE
+ST0001	PT00042	PH00042	 Obesity	HP:0001513	 Obesity	Growth abnormality	48	Mild	TRUE
+ST0001	PT00046	PH00046	 Obesity	HP:0001513	 Obesity	Growth abnormality	64	Borderline	TRUE
+ST0001	PT00049	PH00049	 Obesity	HP:0001513	 Obesity	Growth abnormality	59	Moderate	TRUE
+ST0001	PT00056	PH00056	 Obesity	HP:0001513	 Obesity	Growth abnormality	60	Borderline	TRUE
+ST0001	PT00058	PH00058	 Obesity	HP:0001513	 Obesity	Growth abnormality	50	Severe	TRUE
+ST0001	PT00061	PH00061	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Borderline	TRUE
+ST0001	PT00063	PH00063	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Borderline	TRUE
+ST0001	PT00065	PH00065	 Obesity	HP:0001513	 Obesity	Growth abnormality	53	Severe	TRUE
+ST0001	PT00067	PH00067	 Obesity	HP:0001513	 Obesity	Growth abnormality	38	Severe	TRUE
+ST0001	PT00070	PH00070	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Profound	TRUE
+ST0001	PT00072	PH00072	 Obesity	HP:0001513	 Obesity	Growth abnormality	58	Mild	TRUE
+ST0001	PT00074	PH00074	 Obesity	HP:0001513	 Obesity	Growth abnormality	60	Mild	TRUE
+ST0001	PT00078	PH00078	 Obesity	HP:0001513	 Obesity	Growth abnormality	65	Severe	TRUE
+ST0001	PT00079	PH00079	 Obesity	HP:0001513	 Obesity	Growth abnormality	64	Mild	TRUE
+ST0001	PT00081	PH00081	 Obesity	HP:0001513	 Obesity	Growth abnormality	43	Moderate	TRUE
+ST0001	PT00082	PH00082	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Severe	TRUE
+ST0001	PT00088	PH00088	 Obesity	HP:0001513	 Obesity	Growth abnormality	57	Moderate	TRUE
+ST0001	PT00090	PH00090	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Moderate	TRUE
+ST0001	PT00094	PH00094	 Obesity	HP:0001513	 Obesity	Growth abnormality	70	Borderline	TRUE
+ST0001	PT00095	PH00095	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Borderline	TRUE
+ST0001	PT00096	PH00096	 Obesity	HP:0001513	 Obesity	Growth abnormality	41	Profound	TRUE
+ST0001	PT00097	PH00097	 Obesity	HP:0001513	 Obesity	Growth abnormality	39	Moderate	TRUE
+ST0001	PT00098	PH00098	 Obesity	HP:0001513	 Obesity	Growth abnormality	51	Profound	TRUE
+ST0001	PT00101	PH00101	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Profound	TRUE
+ST0001	PT00105	PH00105	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Moderate	TRUE
+ST0001	PT00107	PH00107	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Borderline	TRUE
+ST0001	PT00110	PH00110	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Borderline	TRUE
+ST0001	PT00111	PH00111	 Obesity	HP:0001513	 Obesity	Growth abnormality	67	Severe	TRUE
+ST0001	PT00114	PH00114	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Mild	TRUE
+ST0001	PT00118	PH00118	 Obesity	HP:0001513	 Obesity	Growth abnormality	50	Profound	TRUE
+ST0001	PT00120	PH00120	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Borderline	TRUE
+ST0001	PT00121	PH00121	 Obesity	HP:0001513	 Obesity	Growth abnormality	46	Moderate	TRUE
+ST0001	PT00122	PH00122	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Borderline	TRUE
+ST0001	PT00123	PH00123	 Obesity	HP:0001513	 Obesity	Growth abnormality	41	Moderate	TRUE
+ST0001	PT00125	PH00125	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Borderline	TRUE
+ST0001	PT00126	PH00126	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Moderate	TRUE
+ST0001	PT00128	PH00128	 Obesity	HP:0001513	 Obesity	Growth abnormality	58	Profound	TRUE
+ST0001	PT00129	PH00129	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Mild	TRUE
+ST0001	PT00134	PH00134	 Obesity	HP:0001513	 Obesity	Growth abnormality	54	Moderate	TRUE
+ST0001	PT00140	PH00140	 Obesity	HP:0001513	 Obesity	Growth abnormality	40	Moderate	TRUE
+ST0001	PT00143	PH00143	 Obesity	HP:0001513	 Obesity	Growth abnormality	38	Profound	TRUE
+ST0001	PT00150	PH00150	 Obesity	HP:0001513	 Obesity	Growth abnormality	40	Mild	TRUE
+ST0001	PT00154	PH00154	 Obesity	HP:0001513	 Obesity	Growth abnormality	43	Severe	TRUE
+ST0001	PT00156	PH00156	 Obesity	HP:0001513	 Obesity	Growth abnormality	67	Mild	TRUE
+ST0001	PT00158	PH00158	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Severe	TRUE
+ST0001	PT00162	PH00162	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Severe	TRUE
+ST0001	PT00168	PH00168	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Mild	TRUE
+ST0001	PT00170	PH00170	 Obesity	HP:0001513	 Obesity	Growth abnormality	49	Severe	TRUE
+ST0001	PT00174	PH00174	 Obesity	HP:0001513	 Obesity	Growth abnormality	56	Mild	TRUE
+ST0001	PT00176	PH00176	 Obesity	HP:0001513	 Obesity	Growth abnormality	61	Borderline	TRUE
+ST0001	PT00178	PH00178	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Severe	TRUE
+ST0001	PT00180	PH00180	 Obesity	HP:0001513	 Obesity	Growth abnormality	49	Profound	TRUE
+ST0001	PT00182	PH00182	 Obesity	HP:0001513	 Obesity	Growth abnormality	61	Profound	TRUE
+ST0001	PT00183	PH00183	 Obesity	HP:0001513	 Obesity	Growth abnormality	60	Severe	TRUE
+ST0001	PT00184	PH00184	 Obesity	HP:0001513	 Obesity	Growth abnormality	63	Mild	TRUE
+ST0001	PT00185	PH00185	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Profound	TRUE
+ST0001	PT00193	PH00193	 Obesity	HP:0001513	 Obesity	Growth abnormality	69	Profound	TRUE
+ST0001	PT00203	PH00203	 Obesity	HP:0001513	 Obesity	Growth abnormality	50	Mild	TRUE
+ST0001	PT00206	PH00206	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Profound	TRUE
+ST0001	PT00215	PH00215	 Obesity	HP:0001513	 Obesity	Growth abnormality	29	Borderline	TRUE
+ST0001	PT00216	PH00216	 Obesity	HP:0001513	 Obesity	Growth abnormality	63	Mild	TRUE
+ST0001	PT00217	PH00217	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Mild	TRUE
+ST0001	PT00219	PH00219	 Obesity	HP:0001513	 Obesity	Growth abnormality	61	Profound	TRUE
+ST0001	PT00221	PH00221	 Obesity	HP:0001513	 Obesity	Growth abnormality	63	Moderate	TRUE
+ST0001	PT00224	PH00224	 Obesity	HP:0001513	 Obesity	Growth abnormality	51	Severe	TRUE
+ST0001	PT00225	PH00225	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Severe	TRUE
+ST0001	PT00226	PH00226	 Obesity	HP:0001513	 Obesity	Growth abnormality	29	Moderate	TRUE
+ST0001	PT00231	PH00231	 Obesity	HP:0001513	 Obesity	Growth abnormality	48	Profound	TRUE
+ST0001	PT00234	PH00234	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Moderate	TRUE
+ST0001	PT00237	PH00237	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Borderline	TRUE
+ST0001	PT00240	PH00240	 Obesity	HP:0001513	 Obesity	Growth abnormality	49	Moderate	TRUE
+ST0001	PT00242	PH00242	 Obesity	HP:0001513	 Obesity	Growth abnormality	54	Moderate	TRUE
+ST0001	PT00243	PH00243	 Obesity	HP:0001513	 Obesity	Growth abnormality	52	Mild	TRUE
+ST0001	PT00244	PH00244	 Obesity	HP:0001513	 Obesity	Growth abnormality	51	Borderline	TRUE
+ST0001	PT00250	PH00250	 Obesity	HP:0001513	 Obesity	Growth abnormality	31	Profound	TRUE
+ST0001	PT00257	PH00257	 Obesity	HP:0001513	 Obesity	Growth abnormality	48	Moderate	TRUE
+ST0001	PT00259	PH00259	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Mild	TRUE
+ST0001	PT00264	PH00264	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Mild	TRUE
+ST0001	PT00265	PH00265	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Profound	TRUE
+ST0001	PT00266	PH00266	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Severe	TRUE
+ST0001	PT00268	PH00268	 Obesity	HP:0001513	 Obesity	Growth abnormality	66	Profound	TRUE
+ST0001	PT00269	PH00269	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Mild	TRUE
+ST0001	PT00271	PH00271	 Obesity	HP:0001513	 Obesity	Growth abnormality	39	Severe	TRUE
+ST0001	PT00272	PH00272	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Profound	TRUE
+ST0001	PT00273	PH00273	 Obesity	HP:0001513	 Obesity	Growth abnormality	41	Mild	TRUE
+ST0001	PT00278	PH00278	 Obesity	HP:0001513	 Obesity	Growth abnormality	38	Severe	TRUE
+ST0001	PT00286	PH00286	 Obesity	HP:0001513	 Obesity	Growth abnormality	69	Borderline	TRUE
+ST0001	PT00289	PH00289	 Obesity	HP:0001513	 Obesity	Growth abnormality	64	Profound	TRUE
+ST0001	PT00295	PH00295	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Borderline	TRUE
+ST0001	PT00296	PH00296	 Obesity	HP:0001513	 Obesity	Growth abnormality	57	Profound	TRUE
+ST0001	PT00303	PH00303	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Severe	TRUE
+ST0001	PT00304	PH00304	 Obesity	HP:0001513	 Obesity	Growth abnormality	42	Borderline	TRUE
+ST0001	PT00307	PH00307	 Obesity	HP:0001513	 Obesity	Growth abnormality	54	Mild	TRUE
+ST0001	PT00310	PH00310	 Obesity	HP:0001513	 Obesity	Growth abnormality	62	Mild	TRUE
+ST0001	PT00311	PH00311	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Mild	TRUE
+ST0001	PT00313	PH00313	 Obesity	HP:0001513	 Obesity	Growth abnormality	60	Moderate	TRUE
+ST0001	PT00314	PH00314	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Severe	TRUE
+ST0001	PT00318	PH00318	 Obesity	HP:0001513	 Obesity	Growth abnormality	43	Borderline	TRUE
+ST0001	PT00324	PH00324	 Obesity	HP:0001513	 Obesity	Growth abnormality	55	Borderline	TRUE
+ST0001	PT00326	PH00326	 Obesity	HP:0001513	 Obesity	Growth abnormality	40	Mild	TRUE
+ST0001	PT00327	PH00327	 Obesity	HP:0001513	 Obesity	Growth abnormality	56	Moderate	TRUE
+ST0001	PT00330	PH00330	 Obesity	HP:0001513	 Obesity	Growth abnormality	50	Borderline	TRUE
+ST0001	PT00334	PH00334	 Obesity	HP:0001513	 Obesity	Growth abnormality	47	Borderline	TRUE
+ST0001	PT00336	PH00336	 Obesity	HP:0001513	 Obesity	Growth abnormality	46	Severe	TRUE
+ST0001	PT00342	PH00342	 Obesity	HP:0001513	 Obesity	Growth abnormality	58	Mild	TRUE
+ST0001	PT00343	PH00343	 Obesity	HP:0001513	 Obesity	Growth abnormality	43	Mild	TRUE
+ST0001	PT00344	PH00344	 Obesity	HP:0001513	 Obesity	Growth abnormality	54	Severe	TRUE
+ST0001	PT00347	PH00347	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Borderline	TRUE
+ST0001	PT00349	PH00349	 Obesity	HP:0001513	 Obesity	Growth abnormality	51	Moderate	TRUE
+ST0001	PT00352	PH00352	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Profound	TRUE
+ST0001	PT00354	PH00354	 Obesity	HP:0001513	 Obesity	Growth abnormality	39	Moderate	TRUE
+ST0001	PT00359	PH00359	 Obesity	HP:0001513	 Obesity	Growth abnormality		Moderate	FALSE
+ST0001	PT00361	PH00361	 Obesity	HP:0001513	 Obesity	Growth abnormality	56	Severe	TRUE
+ST0001	PT00368	PH00368	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Borderline	TRUE
+ST0001	PT00369	PH00369	 Obesity	HP:0001513	 Obesity	Growth abnormality	62	Profound	TRUE
+ST0001	PT00372	PH00372	 Obesity	HP:0001513	 Obesity	Growth abnormality	41	Borderline	TRUE
+ST0002	PT00382	PH00382	 Obesity	HP:0001513	 Obesity	Growth abnormality	19	Profound	TRUE
+ST0002	PT00404	PH00404	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Mild	TRUE
+ST0002	PT00415	PH00415	 Obesity	HP:0001513	 Obesity	Growth abnormality	19	Borderline	TRUE
+ST0002	PT00421	PH00421	 Obesity	HP:0001513	 Obesity	Growth abnormality	16	Profound	TRUE
+ST0002	PT00443	PH00443	 Obesity	HP:0001513	 Obesity	Growth abnormality	14	Severe	TRUE
+ST0002	PT00454	PH00454	 Obesity	HP:0001513	 Obesity	Growth abnormality	16	Moderate	TRUE
+ST0002	PT00465	PH00465	 Obesity	HP:0001513	 Obesity	Growth abnormality	21	Mild	TRUE
+ST0002	PT00473	PH00473	 Obesity	HP:0001513	 Obesity	Growth abnormality	10	Mild	TRUE
+ST0002	PT00488	PH00488	 Obesity	HP:0001513	 Obesity	Growth abnormality	17	Moderate	TRUE
+ST0002	PT00505	PH00505	 Obesity	HP:0001513	 Obesity	Growth abnormality	18	Borderline	TRUE
+ST0002	PT00512	PH00512	 Obesity	HP:0001513	 Obesity	Growth abnormality	18	Borderline	TRUE
+ST0002	PT00520	PH00520	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Borderline	TRUE
+ST0002	PT00521	PH00521	 Obesity	HP:0001513	 Obesity	Growth abnormality	17	Moderate	TRUE
+ST0002	PT00534	PH00534	 Obesity	HP:0001513	 Obesity	Growth abnormality	19	Moderate	TRUE
+ST0002	PT00553	PH00553	 Obesity	HP:0001513	 Obesity	Growth abnormality	18	Moderate	TRUE
+ST0002	PT00566	PH00566	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Profound	TRUE
+ST0002	PT00577	PH00577	 Obesity	HP:0001513	 Obesity	Growth abnormality	16	Moderate	TRUE
+ST0002	PT00582	PH00582	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Borderline	TRUE
+ST0002	PT00600	PH00600	 Obesity	HP:0001513	 Obesity	Growth abnormality	0	Mild	TRUE
+ST0002	PT00601	PH00601	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Borderline	TRUE
+ST0002	PT00613	PH00613	 Obesity	HP:0001513	 Obesity	Growth abnormality	21	Mild	TRUE
+ST0003	PT00629	PH00629	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Moderate	TRUE
+ST0003	PT00632	PH00632	 Obesity	HP:0001513	 Obesity	Growth abnormality	23	Borderline	TRUE
+ST0003	PT00644	PH00644	 Obesity	HP:0001513	 Obesity	Growth abnormality	12	Mild	TRUE
+ST0003	PT00668	PH00668	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Mild	TRUE
+ST0003	PT00680	PH00680	 Obesity	HP:0001513	 Obesity	Growth abnormality	28	Moderate	TRUE
+ST0003	PT00692	PH00692	 Obesity	HP:0001513	 Obesity	Growth abnormality	21	Severe	TRUE
+ST0003	PT00695	PH00695	 Obesity	HP:0001513	 Obesity	Growth abnormality	46	Mild	TRUE
+ST0003	PT00701	PH00701	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Profound	TRUE
+ST0003	PT00714	PH00714	 Obesity	HP:0001513	 Obesity	Growth abnormality		Mild	FALSE
+ST0003	PT00716	PH00716	 Obesity	HP:0001513	 Obesity	Growth abnormality	42	Profound	TRUE
+ST0003	PT00722	PH00722	 Obesity	HP:0001513	 Obesity	Growth abnormality	30	Profound	TRUE
+ST0003	PT00725	PH00725	 Obesity	HP:0001513	 Obesity	Growth abnormality	45	Moderate	TRUE
+ST0003	PT00737	PH00737	 Obesity	HP:0001513	 Obesity	Growth abnormality	43	Moderate	TRUE
+ST0003	PT00752	PH00752	 Obesity	HP:0001513	 Obesity	Growth abnormality	19	Profound	TRUE
+ST0003	PT00758	PH00758	 Obesity	HP:0001513	 Obesity	Growth abnormality	29	Moderate	TRUE
+ST0003	PT00764	PH00764	 Obesity	HP:0001513	 Obesity	Growth abnormality	25	Profound	TRUE
+ST0003	PT00767	PH00767	 Obesity	HP:0001513	 Obesity	Growth abnormality	15	Profound	TRUE
+ST0003	PT00806	PH00806	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Profound	TRUE
+ST0003	PT00818	PH00818	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Severe	TRUE
+ST0001	PT00133	PH00133	 Optic nerve tram-track sign	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	34	Severe	TRUE
+ST0002	PT00438	PH00438	 Optic nerve tram-track sign	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	21	Severe	TRUE
+ST0003	PT00770	PH00770	 Optic nerve tram-track sign	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	1	Borderline	TRUE
+ST0003	PT00773	PH00773	 Optic nerve tram-track sign	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	17	Profound	TRUE
+ST0003	PT00821	PH00821	 Optic nerve tram-track sign	HP:0032270	 Optic nerve tram-track sign	Abnormality of the eye	33	Mild	TRUE
+ST0002	PT00384	PH00384	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	16	Mild	TRUE
+ST0002	PT00528	PH00528	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	6	Moderate	TRUE
+ST0002	PT00580	PH00580	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	0	Moderate	TRUE
+ST0003	PT00728	PH00728	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	21	Moderate	TRUE
+ST0003	PT00761	PH00761	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	16	Borderline	TRUE
+ST0003	PT00785	PH00785	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	19	Mild	TRUE
+ST0003	PT00788	PH00788	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	9	Borderline	TRUE
+ST0003	PT00809	PH00809	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	41	Mild	TRUE
+ST0003	PT00824	PH00824	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	3	Borderline	TRUE
+ST0003	PT00825	PH00825	 Osteosarcoma	HP:0002669	 Osteosarcoma	Neoplasm	0	Moderate	TRUE
+ST0002	PT00394	PH00394	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Severe	TRUE
+ST0002	PT00424	PH00424	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Mild	TRUE
+ST0002	PT00452	PH00452	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	3	Borderline	TRUE
+ST0002	PT00460	PH00460	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	0	Moderate	TRUE
+ST0002	PT00485	PH00485	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	9	Severe	TRUE
+ST0002	PT00495	PH00495	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	17	Profound	TRUE
+ST0002	PT00507	PH00507	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	0	Profound	TRUE
+ST0002	PT00519	PH00519	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	19	Profound	TRUE
+ST0002	PT00569	PH00569	 Pancreatic cysts	HP:0001737	 Pancreatic cysts	Abnormality of the digestive system	2	Borderline	TRUE
+ST0001	PT00027	PH00027	 Portal vein thrombosis	HP:0030242	 Portal vein thrombosis	Abnormality of blood and blood-forming tissues	59	Severe	TRUE
+ST0001	PT00022	PH00022	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	68	Mild	TRUE
+ST0001	PT00057	PH00057	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Borderline	TRUE
+ST0001	PT00085	PH00085	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	55	Mild	TRUE
+ST0001	PT00093	PH00093	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	49	Profound	TRUE
+ST0001	PT00137	PH00137	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	41	Profound	TRUE
+ST0001	PT00163	PH00163	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	35	Severe	TRUE
+ST0001	PT00190	PH00190	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Borderline	TRUE
+ST0001	PT00214	PH00214	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	42	Borderline	TRUE
+ST0001	PT00235	PH00235	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	45	Borderline	TRUE
+ST0001	PT00254	PH00254	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	67	Profound	TRUE
+ST0001	PT00285	PH00285	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	55	Moderate	TRUE
+ST0001	PT00315	PH00315	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Profound	TRUE
+ST0001	PT00316	PH00316	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	34	Profound	TRUE
+ST0004	PT00826	PH00826	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Moderate	TRUE
+ST0004	PT00827	PH00827	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	48	Profound	TRUE
+ST0004	PT00828	PH00828	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	47	Moderate	TRUE
+ST0004	PT00829	PH00829	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Severe	TRUE
+ST0004	PT00830	PH00830	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Borderline	TRUE
+ST0004	PT00831	PH00831	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	48	Severe	TRUE
+ST0004	PT00832	PH00832	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Profound	TRUE
+ST0004	PT00833	PH00833	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	40	Moderate	TRUE
+ST0004	PT00834	PH00834	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	56	Profound	TRUE
+ST0004	PT00835	PH00835	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Borderline	TRUE
+ST0004	PT00836	PH00836	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Borderline	TRUE
+ST0004	PT00837	PH00837	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Mild	TRUE
+ST0004	PT00838	PH00838	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Profound	TRUE
+ST0004	PT00839	PH00839	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Severe	TRUE
+ST0004	PT00840	PH00840	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	42	Borderline	TRUE
+ST0004	PT00841	PH00841	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	66	Profound	TRUE
+ST0004	PT00842	PH00842	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	65	Severe	TRUE
+ST0004	PT00843	PH00843	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	63	Profound	TRUE
+ST0004	PT00844	PH00844	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	44	Borderline	TRUE
+ST0004	PT00845	PH00845	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Borderline	TRUE
+ST0004	PT00846	PH00846	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	49	Severe	TRUE
+ST0004	PT00847	PH00847	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Mild	TRUE
+ST0004	PT00848	PH00848	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	45	Borderline	TRUE
+ST0004	PT00849	PH00849	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Mild	TRUE
+ST0004	PT00850	PH00850	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	72	Severe	TRUE
+ST0004	PT00851	PH00851	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	44	Borderline	TRUE
+ST0004	PT00852	PH00852	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	44	Profound	TRUE
+ST0004	PT00853	PH00853	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Severe	TRUE
+ST0004	PT00854	PH00854	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	72	Profound	TRUE
+ST0004	PT00855	PH00855	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Mild	TRUE
+ST0004	PT00856	PH00856	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	47	Moderate	TRUE
+ST0004	PT00857	PH00857	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	63	Profound	TRUE
+ST0004	PT00858	PH00858	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Moderate	TRUE
+ST0004	PT00859	PH00859	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Profound	TRUE
+ST0004	PT00860	PH00860	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	56	Profound	TRUE
+ST0004	PT00861	PH00861	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	46	Profound	TRUE
+ST0004	PT00862	PH00862	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	37	Moderate	TRUE
+ST0004	PT00863	PH00863	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Mild	TRUE
+ST0004	PT00864	PH00864	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	74	Profound	TRUE
+ST0004	PT00865	PH00865	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Borderline	TRUE
+ST0004	PT00866	PH00866	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Severe	TRUE
+ST0004	PT00867	PH00867	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Mild	TRUE
+ST0004	PT00868	PH00868	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Profound	TRUE
+ST0004	PT00869	PH00869	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	46	Mild	TRUE
+ST0004	PT00870	PH00870	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Profound	TRUE
+ST0004	PT00871	PH00871	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Mild	TRUE
+ST0004	PT00872	PH00872	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	35	Profound	TRUE
+ST0004	PT00873	PH00873	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Moderate	TRUE
+ST0004	PT00874	PH00874	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	62	Moderate	TRUE
+ST0004	PT00875	PH00875	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Mild	TRUE
+ST0004	PT00876	PH00876	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	61	Severe	TRUE
+ST0004	PT00877	PH00877	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Mild	TRUE
+ST0004	PT00878	PH00878	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	66	Moderate	TRUE
+ST0004	PT00879	PH00879	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	46	Profound	TRUE
+ST0004	PT00880	PH00880	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Severe	TRUE
+ST0004	PT00881	PH00881	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	76	Mild	TRUE
+ST0004	PT00882	PH00882	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	33	Borderline	TRUE
+ST0004	PT00883	PH00883	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	58	Borderline	TRUE
+ST0004	PT00884	PH00884	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Borderline	TRUE
+ST0004	PT00885	PH00885	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Severe	TRUE
+ST0004	PT00886	PH00886	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	49	Profound	TRUE
+ST0004	PT00887	PH00887	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Moderate	TRUE
+ST0004	PT00888	PH00888	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Mild	TRUE
+ST0004	PT00889	PH00889	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Severe	TRUE
+ST0004	PT00890	PH00890	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Borderline	TRUE
+ST0004	PT00891	PH00891	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Moderate	TRUE
+ST0004	PT00892	PH00892	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Profound	TRUE
+ST0004	PT00893	PH00893	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Severe	TRUE
+ST0004	PT00894	PH00894	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Mild	TRUE
+ST0004	PT00895	PH00895	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Severe	TRUE
+ST0004	PT00896	PH00896	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Mild	TRUE
+ST0004	PT00897	PH00897	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	38	Moderate	TRUE
+ST0004	PT00898	PH00898	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	56	Severe	TRUE
+ST0004	PT00899	PH00899	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	48	Severe	TRUE
+ST0004	PT00900	PH00900	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	66	Mild	TRUE
+ST0004	PT00901	PH00901	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Borderline	TRUE
+ST0004	PT00902	PH00902	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Severe	TRUE
+ST0004	PT00903	PH00903	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Borderline	TRUE
+ST0004	PT00904	PH00904	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	41	Severe	TRUE
+ST0004	PT00905	PH00905	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Borderline	TRUE
+ST0004	PT00906	PH00906	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	36	Borderline	TRUE
+ST0004	PT00907	PH00907	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	58	Mild	TRUE
+ST0004	PT00908	PH00908	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	72	Severe	TRUE
+ST0004	PT00909	PH00909	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	67	Mild	TRUE
+ST0004	PT00910	PH00910	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	65	Severe	TRUE
+ST0004	PT00911	PH00911	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	66	Severe	TRUE
+ST0004	PT00912	PH00912	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Moderate	TRUE
+ST0004	PT00913	PH00913	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	45	Profound	TRUE
+ST0004	PT00914	PH00914	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	40	Severe	TRUE
+ST0004	PT00915	PH00915	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	44	Mild	TRUE
+ST0004	PT00916	PH00916	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	62	Mild	TRUE
+ST0004	PT00917	PH00917	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Profound	TRUE
+ST0004	PT00918	PH00918	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	58	Severe	TRUE
+ST0004	PT00919	PH00919	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	47	Borderline	TRUE
+ST0004	PT00920	PH00920	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Borderline	TRUE
+ST0004	PT00921	PH00921	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	71	Severe	TRUE
+ST0004	PT00922	PH00922	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Mild	TRUE
+ST0004	PT00923	PH00923	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Moderate	TRUE
+ST0004	PT00924	PH00924	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	44	Moderate	TRUE
+ST0004	PT00925	PH00925	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Severe	TRUE
+ST0004	PT00926	PH00926	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Severe	TRUE
+ST0004	PT00927	PH00927	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	67	Mild	TRUE
+ST0004	PT00928	PH00928	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Borderline	TRUE
+ST0004	PT00929	PH00929	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Borderline	TRUE
+ST0004	PT00930	PH00930	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	54	Mild	TRUE
+ST0004	PT00931	PH00931	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Moderate	TRUE
+ST0004	PT00932	PH00932	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	62	Profound	TRUE
+ST0004	PT00933	PH00933	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	73	Borderline	TRUE
+ST0004	PT00934	PH00934	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Moderate	TRUE
+ST0004	PT00935	PH00935	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	63	Mild	TRUE
+ST0004	PT00936	PH00936	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Severe	TRUE
+ST0004	PT00937	PH00937	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	68	Mild	TRUE
+ST0004	PT00938	PH00938	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	55	Profound	TRUE
+ST0004	PT00939	PH00939	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Mild	TRUE
+ST0004	PT00940	PH00940	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Profound	TRUE
+ST0004	PT00941	PH00941	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	48	Moderate	TRUE
+ST0004	PT00942	PH00942	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	39	Profound	TRUE
+ST0004	PT00943	PH00943	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Mild	TRUE
+ST0004	PT00944	PH00944	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	61	Moderate	TRUE
+ST0004	PT00945	PH00945	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	40	Borderline	TRUE
+ST0004	PT00946	PH00946	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Borderline	TRUE
+ST0004	PT00947	PH00947	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Profound	TRUE
+ST0004	PT00948	PH00948	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	48	Severe	TRUE
+ST0004	PT00949	PH00949	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Mild	TRUE
+ST0004	PT00950	PH00950	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Profound	TRUE
+ST0004	PT00951	PH00951	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Borderline	TRUE
+ST0004	PT00952	PH00952	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Severe	TRUE
+ST0004	PT00953	PH00953	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	45	Severe	TRUE
+ST0004	PT00954	PH00954	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Moderate	TRUE
+ST0004	PT00955	PH00955	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Profound	TRUE
+ST0004	PT00956	PH00956	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	43	Severe	TRUE
+ST0004	PT00957	PH00957	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Mild	TRUE
+ST0004	PT00958	PH00958	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	52	Severe	TRUE
+ST0004	PT00959	PH00959	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	42	Profound	TRUE
+ST0004	PT00960	PH00960	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	42	Moderate	TRUE
+ST0004	PT00961	PH00961	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	67	Mild	TRUE
+ST0004	PT00962	PH00962	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	55	Profound	TRUE
+ST0004	PT00963	PH00963	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Severe	TRUE
+ST0004	PT00964	PH00964	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Severe	TRUE
+ST0004	PT00965	PH00965	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Severe	TRUE
+ST0004	PT00966	PH00966	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Severe	TRUE
+ST0004	PT00967	PH00967	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	53	Borderline	TRUE
+ST0004	PT00968	PH00968	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	58	Borderline	TRUE
+ST0004	PT00969	PH00969	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	54	Moderate	TRUE
+ST0004	PT00970	PH00970	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	66	Profound	TRUE
+ST0004	PT00971	PH00971	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	67	Moderate	TRUE
+ST0004	PT00972	PH00972	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	57	Borderline	TRUE
+ST0004	PT00973	PH00973	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Severe	TRUE
+ST0004	PT00974	PH00974	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	36	Severe	TRUE
+ST0004	PT00975	PH00975	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	50	Borderline	TRUE
+ST0004	PT00976	PH00976	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	51	Moderate	TRUE
+ST0004	PT00977	PH00977	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Moderate	TRUE
+ST0004	PT00978	PH00978	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	35	Mild	TRUE
+ST0004	PT00979	PH00979	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Mild	TRUE
+ST0004	PT00980	PH00980	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Moderate	TRUE
+ST0004	PT00981	PH00981	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	49	Moderate	TRUE
+ST0004	PT00982	PH00982	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	46	Moderate	TRUE
+ST0004	PT00983	PH00983	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	60	Borderline	TRUE
+ST0004	PT00984	PH00984	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	64	Moderate	TRUE
+ST0004	PT00985	PH00985	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	36	Profound	TRUE
+ST0004	PT00986	PH00986	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	70	Moderate	TRUE
+ST0004	PT00987	PH00987	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	77	Severe	TRUE
+ST0004	PT00988	PH00988	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	40	Moderate	TRUE
+ST0004	PT00989	PH00989	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	69	Profound	TRUE
+ST0004	PT00990	PH00990	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	61	Profound	TRUE
+ST0004	PT00991	PH00991	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	56	Moderate	TRUE
+ST0004	PT00992	PH00992	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	46	Severe	TRUE
+ST0004	PT00993	PH00993	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	38	Severe	TRUE
+ST0004	PT00994	PH00994	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	47	Profound	TRUE
+ST0004	PT00995	PH00995	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	62	Severe	TRUE
+ST0004	PT00996	PH00996	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Mild	TRUE
+ST0004	PT00997	PH00997	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	58	Mild	TRUE
+ST0004	PT00998	PH00998	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	59	Borderline	TRUE
+ST0004	PT00999	PH00999	 Prostate cancer	HP:0012125	 Prostate cancer	Neoplasm	71	Mild	TRUE
+ST0001	PT00131	PH00131	 Psoriasiform dermatitis	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	50	Moderate	TRUE
+ST0001	PT00246	PH00246	 Psoriasiform dermatitis	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	55	Severe	TRUE
+ST0001	PT00328	PH00328	 Psoriasiform dermatitis	HP:0003765	 Psoriasiform dermatitis	Abnormality of the integument	37	Profound	TRUE
+ST0001	PT00051	PH00051	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	43	Severe	TRUE
+ST0001	PT00103	PH00103	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	48	Severe	TRUE
+ST0001	PT00175	PH00175	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	55	Profound	TRUE
+ST0001	PT00211	PH00211	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	34	Mild	TRUE
+ST0001	PT00222	PH00222	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	48	Borderline	TRUE
+ST0001	PT00325	PH00325	 Pulmonary embolism	HP:0002204	 Pulmonary embolism	Abnormality of the respiratory system	61	Moderate	TRUE
+ST0002	PT00389	PH00389	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	0	Profound	TRUE
+ST0002	PT00459	PH00459	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	15	Mild	TRUE
+ST0002	PT00476	PH00476	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	12	Profound	TRUE
+ST0002	PT00480	PH00480	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	9	Moderate	TRUE
+ST0002	PT00481	PH00481	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	3	Moderate	TRUE
+ST0002	PT00499	PH00499	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	2	Profound	TRUE
+ST0002	PT00517	PH00517	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	16	Borderline	TRUE
+ST0002	PT00579	PH00579	 Pyloric stenosis	HP:0002021	 Pyloric stenosis	Abnormality of the digestive system	3	Severe	TRUE
+ST0001	PT00054	PH00054	 Schizophrenia	HP:0100753	 Schizophrenia	Abnormality of the nervous system	51	Profound	TRUE
+ST0001	PT00083	PH00083	 Schizophrenia	HP:0100753	 Schizophrenia	Abnormality of the nervous system	40	Severe	TRUE
+ST0001	PT00100	PH00100	 Schizophrenia	HP:0100753	 Schizophrenia	Abnormality of the nervous system	60	Severe	TRUE
+ST0001	PT00148	PH00148	 Schizophrenia	HP:0100753	 Schizophrenia	Abnormality of the nervous system	62	Profound	TRUE
+ST0001	PT00043	PH00043	 Small cell lung carcinoma	HP:0030357	 Small cell lung carcinoma	Neoplasm	55	Severe	TRUE
+ST0002	PT00385	PH00385	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	9	Moderate	TRUE
+ST0002	PT00484	PH00484	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	11	Severe	TRUE
+ST0002	PT00498	PH00498	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	19	Moderate	TRUE
+ST0002	PT00513	PH00513	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	1	Severe	TRUE
+ST0002	PT00549	PH00549	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	18	Profound	TRUE
+ST0002	PT00554	PH00554	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	7	Severe	TRUE
+ST0002	PT00584	PH00584	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	4	Mild	TRUE
+ST0002	PT00588	PH00588	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	10	Profound	TRUE
+ST0002	PT00609	PH00609	 Spina bifida	HP:0002414	 Spina bifida	Abnormality of the nervous system	10	Borderline	TRUE
+ST0001	PT00059	PH00059	 Spinal canal stenosis	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	38	Moderate	TRUE
+ST0001	PT00113	PH00113	 Spinal canal stenosis	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	52	Moderate	TRUE
+ST0001	PT00141	PH00141	 Spinal canal stenosis	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	53	Mild	TRUE
+ST0001	PT00202	PH00202	 Spinal canal stenosis	HP:0003416	 Spinal canal stenosis	Abnormality of the skeletal system	53	Moderate	TRUE
+ST0001	PT00109	PH00109	 Squamous cell lung carcinoma	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	46	Moderate	TRUE
+ST0003	PT00659	PH00659	 Squamous cell lung carcinoma	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	27	Moderate	TRUE
+ST0003	PT00674	PH00674	 Squamous cell lung carcinoma	HP:0030359	 Squamous cell lung carcinoma	Neoplasm	11	Moderate	TRUE
+ST0001	PT00009	PH00009	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	49	Severe	TRUE
+ST0001	PT00023	PH00023	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	41	Moderate	TRUE
+ST0001	PT00064	PH00064	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	62	Moderate	TRUE
+ST0001	PT00115	PH00115	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	42	Moderate	TRUE
+ST0001	PT00201	PH00201	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	52	Severe	TRUE
+ST0001	PT00223	PH00223	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	56	Borderline	TRUE
+ST0001	PT00283	PH00283	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	43	Moderate	TRUE
+ST0001	PT00341	PH00341	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	48	Severe	TRUE
+ST0001	PT00353	PH00353	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	60	Severe	TRUE
+ST0001	PT00370	PH00370	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	52	Borderline	TRUE
+ST0002	PT00615	PH00615	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	10	Profound	TRUE
+ST0003	PT00653	PH00653	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	38	Profound	TRUE
+ST0003	PT00686	PH00686	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	17	Severe	TRUE
+ST0003	PT00812	PH00812	 Stomach cancer	HP:0012126	 Stomach cancer	Neoplasm	42	Severe	TRUE
+ST0001	PT00033	PH00033	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Borderline	TRUE
+ST0001	PT00048	PH00048	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	48	Mild	TRUE
+ST0001	PT00080	PH00080	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	65	Moderate	TRUE
+ST0001	PT00149	PH00149	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	33	Profound	TRUE
+ST0001	PT00181	PH00181	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	34	Profound	TRUE
+ST0001	PT00230	PH00230	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	60	Mild	TRUE
+ST0001	PT00239	PH00239	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	51	Borderline	TRUE
+ST0001	PT00251	PH00251	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	48	Borderline	TRUE
+ST0001	PT00277	PH00277	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	40	Moderate	TRUE
+ST0001	PT00280	PH00280	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	62	Profound	TRUE
+ST0001	PT00287	PH00287	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	42	Profound	TRUE
+ST0001	PT00293	PH00293	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	33	Mild	TRUE
+ST0001	PT00348	PH00348	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Profound	TRUE
+ST0001	PT00356	PH00356	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	54	Profound	TRUE
+ST0001	PT00363	PH00363	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	47	Mild	TRUE
+ST0001	PT00365	PH00365	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	50	Moderate	TRUE
+ST0001	PT00377	PH00377	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascular system	28	Severe	TRUE
+ST0001	PT00075	PH00075	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	42	Severe	TRUE
+ST0002	PT00397	PH00397	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	10	Mild	TRUE
+ST0003	PT00656	PH00656	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	26	Borderline	TRUE
+ST0001	PT00014	PH00015	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Profound	TRUE
+ST0001	PT00142	PH00142	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	48	Mild	TRUE
+ST0001	PT00173	PH00173	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	36	Profound	TRUE
+ST0001	PT00186	PH00186	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	65	Profound	TRUE
+ST0001	PT00233	PH00233	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	52	Severe	TRUE
+ST0001	PT00256	PH00256	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Mild	TRUE
+ST0001	PT00288	PH00288	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	53	Profound	TRUE
+ST0001	PT00332	PH00332	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Severe	TRUE
+ST0001	PT00006	PH00006	 Uric acid nephrolithiasis	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	59	Borderline	TRUE
+ST0001	PT00127	PH00127	 Uric acid nephrolithiasis	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	64	Borderline	TRUE
+ST0001	PT00167	PH00167	 Uric acid nephrolithiasis	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	43		TRUE
+ST0001	PT00189	PH00189	 Uric acid nephrolithiasis	HP:0000791	 Uric acid nephrolithiasis	Abnormality of the genitourinary system	36		TRUE

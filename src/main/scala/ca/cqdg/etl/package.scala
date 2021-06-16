@@ -32,6 +32,7 @@ package object etl {
       DatasetConf("sample_registration"   , clinical_data, "/*/*/*/sample_registration.tsv"    , CSV , OverWrite, readoptions = tsv_with_headers),
       DatasetConf("study"                 , clinical_data, "/*/*/*/study.tsv"                  , CSV , OverWrite, readoptions = tsv_with_headers),
       DatasetConf("treatment"             , clinical_data, "/*/*/*/treatment.tsv"              , CSV , OverWrite, readoptions = tsv_with_headers),
+      DatasetConf("data_access"           , clinical_data, "/*/*/*/data_access.tsv"            , CSV , OverWrite, readoptions = tsv_with_headers),
 
       DatasetConf("hpo"                   , ontology_input, "/hpo_terms.json.gz"               , JSON, OverWrite),
       DatasetConf("mondo"                 , ontology_input, "/mondo_terms.json.gz"             , JSON, OverWrite),

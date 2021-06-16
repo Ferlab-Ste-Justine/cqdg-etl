@@ -1,136 +1,105 @@
 package ca.cqdg.etl
 
 import ca.cqdg.etl.model.NamedDataFrame
-import ca.cqdg.etl.utils.EtlUtils.{getDataframe, loadAll}
-import org.apache.spark.broadcast.Broadcast
+import ca.cqdg.etl.utils.EtlUtils.columns.fileSize
+import ca.cqdg.etl.utils.{DataAccessUtils, SummaryUtils}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 object Study {
-  def run(
-           broadcastStudies: Broadcast[DataFrame],
-           dfList: List[NamedDataFrame],
-           ontologyDf: Map[String, DataFrame],
-           outputPath: String
+  def run(study: DataFrame,
+          studyNDF: NamedDataFrame,
+          inputData: Map[String, DataFrame],
+          ontologyDf: Map[String, DataFrame],
+          outputPath: String
          )(implicit spark: SparkSession): Unit = {
-    write(build(broadcastStudies, dfList,ontologyDf), outputPath)
-  }
-
-  private def computeDonorsAndFilesByField(donor: DataFrame, file: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    donor.as("donor")
-      .join(file.as("file"), Seq("submitter_donor_id", "study_id"))
-      .filter(col(fieldName).isNotNull)
-      .groupBy($"study_id", col(fieldName))
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors"),
-        countDistinct($"file_name").as("files")
-      ).groupBy($"study_id")  // mandatory we need one entry per study_id in the end result
-      .agg(
-        collect_list(
-          struct(cols =
-            col(fieldName).as("key"),
-            $"donors",
-            $"files",
-          )
-        ).as(fieldName)
-      )
-  }
-
-  private def computeDonorsByField(dataFrame: DataFrame, fieldName: String)(implicit spark: SparkSession): DataFrame = {
-    import spark.implicits._
-
-    dataFrame
-      .groupBy($"study_id")
-      .agg(
-        countDistinct($"submitter_donor_id").as("donors")
-      )
-      .groupBy($"study_id")
-      .agg(
-        collect_list(
-          struct(cols =
-            $"donors"
-          )
-        ).as(fieldName)
-      )
+    write(build(study, studyNDF, inputData, ontologyDf), outputPath)
   }
 
   def build(
-             broadcastStudies: Broadcast[DataFrame],
-             dfList: List[NamedDataFrame],
+             study: DataFrame,
+             studyNDF: NamedDataFrame,
+             data: Map[String, DataFrame],
              ontologyDf: Map[String, DataFrame]
            )(implicit spark: SparkSession): DataFrame = {
-    val (donor, diagnosisPerDonorAndStudy, phenotypesPerDonorAndStudy, biospecimenWithSamples, file, treatmentsPerDonorAndStudy) = loadAll(dfList)(ontologyDf)
 
     import spark.implicits._
 
-    val summaryByCategory = computeDonorsAndFilesByField(donor, file, "data_category").as("summaryByCategory")
-    val summaryByStrategy= computeDonorsAndFilesByField(donor, file, "experimental_strategy").as("summaryByStrategy")
-    val summaryDiagnosis = computeDonorsByField(diagnosisPerDonorAndStudy, "diagnosis").as("summaryDiagnosis")
-    val summaryPhenotype = computeDonorsByField(phenotypesPerDonorAndStudy, "phenotype").as("summaryPhenotype")
-    val summaryTreatment = computeDonorsByField(treatmentsPerDonorAndStudy, "treatment").as("summaryTreatment")
+    val donor = data("donor").as("donor")
+    val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
+    val phenotypesPerStudyIdAndDonor = data("phenotypesPerStudyIdAndDonor").as("phenotypeGroup")
+    val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
+    val dataAccess = data("dataAccess").as("dataAccess")
+    val treatmentsPerDonorAndStudy = data("treatmentsPerDonorAndStudy").as("treatmentsPerDonorAndStudy")
+    val exposuresPerDonorAndStudy = data("exposuresPerDonorAndStudy").as("exposuresPerDonorAndStudy")
+    val followUpsPerDonorAndStudy = data("followUpsPerDonorAndStudy").as("followUpsPerDonorAndStudy")
+    val familyHistoryPerDonorAndStudy = data("familyHistoryPerDonorAndStudy").as("familyHistoryPerDonorAndStudy")
+    val familyRelationshipPerDonorAndStudy = data("familyRelationshipPerDonorAndStudy").as("familyRelationshipPerDonorAndStudy")
+    val file = data("file").as("file")
+
+    val (donorPerFile, allDistinctStudies, _, _) = SummaryUtils.prepareSummaryDataFrames(donor, file)
+    val summaryByCategory = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "data_category").as("summaryByCategory")
+    val summaryByStrategy = SummaryUtils.computeDonorsAndFilesByField(donorPerFile, allDistinctStudies, "experimental_strategy").as("summaryByStrategy")
+    val summaryOfClinicalDataAvailable = SummaryUtils.computeAllClinicalDataAvailable(diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+      .as("summaryOfClinicalDataAvailable")
 
     val summaryGroup = summaryByCategory
       .join(summaryByStrategy, "study_id")
-      .join(summaryDiagnosis, "study_id")
-      .join(summaryPhenotype, "study_id")
-      .join(summaryTreatment, "study_id")
+      .join(summaryOfClinicalDataAvailable, "study_id")
+      .filter(col("study_id").isNotNull)
       .groupBy($"study_id")
       .agg(
-        collect_list(
+        first(  // create an object, no need of an array
           struct(cols =
             $"summaryByCategory.data_category",
             $"summaryByStrategy.experimental_strategy",
-            $"summaryDiagnosis.diagnosis",
-            $"summaryPhenotype.phenotype",
-            $"summaryTreatment.treatment",
+            $"summaryOfClinicalDataAvailable.clinical_data_available",
           )
         ).as("summary")
       ).as("summaryGroup")
 
     val donorWithPhenotypesAndDiagnosesPerStudy: DataFrame = donor
-      .join(diagnosisPerDonorAndStudy, $"donor.study_id" === $"diagnosisGroup.study_id" && $"donor.submitter_donor_id" === $"diagnosisGroup.submitter_donor_id", "left")
-      .join(phenotypesPerDonorAndStudy, $"donor.study_id" === $"phenotypeGroup.study_id" && $"donor.submitter_donor_id" === $"phenotypeGroup.submitter_donor_id", "left")
-      .drop($"diagnosisGroup.study_id")
-      .drop($"diagnosisGroup.submitter_donor_id")
-      .drop($"phenotypeGroup.study_id")
-      .drop($"phenotypeGroup.submitter_donor_id")
+      .join(diagnosisPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
+      .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
             (donor.columns.filterNot(List("study_id", "submitter_family_id").contains(_)).map(col) ++
-              List($"diagnosisGroup.*", $"phenotypeGroup.phenotypes" as "phenotypes")) : _*
+              List($"diagnosisGroup.*", $"observed_phenotype_tagged", $"not_observed_phenotype_tagged")) : _*
           )
         ) as "donors"
       ) as "donorsGroup"
 
-    val fileWithBiospecimenPerStudy: DataFrame = file
+    val fileWithSize = file
+      .select( cols =
+        $"*",
+        fileSize)
+
+    val fileWithBiospecimenPerStudy: DataFrame = fileWithSize
       .join(biospecimenWithSamples, $"file.submitter_biospecimen_id" === $"biospecimenWithSamples.submitter_biospecimen_id", "left")
       .drop($"biospecimenWithSamples.study_id")
       .drop($"biospecimenWithSamples.submitter_biospecimen_id")
       .drop($"file.submitter_biospecimen_id")
+      .drop($"file.file_name")
+      .drop($"file.file_name_keyword")
+      .drop($"file.file_name_ngrams")
       .groupBy($"study_id")
       .agg(
         collect_list(
           struct(cols =
             $"file.*",
+            $"file_size",
             $"biospecimenWithSamples.*"
           )
         ) as "files"
       ) as "filesGroup"
 
-    val result = broadcastStudies.value
-      .join(donorWithPhenotypesAndDiagnosesPerStudy, $"study.study_id" === $"donorsGroup.study_id", "left")
-      .join(fileWithBiospecimenPerStudy, $"study.study_id" === $"filesGroup.study_id", "left")
-      .join(summaryGroup, $"study.study_id" === $"summaryGroup.study_id", "left")
-      .drop($"donorsGroup.study_id")
-      .drop($"filesGroup.study_id")
-      .drop($"summaryGroup.study_id")
+    val result = study
+      .join(donorWithPhenotypesAndDiagnosesPerStudy, Seq("study_id"), "left")
+      .join(fileWithBiospecimenPerStudy, Seq("study_id"), "left")
+      .join(summaryGroup, Seq("study_id"), "left")
 
-    val studyNDF: NamedDataFrame = getDataframe("study", dfList)
-    //result.printSchema()
     result
       .withColumn("dictionary_version", lit(studyNDF.dictionaryVersion))
       .withColumn("study_version", lit(studyNDF.studyVersion))

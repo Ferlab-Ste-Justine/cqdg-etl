@@ -16,8 +16,8 @@ trait WithSparkSession {
 
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "http://localhost:9000")
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.path.style.access", "true")
-  spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", "minioadmin")
-  spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", "minioadmin")
+  spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", "minio")
+  spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", "minio123")
   spark.sparkContext.setLogLevel("ERROR")
 
   def withOutputFolder[T](prefix: String)(block: String => T): T = {
