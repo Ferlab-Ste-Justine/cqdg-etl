@@ -12,10 +12,19 @@ import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
+import org.slf4j.LoggerFactory
+
+import java.util.concurrent.Executors
+import scala.concurrent.{ExecutionContext, ExecutionContextExecutorService}
+import scala.util.{Failure, Success}
 
 object EtlApp extends App {
 
   Logger.getLogger("ferlab").setLevel(Level.INFO)
+  val log = LoggerFactory.getLogger(this.getClass)
+
+  implicit val executorContext: ExecutionContextExecutorService =
+    ExecutionContext.fromExecutorService(Executors.newCachedThreadPool()) // better than scala global executor + keep the App alive until shutdown
 
   implicit val spark: SparkSession = SparkSession
     .builder
@@ -94,14 +103,17 @@ object EtlApp extends App {
 
       val files = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(etlConfiguration);
       val transformedFiles = files.transform(files.extract())
-      write(transformedFiles, s"$outputPath/files")
 
       if(KeycloakUtils.isEnabled) {
-        import scala.collection.JavaConverters._
-        val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().collectAsList()
-          .asScala.toList.map(_.getString(0)).toSet // only one column at index 0
-        KeycloakUtils.createResources(allFilesInternalIDs)
+        val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().as[String].collect().toSet
+        val future = KeycloakUtils.createResources(allFilesInternalIDs)
+        future onComplete {
+          case Success(resources) => executorContext.shutdown(); log.info(s"Successfully create ${resources.flatten.size} resources")
+          case Failure(e) => executorContext.shutdown(); throw new RuntimeException("Failed to create resources", e);
+        }
       }
+
+      write(transformedFiles, s"$outputPath/files")
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);
   }

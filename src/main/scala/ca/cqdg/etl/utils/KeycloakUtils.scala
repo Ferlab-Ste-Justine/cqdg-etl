@@ -23,16 +23,10 @@ object KeycloakUtils {
 
   val isEnabled: Boolean = config.getBoolean("settings.enabled")
 
-  def createResources(names: Set[String]): Unit = {
+  def createResources(names: Set[String])(implicit executorContext: ExecutionContextExecutorService) : Future[Set[Option[String]]] = {
     log.info(s"Try to create ${names.size} resources...")
-    implicit val executorContext: ExecutionContextExecutorService =
-      ExecutionContext.fromExecutorService(Executors.newCachedThreadPool()) // better than scala global executor + keep the App alive until shutdown
     implicit val keycloakAuthClient: AuthzClient = AuthzClient.create(keycloakAuthClientConfig)
-    val futures = names.map({ name => Future { createResource(name)}})
-    Future.sequence(futures) onComplete {
-      case Success(resources) => executorContext.shutdown(); log.info(s"Successfully create ${resources.flatten.size} resources")
-      case Failure(e) => executorContext.shutdown(); throw new RuntimeException("Failed to create resources", e);
-    }
+    Future.traverse(names)(name => Future(createResource(name)))
   }
 
   private def createResource(name: String)(implicit keycloakAuthClient: AuthzClient): Option[String] = {
