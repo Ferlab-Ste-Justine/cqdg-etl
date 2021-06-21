@@ -108,7 +108,7 @@ object EtlApp extends App {
         val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().as[String].collect().toSet
         val future = KeycloakUtils.createResources(allFilesInternalIDs)
         future onComplete {
-          case Success(resources) => executorContext.shutdown(); log.info(s"Successfully create ${resources.flatten.size} resources")
+          case Success(resources) => executorContext.shutdown(); log.info(s"Successfully create ${resources.size} resources")
           case Failure(e) => executorContext.shutdown(); throw new RuntimeException("Failed to create resources", e);
         }
       }

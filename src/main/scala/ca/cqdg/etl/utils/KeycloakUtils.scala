@@ -6,9 +6,7 @@ import org.keycloak.representations.idm.authorization.{ResourceRepresentation, S
 import org.slf4j.LoggerFactory
 
 import java.util.Collections
-import java.util.concurrent.Executors
-import scala.concurrent.{ExecutionContext, ExecutionContextExecutorService, Future}
-import scala.util.{Failure, Success}
+import scala.concurrent.{ExecutionContextExecutorService, Future}
 
 object KeycloakUtils {
 
@@ -23,13 +21,13 @@ object KeycloakUtils {
 
   val isEnabled: Boolean = config.getBoolean("settings.enabled")
 
-  def createResources(names: Set[String])(implicit executorContext: ExecutionContextExecutorService) : Future[Set[Option[String]]] = {
+  def createResources(names: Set[String])(implicit executorContext: ExecutionContextExecutorService) : Future[Set[String]] = {
     log.info(s"Try to create ${names.size} resources...")
     implicit val keycloakAuthClient: AuthzClient = AuthzClient.create(keycloakAuthClientConfig)
     Future.traverse(names)(name => Future(createResource(name)))
   }
 
-  private def createResource(name: String)(implicit keycloakAuthClient: AuthzClient): Option[String] = {
+  private def createResource(name: String)(implicit keycloakAuthClient: AuthzClient): String = {
     val newResource = new ResourceRepresentation()
     newResource.setName(name)
     newResource.setType(s"${config.getString("settings.type-prefix")}${name.toLowerCase}")
@@ -38,16 +36,6 @@ object KeycloakUtils {
     val resourceClient = keycloakAuthClient.protection.resource
     val existingResource = Option(resourceClient.findByName(newResource.getName))
 
-    existingResource match {
-      case Some(existing) => {
-        log.debug(s"Resource ${name} already exists")
-        Some(existing.getId) // could also return None
-      }
-      case None => {
-        val response = resourceClient.create(newResource)
-        log.debug(s"New resource created: ${response.getId}")
-        Some(response.getId)
-      }
-    }
+    existingResource.getOrElse(resourceClient.create(newResource)).getId
   }
 }
