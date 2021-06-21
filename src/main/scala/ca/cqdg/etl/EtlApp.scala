@@ -15,8 +15,8 @@ import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import org.slf4j.LoggerFactory
 
 import java.util.concurrent.Executors
-import scala.concurrent.{ExecutionContext, ExecutionContextExecutorService}
-import scala.util.{Failure, Success}
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, ExecutionContext, ExecutionContextExecutorService}
 
 object EtlApp extends App {
 
@@ -25,6 +25,8 @@ object EtlApp extends App {
 
   implicit val executorContext: ExecutionContextExecutorService =
     ExecutionContext.fromExecutorService(Executors.newCachedThreadPool()) // better than scala global executor + keep the App alive until shutdown
+  // properly shutdown after app execution
+  sys.addShutdownHook(executorContext.shutdown)
 
   implicit val spark: SparkSession = SparkSession
     .builder
@@ -107,10 +109,8 @@ object EtlApp extends App {
       if(KeycloakUtils.isEnabled) {
         val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().as[String].collect().toSet
         val future = KeycloakUtils.createResources(allFilesInternalIDs)
-        future onComplete {
-          case Success(resources) => executorContext.shutdown(); log.info(s"Successfully create ${resources.size} resources")
-          case Failure(e) => executorContext.shutdown(); throw new RuntimeException("Failed to create resources", e);
-        }
+        val resources = Await.result(future, Duration.Inf)
+        log.info(s"Successfully create ${resources.size} resources")
       }
 
       write(transformedFiles, s"$outputPath/files")
