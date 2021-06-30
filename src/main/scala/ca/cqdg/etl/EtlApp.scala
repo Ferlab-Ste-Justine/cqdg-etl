@@ -5,17 +5,28 @@ import ca.cqdg.etl.utils.EtlUtils.columns.notNullCol
 import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, getDataframe, loadAll}
 import ca.cqdg.etl.utils.PreProcessingUtils.{getOntologyDfs, loadSchemas, preProcess}
 import ca.cqdg.etl.utils.S3Utils.writeSuccessIndicator
-import ca.cqdg.etl.utils.{DataAccessUtils, S3Utils, Schema}
+import ca.cqdg.etl.utils.{DataAccessUtils, KeycloakUtils, S3Utils, Schema}
 import com.amazonaws.ClientConfiguration
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
+import org.slf4j.LoggerFactory
+
+import java.util.concurrent.Executors
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, ExecutionContext, ExecutionContextExecutorService}
 
 object EtlApp extends App {
 
   Logger.getLogger("ferlab").setLevel(Level.INFO)
+  val log = LoggerFactory.getLogger(this.getClass)
+
+  implicit val executorContext: ExecutionContextExecutorService =
+    ExecutionContext.fromExecutorService(Executors.newCachedThreadPool()) // better than scala global executor + keep the App alive until shutdown
+  // properly shutdown after app execution
+  sys.addShutdownHook(executorContext.shutdown)
 
   implicit val spark: SparkSession = SparkSession
     .builder
@@ -93,7 +104,16 @@ object EtlApp extends App {
       Study.run(study, studyNDF, inputData, ontologyDfs, s"$outputPath/studies")
 
       val files = new FileIndex(study, studyNDF, inputData, ontologyDfs("duo_code"))(etlConfiguration);
-      write(files.transform(files.extract()), s"$outputPath/files")
+      val transformedFiles = files.transform(files.extract())
+
+      if(KeycloakUtils.isEnabled) {
+        val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().as[String].collect().toSet
+        val future = KeycloakUtils.createResources(allFilesInternalIDs)
+        val resources = Await.result(future, Duration.Inf)
+        log.info(s"Successfully create ${resources.size} resources")
+      }
+
+      write(transformedFiles, s"$outputPath/files")
 
       writeSuccessIndicator(s3Bucket, prefix, s3Client);
   }
