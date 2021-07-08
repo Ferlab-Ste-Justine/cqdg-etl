@@ -122,88 +122,88 @@ ST0001	PT00254	DI00254	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of pros
 ST0001	PT00285	DI00285	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1c	N3c	M1d(0)
 ST0001	PT00315	DI00315	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic	T2	N3b	M1d(0)
 ST0001	PT00316	DI00316	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	35	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2a2	N2	M1d(1)
-ST0004	PT00827	DI00827	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	T1b1	N2mi	M1e
-ST0004	PT00829	DI00829	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iie	T3e	N1b	M1d(1)
+ST0004	PT00827	DI00827	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	sstage 0is	T1b1	N2mi	M1e
+ST0004	PT00829	DI00829	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iie	T3e	N1b	M1d(1)
 ST0004	PT00832	DI00832	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia	T2c	N2a	M1d(1)
 ST0004	PT00836	DI00836	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iib	T1d	N3c	M1d(0)
 ST0004	PT00837	DI00837	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia2	T0	N2a	M1c(1)
-ST0004	PT00838	DI00838	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2b	N1b	M1d(0)
-ST0004	PT00839	DI00839	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Ta	N4	M1c(1)
+ST0004	PT00838	DI00838	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	occult carcinoma	T2b	N1b	M1d(0)
+ST0004	PT00839	DI00839	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ia	Ta	N4	M1c(1)
 ST0004	PT00842	DI00842	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia	T3	N3a	M1d(1)
-ST0004	PT00845	DI00845	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	54	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T4b	N2	M1d
+ST0004	PT00845	DI00845	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	54	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iic	T4b	N2	M1d
 ST0004	PT00846	DI00846	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia	T3d	N2	M1d(0)
 ST0004	PT00850	DI00850	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T4e	N1b	M1d
 ST0004	PT00852	DI00852	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T2a	N2a	M1d
-ST0004	PT00853	DI00853	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iie	T2a1	N1a(sn)	M1e
-ST0004	PT00854	DI00854	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T2a	N1mi	M1d(0)
+ST0004	PT00853	DI00853	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iie	T2a1	N1a(sn)	M1e
+ST0004	PT00854	DI00854	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage i	T2a	N1mi	M1d(0)
 ST0004	PT00856	DI00856	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	39	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T1a1	N2	M1d(1)
 ST0004	PT00859	DI00859	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic2	T4a	N2c	M1d(1)
 ST0004	PT00860	DI00860	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	58	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	Tis pd	N2c	M1c(1)
-ST0004	PT00861	DI00861	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T2a1	N3b	M1d(0)
+ST0004	PT00861	DI00861	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ia1	T2a1	N3b	M1d(0)
 ST0004	PT00864	DI00864	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	74	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia1	T1a1	NX	M1d(1)
 ST0004	PT00868	DI00868	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	76	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	T3d	N1c	M1d(1)
-ST0004	PT00870	DI00870	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	67	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1b	N2b	M1d(1)
-ST0004	PT00871	DI00871	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T1mi	N2a	M1c(1)
+ST0004	PT00870	DI00870	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	67	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ic	T1b	N2b	M1d(1)
+ST0004	PT00871	DI00871	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iia1	T1mi	N2a	M1c(1)
 ST0004	PT00872	DI00872	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	38	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia	T1	N3a	M1e
 ST0004	PT00873	DI00873	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1b2	N3a	M1d
 ST0004	PT00876	DI00876	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	T2	N3b	M1d
 ST0004	PT00879	DI00879	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	T3	N1b	M1e
-ST0004	PT00880	DI00880	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	TX	N2	M1d(0)
-ST0004	PT00884	DI00884	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	Ta	N2a	M1d(1)
+ST0004	PT00880	DI00880	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage 0'	TX	N2	M1d(0)
+ST0004	PT00884	DI00884	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ib1	Ta	N2a	M1d(1)
 ST0004	PT00886	DI00886	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ie	T0	N2	M1d(1)
 ST0004	PT00888	DI00888	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ii	Tis(LCIS)	N3a	M1d
-ST0004	PT00890	DI00890	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T3c	N1c	M1d
-ST0004	PT00891	DI00891	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T2a1	N1a(sn)	M1d(0)
-ST0004	PT00892	DI00892	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T2c	NX	M1d(1)
-ST0004	PT00893	DI00893	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	Tis pu	N2	M1e
+ST0004	PT00890	DI00890	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiia1	T3c	N1c	M1d
+ST0004	PT00891	DI00891	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iic	T2a1	N1a(sn)	M1d(0)
+ST0004	PT00892	DI00892	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva2	T2c	NX	M1d(1)
+ST0004	PT00893	DI00893	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiic2	Tis pu	N2	M1e
 ST0004	PT00894	DI00894	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	46	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia2	T2a1	NX	M1d
 ST0004	PT00895	DI00895	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ib	T2a	N3	M1d
 ST0004	PT00896	DI00896	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T1mi	N2	M1d(0)
-ST0004	PT00897	DI00897	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iv	Tis(Paget)	N3a	M1d(1)
-ST0004	PT00899	DI00899	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	T2	N3b	M1e
-ST0004	PT00901	DI00901	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T4d	N1b	M1d(0)
-ST0004	PT00903	DI00903	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	46	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	T3	N3a	M1c(1)
-ST0004	PT00904	DI00904	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T2d	N1mi	M1e
-ST0004	PT00908	DI00908	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	73	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	T2c	N1mi	M1d(0)
+ST0004	PT00897	DI00897	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iv	Tis(Paget)	N3a	M1d(1)
+ST0004	PT00899	DI00899	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ib	T2	N3b	M1e
+ST0004	PT00901	DI00901	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiia1	T4d	N1b	M1d(0)
+ST0004	PT00903	DI00903	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	46	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage 0'	T3	N3a	M1c(1)
+ST0004	PT00904	DI00904	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva2	T2d	N1mi	M1e
+ST0004	PT00908	DI00908	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	73	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva1	T2c	N1mi	M1d(0)
 ST0004	PT00909	DI00909	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T1b2	N4	M1c(1)
 ST0004	PT00916	DI00916	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	58	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia1	T2a2	N3b	M1d(0)
-ST0004	PT00925	DI00925	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T3a	N2mi	M1d(0)
-ST0004	PT00927	DI00927	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib2	TX	N2a	M1d(0)
-ST0004	PT00928	DI00928	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T1b1	N2	M1d(1)
-ST0004	PT00929	DI00929	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ie	T2b	N1mi	M1d(1)
-ST0004	PT00930	DI00930	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T1mi	N2a	M1d(1)
+ST0004	PT00925	DI00925	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage i	T3a	N2mi	M1d(0)
+ST0004	PT00927	DI00927	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ib2	TX	N2a	M1d(0)
+ST0004	PT00928	DI00928	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva2	T1b1	N2	M1d(1)
+ST0004	PT00929	DI00929	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ie	T2b	N1mi	M1d(1)
+ST0004	PT00930	DI00930	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ia1	T1mi	N2a	M1d(1)
 ST0004	PT00931	DI00931	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia3	T0	N1b	M1e
 ST0004	PT00933	DI00933	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iib	T3b	N3c	M1d(1)
-ST0004	PT00935	DI00935	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	58	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T1b	N3a	M1d(1)
-ST0004	PT00937	DI00937	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	73	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib2	Tis	N2b	M1d(1)
+ST0004	PT00935	DI00935	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	58	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ii	T1b	N3a	M1d(1)
+ST0004	PT00937	DI00937	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	73	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ib2	Tis	N2b	M1d(1)
 ST0004	PT00939	DI00939	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva1	Tis(Paget’s)	N2	M1d(0)
-ST0004	PT00942	DI00942	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	T1mi	N2c	M1d(1)
+ST0004	PT00942	DI00942	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiic2	T1mi	N2c	M1d(1)
 ST0004	PT00948	DI00948	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ib	T2a2	N1c	M1d
-ST0004	PT00951	DI00951	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2a2	N3c	M1e
-ST0004	PT00952	DI00952	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	Ta	N4	M1d(1)
+ST0004	PT00951	DI00951	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	occult carcinoma	T2a2	N3c	M1e
+ST0004	PT00952	DI00952	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva1	Ta	N4	M1d(1)
 ST0004	PT00954	DI00954	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiid	T1mi	N1a(sn)	M1e
-ST0004	PT00955	DI00955	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T2b	N3a	M1c(1)
+ST0004	PT00955	DI00955	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ia1	T2b	N3a	M1c(1)
 ST0004	PT00957	DI00957	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva1	T2d	NX	M1d(0)
-ST0004	PT00958	DI00958	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	Tis(Paget)	NX	M1d
-ST0004	PT00960	DI00960	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	TX	N2a	M1d(1)
+ST0004	PT00958	DI00958	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiic1	Tis(Paget)	NX	M1d
+ST0004	PT00960	DI00960	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iic	TX	N2a	M1d(1)
 ST0004	PT00964	DI00964	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	43	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	sstage 0is	Tis(DCIS)	N3c	M1e
 ST0004	PT00967	DI00967	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iii	Tis(LCIS)	N3c	M1c(1)
-ST0004	PT00968	DI00968	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	T1b1	N2mi	M1c(1)
+ST0004	PT00968	DI00968	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiic1	T1b1	N2mi	M1c(1)
 ST0004	PT00972	DI00972	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T3e	N1c	M1d(0)
 ST0004	PT00973	DI00973	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic2	T4d	N3	M1d
 ST0004	PT00974	DI00974	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	TX	N2	M1d
 ST0004	PT00981	DI00981	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ie	T1	N2a	M1e
 ST0004	PT00982	DI00982	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1a2	N2a	M1d(0)
-ST0004	PT00984	DI00984	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	T2b	N2mi	M1e
-ST0004	PT00985	DI00985	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	34	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T1mi	N2	M1c(1)
+ST0004	PT00984	DI00984	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iva	T2b	N2mi	M1e
+ST0004	PT00985	DI00985	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	34	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iiia	T1mi	N2	M1c(1)
 ST0004	PT00987	DI00987	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	T1a1	N4	M1c(1)
 ST0004	PT00988	DI00988	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	Tis(DCIS)	N1a(sn)	M1d(1)
 ST0004	PT00989	DI00989	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	74	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T4c	N1b	M1d(1)
-ST0004	PT00991	DI00991	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	T1a1	NX	M1e
+ST0004	PT00991	DI00991	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage ib	T1a1	NX	M1e
 ST0004	PT00993	DI00993	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage is	TX	N4	M1e
 ST0004	PT00995	DI00995	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	Tis(Paget’s)	N2c	M1d
-ST0004	PT00997	DI00997	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T1mi	N1mi	M1d(1)
-ST0004	PT00998	DI00998	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T4b	N1a(sn)	M1d
+ST0004	PT00997	DI00997	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iia1	T1mi	N1mi	M1d(1)
+ST0004	PT00998	DI00998	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	TRUE	Clinical 	AJCC 8th edition	stage iia	T4b	N1a(sn)	M1d
 ST0001	PT00035	DI00035	Cancer of breast	Neoplasms	C50	Malignant neoplasm of breast	MONDO:0007254	Breast cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3a	N2a	M1e
 ST0001	PT00062	DI00062	Cancer of breast	Neoplasms	C50	Malignant neoplasm of breast	MONDO:0007254	Breast cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	Tis(LAMN)	N4	M1d(0)
 ST0001	PT00066	DI00066	Cancer of breast	Neoplasms	C50	Malignant neoplasm of breast	MONDO:0007254	Breast cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivc	TX	N3a	M1d(1)
@@ -290,9 +290,9 @@ ST0001	PT00339	DI00339	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oro
 ST0002	PT00502	DI00502	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1c	N1mi	M1e
 ST0002	PT00503	DI00503	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T1b1	N4	M1e
 ST0003	PT00758	DI00758	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia3	T1a	N2c	M1c(1)
-ST0002	PT00553	DI00553	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO:6998	Tonsil cancer		FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	TX	N3	M1d(0)
-ST0003	PT00632	DI00632	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO:6998	Tonsil cancer		FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Tis pd	N2mi	M1c(1)
-ST0003	PT00779	DI00779	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO:6998	Tonsil cancer		FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1b2	N2	M1d(0)
+ST0002	PT00553	DI00553	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	TX	N3	M1d(0)
+ST0003	PT00632	DI00632	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Tis pd	N2mi	M1c(1)
+ST0003	PT00779	DI00779	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO	6998	Tonsil cancer	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1b2	N2	M1d(0)
 ST0001	PT00020	DI00020	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3	N1b	M1d(1)
 ST0001	PT00174	DI00174	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	T4	N2c	M1d(0)
 ST0001	PT00329	DI00329	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T2d	N1b	M1c(1)
@@ -338,49 +338,49 @@ ST0003	PT00665	DI00665	Cancer of bladder	Neoplasms	C67	Malignant neoplasm of bla
 ST0004	PT00826	DI00826	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	T4c	N1mi	M1e
 ST0004	PT00828	DI00828	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T1mi	N1b	M1d(0)
 ST0004	PT00830	DI00830	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	Tis pd	N3c	M1d(1)
-ST0004	PT00831	DI00831	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ivb	T1b	N3b	M1d(1)
+ST0004	PT00831	DI00831	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ivb	T1b	N3b	M1d(1)
 ST0004	PT00833	DI00833	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	sstage 0is	T4a	N3	M1d(1)
 ST0004	PT00834	DI00834	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iii	T3	N1a(sn)	M1e
-ST0004	PT00835	DI00835	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic1	T2a1	N1b	M1e
+ST0004	PT00835	DI00835	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiic1	T2a1	N1b	M1e
 ST0004	PT00840	DI00840	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	T4	N1b	M1d(0)
-ST0004	PT00841	DI00841	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iva1	TX	N2	M1c(1)
+ST0004	PT00841	DI00841	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iva1	TX	N2	M1c(1)
 ST0004	PT00843	DI00843	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	Tis pd	N3	M1d
-ST0004	PT00844	DI00844	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	43	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	Tis(DCIS)	N2c	M1e
-ST0004	PT00847	DI00847	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	76	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	sstage 0is	T4b	N2a	M1d
-ST0004	PT00848	DI00848	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia1	Tis(DCIS)	N1a(sn)	M1c(1)
+ST0004	PT00844	DI00844	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	43	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiib	Tis(DCIS)	N2c	M1e
+ST0004	PT00847	DI00847	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	76	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	sstage 0is	T4b	N2a	M1d
+ST0004	PT00848	DI00848	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iia1	Tis(DCIS)	N1a(sn)	M1c(1)
 ST0004	PT00849	DI00849	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T0	N1b	M1c(1)
-ST0004	PT00851	DI00851	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ie	Tis pu	NX	M1d(1)
-ST0004	PT00855	DI00855	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib	T4a	N1c	M1c(1)
+ST0004	PT00851	DI00851	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	48	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ie	Tis pu	NX	M1d(1)
+ST0004	PT00855	DI00855	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ib	T4a	N1c	M1c(1)
 ST0004	PT00857	DI00857	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ic	T4c	N1c	M1c(1)
-ST0004	PT00858	DI00858	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiid	T1d	N3a	M1c(1)
+ST0004	PT00858	DI00858	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiid	T1d	N3a	M1c(1)
 ST0004	PT00862	DI00862	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	37	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia3	Tis pd	N2a	M1d(1)
 ST0004	PT00863	DI00863	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia2	T2a	N1mi	M1d
-ST0004	PT00865	DI00865	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib1	T1b2	N1c	M1d(1)
+ST0004	PT00865	DI00865	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ib1	T1b2	N1c	M1d(1)
 ST0004	PT00866	DI00866	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	35	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva1	Tis(DCIS)	N3c	M1d(1)
-ST0004	PT00867	DI00867	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	46	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia	Tis pu	N2mi	M1d(0)
+ST0004	PT00867	DI00867	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	46	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiia	Tis pu	N2mi	M1d(0)
 ST0004	PT00869	DI00869	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	38	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	T2a2	N4	M1d(0)
 ST0004	PT00874	DI00874	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	54	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia1	Tis(DCIS)	N2a	M1e
 ST0004	PT00875	DI00875	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage i	Tis(LCIS)	N4	M1d
-ST0004	PT00877	DI00877	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	T2d	N2b	M1d(0)
+ST0004	PT00877	DI00877	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiib	T2d	N2b	M1d(0)
 ST0004	PT00878	DI00878	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia2	T4d	N3c	M1d(1)
 ST0004	PT00881	DI00881	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	70	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T1c	N2c	M1d(0)
 ST0004	PT00882	DI00882	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiid	T0	N1mi	M1d(1)
-ST0004	PT00883	DI00883	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia	T4a	N2b	M1d(0)
-ST0004	PT00885	DI00885	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	Tis pu	NX	M1c(1)
+ST0004	PT00883	DI00883	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iia	T4a	N2b	M1d(0)
+ST0004	PT00885	DI00885	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ii	Tis pu	NX	M1c(1)
 ST0004	PT00887	DI00887	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T2d	N4	M1e
 ST0004	PT00889	DI00889	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	71	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic	T1	N3a	M1d
 ST0004	PT00898	DI00898	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	53	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 1	T0	N4	M1c(1)
-ST0004	PT00900	DI00900	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia2	Tis	NX	M1c(1)
+ST0004	PT00900	DI00900	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ia2	Tis	NX	M1c(1)
 ST0004	PT00902	DI00902	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	43	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T3e	N1mi	M1d(1)
-ST0004	PT00905	DI00905	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic2	T4e	N3	M1c(1)
-ST0004	PT00906	DI00906	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia3	T1b2	N3	M1d(0)
+ST0004	PT00905	DI00905	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	55	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiic2	T4e	N3	M1c(1)
+ST0004	PT00906	DI00906	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ia3	T1b2	N3	M1d(0)
 ST0004	PT00907	DI00907	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ie	T2	N2mi	M1c(1)
-ST0004	PT00910	DI00910	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib	T1c	N3b	M1c(1)
+ST0004	PT00910	DI00910	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ib	T1c	N3b	M1c(1)
 ST0004	PT00911	DI00911	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	67	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	Tis(Paget)	N3b	M1d(0)
 ST0004	PT00912	DI00912	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	39	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib	T0	N1a(sn)	M1d(0)
-ST0004	PT00913	DI00913	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	T4	NX	M1e
+ST0004	PT00913	DI00913	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ii	T4	NX	M1e
 ST0004	PT00914	DI00914	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	42	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T2	N2mi	M1e
-ST0004	PT00915	DI00915	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage i	T4c	N3a	M1d(1)
+ST0004	PT00915	DI00915	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage i	T4c	N3a	M1d(1)
 ST0004	PT00917	DI00917	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib2	T4a	N3a	M1e
 ST0004	PT00918	DI00918	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	65	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva	T3a	N2a	M1d(1)
 ST0004	PT00919	DI00919	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T3b	N2a	M1d(1)
@@ -388,45 +388,45 @@ ST0004	PT00920	DI00920	Malignant neoplasm of prostate	Neoplasms	C61	Malignant ne
 ST0004	PT00921	DI00921	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	69	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib2	T1a	N3	M1d
 ST0004	PT00922	DI00922	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T3	N2	M1e
 ST0004	PT00923	DI00923	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	61	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	Tis(Paget’s)	N3a	M1c(1)
-ST0004	PT00924	DI00924	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia2	Tis(LCIS)	N4	M1d(0)
-ST0004	PT00926	DI00926	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	67	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ivb	T3b	N2	M1c(1)
-ST0004	PT00932	DI00932	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iv	T1c	N2a	M1d
+ST0004	PT00924	DI00924	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	49	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iia2	Tis(LCIS)	N4	M1d(0)
+ST0004	PT00926	DI00926	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	67	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ivb	T3b	N2	M1c(1)
+ST0004	PT00932	DI00932	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iv	T1c	N2a	M1d
 ST0004	PT00934	DI00934	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	72	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivb	T1d	N3	M1d(0)
 ST0004	PT00936	DI00936	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	66	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	T1b2	N2c	M1d
 ST0004	PT00938	DI00938	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiib	T2a2	N1b	M1c(1)
-ST0004	PT00940	DI00940	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0a	Tis(Paget)	N1b	M1d(1)
-ST0004	PT00941	DI00941	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	54	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0a	T0	N2c	M1d(0)
+ST0004	PT00940	DI00940	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage 0a	Tis(Paget)	N1b	M1d(1)
+ST0004	PT00941	DI00941	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	54	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage 0a	T0	N2c	M1d(0)
 ST0004	PT00943	DI00943	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	56	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	T1d	N1b	M1d(1)
-ST0004	PT00944	DI00944	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia1	T2d	N3	M1e
-ST0004	PT00945	DI00945	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	40	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia2	T2	N3a	M1d(1)
+ST0004	PT00944	DI00944	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiia1	T2d	N3	M1e
+ST0004	PT00945	DI00945	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	40	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiia2	T2	N3a	M1d(1)
 ST0004	PT00946	DI00946	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T1a1	N3b	M1d(0)
-ST0004	PT00947	DI00947	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	79	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iie	T1c	N3a	M1d(0)
+ST0004	PT00947	DI00947	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	79	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iie	T1c	N3a	M1d(0)
 ST0004	PT00949	DI00949	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	51	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T4b	N2a	M1e
 ST0004	PT00950	DI00950	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T1b	N2a	M1d
 ST0004	PT00953	DI00953	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ic	Ta	N3b	M1d(1)
 ST0004	PT00956	DI00956	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva1	Tis(DCIS)	N3c	M1d(1)
-ST0004	PT00959	DI00959	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	sstage 0is	T1a1	N4	M1d(1)
+ST0004	PT00959	DI00959	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	44	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	sstage 0is	T1a1	N4	M1d(1)
 ST0004	PT00961	DI00961	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	occult carcinoma	T4a	N2b	M1d(0)
-ST0004	PT00962	DI00962	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ie	T4d	N2b	M1d
-ST0004	PT00963	DI00963	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	T3e	N1b	M1e
+ST0004	PT00962	DI00962	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ie	T4d	N2b	M1d
+ST0004	PT00963	DI00963	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	45	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiib	T3e	N1b	M1e
 ST0004	PT00965	DI00965	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	Tis(Paget)	N2b	M1d(0)
 ST0004	PT00966	DI00966	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia2	T2a2	N2	M1d
 ST0004	PT00969	DI00969	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia	T1b1	N2mi	M1d(1)
-ST0004	PT00970	DI00970	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic	T4	N2mi	M1e
+ST0004	PT00970	DI00970	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	62	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiic	T4	N2mi	M1e
 ST0004	PT00971	DI00971	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic	Tis(DCIS)	N2a	M1d(0)
 ST0004	PT00975	DI00975	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	52	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic1	Tis(LCIS)	N1a(sn)	M1c(1)
-ST0004	PT00976	DI00976	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iii	Tis pd	N3b	M1d
+ST0004	PT00976	DI00976	Neoplasm of the prostate gland	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iii	Tis pd	N3b	M1d
 ST0004	PT00977	DI00977	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	75	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0a	Tis(LCIS)	N1b	M1d(1)
 ST0004	PT00978	DI00978	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	34	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iic	T1mi	NX	M1c(1)
 ST0004	PT00979	DI00979	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiia1	T1a1	N1mi	M1c(1)
 ST0004	PT00980	DI00980	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	64	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	Tis(DCIS)	N1mi	M1d
 ST0004	PT00983	DI00983	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	60	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva2	Tis pd	N2c	M1d(0)
-ST0004	PT00986	DI00986	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	71	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia2	T2a2	N2	M1d(1)
+ST0004	PT00986	DI00986	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	71	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage ia2	T2a2	N2	M1d(1)
 ST0004	PT00990	DI00990	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T1a2	N2b	M1c(1)
-ST0004	PT00992	DI00992	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iva	TX	N1b	M1e
+ST0004	PT00992	DI00992	Prostatic cancer	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	50	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iva	TX	N1b	M1e
 ST0004	PT00994	DI00994	Prostate neoplasm	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	47	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib	T3e	N2b	M1d(1)
 ST0004	PT00996	DI00996	Cancer of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	58	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	T1a1	N1mi	M1d(0)
-ST0004	PT00999	DI00999	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic2	T3a	N1c	M1d(0)
+ST0004	PT00999	DI00999	Malignant neoplasm of prostate	Neoplasms	C61	Malignant neoplasm of prostate	MONDO:0008315	Prostate cancer	68	FALSE	TRUE	FALSE	Clinical 	AJCC 8th edition	stage iiic2	T3a	N1c	M1d(0)
 ST0003	PT00716	DI00716	Bone cancer	Neoplasms	C40	Malignant neoplasm of bone and articular cartilage of limbs	MONDO:0024311	Cancer affecting bone of limb skeleton		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	T4c	N1mi	M1d
 ST0003	PT00761	DI00761	Bone cancer	Neoplasms	C40	Malignant neoplasm of bone and articular cartilage of limbs	MONDO:0024311	Cancer affecting bone of limb skeleton		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iic	T2	N2mi	M1d(0)
 ST0003	PT00785	DI00785	Bone cancer	Neoplasms	C40	Malignant neoplasm of bone and articular cartilage of limbs	MONDO:0024311	Cancer affecting bone of limb skeleton		FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iii	T3b	N2a	M1e
@@ -444,7 +444,7 @@ ST0003	PT00701	DI00701	Colo-rectal carcinoma	Neoplasms	C18	Malignant neoplasm of
 ST0003	PT00653	DI00653	Stomach cancer	Neoplasms	C16	Malignant neoplasm of stomach	MONDO:0001056	Gastric cancer		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0a	T2a1	N3c	M1e
 ST0003	PT00812	DI00812	Malignant neoplasm of stomach	Neoplasms	C16	Malignant neoplasm of stomach	MONDO:0001056	Gastric cancer		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T4b	N1mi	M1c(1)
 ST0003	PT00746	DI00746	Cancer of pharynx	Neoplasms	C10	Malignant neoplasm of oropharynx	MONDO:0004608	Oropharynx cancer		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T1	N1a(sn)	M1e
-ST0003	PT00815	DI00815	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO:6998	Tonsil cancer		FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ic	Tis	N3a	M1d(1)
+ST0003	PT00815	DI00815	Cancer of tonsil	Neoplasms	C09	Malignant neoplasm of tonsil	MONDO:0006998	Tonsil cancer		FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ic	Tis	N3a	M1d(1)
 ST0003	PT00704	DI00704	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T3d	N3c	M1d(0)
 ST0003	PT00803	DI00803	Gum cancer	Neoplasms	C03	Malignant neoplasm of gum	MONDO:0005507	Gingival cancer		FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	Tis(DCIS)	N1mi	M1d
 ST0002	PT00487	DI00487	underdeveloped ear	Congenital malformations, deformations and chromosomal abnormalities	Q17.2	Microtia	MONDO:0010920	Microtia	13	FALSE	FALSE							
@@ -693,12 +693,12 @@ ST0001	PT00256	DI00256	Ulcerative colitis	Diseases of the digestive system	K51	U
 ST0001	PT00257	DI00257	UC	Diseases of the digestive system	K51	Ulcerative colitis	MONDO:0005101	Ulcerative colitis	44	TRUE	FALSE		Clinical					
 ST0001	PT00288	DI00288	Ulcerative colitis	Diseases of the digestive system	K51	Ulcerative colitis	MONDO:0005101	Ulcerative colitis	55	TRUE	FALSE		Clinical					
 ST0001	PT00332	DI00332	UC	Diseases of the digestive system	K51	Ulcerative colitis	MONDO:0005101	Ulcerative colitis	59	TRUE	FALSE		Clinical					
-ST0001	PT00055	DI00055	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	54	TRUE	FALSE		Clinical					
-ST0001	PT00111	DI00111	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	66	TRUE	FALSE		Clinical					
-ST0001	PT00125	DI00125	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	30	TRUE	FALSE		Clinical					
-ST0001	PT00140	DI00140	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	42	TRUE	FALSE		Clinical					
-ST0001	PT00273	DI00273	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	45	TRUE	FALSE		Clinical					
-ST0001	PT00331	DI00331	Crohn's	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	44	TRUE	FALSE		Clinical					
+ST0001	PT00055	DI00055	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	54	TRUE	FALSE		Clinical					
+ST0001	PT00111	DI00111	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	66	TRUE	FALSE		Clinical					
+ST0001	PT00125	DI00125	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	30	TRUE	FALSE		Clinical					
+ST0001	PT00140	DI00140	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	42	TRUE	FALSE		Clinical					
+ST0001	PT00273	DI00273	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	45	TRUE	FALSE		Clinical					
+ST0001	PT00331	DI00331	Crohn's 	Diseases of the digestive system	K50	Crohn disease	MONDO:0005011	Crohn disease	44	TRUE	FALSE		Clinical					
 ST0001	PT00027	DI00027	Vein thrombosis	Diseases of the circulatory system	I81	Portal vein thrombosis	MONDO:0001339	Portal vein thrombosis	54	TRUE	FALSE		Clinical					
 ST0001	PT00065	DI00065	Vein thrombosis	Diseases of the circulatory system	I81	Portal vein thrombosis	MONDO:0001339	Portal vein thrombosis	62	TRUE	FALSE		Clinical					
 ST0001	PT00122	DI00122	Portal vein thrombosis	Diseases of the circulatory system	I81	Portal vein thrombosis	MONDO:0001339	Portal vein thrombosis	48	TRUE	FALSE		Clinical					
@@ -817,15 +817,15 @@ ST0001	PT00373	DI00373	Rheumatic endocarditis	Diseases of the circulatory system
 ST0001	PT00014	DI00014	Glaucoma	Diseases of the eye and adnexa	H40	Glaucoma	MONDO:0005041	Glaucoma	59	TRUE	FALSE		Clinical					
 ST0001	PT00119	DI00119	Glaucoma	Diseases of the eye and adnexa	H40	Glaucoma	MONDO:0005041	Glaucoma	49	TRUE	FALSE		Clinical					
 ST0001	PT00243	DI00243	Glaucoma	Diseases of the eye and adnexa	H40	Glaucoma	MONDO:0005041	Glaucoma	53	TRUE	FALSE		Clinical					
-ST0001	PT00007	DI00007	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	42	TRUE	FALSE		Clinical					
-ST0001	PT00098	DI00098	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	52	TRUE	FALSE		Clinical					
-ST0001	PT00102	DI00102	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	56	TRUE	FALSE		Clinical					
-ST0001	PT00164	DI00164	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	66	TRUE	FALSE		Clinical					
-ST0001	PT00232	DI00232	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	54	TRUE	FALSE		Clinical					
-ST0001	PT00242	DI00242	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	54	TRUE	FALSE		Clinical					
-ST0001	PT00255	DI00255	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	63	TRUE	FALSE		Clinical					
-ST0001	PT00300	DI00300	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	55	TRUE	FALSE		Clinical					
-ST0001	PT00301	DI00301	Reye's	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	32	TRUE	FALSE		Clinical					
+ST0001	PT00007	DI00007	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	42	TRUE	FALSE		Clinical					
+ST0001	PT00098	DI00098	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	52	TRUE	FALSE		Clinical					
+ST0001	PT00102	DI00102	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	56	TRUE	FALSE		Clinical					
+ST0001	PT00164	DI00164	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	66	TRUE	FALSE		Clinical					
+ST0001	PT00232	DI00232	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	54	TRUE	FALSE		Clinical					
+ST0001	PT00242	DI00242	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	54	TRUE	FALSE		Clinical					
+ST0001	PT00255	DI00255	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	63	TRUE	FALSE		Clinical					
+ST0001	PT00300	DI00300	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	55	TRUE	FALSE		Clinical					
+ST0001	PT00301	DI00301	Reye's 	Diseases of the nervous system	G93.7	Reye syndrome	MONDO:0005942	Reye syndrome	32	TRUE	FALSE		Clinical					
 ST0001	PT00028	DI00028	Alzheimer	Diseases of the nervous system	G30	Alzheimer disease	MONDO:0004975	Alzheimer disease	56	TRUE	FALSE		Clinical					
 ST0001	PT00106	DI00106	Alzheimer	Diseases of the nervous system	G30	Alzheimer disease	MONDO:0004975	Alzheimer disease	43	TRUE	FALSE		Clinical					
 ST0001	PT00128	DI00128	Alzheimer	Diseases of the nervous system	G30	Alzheimer disease	MONDO:0004975	Alzheimer disease	63	TRUE	FALSE		Clinical					
@@ -849,9 +849,9 @@ ST0001	PT00335	DI00335	Bipolar	Mental, Behavioral and Neurodevelopmental disorde
 ST0001	PT00343	DI00343	Cyclothemia	Mental, Behavioral and Neurodevelopmental disorders	F31	Bipolar affective disorder	MONDO:0004985	Bipolar disorder	37	TRUE	FALSE		Clinical					
 ST0001	PT00344	DI00344	Bipolar	Mental, Behavioral and Neurodevelopmental disorders	F31	Bipolar affective disorder	MONDO:0004985	Bipolar disorder	54	TRUE	FALSE		Clinical					
 ST0001	PT00054	DI00054	Schizophrenia	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	52	TRUE	FALSE		Clinical					
-ST0001	PT00083	DI00083	Schizo-affective	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	37	TRUE	FALSE		Clinical					
+ST0001	PT00083	DI00083	Schizo-affective 	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	37	TRUE	FALSE		Clinical					
 ST0001	PT00100	DI00100	Schizophrenia	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	58	TRUE	FALSE		Clinical					
-ST0001	PT00148	DI00148	Schizo-affective	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	55	TRUE	FALSE		Clinical					
+ST0001	PT00148	DI00148	Schizo-affective 	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	55	TRUE	FALSE		Clinical					
 ST0001	PT00368	DI00368	Schizophrenia	Mental, Behavioral and Neurodevelopmental disorders	F20	Schizophrenia	MONDO:0005090	Schizophrenia	34	TRUE	FALSE		Clinical					
 ST0001	PT00025	DI00025	Diabetes type II	Endocrine, nutritional and metabolic diseases	E11	Type 2 diabetes mellitus	MONDO:0005148	Type 2 diabetes mellitus	31	TRUE	FALSE		Clinical					
 ST0001	PT00063	DI00063	TIID	Endocrine, nutritional and metabolic diseases	E11	Type 2 diabetes mellitus	MONDO:0005148	Type 2 diabetes mellitus	46	TRUE	FALSE		Clinical					

@@ -16,13 +16,13 @@ class DonorsFamilySpec extends AnyFlatSpec with GivenWhenThen with WithSparkSess
 
   val destination        : DatasetConf = job.destination
   val donors             : DatasetConf = job.donors
-  val family_relationship: DatasetConf = job.family_relationship
+  val family             : DatasetConf = job.family
   val family_history     : DatasetConf = job.family_history
   val exposure           : DatasetConf = job.exposure
 
   val inputData = Map(
     donors.id -> Seq(DonorInput()).toDF(),
-    family_relationship.id -> Seq(FamilyRelationshipInput(`submitter_donor_id_1` = "PT00001")).toDF(),
+    family.id -> Seq(FamilyInput(`submitter_donor_id` = "PT00001")).toDF(),
     family_history.id -> Seq(FamilyHistoryInput()).toDF(),
     exposure.id -> Seq(ExposureInput()).toDF()
   )
