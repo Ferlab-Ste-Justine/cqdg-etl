@@ -39,11 +39,9 @@ case class DonorsFamilyOutput(`study_id`: String = "ST0001",
                               `exposures`: List[EXPOSURES] = List(EXPOSURES()),
                               `age_at_recruitment`: String = "64")
 
-case class FAMILYRELATIONSHIPS(`submitter_donor_id_1`: String = "PT00001",
-                               `submitter_donor_id_2`: String = "PT00628",
+case class FAMILYRELATIONSHIPS(`submitter_donor_id`: String = "PT00001",
                                `family_type`: String = "Case-parent trio",
-                               `familiy_1_2_relationship`: String = "Wife",
-                               `family_2_1_relationship`: String = "Husband")
+                               `relationship_to_proband`: String = "Wife")
 
 case class EXPOSURES(`submitter_exposure_id`: String = "EX00001",
                      `smoking_status`: String = "Never smoker",

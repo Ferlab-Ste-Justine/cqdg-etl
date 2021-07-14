@@ -107,7 +107,7 @@ object SummaryUtils {
     val summaryExposure = computeClinicalDataAvailableForDataFrame(exposuresPerDonorAndStudy, "exposure")
     val summaryFollowUp = computeClinicalDataAvailableForDataFrame(followUpsPerDonorAndStudy, "follow_up")
     val summaryFamilyHistory = computeClinicalDataAvailableForDataFrame(familyHistoryPerDonorAndStudy, "family_history")
-    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFrame(familyRelationshipPerDonorAndStudy, "family_relationship", "submitter_donor_id_1")
+    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFrame(familyRelationshipPerDonorAndStudy, "family", "submitter_donor_id")
 
     val columnsToFullJoin = Seq("study_id", "key", "donors");
 
@@ -153,7 +153,7 @@ object SummaryUtils {
     val summaryExposure = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, exposuresPerDonorAndStudy, "exposure")
     val summaryFollowUp = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, followUpsPerDonorAndStudy, "follow_up")
     val summaryFamilyHistory = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, familyHistoryPerDonorAndStudy, "family_history")
-    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, familyRelationshipPerDonorAndStudy, "family_relationship", "submitter_donor_id_1")
+    val summaryFamilyRelationship = computeClinicalDataAvailableForDataFramePerDonor(allStudiesAndDonorsCombinations, familyRelationshipPerDonorAndStudy, "family", "submitter_donor_id")
 
     val columnsToFullJoin = Seq("study_id", "submitter_donor_id", "key", "available");
 

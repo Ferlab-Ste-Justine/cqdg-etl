@@ -73,11 +73,11 @@ object EtlUtils {
   }
 
   def loadAll(dfList: List[NamedDataFrame])(ontologies: Map[String, DataFrame])
-             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
+             (implicit spark: SparkSession): (DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame) = {
     import spark.implicits._
 
     val donorsNDF = getDataframe("donor", dfList)
-    val familyRelationshipNDF = getDataframe("familyrelationship", dfList)
+    val familyRelationshipNDF = getDataframe("family", dfList)
     val familyHistoryNDF = getDataframe("familyhistory", dfList)
     val exposureNDF = getDataframe("exposure", dfList)
     val diagnosisNDF = getDataframe("diagnosis", dfList)
@@ -87,7 +87,6 @@ object EtlUtils {
     val fileNDF = getDataframe("file", dfList)
     val biospecimenNDF = getDataframe("biospecimen", dfList)
     val sampleNDF = getDataframe("sampleregistration", dfList)
-    val dataAccessNDF = getDataframe("dataaccess", dfList)
 
     val donor: DataFrame = loadDonors(donorsNDF.dataFrame as "donor",
       familyRelationshipNDF.dataFrame as "familyRelationship",
@@ -227,12 +226,12 @@ object EtlUtils {
     val exposuresPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(exposureNDF.dataFrame, "exposure")
     val followUpsPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(followUpNDF.dataFrame, "followUp")
     val familyHistoryPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(familyHistoryNDF.dataFrame, "familyHistory")
-    val familyRelationshipPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(familyRelationshipNDF.dataFrame, "familyRelationship", "submitter_donor_id_1")
+    val familyRelationshipPerDonorAndStudy: DataFrame = loadPerDonorAndStudy(familyRelationshipNDF.dataFrame, "familyRelationship")
 
     val biospecimenWithSamples: DataFrame = loadBiospecimens(biospecimenNDF.dataFrame, sampleNDF.dataFrame) as "biospecimenWithSamples"
     val file: DataFrame = fileNDF.dataFrame as "file"
 
-    (dataAccessNDF.dataFrame, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
+    (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
   }
 
   private def extractMainCategory(
@@ -402,13 +401,12 @@ object EtlUtils {
 
     val familyRelationshipsPerDonor = donor.as("donor")
       .join(
-        familyRelationship.as("familyRelationship"),
-        $"donor.submitter_donor_id" === $"familyRelationship.submitter_donor_id_1" || $"donor.submitter_donor_id" === $"familyRelationship.submitter_donor_id_2", "left")
-      .withColumn("joinCol", when($"donor.submitter_donor_id" === $"familyRelationship.submitter_donor_id_1", col("submitter_donor_id_1")).otherwise(col("submitter_donor_id_2")))
+        familyRelationship.as("familyRelationship"), Seq("submitter_donor_id"), "left")
+      .withColumn("joinCol", $"submitter_donor_id")
       .groupBy($"joinCol")
       .agg(
         collect_list(
-          struct(familyRelationship.columns.filterNot(List("study_id", "gender").contains(_)).map(col): _*)
+          struct(familyRelationship.columns.filterNot(List("study_id", "gender", "is_a_proband").contains(_)).map(col): _*)
         ) as "familyRelationships"
       ) as "familyRelationshipsPerDonor"
 

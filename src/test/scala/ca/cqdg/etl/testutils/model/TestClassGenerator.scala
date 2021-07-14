@@ -27,7 +27,7 @@ object TestClassGenerator extends WithSparkSession with App {
   readTSV("tsv/input/donor.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "DonorInput", root)
   readTSV("tsv/input/exposure.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "ExposureInput", root)
   readTSV("tsv/input/family-history.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "FamilyHistoryInput", root)
-  readTSV("tsv/input/family-relationship.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "FamilyRelationshipInput", root)
+  readTSV("tsv/input/family-relationship.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "FamilyInput", root)
   readTSV("tsv/input/file.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "FileInput", root)
   readTSV("tsv/input/follow-up.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "FollowUpInput", root)
   readTSV("tsv/input/phenotype.tsv").writeCLassFile("ca.cqdg.etl.testutils.model", "PhenotypeInput", root)

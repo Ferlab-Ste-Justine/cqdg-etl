@@ -11,7 +11,7 @@ class DonorsFamily()(implicit conf: Configuration) extends ETL()(conf) {
 
   override val destination: DatasetConf = conf.getDataset("donor_families")
   val donors              : DatasetConf = conf.getDataset("donors")
-  val family_relationship : DatasetConf = conf.getDataset("family_relationship")
+  val family              : DatasetConf = conf.getDataset("family")
   val family_history      : DatasetConf = conf.getDataset("family_history")
   val exposure            : DatasetConf = conf.getDataset("exposure")
 
@@ -19,7 +19,7 @@ class DonorsFamily()(implicit conf: Configuration) extends ETL()(conf) {
   override def extract()(implicit spark: SparkSession): Map[String, DataFrame] = {
     Map(
       donors.id -> donors.read,
-      family_relationship.id  -> family_relationship.read,
+      family.id  -> family.read,
       family_history.id  -> family_history.read,
       donors.id  -> family_history.read,
     )
@@ -29,7 +29,7 @@ class DonorsFamily()(implicit conf: Configuration) extends ETL()(conf) {
 
     val donorDf: DataFrame = data(donors.id )
 
-    val familyRelationshipDf: DataFrame = data(family_relationship.id )
+    val familyRelationshipDf: DataFrame = data(family.id )
       .drop("submitter_family_id")
 
     val familyHistoryDf: DataFrame = data(family_history.id )

@@ -72,7 +72,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
   val schemaList: List[Schema] = PreProcessingUtils.getSchemaList(FileUtils.readFileToString(schemaJsonFile, StandardCharsets.UTF_8))
 
-  val dictionarySchemas: Map[String, List[Schema]] = Map("5.57" -> schemaList)
+  val dictionarySchemas: Map[String, List[Schema]] = Map("5.58" -> schemaList)
 
   val hashString: String = "[" + hashCodesList.map(l => s"""{"hash":"$l","internal_id":"123"}""").mkString(",") + "]"
   val mockBuildIds: String => String = (_: String) => hashString
@@ -95,7 +95,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       .as("study")
 
 
-  val (_,donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
+  val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor,
   biospecimenWithSamples, file, _, _, _, _, _) = loadAll(readyToProcess.head._2)(getOntologyDfs(ontologyTermFiles))
 
   val inputData = Map(
@@ -108,7 +108,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
     "exposuresPerDonorAndStudy" -> Seq(ExposureInput()).toDF(),
     "followUpsPerDonorAndStudy" -> Seq(FollowUpInput()).toDF(),
     "familyHistoryPerDonorAndStudy" -> Seq(FamilyHistoryInput()).toDF(),
-    "familyRelationshipPerDonorAndStudy" -> Seq(FamilyRelationshipInput()).toDF(),
+    "familyRelationshipPerDonorAndStudy" -> Seq(FamilyInput()).toDF(),
     "file" -> Seq(FileInput(`submitter_donor_id` = "PT00060", `submitter_biospecimen_id` = Some("BS00001"))).toDF(),
   )
 
