@@ -84,6 +84,7 @@ object EtlApp extends App {
           $"study_id" as "study_id_keyword",
           $"short_name" as "short_name_keyword",
         )
+        .drop("access_limitations", "access_requirements")
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")
     
