@@ -25,7 +25,6 @@ object Donor {
     val diagnosisPerDonorAndStudy = data("diagnosisPerDonorAndStudy").as("diagnosisGroup")
     val phenotypesPerStudyIdAndDonor = data("phenotypesPerStudyIdAndDonor").as("phenotypeGroup")
     val biospecimenWithSamples = data("biospecimenWithSamples").as("biospecimenWithSamples")
-    val dataAccess = data("dataAccess").as("dataAccess")
     val treatmentsPerDonorAndStudy = data("treatmentsPerDonorAndStudy").as("treatmentsPerDonorAndStudy")
     val exposuresPerDonorAndStudy = data("exposuresPerDonorAndStudy").as("exposuresPerDonorAndStudy")
     val followUpsPerDonorAndStudy = data("followUpsPerDonorAndStudy").as("followUpsPerDonorAndStudy")
@@ -35,18 +34,10 @@ object Donor {
 
     import spark.implicits._
 
-    val dataAccessGroup =
-      DataAccessUtils.computeDataAccessByEntityType(dataAccess,
-        "donor",
-        "submitter_donor_id",
-        duoCodeDf)
-
     val (donorPerFile, _, _, allStudiesAndDonorsCombinations) = SummaryUtils.prepareSummaryDataFrames(donor, file)
     val summaryByCategory = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "data_category").as("summaryByCategory")
     val summaryByStrategy = SummaryUtils.computeFilesByField(donorPerFile, allStudiesAndDonorsCombinations, "experimental_strategy").as("summaryByStrategy")
     val (summaryOfClinicalDataAvailable, summaryOfClinicalDataAvailableOnly) = SummaryUtils.computeAllClinicalDataAvailablePerDonor(allStudiesAndDonorsCombinations, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy)
-
-
 
     val summaryGroup = summaryByCategory
       .join(summaryByStrategy, Seq("study_id","submitter_donor_id"))
@@ -103,7 +94,6 @@ object Donor {
       .join(phenotypesPerStudyIdAndDonor, Seq("study_id", "submitter_donor_id"), "left")
       .join(filesPerDonorAndStudy, Seq("study_id", "submitter_donor_id"), "left")
       .join(summaryGroup, Seq("study_id", "submitter_donor_id"), "left")
-      .join(dataAccessGroup, Seq("submitter_donor_id"), "left")
       .select( cols =
         $"donorWithStudy.*",
         $"diagnoses",
@@ -115,7 +105,6 @@ object Donor {
         $"non_observed_phenotypes",
         $"files_per_donor_per_study" as "files",
         $"summaryGroup.summary",
-        $"dataAccessGroup.data_access_codes"
       )
 
     result

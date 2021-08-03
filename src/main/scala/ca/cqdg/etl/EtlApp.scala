@@ -73,9 +73,9 @@ object EtlApp extends App {
 
     val studyNDF = getDataframe("study", dfList)
     
-    val (dataAccess, donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
+    val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
 
-    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(dataAccess, "study", "study_id", ontologyDfs("duo_code"))
+    val dataAccessGroup = DataAccessUtils.computeDataAccessByEntityType(studyNDF.dataFrame, ontologyDfs("duo_code"))
 
     val study: DataFrame = studyNDF.dataFrame
       .join(dataAccessGroup, Seq("study_id"), "left")
@@ -84,6 +84,7 @@ object EtlApp extends App {
           $"study_id" as "study_id_keyword",
           $"short_name" as "short_name_keyword",
         )
+        .drop("access_limitations", "access_requirements")
         .withColumn("short_name", notNullCol($"short_name"))
         .as("study")
     
@@ -92,7 +93,6 @@ object EtlApp extends App {
         "diagnosisPerDonorAndStudy" -> diagnosisPerDonorAndStudy,
         "phenotypesPerStudyIdAndDonor" -> phenotypesPerStudyIdAndDonor,
         "biospecimenWithSamples" -> biospecimenWithSamples,
-        "dataAccess" -> dataAccess,
         "treatmentsPerDonorAndStudy" -> treatmentsPerDonorAndStudy,
         "exposuresPerDonorAndStudy" -> exposuresPerDonorAndStudy,
         "followUpsPerDonorAndStudy" -> followUpsPerDonorAndStudy,

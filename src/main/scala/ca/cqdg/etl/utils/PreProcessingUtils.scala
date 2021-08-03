@@ -18,7 +18,7 @@ object PreProcessingUtils{
   val dictionaryUsername: String = getConfiguration("LECTERN_USERNAME", "lectern")
   val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "changeMe")
   val dictionaryName: String = getConfiguration("LECTERN_DICTIONARY_NAME", "CQDG Data Dictionary")
-  val dictionaryURL: String = getConfiguration("LECTERN_HOST", "https://schema.qa.cqdg.ferlab.bio")
+  val dictionaryURL: String = getConfiguration("LECTERN_HOST", "http://localhost:3001")
   val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
   val gson: Gson = new Gson()
   val LOG: Logger = Logger.getLogger(this.getClass)
@@ -91,12 +91,12 @@ object PreProcessingUtils{
           "cqdg_hash",
           sha1(concat_ws("_", lit("treatment"), col("study_id"), col("submitter_donor_id"), col("submitter_treatment_id")))),
         "treatment")
-      case "familyrelationship" => (df
-        .withColumn("cqdg_entity", lit("family_relationship"))
+      case "family" => (df
+        .withColumn("cqdg_entity", lit("family"))
         .withColumn(
           "cqdg_hash",
-          sha1(concat_ws("_", lit("family_relationship"), col("study_id"), col("submitter_family_id"), col("submitter_donor_id_1"), col("submitter_donor_id_2")))),
-        "family_relationship")
+          sha1(concat_ws("_", lit("family"), col("study_id"), col("submitter_family_id"), col("submitter_donor_id")))),
+        "family")
       case "biospecimen" => (df
         .withColumn("cqdg_entity", lit("biospecimen"))
         .withColumn(
@@ -139,7 +139,6 @@ object PreProcessingUtils{
           "cqdg_hash",
           sha1(concat_ws("_", lit("file"), col("study_id"), col("submitter_donor_id"), col("file_name")))),
         "file")
-      case "dataaccess" => (df, "data_access") // ignored
       case _ => throw new RuntimeException(s"Could not find the corresponding schema to the given file ${f.filename}")
     }
 
