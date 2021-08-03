@@ -5,7 +5,7 @@ import org.apache.spark.sql.DataFrame
 case class NamedDataFrame(
                            name: String,
                            dataFrame: DataFrame,
-                           studyVersion: String,
-                           studyVersionCreationDate: String,
-                           dictionaryVersion: String
+                           var studyVersion: String,
+                           var studyVersionCreationDate: String,
+                           var dictionaryVersion: String
                          )
