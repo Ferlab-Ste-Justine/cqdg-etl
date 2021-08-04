@@ -83,6 +83,7 @@ case class TREATMENTS(`submitter_treatment_id`: String = "TX00134",
 
 case class ONTOLOGY_TERM(`phenotype_id`: String = "HP:0001513",
                          `name`: String = "Obesity",
+                         `display_name`: String = "Obesity (HP:0001513)",
                          `parents`: Seq[String] = Seq("Increased body weight HP:0004324"),
                          `age_at_event`: Set[Int] = Set(54),
                          `is_leaf`: Boolean = false,
