@@ -1,6 +1,7 @@
 package ca.cqdg.etl.utils
 
 import com.typesafe.config.ConfigFactory
+import org.apache.log4j.{Level, Logger}
 import org.keycloak.authorization.client.{AuthzClient, Configuration}
 import org.keycloak.representations.idm.authorization.{ResourceRepresentation, ScopeRepresentation}
 import org.slf4j.LoggerFactory
@@ -10,7 +11,6 @@ import scala.concurrent.{ExecutionContextExecutorService, Future}
 
 object KeycloakUtils {
 
-  private val log = LoggerFactory.getLogger(this.getClass)
   private val config = ConfigFactory.load.getObject("keycloak").toConfig
   private val keycloakAuthClientConfig = new Configuration(
     config.getString("auth-server-url"),
@@ -18,6 +18,10 @@ object KeycloakUtils {
     config.getString("client-id"),
     Collections.singletonMap("secret", config.getString("secret-key")),
     null) // keycloak API will create a default httpClient
+
+  private val keycloakLogger = config.getString("logger")
+  private val log = LoggerFactory.getLogger(keycloakLogger)
+  Logger.getLogger(keycloakLogger).setLevel(Level.INFO)
 
   val isEnabled: Boolean = config.getBoolean("settings.enabled")
 

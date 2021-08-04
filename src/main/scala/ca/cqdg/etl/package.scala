@@ -47,6 +47,7 @@ package object etl {
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.path.style.access", "true")
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", s3ClientId)
   spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", s3SecretKey)
+  sys.addShutdownHook(spark.stop())
 
   val clientConfiguration = new ClientConfiguration
   clientConfiguration.setSignerOverride("AWSS3V4SignerType")

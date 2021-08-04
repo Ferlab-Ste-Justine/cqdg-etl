@@ -37,7 +37,8 @@ object S3Utils {
 
     val filesGroupedByKey = ls(bucket, prefix, s3Client) // list all S3 files
       .groupBy(f => f.parentKey)
-      .filter(entry => entry._2.exists(f => f.filename == "_SUCCESS")) // only if successfully saved by spark
+      .filter(entry => entry._2.exists(f => f.filename == "_SUCCESS") // only if successfully saved by spark
+        && (entry._2.exists(f => f.filename.endsWith(".csv")) || entry._2.exists(f => f.filename.endsWith(".parquet"))))
 
 
     val filesGroupedBySameFolder = filesGroupedByKey.map({case(path, _) =>
@@ -50,10 +51,9 @@ object S3Utils {
       (parent, files)
     })
 
-    // filter folders that have already been processed (contains a _SUCCESS file)
+    // ignore folders that have already been processed (contains a _SUCCESS file)
     val filterOnlyNotProcessed = filesGroupedBySameFolder.filter({case (path, _) =>
-      val alreadyProcessed = s3Client.doesObjectExist(bucket, s"$path/_SUCCESS")
-      !alreadyProcessed
+      !s3Client.doesObjectExist(bucket, s"$path/_SUCCESS")
     })
 
     filterOnlyNotProcessed
