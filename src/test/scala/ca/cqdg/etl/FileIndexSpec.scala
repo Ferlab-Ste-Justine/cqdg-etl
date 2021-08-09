@@ -145,15 +145,15 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
           List(FAMILYHISTORY("Yes", 48, "Multiple sclerosis", "maternal aunt", "FC00060")), "NO",
           List(FILES("Controled", "Sequencing reads", "Aligned reads", "WGS", "cram", "uK9WHQ0.cram", "uK9WHQ0.cram", "uK9WHQ0.cram", 13.02056279174796, None, true, "Illumina", "BS00060")),
           "Female", "YES", "Not applicable", "Not applicable", "NO", "NO", "YES",
-          List(ONTOLOGY_TERM("HP:0001513", "Obesity", List("Increased body weight HP:0004324"), Set(54), false, false)), "NO",
+          List(ONTOLOGY_TERM("HP:0001513", "Obesity", "Obesity (HP:0001513)", List("Increased body weight HP:0004324"), Set(54), false, false)), "NO",
           List(STUDY("population-based cohort focusing on complex conditions", "General Health", "Common chronic disorders; Prospective cohort; Reference genome", "Study1",
             "Adult", "ST1", "ST1", "ST1", "ST0001", "ST0001")), "PT00060", "alive")),
         List(BIOSPECIMEN("BS00001", "DI00001", "11/22/2009", "Normal", "No", None, "Acute myocardial infarction", "Cryopreservation - other", "Frozen in -70 freezer",
           "Yes", "Blood derived - peripheral blood", "Normal", "C42.0: Blood",
           List(SAMPLES("SA00001", "Total DNA")))), null,
         List(
-          ONTOLOGY_TERM("HP:0001694", "Right-to-left shunt", List("Cardiac shunt (HP:0001693)"), Set(63), true, true),
-          ONTOLOGY_TERM("HP:0001626", "Abnormality of the cardiovascular system", List("Phenotypic abnormality (HP:0000118)"), Set(63), false, false)),
+          ONTOLOGY_TERM("HP:0001694", "Right-to-left shunt", "Right-to-left shunt (HP:0001694)", List("Cardiac shunt (HP:0001693)"), Set(63), true, true),
+          ONTOLOGY_TERM("HP:0001626", "Abnormality of the cardiovascular system", "Abnormality of the cardiovascular system (HP:0001626)", List("Phenotypic abnormality (HP:0000118)"), Set(63), false, false)),
         "5.44", "1.0", "2020/05/01")
 
     df.as[FileIndexOutput].collect().head.copy(`file_size` = 1) shouldBe expectedResult.copy(`file_size` = 1)
@@ -168,6 +168,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0001513",
         `name` = "Obesity",
+        `display_name` = "Obesity (HP:0001513)",
         `parents` = Seq("Increased body weight (HP:0004324)"),
         `age_at_event` = Set(32),
         `is_leaf` = false,
@@ -176,30 +177,35 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0004324",
         `name` = "Increased body weight",
+        `display_name` = "Increased body weight (HP:0004324)",
         `parents` = Seq("Abnormality of body weight (HP:0004323)"),
         `age_at_event` = Set(32),
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0004323",
         `name` = "Abnormality of body weight",
+        `display_name` = "Abnormality of body weight (HP:0004323)",
         `parents` = Seq("Growth abnormality (HP:0001507)"),
         `age_at_event` = Set(32),
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0001507",
         `name` = "Growth abnormality",
+        `display_name` = "Growth abnormality (HP:0001507)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(32)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
+        `display_name` = "Phenotypic abnormality (HP:0000118)",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_event` = Set(32)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000001",
         `name` = "All",
+        `display_name` = "All (HP:0000001)",
         `parents` = Nil,
         `age_at_event` = Set(32)
       )
@@ -216,6 +222,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0005300",
         `name` = "chronic kidney disease",
+        `display_name` = "chronic kidney disease (MONDO:0005300)",
         `parents` = Seq("kidney disease (MONDO:0005240)"),
         `age_at_event` = Set(29),
         `is_leaf` = false,
@@ -234,6 +241,7 @@ class FileIndexSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll wit
       ONTOLOGY_TERM(
         `phenotype_id` = "N18",
         `name` = "Chronic kidney disease (CKD)",
+        `display_name` = "Chronic kidney disease (CKD) (N18)",
         `parents` = Seq("Acute kidney failure and chronic kidney disease (N17-N19)"),
         `age_at_event` = Set(29),
         `is_leaf` = false,

@@ -130,27 +130,30 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
 
     phenotypesForDonor14Tagged should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
-        `phenotype_id` = "HP:0000501",
-        `name` = "Glaucoma",
-        `parents` = Seq("Abnormal eye physiology (HP:0012373)"),
-        `age_at_event` = Set(63),
-        `is_leaf` = false,
-        `is_tagged` = true
-      ),
-      ONTOLOGY_TERM(
         `phenotype_id` = "HP:0100279",
         `name` = "Ulcerative colitis",
+        `display_name` = "Ulcerative colitis (HP:0100279)",
         `parents` = Seq("Chronic colitis (HP:0100281)"),
         `age_at_event` = Set(56),
         `is_leaf` = true,
         `is_tagged` = true
       ),
+      ONTOLOGY_TERM(
+        `phenotype_id` = "HP:0000501",
+        `name` = "Glaucoma",
+        `display_name` = "Glaucoma (HP:0000501)",
+        `parents` = Seq("Abnormal eye physiology (HP:0012373)"),
+        `age_at_event` = Set(63),
+        `is_leaf` = false,
+        `is_tagged` = true
+      )
     )
 
     phenotypesForDonor14 should contain theSameElementsAs Seq(
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000501",
         `name` = "Glaucoma",
+        `display_name` = "Glaucoma (HP:0000501)",
         `parents` = Seq("Abnormal eye physiology (HP:0012373)"),
         `age_at_event` = Set(63),
         `is_leaf` = false,
@@ -159,6 +162,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0100279",
         `name` = "Ulcerative colitis",
+        `display_name` = "Ulcerative colitis (HP:0100279)",
         `parents` = Seq("Chronic colitis (HP:0100281)"),
         `age_at_event` = Set(56),
         `is_leaf` = true,
@@ -167,120 +171,140 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0012373",
         `name` = "Abnormal eye physiology",
+        `display_name` = "Abnormal eye physiology (HP:0012373)",
         `parents` = Seq("Abnormality of the eye (HP:0000478)"),
         `age_at_event` = Set(63),
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000478",
         `name` = "Abnormality of the eye",
+        `display_name` = "Abnormality of the eye (HP:0000478)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(63)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
+        `display_name` = "Phenotypic abnormality (HP:0000118)",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_event` = Set(56, 63)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0025032",
         `name` = "Abnormality of digestive system physiology",
+        `display_name` = "Abnormality of digestive system physiology (HP:0025032)",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0011024",
         `name` = "Abnormality of the gastrointestinal tract",
+        `display_name` = "Abnormality of the gastrointestinal tract (HP:0011024)",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0002583",
         `name` = "Colitis",
+        `display_name` = "Colitis (HP:0002583)",
         `parents` = Seq("Inflammation of the large intestine (HP:0002037)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0002037",
         `name` = "Inflammation of the large intestine",
+        `display_name` = "Inflammation of the large intestine (HP:0002037)",
         `parents` = Seq("Abnormal large intestine morphology (HP:0002250)", "Gastrointestinal inflammation (HP:0004386)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0002715",
         `name` = "Abnormality of the immune system",
+        `display_name` = "Abnormality of the immune system (HP:0002715)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000001",
         `name` = "All",
+        `display_name` = "All (HP:0000001)",
         `parents` = Nil,
         `age_at_event` = Set(56, 63)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0025031",
         `name` = "Abnormality of the digestive system",
+        `display_name` = "Abnormality of the digestive system (HP:0025031)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0012718",
         `name` = "Morphological abnormality of the gastrointestinal tract",
+        `display_name` = "Morphological abnormality of the gastrointestinal tract (HP:0012718)",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system morphology (HP:0025033)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0004386",
         `name` = "Gastrointestinal inflammation",
+        `display_name` = "Gastrointestinal inflammation (HP:0004386)",
         `parents` = Seq("Increased inflammatory response (HP:0012649)", "Functional abnormality of the gastrointestinal tract (HP:0012719)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0012649",
         `name` = "Increased inflammatory response",
+        `display_name` = "Increased inflammatory response (HP:0012649)",
         `parents` = Seq("Abnormal inflammatory response (HP:0012647)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0010978",
         `name` = "Abnormality of immune system physiology",
+        `display_name` = "Abnormality of immune system physiology (HP:0010978)",
         `parents` = Seq("Abnormality of the immune system (HP:0002715)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0012719",
         `name` = "Functional abnormality of the gastrointestinal tract",
+        `display_name` = "Functional abnormality of the gastrointestinal tract (HP:0012719)",
         `parents` = Seq("Abnormality of the gastrointestinal tract (HP:0011024)", "Abnormality of digestive system physiology (HP:0025032)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0002250",
         `name` = "Abnormal large intestine morphology",
+        `display_name` = "Abnormal large intestine morphology (HP:0002250)",
         `parents` = Seq("Abnormal intestine morphology (HP:0002242)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0012647",
         `name` = "Abnormal inflammatory response",
+        `display_name` = "Abnormal inflammatory response (HP:0012647)",
         `parents` = Seq("Abnormality of immune system physiology (HP:0010978)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0100281",
         `name` = "Chronic colitis",
+        `display_name` = "Chronic colitis (HP:0100281)",
         `parents` = Seq("Colitis (HP:0002583)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0002242",
         `name` = "Abnormal intestine morphology",
+        `display_name` = "Abnormal intestine morphology (HP:0002242)",
         `parents` = Seq("Morphological abnormality of the gastrointestinal tract (HP:0012718)"),
         `age_at_event` = Set(56)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0025033",
         `name` = "Abnormality of digestive system morphology",
+        `display_name` = "Abnormality of digestive system morphology (HP:0025033)",
         `parents` = Seq("Abnormality of the digestive system (HP:0025031)"),
         `age_at_event` = Set(56)
       )
@@ -300,6 +324,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0025031",
         `name` = "Abnormality of the digestive system",
+        `display_name` = "Abnormality of the digestive system (HP:0025031)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(54),
         `is_leaf` = false,
@@ -311,6 +336,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0025031",
         `name` = "Abnormality of the digestive system",
+        `display_name` = "Abnormality of the digestive system (HP:0025031)",
         `parents` = Seq("Phenotypic abnormality (HP:0000118)"),
         `age_at_event` = Set(54),
         `is_leaf` = false,
@@ -319,12 +345,14 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000118",
         `name` = "Phenotypic abnormality",
+        `display_name` = "Phenotypic abnormality (HP:0000118)",
         `parents` = Seq("All (HP:0000001)"),
         `age_at_event` = Set(54)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "HP:0000001",
         `name` = "All",
+        `display_name` = "All (HP:0000001)",
         `parents` = Nil,
         `age_at_event` = Set(54)
       )
@@ -345,6 +373,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0005041",
         `name` = "glaucoma (disease)",
+        `display_name` = "glaucoma (disease) (MONDO:0005041)",
         `parents` = Seq("eye disease (MONDO:0005328)"),
         `age_at_event` = Set(59),
         `is_leaf` = false,
@@ -356,54 +385,63 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0021199",
         `name` = "disease by anatomical system",
+        `display_name` = "disease by anatomical system (MONDO:0021199)",
         `parents` = Seq("disease or disorder (MONDO:0000001)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0024458",
         `name` = "disease of visual system",
+        `display_name` = "disease of visual system (MONDO:0024458)",
         `parents` = Seq("disease by anatomical system (MONDO:0021199)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0005328",
         `name` = "eye disease",
+        `display_name` = "eye disease (MONDO:0005328)",
         `parents` = Seq("disease of orbital region (MONDO:0002022)", "disease of visual system (MONDO:0024458)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0024505",
         `name` = "disorder by anatomical region",
+        `display_name` = "disorder by anatomical region (MONDO:0024505)",
         `parents` = Seq("disease or disorder (MONDO:0000001)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0021059",
         `name` = "head or neck disease/disorder",
+        `display_name` = "head or neck disease/disorder (MONDO:0021059)",
         `parents` = Seq("disorder by anatomical region (MONDO:0024505)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0044987",
         `name` = "face disease",
+        `display_name` = "face disease (MONDO:0044987)",
         `parents` = Seq("head disease (MONDO:0005042)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0002022",
         `name` = "disease of orbital region",
+        `display_name` = "disease of orbital region (MONDO:0002022)",
         `parents` = Seq("face disease (MONDO:0044987)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0005042",
         `name` = "head disease",
+        `display_name` = "head disease (MONDO:0005042)",
         `parents` = Seq("head or neck disease/disorder (MONDO:0021059)"),
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0005041",
         `name` = "glaucoma (disease)",
+        `display_name` = "glaucoma (disease) (MONDO:0005041)",
         `parents` = Seq("eye disease (MONDO:0005328)"),
         `age_at_event` = Set(59),
         `is_leaf` = false,
@@ -412,6 +450,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "MONDO:0000001",
         `name` = "disease or disorder",
+        `display_name` = "disease or disorder (MONDO:0000001)",
         `parents` = Nil,
         `age_at_event` = Set(59)
       )
@@ -432,6 +471,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "H40",
         `name` = "Glaucoma",
+        `display_name` = "Glaucoma (H40)",
         `parents` = Seq("Glaucoma (H40-H42)"),
         `age_at_event` = Set(59),
         `is_leaf` = false,
@@ -443,6 +483,7 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "H40",
         `name` = "Glaucoma",
+        `display_name` = "Glaucoma (H40)",
         `parents` = Seq("Glaucoma (H40-H42)"),
         `age_at_event` = Set(59),
         `is_leaf` = false,
@@ -451,12 +492,14 @@ class DonorSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll with Wi
       ONTOLOGY_TERM(
         `phenotype_id` = "H40-H42",
         `name` = "Glaucoma",
+        `display_name` = "Glaucoma (H40-H42)",
         `parents` = Nil,
         `age_at_event` = Set(59)
       ),
       ONTOLOGY_TERM(
         `phenotype_id` = "",
         `name` = "Diseases of the eye and adnexa",
+        `display_name` = "Diseases of the eye and adnexa ()",
         `parents` = Nil,
         `age_at_event` = Set(59),
       ),
