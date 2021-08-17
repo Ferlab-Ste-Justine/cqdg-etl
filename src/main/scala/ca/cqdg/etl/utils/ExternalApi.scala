@@ -1,31 +1,30 @@
 package ca.cqdg.etl.utils
 
-import ca.cqdg.etl.utils.EtlUtils.getConfiguration
-import sttp.client3.{HttpURLConnectionBackend, UriContext, basicRequest}
-import sttp.model.{MediaType, StatusCode}
+import com.typesafe.config.{Config, ConfigFactory}
+import org.apache.http.HttpHeaders
+import org.apache.http.client.methods.HttpPost
+import org.apache.http.entity.{ContentType, StringEntity}
 
-object ExternalApi {
+object ExternalApi extends BaseHttpClient {
 
-  val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
+  val idServerConfig: Config = ConfigFactory.load.getObject("id-server").toConfig
+  val idServerEndpoint: String = idServerConfig.getString("endpoint")
+  val idServerUsername: String = idServerConfig.getString("username")
+  val idServerPassword: String = idServerConfig.getString("password")
 
   def getCQDGIds(payload: String): String = {
-    val backend = HttpURLConnectionBackend()
+    val url = s"${idServerEndpoint}/batch"
 
-    val url = s"${idServiceURL}/batch"
+    val httpRequest = new HttpPost(url)
+    httpRequest.addHeader(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType)
+    addBasicAuth(httpRequest, idServerUsername, idServerPassword)
+    httpRequest.setEntity(new StringEntity(payload))
+    val (body, status) = executeHttpRequest(httpRequest)
 
-    // response.body : Left(errorMessage), Right(body)
-    val response = basicRequest
-      .contentType(MediaType.ApplicationJson)
-      .body(payload)
-      .post(uri"${url}")
-      .send(backend)
-
-    backend.close
-
-    if (StatusCode.Ok == response.code && response.body.toString.trim.length > 0) {
-      response.body.right.get
+    if (200 == status && body.isDefined) {
+      body.get
     } else {
-      throw new RuntimeException(s"Failed to retrieve ids from id-service at ${url}.\n${response.body.left.get}")
+      throw new RuntimeException(s"Failed to retrieve ids from id-service at ${url}.\n${body.getOrElse("")}")
     }
   }
 
