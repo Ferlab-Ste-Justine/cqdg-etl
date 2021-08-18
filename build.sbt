@@ -19,13 +19,8 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % spark_version % Provi
 libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.3.0" % Provided
 libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.3.0" % Provided
 libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.3.0" % Provided
-libraryDependencies += "io.projectglow" %% "glow-spark3" % "1.0.0" exclude ("org.apache.hadoop", "hadoop-client")
-libraryDependencies += "io.delta" %% "delta-core" % "0.8.0" % Provided
-libraryDependencies += "com.amazonaws" % "aws-java-sdk-bom" % "1.11.975"
-libraryDependencies += "com.amazonaws" % "aws-java-sdk-s3" % "1.11.975"
-libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.1.7"
-libraryDependencies += "com.google.code.gson" % "gson" % "2.8.6"
-libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.41"
+libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.13"
+libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.54"
 libraryDependencies += "com.typesafe" % "config" % "1.4.1"
 libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
 
@@ -46,6 +41,8 @@ assemblyMergeStrategy in assembly := {
   case "git.properties" => MergeStrategy.discard
   case "mime.types" => MergeStrategy.first
   case PathList("scala", "annotation", "nowarn.class" | "nowarn$.class") => MergeStrategy.first
+  case PathList("module-info.class") => MergeStrategy.discard
+  case x if x.endsWith("/module-info.class") => MergeStrategy.discard
   case x =>
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)

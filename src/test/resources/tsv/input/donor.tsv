@@ -60,7 +60,7 @@ ST0001	PT00058	5/7/1958	63	6/16/2009	51	44	Female	Other	alive			FALSE	FALSE	TRUE
 ST0001	PT00059	6/10/1967	54	8/21/2008	41	33	Female	African or Carabean	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00060	2/21/1951	70	5/10/2009	58	48	Female	French Canadian 	alive			FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00061	4/30/1967	54	12/14/2008	41	39	Female	French Canadian 	alive			FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
-ST0001	PT00062	8/19/1957	63	7/16/2009	51	42	Female	French Canadian 	alive 			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	TRUE	Not applicable	Not applicable	1	1				
+ST0001	PT00062	8/19/1957	63	7/16/2009	51	42	Female	French Canadian 	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00063	1/21/1954	67	8/1/2008	54	46	Male	French Canadian 	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00064	12/30/1941	79	3/9/2009	67	65	Female	European	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00065	10/31/1946	74	11/10/2009	63	57	Female	French Canadian 	deceased	Chronic lower respiratory disease	26645	TRUE	FALSE	TRUE	TRUE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
@@ -70,7 +70,7 @@ ST0001	PT00068	5/26/1949	72	12/5/2009	60	56	Female	Mixted descent	alive			TRUE	F
 ST0001	PT00069	9/18/1948	72	2/24/2009	60	58	Female	Arab	alive			TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00070	10/11/1959	61	9/9/2008	48	39	Female	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00071	12/18/1940	80	5/22/2009	68	62	Unknown	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
-ST0001	PT00072	12/27/1942	78	12/21/2008	65	64	Female	Aboriginal	alive 			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
+ST0001	PT00072	12/27/1942	78	12/21/2008	65	64	Female	Aboriginal	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00073	10/11/1944	76	6/30/2009	64	56	Female	Mixted descent	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00074	9/12/1945	75	3/23/2009	63	56	Male	European	alive			FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00075	2/13/1959	62	7/17/2009	50	43	Male	French Canadian 	deceased	Cerebrovascular disease	20805	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
@@ -80,7 +80,7 @@ ST0001	PT00078	2/11/1942	79	4/28/2009	67	65	Female	French Canadian 	alive			TRUE
 ST0001	PT00079	4/4/1943	78	6/11/2009	66	63	Female	Aboriginal	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00080	5/19/1941	80	10/20/2008	67	66	Female	Arab	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00081	8/27/1964	56	5/1/2009	44	39	Female	European	alive			TRUE	FALSE	FALSE	TRUE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
-ST0001	PT00082	1/12/1971	50	9/22/2008	37	29	Female	European	alive 			TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
+ST0001	PT00082	1/12/1971	50	9/22/2008	37	29	Female	European	alive			TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00083	10/10/1969	51	11/3/2009	40	36	Male	European	alive			TRUE	FALSE	TRUE	TRUE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00084	1/9/1954	67	12/19/2008	54	51	Male	East and Southeast Asian	alive			TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00085	5/25/1946	75	8/18/2008	62	59	Male	French Canadian 	deceased	Influenza and pneumonia	25550	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
@@ -90,7 +90,7 @@ ST0001	PT00088	6/12/1947	74	5/2/2009	61	53	Female	French Canadian 	alive			FALSE
 ST0001	PT00089	1/31/1948	73	2/7/2009	61	53	Male	Arab	alive			FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00090	6/26/1962	59	8/16/2008	46	41	Male	East and Southeast Asian	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00091	11/2/1954	66	9/24/2008	53	43	Male	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
-ST0001	PT00092	4/17/1962	59	7/30/2009	47	47	Female	European	alive 			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
+ST0001	PT00092	4/17/1962	59	7/30/2009	47	47	Female	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00093	3/7/1959	62	8/22/2008	49	44	Male	French Canadian 	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00094	4/10/1939	82	12/9/2009	70	70	Female	French Canadian 	alive			FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00095	11/4/1956	64	8/17/2009	52	50	Female	Other	deceased	Unknown	21535	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
@@ -100,7 +100,7 @@ ST0001	PT00098	4/10/1955	66	10/15/2008	53	48	Female	European	alive			TRUE	FALSE	
 ST0001	PT00099	10/4/1965	55	12/4/2009	44	42	Male	Mixted descent	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00100	11/20/1940	80	12/25/2008	68	62	Male	European	alive			TRUE	FALSE	TRUE	FALSE	TRUE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00101	1/21/1970	51	10/4/2008	38	29	Female	French Canadian 	alive			TRUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
-ST0001	PT00102	4/29/1947	74	8/17/2008	61	53	Male	French Canadian 	alive 			TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
+ST0001	PT00102	4/29/1947	74	8/17/2008	61	53	Male	French Canadian 	alive			TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00103	5/26/1955	66	9/9/2009	54	49	Male	French Canadian 	alive			TRUE	FALSE	TRUE	TRUE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00104	7/23/1968	52	6/6/2009	40	35	Female	French Canadian 	alive			TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00105	9/7/1958	62	8/16/2009	50	47	Unknown	French Canadian 	deceased	Influenza and pneumonia	19710	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE	Not applicable	Not applicable	1	1				
@@ -110,7 +110,7 @@ ST0001	PT00108	8/11/1960	60	10/19/2009	49	43	Female	French Canadian 	alive			FAL
 ST0001	PT00109	11/3/1959	61	9/17/2008	48	42	Female	French Canadian 	alive			FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00110	6/19/1967	54	11/11/2008	41	34	Female	French Canadian 	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
 ST0001	PT00111	3/28/1940	81	1/7/2009	68	65	Male	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	Not applicable	Not applicable	1	1				
-ST0001	PT00112	9/12/1956	64	10/16/2008	52	49	Male	European	alive 			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
+ST0001	PT00112	9/12/1956	64	10/16/2008	52	49	Male	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00113	9/4/1948	72	7/24/2008	59	59	Female	European	alive			FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00114	8/31/1969	51	9/26/2008	39	29	Female	French Canadian 	alive			FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	Not applicable	Not applicable	1	1				
 ST0001	PT00115	11/29/1962	58	8/14/2008	45	37	Male	African or Carabean	deceased	Unknown	18980	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	Not applicable	Not applicable	1	1				

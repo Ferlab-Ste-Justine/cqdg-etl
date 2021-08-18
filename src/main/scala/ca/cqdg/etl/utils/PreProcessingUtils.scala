@@ -2,24 +2,28 @@ package ca.cqdg.etl.utils
 
 import ca.cqdg.etl.model
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
-import ca.cqdg.etl.utils.EtlUtils.{getConfiguration, sanitize}
+import ca.cqdg.etl.utils.EtlUtils.sanitize
 import ca.cqdg.etl.utils.ExternalApi.getCQDGIds
 import com.google.gson.{Gson, JsonArray, JsonParser}
+import com.typesafe.config.{Config, ConfigFactory}
+import org.apache.http.HttpHeaders
+import org.apache.http.client.methods.HttpGet
+import org.apache.http.entity.ContentType
 import org.apache.log4j.Logger
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import sttp.client3.{HttpURLConnectionBackend, basicRequest, _}
-import sttp.model.StatusCode
 
+import java.net.{URL, URLEncoder}
 import scala.collection.{JavaConverters, mutable}
 
-object PreProcessingUtils{
+object PreProcessingUtils extends BaseHttpClient {
 
-  val dictionaryUsername: String = getConfiguration("LECTERN_USERNAME", "lectern")
-  val dictionaryPassword: String = getConfiguration("LECTERN_PASSWORD", "changeMe")
-  val dictionaryName: String = getConfiguration("LECTERN_DICTIONARY_NAME", "CQDG Data Dictionary")
-  val dictionaryURL: String = getConfiguration("LECTERN_HOST", "http://localhost:3001")
-  val idServiceURL: String = getConfiguration("ID_SERVICE_HOST", "http://localhost:5000")
+  val dictionaryConfig: Config = ConfigFactory.load.getObject("lectern").toConfig
+  val dictionaryUsername: String = dictionaryConfig.getString("username")
+  val dictionaryPassword: String = dictionaryConfig.getString("password")
+  val dictionaryName: String = dictionaryConfig.getString("dictionary-name")
+  val dictionaryURL: String = dictionaryConfig.getString("endpoint")
+
   val gson: Gson = new Gson()
   val LOG: Logger = Logger.getLogger(this.getClass)
 
@@ -173,29 +177,29 @@ object PreProcessingUtils{
   def loadSchemas(): Map[String, List[Schema]] = {
     val schemasPerVersion = new mutable.HashMap[String, List[Schema]]
 
-    val response: Identity[Response[Either[String, String]]] = dictionaryRequest(s"dictionaries?name=$dictionaryName")
+    val (body, status): (Option[String], Int) = dictionaryRequest(s"dictionaries?name=${URLEncoder.encode(dictionaryName, charsetUTF8)}")
 
-    if (StatusCode.Ok == response.code && response.body.toString.trim.nonEmpty) {
-      val jsonResponse: JsonArray = JsonParser.parseString(response.body.right.get).getAsJsonArray
+    if (200 == status && body.isDefined) {
+      val jsonResponse: JsonArray = new JsonParser().parse(body.get).getAsJsonArray
       jsonResponse.forEach(el => {
         val version = el.getAsJsonObject.get("version").getAsString
         schemasPerVersion.put(version, loadSchemaVersion(version))
       })
     } else {
-      throw new RuntimeException(s"Failed to retrieve Lectern's versions for $dictionaryName.\n${response.body.left.get}")
+      throw new RuntimeException(s"Failed to retrieve Lectern's versions for $dictionaryName.\n${body.getOrElse("")}")
     }
 
     schemasPerVersion.toMap
   }
 
   private def loadSchemaVersion(version: String): List[Schema] = {
-    val response: Identity[Response[Either[String, String]]] =
-      dictionaryRequest(s"dictionaries?name=$dictionaryName&version=$version")
+    val (body, status): (Option[String], Int) =
+      dictionaryRequest(s"dictionaries?name=${URLEncoder.encode(dictionaryName, charsetUTF8)}&version=$version")
 
-    if (StatusCode.Ok == response.code && response.body.toString.trim.length > 0) {
-      getSchemaList(response.body.right.get)
+    if (200 == status && body.isDefined) {
+      getSchemaList(body.get)
     } else {
-      throw new RuntimeException(s"Failed to retrieve Lectern's schemas for version $version of $dictionaryName.\n${response.body.left.get}")
+      throw new RuntimeException(s"Failed to retrieve Lectern's schemas for version $version of $dictionaryName.\n${body.getOrElse("")}")
     }
 
   }
@@ -203,7 +207,7 @@ object PreProcessingUtils{
   def getSchemaList(responseString: String): List[Schema] = {
     val schemas: mutable.MutableList[Schema] = mutable.MutableList()
 
-    val jsonResponse: JsonArray = JsonParser.parseString(responseString).getAsJsonArray
+    val jsonResponse: JsonArray = new JsonParser().parse(responseString).getAsJsonArray
     jsonResponse.forEach(el => {
       val jsonSchemas = el.getAsJsonObject.get("schemas").getAsJsonArray
       jsonSchemas.forEach(x => {
@@ -226,20 +230,12 @@ object PreProcessingUtils{
     fieldsList.toList
   }
 
-  private def dictionaryRequest(urlSuffix: String): Identity[Response[Either[String, String]]] = {
-    val backend = HttpURLConnectionBackend()
-
-    val url = if(dictionaryURL.endsWith("/")) s"$dictionaryURL$urlSuffix" else s"$dictionaryURL/$urlSuffix"
-
-    // response.body : Left(errorMessage), Right(body)
-    val response = basicRequest
-      .auth.basic(dictionaryUsername, dictionaryPassword)
-      .get(uri"${url}")
-      .send(backend)
-
-    backend.close
-
-    response
+  private def dictionaryRequest(urlSuffix: String): (Option[String], Int) = {
+    val url = new URL(new URL(dictionaryURL), urlSuffix).toString
+    val httpRequest = new HttpGet(url)
+    httpRequest.addHeader(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType)
+    addBasicAuth(httpRequest, dictionaryUsername, dictionaryPassword)
+    executeHttpRequest(httpRequest)
   }
 }
 

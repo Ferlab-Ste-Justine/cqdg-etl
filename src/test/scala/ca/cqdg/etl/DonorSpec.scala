@@ -1,6 +1,5 @@
 package ca.cqdg.etl
 
-import ca.cqdg.etl.EtlApp.ontologyDfs
 import ca.cqdg.etl.model.{NamedDataFrame, S3File}
 import ca.cqdg.etl.testutils.TestData.hashCodesList
 import ca.cqdg.etl.testutils.WithSparkSession
