@@ -32,7 +32,7 @@ package object etl {
   implicit val spark: SparkSession = SparkSession
     .builder
     .appName("CQDG-ETL")
-    .master("local")//TODO: Remove "local" and replace by '[*]'
+    //.master("local")
     .getOrCreate()
 
   val s3Config: Config = ConfigFactory.load.getObject("s3").toConfig
