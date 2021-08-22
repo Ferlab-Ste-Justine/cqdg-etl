@@ -4,11 +4,15 @@ import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf}
 import ca.cqdg.etl.rework.EtlUtils.sanitize
 import ca.cqdg.etl.rework.models.{Metadata, NamedDataFrame}
 import ca.cqdg.etl.rework.processes.ProcessETLUtils.columns.notNullCol
-import ca.cqdg.etl.rework.processes.ProcessETLUtils.{computeDataAccessByEntityType, loadAll}
+import ca.cqdg.etl.rework.processes.ProcessETLUtils.loadAll
+import ca.cqdg.etl.rework.processes.indexes._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import org.slf4j
 import org.slf4j.LoggerFactory
+
+import scala.concurrent.Await
+import scala.concurrent.duration.Duration
 
 class ProcessETL()(implicit spark: SparkSession, conf: Configuration) {
 
@@ -77,7 +81,7 @@ class ProcessETL()(implicit spark: SparkSession, conf: Configuration) {
     val (donor, diagnosisPerDonorAndStudy, phenotypesPerStudyIdAndDonor, biospecimenWithSamples, file, treatmentsPerDonorAndStudy, exposuresPerDonorAndStudy, followUpsPerDonorAndStudy, familyHistoryPerDonorAndStudy, familyRelationshipPerDonorAndStudy) = loadAll(dfList)(ontologyDfs)
 
     log.info("Computing DataAccessGroup ...")
-    val dataAccessGroup = computeDataAccessByEntityType(studyNDF.dataFrame, ontologyDfs(duo_code.id))
+    val dataAccessGroup = DataAccess.computeDataAccessByEntityType(studyNDF.dataFrame, ontologyDfs(duo_code.id))
 
     val studyDf: DataFrame = studyNDF.dataFrame
       .join(dataAccessGroup, Seq("study_id"), "left")
@@ -102,19 +106,33 @@ class ProcessETL()(implicit spark: SparkSession, conf: Configuration) {
       "familyRelationshipPerDonorAndStudy" -> familyRelationshipPerDonorAndStudy,
       "file" -> file)
 
-    log.info("Computing Study ...")
+    log.info("Computing Studies ...")
+    val studies = new StudyIndex(studyDf, metadata, inputData)(conf);
+    val transformedStudies = studies.transform(studies.extract())
+    write(studies.destination.id, transformedStudies)
 
-    log.info("Computing Donor ...")
+    log.info("Computing Donors ...")
+    val donors = new DonorIndex(studyDf, metadata, inputData)(conf);
+    val transformedDonors = donors.transform(donors.extract())
+    write(donors.destination.id, transformedDonors)
 
-    log.info("Computing File ...")
+    log.info("Computing Files ...")
     val files = new FileIndex(studyDf, metadata, inputData)(conf);
     val transformedFiles = files.transform(files.extract())
-    write("files", transformedFiles)
+
+    if (Keycloak.isEnabled) {
+      val allFilesInternalIDs = transformedFiles.select("internal_file_id").distinct().as[String].collect().toSet
+      val future = Keycloak.createResources(allFilesInternalIDs)
+      val resources = Await.result(future, Duration.Inf)
+      log.info(s"Successfully create ${resources.size} resources")
+    }
+
+    write(files.destination.id, transformedFiles)
 
   }
 
-  private def write(name: String, df: DataFrame): Unit = {
-    val source = conf.getDataset(name)
+  private def write(sourceId: String, df: DataFrame): Unit = {
+    val source = conf.getDataset(sourceId)
     val storage = conf.getStorage(source.storageid)
     val outputPath = s"$storage/${source.path}"
 

@@ -1,7 +1,5 @@
 package ca.cqdg.etl.rework
 
-import org.apache.spark.sql.SparkSession
-
 import java.util.concurrent.Executors
 import scala.concurrent.{ExecutionContext, ExecutionContextExecutorService}
 

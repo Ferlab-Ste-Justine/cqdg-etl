@@ -2,11 +2,11 @@ package ca.cqdg.etl.rework.processes
 
 import ca.cqdg.etl.rework.EtlUtils.parseDate
 import ca.cqdg.etl.rework.models.NamedDataFrame
-import ca.cqdg.etl.rework.processes.ProcessETLUtils.columns.{ageAtRecruitment, isNotBlank, notNullCol}
+import ca.cqdg.etl.rework.processes.ProcessETLUtils.columns.{ageAtRecruitment, notNullCol}
 import org.apache.spark.sql.expressions.UserDefinedFunction
-import org.apache.spark.sql.{Column, DataFrame, Dataset, Row, SparkSession}
-import org.apache.spark.sql.functions.{array, array_contains, array_distinct, col, collect_list, collect_set, concat, explode, explode_outer, first, flatten, lit, regexp_extract, sort_array, split, struct, trim, udf, when}
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
 import java.time.Period
 import scala.util.Random
@@ -512,42 +512,6 @@ object ProcessETLUtils {
       .otherwise(
         lit(DEFAULT_VALUE)
       ) as "age_at_recruitment"
-  }
-
-  def computeDataAccessByEntityType(study: DataFrame,
-                                    duoCodeList: DataFrame)(implicit spark: SparkSession): Dataset[Row] = {
-
-    import spark.implicits._
-
-    study
-      .select("study_id","access_limitations", "access_requirements")
-      .withColumn("access_requirements", explode(split($"access_requirements", ";")))
-      .filter(isNotBlank($"access_requirements"))
-      .withColumn("access_requirements", trim($"access_requirements"))
-      .join(duoCodeList, $"access_limitations" === $"id", "left")
-      .drop("access_limitations")
-      .select(
-        col("study_id"),
-        concat($"name", lit(" ("), $"id", lit(")")) as "access_limitations",
-        $"access_requirements")
-      .join(duoCodeList, $"access_requirements" === $"id", "left")
-      .drop("access_requirements")
-      .select(
-        col("study_id"),
-        $"access_limitations",
-        concat($"name", lit(" ("), $"id", lit(")")) as "access_requirements")
-      .groupBy("study_id", "access_limitations")
-      .agg(
-        collect_set($"access_requirements").as("access_requirements")
-      ).groupBy("study_id")
-      .agg(
-        first(
-          struct(cols =
-            $"access_limitations",
-            $"access_requirements"
-          )
-        ).as("data_access_codes")
-      ).as("dataAccessGroup")
   }
 
 }

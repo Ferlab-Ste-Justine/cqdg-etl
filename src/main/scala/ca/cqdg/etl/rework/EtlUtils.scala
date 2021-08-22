@@ -1,13 +1,8 @@
 package ca.cqdg.etl.rework
 
-import org.apache.spark.sql.{Column, SparkSession}
-import org.apache.spark.sql.expressions.UserDefinedFunction
-import org.apache.spark.sql.functions.{lit, trim, udf, when}
-import org.apache.spark.sql.types.StringType
-
 import java.text.{Normalizer, SimpleDateFormat}
-import java.time.{LocalDate, Period, ZoneId}
-import scala.util.{Random, Try}
+import java.time.{LocalDate, ZoneId}
+import scala.util.Try
 
 object EtlUtils {
 

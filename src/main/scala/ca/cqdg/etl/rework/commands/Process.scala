@@ -1,7 +1,6 @@
 package ca.cqdg.etl.rework.commands
 
-import ca.cqdg.etl.rework.clients.{DictionaryClient, IdServerClient}
-import ca.cqdg.etl.rework.processes.{PreProcessETL, PreProcessETLConfig, ProcessETL, ProcessETLConfig}
+import ca.cqdg.etl.rework.processes.{ProcessETL, ProcessETLConfig}
 import picocli.CommandLine.{Command, Option}
 
 @Command(name = "process", mixinStandardHelpOptions = true, description = Array("process pre-processed data"), version = Array("0.1"))

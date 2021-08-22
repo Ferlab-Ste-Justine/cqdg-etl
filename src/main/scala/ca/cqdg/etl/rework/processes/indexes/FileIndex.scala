@@ -1,8 +1,8 @@
-package ca.cqdg.etl.rework.processes
+package ca.cqdg.etl.rework.processes.indexes
 
 import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf}
 import bio.ferlab.datalake.spark3.etl.ETL
-import ca.cqdg.etl.rework.models.{Metadata, NamedDataFrame}
+import ca.cqdg.etl.rework.models.Metadata
 import ca.cqdg.etl.rework.processes.ProcessETLUtils.columns._
 import org.apache.spark.sql.functions.{array, collect_list, lit, struct}
 import org.apache.spark.sql.{DataFrame, SparkSession}
