@@ -23,6 +23,7 @@ libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.13"
 libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.54"
 libraryDependencies += "com.typesafe" % "config" % "1.4.1"
 libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
+libraryDependencies += "info.picocli" % "picocli" % "4.6.1"
 
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"
@@ -47,4 +48,6 @@ assemblyMergeStrategy in assembly := {
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
 }
-assemblyJarName in assembly := "cqdg-etl.jar"
+
+assembly / assemblyJarName := "cqdg-etl.jar"
+assembly / mainClass := Some("ca.cqdg.etl.rework.EtlApp")
