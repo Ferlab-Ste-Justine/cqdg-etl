@@ -1,0 +1,451 @@
+study_id	submitter_donor_id	submitter_diagnosis_id	submitter_follow_up_id	disease_status_at_followup	relapse_interval	internal_followup_id
+ST0002	PT00573	DI00573	FU00573	Partial remission	""	internal_id
+ST0003	PT00824	DI00824	FU00824	Loco-regional progression	99	internal_id
+ST0002	PT00581	DI00581	FU00581	Distant progression	""	internal_id
+ST0003	PT00755	DI00755	FU00755	No evidence of disease	""	internal_id
+ST0002	PT00565	DI00565	FU00565	Partial remission	""	internal_id
+ST0004	PT00936	DI00936	FU00936	Distant progression	""	internal_id
+ST0004	PT00845	DI00845	FU00845	No evidence of disease	""	internal_id
+ST0002	PT00427	DI00427	FU00427	Distant progression	""	internal_id
+ST0004	PT00906	DI00906	FU00906	Clinical remission	""	internal_id
+ST0004	PT00859	DI00859	FU00859	Clinical remission	""	internal_id
+ST0004	PT00893	DI00893	FU00893	Loco-regional progression	""	internal_id
+ST0001	PT00330	DI00330	FU00330	Loco-regional progression	""	internal_id
+ST0004	PT00868	DI00868	FU00868	No evidence of disease	""	internal_id
+ST0004	PT00998	DI00998	FU00998	Clinical remission	""	internal_id
+ST0003	PT00647	DI00647	FU00647	Distant progression	""	internal_id
+ST0004	PT00882	DI00882	FU00882	Clinical remission	""	internal_id
+ST0004	PT00890	DI00890	FU00890	Loco-regional progression	76	internal_id
+ST0004	PT00982	DI00982	FU00982	Distant progression	""	internal_id
+ST0001	PT00324	DI00324	FU00324	Loco-regional progression	""	internal_id
+ST0001	PT00261	DI00261	FU00261	Distant progression	""	internal_id
+ST0001	PT00254	DI00254	FU00254	Partial remission	""	internal_id
+ST0003	PT00728	DI00728	FU00728	No evidence of disease	""	internal_id
+ST0004	PT00992	DI00992	FU00992	Clinical remission	""	internal_id
+ST0004	PT00983	DI00983	FU00983	Loco-regional progression	""	internal_id
+ST0004	PT00919	DI00919	FU00919	Stable	""	internal_id
+ST0004	PT00911	DI00911	FU00911	Relapse or recurrence	""	internal_id
+ST0002	PT00586	DI00586	FU00586	No evidence of disease	""	internal_id
+ST0001	PT00214	DI00214	FU00214	Relapse or recurrence	""	internal_id
+ST0001	PT00174	DI00174	FU00174	Partial remission	""	internal_id
+ST0001	PT00204	DI00204	FU00204	Relapse or recurrence	""	internal_id
+ST0002	PT00559	DI00559	FU00559	Loco-regional progression	""	internal_id
+ST0004	PT00946	DI00946	FU00946	No evidence of disease	""	internal_id
+ST0004	PT00921	DI00921	FU00921	Relapse or recurrence	""	internal_id
+ST0001	PT00207	DI00207	FU00207	No evidence of disease	""	internal_id
+ST0002	PT00557	DI00557	FU00557	No evidence of disease	""	internal_id
+ST0004	PT00840	DI00840	FU00840	Partial remission	""	internal_id
+ST0004	PT00931	DI00931	FU00931	Distant progression	""	internal_id
+ST0003	PT00713	DI00713	FU00713	Loco-regional progression	""	internal_id
+ST0003	PT00731	DI00731	FU00731	Stable	""	internal_id
+ST0004	PT00826	DI00826	FU00826	Distant progression	44	internal_id
+ST0002	PT00512	DI00512	FU00512	Stable	""	internal_id
+ST0004	PT00887	DI00887	FU00887	Clinical remission	""	internal_id
+ST0001	PT00353	DI00353	FU00353	Relapse or recurrence	""	internal_id
+ST0001	PT00237	DI00237	FU00237	No evidence of disease	""	internal_id
+ST0003	PT00773	DI00773	FU00773	No evidence of disease	""	internal_id
+ST0003	PT00803	DI00803	FU00803	Loco-regional progression	96	internal_id
+ST0002	PT00471	DI00471	FU00471	Stable	""	internal_id
+ST0001	PT00035	DI00035	FU00035	Partial remission	""	internal_id
+ST0004	PT00920	DI00920	FU00920	Distant progression	""	internal_id
+ST0004	PT00916	DI00916	FU00916	Clinical remission	""	internal_id
+ST0003	PT00825	DI00825	FU00825	Partial remission	""	internal_id
+ST0003	PT00734	DI00734	FU00734	Stable	""	internal_id
+ST0004	PT00902	DI00902	FU00902	Partial remission	""	internal_id
+ST0004	PT00965	DI00965	FU00965	Loco-regional progression	""	internal_id
+ST0004	PT00943	DI00943	FU00943	Clinical remission	""	internal_id
+ST0003	PT00794	DI00794	FU00794	Partial remission	""	internal_id
+ST0004	PT00865	DI00865	FU00865	Partial remission	""	internal_id
+ST0004	PT00886	DI00886	FU00886	Partial remission	""	internal_id
+ST0001	PT00371	DI00371	FU00371	Relapse or recurrence	89	internal_id
+ST0003	PT00758	DI00758	FU00758	Distant progression	""	internal_id
+ST0004	PT00926	DI00926	FU00926	Clinical remission	""	internal_id
+ST0004	PT00984	DI00984	FU00984	Stable	""	internal_id
+ST0003	PT00635	DI00635	FU00635	Clinical remission	""	internal_id
+ST0002	PT00564	DI00564	FU00564	Distant progression	""	internal_id
+ST0002	PT00625	DI00625	FU00625	Loco-regional progression	""	internal_id
+ST0001	PT00265	DI00265	FU00265	Distant progression	""	internal_id
+ST0001	PT00235	DI00235	FU00235	Relapse or recurrence	""	internal_id
+ST0001	PT00022	DI00022	FU00022	Loco-regional progression	""	internal_id
+ST0001	PT00152	DI00152	FU00152	Clinical remission	""	internal_id
+ST0004	PT00843	DI00843	FU00843	Relapse or recurrence	""	internal_id
+ST0004	PT00967	DI00967	FU00967	Distant progression	""	internal_id
+ST0001	PT00068	DI00068	FU00068	Distant progression	50	internal_id
+ST0001	PT00337	DI00337	FU00337	Clinical remission	""	internal_id
+ST0004	PT00974	DI00974	FU00974	Relapse or recurrence	85	internal_id
+ST0004	PT00877	DI00877	FU00877	Distant progression	45	internal_id
+ST0004	PT00883	DI00883	FU00883	Loco-regional progression	30	internal_id
+ST0004	PT00903	DI00903	FU00903	No evidence of disease	""	internal_id
+ST0001	PT00008	DI00008	FU00008	Partial remission	""	internal_id
+ST0004	PT00848	DI00848	FU00848	No evidence of disease	""	internal_id
+ST0004	PT00944	DI00944	FU00944	Stable	""	internal_id
+ST0002	PT00503	DI00503	FU00503	Distant progression	""	internal_id
+ST0004	PT00948	DI00948	FU00948	Relapse or recurrence	30	internal_id
+ST0004	PT00929	DI00929	FU00929	Stable	""	internal_id
+ST0004	PT00945	DI00945	FU00945	Relapse or recurrence	""	internal_id
+ST0002	PT00626	DI00626	FU00626	Partial remission	""	internal_id
+ST0003	PT00791	DI00791	FU00791	Distant progression	""	internal_id
+ST0001	PT00171	DI00171	FU00171	Stable	""	internal_id
+ST0001	PT00057	DI00057	FU00057	Partial remission	""	internal_id
+ST0003	PT00785	DI00785	FU00785	No evidence of disease	""	internal_id
+ST0004	PT00930	DI00930	FU00930	No evidence of disease	""	internal_id
+ST0004	PT00896	DI00896	FU00896	Stable	""	internal_id
+ST0004	PT00836	DI00836	FU00836	No evidence of disease	""	internal_id
+ST0002	PT00543	DI00543	FU00543	Partial remission	""	internal_id
+ST0004	PT00980	DI00980	FU00980	Loco-regional progression	""	internal_id
+ST0004	PT00986	DI00986	FU00986	Loco-regional progression	""	internal_id
+ST0001	PT00291	DI00291	FU00291	Partial remission	""	internal_id
+ST0004	PT00839	DI00839	FU00839	Stable	""	internal_id
+ST0001	PT00263	DI00263	FU00263	Stable	""	internal_id
+ST0001	PT00213	DI00213	FU00213	Clinical remission	""	internal_id
+ST0004	PT00851	DI00851	FU00851	Stable	""	internal_id
+ST0004	PT00951	DI00951	FU00951	Stable	""	internal_id
+ST0002	PT00423	DI00423	FU00423	Distant progression	""	internal_id
+ST0002	PT00616	DI00616	FU00616	Clinical remission	""	internal_id
+ST0001	PT00329	DI00329	FU00329	Stable	""	internal_id
+ST0002	PT00599	DI00599	FU00599	Partial remission	""	internal_id
+ST0004	PT00973	DI00973	FU00973	Stable	""	internal_id
+ST0001	PT00209	DI00209	FU00209	Stable	""	internal_id
+ST0003	PT00782	DI00782	FU00782	No evidence of disease	""	internal_id
+ST0004	PT00869	DI00869	FU00869	Relapse or recurrence	""	internal_id
+ST0001	PT00032	DI00032	FU00032	Distant progression	50	internal_id
+ST0002	PT00494	DI00494	FU00494	Relapse or recurrence	31	internal_id
+ST0002	PT00577	DI00577	FU00577	Relapse or recurrence	94	internal_id
+ST0001	PT00056	DI00056	FU00056	Relapse or recurrence	""	internal_id
+ST0004	PT00854	DI00854	FU00854	Loco-regional progression	""	internal_id
+ST0001	PT00271	DI00271	FU00271	Partial remission	""	internal_id
+ST0001	PT00085	DI00085	FU00085	Clinical remission	""	internal_id
+ST0004	PT00957	DI00957	FU00957	Stable	""	internal_id
+ST0004	PT00954	DI00954	FU00954	Distant progression	67	internal_id
+ST0003	PT00737	DI00737	FU00737	Clinical remission	""	internal_id
+ST0004	PT00952	DI00952	FU00952	Loco-regional progression	""	internal_id
+ST0002	PT00600	DI00600	FU00600	Partial remission	""	internal_id
+ST0002	PT00435	DI00435	FU00435	Partial remission	""	internal_id
+ST0004	PT00827	DI00827	FU00827	Clinical remission	""	internal_id
+ST0001	PT00041	DI00041	FU00041	Stable	""	internal_id
+ST0003	PT00710	DI00710	FU00710	Partial remission	""	internal_id
+ST0002	PT00553	DI00553	FU00553	Distant progression	""	internal_id
+ST0001	PT00082	DI00082	FU00082	Relapse or recurrence	""	internal_id
+ST0002	PT00601	DI00601	FU00601	Distant progression	""	internal_id
+ST0001	PT00316	DI00316	FU00316	Partial remission	""	internal_id
+ST0001	PT00352	DI00352	FU00352	Clinical remission	""	internal_id
+ST0002	PT00413	DI00413	FU00413	Stable	""	internal_id
+ST0003	PT00725	DI00725	FU00725	Loco-regional progression	""	internal_id
+ST0003	PT00674	DI00674	FU00674	Relapse or recurrence	""	internal_id
+ST0004	PT00968	DI00968	FU00968	Relapse or recurrence	""	internal_id
+ST0004	PT00842	DI00842	FU00842	Stable	""	internal_id
+ST0001	PT00183	DI00183	FU00183	Loco-regional progression	60	internal_id
+ST0001	PT00067	DI00067	FU00067	Distant progression	""	internal_id
+ST0003	PT00638	DI00638	FU00638	Partial remission	""	internal_id
+ST0002	PT00386	DI00386	FU00386	Loco-regional progression	""	internal_id
+ST0003	PT00722	DI00722	FU00722	Stable	""	internal_id
+ST0002	PT00438	DI00438	FU00438	Loco-regional progression	""	internal_id
+ST0002	PT00534	DI00534	FU00534	Partial remission	""	internal_id
+ST0001	PT00012	DI00012	FU00012	Relapse or recurrence	60	internal_id
+ST0003	PT00779	DI00779	FU00779	Stable	""	internal_id
+ST0001	PT00132	DI00132	FU00132	Clinical remission	""	internal_id
+ST0004	PT00846	DI00846	FU00846	Clinical remission	""	internal_id
+ST0004	PT00939	DI00939	FU00939	Relapse or recurrence	""	internal_id
+ST0004	PT00955	DI00955	FU00955	Relapse or recurrence	""	internal_id
+ST0001	PT00190	DI00190	FU00190	Stable	""	internal_id
+ST0004	PT00837	DI00837	FU00837	Loco-regional progression	""	internal_id
+ST0003	PT00752	DI00752	FU00752	Relapse or recurrence	84	internal_id
+ST0001	PT00321	DI00321	FU00321	No evidence of disease	""	internal_id
+ST0004	PT00972	DI00972	FU00972	Stable	""	internal_id
+ST0001	PT00203	DI00203	FU00203	Clinical remission	""	internal_id
+ST0004	PT00937	DI00937	FU00937	Partial remission	""	internal_id
+ST0001	PT00223	DI00223	FU00223	Partial remission	""	internal_id
+ST0001	PT00192	DI00192	FU00192	Clinical remission	""	internal_id
+ST0001	PT00139	DI00139	FU00139	Clinical remission	""	internal_id
+ST0003	PT00629	DI00629	FU00629	Stable	""	internal_id
+ST0003	PT00641	DI00641	FU00641	Partial remission	""	internal_id
+ST0001	PT00182	DI00182	FU00182	Distant progression	50	internal_id
+ST0004	PT00895	DI00895	FU00895	No evidence of disease	""	internal_id
+ST0003	PT00797	DI00797	FU00797	Relapse or recurrence	44	internal_id
+ST0004	PT00904	DI00904	FU00904	Partial remission	""	internal_id
+ST0002	PT00580	DI00580	FU00580	Relapse or recurrence	75	internal_id
+ST0003	PT00704	DI00704	FU00704	Clinical remission	""	internal_id
+ST0001	PT00020	DI00020	FU00020	Stable	""	internal_id
+ST0004	PT00959	DI00959	FU00959	Partial remission	""	internal_id
+ST0001	PT00036	DI00036	FU00036	Stable	""	internal_id
+ST0002	PT00541	DI00541	FU00541	Partial remission	""	internal_id
+ST0004	PT00857	DI00857	FU00857	Stable	""	internal_id
+ST0004	PT00894	DI00894	FU00894	No evidence of disease	""	internal_id
+ST0001	PT00121	DI00121	FU00121	Relapse or recurrence	75	internal_id
+ST0002	PT00592	DI00592	FU00592	No evidence of disease	""	internal_id
+ST0004	PT00834	DI00834	FU00834	Distant progression	""	internal_id
+ST0004	PT00852	DI00852	FU00852	Distant progression	""	internal_id
+ST0001	PT00077	DI00077	FU00077	Loco-regional progression	80	internal_id
+ST0001	PT00146	DI00146	FU00146	Stable	""	internal_id
+ST0004	PT00933	DI00933	FU00933	No evidence of disease	""	internal_id
+ST0001	PT00030	DI00030	FU00030	Stable	""	internal_id
+ST0003	PT00806	DI00806	FU00806	Distant progression	83	internal_id
+ST0004	PT00953	DI00953	FU00953	No evidence of disease	""	internal_id
+ST0004	PT00993	DI00993	FU00993	Clinical remission	""	internal_id
+ST0004	PT00833	DI00833	FU00833	Stable	""	internal_id
+ST0004	PT00888	DI00888	FU00888	Stable	""	internal_id
+ST0003	PT00707	DI00707	FU00707	Stable	""	internal_id
+ST0004	PT00871	DI00871	FU00871	No evidence of disease	""	internal_id
+ST0004	PT00879	DI00879	FU00879	Distant progression	""	internal_id
+ST0003	PT00671	DI00671	FU00671	No evidence of disease	""	internal_id
+ST0003	PT00776	DI00776	FU00776	Loco-regional progression	""	internal_id
+ST0001	PT00283	DI00283	FU00283	No evidence of disease	""	internal_id
+ST0004	PT00963	DI00963	FU00963	Stable	""	internal_id
+ST0004	PT00996	DI00996	FU00996	Stable	""	internal_id
+ST0001	PT00058	DI00058	FU00058	Partial remission	""	internal_id
+ST0001	PT00369	DI00369	FU00369	Loco-regional progression	93	internal_id
+ST0002	PT00410	DI00410	FU00410	Clinical remission	""	internal_id
+ST0001	PT00240	DI00240	FU00240	No evidence of disease	""	internal_id
+ST0004	PT00884	DI00884	FU00884	Relapse or recurrence	""	internal_id
+ST0003	PT00692	DI00692	FU00692	Partial remission	""	internal_id
+ST0004	PT00966	DI00966	FU00966	Loco-regional progression	82	internal_id
+ST0001	PT00206	DI00206	FU00206	Distant progression	60	internal_id
+ST0004	PT00985	DI00985	FU00985	Relapse or recurrence	37	internal_id
+ST0004	PT00997	DI00997	FU00997	Partial remission	""	internal_id
+ST0001	PT00355	DI00355	FU00355	Loco-regional progression	""	internal_id
+ST0001	PT00137	DI00137	FU00137	Clinical remission	""	internal_id
+ST0001	PT00009	DI00009	FU00009	Distant progression	""	internal_id
+ST0003	PT00749	DI00749	FU00749	Stable	""	internal_id
+ST0001	PT00158	DI00158	FU00158	Loco-regional progression	""	internal_id
+ST0002	PT00428	DI00428	FU00428	Stable	""	internal_id
+ST0004	PT00938	DI00938	FU00938	Clinical remission	""	internal_id
+ST0004	PT00900	DI00900	FU00900	Loco-regional progression	""	internal_id
+ST0004	PT00905	DI00905	FU00905	Clinical remission	""	internal_id
+ST0004	PT00922	DI00922	FU00922	Loco-regional progression	73	internal_id
+ST0004	PT00855	DI00855	FU00855	Relapse or recurrence	""	internal_id
+ST0003	PT00800	DI00800	FU00800	Distant progression	""	internal_id
+ST0004	PT00958	DI00958	FU00958	Clinical remission	""	internal_id
+ST0001	PT00002	DI00002	FU00002	No evidence of disease	""	internal_id
+ST0002	PT00520	DI00520	FU00520	Relapse or recurrence	""	internal_id
+ST0001	PT00212	DI00212	FU00212	Clinical remission	""	internal_id
+ST0003	PT00656	DI00656	FU00656	Partial remission	""	internal_id
+ST0004	PT00917	DI00917	FU00917	Stable	""	internal_id
+ST0001	PT00290	DI00290	FU00290	Relapse or recurrence	""	internal_id
+ST0003	PT00683	DI00683	FU00683	Distant progression	""	internal_id
+ST0001	PT00165	DI00165	FU00165	Distant progression	""	internal_id
+ST0002	PT00563	DI00563	FU00563	No evidence of disease	""	internal_id
+ST0001	PT00087	DI00087	FU00087	Distant progression	""	internal_id
+ST0001	PT00124	DI00124	FU00124	Loco-regional progression	""	internal_id
+ST0002	PT00610	DI00610	FU00610	Stable	""	internal_id
+ST0001	PT00285	DI00285	FU00285	No evidence of disease	""	internal_id
+ST0001	PT00043	DI00043	FU00043	Clinical remission	""	internal_id
+ST0004	PT00858	DI00858	FU00858	Clinical remission	""	internal_id
+ST0004	PT00918	DI00918	FU00918	Stable	""	internal_id
+ST0003	PT00644	DI00644	FU00644	Distant progression	""	internal_id
+ST0001	PT00264	DI00264	FU00264	Loco-regional progression	""	internal_id
+ST0001	PT00031	DI00031	FU00031	Loco-regional progression	""	internal_id
+ST0001	PT00221	DI00221	FU00221	Partial remission	""	internal_id
+ST0004	PT00880	DI00880	FU00880	Distant progression	45	internal_id
+ST0004	PT00863	DI00863	FU00863	No evidence of disease	""	internal_id
+ST0001	PT00023	DI00023	FU00023	Distant progression	""	internal_id
+ST0002	PT00562	DI00562	FU00562	Distant progression	""	internal_id
+ST0001	PT00342	DI00342	FU00342	Distant progression	59	internal_id
+ST0002	PT00496	DI00496	FU00496	Partial remission	""	internal_id
+ST0004	PT00964	DI00964	FU00964	Stable	""	internal_id
+ST0002	PT00591	DI00591	FU00591	Loco-regional progression	35	internal_id
+ST0003	PT00650	DI00650	FU00650	Relapse or recurrence	32	internal_id
+ST0002	PT00399	DI00399	FU00399	Relapse or recurrence	""	internal_id
+ST0002	PT00528	DI00528	FU00528	Partial remission	""	internal_id
+ST0004	PT00889	DI00889	FU00889	Distant progression	64	internal_id
+ST0001	PT00116	DI00116	FU00116	Loco-regional progression	""	internal_id
+ST0001	PT00123	DI00123	FU00123	Relapse or recurrence	70	internal_id
+ST0004	PT00962	DI00962	FU00962	Stable	""	internal_id
+ST0004	PT00829	DI00829	FU00829	Partial remission	""	internal_id
+ST0002	PT00509	DI00509	FU00509	No evidence of disease	""	internal_id
+ST0004	PT00928	DI00928	FU00928	Stable	""	internal_id
+ST0001	PT00168	DI00168	FU00168	Loco-regional progression	60	internal_id
+ST0003	PT00677	DI00677	FU00677	No evidence of disease	""	internal_id
+ST0003	PT00662	DI00662	FU00662	Loco-regional progression	""	internal_id
+ST0003	PT00680	DI00680	FU00680	Partial remission	""	internal_id
+ST0001	PT00169	DI00169	FU00169	Relapse or recurrence	""	internal_id
+ST0004	PT00988	DI00988	FU00988	No evidence of disease	""	internal_id
+ST0002	PT00408	DI00408	FU00408	Clinical remission	""	internal_id
+ST0002	PT00431	DI00431	FU00431	Clinical remission	""	internal_id
+ST0004	PT00913	DI00913	FU00913	Distant progression	""	internal_id
+ST0001	PT00314	DI00314	FU00314	Distant progression	""	internal_id
+ST0004	PT00991	DI00991	FU00991	Loco-regional progression	67	internal_id
+ST0004	PT00861	DI00861	FU00861	Loco-regional progression	""	internal_id
+ST0001	PT00038	DI00038	FU00038	Partial remission	""	internal_id
+ST0001	PT00084	DI00084	FU00084	No evidence of disease	""	internal_id
+ST0004	PT00841	DI00841	FU00841	Partial remission	""	internal_id
+ST0003	PT00659	DI00659	FU00659	Distant progression	73	internal_id
+ST0004	PT00830	DI00830	FU00830	Relapse or recurrence	64	internal_id
+ST0003	PT00686	DI00686	FU00686	Relapse or recurrence	""	internal_id
+ST0004	PT00960	DI00960	FU00960	Clinical remission	""	internal_id
+ST0002	PT00613	DI00613	FU00613	Loco-regional progression	""	internal_id
+ST0001	PT00157	DI00157	FU00157	Clinical remission	""	internal_id
+ST0001	PT00298	DI00298	FU00298	Distant progression	""	internal_id
+ST0004	PT00847	DI00847	FU00847	Relapse or recurrence	""	internal_id
+ST0001	PT00253	DI00253	FU00253	Stable	""	internal_id
+ST0004	PT00950	DI00950	FU00950	Relapse or recurrence	47	internal_id
+ST0002	PT00527	DI00527	FU00527	Partial remission	""	internal_id
+ST0004	PT00885	DI00885	FU00885	No evidence of disease	""	internal_id
+ST0003	PT00761	DI00761	FU00761	No evidence of disease	""	internal_id
+ST0004	PT00941	DI00941	FU00941	Clinical remission	""	internal_id
+ST0002	PT00505	DI00505	FU00505	No evidence of disease	""	internal_id
+ST0002	PT00461	DI00461	FU00461	No evidence of disease	""	internal_id
+ST0002	PT00587	DI00587	FU00587	Partial remission	""	internal_id
+ST0004	PT00870	DI00870	FU00870	Relapse or recurrence	""	internal_id
+ST0003	PT00668	DI00668	FU00668	Loco-regional progression	""	internal_id
+ST0002	PT00488	DI00488	FU00488	Relapse or recurrence	""	internal_id
+ST0004	PT00970	DI00970	FU00970	No evidence of disease	""	internal_id
+ST0004	PT00981	DI00981	FU00981	Distant progression	83	internal_id
+ST0004	PT00924	DI00924	FU00924	Loco-regional progression	""	internal_id
+ST0002	PT00425	DI00425	FU00425	Clinical remission	""	internal_id
+ST0002	PT00447	DI00447	FU00447	Partial remission	""	internal_id
+ST0002	PT00392	DI00392	FU00392	Loco-regional progression	59	internal_id
+ST0004	PT00961	DI00961	FU00961	Loco-regional progression	""	internal_id
+ST0001	PT00093	DI00093	FU00093	Clinical remission	""	internal_id
+ST0004	PT00995	DI00995	FU00995	Distant progression	92	internal_id
+ST0001	PT00073	DI00073	FU00073	Partial remission	""	internal_id
+ST0004	PT00989	DI00989	FU00989	Loco-regional progression	""	internal_id
+ST0004	PT00881	DI00881	FU00881	Relapse or recurrence	""	internal_id
+ST0001	PT00341	DI00341	FU00341	Clinical remission	""	internal_id
+ST0001	PT00099	DI00099	FU00099	No evidence of disease	""	internal_id
+ST0001	PT00155	DI00155	FU00155	No evidence of disease	""	internal_id
+ST0004	PT00907	DI00907	FU00907	Loco-regional progression	""	internal_id
+ST0004	PT00969	DI00969	FU00969	Distant progression	57	internal_id
+ST0001	PT00336	DI00336	FU00336	Clinical remission	""	internal_id
+ST0004	PT00909	DI00909	FU00909	Clinical remission	""	internal_id
+ST0001	PT00162	DI00162	FU00162	No evidence of disease	""	internal_id
+ST0004	PT00908	DI00908	FU00908	Distant progression	67	internal_id
+ST0001	PT00115	DI00115	FU00115	Relapse or recurrence	""	internal_id
+ST0001	PT00278	DI00278	FU00278	Loco-regional progression	84	internal_id
+ST0001	PT00172	DI00172	FU00172	No evidence of disease	""	internal_id
+ST0004	PT00844	DI00844	FU00844	Partial remission	""	internal_id
+ST0004	PT00835	DI00835	FU00835	Relapse or recurrence	35	internal_id
+ST0004	PT00891	DI00891	FU00891	Distant progression	""	internal_id
+ST0004	PT00862	DI00862	FU00862	Relapse or recurrence	""	internal_id
+ST0004	PT00838	DI00838	FU00838	Partial remission	""	internal_id
+ST0004	PT00867	DI00867	FU00867	Distant progression	56	internal_id
+ST0002	PT00593	DI00593	FU00593	Stable	""	internal_id
+ST0001	PT00062	DI00062	FU00062	Stable	""	internal_id
+ST0003	PT00743	DI00743	FU00743	No evidence of disease	""	internal_id
+ST0001	PT00081	DI00081	FU00081	Partial remission	""	internal_id
+ST0003	PT00689	DI00689	FU00689	Loco-regional progression	96	internal_id
+ST0002	PT00619	DI00619	FU00619	Distant progression	""	internal_id
+ST0002	PT00443	DI00443	FU00443	Relapse or recurrence	""	internal_id
+ST0004	PT00873	DI00873	FU00873	Distant progression	""	internal_id
+ST0001	PT00227	DI00227	FU00227	Partial remission	""	internal_id
+ST0001	PT00011	DI00011	FU00011	Loco-regional progression	""	internal_id
+ST0003	PT00719	DI00719	FU00719	Partial remission	""	internal_id
+ST0002	PT00490	DI00490	FU00490	No evidence of disease	""	internal_id
+ST0001	PT00177	DI00177	FU00177	No evidence of disease	""	internal_id
+ST0004	PT00999	DI00999	FU00999	Partial remission	""	internal_id
+ST0001	PT00201	DI00201	FU00201	Stable	""	internal_id
+ST0004	PT00874	DI00874	FU00874	Stable	""	internal_id
+ST0002	PT00502	DI00502	FU00502	Relapse or recurrence	""	internal_id
+ST0004	PT00832	DI00832	FU00832	Stable	""	internal_id
+ST0001	PT00303	DI00303	FU00303	Stable	""	internal_id
+ST0004	PT00947	DI00947	FU00947	Distant progression	""	internal_id
+ST0004	PT00856	DI00856	FU00856	Relapse or recurrence	""	internal_id
+ST0003	PT00764	DI00764	FU00764	No evidence of disease	""	internal_id
+ST0001	PT00133	DI00133	FU00133	No evidence of disease	""	internal_id
+ST0004	PT00949	DI00949	FU00949	Clinical remission	""	internal_id
+ST0002	PT00515	DI00515	FU00515	Partial remission	""	internal_id
+ST0004	PT00934	DI00934	FU00934	Loco-regional progression	""	internal_id
+ST0004	PT00923	DI00923	FU00923	Partial remission	""	internal_id
+ST0003	PT00770	DI00770	FU00770	Relapse or recurrence	""	internal_id
+ST0001	PT00134	DI00134	FU00134	Partial remission	""	internal_id
+ST0003	PT00788	DI00788	FU00788	Loco-regional progression	91	internal_id
+ST0004	PT00975	DI00975	FU00975	Relapse or recurrence	""	internal_id
+ST0004	PT00915	DI00915	FU00915	No evidence of disease	""	internal_id
+ST0004	PT00898	DI00898	FU00898	Partial remission	""	internal_id
+ST0002	PT00493	DI00493	FU00493	Stable	""	internal_id
+ST0004	PT00994	DI00994	FU00994	Relapse or recurrence	""	internal_id
+ST0002	PT00526	DI00526	FU00526	Loco-regional progression	""	internal_id
+ST0004	PT00828	DI00828	FU00828	Partial remission	""	internal_id
+ST0004	PT00899	DI00899	FU00899	Stable	""	internal_id
+ST0001	PT00064	DI00064	FU00064	Loco-regional progression	""	internal_id
+ST0002	PT00415	DI00415	FU00415	Stable	""	internal_id
+ST0004	PT00849	DI00849	FU00849	Distant progression	""	internal_id
+ST0001	PT00096	DI00096	FU00096	Loco-regional progression	""	internal_id
+ST0004	PT00927	DI00927	FU00927	Distant progression	""	internal_id
+ST0004	PT00942	DI00942	FU00942	Partial remission	""	internal_id
+ST0003	PT00812	DI00812	FU00812	Relapse or recurrence	97	internal_id
+ST0003	PT00740	DI00740	FU00740	Distant progression	""	internal_id
+ST0001	PT00185	DI00185	FU00185	No evidence of disease	""	internal_id
+ST0004	PT00872	DI00872	FU00872	No evidence of disease	""	internal_id
+ST0004	PT00956	DI00956	FU00956	No evidence of disease	""	internal_id
+ST0003	PT00746	DI00746	FU00746	Relapse or recurrence	93	internal_id
+ST0001	PT00370	DI00370	FU00370	Relapse or recurrence	""	internal_id
+ST0003	PT00821	DI00821	FU00821	Clinical remission	""	internal_id
+ST0004	PT00860	DI00860	FU00860	No evidence of disease	""	internal_id
+ST0004	PT00979	DI00979	FU00979	Clinical remission	""	internal_id
+ST0003	PT00665	DI00665	FU00665	Relapse or recurrence	""	internal_id
+ST0001	PT00339	DI00339	FU00339	Relapse or recurrence	""	internal_id
+ST0002	PT00397	DI00397	FU00397	Loco-regional progression	""	internal_id
+ST0004	PT00878	DI00878	FU00878	No evidence of disease	""	internal_id
+ST0003	PT00809	DI00809	FU00809	Partial remission	""	internal_id
+ST0001	PT00309	DI00309	FU00309	Clinical remission	""	internal_id
+ST0003	PT00698	DI00698	FU00698	No evidence of disease	""	internal_id
+ST0001	PT00075	DI00075	FU00075	Relapse or recurrence	50	internal_id
+ST0001	PT00315	DI00315	FU00315	Stable	""	internal_id
+ST0002	PT00487	DI00487	FU00487	Partial remission	""	internal_id
+ST0003	PT00716	DI00716	FU00716	Distant progression	""	internal_id
+ST0002	PT00383	DI00383	FU00383	Relapse or recurrence	""	internal_id
+ST0002	PT00540	DI00540	FU00540	Clinical remission	""	internal_id
+ST0001	PT00004	DI00004	FU00004	Clinical remission	""	internal_id
+ST0001	PT00066	DI00066	FU00066	No evidence of disease	""	internal_id
+ST0001	PT00238	DI00238	FU00238	Partial remission	""	internal_id
+ST0002	PT00384	DI00384	FU00384	Stable	""	internal_id
+ST0004	PT00990	DI00990	FU00990	Distant progression	80	internal_id
+ST0002	PT00391	DI00391	FU00391	Clinical remission	""	internal_id
+ST0002	PT00521	DI00521	FU00521	Relapse or recurrence	""	internal_id
+ST0001	PT00322	DI00322	FU00322	Clinical remission	""	internal_id
+ST0001	PT00060	DI00060	FU00060	Stable	""	internal_id
+ST0002	PT00567	DI00567	FU00567	No evidence of disease	""	internal_id
+ST0002	PT00615	DI00615	FU00615	Partial remission	""	internal_id
+ST0001	PT00118	DI00118	FU00118	No evidence of disease	""	internal_id
+ST0004	PT00932	DI00932	FU00932	Stable	""	internal_id
+ST0001	PT00262	DI00262	FU00262	Loco-regional progression	""	internal_id
+ST0002	PT00530	DI00530	FU00530	Distant progression	""	internal_id
+ST0002	PT00403	DI00403	FU00403	Relapse or recurrence	""	internal_id
+ST0002	PT00436	DI00436	FU00436	Stable	""	internal_id
+ST0004	PT00876	DI00876	FU00876	Partial remission	""	internal_id
+ST0004	PT00971	DI00971	FU00971	No evidence of disease	""	internal_id
+ST0002	PT00462	DI00462	FU00462	Stable	""	internal_id
+ST0003	PT00653	DI00653	FU00653	Loco-regional progression	""	internal_id
+ST0004	PT00987	DI00987	FU00987	Loco-regional progression	38	internal_id
+ST0001	PT00047	DI00047	FU00047	Clinical remission	""	internal_id
+ST0003	PT00632	DI00632	FU00632	Partial remission	""	internal_id
+ST0001	PT00039	DI00039	FU00039	Distant progression	""	internal_id
+ST0003	PT00815	DI00815	FU00815	No evidence of disease	""	internal_id
+ST0004	PT00853	DI00853	FU00853	Stable	""	internal_id
+ST0004	PT00925	DI00925	FU00925	Clinical remission	""	internal_id
+ST0004	PT00864	DI00864	FU00864	Partial remission	""	internal_id
+ST0003	PT00695	DI00695	FU00695	Partial remission	""	internal_id
+ST0004	PT00901	DI00901	FU00901	No evidence of disease	""	internal_id
+ST0004	PT00892	DI00892	FU00892	No evidence of disease	""	internal_id
+ST0004	PT00977	DI00977	FU00977	No evidence of disease	""	internal_id
+ST0004	PT00910	DI00910	FU00910	Stable	""	internal_id
+ST0001	PT00153	DI00153	FU00153	Partial remission	""	internal_id
+ST0002	PT00472	DI00472	FU00472	Relapse or recurrence	""	internal_id
+ST0003	PT00767	DI00767	FU00767	Partial remission	""	internal_id
+ST0004	PT00866	DI00866	FU00866	No evidence of disease	""	internal_id
+ST0004	PT00976	DI00976	FU00976	Loco-regional progression	50	internal_id
+ST0003	PT00701	DI00701	FU00701	Stable	""	internal_id
+ST0001	PT00358	DI00358	FU00358	Relapse or recurrence	""	internal_id
+ST0004	PT00831	DI00831	FU00831	Distant progression	84	internal_id
+ST0001	PT00163	DI00163	FU00163	Stable	""	internal_id
+ST0002	PT00453	DI00453	FU00453	Stable	""	internal_id
+ST0004	PT00912	DI00912	FU00912	Clinical remission	""	internal_id
+ST0003	PT00818	DI00818	FU00818	Partial remission	""	internal_id
+ST0004	PT00978	DI00978	FU00978	No evidence of disease	""	internal_id
+ST0004	PT00935	DI00935	FU00935	Loco-regional progression	""	internal_id
+ST0002	PT00457	DI00457	FU00457	Stable	""	internal_id
+ST0002	PT00547	DI00547	FU00547	No evidence of disease	""	internal_id
+ST0004	PT00875	DI00875	FU00875	Clinical remission	""	internal_id
+ST0002	PT00444	DI00444	FU00444	No evidence of disease	""	internal_id
+ST0002	PT00381	DI00381	FU00381	No evidence of disease	""	internal_id
+ST0001	PT00260	DI00260	FU00260	Partial remission	""	internal_id
+ST0004	PT00897	DI00897	FU00897	Relapse or recurrence	""	internal_id
+ST0001	PT00284	DI00284	FU00284	No evidence of disease	""	internal_id
+ST0004	PT00850	DI00850	FU00850	Relapse or recurrence	78	internal_id
+ST0001	PT00180	DI00180	FU00180	Distant progression	50	internal_id
+ST0002	PT00552	DI00552	FU00552	Stable	""	internal_id
+ST0004	PT00940	DI00940	FU00940	Relapse or recurrence	""	internal_id
+ST0001	PT00318	DI00318	FU00318	Stable	""	internal_id
+ST0001	PT00144	DI00144	FU00144	Stable	""	internal_id
+ST0001	PT00109	DI00109	FU00109	Distant progression	70	internal_id
+ST0004	PT00914	DI00914	FU00914	Partial remission	""	internal_id

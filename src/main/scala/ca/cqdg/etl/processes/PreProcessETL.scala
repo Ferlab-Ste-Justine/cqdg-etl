@@ -8,7 +8,7 @@ import PreProcessUtils.addCQDGId
 import ca.cqdg.etl.models.{Metadata, NamedDataFrame, Schema}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions.lit
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import org.slf4j
 import org.slf4j.LoggerFactory
 
@@ -22,10 +22,10 @@ class PreProcessETL(dictionaryClient: IDictionary, idServerClient: IIdServer)(im
   val diagnosis: DatasetConf = conf.getDataset("diagnosis")
   val donor: DatasetConf = conf.getDataset("donor")
   val exposure: DatasetConf = conf.getDataset("exposure")
-  val family_history: DatasetConf = conf.getDataset("family_history")
+  val family_history: DatasetConf = conf.getDataset("family-history")
   val family: DatasetConf = conf.getDataset("family")
   val file: DatasetConf = conf.getDataset("file")
-  val follow_up: DatasetConf = conf.getDataset("follow_up")
+  val follow_up: DatasetConf = conf.getDataset("follow-up")
   val phenotype: DatasetConf = conf.getDataset("phenotype")
   val sample_registration: DatasetConf = conf.getDataset("sample_registration")
   val study: DatasetConf = conf.getDataset("study")
@@ -66,14 +66,14 @@ class PreProcessETL(dictionaryClient: IDictionary, idServerClient: IIdServer)(im
     val schemaEntities: List[Schema] = dictionarySchemas.getOrElse(metadata.dictionaryVersion, throw new RuntimeException(s"Failed to load dictionary schema for version ${metadata.dictionaryVersion}"))
 
     data
-      .map({ case (name, df) => sanitize(name) -> df }) // sanitize name
-      .filter({ case (name, _) => schemaEntities.map(s => s.name).contains(name) })
+      .filter({ case (name, _) => schemaEntities.map(s => s.name).contains(sanitize(name)) })
       .map({
         case (name, df) =>
-          val cqdgIDsAdded: DataFrame = addCQDGId(name, df, idServerClient.getCQDGIds)
+          val sanitizedName = sanitize(name)
+          val cqdgIDsAdded: DataFrame = addCQDGId(sanitizedName, df, idServerClient.getCQDGIds)
 
           // Remove columns that are not in the schema
-          val colsToRemove = cqdgIDsAdded.columns.filterNot(col => schemaEntities.find(schema => schema.name == name).get.columns.contains(col))
+          val colsToRemove = cqdgIDsAdded.columns.filterNot(col => schemaEntities.find(schema => schema.name == sanitizedName).get.columns.contains(col))
           if (colsToRemove.length > 0) {
             log.warn(s"Removing the columns [${colsToRemove.mkString(",")}] from ${name}")
           }

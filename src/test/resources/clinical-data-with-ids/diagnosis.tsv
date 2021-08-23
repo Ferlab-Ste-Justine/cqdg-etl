@@ -1,0 +1,868 @@
+study_id	submitter_donor_id	submitter_diagnosis_id	diagnosis_source_text	diagnosis_ICD_code	diagnosis_mondo_code	age_at_diagnosis	is_self_reported	is_cancer	is_cancer_primary	diagnosis_type	tumor_staging_system	stage_group	t_category	n_category	m_category	internal_diagnosis_id
+ST0001	PT00313	DI00313	Hypertension	I10	MONDO:0001134	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00422	DI00422	large tongue	Q38.2	MONDO:0015496	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00240	DI00240	Non small cell lung carcinoma	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	T4e	N3a	M1d	internal_id
+ST0002	PT00448	DI00448	Hirschsprung	Q43.1	MONDO:0018309	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00208	DI00208	Unstable angina	I20	MONDO:0005255	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00316	DI00316	Prostate neoplasm	C61	MONDO:0008315	35	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2a2	N2	M1d(1)	internal_id
+ST0002	PT00577	DI00577	Mast tumor	C96.2	MONDO:0002724	16	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T1a	N1b	M1d	internal_id
+ST0002	PT00401	DI00401	eye lid deformation	Q10.2	MONDO:0020159	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00098	DI00098	Reye's	G93.7	MONDO:0005942	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00484	DI00484	Spina bifida	Q05	MONDO:0008449	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00480	DI00480	stenosis of pylori	Q40.0	MONDO:0001560	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00022	DI00022	Prostatic cancer	C61	MONDO:0008315	58	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1d	NX	M1c(1)	internal_id
+ST0001	PT00131	DI00131	Psoriasis	L40	MONDO:0005083	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00458	DI00458	Glaucoma	Q15.0	MONDO:0020366	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00575	DI00575	underdeveloped ear	Q17.2	MONDO:0010920	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00102	DI00102	Reye's	G93.7	MONDO:0005942	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00988	DI00988	Malignant neoplasm of prostate	C61	MONDO:0008315	49	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	Tis(DCIS)	N1a(sn)	M1d(1)	internal_id
+ST0002	PT00402	DI00402	large tongue	Q38.2	MONDO:0015496	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00573	DI00573	Natural Killer cell lymphoma	C86.1	MONDO:0005062	10	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iie',	""	""	""	internal_id
+ST0003	PT00791	DI00791	Multiple myeloma	C90.0	MONDO:0005170	10	FALSE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage 1a',	""	""	""	internal_id
+ST0001	PT00320	DI00320	Cardiomyopathy	I25.5	MONDO:0004994	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00153	DI00153	Hodgkin	C81	MONDO:0009348	48	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iiie',	""	""	""	internal_id
+ST0002	PT00430	DI00430	neural tube defect	Q01	MONDO:0017078	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00919	DI00919	Neoplasm of the prostate gland	C61	MONDO:0008315	50	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T3b	N2a	M1d(1)	internal_id
+ST0001	PT00042	DI00042	Urolithiasis	N20	MONDO:0008171	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00246	DI00246	Psoriasis	L40	MONDO:0005083	63	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00345	DI00345	Rheumatic endocarditis	I01.1	MONDO:0021777	64	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00641	DI00641	Blastic NK-cell lymphoma	C86.1	MONDO:0005062	19	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iva',	""	""	""	internal_id
+ST0001	PT00186	DI00186	UC	K51	MONDO:0005101	67	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00509	DI00509	Acute myeloid leukemia	C92	MONDO:0004643	1	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0001	PT00116	DI00116	Malignant neoplasm of brain, unspecified	C71	MONDO:0001657	68	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib2	T2c	N3	M1c(1)	internal_id
+ST0002	PT00620	DI00620	Chomosome 5 short arm del	Q93.4	MONDO:0016887	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00917	DI00917	Cancer of prostate	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib2	T4a	N3a	M1e	internal_id
+ST0001	PT00058	DI00058	Lymphoid leukemia	C91.0	MONDO:0005402	46	TRUE	TRUE	TRUE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0003	PT00755	DI00755	Blastic NK-cell lymphoma	C86.1	MONDO:0005062	7	FALSE	TRUE	TRUE	Histological	Lugano staging system	stage iib',	""	""	""	internal_id
+ST0002	PT00614	DI00614	large tongue	Q38.2	MONDO:0015496	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00397	DI00397	Cancer of thyroid gland	C73	MONDO:0002108	10	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ic	T4b	N1b	M1c(1)	internal_id
+ST0002	PT00476	DI00476	stenosis of pylori	Q40.0	MONDO:0001560	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00481	DI00481	stenosis of pylori	Q40.0	MONDO:0001560	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00472	DI00472	Lymphoid leukemia	C91.0	MONDO:0005402	11	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0002	PT00454	DI00454	Hirschsprung	Q43.1	MONDO:0018309	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00416	DI00416	Microcephaly	Q02	MONDO:0001149	14	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00112	DI00112	Spondylosis	M47	MONDO:0002253	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00953	DI00953	Malignant neoplasm of prostate	C61	MONDO:0008315	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ic	Ta	N3b	M1d(1)	internal_id
+ST0001	PT00305	DI00305	Unstable angina	I20	MONDO:0005255	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00084	DI00084	Multiple myeloma	C90.0	MONDO:0005170	49	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage 1b',	""	""	""	internal_id
+ST0002	PT00393	DI00393	duodenal stenosis	Q41.0	MONDO:0009126	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00215	DI00215	Nephrotic syndrome	N00	MONDO:0005377	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00308	DI00308	Angina	I20.0	MONDO:0005255	40	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00928	DI00928	Cancer of prostate	C61	MONDO:0008315	55	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T1b1	N2	M1d(1)	internal_id
+ST0001	PT00068	DI00068	Left breast cancer	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	T1mi	N3	M1e	internal_id
+ST0002	PT00553	DI00553	Cancer of tonsil	C09	MONDO:0006998	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	TX	N3	M1d(0)	internal_id
+ST0002	PT00586	DI00586	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	20	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iie',	""	""	""	internal_id
+ST0001	PT00349	DI00349	Essential (primary) hypertension	I10	MONDO:0001134	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00459	DI00459	Pancreatic cyst	Q45.2	MONDO:0017783	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00544	DI00544	Microcephaly	Q02	MONDO:0001149	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00083	DI00083	Schizo-affective	F20	MONDO:0005090	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00568	DI00568	eye lid deformation	Q10.2	MONDO:0020159	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00053	DI00053	Spondylosis	M47	MONDO:0002253	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00836	DI00836	Cancer of prostate	C61	MONDO:0008315	51	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iib	T1d	N3c	M1d(0)	internal_id
+ST0004	PT00887	DI00887	Malignant neoplasm of prostate	C61	MONDO:0008315	49	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T2d	N4	M1e	internal_id
+ST0001	PT00344	DI00344	Bipolar	F31	MONDO:0004985	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00211	DI00211	Pulmonary embolism	I26	MONDO:0005279	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00444	DI00444	Natural Killer cell lymphoma	C86.1	MONDO:0005062	6	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage ieb',	""	""	""	internal_id
+ST0002	PT00592	DI00592	Mast cell tumour	C96.2	MONDO:0002724	3	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1c	N2a	M1c(1)	internal_id
+ST0001	PT00262	DI00262	Cancer of thyroid gland	C73	MONDO:0002108	39	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iii	T1mi	N3b	M1d(1)	internal_id
+ST0003	PT00731	DI00731	Mast cell tumour	C96.2	MONDO:0002724	0	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T3	N3	M1d(1)	internal_id
+ST0001	PT00125	DI00125	Crohn's	K50	MONDO:0005011	30	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00550	DI00550	Glaucoma	Q15.0	MONDO:0020366	1	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00647	DI00647	Multiple myeloma	C90.0	MONDO:0005170	9	FALSE	TRUE	FALSE	Histological	Durie-Salmon staging system	stage 1a',	""	""	""	internal_id
+ST0001	PT00365	DI00365	Stroke	I64	MONDO:0005098	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00537	DI00537	duodenal stenosis	Q41.0	MONDO:0009126	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00212	DI00212	Multiple myeloma	C90.0	MONDO:0005170	58	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage ii',	""	""	""	internal_id
+ST0002	PT00461	DI00461	Mast cell tumour	C96.2	MONDO:0002724	10	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iv	T2a2	N3	M1c(1)	internal_id
+ST0004	PT00898	DI00898	Malignant neoplasm of prostate	C61	MONDO:0008315	53	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 1	T0	N4	M1c(1)	internal_id
+ST0001	PT00138	DI00138	Cardiomyopathy	I25.5	MONDO:0004994	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00918	DI00918	Cancer of prostate	C61	MONDO:0008315	65	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva	T3a	N2a	M1d(1)	internal_id
+ST0001	PT00006	DI00006	Urolithiasis	N20	MONDO:0008171	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00385	DI00385	Spina bifida	Q05	MONDO:0008449	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00124	DI00124	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ie	T0	N4	M1d(0)	internal_id
+ST0004	PT00915	DI00915	Prostate neoplasm	C61	MONDO:0008315	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage i	T4c	N3a	M1d(1)	internal_id
+ST0004	PT00945	DI00945	Cancer of prostate	C61	MONDO:0008315	40	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia2	T2	N3a	M1d(1)	internal_id
+ST0002	PT00490	DI00490	Myeloid leukemia	C92	MONDO:0004643	14	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage ii',	""	""	""	internal_id
+ST0003	PT00638	DI00638	Brain cancer	C71.9	MONDO:0001657	15	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T4d	N1mi	M1c(1)	internal_id
+ST0002	PT00456	DI00456	duodenal stenosis	Q41.0	MONDO:0009126	6	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00974	DI00974	Cancer of prostate	C61	MONDO:0008315	42	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	TX	N2	M1d	internal_id
+ST0004	PT00987	DI00987	Neoplasm of the prostate gland	C61	MONDO:0008315	69	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	T1a1	N4	M1c(1)	internal_id
+ST0003	PT00692	DI00692	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	21	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ic	T3c	N4	M1d	internal_id
+ST0001	PT00132	DI00132	Colo-rectal carcinoma	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T1c	N1a(sn)	M1e	internal_id
+ST0001	PT00330	DI00330	Multiple myeloma	C90.0	MONDO:0005170	57	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage 1a',	""	""	""	internal_id
+ST0001	PT00065	DI00065	Vein thrombosis	I81	MONDO:0001339	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00589	DI00589	Hirschsprung	Q43.1	MONDO:0018309	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00287	DI00287	Stroke	I62	MONDO:0005098	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00207	DI00207	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiib	Tis(Paget)	N2c	M1d(1)	internal_id
+ST0001	PT00220	DI00220	Cardiomyopathy	I25.5	MONDO:0004994	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00890	DI00890	Cancer of prostate	C61	MONDO:0008315	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T3c	N1c	M1d	internal_id
+ST0003	PT00806	DI00806	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	32	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia2	Tis(DCIS)	N2c	M1c(1)	internal_id
+ST0001	PT00127	DI00127	Urolithiasis	N20	MONDO:0008171	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00250	DI00250	UC	K51	MONDO:0005101	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00046	DI00046	Angina	I12	MONDO:0024633	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00429	DI00429	Cleft palate	Q35.1	MONDO:0015092	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00910	DI00910	Cancer of prostate	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib	T1c	N3b	M1c(1)	internal_id
+ST0001	PT00078	DI00078	Arthritis	M19.9	MONDO:0006816	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00815	DI00815	Cancer of tonsil	C09	MONDO:0006998	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ic	Tis	N3a	M1d(1)	internal_id
+ST0001	PT00360	DI00360	Pulmonary hypertension	I27.0	MONDO:0005149	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00183	DI00183	Lymphoid leukemia	C91.0	MONDO:0005402	58	TRUE	TRUE	TRUE	Clinical	Binet staging system	stage c'	""	""	""	internal_id
+ST0001	PT00272	DI00272	Valvular defect	I05	MONDO:0042967	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00579	DI00579	stenosis of pylori	Q40.0	MONDO:0001560	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00525	DI00525	Hodgkin	C81	MONDO:0009348	8	FALSE	FALSE	""	Clinical	Ann Arbor staging system	stage ivs'	""	""	""	internal_id
+ST0002	PT00615	DI00615	Stomach cancer	C16	MONDO:0001056	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	T1	N4	M1d(0)	internal_id
+ST0001	PT00260	DI00260	Multiple myeloma	C90.0	MONDO:0005170	32	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iia',	""	""	""	internal_id
+ST0001	PT00274	DI00274	Osteoarthritis	M15	MONDO:0006816	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00441	DI00441	Hirschsprung	Q43.1	MONDO:0018309	1	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00526	DI00526	Natural Killer cell lymphoma	C86.1	MONDO:0005062	8	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iii',	""	""	""	internal_id
+ST0001	PT00169	DI00169	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	Tis pd	N3c	M1d(1)	internal_id
+ST0004	PT00990	DI00990	Prostatic cancer	C61	MONDO:0008315	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T1a2	N2b	M1c(1)	internal_id
+ST0002	PT00563	DI00563	Lymphoid leukemia	C91.0	MONDO:0005402	3	FALSE	TRUE	FALSE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0001	PT00310	DI00310	Manic depressive illness	F31	MONDO:0004985	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00217	DI00217	Pulmonary hypertension	I27.0	MONDO:0005149	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00949	DI00949	Cancer of prostate	C61	MONDO:0008315	51	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T4b	N2a	M1e	internal_id
+ST0001	PT00003	DI00003	Valvular heart disease	I05	MONDO:0042967	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00978	DI00978	Cancer of prostate	C61	MONDO:0008315	34	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iic	T1mi	NX	M1c(1)	internal_id
+ST0001	PT00156	DI00156	Diabetes Mellitus	E11	MONDO:0005148	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00818	DI00818	T cell lymphoma	C84	MONDO:0000430	34	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iiia',	""	""	""	internal_id
+ST0002	PT00407	DI00407	Glaucoma	Q15.0	MONDO:0020366	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00956	DI00956	Cancer of prostate	C61	MONDO:0008315	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva1	Tis(DCIS)	N3c	M1d(1)	internal_id
+ST0001	PT00067	DI00067	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iii	T3b	N2	M1d(1)	internal_id
+ST0001	PT00017	DI00017	Kidney disease	N04	MONDO:0005377	51	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00520	DI00520	Mast cell tumour	C96.2	MONDO:0002724	15	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia3	T2b	N4	M1c(1)	internal_id
+ST0002	PT00457	DI00457	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	9	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ie',	""	""	""	internal_id
+ST0003	PT00743	DI00743	Brain neoplasm	C71.9	MONDO:0001657	37	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ie	Tis	N1mi	M1d(0)	internal_id
+ST0002	PT00445	DI00445	Cleft palate	Q35.1	MONDO:0015092	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00704	DI00704	Gum cancer	C03	MONDO:0005507	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T3d	N3c	M1d(0)	internal_id
+ST0004	PT00936	DI00936	Cancer of prostate	C61	MONDO:0008315	66	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	T1b2	N2c	M1d	internal_id
+ST0001	PT00251	DI00251	Stroke	I62	MONDO:0005098	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00935	DI00935	Prostatic cancer	C61	MONDO:0008315	58	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T1b	N3a	M1d(1)	internal_id
+ST0001	PT00143	DI00143	Multiple myeloma	C90.0	MONDO:0005170	39	TRUE	FALSE	""	Clinical	Durie-Salmon staging system	stage 1a',	""	""	""	internal_id
+ST0001	PT00154	DI00154	renovascular hypertension	I12	MONDO:0024633	36	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00258	DI00258	Cardiomyopathy	I25.5	MONDO:0004994	31	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00379	DI00379	neural tube defect	Q01	MONDO:0017078	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00059	DI00059	Stenosis of the spine	M48.0	MONDO:0005965	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00161	DI00161	Myositis	M60.1	MONDO:0021167	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00405	DI00405	neural tube defect	Q01	MONDO:0017078	5	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00088	DI00088	Stroke	I64	MONDO:0005098	51	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00850	DI00850	Cancer of prostate	C61	MONDO:0008315	68	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T4e	N1b	M1d	internal_id
+ST0003	PT00809	DI00809	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia2	T3e	N1c	M1d(1)	internal_id
+ST0004	PT00867	DI00867	Malignant neoplasm of prostate	C61	MONDO:0008315	46	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia	Tis pu	N2mi	M1d(0)	internal_id
+ST0004	PT00929	DI00929	Cancer of prostate	C61	MONDO:0008315	45	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ie	T2b	N1mi	M1d(1)	internal_id
+ST0002	PT00436	DI00436	Malignant neoplasm of brain, unspecified	C71	MONDO:0001657	12	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivb	Tis(LCIS)	N2b	M1d(1)	internal_id
+ST0002	PT00435	DI00435	T cell lymphoma	C84	MONDO:0000430	20	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iib',	""	""	""	internal_id
+ST0004	PT00861	DI00861	Cancer of prostate	C61	MONDO:0008315	48	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T2a1	N3b	M1d(0)	internal_id
+ST0001	PT00237	DI00237	Malignant neoplasm of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T2	N1c	M1d	internal_id
+ST0001	PT00373	DI00373	Rheumatic endocarditis	I01.1	MONDO:0021777	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00334	DI00334	Pulmonary hypertension	I27.0	MONDO:0005149	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00228	DI00228	Rheumatic endocarditis	I01.1	MONDO:0021777	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00338	DI00338	Hypertensive renal disease	I12	MONDO:0024633	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00862	DI00862	Prostate neoplasm	C61	MONDO:0008315	37	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia3	Tis pd	N2a	M1d(1)	internal_id
+ST0002	PT00504	DI00504	duodenal stenosis	Q41.0	MONDO:0009126	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00064	DI00064	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3a	N1b	M1d(1)	internal_id
+ST0004	PT00983	DI00983	Prostate neoplasm	C61	MONDO:0008315	60	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva2	Tis pd	N2c	M1d(0)	internal_id
+ST0002	PT00587	DI00587	Hodgkin lymphoma	C81	MONDO:0009348	14	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage i',	""	""	""	internal_id
+ST0001	PT00163	DI00163	Cancer of prostate	C61	MONDO:0008315	32	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivc	T3a	N3c	M1d	internal_id
+ST0004	PT00989	DI00989	Cancer of prostate	C61	MONDO:0008315	74	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T4c	N1b	M1d(1)	internal_id
+ST0004	PT00962	DI00962	Cancer of prostate	C61	MONDO:0008315	52	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ie	T4d	N2b	M1d	internal_id
+ST0002	PT00606	DI00606	Glaucoma	Q15.0	MONDO:0020366	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00185	DI00185	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	T1c	N1b	M1c(1)	internal_id
+ST0001	PT00244	DI00244	Diabetes Mellitus	E11	MONDO:0005148	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00719	DI00719	Mast cell tumour	C96.2	MONDO:0002724	45	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Tis(LCIS)	N1c	M1d	internal_id
+ST0001	PT00010	DI00010	Cardiomyopathy	I25	MONDO:0005267	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00460	DI00460	Pancreatic cyst	Q45.2	MONDO:0017783	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00063	DI00063	TIID	E11	MONDO:0005148	46	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00189	DI00189	Urolithiasis	N20	MONDO:0008171	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00951	DI00951	Cancer of prostate	C61	MONDO:0008315	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2a2	N3c	M1e	internal_id
+ST0001	PT00328	DI00328	Psoriasis	L40	MONDO:0005083	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00864	DI00864	Cancer of prostate	C61	MONDO:0008315	74	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia1	T1a1	NX	M1d(1)	internal_id
+ST0001	PT00332	DI00332	UC	K51	MONDO:0005101	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00423	DI00423	AML	C92	MONDO:0004643	3	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage c'	""	""	""	internal_id
+ST0001	PT00273	DI00273	Crohn's	K50	MONDO:0005011	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00944	DI00944	Prostatic cancer	C61	MONDO:0008315	52	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia1	T2d	N3	M1e	internal_id
+ST0004	PT00998	DI00998	Neoplasm of the prostate gland	C61	MONDO:0008315	65	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T4b	N1a(sn)	M1d	internal_id
+ST0002	PT00542	DI00542	Chomosome 5 short arm del	Q93.4	MONDO:0016887	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00335	DI00335	Bipolar	F31	MONDO:0004985	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00194	DI00194	Alzheimer disease	G30	MONDO:0004975	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00635	DI00635	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva1	T1d	N3c	M1d	internal_id
+ST0003	PT00650	DI00650	Pulmonary neoplasm	C34	MONDO:0008903	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiia	T0	N2mi	M1d	internal_id
+ST0001	PT00257	DI00257	UC	K51	MONDO:0005101	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00507	DI00507	Pancreatic cyst	Q45.2	MONDO:0017783	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00144	DI00144	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	62	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T3d	N3c	M1d	internal_id
+ST0001	PT00033	DI00033	Stroke	I64	MONDO:0005098	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00107	DI00107	Pulmonary embolism	I26	MONDO:0005279	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00279	DI00279	Heart attack	I21	MONDO:0005068	60	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00496	DI00496	AML	C92	MONDO:0004643	0	FALSE	TRUE	FALSE	Clinical	Binet staging system	stage c'	""	""	""	internal_id
+ST0001	PT00075	DI00075	Cancer of thyroid gland	C73	MONDO:0002108	40	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	T1c	N2b	M1d(1)	internal_id
+ST0003	PT00710	DI00710	Colo-rectal carcinoma	C18	MONDO:0005575	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia3	Tis(LCIS)	N1mi	M1d(1)	internal_id
+ST0004	PT00913	DI00913	Prostatic cancer	C61	MONDO:0008315	44	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	T4	NX	M1e	internal_id
+ST0001	PT00001	DI00001	Heart attack	I21	MONDO:0005068	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00533	DI00533	neural tube defect	Q01	MONDO:0017078	20	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00613	DI00613	Myeloid leukemia	C92	MONDO:0004643	21	FALSE	TRUE	FALSE	Clinical	Binet staging system	stage a',	""	""	""	internal_id
+ST0001	PT00301	DI00301	Reye's	G93.7	MONDO:0005942	32	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00404	DI00404	underdeveloped ear	Q17.2	MONDO:0010920	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00499	DI00499	stenosis of pylori	Q40.0	MONDO:0001560	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00126	DI00126	Stenosis of the spine	M48.0	MONDO:0005965	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00016	DI00016	Impulse disorder	F63	MONDO:0001162	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00958	DI00958	Cancer of prostate	C61	MONDO:0008315	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	Tis(Paget)	NX	M1d	internal_id
+ST0002	PT00475	DI00475	Microcephaly	Q02	MONDO:0001149	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00596	DI00596	large tongue	Q38.2	MONDO:0015496	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00539	DI00539	Chomosome 5 short arm del	Q93.4	MONDO:0016887	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00238	DI00238	Breast cancer	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	Tis(Paget’s)	N1b	M1d(0)	internal_id
+ST0002	PT00424	DI00424	Pancreatic cyst	Q45.2	MONDO:0017783	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00794	DI00794	Melanoma	C43	MONDO:0005012	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T4a	N3	M1c(1)	internal_id
+ST0001	PT00136	DI00136	Angina	I20	MONDO:0005255	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00535	DI00535	eye lid deformation	Q10.2	MONDO:0020159	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00698	DI00698	Malignant neoplasm of rectum	C20	MONDO:0006519	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia1	T2c	N1b	M1d(0)	internal_id
+ST0001	PT00021	DI00021	Chronic heart disease	I25	MONDO:0005267	36	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00014	DI00014	Glaucoma	H40	MONDO:0005041	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00066	DI00066	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivc	TX	N3a	M1d(1)	internal_id
+ST0001	PT00175	DI00175	Pulmonary embolism	I26	MONDO:0005279	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00838	DI00838	Neoplasm of the prostate gland	C61	MONDO:0008315	44	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T2b	N1b	M1d(0)	internal_id
+ST0001	PT00235	DI00235	Neoplasm of the prostate gland	C61	MONDO:0008315	46	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic	T3a	N2a	M1e	internal_id
+ST0002	PT00506	DI00506	Glaucoma	Q15.0	MONDO:0020366	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00446	DI00446	large tongue	Q38.2	MONDO:0015496	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00842	DI00842	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia	T3	N3a	M1d(1)	internal_id
+ST0004	PT00947	DI00947	Cancer of prostate	C61	MONDO:0008315	79	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iie	T1c	N3a	M1d(0)	internal_id
+ST0003	PT00680	DI00680	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	28	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iiea',	""	""	""	internal_id
+ST0003	PT00629	DI00629	Blastic NK-cell lymphoma	C86.1	MONDO:0005062	34	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iia',	""	""	""	internal_id
+ST0001	PT00294	DI00294	OCD	F63	MONDO:0001162	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00390	DI00390	neural tube defect	Q01	MONDO:0017078	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00594	DI00594	neural tube defect	Q01	MONDO:0017078	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00290	DI00290	Breast carcinoma	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T2a	N4	M1e	internal_id
+ST0004	PT00969	DI00969	Cancer of prostate	C61	MONDO:0008315	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia	T1b1	N2mi	M1d(1)	internal_id
+ST0003	PT00782	DI00782	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	40	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0'	T3b	N2a	M1c(1)	internal_id
+ST0001	PT00111	DI00111	Crohn's	K50	MONDO:0005011	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00026	DI00026	Angina pectoris	I20	MONDO:0005255	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00597	DI00597	Microcephaly	Q02	MONDO:0001149	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00214	DI00214	Cancer of prostate	C61	MONDO:0008315	42	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T2	N3	M1e	internal_id
+ST0002	PT00417	DI00417	duodenal stenosis	Q41.0	MONDO:0009126	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00930	DI00930	Neoplasm of the prostate gland	C61	MONDO:0008315	51	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T1mi	N2a	M1d(1)	internal_id
+ST0002	PT00465	DI00465	stenosis of pylori	Q40.0	MONDO:0001560	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00489	DI00489	Microcephaly	Q02	MONDO:0001149	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00292	DI00292	Renal hypertension	I12	MONDO:0024633	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00114	DI00114	Nephrotic syndrome	N00	MONDO:0005377	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00027	DI00027	Vein thrombosis	I81	MONDO:0001339	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00950	DI00950	Cancer of prostate	C61	MONDO:0008315	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T1b	N2a	M1d	internal_id
+ST0004	PT00916	DI00916	Cancer of prostate	C61	MONDO:0008315	58	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia1	T2a2	N3b	M1d(0)	internal_id
+ST0001	PT00024	DI00024	Hypertension	I10	MONDO:0001134	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00508	DI00508	Hirschsprung	Q43.1	MONDO:0018309	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00359	DI00359	High blood pressure	I10	MONDO:0001134	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00538	DI00538	Microcephaly	Q02	MONDO:0001149	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00914	DI00914	Cancer of prostate	C61	MONDO:0008315	42	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T2	N2mi	M1e	internal_id
+ST0001	PT00164	DI00164	Reye's	G93.7	MONDO:0005942	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00218	DI00218	Kidney disease	N04	MONDO:0005377	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00505	DI00505	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	18	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iie',	""	""	""	internal_id
+ST0001	PT00178	DI00178	Kidney disease	N18	MONDO:0005300	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00554	DI00554	Spina bifida	Q05	MONDO:0008449	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00549	DI00549	Spina bifida	Q05	MONDO:0008449	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00278	DI00278	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	41	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iib	Tis(LAMN)	N2c	M1e	internal_id
+ST0001	PT00233	DI00233	UC	K51	MONDO:0005101	46	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00933	DI00933	Prostatic cancer	C61	MONDO:0008315	68	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iib	T3b	N3c	M1d(1)	internal_id
+ST0001	PT00198	DI00198	Cyclothemia	F31	MONDO:0004985	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00392	DI00392	Mast cell tumour	C96.2	MONDO:0002724	17	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T2a1	N2c	M1e	internal_id
+ST0001	PT00221	DI00221	Multiple myeloma	C90.0	MONDO:0005170	61	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iii',	""	""	""	internal_id
+ST0002	PT00529	DI00529	hemimegalencephaly	Q04.5	MONDO:0016608	20	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00440	DI00440	trisomy 21	Q90	MONDO:0008608	5	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00281	DI00281	Renal hypertension	I12	MONDO:0024633	60	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00601	DI00601	Mast cell tumour	C96.2	MONDO:0002724	15	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia2	Tis(DCIS)	N3a	M1d(0)	internal_id
+ST0001	PT00159	DI00159	Alzheimer disease	G30	MONDO:0004975	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00863	DI00863	Cancer of prostate	C61	MONDO:0008315	53	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia2	T2a	N1mi	M1d	internal_id
+ST0001	PT00165	DI00165	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	T1b1	N2	M1d(1)	internal_id
+ST0001	PT00201	DI00201	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	Tis	N2	M1d	internal_id
+ST0004	PT00905	DI00905	Cancer of prostate	C61	MONDO:0008315	55	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic2	T4e	N3	M1c(1)	internal_id
+ST0001	PT00109	DI00109	Malignant neoplasm of bronchus and lung	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	Tis	N2a	M1e	internal_id
+ST0002	PT00467	DI00467	Chomosome 5 short arm del	Q93.4	MONDO:0016887	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00200	DI00200	Pulmonary hypertension	I27.0	MONDO:0005149	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00371	DI00371	Cancer of thyroid gland	C73	MONDO:0002108	51	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T3c	N3c	M1c(1)	internal_id
+ST0002	PT00408	DI00408	NK cell lymphoma	C86.1	MONDO:0005062	12	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ivb'	""	""	""	internal_id
+ST0002	PT00521	DI00521	Mast tumor	C96.2	MONDO:0002724	17	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	Tis	N1a(sn)	M1d	internal_id
+ST0003	PT00674	DI00674	Malignant neoplasm of bronchus and lung	C34	MONDO:0008903	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia	T1a1	N1a(sn)	M1d(1)	internal_id
+ST0002	PT00486	DI00486	Hirschsprung	Q43.1	MONDO:0018309	20	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00259	DI00259	Stroke	I64	MONDO:0005098	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00541	DI00541	Mast cell tumour	C96.2	MONDO:0002724	1	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	T4	N2	M1d(1)	internal_id
+ST0004	PT00866	DI00866	Neoplasm of the prostate gland	C61	MONDO:0008315	35	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva1	Tis(DCIS)	N3c	M1d(1)	internal_id
+ST0004	PT00894	DI00894	Cancer of prostate	C61	MONDO:0008315	46	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia2	T2a1	NX	M1d	internal_id
+ST0001	PT00323	DI00323	Rheumatic mitral valve diseases	I05	MONDO:0042967	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00216	DI00216	Ulcerative colitis	K51	MONDO:0005101	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00128	DI00128	Alzheimer	G30	MONDO:0004975	63	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00600	DI00600	Myeloid leukemia	C92	MONDO:0004643	0	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage i',	""	""	""	internal_id
+ST0002	PT00410	DI00410	Mast carcinoma	C96.2	MONDO:0002724	18	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	T1d	N1mi	M1d(1)	internal_id
+ST0004	PT00856	DI00856	Cancer of prostate	C61	MONDO:0008315	39	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T1a1	N2	M1d(1)	internal_id
+ST0002	PT00395	DI00395	Microcephaly	Q02	MONDO:0001149	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00367	DI00367	MI	I21	MONDO:0005068	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00845	DI00845	Cancer of prostate	C61	MONDO:0008315	54	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T4b	N2	M1d	internal_id
+ST0002	PT00623	DI00623	Hirschsprung	Q43.1	MONDO:0018309	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00277	DI00277	Stroke	I64	MONDO:0005098	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00889	DI00889	Cancer of prostate	C61	MONDO:0008315	71	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic	T1	N3a	M1d	internal_id
+ST0002	PT00572	DI00572	Cleft palate	Q35.1	MONDO:0015092	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00433	DI00433	hemimegalencephaly	Q04.5	MONDO:0016608	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00226	DI00226	Arthritis	M19.9	MONDO:0006816	28	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00829	DI00829	Neoplasm of the prostate gland	C61	MONDO:0008315	52	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iie	T3e	N1b	M1d(1)	internal_id
+ST0001	PT00052	DI00052	Valvular defect	I05	MONDO:0042967	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00353	DI00353	Malignant neoplasm of stomach	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	T0	N3b	M1d(1)	internal_id
+ST0001	PT00055	DI00055	Crohn's	K50	MONDO:0005011	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00857	DI00857	Neoplasm of the prostate gland	C61	MONDO:0008315	64	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ic	T4c	N1c	M1c(1)	internal_id
+ST0001	PT00044	DI00044	Cardiomyopathy	I25.5	MONDO:0004994	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00191	DI00191	Rheumatic mitral valve diseases	I05	MONDO:0042967	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00346	DI00346	Valvular heart disease	I05	MONDO:0042967	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00270	DI00270	Encocarditis	I01.1	MONDO:0021777	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00092	DI00092	Impulsive compulsive disorder	F63	MONDO:0001162	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00852	DI00852	Cancer of prostate	C61	MONDO:0008315	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T2a	N2a	M1d	internal_id
+ST0002	PT00585	DI00585	large tongue	Q38.2	MONDO:0015496	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00689	DI00689	Cancer of bladder	C67	MONDO:000118	22	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva2	T0	N3c	M1d(0)	internal_id
+ST0004	PT00903	DI00903	Cancer of prostate	C61	MONDO:0008315	46	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	T3	N3a	M1c(1)	internal_id
+ST0002	PT00593	DI00593	T cell lymphoma	C84	MONDO:0000430	0	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iva',	""	""	""	internal_id
+ST0001	PT00368	DI00368	Schizophrenia	F20	MONDO:0005090	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00479	DI00479	hemimegalencephaly	Q04.5	MONDO:0016608	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00219	DI00219	Pulmonary hypertension	I27.0	MONDO:0005149	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00140	DI00140	Crohn's	K50	MONDO:0005011	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00881	DI00881	Prostate neoplasm	C61	MONDO:0008315	70	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T1c	N2c	M1d(0)	internal_id
+ST0001	PT00202	DI00202	Stenosis of the spine	M48.0	MONDO:0005965	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00880	DI00880	Cancer of prostate	C61	MONDO:0008315	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	TX	N2	M1d(0)	internal_id
+ST0001	PT00322	DI00322	Lymphoid leukemia	C91.0	MONDO:0005402	43	TRUE	TRUE	TRUE	Clinical	Binet staging system	stage a',	""	""	""	internal_id
+ST0002	PT00522	DI00522	large tongue	Q38.2	MONDO:0015496	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00849	DI00849	Malignant neoplasm of prostate	C61	MONDO:0008315	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T0	N1b	M1c(1)	internal_id
+ST0001	PT00085	DI00085	Prostatic cancer	C61	MONDO:0008315	54	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	Tis	N2b	M1d(0)	internal_id
+ST0002	PT00396	DI00396	hemimegalencephaly	Q04.5	MONDO:0016608	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00182	DI00182	Malignant neoplasm of colon	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1b1	N2c	M1e	internal_id
+ST0002	PT00617	DI00617	Hirschsprung	Q43.1	MONDO:0018309	3	FALSE	FALSE	""	Histological	""	""	""	""	""	internal_id
+ST0003	PT00824	DI00824	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage is	T4b	N1mi	M1d(0)	internal_id
+ST0001	PT00057	DI00057	Prostatic cancer	C61	MONDO:0008315	61	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic	T2d	N1mi	M1e	internal_id
+ST0001	PT00286	DI00286	Spondylosis	M47	MONDO:0002253	70	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00605	DI00605	Cleft palate	Q35.1	MONDO:0015092	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00740	DI00740	Blastic NK-cell lymphoma	C86.1	MONDO:0005062	2	FALSE	TRUE	FALSE	Histological	Lugano staging system	stage iieb',	""	""	""	internal_id
+ST0002	PT00604	DI00604	Microcephaly	Q02	MONDO:0001149	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00307	DI00307	Stenosis of the spine	M48.0	MONDO:0005965	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00099	DI00099	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	T1a	N1a(sn)	M1d(1)	internal_id
+ST0001	PT00122	DI00122	Portal vein thrombosis	I81	MONDO:0001339	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00331	DI00331	Crohn's	K50	MONDO:0005011	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00412	DI00412	neural tube defect	Q01	MONDO:0017078	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00877	DI00877	Malignant neoplasm of prostate	C61	MONDO:0008315	69	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	T2d	N2b	M1d(0)	internal_id
+ST0004	PT00900	DI00900	Cancer of prostate	C61	MONDO:0008315	61	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia2	Tis	NX	M1c(1)	internal_id
+ST0004	PT00840	DI00840	Malignant neoplasm of prostate	C61	MONDO:0008315	41	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	T4	N1b	M1d(0)	internal_id
+ST0004	PT00839	DI00839	Malignant neoplasm of prostate	C61	MONDO:0008315	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Ta	N4	M1c(1)	internal_id
+ST0001	PT00357	DI00357	Alzheimer disease	G30	MONDO:0004975	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00061	DI00061	Rheumatic endocarditis	I01.1	MONDO:0021777	31	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00567	DI00567	Lymphoid leukemia	C91.0	MONDO:0005402	20	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage 0',	""	""	""	internal_id
+ST0004	PT00965	DI00965	Neoplasm of the prostate gland	C61	MONDO:0008315	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	Tis(Paget)	N2b	M1d(0)	internal_id
+ST0002	PT00502	DI00502	Cancer of pharynx	C10	MONDO:0004608	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1c	N1mi	M1e	internal_id
+ST0001	PT00311	DI00311	Chronic heart disease	I25	MONDO:0005267	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00051	DI00051	Pulmonary embolism	I26	MONDO:0005279	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00197	DI00197	Chronic heart disease	I25	MONDO:0005267	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00996	DI00996	Cancer of prostate	C61	MONDO:0008315	58	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	T1a1	N1mi	M1d(0)	internal_id
+ST0002	PT00565	DI00565	Hodgkin lymphoma	C81	MONDO:0009348	6	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage ive',	""	""	""	internal_id
+ST0002	PT00514	DI00514	Glaucoma	Q15.0	MONDO:0020366	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00468	DI00468	underdeveloped ear	Q17.2	MONDO:0010920	5	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00413	DI00413	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	15	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iea',	""	""	""	internal_id
+ST0002	PT00464	DI00464	Hirschsprung	Q43.1	MONDO:0018309	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00752	DI00752	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	19	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iva	Tis(DCIS)	N1a(sn)	M1d(1)	internal_id
+ST0001	PT00049	DI00049	renovascular hypertension	I11	MONDO:0001302	65	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00414	DI00414	hemimegalencephaly	Q04.5	MONDO:0016608	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00683	DI00683	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia2	T1a	N3c	M1e	internal_id
+ST0001	PT00187	DI00187	Spondylosis	M47	MONDO:0002253	60	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00966	DI00966	Malignant neoplasm of prostate	C61	MONDO:0008315	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia2	T2a2	N2	M1d	internal_id
+ST0001	PT00081	DI00081	Multiple myeloma	C90.0	MONDO:0005170	41	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage 1',	""	""	""	internal_id
+ST0002	PT00517	DI00517	stenosis of pylori	Q40.0	MONDO:0001560	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00677	DI00677	Cancer of brain	C71	MONDO:0001657	9	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	T2a	NX	M1d(0)	internal_id
+ST0002	PT00449	DI00449	neural tube defect	Q01	MONDO:0017078	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00377	DI00377	Stroke	I64	MONDO:0005098	31	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00420	DI00420	Chomosome 5 short arm del	Q93.4	MONDO:0016887	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00907	DI00907	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ie	T2	N2mi	M1c(1)	internal_id
+ST0004	PT00952	DI00952	Neoplasm of the prostate gland	C61	MONDO:0008315	57	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	Ta	N4	M1d(1)	internal_id
+ST0001	PT00037	DI00037	Myositis	M60.1	MONDO:0021167	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00871	DI00871	Cancer of prostate	C61	MONDO:0008315	62	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T1mi	N2a	M1c(1)	internal_id
+ST0001	PT00113	DI00113	Stenosis of the spine	M48.0	MONDO:0005965	51	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00961	DI00961	Prostate neoplasm	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	occult carcinoma	T4a	N2b	M1d(0)	internal_id
+ST0004	PT00837	DI00837	Cancer of prostate	C61	MONDO:0008315	61	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia2	T0	N2a	M1c(1)	internal_id
+ST0003	PT00734	DI00734	Multiple myeloma	C90.0	MONDO:0005170	48	FALSE	TRUE	TRUE	Histological	Durie-Salmon staging system	stage ii',	""	""	""	internal_id
+ST0001	PT00209	DI00209	Malignant neoplasm of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T2a2	N3a	M1c(1)	internal_id
+ST0002	PT00610	DI00610	Cancer of brain	C71	MONDO:0001657	9	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T0	N3b	M1c(1)	internal_id
+ST0002	PT00474	DI00474	Glaucoma	Q15.0	MONDO:0020366	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00071	DI00071	Nephrotic syndrome	N00	MONDO:0005377	64	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00588	DI00588	Spina bifida	Q05	MONDO:0008449	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00245	DI00245	Renal hypertension	I11	MONDO:0001302	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00451	DI00451	Glaucoma	Q15.0	MONDO:0020366	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00888	DI00888	Cancer of prostate	C61	MONDO:0008315	53	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ii	Tis(LCIS)	N3a	M1d	internal_id
+ST0003	PT00761	DI00761	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iic	T2	N2mi	M1d(0)	internal_id
+ST0001	PT00120	DI00120	Renal hypertension	I12	MONDO:0024633	40	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00108	DI00108	Kidney disease	N18	MONDO:0005300	45	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00034	DI00034	MI	I21	MONDO:0005068	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00695	DI00695	Brain neoplasm	C71	MONDO:0001657	46	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia1	T2	N1c	M1d(1)	internal_id
+ST0003	PT00713	DI00713	Multiple myeloma	C90.0	MONDO:0005170	27	FALSE	TRUE	FALSE	Histological	Durie-Salmon staging system	stage iii',	""	""	""	internal_id
+ST0004	PT00948	DI00948	Prostate neoplasm	C61	MONDO:0008315	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ib	T2a2	N1c	M1d	internal_id
+ST0004	PT00893	DI00893	Prostate neoplasm	C61	MONDO:0008315	56	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	Tis pu	N2	M1e	internal_id
+ST0004	PT00875	DI00875	Cancer of prostate	C61	MONDO:0008315	44	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage i	Tis(LCIS)	N4	M1d	internal_id
+ST0004	PT00943	DI00943	Cancer of prostate	C61	MONDO:0008315	56	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	T1d	N1b	M1d(1)	internal_id
+ST0001	PT00229	DI00229	renovascular hypertension	I12	MONDO:0024633	63	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00513	DI00513	Spina bifida	Q05	MONDO:0008449	1	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00093	DI00093	Cancer of prostate	C61	MONDO:0008315	43	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T2d	N4	M1d(0)	internal_id
+ST0004	PT00883	DI00883	Cancer of prostate	C61	MONDO:0008315	61	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia	T4a	N2b	M1d(0)	internal_id
+ST0004	PT00843	DI00843	Prostate neoplasm	C61	MONDO:0008315	60	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	Tis pd	N3	M1d	internal_id
+ST0004	PT00828	DI00828	Cancer of prostate	C61	MONDO:0008315	48	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T1mi	N1b	M1d(0)	internal_id
+ST0003	PT00800	DI00800	Cancer of brain	C71.9	MONDO:0001657	7	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 1	T2a1	N2a	M1c(1)	internal_id
+ST0001	PT00152	DI00152	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 1	T2	N1c	M1d	internal_id
+ST0004	PT00986	DI00986	Cancer of prostate	C61	MONDO:0008315	71	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia2	T2a2	N2	M1d(1)	internal_id
+ST0001	PT00324	DI00324	Lymphoid leukemia	C91.0	MONDO:0005402	60	TRUE	TRUE	TRUE	Clinical	Rai staging system	stage i',	""	""	""	internal_id
+ST0004	PT00920	DI00920	Malignant neoplasm of prostate	C61	MONDO:0008315	58	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia2	T3b	N3a	M1e	internal_id
+ST0001	PT00256	DI00256	Ulcerative colitis	K51	MONDO:0005101	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00942	DI00942	Malignant neoplasm of prostate	C61	MONDO:0008315	41	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	T1mi	N2c	M1d(1)	internal_id
+ST0001	PT00097	DI00097	Pulmonary embolism	I26	MONDO:0005279	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00497	DI00497	Cleft palate	Q35.1	MONDO:0015092	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00005	DI00005	Arthritis	M19.9	MONDO:0006816	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00941	DI00941	Neoplasm of the prostate gland	C61	MONDO:0008315	54	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0a	T0	N2c	M1d(0)	internal_id
+ST0004	PT00848	DI00848	Malignant neoplasm of prostate	C61	MONDO:0008315	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia1	Tis(DCIS)	N1a(sn)	M1c(1)	internal_id
+ST0001	PT00149	DI00149	Stroke	I62	MONDO:0005098	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00701	DI00701	Colo-rectal carcinoma	C18	MONDO:0005575	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiia1	T2	N1a(sn)	M1d	internal_id
+ST0002	PT00488	DI00488	Mast cell tumour	C96.2	MONDO:0002724	17	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T4e	N3b	M1d(0)	internal_id
+ST0004	PT00904	DI00904	Prostate neoplasm	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T2d	N1mi	M1e	internal_id
+ST0003	PT00758	DI00758	Cancer of pharynx	C10	MONDO:0004608	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia3	T1a	N2c	M1c(1)	internal_id
+ST0003	PT00722	DI00722	Skin cancer	C43	MONDO:0005012	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iib	T1mi	N2a	M1d(0)	internal_id
+ST0002	PT00559	DI00559	Natural Killer cell lymphoma	C86.1	MONDO:0005062	21	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iea',	""	""	""	internal_id
+ST0002	PT00426	DI00426	Chomosome 5 short arm del	Q93.4	MONDO:0016887	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00590	DI00590	neural tube defect	Q01	MONDO:0017078	14	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00134	DI00134	Multiple myeloma	C90.0	MONDO:0005170	56	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage 1a',	""	""	""	internal_id
+ST0002	PT00583	DI00583	Microcephaly	Q02	MONDO:0001149	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00275	DI00275	Myositis	M60.1	MONDO:0021167	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00971	DI00971	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic	Tis(DCIS)	N2a	M1d(0)	internal_id
+ST0002	PT00612	DI00612	Cleft palate	Q35.1	MONDO:0015092	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00341	DI00341	Malignant neoplasm of stomach	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	T1	N1a(sn)	M1d(1)	internal_id
+ST0001	PT00376	DI00376	Angina	I20	MONDO:0005255	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00608	DI00608	trisomy 21	Q90	MONDO:0008608	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00473	DI00473	Chomosome 5 short arm del	Q93.4	MONDO:0016887	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00171	DI00171	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T4	NX	M1c(1)	internal_id
+ST0001	PT00236	DI00236	Nephrotic syndrome	N00	MONDO:0005377	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00899	DI00899	Malignant neoplasm of prostate	C61	MONDO:0008315	53	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	T2	N3b	M1e	internal_id
+ST0001	PT00105	DI00105	renovascular hypertension	I11	MONDO:0001302	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00534	DI00534	Mast carcinoma	C96.2	MONDO:0002724	19	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	Tis(LAMN)	NX	M1d(0)	internal_id
+ST0004	PT00853	DI00853	Prostate neoplasm	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iie	T2a1	N1a(sn)	M1e	internal_id
+ST0003	PT00668	DI00668	Malignant neoplasm of gallbladder	C23	MONDO:0005411	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiia1	T1c	N1b	M1e	internal_id
+ST0004	PT00854	DI00854	Cancer of prostate	C61	MONDO:0008315	69	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T2a	N1mi	M1d(0)	internal_id
+ST0004	PT00912	DI00912	Cancer of prostate	C61	MONDO:0008315	39	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib	T0	N1a(sn)	M1d(0)	internal_id
+ST0002	PT00491	DI00491	large tongue	Q38.2	MONDO:0015496	6	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00603	DI00603	underdeveloped ear	Q17.2	MONDO:0010920	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00925	DI00925	Cancer of prostate	C61	MONDO:0008315	69	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T3a	N2mi	M1d(0)	internal_id
+ST0002	PT00389	DI00389	stenosis of pylori	Q40.0	MONDO:0001560	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00827	DI00827	Cancer of prostate	C61	MONDO:0008315	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	sstage 0is	T1b1	N2mi	M1e	internal_id
+ST0002	PT00437	DI00437	Chomosome 5 short arm del	Q93.4	MONDO:0016887	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00434	DI00434	trisomy 21	Q90	MONDO:0008608	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00946	DI00946	Prostatic cancer	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib1	T1a1	N3b	M1d(0)	internal_id
+ST0002	PT00578	DI00578	underdeveloped ear	Q17.2	MONDO:0010920	5	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00369	DI00369	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	Ta	N3a	M1d	internal_id
+ST0001	PT00056	DI00056	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T3c	N1a(sn)	M1d(1)	internal_id
+ST0004	PT00972	DI00972	Prostate neoplasm	C61	MONDO:0008315	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T3e	N1c	M1d(0)	internal_id
+ST0001	PT00366	DI00366	OCD	F63	MONDO:0001162	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00172	DI00172	Malignant neoplasm of right breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	T3c	N1a(sn)	M1c(1)	internal_id
+ST0002	PT00403	DI00403	Mast tumor	C96.2	MONDO:0002724	11	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic	Tis(Paget)	N3c	M1d	internal_id
+ST0001	PT00150	DI00150	UC	K51	MONDO:0005101	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00547	DI00547	Cancer of gallbladder	C23	MONDO:0005411	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iii	Tis pu	N1mi	M1e	internal_id
+ST0002	PT00442	DI00442	trisomy 21	Q90	MONDO:0008608	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00470	DI00470	eye lid deformation	Q10.2	MONDO:0020159	14	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00922	DI00922	Prostatic cancer	C61	MONDO:0008315	61	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T3	N2	M1e	internal_id
+ST0002	PT00580	DI00580	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic1	Tis pd	N2	M1d	internal_id
+ST0001	PT00205	DI00205	Acute endocarditis	I01.1	MONDO:0021777	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00671	DI00671	Rectal cancer	C20	MONDO:0006519	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	occult carcinoma	T1a2	N1b	M1d(0)	internal_id
+ST0001	PT00302	DI00302	Chronic heart disease	I25	MONDO:0005267	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00926	DI00926	Prostate neoplasm	C61	MONDO:0008315	67	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ivb	T3b	N2	M1c(1)	internal_id
+ST0004	PT00869	DI00869	Prostatic cancer	C61	MONDO:0008315	38	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	T2a2	N4	M1d(0)	internal_id
+ST0002	PT00530	DI00530	Natural Killer cell lymphoma	C86.1	MONDO:0005062	7	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ii',	""	""	""	internal_id
+ST0002	PT00527	DI00527	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	1	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia2	T2	N4	M1c(1)	internal_id
+ST0001	PT00142	DI00142	Ulcerative colitis	K51	MONDO:0005101	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00399	DI00399	Hodgkin	C81	MONDO:0009348	15	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iiib',	""	""	""	internal_id
+ST0001	PT00213	DI00213	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T1a1	NX	M1e	internal_id
+ST0001	PT00145	DI00145	Angina pectoris	I20	MONDO:0005255	35	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00297	DI00297	Nephrotic syndrome	N00	MONDO:0005377	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00602	DI00602	neural tube defect	Q01	MONDO:0017078	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00025	DI00025	Diabetes type II	E11	MONDO:0005148	31	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00911	DI00911	Prostatic cancer	C61	MONDO:0008315	67	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	Tis(Paget)	N3b	M1d(0)	internal_id
+ST0002	PT00555	DI00555	neural tube defect	Q01	MONDO:0017078	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00048	DI00048	Stroke	I62	MONDO:0005098	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00860	DI00860	Prostatic cancer	C61	MONDO:0008315	58	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	Tis pd	N2c	M1c(1)	internal_id
+ST0001	PT00299	DI00299	Arthritis	M19.9	MONDO:0006816	65	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00282	DI00282	Angina pectoris	I20	MONDO:0005255	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00400	DI00400	duodenal stenosis	Q41.0	MONDO:0009126	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00352	DI00352	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	38	TRUE	TRUE	TRUE	Clinical	Lugano staging system	stage i',	""	""	""	internal_id
+ST0002	PT00462	DI00462	Natural Killer cell lymphoma	C86.1	MONDO:0005062	15	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iiea',	""	""	""	internal_id
+ST0002	PT00543	DI00543	Myeloid leukemia	C92	MONDO:0004643	5	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0004	PT00841	DI00841	Prostatic cancer	C61	MONDO:0008315	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iva1	TX	N2	M1c(1)	internal_id
+ST0002	PT00411	DI00411	Glaucoma	Q15.0	MONDO:0020366	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00960	DI00960	Cancer of prostate	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	TX	N2a	M1d(1)	internal_id
+ST0001	PT00372	DI00372	Diabetes Mellitus	E11	MONDO:0005148	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00776	DI00776	Cancer of thyroid gland	C73	MONDO:0002108	17	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia	T1a	N4	M1d	internal_id
+ST0001	PT00285	DI00285	Prostatic cancer	C61	MONDO:0008315	51	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1c	N3c	M1d(0)	internal_id
+ST0001	PT00077	DI00077	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	T4b	N1mi	M1e	internal_id
+ST0003	PT00725	DI00725	Mast cell tumour	C96.2	MONDO:0002724	45	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia2	T1	N2b	M1d(0)	internal_id
+ST0001	PT00173	DI00173	Ulcerative colitis	K51	MONDO:0005101	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00190	DI00190	Cancer of prostate	C61	MONDO:0008315	35	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia2	T1a2	N2b	M1e	internal_id
+ST0001	PT00043	DI00043	Lung cancer	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T0	N4	M1e	internal_id
+ST0002	PT00452	DI00452	Pancreatic cyst	Q45.2	MONDO:0017783	3	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00421	DI00421	Chomosome 5 short arm del	Q93.4	MONDO:0016887	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00970	DI00970	Prostatic cancer	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic	T4	N2mi	M1e	internal_id
+ST0001	PT00196	DI00196	Rheumatic disease of mitral valve	I05	MONDO:0042967	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00975	DI00975	Cancer of prostate	C61	MONDO:0008315	52	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic1	Tis(LCIS)	N1a(sn)	M1c(1)	internal_id
+ST0001	PT00106	DI00106	Alzheimer	G30	MONDO:0004975	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00119	DI00119	Glaucoma	H40	MONDO:0005041	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00011	DI00011	Acute endocarditis	I01.1	MONDO:0021777	35	TRUE	FALSE	""	""	""	""	""	""	""	internal_id
+ST0003	PT00662	DI00662	AML	C95.0	MONDO:0010643	40	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T3	N3	""	internal_id
+ST0001	PT00103	DI00103	Pulmonary embolism	I26	MONDO:0005279	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00253	DI00253	Hodgkin lymphoma	C81	MONDO:0009348	40	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage ia',	""	""	""	internal_id
+ST0001	PT00254	DI00254	Prostatic cancer	C61	MONDO:0008315	60	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	Tis(Paget)	N2c	M1d	internal_id
+ST0001	PT00155	DI00155	Multiple myeloma	C90.0	MONDO:0005170	52	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iia',	""	""	""	internal_id
+ST0002	PT00515	DI00515	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	2	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ib',	""	""	""	internal_id
+ST0002	PT00478	DI00478	underdeveloped ear	Q17.2	MONDO:0010920	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00234	DI00234	Ulcerative colitis	K51	MONDO:0005101	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00485	DI00485	Pancreatic cyst	Q45.2	MONDO:0017783	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00118	DI00118	Colon cancer	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic	T2a1	N1c	M1e	internal_id
+ST0004	PT00902	DI00902	Prostatic cancer	C61	MONDO:0008315	43	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	T3e	N1mi	M1d(1)	internal_id
+ST0001	PT00087	DI00087	Colon cancer	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T4a	N3a	M1d	internal_id
+ST0004	PT00934	DI00934	Cancer of prostate	C61	MONDO:0008315	72	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivb	T1d	N3	M1d(0)	internal_id
+ST0001	PT00080	DI00080	Stroke	I62	MONDO:0005098	65	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00932	DI00932	Cancer of prostate	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iv	T1c	N2a	M1d	internal_id
+ST0004	PT00994	DI00994	Prostate neoplasm	C61	MONDO:0008315	47	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib	T3e	N2b	M1d(1)	internal_id
+ST0001	PT00243	DI00243	Glaucoma	H40	MONDO:0005041	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00137	DI00137	Prostate neoplasm	C61	MONDO:0008315	42	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T2c	N2b	M1d	internal_id
+ST0001	PT00130	DI00130	Chronic heart disease	I25	MONDO:0005267	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00129	DI00129	Kidney disease	N18	MONDO:0005300	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00309	DI00309	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iib	T1b2	N2	M1e	internal_id
+ST0004	PT00870	DI00870	Prostatic cancer	C61	MONDO:0008315	67	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1b	N2b	M1d(1)	internal_id
+ST0002	PT00532	DI00532	Hirschsprung	Q43.1	MONDO:0018309	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00548	DI00548	Hirschsprung	Q43.1	MONDO:0018309	13	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00830	DI00830	Malignant neoplasm of prostate	C61	MONDO:0008315	59	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	Tis pd	N3c	M1d(1)	internal_id
+ST0001	PT00147	DI00147	Renal hypertension	I12	MONDO:0024633	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00298	DI00298	Myeloid leukemia	C92	MONDO:0004643	57	TRUE	TRUE	TRUE	Clinical	Rai staging system	stage 0',	""	""	""	internal_id
+ST0001	PT00362	DI00362	Nephrotic syndrome	N04	MONDO:0005377	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00002	DI00002	Multiple myeloma	C90.0	MONDO:0005170	54	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iiib'	""	""	""	internal_id
+ST0003	PT00659	DI00659	Cancer of lung	C34	MONDO:0008903	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ie	T2c	N2mi	M1d(1)	internal_id
+ST0003	PT00825	DI00825	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia	TX	N4	M1d(0)	internal_id
+ST0001	PT00263	DI00263	Malignant neoplasm of colon	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	Tis(Paget’s)	N3b	M1d(0)	internal_id
+ST0001	PT00242	DI00242	Reye's	G93.7	MONDO:0005942	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00443	DI00443	Myeloid leukemia	C92	MONDO:0004643	14	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0003	PT00803	DI00803	Gum cancer	C03	MONDO:0005507	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iie	Tis(DCIS)	N1mi	M1d	internal_id
+ST0002	PT00498	DI00498	Spina bifida	Q05	MONDO:0008449	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00833	DI00833	Cancer of prostate	C61	MONDO:0008315	47	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	sstage 0is	T4a	N3	M1d(1)	internal_id
+ST0001	PT00300	DI00300	Reye's	G93.7	MONDO:0005942	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00141	DI00141	Stenosis of the spine	M48.0	MONDO:0005965	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00439	DI00439	Myeloid leukemia	C92	MONDO:0004643	0	FALSE	FALSE	""	Clinical	Rai staging system	stage 0',	""	""	""	internal_id
+ST0001	PT00248	DI00248	Osteoarthritis	M15	MONDO:0006816	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00519	DI00519	Pancreatic cyst	Q45.2	MONDO:0017783	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00892	DI00892	Cancer of prostate	C61	MONDO:0008315	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T2c	NX	M1d(1)	internal_id
+ST0002	PT00380	DI00380	Hirschsprung	Q43.1	MONDO:0018309	6	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00348	DI00348	Stroke	I64	MONDO:0005098	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00342	DI00342	Gum cancer	C03	MONDO:0005507	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	T1mi	N2mi	M1e	internal_id
+ST0001	PT00012	DI00012	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	T2a2	N3	M1d(0)	internal_id
+ST0004	PT00906	DI00906	Cancer of prostate	C61	MONDO:0008315	42	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ia3	T1b2	N3	M1d(0)	internal_id
+ST0004	PT00858	DI00858	Malignant neoplasm of prostate	C61	MONDO:0008315	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiid	T1d	N3a	M1c(1)	internal_id
+ST0001	PT00192	DI00192	Malignant neoplasm of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	T1a2	N3c	M1d(1)	internal_id
+ST0002	PT00551	DI00551	neural tube defect	Q01	MONDO:0017078	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00374	DI00374	Arthritis	M19.9	MONDO:0006816	32	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00054	DI00054	Schizophrenia	F20	MONDO:0005090	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00267	DI00267	Manic depressive illness	F31	MONDO:0004985	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00347	DI00347	Stroke	I62	MONDO:0005098	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00247	DI00247	Encocarditis	I01.1	MONDO:0021777	44	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00616	DI00616	Lip cancer	C00	MONDO:0006834	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	T2d	N2mi	M1e	internal_id
+ST0001	PT00168	DI00168	Pulmonary carcinoma	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T1b	N2	M1d(1)	internal_id
+ST0002	PT00570	DI00570	large tongue	Q38.2	MONDO:0015496	20	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00013	DI00013	Angina pectoris	I20.0	MONDO:0005255	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00204	DI00204	Brain cancer	C71	MONDO:0001657	59	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	Tis(Paget’s)	N2c	M1d(1)	internal_id
+ST0002	PT00511	DI00511	hemimegalencephaly	Q04.5	MONDO:0016608	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00483	DI00483	hemimegalencephaly	Q04.5	MONDO:0016608	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00985	DI00985	Cancer of prostate	C61	MONDO:0008315	34	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T1mi	N2	M1c(1)	internal_id
+ST0003	PT00770	DI00770	Cancer of brain	C71.9	MONDO:0001657	1	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiia1	T1c	N3b	M1c(1)	internal_id
+ST0002	PT00382	DI00382	trisomy 21	Q90	MONDO:0008608	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00785	DI00785	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iii	T3b	N2a	M1e	internal_id
+ST0002	PT00406	DI00406	hemimegalencephaly	Q04.5	MONDO:0016608	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00622	DI00622	underdeveloped ear	Q17.2	MONDO:0010920	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00388	DI00388	Chomosome 5 short arm del	Q93.4	MONDO:0016887	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00050	DI00050	Pulmonary hypertension	I27.0	MONDO:0005149	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00060	DI00060	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	Tis(LCIS)	N2	M1d(0)	internal_id
+ST0004	PT00992	DI00992	Prostatic cancer	C61	MONDO:0008315	50	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iva	TX	N1b	M1e	internal_id
+ST0001	PT00090	DI00090	Cardiomyopathy	I25.5	MONDO:0004994	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00886	DI00886	Malignant neoplasm of prostate	C61	MONDO:0008315	51	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ie	T0	N2	M1d(1)	internal_id
+ST0001	PT00036	DI00036	Cancer of brain	C71	MONDO:0001657	51	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 1	T3c	N1c	M1d	internal_id
+ST0004	PT00895	DI00895	Cancer of prostate	C61	MONDO:0008315	42	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ib	T2a	N3	M1d	internal_id
+ST0002	PT00619	DI00619	T cell lymphoma	C84	MONDO:0000430	7	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iieb',	""	""	""	internal_id
+ST0002	PT00431	DI00431	T cell lymphoma	C84	MONDO:0000430	18	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ivb'	""	""	""	internal_id
+ST0002	PT00398	DI00398	large tongue	Q38.2	MONDO:0015496	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00326	DI00326	Hypertensive renal disease	I12	MONDO:0024633	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00188	DI00188	Bipolar	F31	MONDO:0004985	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00288	DI00288	Ulcerative colitis	K51	MONDO:0005101	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00009	DI00009	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia2	T1a	N2mi	M1d(1)	internal_id
+ST0001	PT00007	DI00007	Reye's	G93.7	MONDO:0005942	42	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00030	DI00030	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	53	TRUE	TRUE	TRUE	Clinical	Lugano staging system	stage ia',	""	""	""	internal_id
+ST0002	PT00492	DI00492	neural tube defect	Q01	MONDO:0017078	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00812	DI00812	Malignant neoplasm of stomach	C16	MONDO:0001056	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iib	T4b	N1mi	M1c(1)	internal_id
+ST0001	PT00284	DI00284	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	T1b1	N3b	M1e	internal_id
+ST0001	PT00074	DI00074	Impulsive compulsive disorder	F63	MONDO:0001162	60	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00224	DI00224	Nephrotic syndrome	N00	MONDO:0005377	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00086	DI00086	Valvular heart disease	I01.1	MONDO:0021777	40	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00276	DI00276	Angina	I20	MONDO:0005255	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00884	DI00884	Cancer of prostate	C61	MONDO:0008315	49	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	Ta	N2a	M1d(1)	internal_id
+ST0004	PT00901	DI00901	Cancer of prostate	C61	MONDO:0008315	48	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T4d	N1b	M1d(0)	internal_id
+ST0002	PT00425	DI00425	Myeloid leukemia	C92	MONDO:0004643	9	FALSE	TRUE	FALSE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0003	PT00632	DI00632	Cancer of tonsil	C09	MONDO:0006998	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia	Tis pd	N2mi	M1c(1)	internal_id
+ST0001	PT00350	DI00350	Chronic heart disease	I25	MONDO:0005267	36	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00327	DI00327	Manic depressive illness	F31	MONDO:0004985	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00973	DI00973	Cancer of prostate	C61	MONDO:0008315	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic2	T4d	N3	M1d	internal_id
+ST0001	PT00174	DI00174	Gum cancer	C03	MONDO:0005507	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	T4	N2c	M1d(0)	internal_id
+ST0001	PT00354	DI00354	Kidney disease	N18	MONDO:0005300	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00584	DI00584	Spina bifida	Q05	MONDO:0008449	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00038	DI00038	Colon cancer	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiid	T3c	N3b	M1d(0)	internal_id
+ST0003	PT00686	DI00686	Malignant neoplasm of stomach	C16	MONDO:0001056	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia2	T4b	N1b	M1c(1)	internal_id
+ST0001	PT00280	DI00280	Stroke	I64	MONDO:0005098	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00980	DI00980	Cancer of prostate	C61	MONDO:0008315	64	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0'	Tis(DCIS)	N1mi	M1d	internal_id
+ST0004	PT00872	DI00872	Prostate neoplasm	C61	MONDO:0008315	38	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiia	T1	N3a	M1e	internal_id
+ST0001	PT00076	DI00076	Chronic heart disease	I25	MONDO:0005267	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00599	DI00599	Malignant neoplasm of brain, unspecified	C71	MONDO:0001657	1	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia1	T1b1	N2b	M1d(1)	internal_id
+ST0001	PT00195	DI00195	Diabetes type II	E11	MONDO:0005148	48	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00552	DI00552	Myeloid leukemia	C92	MONDO:0004643	5	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0001	PT00135	DI00135	Kidney disease	N04	MONDO:0005377	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00788	DI00788	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0'	T1b	N3	M1c(1)	internal_id
+ST0001	PT00210	DI00210	Diabetes type II	E11	MONDO:0005148	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00482	DI00482	duodenal stenosis	Q41.0	MONDO:0009126	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00047	DI00047	Acute myeloid leukemia	C92	MONDO:0004643	44	TRUE	TRUE	TRUE	Clinical	Binet staging system	stage a',	""	""	""	internal_id
+ST0003	PT00821	DI00821	Brain cancer	C71.9	MONDO:0001657	33	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ivb	T1d	N1c	M1d	internal_id
+ST0002	PT00384	DI00384	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	occult carcinoma	T4d	N3b	M1e	internal_id
+ST0002	PT00455	DI00455	trisomy 21	Q90	MONDO:0008608	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00184	DI00184	Arthritis	M19.9	MONDO:0006816	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00179	DI00179	HBP	I10	MONDO:0001134	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00319	DI00319	Arthritis	M19.9	MONDO:0006816	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00939	DI00939	Cancer of prostate	C61	MONDO:0008315	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva1	Tis(Paget’s)	N2	M1d(0)	internal_id
+ST0001	PT00193	DI00193	Angina pectoris	I20.0	MONDO:0005255	62	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00291	DI00291	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T1d	N4	M1e	internal_id
+ST0002	PT00386	DI00386	Mature T-cell and NK-cell lymphoma	C84	MONDO:0000430	1	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iie',	""	""	""	internal_id
+ST0001	PT00177	DI00177	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iv	Tis(LAMN)	N2mi	M1d	internal_id
+ST0004	PT00957	DI00957	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva1	T2d	NX	M1d(0)	internal_id
+ST0004	PT00868	DI00868	Malignant neoplasm of prostate	C61	MONDO:0008315	76	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	T3d	N1c	M1d(1)	internal_id
+ST0002	PT00495	DI00495	Pancreatic cyst	Q45.2	MONDO:0017783	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00574	DI00574	Hirschsprung	Q43.1	MONDO:0018309	7	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00564	DI00564	Malignant neoplasm of gallbladder	C23	MONDO:0005411	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ib1	T2	N1mi	M1d(1)	internal_id
+ST0004	PT00924	DI00924	Prostatic cancer	C61	MONDO:0008315	49	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia2	Tis(LCIS)	N4	M1d(0)	internal_id
+ST0002	PT00560	DI00560	Microcephaly	Q02	MONDO:0001149	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00157	DI00157	Cancer of lung	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T4	N2b	M1e	internal_id
+ST0001	PT00095	DI00095	Diabetes type II	E11	MONDO:0005148	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00249	DI00249	Hypertension	I10	MONDO:0001134	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00494	DI00494	Acute myeloid leukemia	C92	MONDO:0004643	8	FALSE	TRUE	FALSE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0004	PT00826	DI00826	Cancer of prostate	C61	MONDO:0008315	51	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ivc	T4c	N1mi	M1e	internal_id
+ST0002	PT00471	DI00471	Colon cancer	C18	MONDO:0005575	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iia2	Tis(Paget’s)	N3	M1c(1)	internal_id
+ST0001	PT00041	DI00041	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	T1a2	N3b	M1d(0)	internal_id
+ST0004	PT00984	DI00984	Cancer of prostate	C61	MONDO:0008315	65	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	T2b	N2mi	M1e	internal_id
+ST0002	PT00469	DI00469	trisomy 21	Q90	MONDO:0008608	1	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00865	DI00865	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib1	T1b2	N1c	M1d(1)	internal_id
+ST0003	PT00773	DI00773	Malignant neoplasm of brain, unspecified	C71.9	MONDO:0001657	17	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T2b	N4	M1c(1)	internal_id
+ST0004	PT00955	DI00955	Prostatic cancer	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T2b	N3a	M1c(1)	internal_id
+ST0004	PT00847	DI00847	Neoplasm of the prostate gland	C61	MONDO:0008315	76	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	sstage 0is	T4b	N2a	M1d	internal_id
+ST0001	PT00170	DI00170	Kidney disease	N04	MONDO:0005377	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00878	DI00878	Malignant neoplasm of prostate	C61	MONDO:0008315	65	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia2	T4d	N3c	M1d(1)	internal_id
+ST0001	PT00096	DI00096	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T2c	N1b	M1d	internal_id
+ST0001	PT00062	DI00062	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	Tis(LAMN)	N4	M1d(0)	internal_id
+ST0001	PT00296	DI00296	Cardiomyopathy	I25.5	MONDO:0004994	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00343	DI00343	Cyclothemia	F31	MONDO:0004985	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00180	DI00180	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T1a2	N2mi	M1d(0)	internal_id
+ST0002	PT00625	DI00625	Natural Killer cell lymphoma	C86.1	MONDO:0005062	6	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage iiia',	""	""	""	internal_id
+ST0001	PT00252	DI00252	Chronic heart disease	I25	MONDO:0005267	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00265	DI00265	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	T1a	N1c	M1e	internal_id
+ST0001	PT00329	DI00329	Gum cancer	C03	MONDO:0005507	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ii	T2d	N1b	M1c(1)	internal_id
+ST0002	PT00466	DI00466	large tongue	Q38.2	MONDO:0015496	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00317	DI00317	Nephrotic syndrome	N04	MONDO:0005377	67	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00073	DI00073	Malignant neoplasm of bronchus and lung	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage is	T3d	N2c	M1d(0)	internal_id
+ST0002	PT00558	DI00558	large tongue	Q38.2	MONDO:0015496	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00387	DI00387	Cleft palate	Q35.1	MONDO:0015092	16	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00117	DI00117	Rheumatic disease of mitral valve	I05	MONDO:0042967	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00964	DI00964	Cancer of prostate	C61	MONDO:0008315	43	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	sstage 0is	Tis(DCIS)	N3c	M1e	internal_id
+ST0004	PT00981	DI00981	Prostatic cancer	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ie	T1	N2a	M1e	internal_id
+ST0002	PT00487	DI00487	underdeveloped ear	Q17.2	MONDO:0010920	13	FALSE	FALSE	""	""	""	""	""	""	""	internal_id
+ST0001	PT00139	DI00139	Cancer of thyroid gland	C73	MONDO:0002108	67	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ic	TX	N2b	M1d(0)	internal_id
+ST0001	PT00375	DI00375	Essential (primary) hypertension	I10	MONDO:0001134	49	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00569	DI00569	Pancreatic cyst	Q45.2	MONDO:0017783	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00340	DI00340	Renal hypertension	I12	MONDO:0024633	59	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00493	DI00493	Natural Killer cell lymphoma	C86.1	MONDO:0005062	17	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ib',	""	""	""	internal_id
+ST0001	PT00133	DI00133	Cancer of brain	C71	MONDO:0001657	44	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivc	Ta	N3a	M1c(1)	internal_id
+ST0003	PT00779	DI00779	Cancer of tonsil	C09	MONDO:0006998	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib1	T1b2	N2	M1d(0)	internal_id
+ST0001	PT00239	DI00239	Stroke	I62	MONDO:0005098	51	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00997	DI00997	Cancer of prostate	C61	MONDO:0008315	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T1mi	N1mi	M1d(1)	internal_id
+ST0002	PT00419	DI00419	large tongue	Q38.2	MONDO:0015496	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00611	DI00611	large tongue	Q38.2	MONDO:0015496	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00477	DI00477	hemimegalencephaly	Q04.5	MONDO:0016608	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00351	DI00351	Nephrotic syndrome	N00	MONDO:0005377	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00261	DI00261	AML	C92	MONDO:0004643	41	TRUE	TRUE	TRUE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0001	PT00082	DI00082	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T4	N1b	M1d	internal_id
+ST0001	PT00295	DI00295	Pulmonary hypertension	I27.0	MONDO:0005149	37	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00556	DI00556	Hirschsprung	Q43.1	MONDO:0018309	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00954	DI00954	Cancer of prostate	C61	MONDO:0008315	45	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiid	T1mi	N1a(sn)	M1e	internal_id
+ST0004	PT00879	DI00879	Prostatic cancer	C61	MONDO:0008315	55	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	T3	N1b	M1e	internal_id
+ST0001	PT00146	DI00146	Pancreatic cancer	C25	MONDO:0009831	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T3a	N1mi	M1d(0)	internal_id
+ST0004	PT00851	DI00851	Prostatic cancer	C61	MONDO:0008315	48	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ie	Tis pu	NX	M1d(1)	internal_id
+ST0001	PT00015	DI00015	Psoriasis	K51	MONDO:0005101	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00576	DI00576	Hirschsprung	Q43.1	MONDO:0018309	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00562	DI00562	Myeloid leukemia	C92	MONDO:0004643	0	FALSE	TRUE	TRUE	Clinical	Rai staging system	stage i',	""	""	""	internal_id
+ST0004	PT00940	DI00940	Cancer of prostate	C61	MONDO:0008315	57	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage 0a	Tis(Paget)	N1b	M1d(1)	internal_id
+ST0001	PT00337	DI00337	Hodgkin	C81	MONDO:0009348	38	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iis',	""	""	""	internal_id
+ST0001	PT00040	DI00040	Nephrotic syndrome	N00	MONDO:0005377	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00764	DI00764	Malignant neoplasm of bronchus and lung	C34	MONDO:0008903	""	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic2	T2a1	N3a	M1d(0)	internal_id
+ST0002	PT00428	DI00428	Malignant neoplasm of pancreas	C25	MONDO:0009831	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T3d	N3b	M1c(1)	internal_id
+ST0002	PT00418	DI00418	neural tube defect	Q01	MONDO:0017078	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00737	DI00737	Cancer of gallbladder	C23	MONDO:0005411	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia1	T4c	N2a	M1d	internal_id
+ST0001	PT00268	DI00268	Impulsive compulsive disorder	F63	MONDO:0001162	67	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00223	DI00223	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia1	T3c	N2a	M1d(0)	internal_id
+ST0002	PT00607	DI00607	Microcephaly	Q02	MONDO:0001149	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00304	DI00304	Pulmonary embolism	I26	MONDO:0005279	43	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00162	DI00162	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia	T1c	N1c	M1d(0)	internal_id
+ST0003	PT00749	DI00749	Hodgkin lymphoma	C81	MONDO:0009348	32	FALSE	TRUE	FALSE	Clinical	Ann Arbor staging system	stage ib',	""	""	""	internal_id
+ST0002	PT00415	DI00415	Acute myeloid leukemia	C92	MONDO:0004643	19	FALSE	TRUE	FALSE	Clinical	Rai staging system	stage iii',	""	""	""	internal_id
+ST0002	PT00500	DI00500	hemimegalencephaly	Q04.5	MONDO:0016608	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00289	DI00289	Rheumatic disease of mitral valve	I05	MONDO:0042967	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00885	DI00885	Neoplasm of the prostate gland	C61	MONDO:0008315	64	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	Tis pu	NX	M1c(1)	internal_id
+ST0001	PT00020	DI00020	Gum cancer	C03	MONDO:0005507	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3	N1b	M1d(1)	internal_id
+ST0002	PT00463	DI00463	eye lid deformation	Q10.2	MONDO:0020159	0	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00571	DI00571	underdeveloped ear	Q17.2	MONDO:0010920	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00029	DI00029	Arthritis	M19.9	MONDO:0006816	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00283	DI00283	Malignant neoplasm of stomach	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iia2	T1c	N3	M1e	internal_id
+ST0003	PT00665	DI00665	Cancer of bladder	C67	MONDO:000118	11	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ii	T2d	N1b	M1d(0)	internal_id
+ST0001	PT00225	DI00225	Nephrotic syndrome	N00	MONDO:0005377	40	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00158	DI00158	Multiple myeloma	C90.0	MONDO:0005170	42	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iiia',	""	""	""	internal_id
+ST0004	PT00859	DI00859	Malignant neoplasm of prostate	C61	MONDO:0008315	56	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic2	T4a	N2c	M1d(1)	internal_id
+ST0004	PT00876	DI00876	Neoplasm of the prostate gland	C61	MONDO:0008315	62	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ivb	T2	N3b	M1d	internal_id
+ST0002	PT00557	DI00557	Malignant neoplasm of rectum	C20	MONDO:0006519	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiic2	T2b	N1a(sn)	M1d(1)	internal_id
+ST0001	PT00231	DI00231	Vein thrombosis	I81	MONDO:0001339	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00031	DI00031	Hodgkin lymphoma	C81	MONDO:0009348	32	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage ivb',	""	""	""	internal_id
+ST0001	PT00045	DI00045	Osteoarthritis	M15	MONDO:0006816	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00306	DI00306	Myositis	M60.1	MONDO:0021167	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00314	DI00314	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iv	T3d	N2mi	M1d(0)	internal_id
+ST0003	PT00746	DI00746	Cancer of pharynx	C10	MONDO:0004608	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia	T1	N1a(sn)	M1e	internal_id
+ST0004	PT00874	DI00874	Cancer of prostate	C61	MONDO:0008315	54	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ia1	Tis(DCIS)	N2a	M1e	internal_id
+ST0001	PT00264	DI00264	Brain neoplasm	C71	MONDO:0001657	48	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	T1a1	N2c	M1d(1)	internal_id
+ST0001	PT00032	DI00032	Cancer of thyroid gland	C73	MONDO:0002108	58	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia1	T1a1	N3c	M1d(1)	internal_id
+ST0001	PT00363	DI00363	Stroke	I64	MONDO:0005098	53	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00621	DI00621	Hirschsprung	Q43.1	MONDO:0018309	4	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00524	DI00524	trisomy 21	Q90	MONDO:0008608	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00104	DI00104	Kidney disease	N04	MONDO:0005377	36	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00356	DI00356	Stroke	I62	MONDO:0005098	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00227	DI00227	Hodgkin lymphoma	C81	MONDO:0009348	62	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iii',	""	""	""	internal_id
+ST0004	PT00968	DI00968	Prostatic cancer	C61	MONDO:0008315	61	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic1	T1b1	N2mi	M1c(1)	internal_id
+ST0004	PT00982	DI00982	Cancer of prostate	C61	MONDO:0008315	41	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1a2	N2a	M1d(0)	internal_id
+ST0002	PT00523	DI00523	Hirschsprung	Q43.1	MONDO:0018309	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00927	DI00927	Cancer of prostate	C61	MONDO:0008315	63	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib2	TX	N2a	M1d(0)	internal_id
+ST0001	PT00166	DI00166	TIID	E11	MONDO:0005148	40	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00512	DI00512	AML	C92	MONDO:0004643	18	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage c'	""	""	""	internal_id
+ST0001	PT00115	DI00115	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ie	T3a	N1b	M1c(1)	internal_id
+ST0004	PT00991	DI00991	Cancer of prostate	C61	MONDO:0008315	60	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib	T1a1	NX	M1e	internal_id
+ST0001	PT00089	DI00089	Osteoarthritis	M15	MONDO:0006816	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00336	DI00336	Colon cancer	C18	MONDO:0005575	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	occult carcinoma	T4	NX	M1d	internal_id
+ST0001	PT00271	DI00271	Cancer of lung	C34	MONDO:0008903	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva2	T2a1	N1a(sn)	M1d(0)	internal_id
+ST0001	PT00181	DI00181	Stroke	I62	MONDO:0005098	35	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00110	DI00110	Angina	I20.0	MONDO:0005255	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00707	DI00707	Natural Killer cell lymphoma	C86.1	MONDO:0005062	36	FALSE	TRUE	TRUE	Histological	Lugano staging system	stage iv',	""	""	""	internal_id
+ST0001	PT00069	DI00069	Encocarditis	I01.1	MONDO:0021777	52	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00101	DI00101	Nephrotic syndrome	N00	MONDO:0005377	33	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00995	DI00995	Cancer of prostate	C61	MONDO:0008315	62	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 0a	Tis(Paget’s)	N2c	M1d	internal_id
+ST0003	PT00653	DI00653	Stomach cancer	C16	MONDO:0001056	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0a	T2a1	N3c	M1e	internal_id
+ST0002	PT00409	DI00409	Cleft palate	Q35.1	MONDO:0015092	1	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00967	DI00967	Cancer of prostate	C61	MONDO:0008315	52	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iii	Tis(LCIS)	N3c	M1c(1)	internal_id
+ST0001	PT00303	DI00303	Cancer of thyroid gland	C73	MONDO:0002108	47	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic2	Tis(DCIS)	N2c	M1d	internal_id
+ST0001	PT00241	DI00241	Chronic heart disease	I25	MONDO:0005267	41	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00355	DI00355	Hodgkin lymphoma	C81	MONDO:0009348	36	TRUE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iie',	""	""	""	internal_id
+ST0004	PT00921	DI00921	Cancer of prostate	C61	MONDO:0008315	69	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ib2	T1a	N3	M1d	internal_id
+ST0002	PT00566	DI00566	duodenal stenosis	Q41.0	MONDO:0009126	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00230	DI00230	Stroke	I62	MONDO:0005098	63	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00716	DI00716	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiic2	T4c	N1mi	M1d	internal_id
+ST0002	PT00432	DI00432	neural tube defect	Q01	MONDO:0017078	5	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00846	DI00846	Cancer of prostate	C61	MONDO:0008315	53	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iia	T3d	N2	M1d(0)	internal_id
+ST0001	PT00070	DI00070	Spondylosis	M47	MONDO:0002253	38	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00160	DI00160	Osteoarthritis	M15	MONDO:0006816	65	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00545	DI00545	Microcephaly	Q02	MONDO:0001149	17	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00561	DI00561	duodenal stenosis	Q41.0	MONDO:0009126	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00364	DI00364	Alzheimer disease	G30	MONDO:0004975	64	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00609	DI00609	Spina bifida	Q05	MONDO:0008449	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00079	DI00079	Kidney disease	N18	MONDO:0005300	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00728	DI00728	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iva	T1b2	N2c	M1d(1)	internal_id
+ST0001	PT00266	DI00266	Encocarditis	I01.1	MONDO:0021777	57	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00855	DI00855	Cancer of prostate	C61	MONDO:0008315	65	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ib	T4a	N1c	M1c(1)	internal_id
+ST0001	PT00121	DI00121	Cancer of thyroid gland	C73	MONDO:0002108	47	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	T2b	N3a	M1d(1)	internal_id
+ST0001	PT00072	DI00072	High blood pressure	I10	MONDO:0001134	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00844	DI00844	Cancer of prostate	C61	MONDO:0008315	43	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	Tis(DCIS)	N2c	M1e	internal_id
+ST0001	PT00293	DI00293	Stroke	I62	MONDO:0005098	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00873	DI00873	Cancer of prostate	C61	MONDO:0008315	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage 1	T1b2	N3a	M1d	internal_id
+ST0004	PT00908	DI00908	Neoplasm of the prostate gland	C61	MONDO:0008315	73	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	T2c	N1mi	M1d(0)	internal_id
+ST0002	PT00518	DI00518	Microcephaly	Q02	MONDO:0001149	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00358	DI00358	Malignant neoplasm of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage is	Tis	N2mi	M1d(1)	internal_id
+ST0002	PT00531	DI00531	neural tube defect	Q01	MONDO:0017078	18	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00339	DI00339	Cancer of pharynx	C10	MONDO:0004608	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	Ta	N2	M1d	internal_id
+ST0001	PT00222	DI00222	Pulmonary embolism	I26	MONDO:0005279	50	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00023	DI00023	Malignant neoplasm of stomach	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0'	T4c	N4	M1e	internal_id
+ST0001	PT00269	DI00269	Diabetes Mellitus	E11	MONDO:0005148	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00315	DI00315	Cancer of prostate	C61	MONDO:0008315	55	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiic	T2	N3b	M1d(0)	internal_id
+ST0003	PT00644	DI00644	Cancer of bladder	C67	MONDO:000118	12	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iie	T3d	N3a	M1d(0)	internal_id
+ST0002	PT00394	DI00394	trisomy 21	Q45.2	MONDO:0017783	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00591	DI00591	Mast cell tumour	C96.2	MONDO:0002724	7	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage 0a	T2a	N2mi	M1c(1)	internal_id
+ST0001	PT00148	DI00148	Schizo-affective	F20	MONDO:0005090	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00035	DI00035	Cancer of breast	C50	MONDO:0007254	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiia	T3a	N2a	M1e	internal_id
+ST0002	PT00450	DI00450	eye lid deformation	Q10.2	MONDO:0020159	14	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00232	DI00232	Reye's	G93.7	MONDO:0005942	54	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00937	DI00937	Prostate neoplasm	C61	MONDO:0008315	73	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ib2	Tis	N2b	M1d(1)	internal_id
+ST0004	PT00959	DI00959	Prostatic cancer	C61	MONDO:0008315	44	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	sstage 0is	T1a1	N4	M1d(1)	internal_id
+ST0002	PT00510	DI00510	neural tube defect	Q01	MONDO:0017078	6	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00536	DI00536	eye lid deformation	Q10.2	MONDO:0020159	19	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00891	DI00891	Prostatic cancer	C61	MONDO:0008315	47	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T2a1	N1a(sn)	M1d(0)	internal_id
+ST0002	PT00598	DI00598	underdeveloped ear	Q17.2	MONDO:0010920	2	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00176	DI00176	Lymphoid leukemia	C91.0	MONDO:0005402	57	TRUE	FALSE	""	Clinical	Rai staging system	stage ii',	""	""	""	internal_id
+ST0004	PT00832	DI00832	Prostatic cancer	C61	MONDO:0008315	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia	T2c	N2a	M1d(1)	internal_id
+ST0004	PT00976	DI00976	Neoplasm of the prostate gland	C61	MONDO:0008315	47	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iii	Tis pd	N3b	M1d	internal_id
+ST0002	PT00618	DI00618	trisomy 21	Q90	MONDO:0008608	10	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00963	DI00963	Cancer of prostate	C61	MONDO:0008315	45	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiib	T3e	N1b	M1e	internal_id
+ST0002	PT00501	DI00501	Cleft palate	Q35.1	MONDO:0015092	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00383	DI00383	Hodgkin	C81	MONDO:0009348	7	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iiia',	""	""	""	internal_id
+ST0001	PT00203	DI00203	Cancer of brain	C71	MONDO:0001657	44	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage i	T3a	N1b	M1d(0)	internal_id
+ST0002	PT00503	DI00503	Cancer of pharynx	C10	MONDO:0004608	""	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iiib	T1b1	N4	M1e	internal_id
+ST0002	PT00438	DI00438	Cancer of brain	C71	MONDO:0001657	21	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage ie	T1b	N2	M1d	internal_id
+ST0002	PT00581	DI00581	Hodgkin lymphoma	C81	MONDO:0009348	0	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iva',	""	""	""	internal_id
+ST0001	PT00321	DI00321	T cell lymphoma	C84	MONDO:0000430	45	TRUE	TRUE	TRUE	Clinical	Lugano staging system	stage iiib',	""	""	""	internal_id
+ST0001	PT00008	DI00008	Lymphoid leukemia	C91.0	MONDO:0005402	47	TRUE	TRUE	TRUE	Clinical	Rai staging system	stage iv	""	""	""	internal_id
+ST0001	PT00100	DI00100	Schizophrenia	F20	MONDO:0005090	58	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00909	DI00909	Malignant neoplasm of prostate	C61	MONDO:0008315	64	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T1b2	N4	M1c(1)	internal_id
+ST0002	PT00626	DI00626	Natural Killer cell lymphoma	C86.1	MONDO:0005062	12	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage i',	""	""	""	internal_id
+ST0004	PT00834	DI00834	Prostate neoplasm	C61	MONDO:0008315	62	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iii	T3	N1a(sn)	M1e	internal_id
+ST0002	PT00427	DI00427	NK cell lymphoma	C86.1	MONDO:0005062	4	FALSE	TRUE	TRUE	Clinical	Lugano staging system	stage ie',	""	""	""	internal_id
+ST0002	PT00378	DI00378	Glaucoma	Q15.0	MONDO:0020366	9	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00896	DI00896	Cancer of prostate	C61	MONDO:0008315	50	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage iic	T1mi	N2	M1d(0)	internal_id
+ST0001	PT00199	DI00199	Nephrotic syndrome	N00	MONDO:0005377	32	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00938	DI00938	Cancer of prostate	C61	MONDO:0008315	57	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiib	T2a2	N1b	M1c(1)	internal_id
+ST0001	PT00039	DI00039	Multiple myeloma	C90.0	MONDO:0005170	47	TRUE	TRUE	TRUE	Clinical	Durie-Salmon staging system	stage iib',	""	""	""	internal_id
+ST0002	PT00447	DI00447	T cell lymphoma	C84	MONDO:0000430	17	FALSE	TRUE	FALSE	Clinical	Lugano staging system	stage iv',	""	""	""	internal_id
+ST0001	PT00123	DI00123	Cancer of gallbladder	C23	MONDO:0005411	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iic	T0	N3b	M1d(1)	internal_id
+ST0001	PT00325	DI00325	Pulmonary embolism	I26	MONDO:0005279	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00831	DI00831	Malignant neoplasm of prostate	C61	MONDO:0008315	50	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage ivb	T1b	N3b	M1d(1)	internal_id
+ST0001	PT00151	DI00151	Kidney disease	N04	MONDO:0005377	39	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00091	DI00091	Arthritis	M19.9	MONDO:0006816	47	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00453	DI00453	Lip cancer	C00	MONDO:0006834	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ia1	T1c	N1mi	M1d(0)	internal_id
+ST0004	PT00923	DI00923	Cancer of prostate	C61	MONDO:0008315	61	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iia1	Tis(Paget’s)	N3a	M1c(1)	internal_id
+ST0002	PT00540	DI00540	Hodgkin lymphoma	C81	MONDO:0009348	1	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage ii',	""	""	""	internal_id
+ST0001	PT00018	DI00018	Kidney disease	N18	MONDO:0005300	29	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00979	DI00979	Prostatic cancer	C61	MONDO:0008315	63	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiia1	T1a1	N1mi	M1c(1)	internal_id
+ST0001	PT00094	DI00094	Nephrotic syndrome	N00	MONDO:0005377	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00835	DI00835	Cancer of prostate	C61	MONDO:0008315	56	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic1	T2a1	N1b	M1e	internal_id
+ST0003	PT00797	DI00797	Hodgkin lymphoma	C81	MONDO:0009348	42	FALSE	TRUE	TRUE	Clinical	Ann Arbor staging system	stage iiis',	""	""	""	internal_id
+ST0001	PT00312	DI00312	Arthritis	M19.9	MONDO:0006816	61	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00882	DI00882	Cancer of prostate	C61	MONDO:0008315	42	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage iiid	T0	N1mi	M1d(1)	internal_id
+ST0001	PT00206	DI00206	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	58	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivc	T2c	NX	M1e	internal_id
+ST0004	PT00977	DI00977	Malignant neoplasm of prostate	C61	MONDO:0008315	75	FALSE	TRUE	FALSE	Histological	AJCC 8th edition	stage 0a	Tis(LCIS)	N1b	M1d(1)	internal_id
+ST0002	PT00624	DI00624	duodenal stenosis	Q41.0	MONDO:0009126	12	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00993	DI00993	Cancer of prostate	C61	MONDO:0008315	41	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage is	TX	N4	M1e	internal_id
+ST0002	PT00381	DI00381	AML	C92	MONDO:0004643	15	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage a',	""	""	""	internal_id
+ST0002	PT00391	DI00391	Lymphoid leukemia	C91.0	MONDO:0005402	0	FALSE	TRUE	TRUE	Clinical	Binet staging system	stage b',	""	""	""	internal_id
+ST0004	PT00999	DI00999	Malignant neoplasm of prostate	C61	MONDO:0008315	68	FALSE	TRUE	FALSE	Clinical	AJCC 8th edition	stage iiic2	T3a	N1c	M1d(0)	internal_id
+ST0001	PT00255	DI00255	Reye's	G93.7	MONDO:0005942	63	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0004	PT00897	DI00897	Neoplasm of the prostate gland	C61	MONDO:0008315	42	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iv	Tis(Paget)	N3a	M1d(1)	internal_id
+ST0001	PT00019	DI00019	Manic depressive illness	F31	MONDO:0004985	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00595	DI00595	underdeveloped ear	Q17.2	MONDO:0010920	11	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00546	DI00546	eye lid deformation	Q10.2	MONDO:0020159	21	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00333	DI00333	High blood pressure	I10	MONDO:0001134	55	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00656	DI00656	Malignant neoplasm of thyroid gland	C73	MONDO:0002108	26	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage i	Tis(DCIS)	N3b	M1d(1)	internal_id
+ST0001	PT00318	DI00318	Cancer of brain	C71	MONDO:0001657	45	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva	T1c	N3a	M1d(0)	internal_id
+ST0001	PT00370	DI00370	Stomach cancer	C16	MONDO:0001056	""	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iva1	T3a	N3	M1d(0)	internal_id
+ST0001	PT00004	DI00004	Brain neoplasm	C71	MONDO:0001657	44	TRUE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ivb	T1b1	N1c	M1d(0)	internal_id
+ST0002	PT00528	DI00528	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage iiib	T1a2	N1mi	M1c(1)	internal_id
+ST0004	PT00931	DI00931	Malignant neoplasm of prostate	C61	MONDO:0008315	57	FALSE	TRUE	TRUE	Histological	AJCC 8th edition	stage ia3	T0	N1b	M1e	internal_id
+ST0001	PT00028	DI00028	Alzheimer	G30	MONDO:0004975	56	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0002	PT00582	DI00582	duodenal stenosis	Q41.0	MONDO:0009126	15	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0003	PT00767	DI00767	Bone cancer	C40	MONDO:0024311	""	FALSE	TRUE	TRUE	Clinical	AJCC 8th edition	stage ie	Tis pu	N1a(sn)	M1c(1)	internal_id
+ST0002	PT00516	DI00516	Chomosome 5 short arm del	Q93.4	MONDO:0016887	8	FALSE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00361	DI00361	Heart attack	I21	MONDO:0005068	66	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id
+ST0001	PT00167	DI00167	Urolithiasis	N20	MONDO:0008171	34	TRUE	FALSE	""	Clinical	""	""	""	""	""	internal_id

@@ -50,7 +50,7 @@ class DictionaryClient extends BaseHttpClient with IDictionary{
 
   }
 
-  private def getSchemaList(responseString: String): List[Schema] = {
+  def getSchemaList(responseString: String): List[Schema] = {
     val schemas: mutable.MutableList[Schema] = mutable.MutableList()
 
     val jsonResponse: JsonArray = new JsonParser().parse(responseString).getAsJsonArray
