@@ -71,11 +71,12 @@ object ProcessETLUtils {
           struct($"phenotype_id",
             $"name",
             $"parents",
+            $"display_name",
+            $"main_category",
             $"is_leaf",
             $"is_tagged",
             $"internal_phenotype_id",
             array($"age_at_event").as("age_at_event"),
-            $"main_category"
           )
         ).as("observed_phenotype_tagged")
       )
@@ -87,6 +88,7 @@ object ProcessETLUtils {
           struct($"phenotype_id",
             $"name",
             $"parents",
+            $"display_name",
             $"is_leaf",
             $"is_tagged",
             $"internal_phenotype_id",
@@ -133,6 +135,7 @@ object ProcessETLUtils {
           $"id" as ("phenotype_id"),
           $"name",
           $"parents",
+          $"display_name",
           $"main_category",
           array($"age_at_event").as("age_at_event"),
           $"is_leaf",
@@ -150,6 +153,7 @@ object ProcessETLUtils {
           $"id" as ("phenotype_id"),
           $"name",
           $"parents",
+          $"display_name",
           $"main_category",
           array($"age_at_event").as("age_at_event"),
           $"is_leaf",
@@ -252,6 +256,7 @@ object ProcessETLUtils {
           $"submitter_donor_id",
           $"id" ,
           $"name",
+          concat(col("name"), lit(" ("), col("id"), lit(")")).alias("display_name"),
           $"parents",
           $"age_at_event",
           col(internalIdColumnName),
@@ -276,6 +281,11 @@ object ProcessETLUtils {
       $"submitter_donor_id",
       $"ancestors_exploded.id" as "id",
       $"ancestors_exploded.name" as "name",
+      concat(
+        col("ancestors_exploded.name"),
+        lit(" ("),
+        col("ancestors_exploded.id"),
+        lit(")")).alias("display_name"),
       $"ancestors_exploded.parents" as "parents",
       $"age_at_event",
       col(internalIdColumnName)
@@ -292,6 +302,7 @@ object ProcessETLUtils {
         $"submitter_donor_id",
         $"id",
         $"name",
+        $"display_name",
         $"parents",
         $"is_leaf",
         $"is_tagged",
@@ -312,6 +323,7 @@ object ProcessETLUtils {
         struct(cols =
           $"id".as("phenotype_id"),
           $"name",
+          $"display_name",
           $"parents",
           $"age_at_event",
           col(internalIdColumnName),

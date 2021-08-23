@@ -350,7 +350,7 @@ ST0001	PT00004	PH00004	 Obesity	HP:0001513	 Obesity	Growth abnormality	44	Profou
 ST0001	PT00011	PH00011	 Obesity	HP:0001513	 Obesity	Growth abnormality	35	Borderline	TRUE
 ST0001	PT00012	PH00012	 Obesity	HP:0001513	 Obesity	Growth abnormality	34	Borderline	TRUE
 ST0001	PT00013	PH00013	 Obesity	HP:0001513	 Obesity	Growth abnormality	61	Mild	TRUE
-ST0001	PT00016	PH00016	 Obesity	HP:0001513	 Obesity	Growth abnormality	54	Mild	TRUE
+ST0001	PT00014	PH00016	 Obesity	HP:0025031	 Obesity	Abnormality of the digestive system	54	Mild	FALSE
 ST0001	PT00018	PH00018	 Obesity	HP:0001513	 Obesity	Growth abnormality	32	Borderline	TRUE
 ST0001	PT00021	PH00021	 Obesity	HP:0001513	 Obesity	Growth abnormality	37	Profound	TRUE
 ST0001	PT00025	PH00025	 Obesity	HP:0001513	 Obesity	Growth abnormality	38	Profound	TRUE
@@ -799,7 +799,7 @@ ST0001	PT00377	PH00377	 Stroke	HP:0001297	 Stroke	Abnormality of the cardiovascu
 ST0001	PT00075	PH00075	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	42	Severe	TRUE
 ST0002	PT00397	PH00397	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	10	Mild	TRUE
 ST0003	PT00656	PH00656	 Thyroid nodule	HP:0025388	 Thyroid nodule	Abnormality of the endocrine system	26	Borderline	TRUE
-ST0001	PT00015	PH00015	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Profound	TRUE
+ST0001	PT00014	PH00015	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	56	Profound	TRUE
 ST0001	PT00142	PH00142	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	48	Mild	TRUE
 ST0001	PT00173	PH00173	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	36	Profound	TRUE
 ST0001	PT00186	PH00186	 Ulcerative colitis	HP:0100279	 Ulcerative colitis	Abnormality of the digestive system	65	Profound	TRUE
