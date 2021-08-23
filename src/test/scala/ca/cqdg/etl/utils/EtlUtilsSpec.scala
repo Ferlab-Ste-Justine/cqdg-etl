@@ -1,5 +1,6 @@
 package ca.cqdg.etl.utils
 
+import ca.cqdg.etl.processes.ProcessETLUtils.{addAncestorsToTerm, loadBiospecimens, loadPerDonorAndStudy}
 import ca.cqdg.etl.testutils.WithSparkSession
 import ca.cqdg.etl.testutils.model._
 import org.scalatest.GivenWhenThen
@@ -12,14 +13,14 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
   "loadBiospecimens" should "transform data in expected format" in {
     val sampleRegistrationDf = Seq(SampleRegistrationInput()).toDF()
     val biospecimenDf = Seq(BiospecimenInput()).toDF()
-      val result = EtlUtils.loadBiospecimens(biospecimenDf, sampleRegistrationDf)
+      val result = loadBiospecimens(biospecimenDf, sampleRegistrationDf)
 
     result.as[BiospecimenOutput].collect().head shouldBe BiospecimenOutput()
   }
 
   "loadTreatments" should "transform data in expected format" in {
     val treatmentDf = Seq(TreatmentInput()).toDF()
-    val result = EtlUtils.loadPerDonorAndStudy(treatmentDf, "treatment")
+    val result = loadPerDonorAndStudy(treatmentDf, "treatment")
 
     result.as[TreatmentOutput].collect().head shouldBe TreatmentOutput()
   }
@@ -32,7 +33,7 @@ class EtlUtilsSpec extends AnyFlatSpec with GivenWhenThen with WithSparkSession 
 
     val hpoDf = Seq(HpoTermsInput()).toDF()
 
-    val result = EtlUtils.addAncestorsToTerm("phenotype_HPO_code", "phenotypes", "internal_phenotype_id")(phenotypesDf, hpoDf)._1
+    val result = addAncestorsToTerm("phenotype_HPO_code", "phenotypes", "internal_phenotype_id")(phenotypesDf, hpoDf)._1
 
     result.as[PhenotypeWithHpoOutput].collect().head shouldBe PhenotypeWithHpoOutput()
   }

@@ -12,5 +12,6 @@ case class PhenotypeInput(`study_id`: String = "ST0001",
                           `phenotype_HPO_term`: String = " Myocardial infarction",
                           `phenotype_HPO_category`: String = "Abnormality of the cardiovascular system",
                           `age_at_phenotype`: Int = 63,
+                          `internal_phenotype_id`: String = "PH00001",
                           `phenotype_observed`: String = "Yes")
 

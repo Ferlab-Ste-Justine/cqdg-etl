@@ -50,4 +50,4 @@ assemblyMergeStrategy in assembly := {
 }
 
 assembly / assemblyJarName := "cqdg-etl.jar"
-assembly / mainClass := Some("ca.cqdg.etl.rework.EtlApp")
+assembly / mainClass := Some("ca.cqdg.etl.EtlApp")
