@@ -15,12 +15,12 @@ class Process() extends Runnable {
   @Option(names = Array("-o", "--output"), required = true, description = Array("where the transformed files will be saved, ex: s3a://cqdg/clinical-data-etl-indexer"))
   var output: String = null
 
-  @Option(names = Array("-l", "--local"), description = Array(""))
-  var isLocal: Boolean = false
+  @Option(names = Array("-d", "--dev"), description = Array(""))
+  var isDev: Boolean = false
 
   override def run(): Unit = {
     val config = new ProcessETLConfig(input, ontology, output)
-    val etl = new ProcessETL()(SparkConfig.getSparkSession(isLocal), config.processETLConfig)
+    val etl = new ProcessETL()(SparkConfig.getSparkSession(isDev), config.processETLConfig)
     etl.transform(etl.extract())
   }
 

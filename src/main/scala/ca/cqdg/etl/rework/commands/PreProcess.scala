@@ -13,14 +13,14 @@ class PreProcess() extends Runnable {
   @Option(names = Array("-o", "--output"), required = true, description = Array("where the transformed files will be saved, ex: s3a://cqdg/clinical-data-with-ids/e2adb961-4f58-4e13-a24f-6725df802e2c/11-PLA-STUDY/15"))
   var output: String = null
 
-  @Option(names = Array("-l", "--local"), description = Array(""))
-  var isLocal: Boolean = false
+  @Option(names = Array("-d", "--dev"), description = Array(""))
+  var isDev: Boolean = false
 
   override def run(): Unit = {
     val config = new PreProcessETLConfig(input, output)
     val dictionaryClient = new DictionaryClient
     val idServerClient = new IdServerClient
-    val etl = new PreProcessETL(dictionaryClient, idServerClient)(SparkConfig.getSparkSession(isLocal), config.preProcessETLConfig)
+    val etl = new PreProcessETL(dictionaryClient, idServerClient)(SparkConfig.getSparkSession(isDev), config.preProcessETLConfig)
     etl.load(etl.transform(etl.extract()))
   }
 

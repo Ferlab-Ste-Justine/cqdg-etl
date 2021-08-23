@@ -51,7 +51,7 @@ class PreProcessETL(dictionaryClient: IDictionary, idServerClient: IIdServer)(im
   }
 
   private def extractMetadata(dfMetadata: DataFrame): Metadata = {
-    val data = dfMetadata.select("dictionaryVersion", "studyVersionId", "studyVersionDate").distinct().first()
+    val data = dfMetadata.select("studyVersionId", "studyVersionDate", "dictionaryVersion").distinct().first()
     Metadata(data.getString(0), data.getString(1), data.getString(2))
   }
 
