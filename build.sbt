@@ -25,6 +25,9 @@ libraryDependencies += "com.typesafe" % "config" % "1.4.1"
 libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
 libraryDependencies += "info.picocli" % "picocli" % "4.6.1"
 
+// some TUs write in a common config file
+Test / parallelExecution := false
+
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"
 libraryDependencies += "org.scalamock" %% "scalamock" % "5.1.0" % "test"

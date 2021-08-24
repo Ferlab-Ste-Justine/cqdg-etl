@@ -23,7 +23,8 @@ class Process() extends Runnable {
     val config = new ProcessETLConfig(input, ontology, output)
     val keycloakClient = new KeycloakClient
     val etl = new ProcessETL(keycloakClient)(SparkConfig.getSparkSession(isDev), config.processETLConfig)
-    etl.transform(etl.extract())
+    val (studies, donors, files) = etl.transform(etl.extract())
+    etl.load(studies, donors, files)
   }
 
 }

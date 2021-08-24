@@ -59,7 +59,7 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
     )
   }
 
-  def transform(data: Map[String, DataFrame]): Unit = {
+  def transform(data: Map[String, DataFrame]): (DataFrame, DataFrame, DataFrame) = {
 
     import spark.implicits._
 
@@ -110,12 +110,10 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
     log.info("Computing Studies ...")
     val studies = new StudyIndex(studyDf, metadata, inputData)(conf);
     val transformedStudies = studies.transform(studies.extract())
-    write(studies.destination.id, transformedStudies, conf)
 
     log.info("Computing Donors ...")
     val donors = new DonorIndex(studyDf, metadata, inputData)(conf);
     val transformedDonors = donors.transform(donors.extract())
-    write(donors.destination.id, transformedDonors, conf)
 
     log.info("Computing Files ...")
     val files = new FileIndex(studyDf, metadata, inputData)(conf);
@@ -128,7 +126,18 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
       log.info(s"Successfully create ${resources.size} resources")
     }
 
-    write(files.destination.id, transformedFiles, conf)
+    (transformedStudies, transformedDonors, transformedFiles)
+  }
+
+  def load(studies: DataFrame, donors: DataFrame, files: DataFrame): Unit = {
+    load("studies", studies)
+    load("donors", donors)
+    load("files", files)
+  }
+
+  private def load(sourceId: String, df: DataFrame): Unit = {
+    log.info(s"Save $sourceId")
+    write(sourceId, df, conf)
   }
 
   private def extractMetadata(dfStudy: DataFrame): Metadata = {

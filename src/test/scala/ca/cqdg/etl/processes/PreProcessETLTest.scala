@@ -1,10 +1,8 @@
 package ca.cqdg.etl.processes
 
-import bio.ferlab.datalake.spark3.config.Configuration
 import ca.cqdg.etl.clients.{DictionaryMock, IdServerMock}
 import ca.cqdg.etl.models.NamedDataFrame
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.SaveMode
 import org.scalatest.funsuite.AnyFunSuite
 import org.slf4j
 import org.slf4j.LoggerFactory
@@ -13,7 +11,7 @@ import java.io.File
 import java.nio.file.Files
 import scala.io.Source
 
-class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
+class PreProcessETLTest extends AnyFunSuite with WithSparkSession {
 
   val log: slf4j.Logger = LoggerFactory.getLogger("pre-process-test")
   Logger.getLogger("pre-process-test").setLevel(Level.INFO)
@@ -23,7 +21,7 @@ class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
     val input = "src/test/resources/clinical-data"
     val output = Files.createTempDirectory("cqdg-etl-pre-process-test").toFile.getAbsolutePath
 
-    val config = new PreProcessETLConfig(input, output).preProcessETLConfig
+    val config = new PreProcessETLTestConfig(input, output).preProcessETLConfig
     val etl = new PreProcessETL(new DictionaryMock, new IdServerMock)(spark, config)
 
     val data = etl.extract()
@@ -32,28 +30,16 @@ class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
     val transformed = etl.transform(data)
     assert(transformed.size == 12)
 
-    // custom write into CSV
-    transformed.foreach(ndf => writeCSV(ndf, config))
+    log.info(s"Current output folder: $output")
+
+    etl.load(transformed)
+
     // check every lines of expected / transformed
     transformed.foreach(assertOutput(_, output))
   }
 
-  private def writeCSV(ndf: NamedDataFrame, conf: Configuration): Unit = {
-    log.info(s"Write CSV ${ndf.name}")
-    val source = conf.getDataset(s"${ndf.name}-with-ids")
-    val storage = conf.getStorage(source.storageid)
-    val outputPath = s"$storage/${source.path}"
-
-    ndf.dataFrame
-      .coalesce(1)
-      .write
-      .mode(SaveMode.Overwrite)
-      .options(tsv_with_headers)
-      .csv(outputPath)
-  }
-
   private def assertOutput(ndf: NamedDataFrame, outputFolder: String): Unit = {
-    log.info(s"Assert CSV content ${ndf.name}")
+    log.info(s"Assert content ${ndf.name}")
     val expectedFile = s"clinical-data-with-ids/${ndf.name}.tsv"
     val expected = Source.fromInputStream(getClass.getClassLoader.getResourceAsStream(expectedFile)).getLines().toList
     val transformedFile = findTransformedFile(ndf.name, outputFolder)

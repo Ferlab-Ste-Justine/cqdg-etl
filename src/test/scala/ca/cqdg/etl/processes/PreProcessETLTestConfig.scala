@@ -4,7 +4,7 @@ import bio.ferlab.datalake.spark3.config.{Configuration, DatasetConf, StorageCon
 import bio.ferlab.datalake.spark3.loader.Format.{CSV, JSON, PARQUET}
 import bio.ferlab.datalake.spark3.loader.LoadType.OverWrite
 
-class PreProcessETLConfig(input: String, output: String) {
+class PreProcessETLTestConfig(input: String, output: String) {
 
   val preProcessETLConfig: Configuration = Configuration(
     storages = List(
@@ -28,18 +28,18 @@ class PreProcessETLConfig(input: String, output: String) {
       DatasetConf("treatment"               , "input", "/treatment.tsv"               , CSV, OverWrite, readoptions = tsv_with_headers),
 
       // data to index
-      DatasetConf("biospecimen-with-ids"          , "output", "/biospecimen"        , PARQUET, OverWrite),
-      DatasetConf("diagnosis-with-ids"            , "output", "/diagnosis"          , PARQUET, OverWrite),
-      DatasetConf("donor-with-ids"                , "output", "/donor"              , PARQUET, OverWrite),
-      DatasetConf("exposure-with-ids"             , "output", "/exposure"           , PARQUET, OverWrite),
-      DatasetConf("family-history-with-ids"       , "output", "/family-history"     , PARQUET, OverWrite),
-      DatasetConf("family-with-ids"               , "output", "/family"             , PARQUET, OverWrite),
-      DatasetConf("file-with-ids"                 , "output", "/file"               , PARQUET, OverWrite),
-      DatasetConf("follow-up-with-ids"            , "output", "/follow-up"          , PARQUET, OverWrite),
-      DatasetConf("phenotype-with-ids"            , "output", "/phenotype"          , PARQUET, OverWrite),
-      DatasetConf("sample_registration-with-ids"  , "output", "/sample_registration", PARQUET, OverWrite),
-      DatasetConf("study-with-ids"                , "output", "/study"              , PARQUET, OverWrite),
-      DatasetConf("treatment-with-ids"            , "output", "/treatment"          , PARQUET, OverWrite),
+      DatasetConf("biospecimen-with-ids"          , "output", "/biospecimen"        , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("diagnosis-with-ids"            , "output", "/diagnosis"          , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("donor-with-ids"                , "output", "/donor"              , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("exposure-with-ids"             , "output", "/exposure"           , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("family-history-with-ids"       , "output", "/family-history"     , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("family-with-ids"               , "output", "/family"             , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("file-with-ids"                 , "output", "/file"               , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("follow-up-with-ids"            , "output", "/follow-up"          , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("phenotype-with-ids"            , "output", "/phenotype"          , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("sample_registration-with-ids"  , "output", "/sample_registration", CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("study-with-ids"                , "output", "/study"              , CSV, OverWrite, writeoptions = tsv_with_headers),
+      DatasetConf("treatment-with-ids"            , "output", "/treatment"          , CSV, OverWrite, writeoptions = tsv_with_headers),
     )
   )
 }
