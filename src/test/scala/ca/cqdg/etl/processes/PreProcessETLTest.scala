@@ -5,8 +5,11 @@ import ca.cqdg.etl.clients.DictionaryClient
 import ca.cqdg.etl.clients.inf.{IDictionary, IIdServer}
 import ca.cqdg.etl.models.{NamedDataFrame, Schema}
 import com.google.gson.{JsonArray, JsonParser}
-import org.apache.spark.sql.{SaveMode}
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.sql.SaveMode
 import org.scalatest.funsuite.AnyFunSuite
+import org.slf4j
+import org.slf4j.LoggerFactory
 
 import java.io.File
 import java.nio.file.Files
@@ -14,6 +17,9 @@ import scala.collection.mutable
 import scala.io.Source
 
 class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
+
+  val log: slf4j.Logger = LoggerFactory.getLogger("pre-process-test")
+  Logger.getLogger("pre-process-test").setLevel(Level.INFO)
 
   test("compare expected / transformed files") {
 
@@ -53,11 +59,12 @@ class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
     assert(transformed.size == 12)
     // custom write into CSV
     transformed.foreach(ndf => writeCSV(ndf, config))
-    // check very lines of expected / transformed
+    // check every lines of expected / transformed
     transformed.foreach(assertOutput(_, output))
   }
 
   private def writeCSV(ndf: NamedDataFrame, conf: Configuration): Unit = {
+    log.info(s"Write CSV ${ndf.name}")
     val source = conf.getDataset(s"${ndf.name}-with-ids")
     val storage = conf.getStorage(source.storageid)
     val outputPath = s"$storage/${source.path}"
@@ -71,10 +78,11 @@ class PreProcessETLTest extends AnyFunSuite with WithSparkSession{
   }
 
   private def assertOutput(ndf: NamedDataFrame, outputFolder: String): Unit = {
+    log.info(s"Assert CSV content ${ndf.name}")
     val expectedFile = s"clinical-data-with-ids/${ndf.name}.tsv"
     val expected = Source.fromInputStream(getClass.getClassLoader.getResourceAsStream(expectedFile)).getLines().toList
     val transformedFile = findTransformedFile(ndf.name, outputFolder)
-    val transformed = Source.fromFile(findTransformedFile(ndf.name, outputFolder)).getLines().toList
+    val transformed = Source.fromFile(transformedFile).getLines().toList
     expected.zipWithIndex.foreach({ case(line, i) =>
       if (!transformed.contains(line))
         fail(s"Expected: $expectedFile line not found in transformed: $transformedFile\n$line")

@@ -93,17 +93,9 @@ class PreProcessETL(dictionaryClient: IDictionary, idServerClient: IIdServer)(im
 
 
   def load(ndfs: List[NamedDataFrame]): Unit = {
-    // work-around to use the config = create an anonymous ETL object that load 1 dataframe
     ndfs.foreach(ndf => {
-      val etl = new ETL() {
-        override val destination: DatasetConf = conf.getDataset(s"${ndf.name}-with-ids")
-
-        override def extract()(implicit spark: SparkSession): Map[String, DataFrame] = Map(ndf.name -> ndf.dataFrame)
-
-        override def transform(data: Map[String, DataFrame])(implicit spark: SparkSession): DataFrame = ndf.dataFrame
-      }
       log.info(s"Save ${ndf.name} ...")
-      etl.load(etl.transform(etl.extract()))
+      write(s"${ndf.name}-with-ids", ndf.dataFrame, conf)
     })
   }
 

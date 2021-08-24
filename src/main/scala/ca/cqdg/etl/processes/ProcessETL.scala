@@ -110,12 +110,12 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
     log.info("Computing Studies ...")
     val studies = new StudyIndex(studyDf, metadata, inputData)(conf);
     val transformedStudies = studies.transform(studies.extract())
-    write(studies.destination.id, transformedStudies)
+    write(studies.destination.id, transformedStudies, conf)
 
     log.info("Computing Donors ...")
     val donors = new DonorIndex(studyDf, metadata, inputData)(conf);
     val transformedDonors = donors.transform(donors.extract())
-    write(donors.destination.id, transformedDonors)
+    write(donors.destination.id, transformedDonors, conf)
 
     log.info("Computing Files ...")
     val files = new FileIndex(studyDf, metadata, inputData)(conf);
@@ -128,21 +128,7 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
       log.info(s"Successfully create ${resources.size} resources")
     }
 
-    write(files.destination.id, transformedFiles)
-
-  }
-
-  private def write(sourceId: String, df: DataFrame): Unit = {
-    val source = conf.getDataset(sourceId)
-    val storage = conf.getStorage(source.storageid)
-    val outputPath = s"$storage/${source.path}"
-
-    df
-      .coalesce(1)
-      .write
-      .mode(SaveMode.Overwrite)
-      .partitionBy(source.partitionby:_*)
-      .json(outputPath)
+    write(files.destination.id, transformedFiles, conf)
   }
 
   private def extractMetadata(dfStudy: DataFrame): Metadata = {
