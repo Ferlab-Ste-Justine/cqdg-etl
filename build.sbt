@@ -6,7 +6,7 @@ scalaVersion := "2.12.12"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 
-val spark_version = "3.0.0"
+val spark_version = "3.1.2"
 
 resolvers += "Sonatype OSS Snapshots" at "https://s01.oss.sonatype.org/content/repositories/snapshots"
 resolvers += "Sonatype OSS Releases" at "https://s01.oss.sonatype.org/content/repositories/releases"
@@ -25,7 +25,6 @@ libraryDependencies += "com.typesafe" % "config" % "1.4.1"
 libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
 libraryDependencies += "info.picocli" % "picocli" % "4.6.1"
 
-// some TUs write in a common config file
 Test / parallelExecution := false
 
 /* Test */

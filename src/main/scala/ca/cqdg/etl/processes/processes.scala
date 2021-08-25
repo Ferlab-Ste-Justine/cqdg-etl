@@ -1,6 +1,7 @@
 package ca.cqdg.etl
 
 import bio.ferlab.datalake.spark3.config.Configuration
+import bio.ferlab.datalake.spark3.loader.Format.PARQUET
 import org.apache.spark.sql.{DataFrame, SaveMode}
 
 import java.util.concurrent.Executors
@@ -22,8 +23,13 @@ package object processes {
     val storage = conf.getStorage(source.storageid)
     val outputPath = s"$storage/${source.path}"
 
-    df
-      .coalesce(1)
+    var dfToWrite = df
+
+    if(!source.format.equals(PARQUET)){
+      dfToWrite = dfToWrite.coalesce(1)
+    }
+
+    dfToWrite
       .write
       .format(source.format.sparkFormat)
       .mode(SaveMode.Overwrite)

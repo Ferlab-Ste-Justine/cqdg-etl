@@ -111,7 +111,7 @@ class ProcessETL(keycloakClient: IKeycloak)(implicit spark: SparkSession, conf: 
     val studies = new StudyIndex(studyDf, metadata, inputData)(conf);
     val transformedStudies = studies.transform(studies.extract())
 
-    log.info("Computing Donors ...")
+   log.info("Computing Donors ...")
     val donors = new DonorIndex(studyDf, metadata, inputData)(conf);
     val transformedDonors = donors.transform(donors.extract())
 

@@ -1,5 +1,2 @@
 study_id	name	short_name	description	keyword	access_authority	domain	population	access_limitations	access_requirements	nb_donors	nb_files	seq	snv	cnv	sv	exp	meth
 ST0001	Study1	ST1	population-based cohort focusing on complex conditions	Common chronic disorders; Prospective cohort; Reference genome	www.study1.ca	General Health	Adult	DUO:0000005	DUO:0000017; DUO:0000024; DUO:0000026	377	754	377	377	0	0	0	0
-ST0002	Study2	ST2	Genomic testing results 	Rare disorders; Neurodevelopmental disorders; Birth defects	www.study2.ca	Rare disease	Pediatric and Adult	DUO:000015	DUO:0000018; DUO:0000021; DUO:0000022	249	330	249	81	0	0	0	0
-ST0003	Study3	ST3	Study on unusual cancer phenotypes	Hereditary tumors; Exome sequencing 	www.study3.ca	Cancer	Pediatric and Adult	DUO:0000007	DUO:0000017; DUO:0000022; DUO:0000026; DUO:0000029	199	465	199	67	0	0	0	0
-ST0004	Study4	ST4	Une biobanque multicentrique dédiée à la recherche sur le cancer de la prostate.	Cancer de la prostate; Tissu prostatique; Résistance à l'hormonothérapie	www.study4.ca	Cancer	Adult	DUO:0000012	DUO:0000017; DUO:0000018; DUO:0000021; DUO:0000022	174	200	148	0	0	0	52	0

@@ -27,10 +27,10 @@ class ProcessETLTestConfig(input: String, ontology: String, output: String) {
       DatasetConf("study"                 , "input", "/study.tsv"                  , CSV , OverWrite, readoptions = tsv_with_headers),
       DatasetConf("treatment"             , "input", "/treatment.tsv"              , CSV , OverWrite, readoptions = tsv_with_headers),
 
-      DatasetConf("hpo"                   , "ontology", "/hpo_terms.json.gz"               , JSON, OverWrite),
-      DatasetConf("mondo"                 , "ontology", "/mondo_terms.json.gz"             , JSON, OverWrite),
-      DatasetConf("icd"                   , "ontology", "/icd_terms.json.gz"               , JSON, OverWrite),
-      DatasetConf("duo_code"              , "ontology", "/duo_code_terms.json.gz"          , JSON, OverWrite),
+      DatasetConf("hpo"                   , "ontology", "/hpo_terms.json"               , JSON, OverWrite),
+      DatasetConf("mondo"                 , "ontology", "/mondo_terms.json"             , JSON, OverWrite),
+      DatasetConf("icd"                   , "ontology", "/icd_terms.json"               , JSON, OverWrite),
+      DatasetConf("duo_code"              , "ontology", "/duo_code_terms.json"          , JSON, OverWrite),
 
       //data to index
       DatasetConf("donors" , "output", "/donors" ,  JSON, OverWrite, partitionby = List("study_id", "dictionary_version", "study_version", "study_version_creation_date")),
