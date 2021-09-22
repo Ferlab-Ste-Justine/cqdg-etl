@@ -1,0 +1,14 @@
+[
+  {"hash": "403ef293407080545770f5bb6c61206bbe966dbf", "internal_id":  "follow_up_internal_id_1"},
+  {"hash": "1b96ff5a121d82834dfc749deeb62caf04624398", "internal_id":  "diagnosis_internal_id_1"},
+  {"hash": "101fdbd668985c75b0f3b082c69e7fc16de29570", "internal_id":  "donor_internal_id_1"},
+  {"hash": "73c5e9c17d58ffc72856873497fa1bf170931919", "internal_id":  "treatment_internal_id_1"},
+  {"hash": "4f037810f167fa2da49a68b96ef9795857cf87eb", "internal_id":  "biospecimen_internal_id_1"},
+  {"hash": "a9b900072430547509818342b1d5f4f964a551fc", "internal_id":  "exposure_internal_id_1"},
+  {"hash": "c17f154b9cc118f8f9cbd6875e4ea5d7463486c9", "internal_id":  "family_history_internal_id_1"},
+  {"hash": "41fd75f7b533a017711b83e47476dd9ccfaa2a17", "internal_id":  "file_internal_id_1"},
+  {"hash": "02d472d987b0fc1a7d98a2ac83a8b5d6a39793ea", "internal_id":  "phenotype_internal_id_1"},
+  {"hash": "aff03db32bd9e812f9201b46808af3312339273f", "internal_id":  "family_internal_id_1"},
+  {"hash": "4aa05f648fcc24603e430c752e5499951db9e658", "internal_id":  "study_internal_id_1"},
+  {"hash": "19c940c268a3bcc76932398c8d3f179feb7d53dd", "internal_id":  "sample_registration_internal_id_1"}
+]

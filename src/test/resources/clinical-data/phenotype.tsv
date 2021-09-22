@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_phenotype_id	phenotype_source_text	phenotype_HPO_code	phenotype_HPO_term	phenotype_HPO_category	age_at_phenotype	phenotype_severity	phenotype_observed
+ST0001	PT00001	PH00001	 Myocardial infarction	HP:0001658	 Myocardial infarction	Abnormality of the cardiovascular system	63	Mild	TRUE

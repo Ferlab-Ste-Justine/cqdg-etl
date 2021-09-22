@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_treatment_id	submitter_diagnosis_id	treatment_type	treatment_is_primary	treatment_intent	treatment_response	medication_name	medication_code	medication_class	treatment_end_date	internal_treatment_id
+ST0001	PT00001	TX00001	DI00001	Surgery	Yes	Curative	Not applicable	""	""	""	""	treatment_internal_id_1

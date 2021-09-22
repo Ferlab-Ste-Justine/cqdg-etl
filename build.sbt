@@ -6,7 +6,7 @@ scalaVersion := "2.12.12"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 
-val spark_version = "3.0.0"
+val spark_version = "3.1.2"
 
 resolvers += "Sonatype OSS Snapshots" at "https://s01.oss.sonatype.org/content/repositories/snapshots"
 resolvers += "Sonatype OSS Releases" at "https://s01.oss.sonatype.org/content/repositories/releases"
@@ -23,6 +23,9 @@ libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.13"
 libraryDependencies += "bio.ferlab" %% "datalake-spark3" % "0.0.54"
 libraryDependencies += "com.typesafe" % "config" % "1.4.1"
 libraryDependencies += "org.keycloak" % "keycloak-authz-client" % "12.0.3"
+libraryDependencies += "info.picocli" % "picocli" % "4.6.1"
+
+Test / parallelExecution := false
 
 /* Test */
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.6" % "test"
@@ -47,4 +50,6 @@ assemblyMergeStrategy in assembly := {
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
 }
-assemblyJarName in assembly := "cqdg-etl.jar"
+
+assembly / assemblyJarName := "cqdg-etl.jar"
+assembly / mainClass := Some("ca.cqdg.etl.EtlApp")

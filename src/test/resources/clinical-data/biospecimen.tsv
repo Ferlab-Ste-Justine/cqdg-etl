@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_biospecimen_id	submitter_diagnosis_id	date_biospecimen_collection	tumor_normal_designation	biospecimen_tissue_source	biospecimen_type	is_cancer	biospecimen_anatomic_location	biospecimen_anatomic_location(term)	tumor_histological_type	tumor_histological_type(term)	biospecimen_processing	biospecimen_storage	biospecimen_access
+ST0001	PT00001	BS00001	DI00001	11/22/2009	Normal	Blood derived - peripheral blood	Normal	No	C42.0	Blood			Cryopreservation - other	Frozen in -70 freezer	TRUE

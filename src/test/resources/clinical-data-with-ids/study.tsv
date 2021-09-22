@@ -1,0 +1,2 @@
+study_id	name	short_name	description	keyword	access_authority	domain	population	access_limitations	access_requirements	internal_study_id	dictionary_version	study_version	study_version_creation_date
+ST0001	Study1	ST1	population-based cohort focusing on complex conditions	Common chronic disorders; Prospective cohort; Reference genome	www.study1.ca	General Health	Adult	DUO:0000005	DUO:0000017; DUO:0000024; DUO:0000026	study_internal_id_1	5.58	1.0	2020/07/01

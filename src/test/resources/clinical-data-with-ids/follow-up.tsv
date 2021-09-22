@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_diagnosis_id	submitter_follow_up_id	disease_status_at_followup	relapse_interval	internal_followup_id
+ST0001	PT00001	DI00001	FU00001	No evidence of disease	""	follow_up_internal_id_1

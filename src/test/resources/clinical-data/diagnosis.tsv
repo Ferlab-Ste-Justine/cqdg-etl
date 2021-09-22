@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_diagnosis_id	diagnosis_source_text	diagnosis_ICD_category	diagnosis_ICD_code	diagnosis_ICD_term	diagnosis_mondo_code	diagnosis_mondo_term	age_at_diagnosis	is_self_reported	is_cancer	is_cancer_primary	diagnosis_type	tumor_staging_system	stage_group	t_category	n_category	m_category
+ST0001	PT00001	DI00001	Heart attack	Diseases of the circulatory system	I21	Acute myocardial infarction	MONDO:0005068	Myocardial infarction	54	TRUE	FALSE		Clinical

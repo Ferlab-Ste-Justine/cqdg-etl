@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_phenotype_id	phenotype_source_text	phenotype_HPO_code	age_at_phenotype	phenotype_severity	phenotype_observed	internal_phenotype_id
+ST0001	PT00001	PH00001	Myocardial infarction	HP:0001658	63	Mild	TRUE	phenotype_internal_id_1

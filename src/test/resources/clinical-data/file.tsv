@@ -1,0 +1,2 @@
+submitter_biospecimen_id	submitter_donor_id	study_id	file_name	data_category	data_type	is_harmonized	experimental_strategy	data_access	file_format	platform	variant_class
+BS00001	PT00001	ST0001	AOvTmom62.gvcf	Simple nucleotide variation	Raw SNV calls	TRUE	WGS	Controled	gvcf	Illumina	Germline

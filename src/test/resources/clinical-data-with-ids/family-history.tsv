@@ -1,0 +1,2 @@
+study_id	submitter_donor_id	submitter_family_condition_id	family_condition_name	family_condition_age	family_condition_relationship	family_cancer_history	internal_familyhistory_id
+ST0001	PT00001	FC00001	Brain cancer	20	granddaughter	Yes	family_history_internal_id_1
