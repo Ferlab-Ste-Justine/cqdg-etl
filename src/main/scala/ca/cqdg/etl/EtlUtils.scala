@@ -21,9 +21,9 @@ object EtlUtils {
   }
 
   def parseDate(date: String): Option[LocalDate] = {
-    dateFormats.toStream.map(formatter => {
+    dateFormats.toStream.flatMap(formatter => {
       Try(formatter.parse(date).toInstant.atZone(ZoneId.systemDefault()).toLocalDate).toOption
-    }).find(_.nonEmpty).flatten
+    }).headOption
   }
 
 }
